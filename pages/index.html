@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkwell Impressions — Premium B2B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#17154A',
+                            navyLight: '#222063',
+                            crimson: '#C81F45',
+                            crimsonHover: '#B0173C',
+                            bg: '#F4F5F9',
+                            surface: '#FFFFFF',
+                            section: '#F8F9FC',
+                            border: 'rgba(23, 21, 74, 0.10)',
+                            text: '#1A1A2E',
+                            textSecondary: '#3D3D5C',
+                            gray: '#6B6B8A',
+                            card: '#FFFFFF',
+                            gold: '#c3a35e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js">
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F4F5F9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #17154A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #222063;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #F4F5F9;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: #1A1A2E;
+            line-height: 1.5;
+        }
+
+        .font-serif {
+            font-family: 'Times New Roman', 'Georgia', serif;
+        }
+
+        /* ----- hero container (light premium) ----- */
+        .hero-premium {
+            background: #FFFFFF;
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0;
+            border-bottom: 1px solid rgba(23, 21, 74, 0.06);
+        }
+
+        .hero-premium::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(200, 31, 69, 0.10), transparent);
+        }
+
+        .hero-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 640px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #C81F45;
+            border-left: 2px solid #C81F45;
+            padding-left: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .eyebrow span {
+            color: rgba(23, 21, 74, 0.3);
+            font-weight: 300;
+        }
+
+        .hero-headline {
+            font-size: 3.8rem;
+            font-weight: 400;
+            line-height: 1.05;
+            letter-spacing: -0.01em;
+            font-family: 'Times New Roman', 'Georgia', serif;
+            color: #1A1A2E;
+        }
+
+        .hero-headline .accent {
+            color: #C81F45;
+            font-weight: 500;
+        }
+
+        .hero-headline .light {
+            color: rgba(23, 21, 74, 0.5);
+            font-weight: 300;
+        }
+
+        .hero-headline .block {
+            display: block;
+        }
+
+        .hero-desc {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color: rgba(23, 21, 74, 0.6);
+            max-width: 480px;
+            letter-spacing: 0.02em;
+            border-left: 1px solid rgba(200, 31, 69, 0.15);
+            padding-left: 1.5rem;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .btn-primary {
+            background: #C81F45;
+            border: none;
+            padding: 0.9rem 2.8rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #fff;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            border-radius: 0;
+            box-shadow: 0 4px 20px -6px rgba(200, 31, 69, 0.15);
+        }
+
+        .btn-primary:hover {
+            background: #B0173C;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 28px -8px rgba(200, 31, 69, 0.25);
+        }
+
+        .btn-primary i {
+            font-size: 0.6rem;
+            transition: transform 0.2s;
+        }
+
+        .btn-primary:hover i {
+            transform: translateX(4px);
+        }
+
+        .btn-secondary {
+            background: rgba(23, 21, 74, 0.02);
+            border: 1px solid rgba(23, 21, 74, 0.08);
+            padding: 0.9rem 2.8rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #1A1A2E;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            border-radius: 0;
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(23, 21, 74, 0.04);
+            border-color: rgba(23, 21, 74, 0.2);
+        }
+
+        .btn-secondary i {
+            color: rgba(23, 21, 74, 0.3);
+            font-size: 0.7rem;
+            transition: color 0.2s;
+        }
+
+        .btn-secondary:hover i {
+            color: #1A1A2E;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem 2rem;
+            border-top: 1px solid rgba(23, 21, 74, 0.04);
+            padding-top: 1.8rem;
+            margin-top: 0.25rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .feature-item .icon-wrap {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(23, 21, 74, 0.04);
+            background: rgba(23, 21, 74, 0.01);
+            transition: border-color 0.2s;
+        }
+
+        .feature-item:hover .icon-wrap {
+            border-color: rgba(200, 31, 69, 0.2);
+        }
+
+        .feature-item i {
+            font-size: 0.75rem;
+            color: rgba(23, 21, 74, 0.2);
+            transition: color 0.2s;
+        }
+
+        .feature-item:hover i {
+            color: #C81F45;
+        }
+
+        .feature-item span {
+            font-size: 0.7rem;
+            font-weight: 450;
+            letter-spacing: 0.04em;
+            color: rgba(23, 21, 74, 0.6);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+
+        .product-composition {
+            position: relative;
+            width: 100%;
+            max-width: 580px;
+            aspect-ratio: 1 / 1.1;
+            background: radial-gradient(circle at 30% 40%, rgba(200, 31, 69, 0.02) 0%, transparent 60%);
+            border-radius: 2px;
+        }
+
+        .product-item {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: none;
+            border: 1px solid rgba(23, 21, 74, 0.06);
+            box-shadow: 0 20px 40px -20px rgba(23, 21, 74, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+            transition: all 0.25s ease;
+            padding: 1rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0;
+        }
+
+        .product-item:hover {
+            border-color: rgba(23, 21, 74, 0.12);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .product-tag {
+            font-size: 0.5rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(23, 21, 74, 0.2);
+            border-bottom: 1px solid rgba(23, 21, 74, 0.04);
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .product-icon {
+            font-size: 1.6rem;
+            color: rgba(23, 21, 74, 0.15);
+            margin-bottom: 0.25rem;
+        }
+
+        .product-title {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            color: #1A1A2E;
+        }
+
+        .product-sub {
+            font-size: 0.55rem;
+            color: rgba(23, 21, 74, 0.3);
+            font-weight: 300;
+            margin-top: 0.1rem;
+        }
+
+        .item-1 {
+            top: 8%;
+            left: 6%;
+            width: 150px;
+            transform: rotate(-2deg);
+            z-index: 4;
+        }
+
+        .item-2 {
+            top: 18%;
+            right: 2%;
+            width: 130px;
+            transform: rotate(3deg);
+            z-index: 3;
+        }
+
+        .item-3 {
+            bottom: 20%;
+            left: 2%;
+            width: 160px;
+            transform: rotate(-1deg);
+            z-index: 5;
+        }
+
+        .item-4 {
+            bottom: 10%;
+            right: 4%;
+            width: 120px;
+            transform: rotate(2deg);
+            z-index: 2;
+        }
+
+        .item-5 {
+            top: 45%;
+            left: 28%;
+            width: 200px;
+            transform: rotate(0.5deg);
+            z-index: 6;
+            background: rgba(255, 255, 255, 0.95);
+            border-color: rgba(200, 31, 69, 0.10);
+            padding: 1.2rem 1.5rem;
+        }
+
+        .item-5 .product-icon {
+            color: #C81F45;
+            font-size: 2rem;
+        }
+
+        .item-5 .product-tag {
+            color: rgba(200, 31, 69, 0.4);
+            border-bottom-color: rgba(200, 31, 69, 0.08);
+        }
+
+        .item-5 .product-title {
+            font-weight: 600;
+        }
+
+        .item-5 .product-sub {
+            color: rgba(200, 31, 69, 0.5);
+        }
+
+        .accent-piece {
+            position: absolute;
+            font-size: 0.55rem;
+            letter-spacing: 0.08em;
+            color: rgba(23, 21, 74, 0.08);
+            border-left: 1px solid rgba(200, 31, 69, 0.10);
+            padding-left: 0.6rem;
+            text-transform: uppercase;
+        }
+
+        .accent-1 {
+            bottom: 40%;
+            left: -4%;
+            transform: rotate(-90deg);
+            transform-origin: left center;
+            white-space: nowrap;
+        }
+
+        .accent-2 {
+            top: 12%;
+            right: -6%;
+            transform: rotate(90deg);
+            transform-origin: right center;
+            white-space: nowrap;
+        }
+
+        .product-composition::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 70% 80%, rgba(200, 31, 69, 0.02), transparent 70%);
+            pointer-events: none;
+        }
+
+        .trust-bar {
+            margin-top: 4rem;
+            border-top: 1px solid rgba(23, 21, 74, 0.04);
+            padding-top: 2.5rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .trust-stat .label {
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #C81F45;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+
+        .trust-stat .number {
+            font-size: 2rem;
+            font-weight: 300;
+            font-family: 'Times New Roman', serif;
+            color: #1A1A2E;
+            letter-spacing: -0.02em;
+        }
+
+        .trust-stat .number small {
+            font-size: 1rem;
+            color: #C81F45;
+            font-weight: 400;
+            margin-left: 0.1rem;
+        }
+
+        .trust-stat .desc {
+            font-size: 0.65rem;
+            color: rgba(23, 21, 74, 0.3);
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .hero-content {
+                max-width: 100%;
+            }
+            .hero-headline {
+                font-size: 3rem;
+            }
+            .hero-visual {
+                min-height: 500px;
+            }
+            .product-composition {
+                max-width: 100%;
+                aspect-ratio: 1 / 0.9;
+            }
+            .trust-bar {
+                grid-template-columns: 1fr 1fr;
+            }
+            .accent-1,
+            .accent-2 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-premium {
+                padding: 3rem 0;
+            }
+            .hero-inner {
+                padding: 0 1.2rem;
+            }
+            .hero-headline {
+                font-size: 2.2rem;
+            }
+            .hero-desc {
+                font-size: 0.9rem;
+                padding-left: 1rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem 1rem;
+            }
+            .trust-bar {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .btn-primary,
+            .btn-secondary {
+                padding: 0.7rem 1.8rem;
+                font-size: 0.6rem;
+            }
+            .product-item {
+                padding: 0.6rem 0.8rem;
+            }
+            .item-1 {
+                width: 110px;
+                top: 6%;
+                left: 4%;
+            }
+            .item-2 {
+                width: 100px;
+                top: 14%;
+                right: 2%;
+            }
+            .item-3 {
+                width: 120px;
+                bottom: 18%;
+                left: 2%;
+            }
+            .item-4 {
+                width: 90px;
+                bottom: 8%;
+                right: 2%;
+            }
+            .item-5 {
+                width: 150px;
+                top: 42%;
+                left: 22%;
+                padding: 0.8rem 1rem;
+            }
+            .hero-visual {
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Navigation (premium light) -->
+    <nav class="bg-white text-brand-text px-8 py-4 flex items-center justify-between sticky top-0 z-50 border-b border-brand-border/50 shadow-sm">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+            <a href="/">
+                <img src="Inkwell Logo.jpeg" alt="Inkwell Impressions Logo" class="h-12 w-auto object-contain">
+            </a>
+        </div>
+
+        <!-- Menu -->
+        <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+            <a href="#" class="hover:text-brand-crimson transition-colors">HOME</a>
+            <a href="#" class="text-brand-crimson border-b-2 border-brand-crimson pb-1">PRODUCTS</a>
+            <a href="#" class="hover:text-brand-crimson transition-colors">CATEGORIES</a>
+            <a href="#" class="hover:text-brand-crimson transition-colors">SOLUTIONS</a>
+            <a href="#" class="hover:text-brand-crimson transition-colors">NEW ARRIVAL</a>
+            <a href="#" class="hover:text-brand-crimson transition-colors">ABOUT US</a>
+            <a href="#" class="hover:text-brand-crimson transition-colors">CONTACT</a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-6">
+            <button class="hover:text-brand-crimson transition-colors text-brand-textSecondary">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div class="relative cursor-pointer hover:text-brand-crimson transition-colors text-brand-textSecondary">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="absolute -top-2 -right-2 bg-brand-crimson text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+            </div>
+
+            <button class="bg-brand-navy hover:bg-brand-navyLight text-white px-5 py-2 text-xs font-semibold tracking-wide flex items-center gap-2 transition-all group rounded border border-brand-navy">
+                REQUEST A QUOTE
+                <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <!-- Redesigned Premium B2B Hero Section -->
+    <section class="hero-premium">
+        <div class="hero-inner">
+
+            <div class="hero-grid">
+
+                <!-- LEFT: editorial content -->
+                <div class="hero-content">
+                  
+
+                    <h1 class="hero-headline">
+                        <span class="block">Elevating</span>
+                        <span class="block light">corporate identity</span>
+                        <span class="block accent">— scale your brand</span>
+                        <span class="block" style="font-weight: 300; color: rgba(23,21,74,0.4); font-size: 0.7em; letter-spacing: 0.04em;">globally.</span>
+                    </h1>
+
+                    <p class="hero-desc">
+                        Premium custom printing, architectural packaging, high-end corporate gifts, and promotional
+                        portfolios engineered for partners who expect nothing less than excellence.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn-primary">
+                            explore products <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn-secondary">
+                            request a quote <i class="far fa-file-lines"></i>
+                        </a>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <span class="icon-wrap"><i class="fas fa-globe-americas"></i></span>
+                            <span>worldwide shipping</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon-wrap"><i class="fas fa-crown"></i></span>
+                            <span>premium quality</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon-wrap"><i class="fas fa-bolt"></i></span>
+                            <span>fast production</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon-wrap"><i class="fas fa-signature"></i></span>
+                            <span>custom branding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: realistic product composition -->
+                <div class="hero-visual">
+                    <div class="product-composition">
+
+                        <div class="product-item item-1">
+                            <div class="product-tag">rigid box</div>
+                            <div class="product-icon"><i class="fas fa-box-open"></i></div>
+                            <div class="product-title">Luxury Packaging</div>
+                            <div class="product-sub">magnetic closure</div>
+                        </div>
+
+                        <div class="product-item item-2">
+                            <div class="product-tag">250gsm</div>
+                            <div class="product-icon"><i class="fas fa-wine-bottle"></i></div>
+                            <div class="product-title">Wine Carry Bag</div>
+                            <div class="product-sub">premium paper</div>
+                        </div>
+
+                        <div class="product-item item-3">
+                            <div class="product-tag">eco</div>
+                            <div class="product-icon"><i class="fas fa-bag-shopping"></i></div>
+                            <div class="product-title">Shopping Bag</div>
+                            <div class="product-sub">rope handle</div>
+                        </div>
+
+                        <div class="product-item item-4">
+                            <div class="product-tag">leatherette</div>
+                            <div class="product-icon"><i class="fas fa-book-open"></i></div>
+                            <div class="product-title">Notebook</div>
+                            <div class="product-sub">hardcover</div>
+                        </div>
+
+                        <div class="product-item item-5">
+                            <div class="product-tag">vip kit</div>
+                            <div class="product-icon"><i class="fas fa-gift"></i></div>
+                            <div class="product-title">Executive Gift Set</div>
+                            <div class="product-sub">gold foil · premium finish</div>
+                        </div>
+
+                        <div class="accent-piece accent-1">bespoke · since 2011</div>
+                        <div class="accent-piece accent-2">craftsmanship</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- integrated trust bar -->
+          
+
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-24 bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gsap-fade-up">
+                <div>
+                    <span class="text-brand-crimson text-sm font-semibold tracking-wider uppercase mb-2 block">Explore Our Range</span>
+                    <h2 class="text-4xl font-serif font-bold text-brand-text">Product Categories</h2>
+                </div>
+                <a href="#" class="mt-6 md:mt-0 border border-brand-border text-brand-textSecondary px-6 py-2 rounded hover:bg-brand-navy/5 hover:text-brand-text transition flex items-center gap-2">View All Products &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="group cursor-pointer border border-brand-border rounded-lg hover:shadow-xl transition duration-300 bg-white overflow-hidden gsap-card">
+                    <div class="h-48 bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Promotional Products" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 bg-brand-navy text-white flex items-center justify-center rounded -mt-10 relative z-10 mb-4 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brand-text mb-2">Promotional<br>Products</h3>
+                        <p class="text-sm text-brand-textSecondary leading-relaxed">Branded items that promote your business everywhere.</p>
+                    </div>
+                </div>
+                <div class="group cursor-pointer border border-brand-border rounded-lg hover:shadow-xl transition duration-300 bg-white overflow-hidden gsap-card">
+                    <div class="h-48 bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Corporate Gifts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 bg-brand-navy text-white flex items-center justify-center rounded -mt-10 relative z-10 mb-4 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brand-text mb-2">Corporate<br>Gifts</h3>
+                        <p class="text-sm text-brand-textSecondary leading-relaxed">Thoughtful gifts that strengthen relationships.</p>
+                    </div>
+                </div>
+                <div class="group cursor-pointer border border-brand-border rounded-lg hover:shadow-xl transition duration-300 bg-white overflow-hidden gsap-card">
+                    <div class="h-48 bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562664377-709f2c337eb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Printing Solutions" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 bg-brand-navy text-white flex items-center justify-center rounded -mt-10 relative z-10 mb-4 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brand-text mb-2">Printing<br>Solutions</h3>
+                        <p class="text-sm text-brand-textSecondary leading-relaxed">High-quality print solutions for all your business needs.</p>
+                    </div>
+                </div>
+                <div class="group cursor-pointer border border-brand-border rounded-lg hover:shadow-xl transition duration-300 bg-white overflow-hidden gsap-card">
+                    <div class="h-48 bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1610419266185-1bf224e75618?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Packaging Solutions" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 bg-brand-navy text-white flex items-center justify-center rounded -mt-10 relative z-10 mb-4 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brand-text mb-2">Packaging<br>Solutions</h3>
+                        <p class="text-sm text-brand-textSecondary leading-relaxed">Custom packaging that protects, presents, and promotes.</p>
+                    </div>
+                </div>
+                <div class="group cursor-pointer border border-brand-border rounded-lg hover:shadow-xl transition duration-300 bg-white overflow-hidden gsap-card">
+                    <div class="h-48 bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Custom Merchandise" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 bg-brand-navy text-white flex items-center justify-center rounded -mt-10 relative z-10 mb-4 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brand-text mb-2">Custom<br>Merchandise</h3>
+                        <p class="text-sm text-brand-textSecondary leading-relaxed">Unique, custom products made to match your brand identity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="py-24 bg-brand-navy text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-5 gap-16 items-center">
+                <div class="lg:col-span-2 gsap-fade-right">
+                    <span class="text-brand-crimson text-sm font-semibold tracking-wider uppercase mb-2 block">Why Partner With Us</span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-10 leading-tight">We Deliver More<br>Than Products</h2>
+                    <div class="relative mt-8">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shopping Bags" class="w-full h-auto object-cover rounded opacity-60 mix-blend-lighten">
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="flex gap-4 gsap-feature">
+                        <div class="flex-shrink-0 mt-1 text-gray-400"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
+                        <div><h4 class="text-lg font-semibold mb-2">B2B Specialists</h4><p class="text-gray-400 text-sm leading-relaxed">We understand business needs and deliver scalable solutions.</p></div>
+                    </div>
+                    <div class="flex gap-4 gsap-feature">
+                        <div class="flex-shrink-0 mt-1 text-gray-400"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg></div>
+                        <div><h4 class="text-lg font-semibold mb-2">Premium Quality</h4><p class="text-gray-400 text-sm leading-relaxed">We use top-grade materials and advanced printing technology.</p></div>
+                    </div>
+                    <div class="flex gap-4 gsap-feature">
+                        <div class="flex-shrink-0 mt-1 text-gray-400"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>
+                        <div><h4 class="text-lg font-semibold mb-2">Customization</h4><p class="text-gray-400 text-sm leading-relaxed">Every product can be customized to match your brand perfectly.</p></div>
+                    </div>
+                    <div class="flex gap-4 gsap-feature">
+                        <div class="flex-shrink-0 mt-1 text-gray-400"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <div><h4 class="text-lg font-semibold mb-2">Competitive Pricing</h4><p class="text-gray-400 text-sm leading-relaxed">Factory-direct pricing with no compromise on quality.</p></div>
+                    </div>
+                    <div class="flex gap-4 gsap-feature">
+                        <div class="flex-shrink-0 mt-1 text-gray-400"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg></div>
+                        <div><h4 class="text-lg font-semibold mb-2">Global Shipping</h4><p class="text-gray-400 text-sm leading-relaxed">Reliable worldwide delivery with secure packaging.</p></div>
+                    </div>
+                    <div class="flex gap-4 gsap-feature">
+                        <div class="flex-shrink-0 mt-1 text-gray-400"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg></div>
+                        <div><h4 class="text-lg font-semibold mb-2">Dedicated Support</h4><p class="text-gray-400 text-sm leading-relaxed">Our team is always here to support your business journey.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="py-20 border-b border-brand-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/3 gsap-fade-up">
+                    <span class="text-brand-crimson text-xs font-semibold tracking-wider uppercase mb-2 block">Industries We Serve</span>
+                    <h2 class="text-3xl font-serif font-bold text-brand-text leading-tight">Trusted by Businesses Worldwide</h2>
+                </div>
+
+                <div class="md:w-2/3 w-full grid grid-cols-3 md:grid-cols-6 gap-4 text-center">
+                    <div class="flex flex-col items-center gap-3 gsap-industry">
+                        <div class="w-12 h-12 flex items-center justify-center bg-brand-bg rounded border border-brand-border text-brand-textSecondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
+                        <span class="text-xs font-medium text-brand-textSecondary">Corporate</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 gsap-industry">
+                        <div class="w-12 h-12 flex items-center justify-center bg-brand-bg rounded border border-brand-border text-brand-textSecondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg></div>
+                        <span class="text-xs font-medium text-brand-textSecondary">Education</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 gsap-industry">
+                        <div class="w-12 h-12 flex items-center justify-center bg-brand-bg rounded border border-brand-border text-brand-textSecondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></div>
+                        <span class="text-xs font-medium text-brand-textSecondary">Healthcare</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 gsap-industry">
+                        <div class="w-12 h-12 flex items-center justify-center bg-brand-bg rounded border border-brand-border text-brand-textSecondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg></div>
+                        <span class="text-xs font-medium text-brand-textSecondary">Hospitality</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 gsap-industry">
+                        <div class="w-12 h-12 flex items-center justify-center bg-brand-bg rounded border border-brand-border text-brand-textSecondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg></div>
+                        <span class="text-xs font-medium text-brand-textSecondary">Retail</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 gsap-industry">
+                        <div class="w-12 h-12 flex items-center justify-center bg-brand-bg rounded border border-brand-border text-brand-textSecondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15"></path></svg></div>
+                        <span class="text-xs font-medium text-brand-textSecondary">Events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-brand-navy relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-navyLight/20 via-brand-navy to-brand-navy"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center gsap-fade-up">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Have a Project in Mind?</h2>
+            <p class="text-gray-300 mb-10 text-lg">Let's create something remarkable together.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="bg-brand-crimson hover:bg-brand-crimsonHover text-white px-8 py-3 rounded transition flex items-center gap-2 font-medium">Get a Quote &rarr;</a>
+                <a href="#" class="border border-white/30 hover:border-white text-white px-8 py-3 rounded transition flex items-center gap-2 font-medium">Contact Us &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-brand-textSecondary pt-20 pb-10 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-12 mb-16">
+                <div class="col-span-2">
+                    <span class="text-2xl font-serif font-bold text-brand-text tracking-wide mb-6 block">INK<span class="text-brand-crimson">WELL</span> <br><span class="text-sm font-sans tracking-widest text-brand-textSecondary font-normal">IMPRESSIONS</span></span>
+                    <p class="text-sm mb-6 max-w-xs leading-relaxed text-brand-textSecondary">Your global partner for premium custom printing, promotional products, corporate gifts, and packaging solutions.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-8 h-8 rounded-full border border-brand-border flex items-center justify-center hover:bg-brand-crimson hover:border-brand-crimson hover:text-white transition text-brand-textSecondary"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-brand-border flex items-center justify-center hover:bg-brand-crimson hover:border-brand-crimson hover:text-white transition text-brand-textSecondary"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-brand-border flex items-center justify-center hover:bg-brand-crimson hover:border-brand-crimson hover:text-white transition text-brand-textSecondary"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="text-brand-text font-semibold mb-4 text-sm">Quick Links</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-brand-text transition">Home</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Products</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Industries</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-brand-text font-semibold mb-4 text-sm">Products</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-brand-text transition">Promotional Products</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Corporate Gifts</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Printing Solutions</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Packaging Solutions</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Custom Merchandise</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-brand-text font-semibold mb-4 text-sm">Support</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-brand-text transition">Request a Quote</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Request Mockup</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Product Sample</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Purchase Order</a></li>
+                        <li><a href="#" class="hover:text-brand-text transition">Credit Application</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-brand-text font-semibold mb-4 text-sm">Contact Info</h5>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>123 Business Park,<br>Suite 456, New York,<br>NY 10001, USA</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <a href="mailto:info@inkwellimpressions.com" class="hover:text-brand-text transition">info@inkwellimpressions.com</a>
+                        </li>
+                        <li class="flex gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <a href="tel:+12125557890" class="hover:text-brand-text transition">+1 (212) 555-7890</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-brand-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-brand-textSecondary">
+                <p>&copy; 2026 INKWELL IMPRESSIONS. All Rights Reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-brand-text transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-text transition">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- GSAP Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.from(".gsap-fade-up", {
+                scrollTrigger: { trigger: ".gsap-fade-up", start: "top 85%" },
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            gsap.from(".gsap-card", {
+                scrollTrigger: { trigger: ".gsap-card", start: "top 80%" },
+                y: 40,
+                opacity: 0,
+                duration: 0.6,
+                stagger: 0.1,
+                ease: "power2.out"
+            });
+
+            gsap.from(".gsap-fade-right", {
+                scrollTrigger: { trigger: ".gsap-fade-right", start: "top 75%" },
+                x: -40,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            gsap.from(".gsap-feature", {
+                scrollTrigger: { trigger: ".gsap-fade-right", start: "top 75%" },
+                x: 20,
+                opacity: 0,
+                duration: 0.6,
+                stagger: 0.1,
+                ease: "power2.out"
+            });
+
+            gsap.from(".gsap-industry", {
+                scrollTrigger: { trigger: ".gsap-industry", start: "top 85%" },
+                scale: 0.8,
+                opacity: 0,
+                duration: 0.5,
+                stagger: 0.08,
+                ease: "back.out(1.7)"
+            });
+        });
+    </script>
+
+</body>
+
+</html>
