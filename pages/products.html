@@ -56,9 +56,11 @@
     .custom-scrollbar::-webkit-scrollbar {
       width: 4px;
     }
+
     .custom-scrollbar::-webkit-scrollbar-track {
       background: #E9EBF2;
     }
+
     .custom-scrollbar::-webkit-scrollbar-thumb {
       background: #17154A;
       border-radius: 10px;
@@ -77,12 +79,14 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
     .line-clamp-3 {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
     .truncate {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -97,6 +101,7 @@
       box-shadow: 0 4px 16px rgba(23, 21, 74, 0.06);
       transition: box-shadow 0.25s ease, transform 0.2s ease, border-color 0.2s;
     }
+
     .premium-card:hover {
       box-shadow: 0 12px 32px rgba(23, 21, 74, 0.10);
       transform: translateY(-3px);
@@ -110,6 +115,7 @@
       color: #fff;
       transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
     }
+
     .btn-crimson:hover {
       background: #B0173C;
       border-color: #B0173C;
@@ -122,6 +128,7 @@
       color: #FFFFFF;
       transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
     }
+
     .btn-navy:hover {
       background: #222063;
       border-color: #222063;
@@ -134,6 +141,7 @@
       color: #17154A;
       transition: all 0.2s;
     }
+
     .btn-outline-navy:hover {
       background: #17154A;
       color: #fff;
@@ -147,6 +155,7 @@
       justify-content: center;
       gap: 1rem;
     }
+
     .brand-divider::before,
     .brand-divider::after {
       content: '';
@@ -154,6 +163,7 @@
       height: 1px;
       background: rgba(23, 21, 74, 0.15);
     }
+
     .brand-divider i {
       color: #C81F45;
       font-size: 1.2rem;
@@ -169,11 +179,13 @@
       padding: 0.5rem 0.75rem;
       transition: border-color 0.2s, box-shadow 0.2s;
     }
+
     .input-premium:focus {
       outline: none;
       border-color: #17154A;
       box-shadow: 0 0 0 3px rgba(23, 21, 74, 0.08);
     }
+
     .input-premium::placeholder {
       color: #8A8AA8;
     }
@@ -201,6 +213,7 @@
     .hover-crimson {
       transition: color 0.2s;
     }
+
     .hover-crimson:hover {
       color: #C81F45;
     }
@@ -216,10 +229,12 @@
     .sidebar-link {
       transition: background 0.15s, color 0.15s;
     }
+
     .sidebar-link:hover {
       background: rgba(23, 21, 74, 0.04);
       color: #17154A;
     }
+
     .sidebar-link.active {
       background: #17154A;
       color: #FFFFFF;
@@ -235,44 +250,70 @@
 
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
 
-  <!-- Navigation (premium light) -->
-  <nav class="nav-premium text-brand-text px-8 py-4 flex items-center justify-between sticky top-0 z-50">
+  <!-- Premium Navbar -->
+  <nav class="bg-white sticky top-0 z-50 border-b border-brand-border shadow-sm">
+    <div class="max-w-[1400px] mx-auto px-8 py-3 flex items-center justify-between">
 
-    <!-- Logo -->
-    <div class="flex items-center">
-      <a href="/">
-        <img src="Inkwell Logo.jpeg" alt="Inkwell Impressions Logo" class="h-12 w-auto object-contain">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Logo" class="h-12 w-auto object-contain">
       </a>
-    </div>
 
-    <!-- Menu -->
-    <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-      <a href="#" class="hover:text-brand-crimson transition-colors">HOME</a>
-      <a href="#" class="text-brand-crimson border-b-2 border-brand-crimson pb-1">PRODUCTS</a>
-      <a href="#" class="hover:text-brand-crimson transition-colors">CATEGORIES</a>
-      <a href="#" class="hover:text-brand-crimson transition-colors">SOLUTIONS</a>
-      <a href="#" class="hover:text-brand-crimson transition-colors">NEW ARRIVAL</a>
-      <a href="#" class="hover:text-brand-crimson transition-colors">ABOUT US</a>
-      <a href="#" class="hover:text-brand-crimson transition-colors">CONTACT</a>
-    </div>
+      <!-- Desktop Menu -->
+      <ul
+        class="hidden lg:flex items-center gap-8 text-sm font-medium uppercase tracking-wide text-brand-textSecondary">
+        <li>
+          <a href="index.html" class="hover:text-brand-crimson transition">
+            Home
+          </a>
+        </li>
 
-    <!-- Right Side -->
-    <div class="flex items-center gap-6">
-      <button class="hover:text-brand-crimson transition-colors text-brand-textSecondary">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+        <li>
+          <a href="products.html" class="text-brand-crimson transition">
+            Products
+          </a>
+        </li>
 
-      <div class="relative cursor-pointer hover:text-brand-crimson transition-colors text-brand-textSecondary">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <span class="absolute -top-2 -right-2 bg-brand-crimson text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+        <li>
+          <a href="#" class="hover:text-brand-crimson transition">
+            Categories
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-brand-crimson transition">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-brand-crimson transition">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-4">
+
+        <button class="btn-crimson px-5 py-2 text-xs font-semibold uppercase tracking-wide rounded">
+          Request Quote
+        </button>
+
+        <button class="text-brand-textSecondary hover:text-brand-crimson transition text-lg">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
       </div>
 
-      <button class="btn-navy px-5 py-2 text-xs font-semibold tracking-wide flex items-center gap-2 transition-all group rounded">
-        REQUEST A QUOTE
-        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-      </button>
-    </div>
 
+      <!-- Mobile Menu Icon -->
+      <button class="lg:hidden text-brand-navy text-xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
   </nav>
 
   <!-- Page Header (navy/crimson) -->
@@ -291,16 +332,28 @@
       </div>
       <div class="flex flex-wrap gap-8 lg:gap-12 header-features opacity-0">
         <div class="flex items-center gap-3"><i class="fa-solid fa-gear text-brand-crimson text-xl"></i>
-          <div><div class="text-sm font-semibold">Premium Quality</div><div class="text-xs text-white/60">Top grade materials</div></div>
+          <div>
+            <div class="text-sm font-semibold">Premium Quality</div>
+            <div class="text-xs text-white/60">Top grade materials</div>
+          </div>
         </div>
         <div class="flex items-center gap-3"><i class="fa-solid fa-bag-shopping text-brand-crimson text-xl"></i>
-          <div><div class="text-sm font-semibold">Bulk Pricing</div><div class="text-xs text-white/60">Best rates guaranteed</div></div>
+          <div>
+            <div class="text-sm font-semibold">Bulk Pricing</div>
+            <div class="text-xs text-white/60">Best rates guaranteed</div>
+          </div>
         </div>
         <div class="flex items-center gap-3"><i class="fa-solid fa-clock-rotate-left text-brand-crimson text-xl"></i>
-          <div><div class="text-sm font-semibold">Fast Turnaround</div><div class="text-xs text-white/60">On-time delivery</div></div>
+          <div>
+            <div class="text-sm font-semibold">Fast Turnaround</div>
+            <div class="text-xs text-white/60">On-time delivery</div>
+          </div>
         </div>
         <div class="flex items-center gap-3"><i class="fa-solid fa-globe text-brand-crimson text-xl"></i>
-          <div><div class="text-sm font-semibold">Global Delivery</div><div class="text-xs text-white/60">Worldwide shipping</div></div>
+          <div>
+            <div class="text-sm font-semibold">Global Delivery</div>
+            <div class="text-xs text-white/60">Worldwide shipping</div>
+          </div>
         </div>
       </div>
     </div>
@@ -317,11 +370,13 @@
     <!-- Right Content Area -->
     <div class="flex-1 w-full">
       <!-- Toolbar -->
-      <div class="flex flex-wrap items-center justify-between premium-card p-3 mb-6 toolbar-anim opacity-0" id="toolbar">
+      <div class="flex flex-wrap items-center justify-between premium-card p-3 mb-6 toolbar-anim opacity-0"
+        id="toolbar">
         <div class="flex items-center gap-4">
           <div class="flex bg-[#F4F5F9] rounded overflow-hidden border border-brand-border">
             <button class="px-3 py-1.5 bg-brand-navy text-white"><i class="fa-solid fa-grid-2"></i></button>
-            <button class="px-3 py-1.5 text-brand-textSecondary hover:text-brand-text"><i class="fa-solid fa-list"></i></button>
+            <button class="px-3 py-1.5 text-brand-textSecondary hover:text-brand-text"><i
+                class="fa-solid fa-list"></i></button>
           </div>
           <span class="text-sm text-brand-textSecondary" id="product-count-label">Showing 1–12 of 128 products</span>
         </div>
@@ -333,11 +388,14 @@
               <option value="price-high">Price: High to Low</option>
               <option value="newest">Newest Arrivals</option>
             </select>
-            <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-brand-textSecondary pointer-events-none"></i>
+            <i
+              class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-brand-textSecondary pointer-events-none"></i>
           </div>
           <div class="relative w-full md:w-64">
-            <input id="search-input" type="text" placeholder="Search products..." class="w-full input-premium pl-3 pr-8" />
-            <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-brand-textSecondary"></i>
+            <input id="search-input" type="text" placeholder="Search products..."
+              class="w-full input-premium pl-3 pr-8" />
+            <i
+              class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-brand-textSecondary"></i>
           </div>
         </div>
       </div>
@@ -368,18 +426,31 @@
 
   <!-- Footer (premium light) -->
   <footer class="footer-premium text-brand-text py-6">
-    <div class="max-w-[1400px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 footer-features opacity-0">
+    <div
+      class="max-w-[1400px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 footer-features opacity-0">
       <div class="flex items-center gap-4"><i class="fa-solid fa-tags text-brand-crimson text-2xl"></i>
-        <div><h5 class="text-xs font-bold uppercase tracking-wider">Bulk Discount</h5><p class="text-[10px] text-brand-textSecondary">Best pricing on bulk orders</p></div>
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider">Bulk Discount</h5>
+          <p class="text-[10px] text-brand-textSecondary">Best pricing on bulk orders</p>
+        </div>
       </div>
       <div class="flex items-center gap-4"><i class="fa-solid fa-pen-ruler text-brand-crimson text-2xl"></i>
-        <div><h5 class="text-xs font-bold uppercase tracking-wider">Custom Branding</h5><p class="text-[10px] text-brand-textSecondary">Your logo, your style</p></div>
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider">Custom Branding</h5>
+          <p class="text-[10px] text-brand-textSecondary">Your logo, your style</p>
+        </div>
       </div>
       <div class="flex items-center gap-4"><i class="fa-solid fa-shield-check text-brand-crimson text-2xl"></i>
-        <div><h5 class="text-xs font-bold uppercase tracking-wider">Quality Assurance</h5><p class="text-[10px] text-brand-textSecondary">100% quality guaranteed</p></div>
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider">Quality Assurance</h5>
+          <p class="text-[10px] text-brand-textSecondary">100% quality guaranteed</p>
+        </div>
       </div>
       <div class="flex items-center gap-4"><i class="fa-solid fa-earth-americas text-brand-crimson text-2xl"></i>
-        <div><h5 class="text-xs font-bold uppercase tracking-wider">Worldwide Shipping</h5><p class="text-[10px] text-brand-textSecondary">Fast & reliable delivery</p></div>
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider">Worldwide Shipping</h5>
+          <p class="text-[10px] text-brand-textSecondary">Fast & reliable delivery</p>
+        </div>
       </div>
     </div>
   </footer>
@@ -573,19 +644,24 @@
         const cats = products.map(p => p.category);
         return ['All Products', ...new Set(cats)];
       }
+
       function getMaterials() {
         return [...new Set(products.map(p => p.material))];
       }
+
       function getSizes() {
         return [...new Set(products.map(p => p.size))];
       }
+
       function getCategoryCount(cat) {
         if (cat === 'All Products') return products.length;
         return products.filter(p => p.category === cat).length;
       }
+
       function getMaterialCount(mat) {
         return products.filter(p => p.material === mat).length;
       }
+
       function getSizeCount(size) {
         return products.filter(p => p.size === size).length;
       }
@@ -626,32 +702,42 @@
       function createProductCard(product) {
         const div = document.createElement('div');
         div.className =
-          'premium-card p-4 relative flex flex-col h-full product-card opacity-0 group';
+          'premium-card p-4 relative flex flex-col h-full product-card opacity-0 group cursor-pointer';
         div.dataset.id = product.id;
+        // product link with ID parameter
         const link = `product.html?id=${product.id}`;
+
         div.innerHTML = `
-          <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">${product.code}</span>
-          <button class="absolute top-4 right-4 text-brand-textSecondary hover:text-brand-crimson z-10 transition-colors"><i class="fa-regular fa-heart"></i></button>
-          <a href="${link}" class="block relative h-48 mb-4 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500">
-            <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
-            <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[9px] px-2 py-0.5 rounded font-medium border border-white/10">${product.size}</div>
-          </a>
-          <div class="flex-1 flex flex-col">
-            <a href="${link}"><h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">${product.name}</h3></a>
-            <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">${product.description}</p>
-            <div class="mt-auto">
-              <div class="flex items-end gap-2 mb-4">
-                <span class="text-brand-crimson font-bold text-lg">$${product.price.toFixed(2)}</span>
-                <span class="text-xs text-brand-textSecondary mb-1">Now Net</span>
-              </div>
-              <div class="flex items-center gap-1 w-full">
-                <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-regular fa-pen-to-square"></i> QUOTE</button>
-                <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP</button>
-                <button class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson"><i class="fa-solid fa-truck-fast"></i> FREIGHT</button>
+            <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">${product.code}</span>
+            <button class="absolute top-4 right-4 text-brand-textSecondary hover:text-brand-crimson z-10 transition-colors"><i class="fa-regular fa-heart"></i></button>
+            <a href="${link}" class="block relative h-48 mb-4 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500">
+              <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
+              <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[9px] px-2 py-0.5 rounded font-medium border border-white/10">${product.size}</div>
+            </a>
+            <div class="flex-1 flex flex-col">
+              <a href="${link}"><h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">${product.name}</h3></a>
+              <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">${product.description}</p>
+              <div class="mt-auto">
+                <div class="flex items-end gap-2 mb-4">
+                  <span class="text-brand-crimson font-bold text-lg">$${product.price.toFixed(2)}</span>
+                  <span class="text-xs text-brand-textSecondary mb-1">Now Net</span>
+                </div>
+                <div class="flex items-center gap-1 w-full">
+                  <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-regular fa-pen-to-square"></i> QUOTE</button>
+                  <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP</button>
+                  <button class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson"><i class="fa-solid fa-truck-fast"></i> FREIGHT</button>
+                </div>
               </div>
             </div>
-          </div>
-        `;
+          `;
+
+        // Click event on the card to navigate to product detail
+        div.addEventListener('click', function (e) {
+          // Ignore if clicked on button or link inside
+          if (e.target.closest('button') || e.target.closest('a')) return;
+          window.location.href = `product.html?id=${product.id}`;
+        });
+
         return div;
       }
 
@@ -660,29 +746,29 @@
         const materials = getMaterials();
         const sizes = getSizes();
         let html = `
-          <div class="premium-card mb-6">
-            <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Categories</h3>
-            <ul class="text-sm text-brand-textSecondary font-medium" id="category-list">`;
+            <div class="premium-card mb-6">
+              <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Categories</h3>
+              <ul class="text-sm text-brand-textSecondary font-medium" id="category-list">`;
         cats.forEach(cat => {
           const count = getCategoryCount(cat);
           const active = currentCategory === cat ? 'active' : '';
           html += `<li><a href="#" class="flex items-center justify-between px-4 py-2.5 sidebar-link ${active} border-b border-brand-border/30 category-link" data-category="${cat}">${cat} <span class="text-xs font-normal">${count}</span></a></li>`;
         });
         html += `</ul></div>
-          <div class="premium-card">
-            <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Filter By</h3>
-            <div class="p-4 border-b border-brand-border">
-              <div class="flex justify-between items-center mb-3 cursor-pointer"><h4 class="text-sm font-bold text-brand-text">SIZE</h4><i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i></div>
-              <div class="space-y-2.5 text-sm text-brand-textSecondary" id="size-filters">`;
+            <div class="premium-card">
+              <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Filter By</h3>
+              <div class="p-4 border-b border-brand-border">
+                <div class="flex justify-between items-center mb-3 cursor-pointer"><h4 class="text-sm font-bold text-brand-text">SIZE</h4><i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i></div>
+                <div class="space-y-2.5 text-sm text-brand-textSecondary" id="size-filters">`;
         sizes.forEach(size => {
           const count = getSizeCount(size);
           const checked = selectedSizes.includes(size) ? 'checked' : '';
           html += `<label class="flex items-center justify-between cursor-pointer group"><div class="flex items-center gap-2"><input type="checkbox" class="size-check w-4 h-4 border-brand-border rounded text-brand-crimson focus:ring-brand-crimson" value="${size}" ${checked}><span class="group-hover:text-brand-text transition-colors">${size}</span></div><span class="text-xs text-brand-textSecondary">(${count})</span></label>`;
         });
         html += `</div></div>
-          <div class="p-4">
-            <div class="flex justify-between items-center mb-3 cursor-pointer"><h4 class="text-sm font-bold text-brand-text">MATERIAL</h4><i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i></div>
-            <div class="space-y-2.5 text-sm text-brand-textSecondary" id="material-filters">`;
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-3 cursor-pointer"><h4 class="text-sm font-bold text-brand-text">MATERIAL</h4><i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i></div>
+              <div class="space-y-2.5 text-sm text-brand-textSecondary" id="material-filters">`;
         materials.forEach(mat => {
           const count = getMaterialCount(mat);
           const checked = selectedMaterials.includes(mat) ? 'checked' : '';
@@ -740,14 +826,18 @@
           const div = document.createElement('div');
           div.className = 'premium-card p-3 text-center group cursor-pointer transition-all';
           div.innerHTML = `
-            <span class="inline-block bg-brand-navy text-white text-[9px] font-bold px-1.5 py-0.5 rounded mb-2 w-full text-left border border-white/10">${p.code}</span>
-            <div class="relative h-28 mb-3 flex items-center justify-center product-img-bg">
-              <img src="${p.image}" alt="${p.name}" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-              <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[8px] px-1.5 py-0.5 rounded border border-white/10">${p.size}</div>
-            </div>
-            <h4 class="text-xs font-bold mb-1 truncate text-brand-text">${p.name}</h4>
-            <div class="flex items-center justify-center gap-1"><span class="text-brand-crimson font-bold text-sm">$${p.price.toFixed(2)}</span><span class="text-[9px] text-brand-textSecondary">Now Net</span></div>
-          `;
+              <span class="inline-block bg-brand-navy text-white text-[9px] font-bold px-1.5 py-0.5 rounded mb-2 w-full text-left border border-white/10">${p.code}</span>
+              <div class="relative h-28 mb-3 flex items-center justify-center product-img-bg">
+                <img src="${p.image}" alt="${p.name}" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[8px] px-1.5 py-0.5 rounded border border-white/10">${p.size}</div>
+              </div>
+              <h4 class="text-xs font-bold mb-1 truncate text-brand-text">${p.name}</h4>
+              <div class="flex items-center justify-center gap-1"><span class="text-brand-crimson font-bold text-sm">$${p.price.toFixed(2)}</span><span class="text-[9px] text-brand-textSecondary">Now Net</span></div>
+            `;
+          // Popular card click also navigates to product detail
+          div.addEventListener('click', function () {
+            window.location.href = `product.html?id=${p.id}`;
+          });
           popularGrid.appendChild(div);
         });
       }
