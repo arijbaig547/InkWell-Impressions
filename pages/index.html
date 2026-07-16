@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inkwell Impressions</title>
-
+    <title>Hero Responsive · Inkwell Impressions</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -26,18 +25,19 @@
             }
         }
     </script>
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap"
         rel="stylesheet">
-
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        /* base */
         body {
             font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
 
         h1,
@@ -63,12 +63,186 @@
             z-index: 0;
             opacity: 0.9;
         }
+
+        /* ---------- RESPONSIVE HERO TWEAKS ---------- */
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            align-items: center;
+            padding: 2rem 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr 1.2fr 0.6fr;
+                gap: 1rem;
+                padding: 2rem 2.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr 1.5fr 0.7fr;
+                gap: 2rem;
+                padding: 2rem 4rem;
+            }
+        }
+
+        .hero-left .tagline {
+            letter-spacing: 0.3em;
+            font-size: 0.7rem;
+        }
+
+        .hero-left h1 {
+            font-size: 2.6rem;
+            line-height: 1.1;
+        }
+
+        @media (min-width: 640px) {
+            .hero-left h1 {
+                font-size: 3.2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-left h1 {
+                font-size: 4.5rem;
+            }
+        }
+
+        .hero-center-bag {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 280px;
+            overflow: visible;
+        }
+
+        .hero-center-bag img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            object-fit: contain;
+            transform: scale(1.3) translateX(-6px);
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+        }
+
+        @media (min-width: 640px) {
+            .hero-center-bag img {
+                max-width: 550px;
+                transform: scale(1.4) translateX(-8px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-center-bag {
+                min-height: 500px;
+            }
+
+            .hero-center-bag img {
+                max-width: 700px;
+                transform: scale(1.65) translateX(-10px);
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .hero-center-bag img {
+                max-width: 900px;
+                transform: scale(1.7) translateX(-12px);
+            }
+        }
+
+        .hero-right {
+            text-align: right;
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-right {
+                display: block;
+            }
+        }
+
+        .hero-right h2 {
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 1280px) {
+            .hero-right h2 {
+                font-size: 2.8rem;
+            }
+        }
+
+        /* buttons stack on small screens */
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .hero-actions button {
+            padding: 0.6rem 1.4rem;
+            font-size: 0.75rem;
+        }
+
+        @media (min-width: 480px) {
+            .hero-actions button {
+                padding: 0.75rem 1.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* remove clip path on mobile */
+        @media (max-width: 1023px) {
+            .hero-clip-path {
+                display: none;
+            }
+        }
+
+        /* extra spacing for fixed nav */
+        .hero-section {
+            padding-top: 5rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero-section {
+                padding-top: 6rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-section {
+                padding-top: 7rem;
+            }
+        }
+
+        /* tiny text adjustment */
+        .hero-left p.text-gray-300 {
+            font-size: 0.85rem;
+            max-width: 28rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero-left p.text-gray-300 {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* remove extra spacing from static markup */
+        .gs-hero-left,
+        .gs-hero-center,
+        .gs-hero-right {
+            /* keep GSAP classes but no extra layout */
+        }
     </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Navbar -->
+    <!-- Navbar (static from original, kept for context) -->
     <nav class="bg-brand-blue text-white px-8 py-4 flex justify-between items-center fixed w-full z-50">
         <div class="flex items-center">
             <a href="index.html">
@@ -76,149 +250,123 @@
                     class="h-16 w-auto object-contain">
             </a>
         </div>
-
         <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wide">
-            <li>
-                <a href="index.html" class="text-brand-red">Home</a>
-            </li>
-            <li>
-                <a href="products.html" class="hover:text-brand-red transition">Products</a>
-            </li>
-            <li>
-                <a href="categories.html" class="hover:text-brand-red transition">Categories</a>
-            </li>
-            <li>
-                <a href="about.html" class="hover:text-brand-red transition">About Us</a>
-            </li>
-            <li>
-                <a href="contact.html" class="hover:text-brand-red transition">Contact</a>
-            </li>
+            <li><a href="index.html" class="text-brand-red">Home</a></li>
+            <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
+            <li><a href="categories.html" class="hover:text-brand-red transition">Categories</a></li>
+            <li><a href="about.html" class="hover:text-brand-red transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
         </ul>
-
         <div class="flex space-x-4 items-center">
             <button
                 class="bg-brand-red hover:bg-red-700 text-white px-6 py-2 text-sm font-semibold uppercase tracking-wide transition">
-                Request a Quote
+                LOGIN/SIGNUP
             </button>
             <i class="fa-solid fa-search cursor-pointer"></i>
         </div>
     </nav>
-    <!-- Hero Section -->
-    <header class="hero-bg min-h-screen pt-24 flex items-center relative overflow-hidden">
 
+    <!-- ========================================================= -->
+    <!-- HERO SECTION – FULLY RESPONSIVE (only this part is changed) -->
+    <!-- ========================================================= -->
+    <header class="hero-bg hero-section min-h-screen flex items-center relative overflow-hidden">
+
+        <!-- white clip (hidden on mobile) -->
         <div class="hero-clip-path hidden lg:block"></div>
 
-        <div class="container mx-auto px-8 relative z-10 
-                grid grid-cols-1 lg:grid-cols-[1fr_1.5fr_0.7fr] 
-                gap-2 items-center">
+        <!-- responsive grid container -->
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 hero-container">
 
-
-            <!-- Hero Left -->
-            <div class="text-white gs-hero-left">
-
-                <p class="text-brand-red text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+            <!-- LEFT: text & CTA -->
+            <div class="hero-left text-white gs-hero-left">
+                <p class="tagline text-brand-red text-xs font-semibold uppercase tracking-[0.3em] mb-4">
                     Premium Printing Solutions
                 </p>
-
-                <h1 class="text-5xl lg:text-6xl font-bold leading-[1.1] mb-5">
+                <h1 class="font-bold leading-[1.1] mb-4">
                     Build Brands
                     <br>
                     That Leave
                     <br>
-                    <span class="text-brand-red">
-                        Impressions.
-                    </span>
+                    <span class="text-brand-red">Impressions.</span>
                 </h1>
-
-                <p class="text-gray-300 text-sm max-w-sm mb-8">
+                <p class="text-gray-300 text-sm md:text-base max-w-sm mb-6">
                     Luxury packaging, custom gifts and premium printing crafted for modern brands.
                 </p>
-
-
-                <div class="flex gap-4">
-
+                <div class="hero-actions">
                     <button
-                        class="bg-brand-red hover:bg-red-700 text-white px-6 py-3 text-sm font-semibold uppercase transition">
+                        class="bg-brand-red hover:bg-red-700 text-white font-semibold uppercase transition rounded-sm">
                         Explore Products →
                     </button>
-
                     <button
-                        class="border border-white/40 hover:bg-white hover:text-black text-white px-6 py-3 text-sm font-semibold uppercase transition">
+                        class="border border-white/40 hover:bg-white hover:text-black text-white font-semibold uppercase transition rounded-sm">
                         Get Quote →
                     </button>
-
                 </div>
-
             </div>
 
-
-
-            <!-- Hero Center Bag -->
-            <div class="gs-hero-center relative h-[750px] flex justify-center items-center overflow-visible">
-
-
-                <img src="../assets/product-images/hero tote/1.png" alt="Premium Tote Bag" class="w-[1000px] h-[1000px] object-contain 
-                       scale-[1.65] -translate-x-6
-                       drop-shadow-2xl gs-hero-bag">
-
+            <!-- CENTER: hero bag image (scaled responsively) -->
+            <div class="hero-center-bag gs-hero-center">
+                <img src="../assets/product-images/hero tote/group.png" alt="Premium Tote Bag"
+                    class="drop-shadow-2xl gs-hero-bag">
             </div>
 
-
-
-            <!-- Hero Right -->
-            <div class="hidden lg:block text-right gs-hero-right">
-
-                <p class="text-brand-red text-xs uppercase tracking-[0.3em] mb-3">
+            <!-- RIGHT: trusted quality (hidden on tablet & mobile) -->
+            <div class="hero-right gs-hero-right text-white">
+                <p class="text-brand-red text-xs uppercase tracking-[0.3em] mb-2">
                     Trusted Quality
                 </p>
-
-                <h2 class="text-3xl font-bold leading-tight">
+                <h2 class="font-bold leading-tight text-gray-700">
                     Crafted For
                     <br>
                     Leading Brands
                 </h2>
-
             </div>
 
-
         </div>
-
+        <!-- end container -->
     </header>
 
     <!-- Stats Section -->
     <section class="bg-white py-12 border-b border-gray-200">
         <div
             class="container mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left divide-x divide-gray-200">
+
             <div class="flex items-center space-x-4 px-4 gs-stat">
-                <i class="fa-solid fa-award text-3xl text-brand-red"></i>
+                <i class="fa-solid fa-bolt text-3xl text-brand-red"></i>
                 <div>
-                    <h3 class="text-2xl font-bold text-brand-blue">15+</h3>
-                    <p class="text-xs text-gray-500 uppercase">Years of Excellence</p>
+                    <h3 class="text-lg font-bold text-brand-blue">Rush Orders</h3>
+                    <p class="text-xs text-gray-500 uppercase">Available for Tight Deadlines</p>
                 </div>
             </div>
+
             <div class="flex items-center space-x-4 px-4 gs-stat">
-                <i class="fa-solid fa-briefcase text-3xl text-brand-red"></i>
+                <i class="fa-solid fa-shield-halved text-3xl text-brand-red"></i>
                 <div>
-                    <h3 class="text-2xl font-bold text-brand-blue">5000+</h3>
-                    <p class="text-xs text-gray-500 uppercase">Projects Delivered</p>
+                    <h3 class="text-lg font-bold text-brand-blue">Secure Payments</h3>
+                    <p class="text-xs text-gray-500 uppercase">SSL Protected & Fraud Safe</p>
                 </div>
             </div>
+
             <div class="flex items-center space-x-4 px-4 gs-stat">
-                <i class="fa-solid fa-globe text-3xl text-brand-red"></i>
+                <i class="fa-solid fa-medal text-3xl text-brand-red"></i>
                 <div>
-                    <h3 class="text-2xl font-bold text-brand-blue">Worldwide</h3>
-                    <p class="text-xs text-gray-500 uppercase">Shipping & Delivery</p>
+                    <h3 class="text-lg font-bold text-brand-blue">Premium Quality</h3>
+                    <p class="text-xs text-gray-500 uppercase">Guaranteed Craftsmanship</p>
                 </div>
             </div>
+
             <div class="flex items-center space-x-4 px-4 gs-stat">
-                <i class="fa-solid fa-users text-3xl text-brand-red"></i>
+                <i class="fa-solid fa-earth-americas text-3xl text-brand-red"></i>
                 <div>
-                    <h3 class="text-2xl font-bold text-brand-blue">500+</h3>
-                    <p class="text-xs text-gray-500 uppercase">Corporate Clients</p>
+                    <h3 class="text-lg font-bold text-brand-blue">Global Delivery</h3>
+                    <p class="text-xs text-gray-500 uppercase">Worldwide Shipping Available</p>
                 </div>
             </div>
+
         </div>
     </section>
+
+
 
     <!-- Categories Section -->
     <section class="bg-white py-20">
@@ -285,6 +433,104 @@
                     <span class="text-brand-red text-sm">&rarr;</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-r from-brand-blue to-[#0b2d5a] overflow-hidden">
+        <div class="container mx-auto px-8">
+
+            <div
+                class="relative rounded-3xl bg-white/10 backdrop-blur-lg border border-white/20 p-10 md:p-14 overflow-hidden">
+
+                <!-- Decorative Glow -->
+                <div
+                    class="absolute -top-20 -right-20 w-64 h-64 bg-brand-red/20 rounded-full blur-3xl pointer-events-none">
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+
+                    <!-- Content -->
+                    <div>
+                        <div
+                            class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-brand-red text-white text-sm font-semibold mb-6">
+                            <i class="fa-solid fa-bolt"></i>
+                            Rush Orders Available
+                        </div>
+
+                        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                            Tight Deadline?
+                            <span class="text-brand-red">We've Got You Covered.</span>
+                        </h2>
+
+                        <p class="mt-6 text-lg text-gray-200 leading-relaxed">
+                            Need your promotional products delivered on a short timeline? Our team specializes in
+                            rush production and works hard to meet aggressive deadlines without compromising on
+                            quality.
+                        </p>
+
+                        <div class="mt-8 flex flex-wrap gap-4">
+
+                            <div
+                                class="flex items-center gap-3 bg-white/10 px-5 py-3 rounded-xl border border-white/10">
+                                <i class="fa-solid fa-clock text-brand-red"></i>
+                                <span class="text-white">Fast Production</span>
+                            </div>
+
+                            <div
+                                class="flex items-center gap-3 bg-white/10 px-5 py-3 rounded-xl border border-white/10">
+                                <i class="fa-solid fa-calendar-check text-brand-red"></i>
+                                <span class="text-white">On-Time Delivery</span>
+                            </div>
+
+                            <div
+                                class="flex items-center gap-3 bg-white/10 px-5 py-3 rounded-xl border border-white/10">
+                                <i class="fa-solid fa-headset text-brand-red"></i>
+                                <span class="text-white">Dedicated Support</span>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact"
+                            class="inline-flex items-center gap-3 mt-10 bg-brand-red hover:bg-red-700 transition px-7 py-4 rounded-xl text-white font-semibold">
+                            Request a Rush Order
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="relative flex justify-center">
+
+                        <div class="w-80 h-80 rounded-full bg-brand-red/20 blur-3xl absolute"></div>
+
+                        <div
+                            class="relative w-64 h-64 rounded-full bg-white shadow-2xl flex items-center justify-center">
+
+                            <div class="text-center">
+
+                                <div
+                                    class="w-20 h-20 mx-auto rounded-full bg-brand-red flex items-center justify-center text-white text-4xl">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+
+                                <h3 class="mt-6 text-2xl font-bold text-brand-blue">
+                                    Rush Production
+                                </h3>
+
+                                <p class="mt-3 text-gray-600 px-8">
+                                    Contact our team to discuss expedited production options for your next order.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -449,11 +695,26 @@
                 </div>
                 <p class="text-xs text-gray-400 mb-6">Your global partner for premium printing, packaging, corporate
                     gifts and promotional products.</p>
-                <div class="flex space-x-4">
-                    <i class="fa-brands fa-facebook cursor-pointer hover:text-brand-red"></i>
-                    <i class="fa-brands fa-instagram cursor-pointer hover:text-brand-red"></i>
-                    <i class="fa-brands fa-linkedin cursor-pointer hover:text-brand-red"></i>
-                    <i class="fa-brands fa-twitter cursor-pointer hover:text-brand-red"></i>
+                <div class="flex items-center gap-3">
+                    <a href="https://www.linkedin.com/in/inkwell-impressions-2007883b4" target="_blank"
+                        class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/inkwellimpressionspromo/" target="_blank"
+                        class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61552261877738" target="_blank"
+                        class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://x.com/Inkwell_Imp" target="_blank"
+                        class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </div>
             </div>
 
@@ -569,21 +830,13 @@
         //     duration: 0.5,
         //     ease: "back.out(1.7)"
         // }, "-=0.6")
-
-        gsap.to(".gs-hero-bag", {
-            y: -45,
-            duration: 2.8,
-            repeat: -1,
-            yoyo: true,
-            ease: "power1.inOut"
-        });
-
-        gsap.to(".gs-hero-bag", {
-            rotation: 3,
-            duration: 4,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut"
+        gsap.from(".gs-hero-bag", {
+            opacity: 0,
+            y: 40,
+            scale: 0.9,
+            duration: 1.5,
+            ease: "expo.out",
+            delay: 0.3
         });
 
         // Industries Animation
