@@ -294,7 +294,7 @@
 
                             <button onclick="showForm('credit')" id="tab-credit"
                                 class="tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
-                                <span class="font-medium text-sm tracking-wide">Credit Application</span>
+                                <span class="font-medium text-sm tracking-wide">Credit Application Form</span>
                                 <svg class="w-4 h-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -533,55 +533,214 @@
                         <p
                             class="text-sm text-brand-textSecondary mb-8 border-l-3 border-brand-crimson pl-4 bg-brand-bg/30 p-3 rounded">
                             Submit your basic corporate information to initiate a Net-30 credit terms review. Our
-                            finance team will follow up directly with next steps.</p>
+                            finance team will follow up directly with next steps.
+                        </p>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
-                            <div class="md:col-span-2"><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Legal
-                                    Company Name *</label><input type="text" class="w-full input-premium" required>
-                            </div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">DBA
-                                    (If applicable)</label><input type="text" class="w-full input-premium"></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Years
-                                    in Business *</label><input type="number" class="w-full input-premium" required>
-                            </div>
-
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Accounts
-                                    Payable Contact *</label><input type="text" class="w-full input-premium" required>
-                            </div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">AP
-                                    Email Address *</label><input type="email" class="w-full input-premium" required>
-                            </div>
-
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Tax
-                                    ID / EIN (Optional)</label><input type="text" class="w-full input-premium"></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Primary
-                                    Bank Name</label><input type="text" class="w-full input-premium"></div>
-
-                            <div class="md:col-span-2">
-                                <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Corporate
-                                    Address *</label>
-                                <input type="text" class="w-full input-premium mb-3" placeholder="Street Address"
-                                    required>
-                                <div class="grid grid-cols-3 gap-3">
-                                    <input type="text" class="w-full input-premium col-span-1" placeholder="City"
-                                        required>
-                                    <input type="text" class="w-full input-premium col-span-1" placeholder="State"
-                                        required>
-                                    <input type="text" class="w-full input-premium col-span-1" placeholder="Zip"
-                                        required>
-                                </div>
+                        <!-- Business Information -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Business Information
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Business
+                                        Name *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Date
+                                        *</label><input type="date" class="w-full input-premium" required></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Address
+                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City
+                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
+                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
+                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Telephone
+                                        *</label><input type="tel" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Fax</label><input
+                                        type="text" class="w-full input-premium"></div>
                             </div>
                         </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Credit Card Authorization - Card 1 -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Credit Card Authorization — Card 1
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                        Order Email Address</label><input type="email" class="w-full input-premium">
+                                </div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Accounts
+                                        Payable Email</label><input type="email" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Finance
+                                        Contact Name</label><input type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
+                                        on the Card</label><input type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
+                                        Address</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2 flex flex-col gap-2 mt-2">
+                                    <div class="flex items-center gap-3">
+                                        <input type="radio" name="card1-usage" id="card1-keep"
+                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="keep">
+                                        <label for="card1-keep" class="text-sm text-brand-textSecondary">Keep it on file
+                                            for future (radio option)</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="radio" name="card1-usage" id="card1-once"
+                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="once">
+                                        <label for="card1-once" class="text-sm text-brand-textSecondary">Use only for
+                                            Purchase Order (radio option)</label>
+                                    </div>
+                                </div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                        Order Number</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
+                                        Value</label><input type="text" class="w-full input-premium"
+                                        placeholder="$0.00"></div>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Card 2 (Optional) -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Credit Card Authorization — Card 2 <span
+                                    class="text-xs font-medium text-brand-gray ml-2">(Optional)</span>
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                        Order Email Address</label><input type="email" class="w-full input-premium">
+                                </div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Accounts
+                                        Payable Email</label><input type="email" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Finance
+                                        Contact Name</label><input type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
+                                        on the Card</label><input type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
+                                        Address</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2 flex flex-col gap-2 mt-2">
+                                    <div class="flex items-center gap-3">
+                                        <input type="radio" name="card2-usage" id="card2-keep"
+                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="keep">
+                                        <label for="card2-keep" class="text-sm text-brand-textSecondary">Keep it on file
+                                            for future (radio option)</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="radio" name="card2-usage" id="card2-once"
+                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="once">
+                                        <label for="card2-once" class="text-sm text-brand-textSecondary">Use only for
+                                            Purchase Order (radio option)</label>
+                                    </div>
+                                </div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                        Order Number</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
+                                        Value</label><input type="text" class="w-full input-premium"
+                                        placeholder="$0.00"></div>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Additional Comments -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Additional Comments
+                            </h3>
+                            <div class="grid grid-cols-1 gap-5">
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Comments</label><textarea
+                                        class="w-full input-premium h-24 resize-none"
+                                        placeholder="Any special instructions or notes..."></textarea></div>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Authorization Notice -->
+                        <div class="mb-8 premium-card p-5 bg-brand-bg/40 border-l-4 border-brand-crimson">
+                            <p class="text-sm text-brand-textSecondary leading-relaxed">
+                                By submitting this form, I authorize Ink Well Impressions to use the payment method that
+                                will be securely provided directly to the finance department for the purchase order(s)
+                                listed above. Any approved adjustments due to quantity changes, shipping charges, or
+                                pricing revisions are also authorized.
+                            </p>
+                        </div>
+
+                        <!-- Signature Section -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Signature
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
+                                        Holder's Name</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
+                                        Holder's Signature</label><input type="text" class="w-full input-premium"
+                                        placeholder="Type full name as signature"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Date
+                                        Signed</label><input type="date" class="w-full input-premium"></div>
+                            </div>
+                        </div>
+
                         <button type="submit"
-                            class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Initiate Credit
+                            class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Submit Credit
                             Application</button>
                     </form>
 
@@ -590,32 +749,242 @@
                         <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Submit
                             Purchase Order</h2>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
-                            <div class="md:col-span-2"><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
-                                    Name *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchasing
-                                    Agent Name *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
-                                    Address *</label><input type="email" class="w-full input-premium" required></div>
-
-                            <div class="md:col-span-2"><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
-                                    Order Number (PO#) *</label><input type="text" class="w-full input-premium"
-                                    required></div>
-
-                            <div class="md:col-span-2">
-                                <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Special
-                                    Instructions / Notes</label>
-                                <textarea class="w-full input-premium h-20 resize-none"
-                                    placeholder="Any special receiving hours, specific account manager details, etc."></textarea>
+                        <!-- Section 1 — Company Information -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Company Information
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
+                                        Name *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
+                                        Person *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Job
+                                        Title</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
+                                        Address *</label><input type="email" class="w-full input-premium" required>
+                                </div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Phone
+                                        Number *</label><input type="tel" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
+                                        Address</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
+                                        / Province</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
+                                        / Postal Code</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Country</label><input
+                                        type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Tax
+                                        ID / EIN (Optional)</label><input type="text" class="w-full input-premium">
+                                </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Submit
-                            Order</button>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Section 2 — Purchase Order Information -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Purchase Order Information
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                        Order Number *</label><input type="text" class="w-full input-premium" required>
+                                </div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                        Order Date *</label><input type="date" class="w-full input-premium" required>
+                                </div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Required
+                                        Delivery Date *</label><input type="date" class="w-full input-premium" required>
+                                </div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Product
+                                        Category *</label><input type="text" class="w-full input-premium" required>
+                                </div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Product
+                                        Name *</label><input type="text" class="w-full input-premium" required></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Quantity
+                                        *</label><input type="number" class="w-full input-premium" required></div>
+                                <div class="md:col-span-2">
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Decoration
+                                        / Imprint Method *</label>
+                                    <select class="w-full input-premium appearance-none cursor-pointer" required>
+                                        <option value="" disabled selected>Select a method</option>
+                                        <option value="screen-printing">Screen Printing</option>
+                                        <option value="spot-branding">Spot Branding</option>
+                                        <option value="heat-transfer">Heat Transfer</option>
+                                        <option value="embroidery">Embroidery</option>
+                                        <option value="laser-engraving">Laser Engraving</option>
+                                        <option value="uv-printing">UV Printing</option>
+                                        <option value="blank-product">Blank Product</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Section 3 — Artwork & Branding -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Artwork & Branding
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <!-- Upload Company Logo -->
+                                <div class="md:col-span-1">
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Upload
+                                        Company Logo</label>
+                                    <div
+                                        class="flex justify-center flex-col items-center w-full h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg cursor-pointer hover:border-brand-crimson group">
+                                        <svg class="w-6 h-6 text-brand-textSecondary mb-2 group-hover:text-brand-crimson transition"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                        </svg>
+                                        <span
+                                            class="text-xs text-brand-textSecondary group-hover:text-brand-crimson transition">Drag
+                                            & drop or click to upload</span>
+                                        <span class="text-[10px] text-brand-gray mt-1">AI, EPS, SVG, PDF, PNG,
+                                            JPG</span>
+                                        <input type="file" class="hidden" accept=".ai,.eps,.svg,.pdf,.png,.jpg,.jpeg">
+                                    </div>
+                                </div>
+                                <!-- Upload Artwork / Design Files -->
+                                <div class="md:col-span-1">
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Upload
+                                        Artwork / Design Files</label>
+                                    <div
+                                        class="flex justify-center flex-col items-center w-full h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg cursor-pointer hover:border-brand-crimson group">
+                                        <svg class="w-6 h-6 text-brand-textSecondary mb-2 group-hover:text-brand-crimson transition"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                        </svg>
+                                        <span
+                                            class="text-xs text-brand-textSecondary group-hover:text-brand-crimson transition">Drag
+                                            & drop or click to upload</span>
+                                        <span class="text-[10px] text-brand-gray mt-1">AI, EPS, SVG, PDF, PNG, JPG,
+                                            ZIP</span>
+                                        <input type="file" class="hidden"
+                                            accept=".ai,.eps,.svg,.pdf,.png,.jpg,.jpeg,.zip">
+                                    </div>
+                                </div>
+                                <!-- Artwork Notes -->
+                                <div class="md:col-span-2">
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Artwork
+                                        Notes</label>
+                                    <textarea class="w-full input-premium h-24 resize-none"
+                                        placeholder="Logo placement, Pantone colors, print size, branding instructions..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Section 4 — Shipping -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Shipping
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Shipping
+                                        Address</label><input type="text" class="w-full input-premium"></div>
+                                <div><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
+                                        Address</label><input type="text" class="w-full input-premium"></div>
+                                <div class="md:col-span-2 flex items-center gap-3 mt-1">
+                                    <input type="checkbox" id="same-address"
+                                        class="w-4 h-4 accent-brand-crimson border-brand-border rounded">
+                                    <label for="same-address" class="text-sm text-brand-textSecondary">Billing address
+                                        is the same as shipping address</label>
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Preferred
+                                        Shipping Method</label>
+                                    <select class="w-full input-premium appearance-none cursor-pointer">
+                                        <option value="standard">Standard</option>
+                                        <option value="express">Express</option>
+                                        <option value="rush">Rush Order</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Section 5 — Additional Information -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Additional Information
+                            </h3>
+                            <div class="grid grid-cols-1 gap-5">
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Additional
+                                        Details</label>
+                                    <textarea class="w-full input-premium h-28 resize-none"
+                                        placeholder="Special packaging requirements, delivery instructions, account manager notes, receiving hours, or any additional information..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Section 6 — Agreement -->
+                        <div class="mb-8">
+                            <div class="flex items-start gap-3">
+                                <input type="checkbox" id="agreement"
+                                    class="w-4 h-4 mt-1 accent-brand-crimson border-brand-border rounded" required>
+                                <label for="agreement" class="text-sm text-brand-textSecondary">I confirm that all
+                                    purchase order information is accurate and artwork files are ready for production.
+                                    *</label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="flex flex-col items-start gap-2">
+                            <button type="submit"
+                                class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto text-base">Submit
+                                Purchase Order</button>
+                            <p class="text-xs text-brand-gray mt-2">Our team will review your purchase order and contact
+                                you within one business day.</p>
+                        </div>
+
                     </form>
 
                 </div>
@@ -637,7 +1006,8 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../config/supabase.js"></script>
     <!-- Tab Switching Script -->
     <script>
         function showForm(formId) {
@@ -687,20 +1057,47 @@
         });
 
         // Prevent default form submission
-        document.querySelectorAll('form').forEach(form => {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Thank you! Your request has been successfully submitted to our team.');
-                form.reset();
-                // reset file upload labels
-                form.querySelectorAll('.flex input[type="file"]').forEach(inp => {
-                    const label = inp.closest('.flex')?.querySelector('span');
-                    if (label) {
-                        label.textContent = 'Click to upload';
-                        label.classList.remove('text-brand-crimson');
-                    }
-                });
-            });
+        // document.querySelectorAll('form').forEach(form => {
+        //     form.addEventListener('submit', (e) => {
+        //         e.preventDefault();
+        //         alert('Thank you! Your request has been successfully submitted to our team.');
+        //         form.reset();
+        //         // reset file upload labels
+        //         form.querySelectorAll('.flex input[type="file"]').forEach(inp => {
+        //             const label = inp.closest('.flex')?.querySelector('span');
+        //             if (label) {
+        //                 label.textContent = 'Click to upload';
+        //                 label.classList.remove('text-brand-crimson');
+        //             }
+        //         });
+        //     });
+        // });
+        const poForm = document.getElementById("form-po");
+
+        poForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const inputs = poForm.querySelectorAll("input, textarea");
+
+            const order = {
+                company_name: inputs[0].value,
+                agent_name: inputs[1].value,
+                email: inputs[2].value,
+                po_number: inputs[3].value,
+                notes: inputs[4].value
+            };
+
+            const { data, error } = await supabase
+                .from("purchase_orders")
+                .insert([order]);
+
+            if (error) {
+                console.log(error);
+                alert("Error submitting order");
+            } else {
+                alert("Order submitted successfully");
+                poForm.reset();
+            }
         });
     </script>
 

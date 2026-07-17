@@ -181,7 +181,7 @@
 
             <!-- Logo -->
             <a href="index.html" class="flex items-center">
-                <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Logo"
+                <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Solutions Logo"
                     class="h-12 w-auto object-contain">
             </a>
 
@@ -599,7 +599,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "NATURAL", prices: ["$6.44", "$5.58", "$5.25", "$5.08", "$4.90", "$4.79"] },
                         { label: "COLOR", prices: ["$8.00", "$7.10", "$6.77", "$6.60", "$6.42", "$6.31"] },
@@ -655,7 +655,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "NATURAL", prices: ["$5.44", "$4.58", "$4.25", "$4.08", "$3.90", "$3.79"] },
                         { label: "COLOR", prices: ["$7.00", "$6.10", "$5.77", "$5.60", "$5.42", "$5.31"] },
@@ -719,7 +719,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "NATURAL", prices: ["$6.44", "$5.58", "$5.25", "$5.08", "$4.90", "$4.79"] },
                         { label: "COLOR", prices: ["$8.00", "$7.10", "$6.77", "$6.60", "$6.42", "$6.31"] },
@@ -774,7 +774,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "NATURAL", prices: ["$5.44", "$4.58", "$4.25", "$4.08", "$3.90", "$3.79"] },
                         { label: "COLOR", prices: ["$7.00", "$6.10", "$5.77", "$5.60", "$5.42", "$5.31"] },
@@ -830,7 +830,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "NATURAL", prices: ["$5.44", "$4.58", "$4.25", "$4.08", "$3.90", "$3.79"] },
                         { label: "COLOR", prices: ["$7.00", "$6.10", "$5.77", "$5.60", "$5.42", "$5.31"] },
@@ -886,7 +886,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "NATURAL", prices: ["$6.44", "$5.58", "$5.25", "$5.08", "$4.90", "$4.79"] },
                         { label: "COLOR", prices: ["$8.00", "$7.10", "$6.77", "$6.60", "$6.42", "$6.31"] },
@@ -942,7 +942,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "WHITE", prices: ["$4.44", "$3.58", "$3.25", "$3.08", "$2.90", "$2.79"] },
                         { label: "COLOR", prices: ["$6.00", "$5.10", "$4.77", "$4.60", "$4.42", "$4.31"] },
@@ -997,7 +997,7 @@
                 },
                 blank: {
                     label: "BLANK PRICING (USD)",
-                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    // quantities: [72, 288, 500, 1000, 2000, 3000],
                     rows: [
                         { label: "WHITE", prices: ["$3.44", "$2.58", "$2.25", "$2.08", "$1.90", "$1.79"] },
                         { label: "COLOR", prices: ["$5.00", "$4.10", "$3.77", "$3.60", "$3.42", "$3.31"] },
@@ -1080,7 +1080,8 @@
                 colors.forEach(color => {
                     const div = document.createElement('div');
                     div.className = 'flex flex-col items-center gap-1 cursor-pointer group';
-                    const isActive = color.active || false;
+
+                    const isActive = color.active === true || (product.colors.indexOf(color) === 0 && color.name === "Natural");
                     const borderClass = isActive ? 'border-2 border-brand-crimson shadow-[0_0_0_1px_#fff]' :
                         'border border-brand-border group-hover:border-brand-text/30';
                     const bgClass = color.hex === '#FFFFFF' ? 'border border-brand-border' : '';
@@ -1093,15 +1094,34 @@
             }
 
             // ----- render pricing -----
+            // ----- render pricing -----
             function renderPricing(method) {
                 const data = product.pricing[method];
                 if (!data) return;
 
                 document.querySelector('#pricing-section .text-brand-textSecondary').textContent = data.label;
 
-                data.quantities.forEach((qty, idx) => {
-                    if (pQty[idx]) pQty[idx].textContent = qty;
-                });
+                // Check if this is blank pricing (no quantities defined)
+                const isBlank = method === 'blank' || !data.quantities;
+
+                if (isBlank) {
+                    // Hide the entire Quantity header row for blank
+                    const thead = document.querySelector('#pricing-section thead');
+                    if (thead) thead.style.display = 'none';
+
+                    // Hide all quantity cells
+                    pQty.forEach(el => {
+                        if (el) el.textContent = '';
+                    });
+                } else {
+                    // Show the header row for non-blank methods
+                    const thead = document.querySelector('#pricing-section thead');
+                    if (thead) thead.style.display = '';
+
+                    data.quantities.forEach((qty, idx) => {
+                        if (pQty[idx]) pQty[idx].textContent = qty;
+                    });
+                }
 
                 pricingBody.innerHTML = '';
                 data.rows.forEach(row => {
