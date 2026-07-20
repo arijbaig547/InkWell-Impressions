@@ -251,71 +251,55 @@
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
 
   <!-- Premium Navbar -->
-  <nav class="bg-white sticky top-0 z-50 border-b border-brand-border shadow-sm">
-    <div class="max-w-[1400px] mx-auto px-8 py-3 flex items-center justify-between">
-
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center">
-        <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Logo" class="h-12 w-auto object-contain">
+  <nav class="bg-brand-blue text-white px-4 sm:px-8 py-4 flex justify-between items-center fixed w-full z-50">
+    <div class="flex items-center">
+      <a href="index.html">
+        <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Solutions Logo"
+          class="h-12 sm:h-16 w-auto object-contain">
       </a>
+    </div>
 
-      <!-- Desktop Menu -->
-      <ul
-        class="hidden lg:flex items-center gap-8 text-sm font-medium uppercase tracking-wide text-brand-textSecondary">
-        <li>
-          <a href="index.html" class="hover:text-brand-crimson transition">
-            Home
-          </a>
-        </li>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
+      <li><a href="index.html" class="text-brand-red">Home</a></li>
+      <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
+      <li><a class="hover:text-brand-red transition">Categories</a></li>
+      <li><a class="hover:text-brand-red transition">About Us</a></li>
+      <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
+    </ul>
 
-        <li>
-          <a href="products.html" class="text-brand-crimson transition">
-            Products
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-brand-crimson transition">
-            Categories
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-brand-crimson transition">
-            About Us
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-brand-crimson transition">
-            Contact
-          </a>
-        </li>
-      </ul>
-
-
-      <!-- Right Actions -->
-      <div class="flex items-center gap-4">
-
-        <button class="btn-crimson px-5 py-2 text-xs font-semibold uppercase tracking-wide rounded">
-          LOGIN/SIGNUP
-        </button>
-
-        <button class="text-brand-textSecondary hover:text-brand-crimson transition text-lg">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-
-      </div>
-
-
-      <!-- Mobile Menu Icon -->
-      <button class="lg:hidden text-brand-navy text-xl">
-        <i class="fa-solid fa-bars"></i>
+    <div class="flex items-center gap-3 sm:gap-4">
+      <!-- Desktop Login Button -->
+      <button
+        class="hidden sm:block bg-brand-red hover:bg-red-700 text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
+        LOGIN/SIGNUP
       </button>
+      <i class="fa-solid fa-search cursor-pointer"></i>
 
+      <!-- Hamburger Button -->
+      <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
+        <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </nav>
 
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobileMenu"
+    class="hidden md:hidden bg-brand-blue text-white px-6 py-4 space-y-4 border-t border-gray-700 fixed w-full top-[72px] left-0 z-40">
+    <ul class="space-y-4 text-sm font-medium uppercase tracking-wide">
+      <li><a href="index.html" class="text-brand-red block py-2 border-b border-gray-700">Home</a></li>
+      <li><a href="products.html"
+          class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Products</a></li>
+      <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Categories</a></li>
+      <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">About Us</a></li>
+      <li><a href="contact.html" class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Contact</a>
+      </li>
+    </ul>
+    <button
+      class="w-full bg-brand-red hover:bg-red-700 text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
+      LOGIN/SIGNUP
+    </button>
+  </div>
   <!-- Page Header (navy/crimson) -->
   <header class="header-bg text-white py-10 px-8">
     <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
@@ -460,6 +444,25 @@
   </script>
 
   <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle icon between bars and X
+      hamburgerIcon.classList.toggle('fa-bars');
+      hamburgerIcon.classList.toggle('fa-xmark');
+    });
+
+    // Close menu when clicking a link (optional but better UX)
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.add('fa-bars');
+        hamburgerIcon.classList.remove('fa-xmark');
+      });
+    });
     // ----------------------------------------------
     // 1. PRODUCTS DATA (embedded)
     // ----------------------------------------------
@@ -476,9 +479,9 @@
       description: "7oz cotton canvas bag with self-fabric handles. Reinforced stitching.",
       popular: true
     }, {
-      id: "mqt6000",
+      id: "mqib6000",
       name: "Cotton Tote Bag Natural Body with Color Handles",
-      code: "MQT6000",
+      code: "MQIB6000",
       slug: "cotton-tote-natural-color-handles",
       category: "Tote Bags",
       material: "Cotton",
@@ -559,72 +562,72 @@
       image: "https://inkwell-impressions.com/storage/product_images/thmImage_W975_1773407422_1.jpg",
       description: "Economical non-woven tote.",
       popular: true
-    // }, {
-    //   id: "ib100",
-    //   name: "Premium Canvas Tote",
-    //   code: "IB100",
-    //   slug: "premium-canvas-tote",
-    //   category: "Tote Bags",
-    //   material: "Canvas",
-    //   size: '15"W x 16"H',
-    //   price: 35.00,
-    //   image: "https://placehold.co/150x150/ffffff/555555?text=Premium",
-    //   description: "High-quality premium canvas tote.",
-    //   popular: true
-    }, 
-    // {
-    //   id: "bp101",
-    //   name: "Classic Backpack",
-    //   code: "BP101",
-    //   slug: "classic-backpack",
-    //   category: "Backpacks",
-    //   material: "Canvas",
-    //   size: '12"W x 18"H x 6"D',
-    //   price: 55.00,
-    //   image: "https://placehold.co/150x150/ffffff/555555?text=Backpack",
-    //   description: "Sturdy canvas backpack with padded straps.",
-    //   popular: false
-    // }, 
-    // {
-    //   id: "cool1",
-    //   name: "Insulated Cooler Bag",
-    //   code: "COOL1",
-    //   slug: "insulated-cooler-bag",
-    //   category: "Cooler Bags",
-    //   material: "Non-Woven",
-    //   size: '10"W x 12"H x 8"D',
-    //   price: 42.00,
-    //   image: "https://placehold.co/150x150/ffffff/555555?text=Cooler",
-    //   description: "Keep your drinks cold with this insulated cooler.",
-    //   popular: false
-    // }, 
-    // {
-    //   id: "acc01",
-    //   name: "Leather Keychain",
-    //   code: "ACC01",
-    //   slug: "leather-keychain",
-    //   category: "Accessories",
-    //   material: "Cotton",
-    //   size: '2"x 4"',
-    //   price: 12.00,
-    //   image: "https://placehold.co/150x150/ffffff/555555?text=Keychain",
-    //   description: "Genuine leather keychain with metal ring.",
-    //   popular: false
-    // }, 
-    // {
-    //   id: "ib202",
-    //   name: "Canvas Drawstring Bag",
-    //   code: "IB202",
-    //   slug: "canvas-drawstring-bag",
-    //   category: "Drawstring Bags",
-    //   material: "Canvas",
-    //   size: '14"W x 18"H',
-    //   price: 18.00,
-    //   image: "https://placehold.co/150x150/ffffff/555555?text=Drawstring",
-    //   description: "Lightweight canvas drawstring bag.",
-    //   popular: false
-    // }
-  ];
+      // }, {
+      //   id: "ib100",
+      //   name: "Premium Canvas Tote",
+      //   code: "IB100",
+      //   slug: "premium-canvas-tote",
+      //   category: "Tote Bags",
+      //   material: "Canvas",
+      //   size: '15"W x 16"H',
+      //   price: 35.00,
+      //   image: "https://placehold.co/150x150/ffffff/555555?text=Premium",
+      //   description: "High-quality premium canvas tote.",
+      //   popular: true
+    },
+      // {
+      //   id: "bp101",
+      //   name: "Classic Backpack",
+      //   code: "BP101",
+      //   slug: "classic-backpack",
+      //   category: "Backpacks",
+      //   material: "Canvas",
+      //   size: '12"W x 18"H x 6"D',
+      //   price: 55.00,
+      //   image: "https://placehold.co/150x150/ffffff/555555?text=Backpack",
+      //   description: "Sturdy canvas backpack with padded straps.",
+      //   popular: false
+      // }, 
+      // {
+      //   id: "cool1",
+      //   name: "Insulated Cooler Bag",
+      //   code: "COOL1",
+      //   slug: "insulated-cooler-bag",
+      //   category: "Cooler Bags",
+      //   material: "Non-Woven",
+      //   size: '10"W x 12"H x 8"D',
+      //   price: 42.00,
+      //   image: "https://placehold.co/150x150/ffffff/555555?text=Cooler",
+      //   description: "Keep your drinks cold with this insulated cooler.",
+      //   popular: false
+      // }, 
+      // {
+      //   id: "acc01",
+      //   name: "Leather Keychain",
+      //   code: "ACC01",
+      //   slug: "leather-keychain",
+      //   category: "Accessories",
+      //   material: "Cotton",
+      //   size: '2"x 4"',
+      //   price: 12.00,
+      //   image: "https://placehold.co/150x150/ffffff/555555?text=Keychain",
+      //   description: "Genuine leather keychain with metal ring.",
+      //   popular: false
+      // }, 
+      // {
+      //   id: "ib202",
+      //   name: "Canvas Drawstring Bag",
+      //   code: "IB202",
+      //   slug: "canvas-drawstring-bag",
+      //   category: "Drawstring Bags",
+      //   material: "Canvas",
+      //   size: '14"W x 18"H',
+      //   price: 18.00,
+      //   image: "https://placehold.co/150x150/ffffff/555555?text=Drawstring",
+      //   description: "Lightweight canvas drawstring bag.",
+      //   popular: false
+      // }
+    ];
 
     // -------------------------------------------------
     // 2. RENDER ENGINE

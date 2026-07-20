@@ -243,28 +243,55 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Navbar (static from original, kept for context) -->
-    <nav class="bg-brand-blue text-white px-8 py-4 flex justify-between items-center fixed w-full z-50">
+    <nav class="bg-brand-blue text-white px-4 sm:px-8 py-4 flex justify-between items-center fixed w-full z-50">
         <div class="flex items-center">
             <a href="index.html">
-                <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Solutions Solutions Logo"
-                    class="h-16 w-auto object-contain">
+                <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Solutions Logo"
+                    class="h-12 sm:h-16 w-auto object-contain">
             </a>
         </div>
-        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wide">
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
             <li><a href="index.html" class="text-brand-red">Home</a></li>
             <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
-            <li><a href="categories.html" class="hover:text-brand-red transition">Categories</a></li>
-            <li><a href="about.html" class="hover:text-brand-red transition">About Us</a></li>
+            <li><a class="hover:text-brand-red transition">Categories</a></li>
+            <li><a class="hover:text-brand-red transition">About Us</a></li>
             <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
         </ul>
-        <div class="flex space-x-4 items-center">
+
+        <div class="flex items-center gap-3 sm:gap-4">
+            <!-- Desktop Login Button -->
             <button
-                class="bg-brand-red hover:bg-red-700 text-white px-6 py-2 text-sm font-semibold uppercase tracking-wide transition">
+                class="hidden sm:block bg-brand-red hover:bg-red-700 text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
                 LOGIN/SIGNUP
             </button>
             <i class="fa-solid fa-search cursor-pointer"></i>
+
+            <!-- Hamburger Button -->
+            <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
+                <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu"
+        class="hidden md:hidden bg-brand-blue text-white px-6 py-4 space-y-4 border-t border-gray-700 fixed w-full top-[72px] left-0 z-40">
+        <ul class="space-y-4 text-sm font-medium uppercase tracking-wide">
+            <li><a href="index.html" class="text-brand-red block py-2 border-b border-gray-700">Home</a></li>
+            <li><a href="products.html"
+                    class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Products</a></li>
+            <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Categories</a></li>
+            <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">About Us</a></li>
+            <li><a href="contact.html"
+                    class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Contact</a></li>
+        </ul>
+        <button
+            class="w-full bg-brand-red hover:bg-red-700 text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
+            LOGIN/SIGNUP
+        </button>
+    </div>
 
     <!-- ========================================================= -->
     <!-- HERO SECTION – FULLY RESPONSIVE (only this part is changed) -->
@@ -597,10 +624,12 @@
                 <div class="absolute -bottom-8 -right-8 bg-brand-blue w-2/3 h-2/3 -z-10 hidden md:block"></div>
             </div>
             <div class="gs-about-text">
-                <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-2">— About Inkwell Impressions Solutions
+                <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-2">— About Inkwell Impressions
+                    Solutions
                 </p>
                 <h2 class="text-4xl font-serif text-brand-blue font-bold mb-6">Crafting Brands.<br>Creating Impact.</h2>
-                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Inkwell Impressions Solutions is a leading B2B printing and
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Inkwell Impressions Solutions is a leading B2B
+                    printing and
                     packaging company offering a wide range of premium products and custom solutions for businesses
                     worldwide.</p>
                 <ul class="space-y-4 mb-8">
@@ -608,9 +637,10 @@
                             class="fa-solid fa-check-circle text-brand-red mr-3"></i> State-of-the-art manufacturing
                         facility</li>
                     <li class="flex items-center text-sm text-gray-700 font-medium"><i
-                            class="fa-solid fa-check-circle text-brand-red mr-3"></i>Rush orders and meet aggressive deadlines
-                        </li>
-                   
+                            class="fa-solid fa-check-circle text-brand-red mr-3"></i>Rush orders and meet aggressive
+                        deadlines
+                    </li>
+
                     <li class="flex items-center text-sm text-gray-700 font-medium"><i
                             class="fa-solid fa-check-circle text-brand-red mr-3"></i> Skilled craftsmanship & strict
                         quality control</li>
@@ -784,6 +814,25 @@
     <script src="../config/supabase.js"></script>
 
     <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icon between bars and X
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-xmark');
+        });
+
+        // Close menu when clicking a link (optional but better UX)
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.add('fa-bars');
+                hamburgerIcon.classList.remove('fa-xmark');
+            });
+        });
         gsap.registerPlugin(ScrollTrigger);
 
         // Hero Animations

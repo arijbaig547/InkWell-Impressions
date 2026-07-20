@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ink Well Impressions — Product Detail</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        script: ['Great Vibes', 'cursive'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#17154A',
+                            navyLight: '#222063',
+                            crimson: '#C81F45',
+                            crimsonHover: '#B0173C',
+                            bg: '#F4F5F9',
+                            surface: '#FFFFFF',
+                            section: '#F8F9FC',
+                            border: 'rgba(23, 21, 74, 0.10)',
+                            text: '#1A1A2E',
+                            textSecondary: '#3D3D5C',
+                            gray: '#6B6B8A',
+                            card: '#FFFFFF',
+                            gold: '#c3a35e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F4F5F9;
+            color: #1A1A2E;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F4F5F9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #17154A;
+            border-radius: 10px;
+        }
+
+        .btn-crimson {
+            background: #C81F45;
+            color: #fff;
+            transition: all 0.2s;
+        }
+
+        .btn-crimson:hover {
+            background: #B0173C;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(23, 21, 74, 0.10);
+            background: transparent;
+            transition: all 0.2s;
+            color: #1A1A2E;
+        }
+
+        .btn-outline:hover {
+            border-color: #C81F45;
+            color: #C81F45;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 0.75rem 0.5rem;
+            border-bottom: 1px solid rgba(23, 21, 74, 0.06);
+            text-align: center;
+        }
+
+        .pricing-table th:first-child,
+        .pricing-table td:first-child {
+            text-align: left;
+        }
+
+        .pricing-table thead th {
+            color: #3D3D5C;
+            font-weight: 600;
+        }
+
+        .pricing-table tbody td {
+            color: #1A1A2E;
+        }
+
+        .pricing-table tbody tr:hover td {
+            background: rgba(23, 21, 74, 0.02);
+        }
+
+        .thumb-active {
+            border: 2px solid #C81F45;
+        }
+
+        .bg-brand-surface {
+            background: #FFFFFF;
+        }
+
+        .border-brand-border {
+            border-color: rgba(23, 21, 74, 0.08);
+        }
+
+        .tab-btn {
+            transition: all 0.2s;
+        }
+
+        .tab-btn.active {
+            color: #C81F45;
+            border-bottom-color: #C81F45;
+        }
+
+        .tab-btn:not(.active) {
+            color: #3D3D5C;
+            border-bottom-color: transparent;
+        }
+
+        .tab-btn:not(.active):hover {
+            color: #1A1A2E;
+        }
+
+        .color-image-transition {
+            transition: opacity 0.3s ease;
+        }
+
+        .related-product-card {
+            transition: all 0.3s ease;
+        }
+
+        .related-product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-product-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .related-product-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="bg-brand-navy text-white px-4 sm:px-8 py-4 flex justify-between items-center fixed w-full z-50">
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="https://via.placeholder.com/120x60/17154A/FFFFFF?text=INKWELL"
+                    alt="Inkwell Impressions Solutions Logo" class="h-12 sm:h-16 w-auto object-contain">
+            </a>
+        </div>
+        <ul class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
+            <li><a href="index.html" class="text-brand-crimson">Home</a></li>
+            <li><a href="products.html" class="hover:text-brand-crimson transition">Products</a></li>
+            <li><a class="hover:text-brand-crimson transition">Categories</a></li>
+            <li><a class="hover:text-brand-crimson transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-brand-crimson transition">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3 sm:gap-4">
+            <button
+                class="hidden sm:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
+                LOGIN/SIGNUP
+            </button>
+            <i class="fa-solid fa-search cursor-pointer"></i>
+            <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
+                <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="hidden md:hidden bg-brand-navy text-white px-6 py-4 space-y-4 border-t border-gray-700 fixed w-full top-[72px] left-0 z-40">
+        <ul class="space-y-4 text-sm font-medium uppercase tracking-wide">
+            <li><a href="index.html" class="text-brand-crimson block py-2 border-b border-gray-700">Home</a></li>
+            <li><a href="products.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Products</a></li>
+            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
+            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
+            <li><a href="contact.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
+        </ul>
+        <button
+            class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
+            LOGIN/SIGNUP
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-[1440px] mx-auto px-4 lg:px-8 py-6 pt-24" id="app">
+
+        <!-- Breadcrumbs -->
+        <div class="text-xs text-brand-textSecondary mb-6 flex items-center gap-2">
+            <a href="#" class="hover:text-brand-text transition-colors">Home</a>
+            <i class="fa-solid fa-chevron-right text-[8px]"></i>
+            <a href="#" class="hover:text-brand-text transition-colors">Products</a>
+            <i class="fa-solid fa-chevron-right text-[8px]"></i>
+            <a href="#" class="hover:text-brand-text transition-colors">Bags & Totes</a>
+            <i class="fa-solid fa-chevron-right text-[8px]"></i>
+            <span class="text-brand-text" id="product-name-breadcrumb">Loading...</span>
+        </div>
+
+        <!-- Product Layout Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+            <!-- Left Column: Images & Colors -->
+            <div class="lg:col-span-5 flex flex-col gap-6">
+
+                <!-- Image Gallery -->
+                <div class="flex gap-4 h-[500px]">
+                    <div class="w-20 flex flex-col gap-2 overflow-y-auto custom-scrollbar pr-1"
+                        id="thumbnail-container">
+                    </div>
+                    <div
+                        class="flex-1 bg-brand-surface rounded-lg relative flex items-center justify-center group overflow-hidden border border-brand-border">
+                        <button
+                            class="absolute left-4 w-8 h-8 rounded-full bg-brand-text/10 text-brand-text flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-brand-text/20">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <img id="main-image" src=""
+                            class="w-[85%] h-[85%] object-cover rounded-md shadow-lg color-image-transition"
+                            alt="Product Image">
+                        <button
+                            class="absolute right-4 w-8 h-8 rounded-full bg-brand-text/10 text-brand-text flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-brand-text/20">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Features Bar -->
+                <div
+                    class="flex justify-between items-center px-4 py-3 bg-brand-surface rounded-lg border border-brand-border text-xs text-brand-textSecondary">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-medal text-brand-crimson"></i> Premium
+                        Quality</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-tags text-brand-crimson"></i> Bulk
+                        Pricing</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-bolt text-brand-crimson"></i> Fast
+                        Turnaround</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-globe text-brand-crimson"></i> Global
+                        Delivery</div>
+                </div>
+
+                <!-- Available Colors -->
+                <div class="mt-4">
+                    <h3 class="text-xs font-bold tracking-wider mb-4 text-brand-text">AVAILABLE COLORS</h3>
+                    <div class="grid grid-cols-8 gap-y-4 gap-x-2 text-center" id="color-grid">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Info & Pricing -->
+            <div class="lg:col-span-7 flex flex-col">
+
+                <!-- Header -->
+                <div class="mb-4">
+                    <span
+                        class="inline-block border border-brand-crimson text-brand-crimson px-2 py-0.5 text-xs rounded mb-3"
+                        id="product-code">IB611</span>
+                    <h1 class="text-4xl lg:text-5xl font-serif text-brand-text mb-1" id="product-title">Loading...</h1>
+                    <div class="text-brand-crimson font-script text-4xl mt-[-5px]" id="product-subtitle"></div>
+                </div>
+
+                <p class="text-brand-textSecondary text-sm leading-relaxed mb-6 max-w-2xl" id="product-description"></p>
+
+                <!-- Specifications Box -->
+                <div class="flex gap-10 bg-brand-surface border border-brand-border rounded-lg p-4 mb-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center text-brand-crimson">
+                            <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-brand-textSecondary uppercase tracking-wider">Item Size</div>
+                            <div class="text-sm font-medium text-brand-text" id="product-size"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center text-brand-crimson">
+                            <i class="fa-solid fa-object-group"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-brand-textSecondary uppercase tracking-wider">Imprint Area
+                            </div>
+                            <div class="text-sm font-medium text-brand-text" id="product-imprint"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Printing Method Tabs -->
+                <div class="grid grid-cols-3 gap-2 mb-4" id="printing-tabs">
+                    <button
+                        class="border border-brand-crimson bg-brand-crimson/10 text-brand-crimson py-2.5 text-xs font-semibold rounded tracking-wider"
+                        data-method="spot">
+                        SPOT PRINTING
+                    </button>
+                    <button
+                        class="border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2.5 text-xs font-semibold rounded tracking-wider"
+                        data-method="transfer">
+                        HEAT TRANSFER
+                    </button>
+                    <button
+                        class="border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2.5 text-xs font-semibold rounded tracking-wider"
+                        data-method="blank">
+                        BLANK
+                    </button>
+                </div>
+
+                <!-- Pricing Section -->
+                <div class="mb-2" id="pricing-section">
+                    <div class="text-[10px] font-bold text-brand-textSecondary mb-2 tracking-wider">SPOT PRINTING
+                        PRICING (USD)</div>
+                    <table class="w-full pricing-table text-xs">
+                        <thead>
+                            <tr class="text-brand-textSecondary font-medium uppercase tracking-wider">
+                                <th>Quantity</th>
+                                <th id="p-qty-1">72</th>
+                                <th id="p-qty-2">288</th>
+                                <th id="p-qty-3">500</th>
+                                <th id="p-qty-4">1000</th>
+                                <th id="p-qty-5">2000</th>
+                                <th id="p-qty-6">3000</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="pricing-body">
+                        </tbody>
+                    </table>
+                    <button
+                        class="w-full text-center py-2 text-[10px] font-semibold text-brand-textSecondary hover:text-brand-text transition-colors tracking-widest mt-1">
+                        VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- 3 Info / Action Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+
+                    <div
+                        class="bg-brand-surface border border-brand-border rounded-lg p-4 flex flex-col gap-3 justify-center">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-certificate text-brand-textSecondary text-[10px] mt-1"></i>
+                            <div>
+                                <div class="text-[10px] text-brand-textSecondary">Price Includes</div>
+                                <div class="text-xs text-brand-text">1 Color, 1 Location</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-regular fa-clock text-brand-textSecondary text-[10px] mt-1"></i>
+                            <div>
+                                <div class="text-[10px] text-brand-textSecondary">Lead Time</div>
+                                <div class="text-xs text-brand-text">5-7 Business Days</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-gear text-brand-textSecondary text-[10px] mt-1"></i>
+                            <div>
+                                <div class="text-[10px] text-brand-textSecondary">Setup Charge</div>
+                                <div class="text-xs text-brand-text">$56.25 (V)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-arrows-rotate text-brand-textSecondary text-[10px] mt-1"></i>
+                            <div>
+                                <div class="text-[10px] text-brand-textSecondary">Repeat Setup</div>
+                                <div class="text-xs text-brand-text">$25.00 (V)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-brand-surface border border-brand-border rounded-lg p-4 relative overflow-hidden group cursor-pointer hover:border-brand-crimson transition-colors h-40">
+                        <div class="relative z-10">
+                            <div class="text-xs font-semibold tracking-wide mb-1 text-brand-text">REQUEST QUOTATION
+                            </div>
+                            <div class="text-[10px] text-brand-textSecondary mb-2">Get a custom quote</div>
+                            <i
+                                class="fa-solid fa-arrow-right text-brand-textSecondary group-hover:text-brand-text transition-colors"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80&w=300"
+                            class="absolute inset-0 w-full h-full object-cover opacity-30 mt-12 mix-blend-luminosity"
+                            alt="Notebook">
+                        <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+                    </div>
+
+                    <div
+                        class="bg-brand-surface border border-brand-border rounded-lg p-4 relative overflow-hidden group cursor-pointer hover:border-brand-crimson transition-colors h-40">
+                        <div class="relative z-10">
+                            <div class="text-xs font-semibold tracking-wide mb-1 text-brand-text">REQUEST MOCKUP</div>
+                            <div class="text-[10px] text-brand-textSecondary mb-2">See your logo on<br>the product</div>
+                            <i
+                                class="fa-solid fa-arrow-right text-brand-textSecondary group-hover:text-brand-text transition-colors"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=300"
+                            class="absolute inset-0 w-full h-full object-cover opacity-30 mt-12 mix-blend-luminosity"
+                            alt="Laptop">
+                        <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="btn-crimson flex-1 py-3.5 rounded text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-pen-to-square"></i> REQUEST A QUOTE
+                    </button>
+                    <button
+                        class="btn-outline flex-1 py-3.5 rounded text-sm font-semibold tracking-wide flex items-center justify-center gap-2 border-brand-border">
+                        <i class="fa-regular fa-image"></i> REQUEST A MOCKUP
+                    </button>
+                    <button
+                        class="btn-outline border-transparent hover:border-brand-border flex-1 py-3.5 rounded text-sm font-semibold tracking-wide flex items-center justify-center gap-2 text-brand-textSecondary hover:text-brand-text">
+                        <i class="fa-solid fa-truck-fast"></i> FREIGHT ESTIMATE <i
+                            class="fa-solid fa-arrow-right font-light ml-1"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Section: Tabs & Detailed Specs -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-12 border-t border-brand-border pt-8">
+
+            <!-- Left Column: Tabs -->
+            <div class="lg:col-span-5">
+                <div class="flex gap-6 border-b border-brand-border mb-6 overflow-x-auto custom-scrollbar"
+                    id="info-tabs">
+                    <button
+                        class="tab-btn active text-xs font-semibold tracking-wider pb-3 border-b-2 border-brand-crimson whitespace-nowrap"
+                        data-tab="description">
+                        PRODUCT DESCRIPTION
+                    </button>
+                    <button
+                        class="tab-btn text-xs font-semibold tracking-wider pb-3 border-b-2 border-transparent whitespace-nowrap"
+                        data-tab="charges">
+                        ADDITIONAL CHARGES
+                    </button>
+                    <button
+                        class="tab-btn text-xs font-semibold tracking-wider pb-3 border-b-2 border-transparent whitespace-nowrap"
+                        data-tab="packaging">
+                        PACKAGING INFO
+                    </button>
+                </div>
+
+                <div id="tab-content">
+                    <p class="text-sm text-brand-textSecondary leading-relaxed" id="tab-description"></p>
+                    <div id="tab-charges" class="hidden text-sm text-brand-textSecondary"></div>
+                    <div id="tab-packaging" class="hidden text-sm text-brand-textSecondary"></div>
+                </div>
+            </div>
+
+            <!-- Right Column: Specs Grid -->
+            <div class="lg:col-span-7">
+                <div class="grid grid-cols-2 gap-x-8 gap-y-0 text-xs border border-brand-border rounded-lg bg-brand-surface overflow-hidden"
+                    id="specs-table">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Related Products Section -->
+        <div id="related-products-container"></div>
+
+    </main>
+
+    <script>
+        // ============================================================
+        // HAMBURGER MENU
+        // ============================================================
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-xmark');
+        });
+
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.add('fa-bars');
+                hamburgerIcon.classList.remove('fa-xmark');
+            });
+        });
+
+        // ============================================================
+        // 1. PRODUCT DATA WITH LOCAL IMAGES
+        // ============================================================
+        const products = [{
+            id: "ib29",
+            name: "11X9 Canvas Tote Bag",
+            code: "IB29",
+            slug: "11x9-canvas-tote-bag",
+            category: "Tote Bags",
+            material: "Canvas",
+            size: '9"W x 11.5"H x 1.5"D',
+            imprint: '5"W x 7"H',
+            price: 45.00,
+            image: "assets/assets/images/products/tote-bags/IB29/IB29_main.webp",
+            description: "7oz cotton canvas bag with self-fabric handles. Reinforced stitching. Perfect for promotional giveaways, retail, and everyday use.",
+            popular: true,
+            colors: [
+                { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/tote-bags/IB29/IB29_natural.webp" },
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IB29/IB29_black.webp" },
+                { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/IB29/IB29_navy.webp" },
+                { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/tote-bags/IB29/IB29_red.webp" },
+                { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB29/IB29_royal.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/tote-bags/IB29/IB29_main.webp",
+                "assets/assets/images/products/tote-bags/IB29/IB29_natural.webp",
+                "assets/assets/images/products/tote-bags/IB29/IB29_navy.webp"
+            ],
+            specs: {
+                itemNo: "IB29",
+                gusset: "Bottom: Yes Side: No",
+                weight: "7oz",
+                material: "100% Cotton Canvas",
+                handle: "16\"",
+                origin: "USA",
+                boxQuantity: "336 pcs",
+                boxWeight: "31.74 lbs",
+                boxDims: '19.5" x 14" x 13"'
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$3.69", "$2.77", "$2.60", "$2.44", "$2.24", "$2.13"] },
+                        { label: "COLOR", prices: ["$4.44", "$3.48", "$3.36", "$3.16", "$2.97", "$2.85"] }
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [100, 250, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$9.18", "$7.75", "$7.17", "$6.65", "$6.48", "$6.32"] },
+                        { label: "COLOR", prices: ["$9.47", "$8.03", "$7.45", "$6.93", "$6.77", "$6.60"] }
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "NATURAL", prices: ["$1.56"] },
+                        { label: "COLOR", prices: ["$1.85"] }
+                    ]
+                }
+            },
+            additionalCharges: {
+                pmsMatch: "$25.00 (V)",
+                setupCharge: "$56.25 (V)",
+                repeatSetup: "$25.00 (V)",
+                lessThanMinimum: "$50.00 (V)"
+            }
+        }, {
+            id: "mqib6000",
+            name: "Cotton Tote Bag Natural Body with Color Handles",
+            code: "MQIB6000",
+            slug: "cotton-tote-natural-color-handles",
+            category: "Tote Bags",
+            material: "Cotton",
+            size: '15"W x 16"H',
+            imprint: '10"W x 12"H',
+            price: 30.00,
+            image: "assets/assets/images/products/tote-bags/MQT6000/MQT6000_main.webp",
+            description: "6oz. 100% cotton tote bag with natural body and color handles. Perfect for promotional events, trade shows, and everyday use. Durable construction with reinforced stitching.",
+            popular: true,
+            colors: [
+                { name: "Army", hex: "#4B5320", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_army.webp" },
+                { name: "Azalea", hex: "#FF69B4", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_azalea.webp" },
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_black.webp" },
+                { name: "Carolina-Blue", hex: "#99BADD", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_carolina_blue.webp" },
+                { name: "Chocolate", hex: "#3D2314", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_chocolate.webp" },
+                { name: "Forest-Green", hex: "#228B22", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_forest_green.webp" },
+                { name: "Gold", hex: "#FFD700", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_gold.webp" },
+                { name: "Hot-Pink", hex: "#FF69B4", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_hot_pink.webp" },
+                { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_kelly.webp" },
+                { name: "Lavender", hex: "#B57EDC", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_lavender.webp" },
+                { name: "Light-Pink", hex: "#FFB6C1", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_light_pink.webp" },
+                { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_lime.webp" },
+                { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_maroon.webp" },
+                { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_navy.webp" },
+                { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_orange.webp" },
+                { name: "Purple", hex: "#800080", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_purple.webp" },
+                { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_red.webp" },
+                { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_royal.webp" },
+                { name: "Sapphire", hex: "#0F52BA", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_sapphire.webp" },
+                { name: "Texas-Orange", hex: "#FF8C00", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_texas_orange.webp" },
+                { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_turqoise.webp" },
+                { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_yellow.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/tote-bags/MQT6000/MQT6000_main.webp",
+                "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_army.webp",
+                "assets/assets/images/products/tote-bags/MQT6000/MQIB6000_black.webp"
+            ],
+            specs: {
+                itemNo: "MQIB6000",
+                gusset: "Bottom: No Side: No",
+                weight: "6oz",
+                material: "100% Cotton",
+                handle: "22\"",
+                origin: "USA",
+                boxQuantity: "240 pcs",
+                boxWeight: "39.23 lbs",
+                boxDims: '17" x 17" x 15"'
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000],
+                    rows: [
+                        { label: "COLOR", prices: ["$4.72", "$3.96", "$3.63", "$3.46", "$3.27", "$3.17"] },
+                        { label: "ADD LOCATION", prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"] }
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [100, 250, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "COLOR", prices: ["$8.40", "$7.46", "$7.13", "$6.98", "$6.94", "$6.90"] }
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "COLOR", prices: ["$2.00"] }
+                    ]
+                }
+            },
+            additionalCharges: {
+                pmsMatch: "$25.00 (V)",
+                setupCharge: "$56.25 (V)",
+                repeatSetup: "$25.00 (V)",
+                lessThanMinimum: "$50.00 (V)"
+            }
+        }, {
+            id: "ib611",
+            name: "Jumbo Canvas Zipper Tote with bottom Gusset",
+            code: "IB611",
+            slug: "jumbo-canvas-zipper-tote",
+            category: "Tote Bags",
+            material: "Canvas",
+            size: '20"W x 15"H x 5"D',
+            imprint: '12"W x 10"H',
+            price: 30.00,
+            image: "assets/assets/images/products/tote-bags/IB611/IB611_main.webp",
+            description: "12oz. canvas, 100% cotton, jumbo tote with full length zipper and bottom gusset. Perfect for heavy-duty use, shopping, and promotional events.",
+            popular: false,
+            colors: [
+                { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/tote-bags/IB611/IB611_natural.webp" },
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IB611/IB611_black.webp" },
+                { name: "Chocolate", hex: "#3D2314", image: "assets/assets/images/products/tote-bags/IB611/IB611_chocolate.webp" },
+                { name: "Light-Pink", hex: "#FFB6C1", image: "assets/assets/images/products/tote-bags/IB611/IB611_light_pink.webp" },
+                { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/tote-bags/IB611/IB611_lime.webp" },
+                { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/IB611/IB611_navy.webp" },
+                { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/tote-bags/IB611/IB611_red.webp" },
+                { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB611/IB611_royal.webp" },
+                { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IB611/IB611_white.webp" },
+                { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/tote-bags/IB611/IB611_yellow.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/tote-bags/IB611/IB611_main.webp",
+                "assets/assets/images/products/tote-bags/IB611/IB611_black.webp",
+                "assets/assets/images/products/tote-bags/IB611/IB611_natural.webp"
+            ],
+            specs: {
+                itemNo: "IB611",
+                gusset: "Bottom: Yes Side: No",
+                weight: "12oz",
+                material: "100% Cotton",
+                handle: "24\"",
+                origin: "Pakistan"
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$8.44", "$7.58", "$7.25", "$7.08", "$6.90", "$6.79"] },
+                        { label: "COLOR", prices: ["$10.00", "$9.10", "$8.77", "$8.60", "$8.42", "$8.31"] }
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [100, 250, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$12.44", "$11.50", "$11.17", "$11.02", "$10.98", "$10.94"] },
+                        { label: "COLOR", prices: ["$13.54", "$12.60", "$12.27", "$12.13", "$12.08", "$12.04"] }
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "NATURAL", prices: ["$5.80"] },
+                        { label: "COLOR", prices: ["$6.84"] }
+                    ]
+                }
+            }
+        }, {
+            id: "iwb201",
+            name: "Single Bottle Canvas Wine Tote",
+            code: "IWB201",
+            slug: "single-bottle-canvas-wine-tote",
+            category: "Bottle Bags",
+            material: "Canvas",
+            size: '3"W x 10.5"H x 3"D',
+            imprint: '3"W x 6"H',
+            price: 30.00,
+            image: "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp",
+            description: "12 oz. 100% cotton canvas. Single bottle wine tote with reinforced bottom.",
+            popular: false,
+            colors: [
+                { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp" },
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/bottle-bags/IWB201/IWB201-black.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp",
+                "assets/assets/images/products/bottle-bags/IWB201/IWB201-black.webp"
+            ],
+            specs: {
+                itemNo: "IWB201",
+                gusset: "Bottom: Yes Side: No",
+                weight: "12oz",
+                material: "100% Cotton",
+                handle: "12\"",
+                origin: "Pakistan"
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$7.44", "$6.58", "$6.25", "$6.08", "$5.90", "$5.79"] },
+                        { label: "COLOR", prices: ["$9.00", "$8.10", "$7.77", "$7.60", "$7.42", "$7.31"] },
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$8.44", "$7.58", "$7.25", "$7.08", "$6.90", "$6.79"] },
+                        { label: "COLOR", prices: ["$10.00", "$9.10", "$8.77", "$8.60", "$8.42", "$8.31"] },
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "NATURAL", prices: ["$5.44", "$4.58", "$4.25", "$4.08", "$3.90", "$3.79"] },
+                        { label: "COLOR", prices: ["$7.00", "$6.10", "$5.77", "$5.60", "$5.42", "$5.31"] },
+                    ]
+                }
+            }
+        }, {
+            id: "mqib",
+            name: "Cotton Tote Bag",
+            code: "MQIB",
+            slug: "cotton-tote-bag",
+            category: "Tote Bags",
+            material: "Cotton",
+            size: '15"W x 16"H',
+            imprint: '10"W x 8"H',
+            price: 30.00,
+            image: "assets/assets/images/products/tote-bags/MQIB/MQIB_main.webp",
+            description: "Premium 6oz cotton canvas tote bag. Ideal for everyday use, shopping, and promotional events. Durable construction with reinforced handles.",
+            popular: true,
+            colors: [
+                { name: "Army", hex: "#4B5320", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_army.webp" },
+                { name: "Azalea", hex: "#FF69B4", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_azalea.webp" },
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_black.webp" },
+                { name: "Carolina-Blue", hex: "#99BADD", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_carolina_blue.webp" },
+                { name: "Chocolate", hex: "#3D2314", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_chocolate.webp" },
+                { name: "Dark-Grey", hex: "#A9A9A9", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_dark_grey.webp" },
+                { name: "Forest-Green", hex: "#228B22", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_forest_green.webp" },
+                { name: "Gold", hex: "#FFD700", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_gold.webp" },
+                { name: "Hot-Pink", hex: "#FF69B4", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_hot_pink.webp" },
+                { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_kelly.webp" },
+                { name: "Lavender", hex: "#B57EDC", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_lavender.webp" },
+                { name: "Light-Grey", hex: "#D3D3D3", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_light_grey.webp" },
+                { name: "Light-Pink", hex: "#FFB6C1", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_light_pink.webp" },
+                { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_lime.webp" },
+                { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_maroon.webp" },
+                { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_natural.webp" },
+                { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_navy.webp" },
+                { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_orange.webp" },
+                { name: "Purple", hex: "#800080", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_purple.webp" },
+                { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_red.webp" },
+                { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_royal.webp" },
+                { name: "Sapphire", hex: "#0F52BA", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_sapphire.webp" },
+                { name: "Texas-Orange", hex: "#FF8C00", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_texas_orange.webp" },
+                { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_turqoise.webp" },
+                { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_white.webp" },
+                { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/tote-bags/MQIB/MQIB_yellow.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/tote-bags/MQIB/MQIB_main.webp",
+                "assets/assets/images/products/tote-bags/MQIB/MQIB_black.webp",
+                "assets/assets/images/products/tote-bags/MQIB/MQIB_natural.webp"
+            ],
+            specs: {
+                itemNo: "MQIB",
+                gusset: "Bottom: No Side: No",
+                weight: "6oz",
+                material: "100% Cotton Canvas",
+                handle: "22\"",
+                origin: "USA",
+                boxQuantity: "240pcs (Natural), 216 pcs (Colors)",
+                boxWeight: "39.23 lbs",
+                boxDims: '17" x 17" x 15"'
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$7.44", "$6.58", "$6.25", "$6.08", "$5.90", "$5.79"] },
+                        { label: "COLOR", prices: ["$9.00", "$8.10", "$7.77", "$7.60", "$7.42", "$7.31"] }
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$8.44", "$7.58", "$7.25", "$7.08", "$6.90", "$6.79"] },
+                        { label: "COLOR", prices: ["$10.00", "$9.10", "$8.77", "$8.60", "$8.42", "$8.31"] }
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "NATURAL", prices: ["$5.44", "$4.58", "$4.25", "$4.08", "$3.90", "$3.79"] },
+                        { label: "COLOR", prices: ["$7.00", "$6.10", "$5.77", "$5.60", "$5.42", "$5.31"] }
+                    ]
+                }
+            },
+            additionalCharges: {
+                pmsMatch: "$25.00 (V)",
+                setupCharge: "$56.25 (V)",
+                repeatSetup: "$25.00 (V)",
+                lessThanMinimum: "$50.00 (V)"
+            }
+        }, {
+            id: "ib800",
+            name: "Canvas Promotional Tote Bag",
+            code: "IB800",
+            slug: "canvas-promotional-tote",
+            category: "Tote Bags",
+            material: "Canvas",
+            size: '15"W x 16"H',
+            imprint: '10"W x 12"H',
+            price: 32.00,
+            image: "assets/assets/images/products/tote-bags/IB800/IB800_main.webp",
+            description: "Durable canvas tote bag with promotional appeal. Perfect for trade shows, giveaways, and everyday use. High-quality 100% cotton canvas with reinforced handles.",
+            popular: true,
+            colors: [
+                { name: "Army", hex: "#4B5320", image: "assets/assets/images/products/tote-bags/IB800/IB800_army.webp" },
+                { name: "Azalea", hex: "#FF69B4", image: "assets/assets/images/products/tote-bags/IB800/IB800_azalea.webp" },
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IB800/IB800_black.webp" },
+                { name: "Carolina-Blue", hex: "#99BADD", image: "assets/assets/images/products/tote-bags/IB800/IB800_carolina_blue.webp" },
+                { name: "Chocolate", hex: "#3D2314", image: "assets/assets/images/products/tote-bags/IB800/IB800_chocolate.webp" },
+                { name: "Dark-Grey", hex: "#A9A9A9", image: "assets/assets/images/products/tote-bags/IB800/IB800_dark_grey.webp" },
+                { name: "Forest-Green", hex: "#228B22", image: "assets/assets/images/products/tote-bags/IB800/IB800_forest_green.webp" },
+                { name: "Gold", hex: "#FFD700", image: "assets/assets/images/products/tote-bags/IB800/IB800_gold.webp" },
+                { name: "Hot-Pink", hex: "#FF69B4", image: "assets/assets/images/products/tote-bags/IB800/IB800_hot_pink.webp" },
+                { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/tote-bags/IB800/IB800_kelly.webp" },
+                { name: "Lavender", hex: "#B57EDC", image: "assets/assets/images/products/tote-bags/IB800/IB800_lavender.webp" },
+                { name: "Light-Grey", hex: "#D3D3D3", image: "assets/assets/images/products/tote-bags/IB800/IB800_light_grey.webp" },
+                { name: "Light-Pink", hex: "#FFB6C1", image: "assets/assets/images/products/tote-bags/IB800/IB800_light_pink.webp" },
+                { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/tote-bags/IB800/IB800_lime.webp" },
+                { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/tote-bags/IB800/IB800_maroon.webp" },
+                { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/tote-bags/IB800/IB800_natural.webp" },
+                { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/IB800/IB800_navy.webp" },
+                { name: "Purple", hex: "#800080", image: "assets/assets/images/products/tote-bags/IB800/IB800_purple.webp" },
+                { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/tote-bags/IB800/IB800_red.webp" },
+                { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB800/IB800_royal.webp" },
+                { name: "Sapphire", hex: "#0F52BA", image: "assets/assets/images/products/tote-bags/IB800/IB800_sapphire.webp" },
+                { name: "Texas-Orange", hex: "#FF8C00", image: "assets/assets/images/products/tote-bags/IB800/IB800_texas_orange.webp" },
+                { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/tote-bags/IB800/IB800_turqoise.webp" },
+                { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IB800/IB800_white.webp" },
+                { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/tote-bags/IB800/IB800_yellow.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/tote-bags/IB800/IB800_main.webp",
+                "assets/assets/images/products/tote-bags/IB800/IB800_black.webp",
+                "assets/assets/images/products/tote-bags/IB800/IB800_natural.webp"
+            ],
+            specs: {
+                itemNo: "IB800",
+                gusset: "Bottom: No Side: No",
+                weight: "12oz",
+                material: "100% Cotton Canvas",
+                handle: "22\"",
+                origin: "USA",
+                boxQuantity: "144 pcs",
+                boxWeight: "44.52 lbs",
+                boxDims: '17" x 17" x 12.5"'
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$4.66", "$3.90", "$3.56", "$3.40", "$3.21", "$3.10"] },
+                        { label: "COLOR", prices: ["$5.85", "$5.06", "$4.73", "$4.56", "$4.38", "$4.27"] }
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [100, 250, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "NATURAL", prices: ["$8.75", "$7.81", "$7.48", "$7.33", "$7.29", "$7.25"] },
+                        { label: "COLOR", prices: ["$9.50", "$8.56", "$8.23", "$8.08", "$8.04", "$8.00"] }
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "NATURAL", prices: ["$2.33"] },
+                        { label: "COLOR", prices: ["$3.04"] }
+                    ]
+                }
+            },
+            additionalCharges: {
+                pmsMatch: "$25.00 (V)",
+                setupCharge: "$56.25 (V)",
+                repeatSetup: "$25.00 (V)",
+                lessThanMinimum: "$50.00 (V)"
+            }
+        }, {
+            id: "w956",
+            name: "Non-Woven Convention Bag",
+            code: "W956",
+            slug: "non-woven-convention-bag",
+            category: "Non-Woven Bags",
+            material: "Non-Woven",
+            size: '15"W x 16"H',
+            imprint: '10"W x 10"H',
+            price: 28.00,
+            image: "assets/assets/images/products/non-woven/W956/W956_main.webp",
+            description: "Lightweight non-woven convention bag. Perfect for trade shows, conferences, and promotional events. Durable construction with reinforced handles.",
+            popular: true,
+            colors: [
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/non-woven/W956/W956_black.webp" },
+                { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/W956/W956_grey.webp" },
+                { name: "Hunter-Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/W956/W956_hunter_green.webp" },
+                { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/non-woven/W956/W956_ivory.webp" },
+                { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/W956/W956_kelly.webp" },
+                { name: "Navy", hex: "#000080", image: "assets/assets/images/products/non-woven/W956/W956_navy.webp" },
+                { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/non-woven/W956/W956_orange.webp" },
+                { name: "Purple", hex: "#800080", image: "assets/assets/images/products/non-woven/W956/W956_purple.webp" },
+                { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/non-woven/W956/W956_red.webp" },
+                { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/non-woven/W956/W956_royal.webp" },
+                { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/W956/W956_white.webp" },
+                { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/non-woven/W956/W956_yellow.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/non-woven/W956/W956_main.webp",
+                "assets/assets/images/products/non-woven/W956/W956_black.webp",
+                "assets/assets/images/products/non-woven/W956/W956_white.webp"
+            ],
+            specs: {
+                itemNo: "W956",
+                gusset: "Bottom: No Side: No",
+                weight: "80gsm",
+                material: "Non-Woven Fabric",
+                handle: "22\"",
+                origin: "USA",
+                packagingOptions: [
+                    {
+                        type: "Blank",
+                        qtyPerBox: "500 pcs",
+                        boxWeight: "31 lbs",
+                        boxDims: '22" x 21" x 17"'
+                    },
+                    {
+                        type: "Printed Large Box",
+                        qtyPerBox: "300 pcs",
+                        boxWeight: "21 lbs",
+                        boxDims: '16" x 16" x 20"'
+                    },
+                    {
+                        type: "Printed Medium Box",
+                        qtyPerBox: "100 pcs",
+                        boxWeight: "8 lbs",
+                        boxDims: '8" x 16" x 20"'
+                    }
+                ]
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "COLOR", prices: ["$1.56", "$1.46", "$1.38", "$1.29", "$1.22", "$1.16"] },
+                        { label: "ADD LOCATION", prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.65", "$0.63"] }
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [100, 250, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "COLOR", prices: ["$5.09", "$4.75", "$4.59", "$4.31", "$4.05", "$3.79"] },
+                        { label: "ADD LOCATION", prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.65", "$1.65"] }
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "COLOR", prices: ["$0.77"] }
+                    ]
+                }
+            },
+            additionalCharges: {
+                pmsMatch: "$56.25 (V)",
+                setupCharge: "$62.50 (V)",
+                repeatSetup: "$37.50 (V)",
+                lessThanMinimum: "Call for pricing"
+            }
+        }, {
+            id: "w975",
+            name: "Econo Tote Bag",
+            code: "W975",
+            slug: "econo-tote-bag",
+            category: "Tote Bags",
+            material: "Non-Woven",
+            size: '14.25"W x 15"H x 5"D',
+            imprint: '10"W x 8"H',
+            price: 25.00,
+            image: "assets/assets/images/products/non-woven/W975/W975_main.webp",
+            description: "Economical non-woven tote bag. Perfect for budget-friendly promotions, events, and giveaways. No minimum order quantity required.",
+            popular: true,
+            colors: [
+                { name: "Black", hex: "#000000", image: "assets/assets/images/products/non-woven/W975/W975_black.webp" },
+                { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/W975/W975_burgundy.webp" },
+                { name: "Hunter-Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/W975/W975_hunter_green.webp" },
+                { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/non-woven/W975/W975_ivory.webp" },
+                { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/W975/W975_kelly.webp" },
+                { name: "Navy", hex: "#000080", image: "assets/assets/images/products/non-woven/W975/W975_navy.webp" },
+                { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/non-woven/W975/W975_orange.webp" },
+                { name: "Purple", hex: "#800080", image: "assets/assets/images/products/non-woven/W975/W975_purple.webp" },
+                { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/non-woven/W975/W975_red.webp" },
+                { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/non-woven/W975/W975_royal.webp" },
+                { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/W975/W975_white.webp" },
+                { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/non-woven/W975/W975_yellow.webp" }
+            ],
+            images: [
+                "assets/assets/images/products/non-woven/W975/W975_main.webp",
+                "assets/assets/images/products/non-woven/W975/W975_black.webp",
+                "assets/assets/images/products/non-woven/W975/W975_white.webp"
+            ],
+            specs: {
+                itemNo: "W975",
+                gusset: "Bottom: Yes Side: No",
+                weight: "80gsm",
+                material: "Non-Woven",
+                handle: "20\"",
+                origin: "USA",
+                packagingOptions: [
+                    {
+                        type: "Blank",
+                        qtyPerBox: "400 pcs",
+                        boxWeight: "30 lbs",
+                        boxDims: '17.3" x 17.3" x 20"'
+                    },
+                    {
+                        type: "Printed Large Box",
+                        qtyPerBox: "400 pcs",
+                        boxWeight: "22 lbs",
+                        boxDims: '16" x 16" x 20"'
+                    },
+                    {
+                        type: "Printed Medium Box",
+                        qtyPerBox: "150 pcs",
+                        boxWeight: "9 lbs",
+                        boxDims: '8" x 16" x 20"'
+                    }
+                ]
+            },
+            pricing: {
+                spot: {
+                    label: "SPOT PRINTING PRICING (USD)",
+                    quantities: [72, 288, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "COLOR", prices: ["$1.76", "$1.65", "$1.56", "$1.46", "$1.38", "$1.30"] },
+                        { label: "ADD LOCATION", prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.65", "$0.63"] }
+                    ]
+                },
+                transfer: {
+                    label: "HEAT TRANSFER PRICING (USD)",
+                    quantities: [100, 250, 500, 1000, 2000, 3000],
+                    rows: [
+                        { label: "COLOR", prices: ["$5.30", "$4.94", "$4.77", "$4.47", "$4.21", "$3.95"] },
+                        { label: "ADD LOCATION", prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.65", "$1.65"] }
+                    ]
+                },
+                blank: {
+                    label: "BLANK PRICING (USD)",
+                    rows: [
+                        { label: "COLOR", prices: ["$0.93"] }
+                    ]
+                }
+            },
+            additionalCharges: {
+                pmsMatch: "$56.25 (V)",
+                setupCharge: "$62.50 (V)",
+                repeatSetup: "$37.50 (V)",
+                lessThanMinimum: "Call for pricing"
+            }
+        }];
+
+
+        // ============================================================
+        // 2. RELATED PRODUCTS FUNCTION
+        // ============================================================
+        function getRelatedProducts(currentProduct, allProducts, limit = 4) {
+            let related = allProducts.filter(p =>
+                p.id !== currentProduct.id &&
+                p.category === currentProduct.category
+            );
+
+            if (related.length < limit) {
+                const materialProducts = allProducts.filter(p =>
+                    p.id !== currentProduct.id &&
+                    p.material === currentProduct.material &&
+                    !related.some(r => r.id === p.id)
+                );
+                related = [...related, ...materialProducts];
+            }
+
+            if (related.length < limit) {
+                const otherProducts = allProducts.filter(p =>
+                    p.id !== currentProduct.id &&
+                    !related.some(r => r.id === p.id)
+                );
+                related = [...related, ...otherProducts];
+            }
+
+            return related.slice(0, limit);
+        }
+
+        // ============================================================
+        // 3. RENDER RELATED PRODUCTS
+        // ============================================================
+        function renderRelatedProducts(currentProduct, allProducts) {
+            const related = getRelatedProducts(currentProduct, allProducts, 4);
+            if (related.length === 0) return;
+
+            const container = document.getElementById('related-products-container');
+            if (!container) return;
+
+            const section = document.createElement('div');
+            section.className = 'mt-12 border-t border-brand-border pt-8';
+            section.innerHTML = `
+                <h2 class="text-2xl font-serif text-brand-text mb-6">Related Products</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    ${related.map(product => `
+                        <a href="?id=${product.id}" class="group">
+                            <div class="bg-white rounded-lg border border-brand-border overflow-hidden related-product-card hover:shadow-lg transition-all duration-300">
+                                <div class="overflow-hidden">
+                                    <img src="${product.image}" alt="${product.name}" 
+                                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <div class="p-4">
+                                    <p class="text-xs text-brand-textSecondary">${product.code}</p>
+                                    <h3 class="text-sm font-medium text-brand-text mt-1 line-clamp-2">${product.name}</h3>
+                                    <div class="flex items-center justify-between mt-2">
+                                        <p class="text-brand-crimson font-semibold">$${product.price}</p>
+                                        <span class="text-xs text-brand-crimson group-hover:underline">View Details</span>
+                                    </div>
+                                    <div class="flex gap-1 mt-2">
+                                        ${product.colors.slice(0, 3).map(c => `
+                                            <div class="w-4 h-4 rounded-full border border-brand-border" 
+                                                 style="background:${c.hex}; ${c.hex === '#FFFFFF' ? 'border:1px solid #ddd;' : ''}"></div>
+                                        `).join('')}
+                                        ${product.colors.length > 3 ? `<span class="text-[10px] text-brand-textSecondary">+${product.colors.length - 3}</span>` : ''}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    `).join('')}
+                </div>
+            `;
+            container.appendChild(section);
+        }
+
+        // ============================================================
+        // 4. SINGLE PRODUCT PAGE RENDER ENGINE
+        // ============================================================
+        (function () {
+            "use strict";
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const product = products.find(p => p.id === productId);
+
+            if (!product) {
+                const firstProduct = products[0];
+                if (firstProduct) {
+                    window.location.href = '?id=' + firstProduct.id;
+                } else {
+                    document.body.innerHTML = '<h1 class="text-center text-2xl mt-20">No products available</h1>';
+                }
+                return;
+            }
+
+            const mainImage = document.getElementById('main-image');
+            const thumbnailContainer = document.getElementById('thumbnail-container');
+            const colorGrid = document.getElementById('color-grid');
+            const pricingBody = document.getElementById('pricing-body');
+            const productCode = document.getElementById('product-code');
+            const productTitle = document.getElementById('product-title');
+            const productSubtitle = document.getElementById('product-subtitle');
+            const productDescription = document.getElementById('product-description');
+            const productSize = document.getElementById('product-size');
+            const productImprint = document.getElementById('product-imprint');
+            const productNameBreadcrumb = document.getElementById('product-name-breadcrumb');
+            const tabDescription = document.getElementById('tab-description');
+            const specsTable = document.getElementById('specs-table');
+
+            const pQty = [
+                document.getElementById('p-qty-1'),
+                document.getElementById('p-qty-2'),
+                document.getElementById('p-qty-3'),
+                document.getElementById('p-qty-4'),
+                document.getElementById('p-qty-5'),
+                document.getElementById('p-qty-6'),
+            ];
+
+            let currentMethod = 'spot';
+
+            function renderThumbnails() {
+                thumbnailContainer.innerHTML = '';
+                const images = product.images || [product.image];
+                images.forEach((img, idx) => {
+                    const div = document.createElement('div');
+                    div.className = `h-20 bg-brand-surface rounded border p-1 cursor-pointer flex items-center justify-center ${idx === 0 ? 'thumb-active border-brand-crimson' : 'border-brand-border hover:border-brand-text/30'}`;
+                    div.innerHTML = `<img src="${img}" class="w-full h-full object-cover rounded-sm" alt="Thumbnail ${idx + 1}">`;
+                    div.addEventListener('click', () => {
+                        mainImage.src = img;
+                        document.querySelectorAll('#thumbnail-container > div').forEach(el => {
+                            el.classList.remove('thumb-active', 'border-brand-crimson');
+                            el.classList.add('border-brand-border');
+                        });
+                        div.classList.add('thumb-active', 'border-brand-crimson');
+                        div.classList.remove('border-brand-border');
+                    });
+                    thumbnailContainer.appendChild(div);
+                });
+            }
+
+            function renderColors() {
+                colorGrid.innerHTML = '';
+                const colors = product.colors || [{ name: "Natural", hex: "#F5F5DC", image: product.image }];
+                colors.forEach((color, index) => {
+                    const div = document.createElement('div');
+                    div.className = 'flex flex-col items-center gap-1 cursor-pointer group';
+                    const isActive = color.active === true || (index === 0 && color.name === "Natural");
+                    const borderClass = isActive ? 'border-2 border-brand-crimson shadow-[0_0_0_1px_#fff]' :
+                        'border border-brand-border group-hover:border-brand-text/30';
+                    const bgClass = color.hex === '#FFFFFF' ? 'border border-brand-border' : '';
+                    div.innerHTML = `
+                        <div class="w-6 h-6 ${bgClass} rounded-sm ${borderClass} transition-colors" style="background:${color.hex}"></div>
+                        <span class="text-[9px] ${isActive ? 'text-brand-text font-semibold' : 'text-brand-textSecondary'}">${color.name}</span>
+                    `;
+                    div.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        colorGrid.querySelectorAll('div').forEach(el => {
+                            const dot = el.querySelector('div:first-child');
+                            if (dot) {
+                                dot.classList.remove('border-2', 'border-brand-crimson', 'shadow-[0_0_0_1px_#fff]');
+                                dot.classList.add('border', 'border-brand-border');
+                            }
+                            const label = el.querySelector('span');
+                            if (label) {
+                                label.classList.remove('text-brand-text', 'font-semibold');
+                                label.classList.add('text-brand-textSecondary');
+                            }
+                        });
+                        const clickedDot = this.querySelector('div:first-child');
+                        if (clickedDot) {
+                            clickedDot.classList.remove('border', 'border-brand-border');
+                            clickedDot.classList.add('border-2', 'border-brand-crimson', 'shadow-[0_0_0_1px_#fff]');
+                        }
+                        const clickedLabel = this.querySelector('span');
+                        if (clickedLabel) {
+                            clickedLabel.classList.remove('text-brand-textSecondary');
+                            clickedLabel.classList.add('text-brand-text', 'font-semibold');
+                        }
+                        if (color.image) {
+                            mainImage.src = color.image;
+                            const thumbnails = document.querySelectorAll('#thumbnail-container > div');
+                            thumbnails.forEach(el => {
+                                el.classList.remove('thumb-active', 'border-brand-crimson');
+                                el.classList.add('border-brand-border');
+                            });
+                            if (thumbnails.length > 0) {
+                                thumbnails[0].classList.add('thumb-active', 'border-brand-crimson');
+                                thumbnails[0].classList.remove('border-brand-border');
+                            }
+                        }
+                    });
+                    colorGrid.appendChild(div);
+                });
+            }
+
+            function renderPricing(method) {
+                const data = product.pricing[method];
+                if (!data) return;
+                const labelEl = document.querySelector('#pricing-section .text-brand-textSecondary');
+                if (labelEl) labelEl.textContent = data.label;
+                const isBlank = method === 'blank' || !data.quantities;
+                const thead = document.querySelector('#pricing-section thead');
+                if (thead) thead.style.display = isBlank ? 'none' : '';
+                if (!isBlank && data.quantities) {
+                    data.quantities.forEach((qty, idx) => {
+                        if (pQty[idx]) pQty[idx].textContent = qty;
+                    });
+                } else {
+                    pQty.forEach(el => { if (el) el.textContent = ''; });
+                }
+                pricingBody.innerHTML = '';
+                data.rows.forEach(row => {
+                    const tr = document.createElement('tr');
+                    let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
+                    row.prices.forEach(price => {
+                        html += `<td class="text-brand-text">${price}</td>`;
+                    });
+                    html += `<td class="text-brand-textSecondary">R</td>`;
+                    tr.innerHTML = html;
+                    pricingBody.appendChild(tr);
+                });
+            }
+
+            function renderSpecsTable() {
+                const s = product.specs || { itemNo: product.code, gusset: "Bottom: Yes Side: No", weight: "12oz", material: "100% Cotton", handle: "24\"", origin: "Pakistan" };
+                specsTable.innerHTML = `
+                    <div class="flex border-b border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">ITEM NO</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.itemNo}</div></div>
+                    <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div></div>
+                    <div class="flex border-b border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY WEIGHT</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.weight}</div></div>
+                    <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY MATERIAL</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div></div>
+                    <div class="flex border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">HANDLE SIZE</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.handle}</div></div>
+                    <div class="flex"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.origin}</div></div>
+                `;
+            }
+
+            function renderMainInfo() {
+                mainImage.src = product.image;
+                productCode.textContent = product.code;
+                productTitle.textContent = product.name;
+                productSubtitle.textContent = product.subtitle || '';
+                productDescription.textContent = product.description;
+                productSize.textContent = product.size;
+                productImprint.textContent = product.imprint || '10"W x 8"H';
+                productNameBreadcrumb.textContent = product.name;
+                tabDescription.textContent = product.description;
+            }
+
+            function renderAdditionalCharges() {
+                const chargesTab = document.getElementById('tab-charges');
+                if (!chargesTab) return;
+
+                const charges = product.additionalCharges || {};
+                const hasCharges = Object.keys(charges).length > 0;
+
+                if (hasCharges) {
+                    chargesTab.innerHTML = `
+                        <div class="space-y-2 text-sm text-brand-textSecondary">
+                            ${charges.pmsMatch ? `<p><strong>PMS Match:</strong> ${charges.pmsMatch}</p>` : ''}
+                            ${charges.setupCharge ? `<p><strong>Setup Charge:</strong> ${charges.setupCharge}</p>` : ''}
+                            ${charges.repeatSetup ? `<p><strong>Repeat Setup:</strong> ${charges.repeatSetup}</p>` : ''}
+                            ${charges.lessThanMinimum ? `<p><strong>Less than Minimum:</strong> ${charges.lessThanMinimum}</p>` : ''}
+                        </div>
+                    `;
+                    chargesTab.classList.remove('hidden');
+                } else {
+                    chargesTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No additional charges information available.</p>`;
+                    chargesTab.classList.remove('hidden');
+                }
+            }
+
+            function renderPackagingInfo() {
+                const packagingTab = document.getElementById('tab-packaging');
+                if (!packagingTab) return; 
+
+                const s = product.specs || {};
+
+                // Check if packagingOptions array exists (for W956, W975)
+                if (s.packagingOptions && s.packagingOptions.length > 0) {
+                    let html = `<div class="space-y-4 text-sm text-brand-textSecondary">`;
+                    s.packagingOptions.forEach(option => {
+                        html += `
+                <div class="border border-brand-border rounded-lg p-3">
+                    <p class="font-semibold text-brand-text">${option.type}</p>
+                    ${option.qtyPerBox ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
+                    ${option.boxWeight ? `<p><strong>Box Weight:</strong> ${option.boxWeight}</p>` : ''}
+                    ${option.boxDims ? `<p><strong>Box Dims:</strong> ${option.boxDims}</p>` : ''}
+                </div>
+            `;
+                    });
+                    html += `</div>`;
+                    packagingTab.innerHTML = html;
+                    packagingTab.classList.remove('hidden');
+                    return;
+                }
+
+                // Simple packaging info (for IB29, MQIB6000, MQIB, IB800)
+                if (s.boxQuantity || s.boxWeight || s.boxDims || s.origin) {
+                    packagingTab.innerHTML = `
+            <div class="space-y-2 text-sm text-brand-textSecondary">
+                ${s.boxQuantity ? `<p><strong>Quantity Per Box:</strong> ${s.boxQuantity}</p>` : ''}
+                ${s.boxWeight ? `<p><strong>Box Weight:</strong> ${s.boxWeight}</p>` : ''}
+                ${s.boxDims ? `<p><strong>Box Dims:</strong> ${s.boxDims}</p>` : ''}
+                ${s.origin ? `<p><strong>Country of Origin:</strong> ${s.origin}</p>` : ''}
+            </div>
+        `;
+                    packagingTab.classList.remove('hidden');
+                } else {
+                    packagingTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No packaging information available for this product.</p>`;
+                    packagingTab.classList.remove('hidden');
+                }
+            }
+
+            function initTabs() {
+                const tabs = document.querySelectorAll('#info-tabs .tab-btn');
+                const contents = {
+                    description: document.getElementById('tab-description'),
+                    charges: document.getElementById('tab-charges'),
+                    packaging: document.getElementById('tab-packaging'),
+                };
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        tabs.forEach(t => {
+                            t.classList.remove('active');
+                            t.classList.add('border-transparent');
+                            t.classList.remove('border-brand-crimson');
+                        });
+                        tab.classList.add('active');
+                        tab.classList.add('border-brand-crimson');
+                        tab.classList.remove('border-transparent');
+                        const tabName = tab.dataset.tab;
+                        Object.keys(contents).forEach(key => {
+                            contents[key].classList.add('hidden');
+                        });
+                        if (contents[tabName]) {
+                            contents[tabName].classList.remove('hidden');
+                        }
+                    });
+                });
+            }
+
+            function initPrintTabs() {
+                const tabs = document.querySelectorAll('#printing-tabs button');
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const method = tab.dataset.method;
+                        currentMethod = method;
+                        tabs.forEach(t => {
+                            t.className = 'border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2.5 text-xs font-semibold rounded tracking-wider';
+                        });
+                        tab.className = 'border border-brand-crimson bg-brand-crimson/10 text-brand-crimson py-2.5 text-xs font-semibold rounded tracking-wider';
+                        renderPricing(method);
+                    });
+                });
+            }
+
+            function init() {
+                renderMainInfo();
+                renderThumbnails();
+                renderColors();
+                renderSpecsTable();
+                renderAdditionalCharges();
+                renderPackagingInfo();  // ✅ YEH CALL HOGA
+                renderPricing('spot');
+                initTabs();
+                initPrintTabs();
+                renderRelatedProducts(product, products);
+            }
+
+            init();
+
+        })();
+    </script>
+
+</body>
+
+</html>
