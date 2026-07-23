@@ -245,18 +245,482 @@
       background: #F8F9FC;
       border-radius: 8px;
     }
+
+    /* ============================================================ */
+    /* POPULAR PRODUCTS - COMPLETE ANIMATIONS */
+    /* ============================================================ */
+
+    /* Floating Animation for Cards */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-8px) rotate(0.5deg);
+      }
+    }
+
+    /* Glowing Border Animation */
+    @keyframes glowPulse {
+
+      0%,
+      100% {
+        border-color: rgba(200, 31, 69, 0.2);
+        box-shadow: 0 4px 15px rgba(23, 21, 74, 0.08);
+      }
+
+      50% {
+        border-color: rgba(200, 31, 69, 0.5);
+        box-shadow: 0 8px 30px rgba(200, 31, 69, 0.2);
+      }
+    }
+
+    /* Rotating Gradient Border on Hover */
+
+
+    /* Tag Pulse */
+    @keyframes tagPulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08);
+      }
+    }
+
+    /* Fire Emoji Animation */
+    @keyframes fireBounce {
+
+      0%,
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+
+      25% {
+        transform: scale(1.3) rotate(-10deg);
+      }
+
+      75% {
+        transform: scale(1.2) rotate(10deg);
+      }
+    }
+
+    /* Price Animation */
+    @keyframes pricePop {
+
+      0%,
+      100% {
+        transform: scale(1);
+        color: #C81F45;
+      }
+
+      50% {
+        transform: scale(1.08);
+        color: #B0173C;
+      }
+    }
+
+    /* Shine Effect */
+    @keyframes shineSlide {
+      0% {
+        left: -100%;
+      }
+
+      100% {
+        left: 200%;
+      }
+    }
+
+    /* Floating Particles */
+    @keyframes particleFloat {
+      0% {
+        transform: translateY(0) scale(0);
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-100px) scale(1);
+        opacity: 0;
+      }
+    }
+
+    /* Counter Animation */
+    @keyframes counterPop {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      70% {
+        transform: scale(1.3);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Hover Arrow - Bounce */
+    @keyframes arrowBounce {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX(5px);
+      }
+    }
+
+    /* Live Indicator Pulse */
+    @keyframes livePulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+      }
+    }
+
+    /* Popular Card - Base Styles */
+    .popular-card {
+      position: relative;
+      background: #FFFFFF;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(23, 21, 74, 0.08);
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      cursor: pointer;
+      border: 2px solid rgba(200, 31, 69, 0.15);
+      transform-style: preserve-3d;
+      perspective: 800px;
+      animation: float 4s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
+    }
+
+    .popular-card:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .popular-card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .popular-card:nth-child(4) {
+      animation-delay: 0.9s;
+    }
+
+    .popular-card:nth-child(5) {
+      animation-delay: 1.2s;
+    }
+
+    .popular-card:hover {
+      animation-play-state: paused;
+      transform: translateY(-15px) scale(1.03) rotateX(3deg) rotateY(3deg) !important;
+    }
+
+    /* Rotating Gradient Border on Hover */
+
+
+
+    /* Popular Tag */
+    .popular-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: linear-gradient(135deg, #C81F45, #FF6B8A);
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 20px rgba(200, 31, 69, 0.4);
+      z-index: 2;
+      animation: tagPulse 2s ease-in-out infinite;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .popular-tag .fire-emoji {
+      display: inline-block;
+      animation: fireBounce 1s ease-in-out infinite;
+    }
+
+    /* Popular Price */
+    .popular-price {
+      display: inline-block;
+      animation: pricePop 2.5s ease-in-out infinite;
+    }
+
+    /* Shine Effect */
+    .popular-card .popular-shine {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,
+          transparent 0%,
+          rgba(255, 255, 255, 0.15) 30%,
+          rgba(255, 255, 255, 0.25) 50%,
+          rgba(255, 255, 255, 0.15) 70%,
+          transparent 100%);
+      transform: skewX(-25deg);
+      transition: left 0.8s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .popular-card:hover .popular-shine {
+      left: 200%;
+    }
+
+    /* Floating Particles */
+    .popular-particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      border-radius: 16px;
+      z-index: 0;
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      animation: particleFloat 4s ease-in-out infinite;
+      opacity: 0;
+    }
+
+    /* Counter */
+    .popular-counter {
+      display: inline-block;
+      animation: counterPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    /* Hover Arrow */
+    .popular-card:hover .popular-hover-icon {
+      animation: arrowBounce 0.8s ease-in-out infinite;
+    }
+
+    /* Popular Image */
+    .popular-card .popular-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      position: relative;
+      z-index: 1;
+    }
+
+    .popular-card:hover .popular-image {
+      transform: scale(1.08);
+    }
+
+    /* Popular Content */
+    .popular-card .popular-content {
+      padding: 16px;
+      position: relative;
+      background: #FFFFFF;
+      z-index: 1;
+    }
+
+    .popular-card .popular-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1A1A2E;
+      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .popular-card .popular-code {
+      font-size: 11px;
+      color: #6B6B8A;
+      margin-bottom: 4px;
+    }
+
+    .popular-card .popular-hover-icon {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      width: 36px;
+      height: 36px;
+      background: #C81F45;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      box-shadow: 0 4px 15px rgba(200, 31, 69, 0.3);
+    }
+
+    .popular-card:hover .popular-hover-icon {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Popular Section Visibility */
+    .popular-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .popular-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Popular Badge Underline Animation */
+    .popular-section .popular-badge {
+      position: relative;
+      display: inline-block;
+    }
+
+    .popular-section .popular-badge::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #C81F45, #FF6B8A);
+      border-radius: 2px;
+      transform: scaleX(0);
+      transition: transform 0.6s ease;
+      transform-origin: left;
+    }
+
+    .popular-section .popular-badge:hover::after {
+      transform: scaleX(1);
+    }
+
+    /* Live Indicator */
+    .live-indicator {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #22C55E;
+      border-radius: 50%;
+      animation: livePulse 1.5s ease-in-out infinite;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .popular-card {
+        animation-duration: 3s;
+      }
+
+      .popular-card:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .popular-card:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      .popular-card:nth-child(4) {
+        animation-delay: 0.6s;
+      }
+
+      .popular-card:nth-child(5) {
+        animation-delay: 0.8s;
+      }
+
+      .popular-card .popular-image {
+        height: 150px;
+      }
+
+      .popular-card .popular-name {
+        font-size: 12px;
+      }
+
+      .popular-card .popular-price {
+        font-size: 14px;
+      }
+
+      .popular-tag {
+        font-size: 7px;
+        padding: 3px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .popular-card .popular-image {
+        height: 120px;
+      }
+
+      .popular-card .popular-content {
+        padding: 12px;
+      }
+
+      .popular-card .popular-name {
+        font-size: 11px;
+      }
+
+      .popular-card .popular-code {
+        font-size: 9px;
+      }
+
+      .popular-card .popular-price {
+        font-size: 12px;
+      }
+
+      .popular-card .popular-hover-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+        right: 12px;
+        bottom: 12px;
+      }
+    }
   </style>
 </head>
 
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
 
   <!-- Premium Navbar -->
-  <nav class="bg-brand-blue text-white px-4 sm:px-8 py-4 flex justify-between items-center fixed w-full z-50">
+  <nav class="bg-brand-blue text-white px-4 sm:px-8 py-1 flex justify-between items-center fixed w-full z-50">
     <div class="flex items-center">
       <a href="index.html">
-        <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Solutions Logo"
-          class="h-12 sm:h-16 w-auto object-contain">
+        <img src="./logo solution white.png" alt="Inkwell Impressions Solutions Logo"
+          class="h-20 sm:h-24 lg:h-28 xl:h-32 w-auto object-contain" />
       </a>
+    </div>
+    </div>
     </div>
 
     <!-- Desktop Menu -->
@@ -302,7 +766,7 @@
   </div>
   <!-- Page Header (navy/crimson) -->
   <header class="header-bg text-white py-10 px-8">
-    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 mt-[65px]">
       <div class="header-content opacity-0">
         <div class="text-xs text-white/70 mb-3 flex items-center gap-2">
           <a href="#" class="hover:text-white transition-colors">Home</a>
@@ -397,10 +861,33 @@
       </div>
 
       <!-- Popular Products -->
-      <div class="mt-12 mb-8 popular-section opacity-0" id="popular-section">
-        <div class="brand-divider mb-6">
-          <span class="text-sm font-serif font-bold tracking-wide text-brand-text">POPULAR PRODUCTS</span>
+      <div class="mt-12 mb-8 popular-section" id="popular-section">
+        <div class="brand-divider mb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+          <div class="flex items-center gap-4">
+            <div class="h-[2px] w-12 bg-brand-crimson rounded-full"></div>
+
+            <span
+              class="inline-flex items-center gap-2 rounded-full border border-brand-crimson/30 bg-brand-crimson/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-brand-crimson">
+              <i class="fa-solid fa-fire animate-pulse"></i>
+              Popular Products
+            </span>
+
+            <div class="h-[2px] w-20 bg-gradient-to-r from-brand-crimson to-transparent"></div>
+          </div>
+
+          <span
+            class="rounded-full bg-orange-100 px-4 py-2 text-sm font-medium text-orange-700 shadow-sm animate-pulse">
+            🔥 Trending Now
+          </span>
+
         </div>
+
+        <h2 class="text-5xl font-bold text-brand-text leading-tight py-5">
+          Best Selling
+          <span class="text-brand-crimson">Products</span>
+        </h2>
+
         <div id="popular-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           <!-- injected by JS -->
         </div>
@@ -475,7 +962,7 @@
       material: "Canvas",
       size: '9"W x 15"H x 15"D',
       price: 45.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_IB29_1776234848_1.jpg",
+      image: "assets/assets/images/products/tote-bags/IB29/IB29_main.webp",
       description: "7oz cotton canvas bag with self-fabric handles. Reinforced stitching.",
       popular: true
     }, {
@@ -487,7 +974,7 @@
       material: "Cotton",
       size: '15"W x 16"H',
       price: 30.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_MQIB6000_1771964460_1.jpg",
+      image: "assets/assets/images/products/tote-bags/MQIB6000/MQT6000_main.webp",
       description: "6oz. 100% cotton tote bag with natural body and color handles.",
       popular: false
     }, {
@@ -499,7 +986,7 @@
       material: "Canvas",
       size: '20"W x 15"H x 5"D',
       price: 30.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_IB611_1772243422_1.jpg",
+      image: "assets/assets/images/products/tote-bags/IB611/IB611_main.webp",
       description: "12oz. canvas, 100% cotton, jumbo tote with full length zipper.",
       popular: false
     }, {
@@ -511,7 +998,7 @@
       material: "Canvas",
       size: '3"W x 10.5"H x 3"D',
       price: 30.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_IWB201_1.jpg",
+      image: "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp",
       description: "12 oz. 100% cotton canvas. Single bottle wine tote with reinforced bottom.",
       popular: false
     }, {
@@ -523,7 +1010,7 @@
       material: "Cotton",
       size: '15"W x 16"H',
       price: 30.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_MQIB_1776670130_1.jpeg",
+      image: "assets/assets/images/products/tote-bags/MQIB/MQIB_main.webp",
       description: "Premium cotton tote, ideal for everyday use.",
       popular: true
     }, {
@@ -535,7 +1022,7 @@
       material: "Canvas",
       size: '15"W x 16"H',
       price: 32.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_IB800_1772056093_1.jpg",
+      image: "assets/assets/images/products/tote-bags/IB800/IB800_main.webp",
       description: "Durable canvas tote with promotional appeal.",
       popular: true
     }, {
@@ -547,7 +1034,7 @@
       material: "Non-Woven",
       size: '15"W x 16"H',
       price: 28.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_W956_1772629971_1.jpg",
+      image: "assets/assets/images/products/non-woven/W956/W956_main.webp",
       description: "Lightweight non-woven bag for conventions.",
       popular: true
     }, {
@@ -559,7 +1046,7 @@
       material: "Non-Woven",
       size: '14.25"W x 15"H x 5"D',
       price: 25.00,
-      image: "https://inkwell-impressions.com/storage/product_images/thmImage_W975_1773407422_1.jpg",
+      image: "assets/assets/images/products/non-woven/W975/W975_main.webp",
       description: "Economical non-woven tote.",
       popular: true
       // }, {
@@ -824,30 +1311,92 @@
           gsap.set('.product-card', { y: 30, opacity: 0 });
           gsap.to('.product-card', { y: 0, opacity: 1, duration: 0.5, stagger: 0.08, ease: 'back.out(1.2)', overwrite: 'auto' });
         }
-        renderPopular();
+
+        // Popular products render karo
+        const popularProducts = products.filter(p => p.popular === true);
+        renderPopularProducts(popularProducts);
       }
 
-      function renderPopular() {
-        const popular = products.filter(p => p.popular === true);
-        popularGrid.innerHTML = '';
-        popular.forEach(p => {
-          const div = document.createElement('div');
-          div.className = 'premium-card p-3 text-center group cursor-pointer transition-all';
-          div.innerHTML = `
-              <span class="inline-block bg-brand-navy text-white text-[9px] font-bold px-1.5 py-0.5 rounded mb-2 w-full text-left border border-white/10">${p.code}</span>
-              <div class="relative h-28 mb-3 flex items-center justify-center product-img-bg">
-                <img src="${p.image}" alt="${p.name}" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-                <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[8px] px-1.5 py-0.5 rounded border border-white/10">${p.size}</div>
-              </div>
-              <h4 class="text-xs font-bold mb-1 truncate text-brand-text">${p.name}</h4>
-              <div class="flex items-center justify-center gap-1"><span class="text-brand-crimson font-bold text-sm">$${p.price.toFixed(2)}</span><span class="text-[9px] text-brand-textSecondary">Now Net</span></div>
-            `;
-          // Popular card click also navigates to product detail
-          div.addEventListener('click', function () {
-            window.location.href = `product.html?id=${p.id}`;
-          });
-          popularGrid.appendChild(div);
-        });
+      function renderPopularProducts(popularProducts) {
+        const grid = document.getElementById('popular-grid');
+        if (!grid) return;
+
+        // Trending emojis array
+        const emojis = ['🔥', '⭐', '💫', '✨', '🌟', '🎯', '💎', '👑'];
+        const colors = ['#FF6B6B', '#FFD93D', '#6BCB77', '#4D96FF', '#FF6B8A', '#FFB347', '#A66CFF', '#FF8A5C'];
+
+        grid.innerHTML = popularProducts.map((product, index) => {
+          const emoji = emojis[index % emojis.length];
+          const color = colors[index % colors.length];
+          const randomBuyers = Math.floor(100 + Math.random() * 900);
+
+          return `
+            <div class="popular-card" style="animation-delay: ${index * 0.15}s" 
+                 onclick="window.location.href='product.html?id=${product.id}'">
+                <div class="popular-shine"></div>
+                
+                <!-- Floating Particles -->
+                <div class="popular-particles">
+                    ${[...Array(6)].map((_, i) => `
+                        <div class="particle" style="
+                            left: ${Math.random() * 100}%;
+                            animation-delay: ${Math.random() * 4}s;
+                            animation-duration: ${3 + Math.random() * 4}s;
+                            width: ${2 + Math.random() * 5}px;
+                            height: ${2 + Math.random() * 5}px;
+                            background: ${[color, '#C81F45', '#FF6B8A', '#FFD700'][i % 4]};
+                        "></div>
+                    `).join('')}
+                </div>
+                
+                <!-- Popular Tag with Fire Emoji -->
+                <span class="popular-tag">
+                    <span class="fire-emoji">${emoji}</span> 
+                    Trending #${index + 1}
+                </span>
+                
+                <!-- Order Counter (Fake Popularity) -->
+                <div class="absolute top-12 left-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full z-10">
+                    <span class="text-white text-[10px] font-medium flex items-center gap-1.5">
+                        <i class="fa-solid fa-users text-[8px]"></i>
+                        <span class="popular-counter">${randomBuyers}+</span>
+                        <span class="text-white/50 text-[8px]">bought</span>
+                    </span>
+                </div>
+                
+                <img src="${product.image}" alt="${product.name}" class="popular-image">
+                
+                <div class="popular-content">
+                    <p class="popular-code">${product.code}</p>
+                    <h4 class="popular-name">${product.name}</h4>
+                    
+                    <!-- Rating Stars -->
+                    <div class="flex items-center gap-1 mt-1">
+                        <div class="flex text-amber-400 text-[9px]">
+                            ${'⭐'.repeat(5)}
+                        </div>
+                        <span class="text-[9px] text-brand-textSecondary">(${(Math.random() * 150 + 30).toFixed(0)})</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between mt-2">
+                        <div>
+                            <span class="text-[9px] text-brand-textSecondary line-through opacity-60">$${(product.price * 1.3).toFixed(2)}</span>
+                            <span class="popular-price ml-1">$${product.price.toFixed(2)}</span>
+                        </div>
+                        <div class="popular-hover-icon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        }).join('');
+
+        // Show section with animation
+        setTimeout(() => {
+          const section = document.getElementById('popular-section');
+          if (section) section.classList.add('visible');
+        }, 200);
       }
 
       function applyFiltersAndRender() {
@@ -863,6 +1412,20 @@
           applyFiltersAndRender();
         });
       }
+      gsap.from(".brand-divider", {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      gsap.from(".brand-divider span", {
+        scale: 0.8,
+        opacity: 0,
+        stagger: 0.15,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+      });
 
       function init() {
         renderSidebar();

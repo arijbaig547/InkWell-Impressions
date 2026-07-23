@@ -164,11 +164,11 @@
 
     <!-- Navigation (premium light) -->
     <!-- Premium Navbar -->
-    <nav class="bg-brand-blue text-white px-4 sm:px-8 py-4 flex justify-between items-center fixed w-full z-50">
+    <nav class="bg-brand-blue text-white px-4 sm:px-8 py-1 flex justify-between items-center fixed w-full z-50">
         <div class="flex items-center">
             <a href="index.html">
-                <img src="../assets/Inkwell Logo.jpeg" alt="Inkwell Impressions Solutions Logo"
-                    class="h-12 sm:h-16 w-auto object-contain">
+                <img src="./logo solution white.png" alt="Inkwell Impressions Solutions Logo"
+                    class="h-20 sm:h-24 lg:h-28 xl:h-32 w-auto object-contain" />
             </a>
         </div>
 
@@ -215,8 +215,8 @@
     </div>
 
     <!-- Page Header (navy/crimson) -->
-    <header class="header-bg text-white py-10 px-8">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <header class="header-bg text-white py-10 px-8 ">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 mt-[65px]">
             <div>
                 <span class="text-brand-crimson text-sm font-semibold tracking-wider uppercase mb-2 block">Partner With
                     Us</span>
@@ -993,116 +993,385 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../config/supabase.js"></script>
     <!-- Tab Switching Script -->
-    <script>
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const hamburgerIcon = document.getElementById('hamburgerIcon');
+   <script>
 
-        hamburgerBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            // Toggle icon between bars and X
-            hamburgerIcon.classList.toggle('fa-bars');
-            hamburgerIcon.classList.toggle('fa-xmark');
+    // ============================================================
+    // FORM SUBMIT HANDLERS - ALL 5 FORMS (FIXED)
+    // ============================================================
+
+    // 1. QUOTE FORM
+    const quoteForm = document.getElementById('form-quote');
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+            try {
+                const formData = new FormData();
+                formData.append('request_type', 'quotation');  // ✅ FIXED
+                formData.append('first_name', this.querySelector('input[placeholder="John"]').value);
+                formData.append('last_name', this.querySelector('input[placeholder="Doe"]').value);
+                formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
+                formData.append('email', this.querySelector('input[placeholder="john@acmecorp.com"]').value);
+                formData.append('phone', this.querySelector('input[placeholder="+1 (555) 000-0000"]').value);
+                formData.append('category', this.querySelector('select').value);
+                formData.append('quantity', this.querySelector('input[placeholder="e.g. 500"]').value);
+                formData.append('date', this.querySelector('input[type="date"]').value);
+                formData.append('details', this.querySelector('textarea').value);
+
+                const fileInput = this.querySelector('input[type="file"]');
+                if (fileInput && fileInput.files.length > 0) {
+                    for (let i = 0; i < fileInput.files.length; i++) {
+                        formData.append('attachments', fileInput.files[i]);
+                    }
+                }
+
+                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.message || 'Failed');
+
+                alert('✅ Quote Request Sent Successfully!');
+                this.reset();
+            } catch (error) {
+                console.error(error);
+                alert('❌ Failed to send. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }
         });
+    }
 
-        // Close menu when clicking a link (optional but better UX)
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                hamburgerIcon.classList.add('fa-bars');
-                hamburgerIcon.classList.remove('fa-xmark');
-            });
+    // 2. MOCKUP FORM
+    const mockupForm = document.getElementById('form-mockup');
+    if (mockupForm) {
+        mockupForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+            try {
+                const formData = new FormData();
+                formData.append('request_type', 'mockup');  // ✅ FIXED
+                formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
+                formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
+                formData.append('email', this.querySelector('input[type="email"]').value);
+                formData.append('product', this.querySelector('input[placeholder="e.g., Matte Black Tumbler, Cotton Tote Bag"]').value);
+                formData.append('instructions', this.querySelector('textarea').value);
+
+                const fileInput = this.querySelector('input[type="file"]');
+                if (fileInput && fileInput.files.length > 0) {
+                    for (let i = 0; i < fileInput.files.length; i++) {
+                        formData.append('logo_files', fileInput.files[i]);
+                    }
+                }
+
+                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.message || 'Failed');
+
+                alert('✅ Mockup Request Sent Successfully!');
+                this.reset();
+            } catch (error) {
+                console.error(error);
+                alert('❌ Failed to send. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }
         });
-        function showForm(formId) {
-            // Hide all forms
-            document.querySelectorAll('.form-panel').forEach(form => {
-                form.classList.add('hidden');
-                form.classList.remove('opacity-100');
-                form.classList.add('opacity-0');
-            });
+    }
 
-            // Reset all tabs
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.className = "tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30";
-                const svg = btn.querySelector('svg');
-                if (svg) svg.classList.add('opacity-0');
-            });
+    // 3. FREIGHT FORM
+    const freightForm = document.getElementById('form-freight');
+    if (freightForm) {
+        freightForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
 
-            // Show selected form
-            const activeForm = document.getElementById('form-' + formId);
-            activeForm.classList.remove('hidden');
-            setTimeout(() => {
-                activeForm.classList.remove('opacity-0');
-                activeForm.classList.add('opacity-100');
-            }, 10);
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
 
-            // Highlight active tab
-            const activeTab = document.getElementById('tab-' + formId);
-            activeTab.className = "tab-btn active w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson";
-            const activeSvg = activeTab.querySelector('svg');
-            if (activeSvg) activeSvg.classList.remove('opacity-0');
-        }
+            try {
+                const formData = new FormData();
+                formData.append('request_type', 'freight');  // ✅ FIXED
+                formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
+                formData.append('email', this.querySelector('input[type="email"]').value);
+                formData.append('address', this.querySelector('input[placeholder="123 Main St"]').value);
+                formData.append('city', this.querySelector('input[placeholder="New York"]').value);
+                formData.append('state', this.querySelector('input[placeholder="NY"]').value);
+                formData.append('zip', this.querySelector('input[placeholder="10001"]').value);
+                formData.append('country', this.querySelector('input[placeholder="USA"]').value);
+                formData.append('volume', this.querySelector('input[placeholder="e.g., 2 Pallets, ~500 lbs"]').value);
+                formData.append('delivery_type', this.querySelector('select').value);
 
-        // File input handler
-        document.querySelectorAll('input[type="file"]').forEach(input => {
-            const dropzone = input.closest('.flex');
-            if (dropzone) {
-                dropzone.addEventListener('click', () => input.click());
-                input.addEventListener('change', function (e) {
-                    const name = e.target.files[0]?.name || '';
-                    const label = dropzone.querySelector('span');
-                    if (label && name) {
-                        label.textContent = '✓ ' + name;
-                        label.classList.add('text-brand-crimson');
+                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.message || 'Failed');
+
+                alert('✅ Freight Estimate Request Sent Successfully!');
+                this.reset();
+            } catch (error) {
+                console.error(error);
+                alert('❌ Failed to send. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }
+        });
+    }
+
+    // 4. CREDIT APPLICATION FORM
+    const creditForm = document.getElementById('form-credit');
+    if (creditForm) {
+        creditForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+            try {
+                const formData = new FormData();
+                formData.append('request_type', 'credit');  // ✅ FIXED
+
+                // Business Information
+                formData.append('business_name', document.querySelector('#form-credit input[placeholder="Acme Corp"]')?.value || '');
+                formData.append('date', document.querySelector('#form-credit input[type="date"]')?.value || '');
+                formData.append('address', document.querySelectorAll('#form-credit input[type="text"]')[2]?.value || '');
+                formData.append('city', document.querySelectorAll('#form-credit input[type="text"]')[3]?.value || '');
+                formData.append('state', document.querySelectorAll('#form-credit input[type="text"]')[4]?.value || '');
+                formData.append('zip', document.querySelectorAll('#form-credit input[type="text"]')[5]?.value || '');
+                formData.append('telephone', document.querySelector('#form-credit input[type="tel"]')?.value || '');
+                formData.append('fax', document.querySelectorAll('#form-credit input[type="text"]')[7]?.value || '');
+
+                // Card 1
+                formData.append('po_email', document.querySelector('#form-credit input[type="email"]')?.value || '');
+                formData.append('ap_email', document.querySelectorAll('#form-credit input[type="email"]')[1]?.value || '');
+                formData.append('finance_contact', document.querySelectorAll('#form-credit input[type="text"]')[8]?.value || '');
+                formData.append('card_name_1', document.querySelectorAll('#form-credit input[type="text"]')[9]?.value || '');
+                formData.append('billing_address_1', document.querySelectorAll('#form-credit input[type="text"]')[10]?.value || '');
+                formData.append('city_1', document.querySelectorAll('#form-credit input[type="text"]')[11]?.value || '');
+                formData.append('state_1', document.querySelectorAll('#form-credit input[type="text"]')[12]?.value || '');
+                formData.append('zip_1', document.querySelectorAll('#form-credit input[type="text"]')[13]?.value || '');
+
+                const card1Usage = document.querySelector('input[name="card1-usage"]:checked');
+                formData.append('card_usage_1', card1Usage ? card1Usage.value : '');
+                formData.append('po_number_1', document.querySelectorAll('#form-credit input[type="text"]')[14]?.value || '');
+                formData.append('auth_value_1', document.querySelectorAll('#form-credit input[type="text"]')[15]?.value || '');
+
+                // Card 2
+                formData.append('card_name_2', document.querySelectorAll('#form-credit input[type="text"]')[16]?.value || '');
+                formData.append('billing_address_2', document.querySelectorAll('#form-credit input[type="text"]')[17]?.value || '');
+                formData.append('city_2', document.querySelectorAll('#form-credit input[type="text"]')[18]?.value || '');
+                formData.append('state_2', document.querySelectorAll('#form-credit input[type="text"]')[19]?.value || '');
+                formData.append('zip_2', document.querySelectorAll('#form-credit input[type="text"]')[20]?.value || '');
+
+                const card2Usage = document.querySelector('input[name="card2-usage"]:checked');
+                formData.append('card_usage_2', card2Usage ? card2Usage.value : '');
+                formData.append('po_number_2', document.querySelectorAll('#form-credit input[type="text"]')[21]?.value || '');
+                formData.append('auth_value_2', document.querySelectorAll('#form-credit input[type="text"]')[22]?.value || '');
+
+                // Comments & Signature
+                formData.append('comments', document.querySelector('#form-credit textarea')?.value || '');
+                formData.append('card_holder_name', document.querySelectorAll('#form-credit input[type="text"]')[23]?.value || '');
+                formData.append('signature', document.querySelectorAll('#form-credit input[type="text"]')[24]?.value || '');
+                formData.append('signed_date', document.querySelectorAll('#form-credit input[type="date"]')[1]?.value || '');
+
+                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.message || 'Failed');
+
+                alert('✅ Credit Application Submitted Successfully!');
+                this.reset();
+            } catch (error) {
+                console.error(error);
+                alert('❌ Failed to submit. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }
+        });
+    }
+
+    // 5. PURCHASE ORDER FORM
+    const poForm = document.getElementById('form-po');
+    if (poForm) {
+        poForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+            try {
+                const formData = new FormData();
+                formData.append('request_type', 'po');  // ✅ FIXED
+
+                const inputs = this.querySelectorAll('input, textarea, select');
+                const inputValues = [];
+                inputs.forEach(inp => {
+                    if (inp.type !== 'file' && inp.type !== 'checkbox') {
+                        inputValues.push(inp.value);
                     }
                 });
+
+                formData.append('company_name', inputValues[0] || '');
+                formData.append('contact_person', inputValues[1] || '');
+                formData.append('job_title', inputValues[2] || '');
+                formData.append('email', inputValues[3] || '');
+                formData.append('phone', inputValues[4] || '');
+                formData.append('address', inputValues[5] || '');
+                formData.append('city', inputValues[6] || '');
+                formData.append('state', inputValues[7] || '');
+                formData.append('zip', inputValues[8] || '');
+                formData.append('country', inputValues[9] || '');
+                formData.append('tax_id', inputValues[10] || '');
+                formData.append('po_number', inputValues[11] || '');
+                formData.append('po_date', inputValues[12] || '');
+                formData.append('delivery_date', inputValues[13] || '');
+                formData.append('product_category', inputValues[14] || '');
+                formData.append('product_name', inputValues[15] || '');
+                formData.append('quantity', inputValues[16] || '');
+                formData.append('decoration_method', inputValues[17] || '');
+                formData.append('artwork_notes', inputValues[18] || '');
+                formData.append('shipping_address', inputValues[19] || '');
+                formData.append('billing_address', inputValues[20] || '');
+                formData.append('shipping_method', inputValues[21] || '');
+                formData.append('additional_details', inputValues[22] || '');
+
+                const logoInput = this.querySelectorAll('input[type="file"]')[0];
+                if (logoInput && logoInput.files.length > 0) {
+                    for (let i = 0; i < logoInput.files.length; i++) {
+                        formData.append('logo_files', logoInput.files[i]);
+                    }
+                }
+
+                const artworkInput = this.querySelectorAll('input[type="file"]')[1];
+                if (artworkInput && artworkInput.files.length > 0) {
+                    for (let i = 0; i < artworkInput.files.length; i++) {
+                        formData.append('artwork_files', artworkInput.files[i]);
+                    }
+                }
+
+                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.message || 'Failed');
+
+                alert('✅ Purchase Order Submitted Successfully!');
+                this.reset();
+
+                this.querySelectorAll('.flex input[type="file"]').forEach(inp => {
+                    const label = inp.closest('.flex')?.querySelector('span');
+                    if (label) {
+                        label.textContent = 'Click to upload';
+                        label.classList.remove('text-brand-crimson');
+                    }
+                });
+            } catch (error) {
+                console.error(error);
+                alert('❌ Failed to submit. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
             }
         });
+    }
 
-        // Prevent default form submission
-        // document.querySelectorAll('form').forEach(form => {
-        //     form.addEventListener('submit', (e) => {
-        //         e.preventDefault();
-        //         alert('Thank you! Your request has been successfully submitted to our team.');
-        //         form.reset();
-        //         // reset file upload labels
-        //         form.querySelectorAll('.flex input[type="file"]').forEach(inp => {
-        //             const label = inp.closest('.flex')?.querySelector('span');
-        //             if (label) {
-        //                 label.textContent = 'Click to upload';
-        //                 label.classList.remove('text-brand-crimson');
-        //             }
-        //         });
-        //     });
-        // });
-        const poForm = document.getElementById("form-po");
+    // ============================================================
+    // HAMBURGER MENU & TAB SWITCHING (Existing Code)
+    // ============================================================
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
 
-        poForm.addEventListener("submit", async (e) => {
-            e.preventDefault();
+    hamburgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        hamburgerIcon.classList.toggle('fa-bars');
+        hamburgerIcon.classList.toggle('fa-xmark');
+    });
 
-            const inputs = poForm.querySelectorAll("input, textarea");
-
-            const order = {
-                company_name: inputs[0].value,
-                agent_name: inputs[1].value,
-                email: inputs[2].value,
-                po_number: inputs[3].value,
-                notes: inputs[4].value
-            };
-
-            const { data, error } = await supabase
-                .from("purchase_orders")
-                .insert([order]);
-
-            if (error) {
-                console.log(error);
-                alert("Error submitting order");
-            } else {
-                alert("Order submitted successfully");
-                poForm.reset();
-            }
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            hamburgerIcon.classList.add('fa-bars');
+            hamburgerIcon.classList.remove('fa-xmark');
         });
-    </script>
+    });
+
+    function showForm(formId) {
+        document.querySelectorAll('.form-panel').forEach(form => {
+            form.classList.add('hidden');
+            form.classList.remove('opacity-100');
+            form.classList.add('opacity-0');
+        });
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.className = "tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30";
+            const svg = btn.querySelector('svg');
+            if (svg) svg.classList.add('opacity-0');
+        });
+
+        const activeForm = document.getElementById('form-' + formId);
+        activeForm.classList.remove('hidden');
+        setTimeout(() => {
+            activeForm.classList.remove('opacity-0');
+            activeForm.classList.add('opacity-100');
+        }, 10);
+
+        const activeTab = document.getElementById('tab-' + formId);
+        activeTab.className = "tab-btn active w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson";
+        const activeSvg = activeTab.querySelector('svg');
+        if (activeSvg) activeSvg.classList.remove('opacity-0');
+    }
+
+    // File input handler
+    document.querySelectorAll('input[type="file"]').forEach(input => {
+        const dropzone = input.closest('.flex');
+        if (dropzone) {
+            dropzone.addEventListener('click', () => input.click());
+            input.addEventListener('change', function (e) {
+                const name = e.target.files[0]?.name || '';
+                const label = dropzone.querySelector('span');
+                if (label && name) {
+                    label.textContent = '✓ ' + name;
+                    label.classList.add('text-brand-crimson');
+                }
+            });
+        }
+    });
+
+</script>
 
 </body>
 
