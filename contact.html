@@ -164,37 +164,63 @@
 
     <!-- Navigation (premium light) -->
     <!-- Premium Navbar -->
-    <nav class="bg-brand-blue text-white px-4 sm:px-8 py-1 flex justify-between items-center fixed w-full z-50">
-        <div class="flex items-center">
-            <a href="index.html">
-                <img src="./logo solution white.png" alt="Inkwell Impressions Solutions Logo"
-                    class="h-20 sm:h-24 lg:h-28 xl:h-32 w-auto object-contain" />
-            </a>
-        </div>
+    <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-4 sm:px-8 py-1">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
-            <li><a href="index.html" class="text-brand-red">Home</a></li>
-            <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
-            <li><a class="hover:text-brand-red transition">Categories</a></li>
-            <li><a class="hover:text-brand-red transition">About Us</a></li>
-            <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
-        </ul>
+            <!-- Logo -->
+            <div class="flex items-center shrink-0">
+                <a href="index.html">
+                    <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
+                        class="h-32 sm:h-36 lg:h-40 xl:h-48 w-auto object-contain" />
+                </a>
+            </div>
 
-        <div class="flex items-center gap-3 sm:gap-4">
-            <!-- Desktop Login Button -->
-            <button
-                class="hidden sm:block bg-brand-red hover:bg-red-700 text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
-                LOGIN/SIGNUP
-            </button>
-            <i class="fa-solid fa-search cursor-pointer"></i>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
+                <li><a href="index.html" class="text-brand-crimson">Home</a></li>
+                <li><a href="products.html" class="hover:text-brand-crimson transition">Products</a></li>
+                <li><a class="hover:text-brand-crimson transition">Categories</a></li>
+                <li><a class="hover:text-brand-crimson transition">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-brand-crimson transition">Contact</a></li>
+            </ul>
 
-            <!-- Hamburger Button -->
-            <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
-                <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
-            </button>
+            <!-- Right -->
+            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+                <button
+                    class="hidden lg:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
+                    LOGIN/SIGNUP
+                </button>
+
+                <i class="fa-solid fa-search cursor-pointer"></i>
+
+                <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none"
+                    aria-label="Toggle Menu">
+                    <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="hidden md:hidden fixed top-[88px] left-0 w-full z-40 bg-brand-navy text-white px-6 py-4 space-y-4 border-t border-gray-700">
+
+        <ul class="space-y-4 text-sm font-medium uppercase tracking-wide">
+            <li><a href="index.html" class="text-brand-crimson block py-2 border-b border-gray-700">Home</a></li>
+            <li><a href="products.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Products</a></li>
+            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
+            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
+            <li><a href="contact.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
+        </ul>
+
+        <button
+            class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
+            LOGIN/SIGNUP
+        </button>
+    </div>
 
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobileMenu"
@@ -206,7 +232,8 @@
             <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Categories</a></li>
             <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">About Us</a></li>
             <li><a href="contact.html"
-                    class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Contact</a></li>
+                    class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Contact</a>
+            </li>
         </ul>
         <button
             class="w-full bg-brand-red hover:bg-red-700 text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
@@ -215,8 +242,8 @@
     </div>
 
     <!-- Page Header (navy/crimson) -->
-    <header class="header-bg text-white py-10 px-8 ">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 mt-[65px]">
+    <header class="header-bg text-white py-10 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 pt-[185px]">
             <div>
                 <span class="text-brand-crimson text-sm font-semibold tracking-wider uppercase mb-2 block">Partner With
                     Us</span>
@@ -248,7 +275,7 @@
 
                             <button onclick="showForm('quote')" id="tab-quote"
                                 class="tab-btn active w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson">
-                                <span class="font-medium text-sm tracking-wide">LOGIN/SIGNUP</span>
+                                <span class="font-medium text-sm tracking-wide">Request a Quote</span>
                                 <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -299,30 +326,68 @@
                         </nav>
 
                         <!-- Contact -->
-                        <div class="mt-8 pt-6 border-t border-brand-border">
+                        <!-- Contact -->
+                        <!-- Contact -->
+                        <div class="mt-10 pt-8 border-t border-brand-border">
 
-                            <h4 class="text-brand-text font-semibold mb-5 text-sm">Direct Contact</h4>
+                            <h4 class="text-brand-text font-semibold mb-6 text-sm tracking-wide uppercase">Direct
+                                Contact</h4>
 
                             <div class="space-y-4">
-
-                                <a href="mailto:sales@inkwellimpressions.com"
-                                    class="flex items-center gap-3 text-sm text-brand-textSecondary hover:text-brand-crimson transition">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                    </svg>
-                                    <span>sales@inkwellimpressions.com</span>
+                                <!-- Emails -->
+                                <a href="mailto:sales@inkwell-impressions.com"
+                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    <i
+                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                    <span class="break-all">sales@inkwell-impressions.com</span>
                                 </a>
 
+                                <a href="mailto:cs@inkwell-impressions.com"
+                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    <i
+                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                    <span class="break-all">cs@inkwell-impressions.com</span>
+                                </a>
+
+                                <a href="mailto:info@inkwell-impressions.com"
+                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    <i
+                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                    <span class="break-all">info@inkwell-impressions.com</span>
+                                </a>
+
+                                <a href="mailto:accounts@inkwell-impressions.com"
+                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    <i
+                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                    <span class="break-all">accounts@inkwell-impressions.com</span>
+                                </a>
+
+                                <!-- Divider -->
+                                <div class="border-t border-brand-border/40 my-3"></div>
+
+                                <!-- Phone Number -->
                                 <a href="tel:+12125557890"
-                                    class="flex items-center gap-3 text-sm text-brand-textSecondary hover:text-brand-crimson transition">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                    </svg>
+                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    <i class="fa-solid fa-phone text-brand-crimson w-6 text-base flex-shrink-0"></i>
                                     <span>+1 (212) 555-7890</span>
                                 </a>
 
+                                <!-- Divider -->
+                                <div class="border-t border-brand-border/40 my-3"></div>
+
+                                <!-- Mailing Address -->
+                                <div class="flex items-start gap-4 text-sm text-brand-textSecondary py-1">
+                                    <i
+                                        class="fa-solid fa-location-dot text-brand-crimson w-6 text-base flex-shrink-0 mt-0.5"></i>
+                                    <div class="leading-relaxed">
+                                        <div class="font-semibold text-brand-text mb-0.5">Company Mailing Address</div>
+                                        <div>5900 Balcones Drive</div>
+                                        <div>STE 100</div>
+                                        <div>Austin, TX, 78731</div>
+                                        <div>US</div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -333,6 +398,7 @@
                 <!-- Forms Area -->
                 <div class="lg:col-span-8 premium-card p-6 sm:p-10 shadow-lg relative min-h-[600px]">
 
+                    <!-- 1. Quote Form -->
                     <!-- 1. Quote Form -->
                     <form id="form-quote" class="form-panel block transition-opacity duration-300">
                         <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Request a
@@ -358,6 +424,35 @@
                                     class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Phone
                                     Number</label><input type="tel" class="w-full input-premium"
                                     placeholder="+1 (555) 000-0000"></div>
+
+                            <!-- ====== NEW FIELDS ADDED HERE ====== -->
+                            <!-- ASI / PPAI / SAGE # -->
+                            <div class="md:col-span-2 mt-1">
+                                <label
+                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">ASI
+                                    / PPAI / SAGE #</label>
+                                <input type="text" class="w-full input-premium"
+                                    placeholder="Enter ASI/PPAI/SAGE number">
+                            </div>
+
+                            <!-- Item (Product Code/Name) -->
+                            <div>
+                                <label
+                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Item
+                                    *</label>
+                                <input type="text" class="w-full input-premium" placeholder="e.g. IB29, MQIB6000"
+                                    required>
+                            </div>
+
+                            <!-- Qty (Quantity) -->
+                            <div>
+                                <label
+                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Qty
+                                    *</label>
+                                <input type="number" class="w-full input-premium" placeholder="Enter quantity" min="1"
+                                    required>
+                            </div>
+                            <!-- ====== END NEW FIELDS ====== -->
 
                             <div class="md:col-span-2 mt-1">
                                 <label
@@ -390,10 +485,22 @@
                                     required></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Submit
-                            Quote Request</button>
+                        <div class="flex flex-col items-start gap-3">
+                            <button type="submit"
+                                class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Submit Quote
+                                Request</button>
+                            <p class="text-xs text-brand-gray mt-1">
+                                <i class="fa-regular fa-envelope mr-1"></i>
+                                For quote inquiries: <br><a href="mailto:sales@inkwell-impressions.com"
+                                    class="text-brand-crimson hover:underline">sales@inkwell-impressions.com</a> |
+                                <a href="mailto:cs@inkwell-impressions.com"
+                                    class="text-brand-crimson hover:underline">cs@inkwell-impressions.com</a> |
+                                <a href="mailto:info@inkwell-impressions.com"
+                                    class="text-brand-crimson hover:underline">info@inkwell-impressions.com</a>
+                            </p>
+                        </div>
                     </form>
-
+                    <!-- 2. Mockup Form -->
                     <!-- 2. Mockup Form -->
                     <form id="form-mockup" class="form-panel hidden opacity-0 transition-opacity duration-300">
                         <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Request a
@@ -401,7 +508,8 @@
                         <p
                             class="text-sm text-brand-textSecondary mb-8 border-l-3 border-brand-crimson pl-4 bg-brand-bg/30 p-3 rounded">
                             Upload your logo and let our design team show you exactly how your brand will look on our
-                            products.</p>
+                            products.
+                        </p>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
                             <div class="md:col-span-2"><label
@@ -413,6 +521,35 @@
                             <div><label
                                     class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
                                     Address *</label><input type="email" class="w-full input-premium" required></div>
+
+                            <!-- ====== NEW FIELDS ADDED HERE ====== -->
+                            <!-- ASI / PPAI / SAGE # -->
+                            <div>
+                                <label
+                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">ASI
+                                    / PPAI / SAGE #</label>
+                                <input type="text" class="w-full input-premium"
+                                    placeholder="Enter ASI/PPAI/SAGE number">
+                            </div>
+
+                            <!-- Item (Product Code/Name) -->
+                            <div>
+                                <label
+                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Item
+                                    *</label>
+                                <input type="text" class="w-full input-premium" placeholder="e.g. IB29, MQIB6000"
+                                    required>
+                            </div>
+
+                            <!-- Qty (Quantity) -->
+                            <div>
+                                <label
+                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Qty
+                                    *</label>
+                                <input type="number" class="w-full input-premium" placeholder="Enter quantity" min="1"
+                                    required>
+                            </div>
+                            <!-- ====== END NEW FIELDS ====== -->
 
                             <div class="md:col-span-2 mt-1">
                                 <label
@@ -454,281 +591,323 @@
 
                     <!-- 3. Freight Form -->
                     <form id="form-freight" class="form-panel hidden opacity-0 transition-opacity duration-300">
-                        <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Freight &
-                            Shipping Estimate</h2>
+    <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Freight &amp;
+        Shipping Estimate</h2>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
-                                    Name *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
-                                    Address *</label><input type="email" class="w-full input-premium" required></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <div><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
+                Name *</label><input type="text" class="w-full input-premium" required></div>
+        <div><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
+                Address *</label><input type="email" class="w-full input-premium" required></div>
 
-                            <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
-                                <h3 class="text-brand-text font-medium">Destination Address</h3>
-                            </div>
+        <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
+            <h3 class="text-brand-text font-medium">Destination Address</h3>
+        </div>
 
-                            <div class="md:col-span-2"><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Street
-                                    Address *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City
-                                    *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
-                                    / Province *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
-                                    / Postal Code *</label><input type="text" class="w-full input-premium" required>
-                            </div>
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Country
-                                    *</label><input type="text" class="w-full input-premium" required></div>
+        <div class="md:col-span-2"><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Street
+                Address *</label><input type="text" class="w-full input-premium" required></div>
+        <div><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City
+                *</label><input type="text" class="w-full input-premium" required></div>
+        <div><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
+                / Province *</label><input type="text" class="w-full input-premium" required></div>
+        <div><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
+                / Postal Code *</label><input type="text" class="w-full input-premium" required>
+        </div>
+        <div><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Country
+                *</label><input type="text" class="w-full input-premium" required></div>
 
-                            <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
-                                <h3 class="text-brand-text font-medium">Shipment Details</h3>
-                            </div>
+        <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
+            <h3 class="text-brand-text font-medium">Shipment Details</h3>
+        </div>
 
-                            <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Estimated
-                                    Order Volume / Weight</label><input type="text" class="w-full input-premium"
-                                    placeholder="e.g., 2 Pallets, ~500 lbs"></div>
-                            <div>
-                                <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Delivery
-                                    Type</label>
-                                <select class="w-full input-premium appearance-none cursor-pointer">
-                                    <option value="standard">Standard Commercial (Loading Dock)</option>
-                                    <option value="liftgate">Commercial w/ Liftgate Required</option>
-                                    <option value="residential">Residential Delivery</option>
-                                    <option value="trade">Trade Show / Exhibition</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Get
-                            Estimate</button>
-                    </form>
+        <div><label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Estimated
+                Order Volume / Weight</label><input type="text" class="w-full input-premium"
+                placeholder="e.g., 2 Pallets, ~500 lbs"></div>
+        <div>
+            <label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Delivery
+                Type</label>
+            <select class="w-full input-premium appearance-none cursor-pointer">
+                <option value="standard">Standard Commercial (Loading Dock)</option>
+                <option value="liftgate">Commercial w/ Liftgate Required</option>
+                <option value="residential">Residential Delivery</option>
+                <option value="trade">Trade Show / Exhibition</option>
+            </select>
+        </div>
 
+        <!-- NEW: Item/Style No. & Quantity -->
+        <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
+            <h3 class="text-brand-text font-medium">Items to Ship</h3>
+        </div>
+
+        <div>
+            <label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Item / Style
+                No.</label>
+            <input type="text" class="w-full input-premium" placeholder="e.g., STL-100, BGR-204">
+        </div>
+        <div>
+            <label
+                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Quantity</label>
+            <input type="number" class="w-full input-premium" placeholder="e.g., 24" min="1">
+        </div>
+        <!-- END NEW -->
+
+    </div>
+    <button type="submit" class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Get
+        Estimate</button>
+</form>
                     <!-- 4. Credit App Form -->
+                    <!-- 4. Credit App Form - SPLIT WITH SEPARATE SUBMIT BUTTONS -->
                     <form id="form-credit" class="form-panel hidden opacity-0 transition-opacity duration-300">
                         <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Corporate
                             Credit Application</h2>
-                        <p
-                            class="text-sm text-brand-textSecondary mb-8 border-l-3 border-brand-crimson pl-4 bg-brand-bg/30 p-3 rounded">
-                            Submit your basic corporate information to initiate a Net-30 credit terms review. Our
-                            finance team will follow up directly with next steps.
-                        </p>
 
-                        <!-- Business Information -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Business Information
+                        <!-- ============================================ -->
+                        <!-- SECTION 1: NET 30 TERMS FORM -->
+                        <!-- ============================================ -->
+                        <div id="net30-section"
+                            class="mb-10 premium-card p-6 border-l-4 border-brand-navy bg-brand-bg/20">
+                            <h3 class="text-xl font-serif text-brand-navy mb-4 flex items-center gap-2">
+                                <span class="w-1 h-8 bg-brand-crimson rounded-full inline-block"></span>
+                                Net 30 Terms Application
                             </h3>
+                            <p class="text-sm text-brand-textSecondary mb-6">Submit your business information to apply
+                                for Net-30 credit terms.</p>
+
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Business
-                                        Name *</label><input type="text" class="w-full input-premium" required></div>
+                                        Name *</label><input type="text" class="w-full input-premium net30-field"
+                                        required></div>
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Date
-                                        *</label><input type="date" class="w-full input-premium" required></div>
+                                        *</label><input type="date" class="w-full input-premium net30-field" required>
+                                </div>
                                 <div class="md:col-span-2"><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Address
-                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                </div>
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City
-                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                </div>
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
-                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                </div>
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
-                                        *</label><input type="text" class="w-full input-premium" required></div>
+                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                </div>
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Telephone
-                                        *</label><input type="tel" class="w-full input-premium" required></div>
+                                        *</label><input type="tel" class="w-full input-premium net30-field" required>
+                                </div>
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Fax</label><input
-                                        type="text" class="w-full input-premium"></div>
+                                        type="text" class="w-full input-premium net30-field"></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Tax
+                                        ID / EIN</label><input type="text" class="w-full input-premium net30-field"
+                                        placeholder="XX-XXXXXXX"></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">DUNS
+                                        Number (if applicable)</label><input type="text"
+                                        class="w-full input-premium net30-field"></div>
+                            </div>
+
+                            <!-- Net 30 Agreement -->
+                            <div class="mt-6 pt-4 border-t border-brand-border">
+                                <div class="flex items-start gap-3">
+                                    <input type="checkbox" id="net30-agreement"
+                                        class="w-4 h-4 mt-1 accent-brand-crimson border-brand-border rounded" required>
+                                    <label for="net30-agreement" class="text-sm text-brand-textSecondary">I agree to the
+                                        Net 30 terms and conditions. I understand that invoices are due within 30 days
+                                        of receipt. *</label>
+                                </div>
+                            </div>
+
+                            <!-- Net 30 Submit Button -->
+                            <div class="mt-6">
+                                <button type="button" onclick="submitNet30()"
+                                    class="btn-navy px-8 py-3 rounded font-medium w-full md:w-auto">
+                                    <i class="fa-regular fa-paper-plane mr-2"></i> Submit Net 30 Application
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Credit Card Authorization - Card 1 -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Credit Card Authorization — Card 1
+                        <!-- ============================================ -->
+                        <!-- SECTION 2: CREDIT CARD APPLICATION FORM -->
+                        <!-- ============================================ -->
+                        <div id="cc-section"
+                            class="mb-8 premium-card p-6 border-l-4 border-brand-crimson bg-brand-bg/20">
+                            <h3 class="text-xl font-serif text-brand-crimson mb-4 flex items-center gap-2">
+                                <span class="w-1 h-8 bg-brand-crimson rounded-full inline-block"></span>
+                                Credit Card Authorization
                             </h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
-                                        Order Email Address</label><input type="email" class="w-full input-premium">
-                                </div>
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Accounts
-                                        Payable Email</label><input type="email" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Finance
-                                        Contact Name</label><input type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
-                                        on the Card</label><input type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
-                                        Address</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2 flex flex-col gap-2 mt-2">
-                                    <div class="flex items-center gap-3">
-                                        <input type="radio" name="card1-usage" id="card1-keep"
-                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="keep">
-                                        <label for="card1-keep" class="text-sm text-brand-textSecondary">Keep it on file
-                                            for future (radio option)</label>
+                            <p class="text-sm text-brand-textSecondary mb-6">Authorize us to charge your credit card for
+                                purchases.</p>
+
+                            <!-- Card 1 -->
+                            <div class="mb-6">
+                                <h4 class="text-md font-semibold text-brand-text mb-3 flex items-center gap-2">
+                                    <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                    Card 1
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <div class="md:col-span-2"><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            Order Email Address</label><input type="email"
+                                            class="w-full input-premium cc-field"></div>
+                                    <div class="md:col-span-2"><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
+                                            on the Card</label><input type="text" class="w-full input-premium cc-field">
                                     </div>
-                                    <div class="flex items-center gap-3">
-                                        <input type="radio" name="card1-usage" id="card1-once"
-                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="once">
-                                        <label for="card1-once" class="text-sm text-brand-textSecondary">Use only for
-                                            Purchase Order (radio option)</label>
+                                    <div class="md:col-span-2"><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
+                                            Address</label><input type="text" class="w-full input-premium cc-field">
                                     </div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
+                                            type="text" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
+                                            type="text" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
+                                            type="text" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
+                                            Number</label><input type="text" class="w-full input-premium cc-field"
+                                            placeholder="XXXX XXXX XXXX XXXX"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">CVV
+                                            *</label><input type="text" class="w-full input-premium cc-field"
+                                            placeholder="XXX" maxlength="4"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Expiry
+                                            Date</label><input type="month" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            Order Number</label><input type="text"
+                                            class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
+                                            Value</label><input type="text" class="w-full input-premium cc-field"
+                                            placeholder="$0.00"></div>
                                 </div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
-                                        Order Number</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
-                                        Value</label><input type="text" class="w-full input-premium"
-                                        placeholder="$0.00"></div>
+                            </div>
+
+                            <!-- Card 2 (Optional) -->
+                            <div>
+                                <h4 class="text-md font-semibold text-brand-text mb-3 flex items-center gap-2">
+                                    <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                    Card 2 <span class="text-xs font-medium text-brand-gray ml-2">(Optional)</span>
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <div class="md:col-span-2"><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            Order Email Address</label><input type="email"
+                                            class="w-full input-premium cc-field"></div>
+                                    <div class="md:col-span-2"><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
+                                            on the Card</label><input type="text" class="w-full input-premium cc-field">
+                                    </div>
+                                    <div class="md:col-span-2"><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
+                                            Address</label><input type="text" class="w-full input-premium cc-field">
+                                    </div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
+                                            type="text" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
+                                            type="text" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
+                                            type="text" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
+                                            Number</label><input type="text" class="w-full input-premium cc-field"
+                                            placeholder="XXXX XXXX XXXX XXXX"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">CVV</label><input
+                                            type="text" class="w-full input-premium cc-field" placeholder="XXX"
+                                            maxlength="4"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Expiry
+                                            Date</label><input type="month" class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            Order Number</label><input type="text"
+                                            class="w-full input-premium cc-field"></div>
+                                    <div><label
+                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
+                                            Value</label><input type="text" class="w-full input-premium cc-field"
+                                            placeholder="$0.00"></div>
+                                </div>
+                            </div>
+
+                            <!-- CC Authorization Notice -->
+                            <div class="mt-4 premium-card p-4 bg-brand-bg/40 border-l-4 border-brand-crimson">
+                                <p class="text-sm text-brand-textSecondary leading-relaxed">
+                                    By submitting this form, I authorize Ink Well Impressions Solutions to charge my
+                                    credit card for the purchase order(s) listed above.
+                                </p>
+                            </div>
+
+                            <!-- Credit Card Submit Button -->
+                            <div class="mt-6">
+                                <button type="button" onclick="submitCreditCard()"
+                                    class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">
+                                    <i class="fa-regular fa-credit-card mr-2"></i> Submit Credit Card Authorization
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Card 2 (Optional) -->
-                        <div class="mb-8">
+                        <!-- ============================================ -->
+                        <!-- SHARED SIGNATURE SECTION -->
+                        <!-- ============================================ -->
+                        <div class="mb-8 premium-card p-6 border-l-4 border-brand-navy bg-brand-bg/20">
                             <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
                                 <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Credit Card Authorization — Card 2 <span
-                                    class="text-xs font-medium text-brand-gray ml-2">(Optional)</span>
+                                Authorized Signature
                             </h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
-                                        Order Email Address</label><input type="email" class="w-full input-premium">
-                                </div>
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Accounts
-                                        Payable Email</label><input type="email" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Finance
-                                        Contact Name</label><input type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
-                                        on the Card</label><input type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
-                                        Address</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2 flex flex-col gap-2 mt-2">
-                                    <div class="flex items-center gap-3">
-                                        <input type="radio" name="card2-usage" id="card2-keep"
-                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="keep">
-                                        <label for="card2-keep" class="text-sm text-brand-textSecondary">Keep it on file
-                                            for future (radio option)</label>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <input type="radio" name="card2-usage" id="card2-once"
-                                            class="w-4 h-4 accent-brand-crimson border-brand-border" value="once">
-                                        <label for="card2-once" class="text-sm text-brand-textSecondary">Use only for
-                                            Purchase Order (radio option)</label>
-                                    </div>
-                                </div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
-                                        Order Number</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
-                                        Value</label><input type="text" class="w-full input-premium"
-                                        placeholder="$0.00"></div>
-                            </div>
-                        </div>
 
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Additional Comments -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Additional Comments
-                            </h3>
-                            <div class="grid grid-cols-1 gap-5">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Comments</label><textarea
-                                        class="w-full input-premium h-24 resize-none"
-                                        placeholder="Any special instructions or notes..."></textarea></div>
-                            </div>
-                        </div>
-
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Authorization Notice -->
-                        <div class="mb-8 premium-card p-5 bg-brand-bg/40 border-l-4 border-brand-crimson">
-                            <p class="text-sm text-brand-textSecondary leading-relaxed">
-                                By submitting this form, I authorize Ink Well Impressions to use the payment method that
-                                will be securely provided directly to the finance department for the purchase order(s)
-                                listed above. Any approved adjustments due to quantity changes, shipping charges, or
-                                pricing revisions are also authorized.
-                            </p>
-                        </div>
-
-                        <!-- Signature Section -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Signature
-                            </h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Full
+                                        Name *</label><input type="text" id="signature-name"
+                                        class="w-full input-premium" required></div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
-                                        Holder's Name</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
-                                        Holder's Signature</label><input type="text" class="w-full input-premium"
-                                        placeholder="Type full name as signature"></div>
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Signature
+                                        *</label><input type="text" id="signature-field" class="w-full input-premium"
+                                        placeholder="Type full name as signature" required></div>
                                 <div><label
                                         class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Date
-                                        Signed</label><input type="date" class="w-full input-premium"></div>
+                                        Signed *</label><input type="date" id="signature-date"
+                                        class="w-full input-premium" required></div>
+                            </div>
+
+                            <div class="mt-4 flex items-start gap-3">
+                                <input type="checkbox" id="global-agreement"
+                                    class="w-4 h-4 mt-1 accent-brand-crimson border-brand-border rounded" required>
+                                <label for="global-agreement" class="text-sm text-brand-textSecondary">I confirm that
+                                    all information provided is accurate and complete. *</label>
                             </div>
                         </div>
-
-                        <button type="submit" class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Submit
-                            Credit
-                            Application</button>
                     </form>
-
                     <!-- 5. Purchase Order Form -->
+                    <!-- 5. Purchase Order Form - Simplified -->
                     <form id="form-po" class="form-panel hidden opacity-0 transition-opacity duration-300">
                         <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Submit
                             Purchase Order</h2>
@@ -740,222 +919,105 @@
                                 Company Information
                             </h3>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
-                                        Name *</label><input type="text" class="w-full input-premium" required></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
-                                        Person *</label><input type="text" class="w-full input-premium" required></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Job
-                                        Title</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
-                                        Address *</label><input type="email" class="w-full input-premium" required>
-                                </div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Phone
-                                        Number *</label><input type="tel" class="w-full input-premium" required></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
-                                        Address</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
-                                        / Province</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
-                                        / Postal Code</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Country</label><input
-                                        type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Tax
-                                        ID / EIN (Optional)</label><input type="text" class="w-full input-premium">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Section 2 — Purchase Order Information -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Purchase Order Information
-                            </h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
-                                        Order Number *</label><input type="text" class="w-full input-premium" required>
-                                </div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
-                                        Order Date *</label><input type="date" class="w-full input-premium" required>
-                                </div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Required
-                                        Delivery Date *</label><input type="date" class="w-full input-premium" required>
-                                </div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Product
-                                        Category *</label><input type="text" class="w-full input-premium" required>
-                                </div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Product
-                                        Name *</label><input type="text" class="w-full input-premium" required></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Quantity
-                                        *</label><input type="number" class="w-full input-premium" required></div>
-                                <div class="md:col-span-2">
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Decoration
-                                        / Imprint Method *</label>
-                                    <select class="w-full input-premium appearance-none cursor-pointer" required>
-                                        <option value="" disabled selected>Select a method</option>
-                                        <option value="screen-printing">Screen Printing</option>
-                                        <option value="spot-branding">Spot Branding</option>
-                                        <option value="heat-transfer">Heat Transfer</option>
-                                        <option value="embroidery">Embroidery</option>
-                                        <option value="laser-engraving">Laser Engraving</option>
-                                        <option value="uv-printing">UV Printing</option>
-                                        <option value="blank-product">Blank Product</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Section 3 — Artwork & Branding -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Artwork & Branding
-                            </h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <!-- Upload Company Logo -->
-                                <div class="md:col-span-1">
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Upload
-                                        Company Logo</label>
-                                    <div
-                                        class="flex justify-center flex-col items-center w-full h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg cursor-pointer hover:border-brand-crimson group">
-                                        <svg class="w-6 h-6 text-brand-textSecondary mb-2 group-hover:text-brand-crimson transition"
-                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                        </svg>
-                                        <span
-                                            class="text-xs text-brand-textSecondary group-hover:text-brand-crimson transition">Drag
-                                            & drop or click to upload</span>
-                                        <span class="text-[10px] text-brand-gray mt-1">AI, EPS, SVG, PDF, PNG,
-                                            JPG</span>
-                                        <input type="file" class="hidden" accept=".ai,.eps,.svg,.pdf,.png,.jpg,.jpeg">
-                                    </div>
-                                </div>
-                                <!-- Upload Artwork / Design Files -->
-                                <div class="md:col-span-1">
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Upload
-                                        Artwork / Design Files</label>
-                                    <div
-                                        class="flex justify-center flex-col items-center w-full h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg cursor-pointer hover:border-brand-crimson group">
-                                        <svg class="w-6 h-6 text-brand-textSecondary mb-2 group-hover:text-brand-crimson transition"
-                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                        </svg>
-                                        <span
-                                            class="text-xs text-brand-textSecondary group-hover:text-brand-crimson transition">Drag
-                                            & drop or click to upload</span>
-                                        <span class="text-[10px] text-brand-gray mt-1">AI, EPS, SVG, PDF, PNG, JPG,
-                                            ZIP</span>
-                                        <input type="file" class="hidden"
-                                            accept=".ai,.eps,.svg,.pdf,.png,.jpg,.jpeg,.zip">
-                                    </div>
-                                </div>
-                                <!-- Artwork Notes -->
-                                <div class="md:col-span-2">
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Artwork
-                                        Notes</label>
-                                    <textarea class="w-full input-premium h-24 resize-none"
-                                        placeholder="Logo placement, Pantone colors, print size, branding instructions..."></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Section 4 — Shipping -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Shipping
-                            </h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Shipping
-                                        Address</label><input type="text" class="w-full input-premium"></div>
-                                <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
-                                        Address</label><input type="text" class="w-full input-premium"></div>
-                                <div class="md:col-span-2 flex items-center gap-3 mt-1">
-                                    <input type="checkbox" id="same-address"
-                                        class="w-4 h-4 accent-brand-crimson border-brand-border rounded">
-                                    <label for="same-address" class="text-sm text-brand-textSecondary">Billing address
-                                        is the same as shipping address</label>
-                                </div>
-                                <div class="md:col-span-2">
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Preferred
-                                        Shipping Method</label>
-                                    <select class="w-full input-premium appearance-none cursor-pointer">
-                                        <option value="standard">Standard</option>
-                                        <option value="express">Express</option>
-                                        <option value="rush">Rush Order</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
-
-                        <!-- Section 5 — Additional Information -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                Additional Information
-                            </h3>
-                            <div class="grid grid-cols-1 gap-5">
                                 <div>
                                     <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Additional
-                                        Details</label>
-                                    <textarea class="w-full input-premium h-28 resize-none"
-                                        placeholder="Special packaging requirements, delivery instructions, account manager notes, receiving hours, or any additional information..."></textarea>
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
+                                        Name *</label>
+                                    <input type="text" class="w-full input-premium" placeholder="Enter company name"
+                                        required>
                                 </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
+                                        Person *</label>
+                                    <input type="text" class="w-full input-premium" placeholder="Enter contact person"
+                                        required>
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
+                                        Address *</label>
+                                    <input type="email" class="w-full input-premium" placeholder="email@company.com"
+                                        required>
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Phone
+                                        Number *</label>
+                                    <input type="tel" class="w-full input-premium" placeholder="+1 (555) 000-0000"
+                                        required>
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
+                                        Address</label>
+                                    <input type="text" class="w-full input-premium" placeholder="Street address">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label>
+                                    <input type="text" class="w-full input-premium" placeholder="City">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
+                                        / Province</label>
+                                    <input type="text" class="w-full input-premium" placeholder="State">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
+                                        / Postal Code</label>
+                                    <input type="text" class="w-full input-premium" placeholder="Zip code">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Country</label>
+                                    <input type="text" class="w-full input-premium" placeholder="Country">
+                                </div>
+
                             </div>
                         </div>
 
                         <!-- Subtle Separator -->
                         <hr class="border-brand-border my-6">
 
-                        <!-- Section 6 — Agreement -->
+                        <!-- Section 2 — Upload Purchase Order -->
+                        <div class="mb-8">
+                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                Upload Your Purchase Order
+                            </h3>
+
+                            <div
+                                class="flex justify-center flex-col items-center w-full h-48 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-xl cursor-pointer hover:border-brand-crimson group">
+                                <svg class="w-16 h-16 text-brand-textSecondary mb-4 group-hover:text-brand-crimson transition"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                </svg>
+                                <span
+                                    class="text-sm text-brand-textSecondary group-hover:text-brand-crimson transition font-medium">Click
+                                    to upload or drag & drop your PO file</span>
+                                <span class="text-xs text-brand-gray mt-2">Supported: PDF, DOC, DOCX, XLS, XLSX, PNG,
+                                    JPG</span>
+                                <span id="poFileName"
+                                    class="text-xs text-brand-crimson mt-2 font-semibold hidden"></span>
+                                <input type="file" id="poFileInput" class="hidden"
+                                    accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg">
+                            </div>
+                        </div>
+
+                        <!-- Subtle Separator -->
+                        <hr class="border-brand-border my-6">
+
+                        <!-- Section 3 — Agreement -->
                         <div class="mb-8">
                             <div class="flex items-start gap-3">
-                                <input type="checkbox" id="agreement"
+                                <input type="checkbox" id="po-agreement"
                                     class="w-4 h-4 mt-1 accent-brand-crimson border-brand-border rounded" required>
-                                <label for="agreement" class="text-sm text-brand-textSecondary">I confirm that all
-                                    purchase order information is accurate and artwork files are ready for production.
+                                <label for="po-agreement" class="text-sm text-brand-textSecondary">I confirm that all
+                                    purchase order information is accurate and I have attached the official PO document.
                                     *</label>
                             </div>
                         </div>
@@ -963,12 +1025,12 @@
                         <!-- Submit Button -->
                         <div class="flex flex-col items-start gap-2">
                             <button type="submit"
-                                class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto text-base">Submit
-                                Purchase Order</button>
+                                class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto text-base">
+                                <i class="fa-regular fa-paper-plane mr-2"></i> Submit Purchase Order
+                            </button>
                             <p class="text-xs text-brand-gray mt-2">Our team will review your purchase order and contact
                                 you within one business day.</p>
                         </div>
-
                     </form>
 
                 </div>
@@ -980,7 +1042,7 @@
     <footer class="footer-premium text-brand-textSecondary py-6 mt-auto">
         <div
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-            <p>&copy; 2026 INKWELL IMPRESSIONS. All Rights Reserved.</p>
+            <p>&copy; 2026 INKWELL IMPRESSIONS SOLUTIONS. All Rights Reserved.</p>
             <div class="flex gap-6">
                 <a href="#" class="hover:text-brand-text transition">Privacy Policy</a>
                 <a href="#" class="hover:text-brand-text transition">Terms & Conditions</a>
@@ -993,385 +1055,515 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../config/supabase.js"></script>
     <!-- Tab Switching Script -->
-   <script>
+    <script>
 
-    // ============================================================
-    // FORM SUBMIT HANDLERS - ALL 5 FORMS (FIXED)
-    // ============================================================
+        // ============================================================
+        // FORM SUBMIT HANDLERS - ALL 5 FORMS (FIXED)
+        // ============================================================
 
-    // 1. QUOTE FORM
-    const quoteForm = document.getElementById('form-quote');
-    if (quoteForm) {
-        quoteForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
+        // 1. QUOTE FORM
+        // 1. QUOTE FORM
+        const quoteForm = document.getElementById('form-quote');
+        if (quoteForm) {
+            quoteForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
 
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
 
-            try {
-                const formData = new FormData();
-                formData.append('request_type', 'quotation');  // ✅ FIXED
-                formData.append('first_name', this.querySelector('input[placeholder="John"]').value);
-                formData.append('last_name', this.querySelector('input[placeholder="Doe"]').value);
-                formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
-                formData.append('email', this.querySelector('input[placeholder="john@acmecorp.com"]').value);
-                formData.append('phone', this.querySelector('input[placeholder="+1 (555) 000-0000"]').value);
-                formData.append('category', this.querySelector('select').value);
-                formData.append('quantity', this.querySelector('input[placeholder="e.g. 500"]').value);
-                formData.append('date', this.querySelector('input[type="date"]').value);
-                formData.append('details', this.querySelector('textarea').value);
+                try {
+                    const formData = new FormData();
+                    formData.append('request_type', 'quotation');
+                    formData.append('first_name', this.querySelector('input[placeholder="John"]').value);
+                    formData.append('last_name', this.querySelector('input[placeholder="Doe"]').value);
+                    formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
+                    formData.append('email', this.querySelector('input[placeholder="john@acmecorp.com"]').value);
+                    formData.append('phone', this.querySelector('input[placeholder="+1 (555) 000-0000"]').value);
 
-                const fileInput = this.querySelector('input[type="file"]');
-                if (fileInput && fileInput.files.length > 0) {
-                    for (let i = 0; i < fileInput.files.length; i++) {
-                        formData.append('attachments', fileInput.files[i]);
+                    // ====== NEW FIELDS ======
+                    formData.append('asi_number', this.querySelector('input[placeholder="Enter ASI/PPAI/SAGE number"]').value);
+                    formData.append('item', this.querySelector('input[placeholder="e.g. IB29, MQIB6000"]').value);
+                    formData.append('item_qty', this.querySelector('input[placeholder="Enter quantity"]').value);
+                    // ====== END NEW FIELDS ======
+
+                    formData.append('category', this.querySelector('select').value);
+                    formData.append('quantity', this.querySelector('input[placeholder="e.g. 500"]').value);
+                    formData.append('date', this.querySelector('input[type="date"]').value);
+                    formData.append('details', this.querySelector('textarea').value);
+
+                    const fileInput = this.querySelector('input[type="file"]');
+                    if (fileInput && fileInput.files.length > 0) {
+                        for (let i = 0; i < fileInput.files.length; i++) {
+                            formData.append('attachments', fileInput.files[i]);
+                        }
                     }
-                }
 
-                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                    method: 'POST',
-                    body: formData
-                });
+                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                        method: 'POST',
+                        body: formData
+                    });
 
-                const result = await response.json();
-                if (!response.ok) throw new Error(result.message || 'Failed');
+                    const result = await response.json();
+                    if (!response.ok) throw new Error(result.message || 'Failed');
 
-                alert('✅ Quote Request Sent Successfully!');
-                this.reset();
-            } catch (error) {
-                console.error(error);
-                alert('❌ Failed to send. Please try again.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        });
-    }
-
-    // 2. MOCKUP FORM
-    const mockupForm = document.getElementById('form-mockup');
-    if (mockupForm) {
-        mockupForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-            try {
-                const formData = new FormData();
-                formData.append('request_type', 'mockup');  // ✅ FIXED
-                formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
-                formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
-                formData.append('email', this.querySelector('input[type="email"]').value);
-                formData.append('product', this.querySelector('input[placeholder="e.g., Matte Black Tumbler, Cotton Tote Bag"]').value);
-                formData.append('instructions', this.querySelector('textarea').value);
-
-                const fileInput = this.querySelector('input[type="file"]');
-                if (fileInput && fileInput.files.length > 0) {
-                    for (let i = 0; i < fileInput.files.length; i++) {
-                        formData.append('logo_files', fileInput.files[i]);
-                    }
-                }
-
-                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-                if (!response.ok) throw new Error(result.message || 'Failed');
-
-                alert('✅ Mockup Request Sent Successfully!');
-                this.reset();
-            } catch (error) {
-                console.error(error);
-                alert('❌ Failed to send. Please try again.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        });
-    }
-
-    // 3. FREIGHT FORM
-    const freightForm = document.getElementById('form-freight');
-    if (freightForm) {
-        freightForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-            try {
-                const formData = new FormData();
-                formData.append('request_type', 'freight');  // ✅ FIXED
-                formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
-                formData.append('email', this.querySelector('input[type="email"]').value);
-                formData.append('address', this.querySelector('input[placeholder="123 Main St"]').value);
-                formData.append('city', this.querySelector('input[placeholder="New York"]').value);
-                formData.append('state', this.querySelector('input[placeholder="NY"]').value);
-                formData.append('zip', this.querySelector('input[placeholder="10001"]').value);
-                formData.append('country', this.querySelector('input[placeholder="USA"]').value);
-                formData.append('volume', this.querySelector('input[placeholder="e.g., 2 Pallets, ~500 lbs"]').value);
-                formData.append('delivery_type', this.querySelector('select').value);
-
-                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-                if (!response.ok) throw new Error(result.message || 'Failed');
-
-                alert('✅ Freight Estimate Request Sent Successfully!');
-                this.reset();
-            } catch (error) {
-                console.error(error);
-                alert('❌ Failed to send. Please try again.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        });
-    }
-
-    // 4. CREDIT APPLICATION FORM
-    const creditForm = document.getElementById('form-credit');
-    if (creditForm) {
-        creditForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-            try {
-                const formData = new FormData();
-                formData.append('request_type', 'credit');  // ✅ FIXED
-
-                // Business Information
-                formData.append('business_name', document.querySelector('#form-credit input[placeholder="Acme Corp"]')?.value || '');
-                formData.append('date', document.querySelector('#form-credit input[type="date"]')?.value || '');
-                formData.append('address', document.querySelectorAll('#form-credit input[type="text"]')[2]?.value || '');
-                formData.append('city', document.querySelectorAll('#form-credit input[type="text"]')[3]?.value || '');
-                formData.append('state', document.querySelectorAll('#form-credit input[type="text"]')[4]?.value || '');
-                formData.append('zip', document.querySelectorAll('#form-credit input[type="text"]')[5]?.value || '');
-                formData.append('telephone', document.querySelector('#form-credit input[type="tel"]')?.value || '');
-                formData.append('fax', document.querySelectorAll('#form-credit input[type="text"]')[7]?.value || '');
-
-                // Card 1
-                formData.append('po_email', document.querySelector('#form-credit input[type="email"]')?.value || '');
-                formData.append('ap_email', document.querySelectorAll('#form-credit input[type="email"]')[1]?.value || '');
-                formData.append('finance_contact', document.querySelectorAll('#form-credit input[type="text"]')[8]?.value || '');
-                formData.append('card_name_1', document.querySelectorAll('#form-credit input[type="text"]')[9]?.value || '');
-                formData.append('billing_address_1', document.querySelectorAll('#form-credit input[type="text"]')[10]?.value || '');
-                formData.append('city_1', document.querySelectorAll('#form-credit input[type="text"]')[11]?.value || '');
-                formData.append('state_1', document.querySelectorAll('#form-credit input[type="text"]')[12]?.value || '');
-                formData.append('zip_1', document.querySelectorAll('#form-credit input[type="text"]')[13]?.value || '');
-
-                const card1Usage = document.querySelector('input[name="card1-usage"]:checked');
-                formData.append('card_usage_1', card1Usage ? card1Usage.value : '');
-                formData.append('po_number_1', document.querySelectorAll('#form-credit input[type="text"]')[14]?.value || '');
-                formData.append('auth_value_1', document.querySelectorAll('#form-credit input[type="text"]')[15]?.value || '');
-
-                // Card 2
-                formData.append('card_name_2', document.querySelectorAll('#form-credit input[type="text"]')[16]?.value || '');
-                formData.append('billing_address_2', document.querySelectorAll('#form-credit input[type="text"]')[17]?.value || '');
-                formData.append('city_2', document.querySelectorAll('#form-credit input[type="text"]')[18]?.value || '');
-                formData.append('state_2', document.querySelectorAll('#form-credit input[type="text"]')[19]?.value || '');
-                formData.append('zip_2', document.querySelectorAll('#form-credit input[type="text"]')[20]?.value || '');
-
-                const card2Usage = document.querySelector('input[name="card2-usage"]:checked');
-                formData.append('card_usage_2', card2Usage ? card2Usage.value : '');
-                formData.append('po_number_2', document.querySelectorAll('#form-credit input[type="text"]')[21]?.value || '');
-                formData.append('auth_value_2', document.querySelectorAll('#form-credit input[type="text"]')[22]?.value || '');
-
-                // Comments & Signature
-                formData.append('comments', document.querySelector('#form-credit textarea')?.value || '');
-                formData.append('card_holder_name', document.querySelectorAll('#form-credit input[type="text"]')[23]?.value || '');
-                formData.append('signature', document.querySelectorAll('#form-credit input[type="text"]')[24]?.value || '');
-                formData.append('signed_date', document.querySelectorAll('#form-credit input[type="date"]')[1]?.value || '');
-
-                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-                if (!response.ok) throw new Error(result.message || 'Failed');
-
-                alert('✅ Credit Application Submitted Successfully!');
-                this.reset();
-            } catch (error) {
-                console.error(error);
-                alert('❌ Failed to submit. Please try again.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        });
-    }
-
-    // 5. PURCHASE ORDER FORM
-    const poForm = document.getElementById('form-po');
-    if (poForm) {
-        poForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-            try {
-                const formData = new FormData();
-                formData.append('request_type', 'po');  // ✅ FIXED
-
-                const inputs = this.querySelectorAll('input, textarea, select');
-                const inputValues = [];
-                inputs.forEach(inp => {
-                    if (inp.type !== 'file' && inp.type !== 'checkbox') {
-                        inputValues.push(inp.value);
-                    }
-                });
-
-                formData.append('company_name', inputValues[0] || '');
-                formData.append('contact_person', inputValues[1] || '');
-                formData.append('job_title', inputValues[2] || '');
-                formData.append('email', inputValues[3] || '');
-                formData.append('phone', inputValues[4] || '');
-                formData.append('address', inputValues[5] || '');
-                formData.append('city', inputValues[6] || '');
-                formData.append('state', inputValues[7] || '');
-                formData.append('zip', inputValues[8] || '');
-                formData.append('country', inputValues[9] || '');
-                formData.append('tax_id', inputValues[10] || '');
-                formData.append('po_number', inputValues[11] || '');
-                formData.append('po_date', inputValues[12] || '');
-                formData.append('delivery_date', inputValues[13] || '');
-                formData.append('product_category', inputValues[14] || '');
-                formData.append('product_name', inputValues[15] || '');
-                formData.append('quantity', inputValues[16] || '');
-                formData.append('decoration_method', inputValues[17] || '');
-                formData.append('artwork_notes', inputValues[18] || '');
-                formData.append('shipping_address', inputValues[19] || '');
-                formData.append('billing_address', inputValues[20] || '');
-                formData.append('shipping_method', inputValues[21] || '');
-                formData.append('additional_details', inputValues[22] || '');
-
-                const logoInput = this.querySelectorAll('input[type="file"]')[0];
-                if (logoInput && logoInput.files.length > 0) {
-                    for (let i = 0; i < logoInput.files.length; i++) {
-                        formData.append('logo_files', logoInput.files[i]);
-                    }
-                }
-
-                const artworkInput = this.querySelectorAll('input[type="file"]')[1];
-                if (artworkInput && artworkInput.files.length > 0) {
-                    for (let i = 0; i < artworkInput.files.length; i++) {
-                        formData.append('artwork_files', artworkInput.files[i]);
-                    }
-                }
-
-                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-                if (!response.ok) throw new Error(result.message || 'Failed');
-
-                alert('✅ Purchase Order Submitted Successfully!');
-                this.reset();
-
-                this.querySelectorAll('.flex input[type="file"]').forEach(inp => {
-                    const label = inp.closest('.flex')?.querySelector('span');
-                    if (label) {
-                        label.textContent = 'Click to upload';
-                        label.classList.remove('text-brand-crimson');
-                    }
-                });
-            } catch (error) {
-                console.error(error);
-                alert('❌ Failed to submit. Please try again.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        });
-    }
-
-    // ============================================================
-    // HAMBURGER MENU & TAB SWITCHING (Existing Code)
-    // ============================================================
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const hamburgerIcon = document.getElementById('hamburgerIcon');
-
-    hamburgerBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        hamburgerIcon.classList.toggle('fa-bars');
-        hamburgerIcon.classList.toggle('fa-xmark');
-    });
-
-    document.querySelectorAll('#mobileMenu a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            hamburgerIcon.classList.add('fa-bars');
-            hamburgerIcon.classList.remove('fa-xmark');
-        });
-    });
-
-    function showForm(formId) {
-        document.querySelectorAll('.form-panel').forEach(form => {
-            form.classList.add('hidden');
-            form.classList.remove('opacity-100');
-            form.classList.add('opacity-0');
-        });
-
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.className = "tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30";
-            const svg = btn.querySelector('svg');
-            if (svg) svg.classList.add('opacity-0');
-        });
-
-        const activeForm = document.getElementById('form-' + formId);
-        activeForm.classList.remove('hidden');
-        setTimeout(() => {
-            activeForm.classList.remove('opacity-0');
-            activeForm.classList.add('opacity-100');
-        }, 10);
-
-        const activeTab = document.getElementById('tab-' + formId);
-        activeTab.className = "tab-btn active w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson";
-        const activeSvg = activeTab.querySelector('svg');
-        if (activeSvg) activeSvg.classList.remove('opacity-0');
-    }
-
-    // File input handler
-    document.querySelectorAll('input[type="file"]').forEach(input => {
-        const dropzone = input.closest('.flex');
-        if (dropzone) {
-            dropzone.addEventListener('click', () => input.click());
-            input.addEventListener('change', function (e) {
-                const name = e.target.files[0]?.name || '';
-                const label = dropzone.querySelector('span');
-                if (label && name) {
-                    label.textContent = '✓ ' + name;
-                    label.classList.add('text-brand-crimson');
+                    alert('✅ Quote Request Sent Successfully!');
+                    this.reset();
+                } catch (error) {
+                    console.error(error);
+                    alert('❌ Failed to send. Please try again.');
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
                 }
             });
         }
-    });
 
-</script>
+        // 2. MOCKUP FORM
+        // 2. MOCKUP FORM
+        const mockupForm = document.getElementById('form-mockup');
+        if (mockupForm) {
+            mockupForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+                try {
+                    const formData = new FormData();
+                    formData.append('request_type', 'mockup');
+                    formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
+                    formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
+                    formData.append('email', this.querySelector('input[type="email"]').value);
+
+                    // ====== NEW FIELDS ======
+                    formData.append('asi_number', this.querySelector('input[placeholder="Enter ASI/PPAI/SAGE number"]').value);
+                    formData.append('item', this.querySelector('input[placeholder="e.g. IB29, MQIB6000"]').value);
+                    formData.append('item_qty', this.querySelector('input[placeholder="Enter quantity"]').value);
+                    // ====== END NEW FIELDS ======
+
+                    formData.append('product', this.querySelector('input[placeholder="e.g., Matte Black Tumbler, Cotton Tote Bag"]').value);
+                    formData.append('instructions', this.querySelector('textarea').value);
+
+                    const fileInput = this.querySelector('input[type="file"]');
+                    if (fileInput && fileInput.files.length > 0) {
+                        for (let i = 0; i < fileInput.files.length; i++) {
+                            formData.append('logo_files', fileInput.files[i]);
+                        }
+                    }
+
+                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+                    if (!response.ok) throw new Error(result.message || 'Failed');
+
+                    alert('✅ Mockup Request Sent Successfully!');
+                    this.reset();
+                } catch (error) {
+                    console.error(error);
+                    alert('❌ Failed to send. Please try again.');
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }
+            });
+        }
+
+        // 3. FREIGHT FORM
+        const freightForm = document.getElementById('form-freight');
+        if (freightForm) {
+            freightForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+                try {
+                    const formData = new FormData();
+                    formData.append('request_type', 'freight');  // ✅ FIXED
+                    formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
+                    formData.append('email', this.querySelector('input[type="email"]').value);
+                    formData.append('address', this.querySelector('input[placeholder="123 Main St"]').value);
+                    formData.append('city', this.querySelector('input[placeholder="New York"]').value);
+                    formData.append('state', this.querySelector('input[placeholder="NY"]').value);
+                    formData.append('zip', this.querySelector('input[placeholder="10001"]').value);
+                    formData.append('country', this.querySelector('input[placeholder="USA"]').value);
+                    formData.append('volume', this.querySelector('input[placeholder="e.g., 2 Pallets, ~500 lbs"]').value);
+                    formData.append('delivery_type', this.querySelector('select').value);
+
+                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+                    if (!response.ok) throw new Error(result.message || 'Failed');
+
+                    alert('✅ Freight Estimate Request Sent Successfully!');
+                    this.reset();
+                } catch (error) {
+                    console.error(error);
+                    alert('❌ Failed to send. Please try again.');
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }
+            });
+        }
+
+        // 4. CREDIT APPLICATION FORM
+        const creditForm = document.getElementById('form-credit');
+        if (creditForm) {
+            creditForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+                try {
+                    const formData = new FormData();
+                    formData.append('request_type', 'credit');  // ✅ FIXED
+
+                    // Business Information
+                    formData.append('business_name', document.querySelector('#form-credit input[placeholder="Acme Corp"]')?.value || '');
+                    formData.append('date', document.querySelector('#form-credit input[type="date"]')?.value || '');
+                    formData.append('address', document.querySelectorAll('#form-credit input[type="text"]')[2]?.value || '');
+                    formData.append('city', document.querySelectorAll('#form-credit input[type="text"]')[3]?.value || '');
+                    formData.append('state', document.querySelectorAll('#form-credit input[type="text"]')[4]?.value || '');
+                    formData.append('zip', document.querySelectorAll('#form-credit input[type="text"]')[5]?.value || '');
+                    formData.append('telephone', document.querySelector('#form-credit input[type="tel"]')?.value || '');
+                    formData.append('fax', document.querySelectorAll('#form-credit input[type="text"]')[7]?.value || '');
+
+                    // Card 1
+                    formData.append('po_email', document.querySelector('#form-credit input[type="email"]')?.value || '');
+                    formData.append('ap_email', document.querySelectorAll('#form-credit input[type="email"]')[1]?.value || '');
+                    formData.append('finance_contact', document.querySelectorAll('#form-credit input[type="text"]')[8]?.value || '');
+                    formData.append('card_name_1', document.querySelectorAll('#form-credit input[type="text"]')[9]?.value || '');
+                    formData.append('billing_address_1', document.querySelectorAll('#form-credit input[type="text"]')[10]?.value || '');
+                    formData.append('city_1', document.querySelectorAll('#form-credit input[type="text"]')[11]?.value || '');
+                    formData.append('state_1', document.querySelectorAll('#form-credit input[type="text"]')[12]?.value || '');
+                    formData.append('zip_1', document.querySelectorAll('#form-credit input[type="text"]')[13]?.value || '');
+
+                    const card1Usage = document.querySelector('input[name="card1-usage"]:checked');
+                    formData.append('card_usage_1', card1Usage ? card1Usage.value : '');
+                    formData.append('po_number_1', document.querySelectorAll('#form-credit input[type="text"]')[14]?.value || '');
+                    formData.append('auth_value_1', document.querySelectorAll('#form-credit input[type="text"]')[15]?.value || '');
+
+                    // Card 2
+                    formData.append('card_name_2', document.querySelectorAll('#form-credit input[type="text"]')[16]?.value || '');
+                    formData.append('billing_address_2', document.querySelectorAll('#form-credit input[type="text"]')[17]?.value || '');
+                    formData.append('city_2', document.querySelectorAll('#form-credit input[type="text"]')[18]?.value || '');
+                    formData.append('state_2', document.querySelectorAll('#form-credit input[type="text"]')[19]?.value || '');
+                    formData.append('zip_2', document.querySelectorAll('#form-credit input[type="text"]')[20]?.value || '');
+
+                    const card2Usage = document.querySelector('input[name="card2-usage"]:checked');
+                    formData.append('card_usage_2', card2Usage ? card2Usage.value : '');
+                    formData.append('po_number_2', document.querySelectorAll('#form-credit input[type="text"]')[21]?.value || '');
+                    formData.append('auth_value_2', document.querySelectorAll('#form-credit input[type="text"]')[22]?.value || '');
+
+                    // Comments & Signature
+                    formData.append('comments', document.querySelector('#form-credit textarea')?.value || '');
+                    formData.append('card_holder_name', document.querySelectorAll('#form-credit input[type="text"]')[23]?.value || '');
+                    formData.append('signature', document.querySelectorAll('#form-credit input[type="text"]')[24]?.value || '');
+                    formData.append('signed_date', document.querySelectorAll('#form-credit input[type="date"]')[1]?.value || '');
+
+                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+                    if (!response.ok) throw new Error(result.message || 'Failed');
+
+                    alert('✅ Credit Application Submitted Successfully!');
+                    this.reset();
+                } catch (error) {
+                    console.error(error);
+                    alert('❌ Failed to submit. Please try again.');
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }
+            });
+        }
+
+        // 5. PURCHASE ORDER FORM
+        // 5. PURCHASE ORDER FORM - SIMPLIFIED
+        const poForm = document.getElementById('form-po');
+        if (poForm) {
+            poForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+
+                try {
+                    const formData = new FormData();
+                    formData.append('request_type', 'po');
+
+                    // Company Information
+                    const inputs = this.querySelectorAll('input');
+                    formData.append('company_name', inputs[0]?.value || '');
+                    formData.append('contact_person', inputs[1]?.value || '');
+                    formData.append('email', inputs[2]?.value || '');
+                    formData.append('phone', inputs[3]?.value || '');
+                    formData.append('address', inputs[4]?.value || '');
+                    formData.append('city', inputs[5]?.value || '');
+                    formData.append('state', inputs[6]?.value || '');
+                    formData.append('zip', inputs[7]?.value || '');
+                    formData.append('country', inputs[8]?.value || '');
+                    formData.append('tax_id', inputs[9]?.value || '');
+
+                    // PO File
+                    const poFileInput = document.getElementById('poFileInput');
+                    if (poFileInput && poFileInput.files.length > 0) {
+                        formData.append('po_file', poFileInput.files[0]);
+                    }
+
+                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+                    if (!response.ok) throw new Error(result.message || 'Failed');
+
+                    alert('✅ Purchase Order Submitted Successfully!');
+                    this.reset();
+                    document.getElementById('poFileName').classList.add('hidden');
+                    document.getElementById('poFileName').textContent = '';
+
+                } catch (error) {
+                    console.error(error);
+                    alert('❌ Failed to submit. Please try again.');
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }
+            });
+        }
+
+        // PO File Input Handler - Show file name
+        const poFileInput = document.getElementById('poFileInput');
+        if (poFileInput) {
+            poFileInput.addEventListener('change', function (e) {
+                const fileName = document.getElementById('poFileName');
+                if (this.files.length > 0) {
+                    fileName.textContent = '📎 ' + this.files[0].name;
+                    fileName.classList.remove('hidden');
+                } else {
+                    fileName.classList.add('hidden');
+                }
+            });
+
+            // Click on dropzone to trigger file input
+            const dropzone = poFileInput.closest('.flex');
+            if (dropzone) {
+                dropzone.addEventListener('click', () => poFileInput.click());
+                // Drag and drop support
+                dropzone.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    dropzone.classList.add('border-brand-crimson', 'bg-brand-crimson/5');
+                });
+                dropzone.addEventListener('dragleave', () => {
+                    dropzone.classList.remove('border-brand-crimson', 'bg-brand-crimson/5');
+                });
+                dropzone.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    dropzone.classList.remove('border-brand-crimson', 'bg-brand-crimson/5');
+                    if (e.dataTransfer.files.length > 0) {
+                        poFileInput.files = e.dataTransfer.files;
+                        const fileName = document.getElementById('poFileName');
+                        fileName.textContent = '📎 ' + e.dataTransfer.files[0].name;
+                        fileName.classList.remove('hidden');
+                    }
+                });
+            }
+        }
+
+        // ============================================================
+        // HAMBURGER MENU & TAB SWITCHING (Existing Code)
+        // ============================================================
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-xmark');
+        });
+
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.add('fa-bars');
+                hamburgerIcon.classList.remove('fa-xmark');
+            });
+        });
+
+        function showForm(formId) {
+            document.querySelectorAll('.form-panel').forEach(form => {
+                form.classList.add('hidden');
+                form.classList.remove('opacity-100');
+                form.classList.add('opacity-0');
+            });
+
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30";
+                const svg = btn.querySelector('svg');
+                if (svg) svg.classList.add('opacity-0');
+            });
+
+            const activeForm = document.getElementById('form-' + formId);
+            activeForm.classList.remove('hidden');
+            setTimeout(() => {
+                activeForm.classList.remove('opacity-0');
+                activeForm.classList.add('opacity-100');
+            }, 10);
+
+            const activeTab = document.getElementById('tab-' + formId);
+            activeTab.className = "tab-btn active w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson";
+            const activeSvg = activeTab.querySelector('svg');
+            if (activeSvg) activeSvg.classList.remove('opacity-0');
+        }
+        // ============================================================
+        // NET 30 SUBMIT
+        // ============================================================
+        async function submitNet30() {
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+
+            // Check agreement
+            const agreement = document.getElementById('net30-agreement');
+            if (!agreement.checked) {
+                alert('Please agree to the Net 30 terms and conditions.');
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Submitting...';
+
+            try {
+                const formData = new FormData();
+                formData.append('request_type', 'net30');
+
+                // Get all net30 fields
+                document.querySelectorAll('.net30-field').forEach(input => {
+                    formData.append(input.previousElementSibling?.textContent?.trim()?.toLowerCase() || input.name || 'field', input.value);
+                });
+
+                // Add signature fields
+                formData.append('signature_name', document.getElementById('signature-name').value);
+                formData.append('signature', document.getElementById('signature-field').value);
+                formData.append('signature_date', document.getElementById('signature-date').value);
+
+                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.message || 'Failed');
+
+                alert('✅ Net 30 Application Submitted Successfully!');
+
+                // Clear only net30 fields
+                document.querySelectorAll('.net30-field').forEach(input => input.value = '');
+                agreement.checked = false;
+
+            } catch (error) {
+                console.error(error);
+                alert('❌ Failed to submit. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }
+        }
+
+        // ============================================================
+        // CREDIT CARD SUBMIT
+        // ============================================================
+        async function submitCreditCard() {
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+
+            // Check global agreement
+            const globalAgreement = document.getElementById('global-agreement');
+            if (!globalAgreement.checked) {
+                alert('Please confirm that all information is accurate.');
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Submitting...';
+
+            try {
+                const formData = new FormData();
+                formData.append('request_type', 'credit_card');
+
+                // Get all credit card fields
+                document.querySelectorAll('.cc-field').forEach(input => {
+                    formData.append(input.previousElementSibling?.textContent?.trim()?.toLowerCase() || input.name || 'field', input.value);
+                });
+
+                // Add signature fields
+                formData.append('signature_name', document.getElementById('signature-name').value);
+                formData.append('signature', document.getElementById('signature-field').value);
+                formData.append('signature_date', document.getElementById('signature-date').value);
+
+                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.message || 'Failed');
+
+                alert('✅ Credit Card Authorization Submitted Successfully!');
+
+                // Clear only credit card fields
+                document.querySelectorAll('.cc-field').forEach(input => input.value = '');
+                globalAgreement.checked = false;
+
+            } catch (error) {
+                console.error(error);
+                alert('❌ Failed to submit. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }
+        }
+
+        // File input handler
+        document.querySelectorAll('input[type="file"]').forEach(input => {
+            const dropzone = input.closest('.flex');
+            if (dropzone) {
+                dropzone.addEventListener('click', () => input.click());
+                input.addEventListener('change', function (e) {
+                    const name = e.target.files[0]?.name || '';
+                    const label = dropzone.querySelector('span');
+                    if (label && name) {
+                        label.textContent = '✓ ' + name;
+                        label.classList.add('text-brand-crimson');
+                    }
+                });
+            }
+        });
+
+    </script>
 
 </body>
 

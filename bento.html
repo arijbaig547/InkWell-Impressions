@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Hero Bento</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'eco-light-green': '#E1E8D9',
+                        'eco-cream': '#F3EFE3',
+                        'eco-peach': '#F0E3D9',
+                        'eco-main-green': '#B1C7AF',
+                        'eco-dark-text': '#4C5D42',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 md:p-10">
+
+    <!-- HERO SECTION START -->
+    <section class="max-w-[1100px] w-full mx-auto bg-white rounded-[40px] p-8 md:p-14 shadow-xl">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-start justify-between mb-10 gap-6">
+            <h1 class="text-[2.75rem] md:text-[3.5rem] font-medium leading-[1.05] tracking-tight text-black max-w-[500px]">
+                Discover What Moves You Naturally.
+            </h1>
+            <p class="text-gray-900 text-sm md:text-xs font-medium max-w-[180px] leading-relaxed mt-2 md:mt-4">
+                From daily essentials to timeless tools, explore eco-friendly products that care for you and the planet.
+            </p>
+        </div>
+
+        <!-- Bento Grid Wrapper -->
+        <div class="flex flex-col gap-4">
+            
+            <!-- Top Row: 3 Columns -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                
+                <!-- 1. Left Column (3 Text Cards) -->
+                <div class="flex flex-col gap-4">
+                    <!-- Card 1 (Green) -->
+                    <div class="bg-eco-light-green rounded-2xl p-5 flex flex-col justify-between h-[120px] transition-transform hover:-translate-y-1 duration-300">
+                        <h3 class="text-[#728461] font-medium text-lg">Why We Do What We Do.</h3>
+                        <a href="#" class="bg-white/60 hover:bg-white text-[#728461] text-xs font-medium py-2 px-4 rounded-md flex justify-between items-center w-full transition-colors">
+                            Learn More <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </a>
+                    </div>
+                    <!-- Card 2 (Cream) -->
+                    <div class="bg-eco-cream rounded-2xl p-5 flex justify-between items-end h-[100px] group cursor-pointer transition-transform hover:-translate-y-1 duration-300">
+                        <h3 class="text-[#968A65] font-medium text-[1.05rem] leading-tight max-w-[120px]">Giving Back<br>to the Earth.</h3>
+                        <i class="fa-solid fa-arrow-right text-[#968A65] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                    <!-- Card 3 (Peach) -->
+                    <div class="bg-eco-peach rounded-2xl p-5 flex justify-between items-end h-[100px] group cursor-pointer transition-transform hover:-translate-y-1 duration-300">
+                        <h3 class="text-[#927B6B] font-medium text-[1.05rem] leading-tight max-w-[150px]">Practical Steps for<br>a Greener Life.</h3>
+                        <i class="fa-solid fa-arrow-right text-[#927B6B] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- 2. Center Column (Tall Image Card) -->
+                <div class="rounded-2xl overflow-hidden relative min-h-[340px] group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=600" alt="Eco Tools" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                    <!-- Badge -->
+                    <div class="absolute top-4 left-4 bg-white/20 backdrop-blur-md border border-white/30 text-white text-[0.65rem] font-medium px-3 py-1.5 rounded-full flex items-center gap-2">
+                        <i class="fa-solid fa-leaf"></i> Eco-Tools
+                    </div>
+                    <!-- Bottom Text & Arrow -->
+                    <div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+                        <h3 class="text-white text-2xl font-medium leading-tight max-w-[150px]">Crafted for a<br>Greener Life.</h3>
+                        <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black shadow-lg transform transition-transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Right Column (2 Small Image Cards) -->
+                <div class="flex flex-col gap-4">
+                    <!-- Top Image Card -->
+                    <div class="rounded-2xl overflow-hidden relative h-[162px] group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=500" alt="Eco Chemistry" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-white/20 backdrop-blur-md border border-white/30 text-white text-[0.65rem] font-medium px-3 py-1.5 rounded-full flex items-center gap-2">
+                            <i class="fa-solid fa-flask"></i> Eco-Chemistry
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                            <h3 class="text-white text-[1.1rem] font-medium leading-tight">Science Meets<br>Sustainability.</h3>
+                            <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center text-black shadow-lg transform transition-transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                                <i class="fa-solid fa-arrow-right -rotate-45 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom Image Card -->
+                    <div class="rounded-2xl overflow-hidden relative h-[162px] group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1605280263929-1c42c62ef169?auto=format&fit=crop&q=80&w=500" alt="Eco Products" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-white/20 backdrop-blur-md border border-white/30 text-white text-[0.65rem] font-medium px-3 py-1.5 rounded-full flex items-center gap-2">
+                            <i class="fa-solid fa-box-open"></i> Eco-Products
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                            <h3 class="text-white text-[1.1rem] font-medium leading-tight">Pure, Gentle,<br>Sustainable.</h3>
+                            <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center text-black shadow-lg transform transition-transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                                <i class="fa-solid fa-arrow-right -rotate-45 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Full Width Banner -->
+            <div class="bg-eco-main-green rounded-3xl p-3 md:p-5 flex flex-col md:flex-row gap-6 md:gap-10 items-center">
+                
+                <!-- Left: Video/Image Block -->
+                <div class="relative w-full md:w-[45%] h-[240px] md:h-[260px] rounded-2xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=800" alt="Red House" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <!-- Play Button Overlay -->
+                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center">
+                        <button class="w-14 h-14 bg-white/40 backdrop-blur-sm border border-white/50 rounded-full flex items-center justify-center cursor-pointer hover:bg-white/50 transition-colors shadow-lg">
+                            <i class="fa-solid fa-play text-white text-lg ml-1"></i>
+                        </button>
+                    </div>
+                    <!-- Hashtags -->
+                    <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                        <span class="text-[0.55rem] text-white font-medium tracking-wide">#EcoTools</span>
+                        <span class="text-[0.55rem] text-white font-medium tracking-wide">#BackToNature</span>
+                        <span class="text-[0.55rem] text-white font-medium tracking-wide">#EscapeTheOrdinary</span>
+                        <span class="text-[0.55rem] text-white font-medium tracking-wide hidden sm:inline-block">#WanderWithoutLimits</span>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content Block -->
+                <div class="w-full md:w-[55%] pr-4 pb-4 md:pb-0">
+                    <h2 class="text-[2rem] md:text-[2.4rem] text-eco-dark-text font-medium leading-[1.1] mb-4">
+                        Make Everyday<br>Sustainable, Beautiful,<br>and Simple
+                    </h2>
+                    <p class="text-[#647657] text-xs font-medium mb-6 max-w-[400px] leading-relaxed">
+                        Ready to live better for the planet? Explore our curated collection of eco-friendly tools, natural solutions, and sustainable essentials. Make small changes today that create a lasting impact tomorrow.
+                    </p>
+                    <button class="bg-white hover:bg-gray-50 text-eco-dark-text text-[0.8rem] font-semibold py-2.5 px-4 pr-2 rounded-full flex items-center gap-3 transition-colors shadow-sm">
+                        Browse Eco Favorites 
+                        <div class="bg-[#F0F4EF] w-7 h-7 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-[10px]"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- HERO SECTION END -->
+
+</body>
+</html>

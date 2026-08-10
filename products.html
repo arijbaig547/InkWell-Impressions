@@ -713,39 +713,64 @@
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
 
   <!-- Premium Navbar -->
-  <nav class="bg-brand-blue text-white px-4 sm:px-8 py-1 flex justify-between items-center fixed w-full z-50">
-    <div class="flex items-center">
-      <a href="index.html">
-        <img src="./logo solution white.png" alt="Inkwell Impressions Solutions Logo"
-          class="h-20 sm:h-24 lg:h-28 xl:h-32 w-auto object-contain" />
-      </a>
-    </div>
-    </div>
-    </div>
+   <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-4 sm:px-8 py-1">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
-      <li><a href="index.html" class="text-brand-red">Home</a></li>
-      <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
-      <li><a class="hover:text-brand-red transition">Categories</a></li>
-      <li><a class="hover:text-brand-red transition">About Us</a></li>
-      <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
+        <!-- Logo -->
+       <div class="flex items-center shrink-0">
+            <a href="index.html">
+                <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
+                    class="h-32 sm:h-36 lg:h-40 xl:h-48 w-auto object-contain" />
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
+            <li><a href="index.html" class="text-brand-crimson">Home</a></li>
+            <li><a href="products.html" class="hover:text-brand-crimson transition">Products</a></li>
+            <li><a class="hover:text-brand-crimson transition">Categories</a></li>
+            <li><a class="hover:text-brand-crimson transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-brand-crimson transition">Contact</a></li>
+        </ul>
+
+        <!-- Right -->
+        <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+            <button
+                class="hidden lg:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
+                LOGIN/SIGNUP
+            </button>
+
+            <i class="fa-solid fa-search cursor-pointer"></i>
+
+            <button id="hamburgerBtn"
+                class="md:hidden text-white text-2xl focus:outline-none"
+                aria-label="Toggle Menu">
+                <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu"
+    class="hidden md:hidden fixed top-[88px] left-0 w-full z-40 bg-brand-navy text-white px-6 py-4 space-y-4 border-t border-gray-700">
+
+    <ul class="space-y-4 text-sm font-medium uppercase tracking-wide">
+        <li><a href="index.html" class="text-brand-crimson block py-2 border-b border-gray-700">Home</a></li>
+        <li><a href="products.html"
+                class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Products</a></li>
+        <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
+        <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
+        <li><a href="contact.html"
+                class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
     </ul>
 
-    <div class="flex items-center gap-3 sm:gap-4">
-      <!-- Desktop Login Button -->
-      <button
-        class="hidden sm:block bg-brand-red hover:bg-red-700 text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
+    <button
+        class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
         LOGIN/SIGNUP
-      </button>
-      <i class="fa-solid fa-search cursor-pointer"></i>
-
-      <!-- Hamburger Button -->
-      <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
-        <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-  </nav>
+    </button>
+</div>
 
   <!-- Mobile Menu (hidden by default) -->
   <div id="mobileMenu"
@@ -766,7 +791,7 @@
   </div>
   <!-- Page Header (navy/crimson) -->
   <header class="header-bg text-white py-10 px-8">
-    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 mt-[65px]">
+    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 pt-[195px] ">
       <div class="header-content opacity-0">
         <div class="text-xs text-white/70 mb-3 flex items-center gap-2">
           <a href="#" class="hover:text-white transition-colors">Home</a>
@@ -848,10 +873,74 @@
         </div>
       </div>
 
-      <!-- Product Grid -->
-      <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-10">
+      <!-- ============================================================ -->
+      <!-- POPULAR PRODUCTS SECTION (UPER) -->
+      <!-- ============================================================ -->
+      <div class="mt-8 mb-12" id="popular-section">
+
+        <!-- Modern Header -->
+        <div class="relative mb-8">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="h-[3px] w-12 bg-gradient-to-r from-brand-crimson to-brand-crimson/50 rounded-full"></div>
+
+              <div class="h-[3px] w-16 bg-gradient-to-r from-brand-crimson/50 to-transparent"></div>
+            </div>
+
+          </div>
+
+          <!-- Main Heading -->
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-text leading-tight mt-4">
+            Top
+            <span class="text-brand-crimson relative">
+              Picks
+              <svg class="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 200 10" fill="none">
+                <path d="M0 5 Q50 0 100 5 Q150 10 200 5" stroke="#C81F45" stroke-width="2" opacity="0.3" />
+              </svg>
+            </span>
+          </h2>
+
+          <p class="text-brand-textSecondary text-sm mt-2">Most popular items our customers love </p>
+        </div>
+
+        <!-- Popular Products Grid -->
+        <div id="popular-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <!-- injected by JS -->
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- DIVIDER WITH ALL PRODUCTS LABEL -->
+      <!-- ============================================================ -->
+      <div class="relative my-12">
+        <div class="absolute inset-0 flex items-center">
+          <div class="w-full border-t border-brand-border"></div>
+        </div>
+        <div class="relative flex justify-center">
+          <span
+            class="bg-brand-bg px-8 py-2 text-xs font-semibold text-brand-textSecondary uppercase tracking-[0.2em] rounded-full border border-brand-border shadow-sm">
+            <i class="fa-regular fa-grid-2 text-brand-crimson mr-2"></i>
+            All Products
+          </span>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- ALL PRODUCTS SECTION (NEECHY) -->
+      <!-- ============================================================ -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-10">
         <!-- injected by JS -->
       </div>
+
+      <!-- ============================================================ -->
+      <!-- VIEW ALL BUTTON (Optional) -->
+      <!-- ============================================================ -->
+      <!-- <div class="text-center mt-2 mb-10">
+    <button class="group inline-flex items-center gap-2 px-8 py-3 border-2 border-brand-crimson text-brand-crimson hover:bg-brand-crimson hover:text-white rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-brand-crimson/20">
+        <span>View All Products</span>
+        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+    </button>
+</div> -->
 
       <!-- Empty state -->
       <div id="empty-state" class="hidden text-center py-12 premium-card">
@@ -861,37 +950,7 @@
       </div>
 
       <!-- Popular Products -->
-      <div class="mt-12 mb-8 popular-section" id="popular-section">
-        <div class="brand-divider mb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
-          <div class="flex items-center gap-4">
-            <div class="h-[2px] w-12 bg-brand-crimson rounded-full"></div>
-
-            <span
-              class="inline-flex items-center gap-2 rounded-full border border-brand-crimson/30 bg-brand-crimson/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-brand-crimson">
-              <i class="fa-solid fa-fire animate-pulse"></i>
-              Popular Products
-            </span>
-
-            <div class="h-[2px] w-20 bg-gradient-to-r from-brand-crimson to-transparent"></div>
-          </div>
-
-          <span
-            class="rounded-full bg-orange-100 px-4 py-2 text-sm font-medium text-orange-700 shadow-sm animate-pulse">
-            🔥 Trending Now
-          </span>
-
-        </div>
-
-        <h2 class="text-5xl font-bold text-brand-text leading-tight py-5">
-          Best Selling
-          <span class="text-brand-crimson">Products</span>
-        </h2>
-
-        <div id="popular-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          <!-- injected by JS -->
-        </div>
-      </div>
     </div>
   </main>
 
@@ -961,7 +1020,8 @@
       category: "Tote Bags",
       material: "Canvas",
       size: '9"W x 15"H x 15"D',
-      price: 45.00,
+      price: 30.00,
+      originalPrice: 45.00,
       image: "assets/assets/images/products/tote-bags/IB29/IB29_main.webp",
       description: "7oz cotton canvas bag with self-fabric handles. Reinforced stitching.",
       popular: true
@@ -974,6 +1034,7 @@
       material: "Cotton",
       size: '15"W x 16"H',
       price: 30.00,
+      originalPrice: 45.00,
       image: "assets/assets/images/products/tote-bags/MQIB6000/MQT6000_main.webp",
       description: "6oz. 100% cotton tote bag with natural body and color handles.",
       popular: false
@@ -986,6 +1047,7 @@
       material: "Canvas",
       size: '20"W x 15"H x 5"D',
       price: 30.00,
+      originalPrice: 45.00,
       image: "assets/assets/images/products/tote-bags/IB611/IB611_main.webp",
       description: "12oz. canvas, 100% cotton, jumbo tote with full length zipper.",
       popular: false
@@ -998,6 +1060,7 @@
       material: "Canvas",
       size: '3"W x 10.5"H x 3"D',
       price: 30.00,
+      originalPrice: 45.00,
       image: "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp",
       description: "12 oz. 100% cotton canvas. Single bottle wine tote with reinforced bottom.",
       popular: false
@@ -1010,6 +1073,7 @@
       material: "Cotton",
       size: '15"W x 16"H',
       price: 30.00,
+      originalPrice: 45.00,
       image: "assets/assets/images/products/tote-bags/MQIB/MQIB_main.webp",
       description: "Premium cotton tote, ideal for everyday use.",
       popular: true
@@ -1021,7 +1085,8 @@
       category: "Tote Bags",
       material: "Canvas",
       size: '15"W x 16"H',
-      price: 32.00,
+      price: 30.00,
+      originalPrice: 45.00,
       image: "assets/assets/images/products/tote-bags/IB800/IB800_main.webp",
       description: "Durable canvas tote with promotional appeal.",
       popular: true
@@ -1033,7 +1098,8 @@
       category: "Non-Woven Bags",
       material: "Non-Woven",
       size: '15"W x 16"H',
-      price: 28.00,
+      price: 35.00,
+      originalPrice: 50.00,
       image: "assets/assets/images/products/non-woven/W956/W956_main.webp",
       description: "Lightweight non-woven bag for conventions.",
       popular: true
@@ -1045,7 +1111,8 @@
       category: "Tote Bags",
       material: "Non-Woven",
       size: '14.25"W x 15"H x 5"D',
-      price: 25.00,
+      price: 35.00,
+      originalPrice: 50.00,
       image: "assets/assets/images/products/non-woven/W975/W975_main.webp",
       description: "Economical non-woven tote.",
       popular: true
@@ -1212,18 +1279,26 @@
             <div class="flex-1 flex flex-col">
               <a href="${link}"><h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">${product.name}</h3></a>
               <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">${product.description}</p>
-              <div class="mt-auto">
-                <div class="flex items-end gap-2 mb-4">
-                  <span class="text-brand-crimson font-bold text-lg">$${product.price.toFixed(2)}</span>
-                  <span class="text-xs text-brand-textSecondary mb-1">Now Net</span>
-                </div>
-                <div class="flex items-center gap-1 w-full">
-                  <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-regular fa-pen-to-square"></i> QUOTE</button>
-                  <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP</button>
-                  <button class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson"><i class="fa-solid fa-truck-fast"></i> FREIGHT</button>
-                </div>
-              </div>
-            </div>
+          <div class="mt-auto">
+  <!-- Price Row with Setup Before -->
+<div class="mt-auto">
+  <!-- Setup Was Label -->
+  <div class="text-[12px] text-brand-textSecondary font-medium mb-1">Setup Was</div>
+  
+  <!-- Price Row -->
+  <div class="flex items-center gap-2 flex-wrap mb-3">
+    ${product.originalPrice ? `<span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">$${product.originalPrice.toFixed(2)}</span>` : ''}
+    <span class="text-brand-crimson font-bold text-base">$${product.price.toFixed(2)}</span>
+    <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">Now Net</span>
+  </div>
+  
+  <!-- Buttons -->
+  <div class="flex items-center gap-1 w-full">
+    <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-regular fa-pen-to-square"></i> QUOTE</button>
+    <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP</button>
+    <button class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson"><i class="fa-solid fa-truck-fast"></i> FREIGHT</button>
+  </div>
+</div>
           `;
 
         // Click event on the card to navigate to product detail
@@ -1297,25 +1372,42 @@
       }
 
       function renderProducts() {
-        const filtered = getFilteredProducts();
-        const sorted = getSortedProducts(filtered);
-        const total = products.length;
-        const showing = sorted.length;
-        countLabel.textContent = `Showing 1–${showing} of ${total} products`;
-        grid.innerHTML = '';
-        if (showing === 0) {
-          emptyState.classList.remove('hidden');
+    const filtered = getFilteredProducts();
+    const sorted = getSortedProducts(filtered);
+    const total = products.length;
+    const showing = sorted.length;
+    countLabel.textContent = `Showing 1–${showing} of ${total} products`;
+    grid.innerHTML = '';
+    if (showing === 0) {
+        emptyState.classList.remove('hidden');
+    } else {
+        emptyState.classList.add('hidden');
+        
+        // 🔥 ORDER CHANGE: Pehle 3 products (index 0,1,2) ko baad mein, aage wale (3,4,5...) ko pehle
+        const reordered = [];
+        if (sorted.length >= 6) {
+            // Pehle second row ke products (index 3,4,5)
+            reordered.push(sorted[3], sorted[4], sorted[5]);
+            // Phir first row ke products (index 0,1,2)
+            reordered.push(sorted[0], sorted[1], sorted[2]);
+            // Baki ke products (6 se aage) as it is
+            for (let i = 6; i < sorted.length; i++) {
+                reordered.push(sorted[i]);
+            }
         } else {
-          emptyState.classList.add('hidden');
-          sorted.forEach(p => grid.appendChild(createProductCard(p)));
-          gsap.set('.product-card', { y: 30, opacity: 0 });
-          gsap.to('.product-card', { y: 0, opacity: 1, duration: 0.5, stagger: 0.08, ease: 'back.out(1.2)', overwrite: 'auto' });
+            // Agar 6 se kam hain toh original order rakho
+            reordered.push(...sorted);
         }
+        
+        reordered.forEach(p => grid.appendChild(createProductCard(p)));
+        gsap.set('.product-card', { y: 30, opacity: 0 });
+        gsap.to('.product-card', { y: 0, opacity: 1, duration: 0.5, stagger: 0.08, ease: 'back.out(1.2)', overwrite: 'auto' });
+    }
 
-        // Popular products render karo
-        const popularProducts = products.filter(p => p.popular === true);
-        renderPopularProducts(popularProducts);
-      }
+    // Popular products render karo
+    const popularProducts = products.filter(p => p.popular === true);
+    renderPopularProducts(popularProducts);
+}
 
       function renderPopularProducts(popularProducts) {
         const grid = document.getElementById('popular-grid');
@@ -1378,15 +1470,12 @@
                         <span class="text-[9px] text-brand-textSecondary">(${(Math.random() * 150 + 30).toFixed(0)})</span>
                     </div>
                     
-                    <div class="flex items-center justify-between mt-2">
-                        <div>
-                            <span class="text-[9px] text-brand-textSecondary line-through opacity-60">$${(product.price * 1.3).toFixed(2)}</span>
-                            <span class="popular-price ml-1">$${product.price.toFixed(2)}</span>
-                        </div>
-                        <div class="popular-hover-icon">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </div>
+          <div class="flex items-center gap-2 mt-2 flex-wrap">
+  <span class="text-[12px] text-brand-textSecondary font-medium">Setup Was</span>
+  <span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">$${product.originalPrice.toFixed(2)}</span>
+  <span class="popular-price font-bold text-brand-crimson text-sm">$${product.price.toFixed(2)}</span>
+  <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-1.5 py-0.5 rounded border border-brand-crimson/30">Now Net</span>
+</div>
                 </div>
             </div>
         `;

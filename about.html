@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkwell Impressions · About</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-blue': '#0B132B',
+            'brand-blue-light': '#1C2541',
+            'brand-red': '#D62828',
+            'brand-text': '#f4f4f4',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* full-width hero */
+    .hero-full {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      height: 88vh;
+      min-height: 560px;
+      max-height: 820px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+    }
+
+    .hero-full img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+      filter: contrast(1.08) saturate(1.04) brightness(0.98);
+    }
+
+    .hero-overlay-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40%;
+      background: linear-gradient(to bottom, rgba(11, 19, 43, 0.12) 0%, rgba(11, 19, 43, 0.02) 70%, rgba(11, 19, 43, 0) 100%);
+      pointer-events: none;
+    }
+
+    .hero-gradient {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60%;
+      background: linear-gradient(to top,
+          rgba(0, 0, 0, 0.65) 0%,
+          rgba(0, 0, 0, 0.30) 40%,
+          rgba(0, 0, 0, 0) 100%);
+      pointer-events: none;
+    }
+
+    /* faded background text */
+    .bg-text-container {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bg-text-container .faded {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: rgba(19, 24, 53, 0.025);
+      font-size: clamp(5rem, 22vw, 15rem);
+      line-height: 0.82;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-align: center;
+      transform: translateY(-6%);
+    }
+
+    /* about two-col */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.8rem 5.5rem;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 600px;
+        text-align: center;
+      }
+    }
+
+    /* feature cards – existing, made bolder */
+    .feature-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-top: 1px solid rgba(19, 24, 53, .08);
+    }
+
+    .feature-item {
+      padding: 3rem;
+      border-bottom: 1px solid rgba(19, 24, 53, .08);
+      position: relative;
+      transition: .35s ease;
+      background: #fff;
+    }
+
+    .feature-item:nth-child(odd) {
+      border-right: 1px solid rgba(19, 24, 53, .08);
+    }
+
+    .feature-item.full {
+      grid-column: 1/-1;
+      border-right: none;
+    }
+
+    .feature-item:hover {
+      background: #fafafa;
+    }
+
+    .feature-item .num {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 4.2rem;
+      font-weight: 700;
+      color: rgba(19, 24, 53, .09);
+      line-height: 1;
+      margin-bottom: 1.4rem;
+      transition: .35s;
+    }
+
+    .feature-item h4 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #131835;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+      transition: .35s;
+    }
+
+    .feature-accent {
+      width: 42px;
+      height: 2px;
+      background: #D62828;
+      margin-bottom: 1.3rem;
+      transition: .35s;
+    }
+
+    .feature-item p {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: #5E6678;
+      max-width: 92%;
+      font-weight: 400;
+    }
+
+    .feature-item:hover .num {
+      color: #D62828;
+    }
+
+    .feature-item:hover h4 {
+      transform: translateX(6px);
+    }
+
+    .feature-item:hover .feature-accent {
+      width: 72px;
+    }
+
+    @media(max-width:768px) {
+      .feature-row {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-item {
+        border-right: none !important;
+        padding: 2rem 1.5rem;
+      }
+
+      .feature-item.full {
+        grid-column: auto;
+      }
+
+      .feature-item .num {
+        font-size: 3rem;
+      }
+
+      .feature-item h4 {
+        font-size: 1.3rem;
+      }
+
+      .feature-item p {
+        max-width: 100%;
+      }
+    }
+
+    /* stats */
+    .stat-card {
+      text-align: center;
+      padding: 1rem;
+      transition: .35s ease;
+      opacity: 0;
+      /* hidden initially, GSAP will reveal */
+      transform: translateY(20px);
+    }
+
+    .stat-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.4rem, 5vw, 5rem);
+      font-weight: 700;
+      color: #131835;
+      line-height: 1;
+      letter-spacing: -.04em;
+      transition: .35s ease;
+    }
+
+    .stat-card h3 span {
+      color: #D62828;
+      font-size: .55em;
+    }
+
+    .stat-line {
+      width: 42px;
+      height: 2px;
+      background: #D62828;
+      margin: 24px auto 20px;
+      transition: .35s ease;
+    }
+
+    .stat-card p {
+      font-size: .82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      color: #6B7280;
+      line-height: 1.6;
+    }
+
+    .stat-card:hover h3 {
+      color: #D62828;
+      transform: translateY(-4px);
+    }
+
+    .stat-card:hover .stat-line {
+      width: 70px;
+    }
+
+    /* ── Story + Mission + Vision cards ── */
+    .story-mission-card {
+      position: relative;
+      overflow: hidden;
+      padding: 3rem 2.5rem;
+      background: #ffffff;
+      border: 1px solid rgba(19, 24, 53, 0.10);
+      min-height: 100%;
+      transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .story-mission-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(214, 40, 40, 0.25);
+      box-shadow: 0 20px 50px rgba(19, 24, 53, 0.08);
+    }
+
+    .story-mission-card .bg-num {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      font-family: "Playfair Display", serif;
+      font-size: 5rem;
+      line-height: 1;
+      font-weight: 700;
+      color: rgba(19, 24, 53, 0.055);
+      pointer-events: none;
+    }
+
+    .story-mission-card .red-accent {
+      width: 42px;
+      height: 2px;
+      background: #D62828;
+      margin-bottom: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .story-mission-card h3 {
+      position: relative;
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #131835;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+
+    .story-mission-card p {
+      position: relative;
+      color: #5E6678;
+      font-size: 1rem;
+      line-height: 1.9;
+      margin-bottom: 1rem;
+    }
+
+    .story-mission-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Feature numbers: RED BY DEFAULT ── */
+    .feature-item .num {
+      color: #D62828 !important;
+      font-weight: 700;
+    }
+
+    .feature-item:hover .num {
+      color: #D62828 !important;
+    }
+
+    /* stronger feature headings */
+    .feature-item h4 {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .feature-item p {
+      font-weight: 400;
+    }
+
+    /* mobile */
+    @media (max-width: 768px) {
+      .story-mission-card {
+        padding: 2.2rem 1.8rem;
+      }
+
+      .story-mission-card h3 {
+        font-size: 1.7rem;
+      }
+
+      .story-mission-card .bg-num {
+        font-size: 4rem;
+        right: 1.2rem;
+      }
+
+      .story-mission-card p {
+        font-size: 0.98rem;
+      }
+    }
+
+    /* GSAP initial states */
+    .gsap-fade-up,
+    .gsap-features,
+    .gsap-feature-item,
+    .gsap-stats,
+    .gsap-stat-item {
+      opacity: 0;
+    }
+
+    .stat-card {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV (unchanged) -->
+  <nav class="bg-brand-blue text-white px-4 sm:px-8 flex justify-between items-center fixed w-full z-50">
+    <div class="flex items-center">
+      <a href="index.html"><img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
+          class="h-32 sm:h-36 lg:h-40 xl:h-48 w-auto object-contain" /></a>
+    </div>
+    <ul class="hidden md:flex space-x-6 lg:space-x-8 text-[14px] font-medium uppercase tracking-wide">
+      <li><a href="index.html" class="text-brand-red">Home</a></li>
+      <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
+      <li><a href="categories.html" class="hover:text-brand-red transition">Categories</a></li>
+      <li><a href="about.html" class="hover:text-brand-red transition">About Us</a></li>
+      <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-3 sm:gap-4">
+      <button
+        class="hidden sm:block bg-brand-red hover:bg-red-700 text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">LOGIN/SIGNUP</button>
+      <i class="fa-solid fa-search cursor-pointer"></i>
+      <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
+        <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section id="about-section" class="relative w-full overflow-hidden bg-white">
+
+    <!-- HERO -->
+    <div class="hero-full relative">
+      <img src="./assets/about-image.jpg" alt="Premium printing craftsmanship" class="w-full h-full object-cover" />
+      <div class="hero-overlay-top"></div>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <!-- ABOUT US – prominent heading, introduction, story, mission, features, stats -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 md:pt-28 pb-8">
+
+      <!-- faded background -->
+      <div class="bg-text-container"><span class="faded">INKWELL<br>IMPRESSIONS</span></div>
+
+      <!-- 1. ABOUT US – prominent editorial heading -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 md:pt-28 pb-8">
+
+        <div class="text-center max-w-4xl mx-auto mb-20 gsap-fade-up">
+
+          <!-- ONLY ONE ABOUT US HEADING -->
+          <div class="flex items-center justify-center gap-4 mb-7">
+            <span class="w-10 h-[1px] bg-[#D62828]"></span>
+            <span class="text-[#D62828] uppercase tracking-[0.35em] text-xs font-semibold">
+              About Us
+            </span>
+            <span class="w-10 h-[1px] bg-[#D62828]"></span>
+          </div>
+
+          <h2
+            class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-[#131835] tracking-[-0.035em] leading-[1.05]">
+            Precision Printing.<br>
+            Powerful Impact.
+          </h2>
+
+          <div class="w-14 h-[2px] bg-[#D62828] mx-auto my-8"></div>
+
+          <p class="text-[#131835]/70 text-base md:text-lg leading-[1.9] font-normal max-w-3xl mx-auto">
+            Inkwell Impressions provides printing and promotional solutions for businesses
+            that care about how their brand is presented. From everyday business stationery
+            to custom promotional products, we focus on dependable quality, clean finishing
+            and consistent results.
+          </p>
+
+        </div>
+
+        <!-- OUR STORY + OUR MISSION + OUR VISION (3 cards) -->
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-24 gsap-fade-up">
+
+          <!-- OUR STORY -->
+          <div class="story-mission-card">
+
+            <div class="red-accent"></div>
+            <h3>Our Story</h3>
+            <p>
+              Inkwell Impressions has grown by working closely with businesses and
+              understanding what they need from a printing partner. Over the years,
+              that experience has shaped the way we work — with careful production,
+              attention to detail and a strong focus on getting the final product right.
+            </p>
+            <p>
+              Whether it is a simple business card or a larger promotional order,
+              our goal has always been the same: deliver work that represents the
+              customer's brand properly.
+            </p>
+          </div>
+
+          <!-- OUR MISSION -->
+          <div class="story-mission-card">
+            <div class="red-accent"></div>
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is simple — to make quality printing easier and more
+              reliable for businesses. We aim to provide products that look professional,
+              perform well and arrive with the consistency our customers expect.
+            </p>
+            <p>
+              From choosing the right materials to the final finish, we pay attention
+              to the details that make a difference. Good printing should not just carry
+              a brand; it should represent it well.
+            </p>
+          </div>
+
+          <!-- OUR VISION (new) -->
+          <div class="story-mission-card">
+
+            <div class="red-accent"></div>
+            <h3>Our Vision</h3>
+            <p>
+              Our vision is to become a trusted printing and promotional partner for businesses by combining quality,
+              reliability and modern solutions. We aim to continuously improve the way businesses create, present and
+              promote their brands through professionally produced print materials.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- WHY INKWELL (unchanged) -->
+        <div class="relative z-10 max-w-6xl mx-auto px-0 py-8 gsap-features">
+
+          <div class="text-center mb-14">
+            <div class="flex items-center justify-center gap-4 mb-5">
+              <span class="w-8 h-[1px] bg-[#D62828]"></span>
+              <span class="text-[#D62828] uppercase tracking-[0.3em] text-xs font-semibold">
+                Why Inkwell
+              </span>
+              <span class="w-8 h-[1px] bg-[#D62828]"></span>
+            </div>
+            <h3 class="font-serif text-3xl md:text-5xl font-bold text-[#131835]">
+              What We Bring to Every Order
+            </h3>
+            <div class="w-12 h-[2px] bg-[#D62828] mx-auto mt-5"></div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-item">
+              <span class="num">01</span>
+              <h4>Uncompromising Quality</h4>
+              <div class="feature-accent"></div>
+              <p>
+                We use quality materials and check each order carefully to maintain
+                a consistent finish from the first piece to the last.
+              </p>
+            </div>
+
+            <div class="feature-item">
+              <span class="num">02</span>
+              <h4>Clear Pricing</h4>
+              <div class="feature-accent"></div>
+              <p>
+                Straightforward pricing and clear communication help you know exactly
+                what you are getting before production begins.
+              </p>
+            </div>
+
+            <div class="feature-item">
+              <span class="num">03</span>
+              <h4>Responsive Service</h4>
+              <div class="feature-accent"></div>
+              <p>
+                From quotations to final delivery, we keep communication simple,
+                direct and timely throughout the process.
+              </p>
+            </div>
+
+            <div class="feature-item">
+              <span class="num">04</span>
+              <h4>Custom Solutions</h4>
+              <div class="feature-accent"></div>
+              <p>
+                Different businesses need different products, sizes and finishes.
+                We work around your requirements rather than forcing a fixed solution.
+              </p>
+            </div>
+
+            <div class="feature-item full">
+              <span class="num">05</span>
+              <h4>Reliable Turnaround</h4>
+              <div class="feature-accent"></div>
+              <p>
+                We understand that deadlines matter, so we plan production carefully
+                and work to deliver orders within the agreed timeframe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPANY STATS – enhanced with "BY THE NUMBERS" and "Built on Consistency." -->
+        <div class="relative z-10 max-w-7xl mx-auto px-0 py-24 gsap-stats">
+
+          <!-- editorial header -->
+          <div class="text-center mb-16">
+            <div class="flex items-center justify-center gap-4 mb-4">
+              <span class="w-10 h-[1px] bg-[#D62828]"></span>
+              <span class="text-[#D62828] uppercase tracking-[0.35em] text-xs font-semibold">
+                By the Numbers
+              </span>
+              <span class="w-10 h-[1px] bg-[#D62828]"></span>
+            </div>
+            <h3 class="font-serif text-4xl md:text-5xl font-bold text-[#131835]">
+              Built on Consistency.
+            </h3>
+            <div class="w-14 h-[2px] bg-[#D62828] mx-auto mt-6"></div>
+          </div>
+
+          <!-- stats grid -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <div class="stat-card" data-count="886">
+              <h3><span class="counter-num">0</span><span>+</span></h3>
+              <div class="stat-line"></div>
+              <p>Projects Completed</p>
+            </div>
+
+            <div class="stat-card" data-count="799">
+              <h3><span class="counter-num">0</span><span>+</span></h3>
+              <div class="stat-line"></div>
+              <p>Happy Customers</p>
+            </div>
+
+            <div class="stat-card" data-count="100">
+              <h3><span class="counter-num">0</span><span>+</span></h3>
+              <div class="stat-line"></div>
+              <p>Products Available</p>
+            </div>
+
+            <div class="stat-card" data-count="75">
+              <h3><span class="counter-num">0</span><span>+</span></h3>
+              <div class="stat-line"></div>
+              <p>Dedicated Employees</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div> <!-- end relative z-10 max-w-7xl -->
+
+    </div> <!-- end relative z-10 max-w-7xl -->
+
+  </section>
+
+  <footer class="bg-brand-blue text-white pt-16 pb-8">
+    <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+      <div class="lg:col-span-1">
+        <div class="mb-4">
+          <img src="./logo bold.png" alt="Inkwell Impressions Logo" class="h-24 w-auto object-contain" />
+        </div>
+        <p class="text-xs text-gray-400 mb-6">Your global partner for premium printing, packaging, corporate
+          gifts and promotional products.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.linkedin.com/in/inkwell-impressions-2007883b4" target="_blank"
+            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://www.instagram.com/inkwellimpressionspromo/" target="_blank"
+            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=61552261877738" target="_blank"
+            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="https://x.com/Inkwell_Imp" target="_blank"
+            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-bold uppercase text-xs mb-4">Quick Links</h4>
+        <ul class="text-xs text-gray-400 space-y-2">
+          <li class="hover:text-white cursor-pointer">Home</li>
+          <li class="hover:text-white cursor-pointer">Products</li>
+          <li class="hover:text-white cursor-pointer">Categories</li>
+          <li class="hover:text-white cursor-pointer">About Us</li>
+          <li class="hover:text-white cursor-pointer">Contact Us</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold uppercase text-xs mb-4">Products</h4>
+        <ul class="text-xs text-gray-400 space-y-2">
+          <li class="hover:text-white cursor-pointer">Promotional Products</li>
+          <li class="hover:text-white cursor-pointer">Corporate Gifts</li>
+          <li class="hover:text-white cursor-pointer">Printing Solutions</li>
+
+          <li class="hover:text-white cursor-pointer">Custom Merchandise</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold uppercase text-xs mb-4">Support</h4>
+        <ul class="text-xs text-gray-400 space-y-2">
+          <li class="hover:text-white cursor-pointer">Request a Quote</li>
+          <li class="hover:text-white cursor-pointer">Request Mockup</li>
+          <li class="hover:text-white cursor-pointer">Product Sample</li>
+          <li class="hover:text-white cursor-pointer">Purchase Order</li>
+          <li class="hover:text-white cursor-pointer">Credit Application</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold uppercase text-xs mb-4">Contact Info</h4>
+        <ul class="text-xs text-gray-400 space-y-4">
+          <li class="flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-3"></i> 5900 Balcones Drive
+            STE 100
+            Suite 456,<br>Austin, TX, 78731
+            USA</li>
+          <li class="flex items-center"><i class="fa-solid fa-envelope mr-3"></i> info@inkwell-impressions.com
+          </li>
+          <li class="flex items-center"><i class="fa-solid fa-phone mr-3"></i> +1 (212) 555-7890</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto px-8 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+      <p>&copy; 2026 Inkwell Impressions Solutions. All Rights Reserved.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <span class="hover:text-white cursor-pointer">Pri vacy Policy</span>
+        <span class="hover:text-white cursor-pointer">Terms & Conditions</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ GSAP – subtle premium motion ═══ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const ease = 'power2.out';
+
+      // ---------- 1. Fade-up for intro ----------
+      const fadeEls = document.querySelectorAll('.gsap-fade-up');
+      if (fadeEls.length) {
+        gsap.fromTo(fadeEls, { opacity: 0, y: 20 }, {
+          opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: ease,
+          scrollTrigger: { trigger: fadeEls[0], start: 'top 88%', toggleActions: 'play none none none' }
+        });
+      }
+
+      // ---------- 2. Features container ----------
+      const featContainer = document.querySelector('.gsap-features');
+      if (featContainer) {
+        gsap.fromTo(featContainer, { opacity: 0, y: 16 }, {
+          opacity: 1, y: 0, duration: 0.7, ease: ease,
+          scrollTrigger: { trigger: featContainer, start: 'top 90%', toggleActions: 'play none none none' }
+        });
+      }
+
+      // ---------- 3. Individual feature items stagger ----------
+      const featItems = document.querySelectorAll('.feature-item');
+      if (featItems.length) {
+        gsap.fromTo(featItems, { opacity: 0, y: 10 }, {
+          opacity: 1, y: 0, duration: 0.5, stagger: 0.06, ease: ease,
+          scrollTrigger: { trigger: featItems[0], start: 'top 92%', toggleActions: 'play none none none' }
+        });
+      }
+
+      // ---------- 4. Stats container (gsap-stats) ----------
+      const statsContainer = document.querySelector('.gsap-stats');
+      if (statsContainer) {
+        gsap.fromTo(statsContainer, { opacity: 0, y: 16 }, {
+          opacity: 1, y: 0, duration: 0.7, ease: ease,
+          scrollTrigger: { trigger: statsContainer, start: 'top 90%', toggleActions: 'play none none none' }
+        });
+      }
+
+      // ---------- 5. Stat cards: fade + slide + counter ----------
+      const statCards = document.querySelectorAll('.stat-card');
+      if (statCards.length) {
+        // first, reveal each card with stagger
+        gsap.fromTo(statCards, { opacity: 0, y: 20 }, {
+          opacity: 1, y: 0, duration: 0.6, stagger: 0.08, ease: ease,
+          scrollTrigger: {
+            trigger: statCards[0],
+            start: 'top 90%',
+            toggleActions: 'play none none none',
+            // once revealed, trigger counter
+            onEnter: () => {
+              statCards.forEach(card => {
+                const numSpan = card.querySelector('.counter-num');
+                if (!numSpan) return;
+                const target = parseInt(card.getAttribute('data-count'), 10);
+                if (isNaN(target)) return;
+                // only count once
+                if (card.dataset.counted === 'true') return;
+                card.dataset.counted = 'true';
+
+                // GSAP counter animation
+                gsap.fromTo(numSpan, { innerText: 0 }, {
+                  innerText: target,
+                  duration: 1.4,
+                  ease: 'power2.out',
+                  snap: { innerText: 1 },
+                  onUpdate: function () {
+                    numSpan.innerText = Math.floor(parseFloat(numSpan.innerText));
+                  }
+                });
+              });
+            },
+            // prevent re-trigger
+            once: true
+          }
+        });
+      }
+
+      // ---------- 6. Trust badge (safely guard) ----------
+      const trust = document.querySelector('.gsap-trust');
+      if (trust) {
+        gsap.fromTo(trust, { opacity: 0, y: 14 }, {
+          opacity: 1, y: 0, duration: 0.6, ease: ease,
+          scrollTrigger: { trigger: trust, start: 'top 92%', toggleActions: 'play none none none' }
+        });
+      }
+
+      // ---------- 7. Additional: Story/Mission/Vision cards stagger (already part of gsap-fade-up, but we add a subtle extra stagger) ----------
+      const storyCards = document.querySelectorAll('.story-mission-card');
+      if (storyCards.length && !document.querySelector('.gsap-fade-up')) {
+        // only if not already handled by fade-up
+        gsap.fromTo(storyCards, { opacity: 0, y: 15 }, {
+          opacity: 1, y: 0, duration: 0.6, stagger: 0.08, ease: ease,
+          scrollTrigger: { trigger: storyCards[0], start: 'top 88%', toggleActions: 'play none none none' }
+        });
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>
