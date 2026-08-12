@@ -59,7 +59,6 @@
             background: #222063;
         }
 
-        /* premium card */
         .premium-card {
             background: #FFFFFF;
             border: 1px solid rgba(23, 21, 74, 0.10);
@@ -74,14 +73,15 @@
             border-color: rgba(23, 21, 74, 0.20);
         }
 
-        /* form input */
         .input-premium {
             background: #FFFFFF;
             border: 1px solid rgba(23, 21, 74, 0.12);
             color: #1A1A2E;
             border-radius: 8px;
-            padding: 0.6rem 0.75rem;
+            padding: 0.5rem 0.75rem;
             transition: border-color 0.2s, box-shadow 0.2s;
+            font-size: 0.875rem;
+            width: 100%;
         }
 
         .input-premium:focus {
@@ -92,6 +92,13 @@
 
         .input-premium::placeholder {
             color: #8A8AA8;
+        }
+
+        @media (max-width: 640px) {
+            .input-premium {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.6rem;
+            }
         }
 
         .btn-crimson {
@@ -120,24 +127,11 @@
             box-shadow: 0 4px 12px rgba(23, 21, 74, 0.15);
         }
 
-        .nav-premium {
-            background: #FFFFFF;
-            border-bottom: 1px solid rgba(23, 21, 74, 0.06);
-            box-shadow: 0 1px 4px rgba(23, 21, 74, 0.03);
-        }
-
-        .footer-premium {
-            background: #FFFFFF;
-            border-top: 1px solid rgba(23, 21, 74, 0.06);
-            border-bottom: 4px solid #C81F45;
-        }
-
         .header-bg {
             background: linear-gradient(135deg, #17154A 0%, #222063 70%, #2A2870 100%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        /* tab button */
         .tab-btn {
             transition: all 0.2s ease;
             border-left: 3px solid transparent;
@@ -157,43 +151,240 @@
         .form-panel {
             transition: opacity 0.25s ease;
         }
+
+        /* Mobile Responsive Fixes */
+        @media (max-width: 640px) {
+            .tab-btn {
+                font-size: 0.7rem !important;
+                padding: 0.5rem 0.75rem !important;
+            }
+
+            .tab-btn svg {
+                width: 14px !important;
+                height: 14px !important;
+            }
+
+            .premium-card .p-6 {
+                padding: 0.75rem !important;
+            }
+
+            .premium-card .p-10 {
+                padding: 1rem !important;
+            }
+
+            .premium-card .p-4 {
+                padding: 0.75rem !important;
+            }
+
+            .header-bg .text-4xl {
+                font-size: 1.8rem !important;
+            }
+
+            .header-bg .text-lg {
+                font-size: 0.9rem !important;
+            }
+
+            .header-bg .py-10 {
+                padding-top: 1.5rem !important;
+                padding-bottom: 1.5rem !important;
+            }
+
+            .header-bg .pt-\[185px\] {
+                padding-top: 70px !important;
+            }
+
+            .form-panel h2 {
+                font-size: 1.3rem !important;
+            }
+
+            .form-panel .text-sm {
+                font-size: 0.75rem !important;
+            }
+
+            .form-panel label {
+                font-size: 0.6rem !important;
+            }
+
+            .btn-crimson,
+            .btn-navy {
+                font-size: 0.7rem !important;
+                padding: 0.5rem 1rem !important;
+                width: 100% !important;
+            }
+
+            .footer-premium .text-xs {
+                font-size: 0.6rem !important;
+            }
+
+            .footer-premium .gap-6 {
+                gap: 0.75rem !important;
+            }
+
+            .hero-response-badge {
+                font-size: 0.6rem !important;
+                padding: 0.2rem 0.6rem !important;
+            }
+
+            .direct-contact a {
+                font-size: 0.7rem !important;
+            }
+
+            .direct-contact .text-sm {
+                font-size: 0.7rem !important;
+            }
+
+            .direct-contact .text-base {
+                font-size: 0.8rem !important;
+            }
+
+            .file-dropzone {
+                height: 8rem !important;
+            }
+
+            .file-dropzone svg {
+                width: 2.5rem !important;
+                height: 2.5rem !important;
+            }
+
+            .file-dropzone .text-sm {
+                font-size: 0.65rem !important;
+            }
+
+            .file-dropzone .text-xs {
+                font-size: 0.55rem !important;
+            }
+
+            .credit-section .p-6 {
+                padding: 0.75rem !important;
+            }
+
+            .credit-section h3 {
+                font-size: 1rem !important;
+            }
+
+            .credit-section h4 {
+                font-size: 0.85rem !important;
+            }
+
+            .net30-agreement label {
+                font-size: 0.7rem !important;
+            }
+
+            .cc-agreement label {
+                font-size: 0.7rem !important;
+            }
+
+            .sticky {
+                position: relative !important;
+                top: 0 !important;
+            }
+
+            .lg\:sticky {
+                position: relative !important;
+            }
+
+            .lg\:top-24 {
+                top: 0 !important;
+            }
+
+            .gap-8 {
+                gap: 1rem !important;
+            }
+
+            .gap-12 {
+                gap: 1.5rem !important;
+            }
+
+            .main-grid {
+                gap: 1rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab-btn {
+                font-size: 0.6rem !important;
+                padding: 0.4rem 0.5rem !important;
+            }
+
+            .tab-btn svg {
+                width: 12px !important;
+                height: 12px !important;
+            }
+
+            .header-bg .text-4xl {
+                font-size: 1.5rem !important;
+            }
+
+            .header-bg .text-lg {
+                font-size: 0.8rem !important;
+            }
+
+            .form-panel h2 {
+                font-size: 1.1rem !important;
+            }
+
+            .premium-card .p-4 {
+                padding: 0.5rem !important;
+            }
+
+            .input-premium {
+                font-size: 0.7rem !important;
+                padding: 0.35rem 0.5rem !important;
+            }
+
+            .btn-crimson,
+            .btn-navy {
+                font-size: 0.6rem !important;
+                padding: 0.4rem 0.8rem !important;
+            }
+
+            .credit-section .p-6 {
+                padding: 0.5rem !important;
+            }
+
+            .credit-section h3 {
+                font-size: 0.85rem !important;
+            }
+
+            .credit-section h4 {
+                font-size: 0.75rem !important;
+            }
+        }
     </style>
 </head>
 
 <body class="font-sans antialiased bg-brand-bg text-brand-text overflow-x-hidden min-h-screen flex flex-col">
 
-    <!-- Navigation (premium light) -->
-    <!-- Premium Navbar -->
-    <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-4 sm:px-8 py-1">
+    <!-- Navigation - RESPONSIVE FIXED -->
+    <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-            <!-- Logo -->
+            <!-- Logo - MOBILE FIX: chhota -->
             <div class="flex items-center shrink-0">
                 <a href="index.html">
                     <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
-                        class="h-32 sm:h-36 lg:h-40 xl:h-48 w-auto object-contain" />
+                        class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
                 </a>
             </div>
 
             <!-- Desktop Menu -->
-            <ul class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
-                <li><a href="index.html" class="text-brand-crimson">Home</a></li>
+            <ul
+                class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
+                <li><a href="index.html" class="hover:text-brand-crimson transition">Home</a></li>
                 <li><a href="products.html" class="hover:text-brand-crimson transition">Products</a></li>
-                <li><a class="hover:text-brand-crimson transition">Categories</a></li>
-                <li><a class="hover:text-brand-crimson transition">About Us</a></li>
-                <li><a href="contact.html" class="hover:text-brand-crimson transition">Contact</a></li>
+                <li><a href="categories.html" class="hover:text-brand-crimson transition">Categories</a></li>
+                <li><a href="about.html" hover:text-brand-crimson transition">About Us</a></li>
+                <li><a href="contact.html" class="text-brand-crimson">Contact</a></li>
             </ul>
 
             <!-- Right -->
-            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+            <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
                 <button
-                    class="hidden lg:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
+                    class="hidden lg:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wide transition">
                     LOGIN/SIGNUP
                 </button>
-
-                <i class="fa-solid fa-search cursor-pointer"></i>
-
-                <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none"
+                <i class="fa-solid fa-search cursor-pointer text-sm sm:text-base"></i>
+                <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                     aria-label="Toggle Menu">
                     <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
                 </button>
@@ -204,79 +395,63 @@
 
     <!-- Mobile Menu -->
     <div id="mobileMenu"
-        class="hidden md:hidden fixed top-[88px] left-0 w-full z-40 bg-brand-navy text-white px-6 py-4 space-y-4 border-t border-gray-700">
-
-        <ul class="space-y-4 text-sm font-medium uppercase tracking-wide">
+        class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
+        <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
             <li><a href="index.html" class="text-brand-crimson block py-2 border-b border-gray-700">Home</a></li>
             <li><a href="products.html"
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Products</a></li>
-            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
-            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
+            <li><a href="categories.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
+            <li><a href="about.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
             <li><a href="contact.html"
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
         </ul>
-
         <button
-            class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
+            class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wide transition mt-1 sm:mt-2">
             LOGIN/SIGNUP
         </button>
     </div>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <div id="mobileMenu"
-        class="hidden md:hidden bg-brand-blue text-white px-6 py-4 space-y-4 border-t border-gray-700 fixed w-full top-[72px] left-0 z-40">
-        <ul class="space-y-4 text-sm font-medium uppercase tracking-wide">
-            <li><a href="index.html" class="text-brand-red block py-2 border-b border-gray-700">Home</a></li>
-            <li><a href="products.html"
-                    class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Products</a></li>
-            <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Categories</a></li>
-            <li><a class="hover:text-brand-red block py-2 border-b border-gray-700 transition">About Us</a></li>
-            <li><a href="contact.html"
-                    class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Contact</a>
-            </li>
-        </ul>
-        <button
-            class="w-full bg-brand-red hover:bg-red-700 text-white px-4 py-3 text-sm font-semibold uppercase tracking-wide transition mt-2">
-            LOGIN/SIGNUP
-        </button>
-    </div>
-
-    <!-- Page Header (navy/crimson) -->
-    <header class="header-bg text-white py-10 px-8">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 pt-[185px]">
-            <div>
-                <span class="text-brand-crimson text-sm font-semibold tracking-wider uppercase mb-2 block">Partner With
-                    Us</span>
-                <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-4">How can we help your business?
-                </h1>
-                <p class="text-white/70 max-w-2xl text-lg">Select the inquiry type below and our global B2B support team
-                    will get back to you with tailored solutions.</p>
+    <!-- Page Header - RESPONSIVE FIXED -->
+    <header class="header-bg text-white py-4 sm:py-6 md:py-8 lg:py-10 px-3 sm:px-4 md:px-6 lg:px-8">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 pt-[70px] sm:pt-[80px] md:pt-[100px] lg:pt-[185px]">
+            <div class="text-center md:text-left">
+                <span
+                    class="text-brand-crimson text-[10px] sm:text-xs md:text-sm font-semibold tracking-wider uppercase mb-1 sm:mb-2 block">Partner
+                    With Us</span>
+                <h1
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-2 sm:mb-3 md:mb-4">
+                    How can we help your business?</h1>
+                <p class="text-white/70 max-w-2xl text-sm sm:text-base md:text-lg">Select the inquiry type below and our
+                    global B2B support team will get back to you with tailored solutions.</p>
             </div>
-            <div class="flex flex-wrap gap-6">
-                <div class="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/10">
-                    <i class="fa-regular fa-clock text-brand-crimson"></i>
-                    <span class="text-xs text-white/80">Response within 24h</span>
+            <div class="flex flex-wrap justify-center md:justify-end gap-3 sm:gap-4 md:gap-6">
+                <div
+                    class="flex items-center gap-2 sm:gap-3 bg-white/5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/10">
+                    <i class="fa-regular fa-clock text-brand-crimson text-xs sm:text-sm"></i>
+                    <span class="text-[10px] sm:text-xs text-white/80">Response within 24h</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="flex-grow py-12 pb-20 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Main Content - RESPONSIVE FIXED -->
+    <main class="flex-grow py-6 sm:py-8 md:py-12 pb-12 sm:pb-16 md:pb-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-start main-grid">
 
-                <!-- Sidebar Form Navigation -->
-                <div class="lg:col-span-4 sticky top-32">
-                    <div class="premium-card p-4 shadow-lg">
+                <!-- Sidebar Form Navigation - RESPONSIVE FIXED -->
+                <div class="lg:col-span-4 sticky top-20 lg:top-32">
+                    <div class="premium-card p-3 sm:p-4 shadow-lg">
 
-                        <nav class="flex flex-col gap-1.5" id="form-tabs">
+                        <nav class="flex flex-col gap-1 sm:gap-1.5" id="form-tabs">
 
                             <button onclick="showForm('quote')" id="tab-quote"
-                                class="tab-btn active w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson">
-                                <span class="font-medium text-sm tracking-wide">Request a Quote</span>
-                                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                                class="tab-btn active w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson">
+                                <span class="font-medium text-[10px] sm:text-xs md:text-sm tracking-wide">Request a
+                                    Quote</span>
+                                <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 transition-transform duration-300"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 5l7 7-7 7" />
@@ -284,9 +459,10 @@
                             </button>
 
                             <button onclick="showForm('mockup')" id="tab-mockup"
-                                class="tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
-                                <span class="font-medium text-sm tracking-wide">Request a Mockup</span>
-                                <svg class="w-4 h-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1"
+                                class="tab-btn w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
+                                <span class="font-medium text-[10px] sm:text-xs md:text-sm tracking-wide">Request a
+                                    Mockup</span>
+                                <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 opacity-0 transition-all duration-300"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 5l7 7-7 7" />
@@ -294,9 +470,10 @@
                             </button>
 
                             <button onclick="showForm('freight')" id="tab-freight"
-                                class="tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
-                                <span class="font-medium text-sm tracking-wide">Freight Estimate</span>
-                                <svg class="w-4 h-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1"
+                                class="tab-btn w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
+                                <span class="font-medium text-[10px] sm:text-xs md:text-sm tracking-wide">Freight
+                                    Estimate</span>
+                                <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 opacity-0 transition-all duration-300"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 5l7 7-7 7" />
@@ -304,9 +481,10 @@
                             </button>
 
                             <button onclick="showForm('credit')" id="tab-credit"
-                                class="tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
-                                <span class="font-medium text-sm tracking-wide">Credit Application Form</span>
-                                <svg class="w-4 h-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1"
+                                class="tab-btn w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
+                                <span class="font-medium text-[10px] sm:text-xs md:text-sm tracking-wide">Credit
+                                    Application</span>
+                                <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 opacity-0 transition-all duration-300"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 5l7 7-7 7" />
@@ -314,9 +492,10 @@
                             </button>
 
                             <button onclick="showForm('po')" id="tab-po"
-                                class="tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
-                                <span class="font-medium text-sm tracking-wide">Submit Purchase Order</span>
-                                <svg class="w-4 h-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1"
+                                class="tab-btn w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30">
+                                <span class="font-medium text-[10px] sm:text-xs md:text-sm tracking-wide">Submit
+                                    Purchase Order</span>
+                                <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 opacity-0 transition-all duration-300"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 5l7 7-7 7" />
@@ -325,63 +504,61 @@
 
                         </nav>
 
-                        <!-- Contact -->
-                        <!-- Contact -->
-                        <!-- Contact -->
-                        <div class="mt-10 pt-8 border-t border-brand-border">
+                        <!-- Contact - RESPONSIVE FIXED -->
+                        <div
+                            class="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-brand-border direct-contact">
 
-                            <h4 class="text-brand-text font-semibold mb-6 text-sm tracking-wide uppercase">Direct
-                                Contact</h4>
+                            <h4
+                                class="text-brand-text font-semibold mb-4 sm:mb-5 md:mb-6 text-[10px] sm:text-xs md:text-sm tracking-wide uppercase">
+                                Direct Contact</h4>
 
-                            <div class="space-y-4">
-                                <!-- Emails -->
+                            <div class="space-y-2 sm:space-y-3 md:space-y-4">
                                 <a href="mailto:sales@inkwell-impressions.com"
-                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
-                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                        class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">sales@inkwell-impressions.com</span>
                                 </a>
 
                                 <a href="mailto:cs@inkwell-impressions.com"
-                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
-                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                        class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">cs@inkwell-impressions.com</span>
                                 </a>
 
                                 <a href="mailto:info@inkwell-impressions.com"
-                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
-                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                        class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">info@inkwell-impressions.com</span>
                                 </a>
 
                                 <a href="mailto:accounts@inkwell-impressions.com"
-                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
-                                        class="fa-regular fa-envelope text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                        class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">accounts@inkwell-impressions.com</span>
                                 </a>
 
-                                <!-- Divider -->
-                                <div class="border-t border-brand-border/40 my-3"></div>
+                                <div class="border-t border-brand-border/40 my-2 sm:my-3"></div>
 
-                                <!-- Phone Number -->
                                 <a href="tel:+12125557890"
-                                    class="flex items-center gap-4 text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
-                                    <i class="fa-solid fa-phone text-brand-crimson w-6 text-base flex-shrink-0"></i>
+                                    class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
+                                    <i
+                                        class="fa-solid fa-phone text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span>+1 (212) 555-7890</span>
                                 </a>
 
-                                <!-- Divider -->
-                                <div class="border-t border-brand-border/40 my-3"></div>
+                                <div class="border-t border-brand-border/40 my-2 sm:my-3"></div>
 
-                                <!-- Mailing Address -->
-                                <div class="flex items-start gap-4 text-sm text-brand-textSecondary py-1">
+                                <div
+                                    class="flex items-start gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary py-1">
                                     <i
-                                        class="fa-solid fa-location-dot text-brand-crimson w-6 text-base flex-shrink-0 mt-0.5"></i>
+                                        class="fa-solid fa-location-dot text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0 mt-0.5"></i>
                                     <div class="leading-relaxed">
-                                        <div class="font-semibold text-brand-text mb-0.5">Company Mailing Address</div>
+                                        <div class="font-semibold text-brand-text mb-0.5 text-[10px] sm:text-xs">Company
+                                            Mailing Address</div>
                                         <div>5900 Balcones Drive</div>
                                         <div>STE 100</div>
                                         <div>Austin, TX, 78731</div>
@@ -395,68 +572,67 @@
                     </div>
                 </div>
 
-                <!-- Forms Area -->
-                <div class="lg:col-span-8 premium-card p-6 sm:p-10 shadow-lg relative min-h-[600px]">
+                <!-- Forms Area - RESPONSIVE FIXED -->
+                <div
+                    class="lg:col-span-8 premium-card p-3 sm:p-4 md:p-6 lg:p-10 shadow-lg relative min-h-[500px] sm:min-h-[550px] md:min-h-[600px]">
 
                     <!-- 1. Quote Form -->
-                    <!-- 1. Quote Form -->
                     <form id="form-quote" class="form-panel block transition-opacity duration-300">
-                        <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Request a
-                            Quote</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+                        <h2
+                            class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
+                            Request a Quote</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">First
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">First
                                     Name *</label><input type="text" class="w-full input-premium" placeholder="John"
                                     required></div>
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Last
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Last
                                     Name *</label><input type="text" class="w-full input-premium" placeholder="Doe"
                                     required></div>
                             <div class="md:col-span-2"><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
                                     Name *</label><input type="text" class="w-full input-premium"
                                     placeholder="Acme Corp" required></div>
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Business
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Business
                                     Email *</label><input type="email" class="w-full input-premium"
                                     placeholder="john@acmecorp.com" required></div>
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Phone
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Phone
                                     Number</label><input type="tel" class="w-full input-premium"
                                     placeholder="+1 (555) 000-0000"></div>
 
-                            <!-- ====== NEW FIELDS ADDED HERE ====== -->
                             <!-- ASI / PPAI / SAGE # -->
                             <div class="md:col-span-2 mt-1">
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">ASI
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">ASI
                                     / PPAI / SAGE #</label>
                                 <input type="text" class="w-full input-premium"
                                     placeholder="Enter ASI/PPAI/SAGE number">
                             </div>
 
-                            <!-- Item (Product Code/Name) -->
+                            <!-- Item -->
                             <div>
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Item
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Item
                                     *</label>
                                 <input type="text" class="w-full input-premium" placeholder="e.g. IB29, MQIB6000"
                                     required>
                             </div>
 
-                            <!-- Qty (Quantity) -->
+                            <!-- Qty -->
                             <div>
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Qty
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Qty
                                     *</label>
                                 <input type="number" class="w-full input-premium" placeholder="Enter quantity" min="1"
                                     required>
                             </div>
-                            <!-- ====== END NEW FIELDS ====== -->
 
                             <div class="md:col-span-2 mt-1">
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Product
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Product
                                     Category *</label>
                                 <select class="w-full input-premium appearance-none cursor-pointer" required>
                                     <option value="" disabled selected>Select a category</option>
@@ -469,29 +645,31 @@
                             </div>
 
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Estimated
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Estimated
                                     Quantity *</label><input type="number" class="w-full input-premium"
                                     placeholder="e.g. 500" required></div>
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Required
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Required
                                     By Date</label><input type="date" class="w-full input-premium"></div>
 
                             <div class="md:col-span-2">
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Project
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Project
                                     Details / Requirements *</label>
-                                <textarea class="w-full input-premium h-28 resize-none"
+                                <textarea class="w-full input-premium h-20 sm:h-24 md:h-28 resize-none"
                                     placeholder="Please describe your project, preferred materials, colors, and any specific requirements..."
                                     required></textarea>
                             </div>
                         </div>
-                        <div class="flex flex-col items-start gap-3">
+                        <div class="flex flex-col items-center sm:items-start gap-2 sm:gap-3">
                             <button type="submit"
-                                class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Submit Quote
-                                Request</button>
-                            <p class="text-xs text-brand-gray mt-1">
+                                class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">Submit
+                                Quote Request</button>
+                            <p
+                                class="text-[8px] sm:text-[10px] md:text-xs text-brand-gray mt-1 text-center sm:text-left">
                                 <i class="fa-regular fa-envelope mr-1"></i>
-                                For quote inquiries: <br><a href="mailto:sales@inkwell-impressions.com"
+                                For quote inquiries: <br class="sm:hidden"><a
+                                    href="mailto:sales@inkwell-impressions.com"
                                     class="text-brand-crimson hover:underline">sales@inkwell-impressions.com</a> |
                                 <a href="mailto:cs@inkwell-impressions.com"
                                     class="text-brand-crimson hover:underline">cs@inkwell-impressions.com</a> |
@@ -500,60 +678,58 @@
                             </p>
                         </div>
                     </form>
-                    <!-- 2. Mockup Form -->
+
                     <!-- 2. Mockup Form -->
                     <form id="form-mockup" class="form-panel hidden opacity-0 transition-opacity duration-300">
-                        <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Request a
-                            Design Mockup</h2>
+                        <h2
+                            class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
+                            Request a Design Mockup</h2>
                         <p
-                            class="text-sm text-brand-textSecondary mb-8 border-l-3 border-brand-crimson pl-4 bg-brand-bg/30 p-3 rounded">
+                            class="text-xs sm:text-sm text-brand-textSecondary mb-4 sm:mb-6 md:mb-8 border-l-3 border-brand-crimson pl-3 sm:pl-4 bg-brand-bg/30 p-2 sm:p-3 rounded">
                             Upload your logo and let our design team show you exactly how your brand will look on our
-                            products.
-                        </p>
+                            products.</p>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
                             <div class="md:col-span-2"><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
                                     Name *</label><input type="text" class="w-full input-premium" required></div>
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Contact
                                     Name *</label><input type="text" class="w-full input-premium" required></div>
                             <div><label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Email
                                     Address *</label><input type="email" class="w-full input-premium" required></div>
 
-                            <!-- ====== NEW FIELDS ADDED HERE ====== -->
                             <!-- ASI / PPAI / SAGE # -->
                             <div>
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">ASI
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">ASI
                                     / PPAI / SAGE #</label>
                                 <input type="text" class="w-full input-premium"
                                     placeholder="Enter ASI/PPAI/SAGE number">
                             </div>
 
-                            <!-- Item (Product Code/Name) -->
+                            <!-- Item -->
                             <div>
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Item
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Item
                                     *</label>
                                 <input type="text" class="w-full input-premium" placeholder="e.g. IB29, MQIB6000"
                                     required>
                             </div>
 
-                            <!-- Qty (Quantity) -->
+                            <!-- Qty -->
                             <div>
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Qty
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Qty
                                     *</label>
                                 <input type="number" class="w-full input-premium" placeholder="Enter quantity" min="1"
                                     required>
                             </div>
-                            <!-- ====== END NEW FIELDS ====== -->
 
                             <div class="md:col-span-2 mt-1">
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Target
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Target
                                     Product(s) *</label>
                                 <input type="text" class="w-full input-premium"
                                     placeholder="e.g., Matte Black Tumbler, Cotton Tote Bag" required>
@@ -561,17 +737,17 @@
 
                             <div class="md:col-span-2">
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Upload
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Upload
                                     Logo / Artwork (Vector AI, EPS, SVG or High-Res PNG) *</label>
                                 <div
-                                    class="flex justify-center flex-col items-center w-full h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg cursor-pointer hover:border-brand-crimson group">
-                                    <svg class="w-6 h-6 text-brand-textSecondary mb-2 group-hover:text-brand-crimson transition"
+                                    class="flex justify-center flex-col items-center w-full h-24 sm:h-28 md:h-32 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg cursor-pointer hover:border-brand-crimson group file-dropzone">
+                                    <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-brand-textSecondary mb-1 sm:mb-2 group-hover:text-brand-crimson transition"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                             d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                                     </svg>
                                     <span
-                                        class="text-xs text-brand-textSecondary group-hover:text-brand-crimson transition">Click
+                                        class="text-[10px] sm:text-xs text-brand-textSecondary group-hover:text-brand-crimson transition font-medium">Click
                                         to upload</span>
                                     <input type="file" class="hidden" accept=".ai,.eps,.svg,.png,.jpg,.jpeg">
                                 </div>
@@ -579,229 +755,231 @@
 
                             <div class="md:col-span-2">
                                 <label
-                                    class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Design
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Design
                                     Instructions / Color Codes (Optional)</label>
-                                <textarea class="w-full input-premium h-24 resize-none"
+                                <textarea class="w-full input-premium h-20 sm:h-24 resize-none"
                                     placeholder="Include any specific Pantone colors, placement preferences, or brand guidelines..."></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Request
+                        <button type="submit"
+                            class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">Request
                             Free Mockup</button>
                     </form>
 
                     <!-- 3. Freight Form -->
                     <form id="form-freight" class="form-panel hidden opacity-0 transition-opacity duration-300">
-    <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Freight &amp;
-        Shipping Estimate</h2>
+                        <h2
+                            class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
+                            Freight &amp; Shipping Estimate</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
-        <div><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
-                Name *</label><input type="text" class="w-full input-premium" required></div>
-        <div><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
-                Address *</label><input type="email" class="w-full input-premium" required></div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
+                            <div><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Contact
+                                    Name *</label><input type="text" class="w-full input-premium" required></div>
+                            <div><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Email
+                                    Address *</label><input type="email" class="w-full input-premium" required></div>
 
-        <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
-            <h3 class="text-brand-text font-medium">Destination Address</h3>
-        </div>
+                            <div class="md:col-span-2 mt-2 sm:mt-3 border-b border-brand-border pb-1 sm:pb-2">
+                                <h3 class="text-brand-text font-medium text-xs sm:text-sm">Destination Address</h3>
+                            </div>
 
-        <div class="md:col-span-2"><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Street
-                Address *</label><input type="text" class="w-full input-premium" required></div>
-        <div><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City
-                *</label><input type="text" class="w-full input-premium" required></div>
-        <div><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
-                / Province *</label><input type="text" class="w-full input-premium" required></div>
-        <div><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
-                / Postal Code *</label><input type="text" class="w-full input-premium" required>
-        </div>
-        <div><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Country
-                *</label><input type="text" class="w-full input-premium" required></div>
+                            <div class="md:col-span-2"><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Street
+                                    Address *</label><input type="text" class="w-full input-premium" required></div>
+                            <div><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City
+                                    *</label><input type="text" class="w-full input-premium" required></div>
+                            <div><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State
+                                    / Province *</label><input type="text" class="w-full input-premium" required></div>
+                            <div><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip
+                                    / Postal Code *</label><input type="text" class="w-full input-premium" required>
+                            </div>
+                            <div><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Country
+                                    *</label><input type="text" class="w-full input-premium" required></div>
 
-        <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
-            <h3 class="text-brand-text font-medium">Shipment Details</h3>
-        </div>
+                            <div class="md:col-span-2 mt-2 sm:mt-3 border-b border-brand-border pb-1 sm:pb-2">
+                                <h3 class="text-brand-text font-medium text-xs sm:text-sm">Shipment Details</h3>
+                            </div>
 
-        <div><label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Estimated
-                Order Volume / Weight</label><input type="text" class="w-full input-premium"
-                placeholder="e.g., 2 Pallets, ~500 lbs"></div>
-        <div>
-            <label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Delivery
-                Type</label>
-            <select class="w-full input-premium appearance-none cursor-pointer">
-                <option value="standard">Standard Commercial (Loading Dock)</option>
-                <option value="liftgate">Commercial w/ Liftgate Required</option>
-                <option value="residential">Residential Delivery</option>
-                <option value="trade">Trade Show / Exhibition</option>
-            </select>
-        </div>
+                            <div><label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Estimated
+                                    Order Volume / Weight</label><input type="text" class="w-full input-premium"
+                                    placeholder="e.g., 2 Pallets, ~500 lbs"></div>
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Delivery
+                                    Type</label>
+                                <select class="w-full input-premium appearance-none cursor-pointer">
+                                    <option value="standard">Standard Commercial (Loading Dock)</option>
+                                    <option value="liftgate">Commercial w/ Liftgate Required</option>
+                                    <option value="residential">Residential Delivery</option>
+                                    <option value="trade">Trade Show / Exhibition</option>
+                                </select>
+                            </div>
 
-        <!-- NEW: Item/Style No. & Quantity -->
-        <div class="md:col-span-2 mt-3 border-b border-brand-border pb-2">
-            <h3 class="text-brand-text font-medium">Items to Ship</h3>
-        </div>
+                            <div class="md:col-span-2 mt-2 sm:mt-3 border-b border-brand-border pb-1 sm:pb-2">
+                                <h3 class="text-brand-text font-medium text-xs sm:text-sm">Items to Ship</h3>
+                            </div>
 
-        <div>
-            <label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Item / Style
-                No.</label>
-            <input type="text" class="w-full input-premium" placeholder="e.g., STL-100, BGR-204">
-        </div>
-        <div>
-            <label
-                class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Quantity</label>
-            <input type="number" class="w-full input-premium" placeholder="e.g., 24" min="1">
-        </div>
-        <!-- END NEW -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Item
+                                    / Style No.</label>
+                                <input type="text" class="w-full input-premium" placeholder="e.g., STL-100, BGR-204">
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Quantity</label>
+                                <input type="number" class="w-full input-premium" placeholder="e.g., 24" min="1">
+                            </div>
 
-    </div>
-    <button type="submit" class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">Get
-        Estimate</button>
-</form>
-                    <!-- 4. Credit App Form -->
-                    <!-- 4. Credit App Form - SPLIT WITH SEPARATE SUBMIT BUTTONS -->
-                    <form id="form-credit" class="form-panel hidden opacity-0 transition-opacity duration-300">
-                        <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Corporate
-                            Credit Application</h2>
+                        </div>
+                        <button type="submit"
+                            class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">Get
+                            Estimate</button>
+                    </form>
 
-                        <!-- ============================================ -->
-                        <!-- SECTION 1: NET 30 TERMS FORM -->
-                        <!-- ============================================ -->
+                    <!-- 4. Credit Application Form -->
+                    <form id="form-credit"
+                        class="form-panel hidden opacity-0 transition-opacity duration-300 credit-section">
+                        <h2
+                            class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
+                            Corporate Credit Application</h2>
+
+                        <!-- NET 30 SECTION -->
                         <div id="net30-section"
-                            class="mb-10 premium-card p-6 border-l-4 border-brand-navy bg-brand-bg/20">
-                            <h3 class="text-xl font-serif text-brand-navy mb-4 flex items-center gap-2">
-                                <span class="w-1 h-8 bg-brand-crimson rounded-full inline-block"></span>
+                            class="mb-6 sm:mb-8 md:mb-10 premium-card p-3 sm:p-4 md:p-6 border-l-4 border-brand-navy bg-brand-bg/20">
+                            <h3
+                                class="text-base sm:text-lg md:text-xl font-serif text-brand-navy mb-3 sm:mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 sm:h-6 md:h-8 bg-brand-crimson rounded-full inline-block"></span>
                                 Net 30 Terms Application
                             </h3>
-                            <p class="text-sm text-brand-textSecondary mb-6">Submit your business information to apply
-                                for Net-30 credit terms.</p>
+                            <p class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary mb-4 sm:mb-6">Submit
+                                your business information to apply for Net-30 credit terms.</p>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Business
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Business
                                         Name *</label><input type="text" class="w-full input-premium net30-field"
                                         required></div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Date
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Date
                                         *</label><input type="date" class="w-full input-premium net30-field" required>
                                 </div>
                                 <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Address
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Address
                                         *</label><input type="text" class="w-full input-premium net30-field" required>
                                 </div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City
                                         *</label><input type="text" class="w-full input-premium net30-field" required>
                                 </div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State
                                         *</label><input type="text" class="w-full input-premium net30-field" required>
                                 </div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip
                                         *</label><input type="text" class="w-full input-premium net30-field" required>
                                 </div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Telephone
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Telephone
                                         *</label><input type="tel" class="w-full input-premium net30-field" required>
                                 </div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Fax</label><input
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Fax</label><input
                                         type="text" class="w-full input-premium net30-field"></div>
                                 <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Tax
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Tax
                                         ID / EIN</label><input type="text" class="w-full input-premium net30-field"
                                         placeholder="XX-XXXXXXX"></div>
                                 <div class="md:col-span-2"><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">DUNS
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">DUNS
                                         Number (if applicable)</label><input type="text"
                                         class="w-full input-premium net30-field"></div>
                             </div>
 
-                            <!-- Net 30 Agreement -->
-                            <div class="mt-6 pt-4 border-t border-brand-border">
-                                <div class="flex items-start gap-3">
+                            <div class="mt-4 sm:mt-5 md:mt-6 pt-3 sm:pt-4 border-t border-brand-border net30-agreement">
+                                <div class="flex items-start gap-2 sm:gap-3">
                                     <input type="checkbox" id="net30-agreement"
-                                        class="w-4 h-4 mt-1 accent-brand-crimson border-brand-border rounded" required>
-                                    <label for="net30-agreement" class="text-sm text-brand-textSecondary">I agree to the
-                                        Net 30 terms and conditions. I understand that invoices are due within 30 days
-                                        of receipt. *</label>
+                                        class="w-3 h-3 sm:w-4 sm:h-4 mt-1 accent-brand-crimson border-brand-border rounded"
+                                        required>
+                                    <label for="net30-agreement"
+                                        class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary">I agree to
+                                        the Net 30 terms and conditions. I understand that invoices are due within 30
+                                        days of receipt. *</label>
                                 </div>
                             </div>
 
-                            <!-- Net 30 Submit Button -->
-                            <div class="mt-6">
+                            <div class="mt-4 sm:mt-5 md:mt-6">
                                 <button type="button" onclick="submitNet30()"
-                                    class="btn-navy px-8 py-3 rounded font-medium w-full md:w-auto">
-                                    <i class="fa-regular fa-paper-plane mr-2"></i> Submit Net 30 Application
+                                    class="btn-navy px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">
+                                    <i class="fa-regular fa-paper-plane mr-1 sm:mr-2"></i> Submit Net 30 Application
                                 </button>
                             </div>
                         </div>
 
-                        <!-- ============================================ -->
-                        <!-- SECTION 2: CREDIT CARD APPLICATION FORM -->
-                        <!-- ============================================ -->
+                        <!-- CREDIT CARD SECTION -->
                         <div id="cc-section"
-                            class="mb-8 premium-card p-6 border-l-4 border-brand-crimson bg-brand-bg/20">
-                            <h3 class="text-xl font-serif text-brand-crimson mb-4 flex items-center gap-2">
-                                <span class="w-1 h-8 bg-brand-crimson rounded-full inline-block"></span>
+                            class="mb-6 sm:mb-8 premium-card p-3 sm:p-4 md:p-6 border-l-4 border-brand-crimson bg-brand-bg/20">
+                            <h3
+                                class="text-base sm:text-lg md:text-xl font-serif text-brand-crimson mb-3 sm:mb-4 flex items-center gap-2">
+                                <span class="w-1 h-5 sm:h-6 md:h-8 bg-brand-crimson rounded-full inline-block"></span>
                                 Credit Card Authorization
                             </h3>
-                            <p class="text-sm text-brand-textSecondary mb-6">Authorize us to charge your credit card for
-                                purchases.</p>
+                            <p class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary mb-4 sm:mb-6">Authorize
+                                us to charge your credit card for purchases.</p>
 
                             <!-- Card 1 -->
-                            <div class="mb-6">
-                                <h4 class="text-md font-semibold text-brand-text mb-3 flex items-center gap-2">
-                                    <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                            <div class="mb-4 sm:mb-5 md:mb-6">
+                                <h4
+                                    class="text-sm sm:text-base md:text-lg font-semibold text-brand-text mb-2 sm:mb-3 flex items-center gap-2">
+                                    <span class="w-1 h-4 sm:h-5 bg-brand-crimson rounded-full inline-block"></span>
                                     Card 1
                                 </h4>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
                                     <div class="md:col-span-2"><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
                                             Order Email Address</label><input type="email"
                                             class="w-full input-premium cc-field"></div>
                                     <div class="md:col-span-2"><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Name
                                             on the Card</label><input type="text" class="w-full input-premium cc-field">
                                     </div>
                                     <div class="md:col-span-2"><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Billing
                                             Address</label><input type="text" class="w-full input-premium cc-field">
                                     </div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label><input
                                             type="text" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State</label><input
                                             type="text" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label><input
                                             type="text" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Card
                                             Number</label><input type="text" class="w-full input-premium cc-field"
                                             placeholder="XXXX XXXX XXXX XXXX"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">CVV
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">CVV
                                             *</label><input type="text" class="w-full input-premium cc-field"
                                             placeholder="XXX" maxlength="4"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Expiry
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Expiry
                                             Date</label><input type="month" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
                                             Order Number</label><input type="text"
                                             class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Authorized
                                             Value</label><input type="text" class="w-full input-premium cc-field"
                                             placeholder="$0.00"></div>
                                 </div>
@@ -809,227 +987,208 @@
 
                             <!-- Card 2 (Optional) -->
                             <div>
-                                <h4 class="text-md font-semibold text-brand-text mb-3 flex items-center gap-2">
-                                    <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
-                                    Card 2 <span class="text-xs font-medium text-brand-gray ml-2">(Optional)</span>
+                                <h4
+                                    class="text-sm sm:text-base md:text-lg font-semibold text-brand-text mb-2 sm:mb-3 flex items-center gap-2">
+                                    <span class="w-1 h-4 sm:h-5 bg-brand-crimson rounded-full inline-block"></span>
+                                    Card 2 <span
+                                        class="text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-gray ml-1 sm:ml-2">(Optional)</span>
                                 </h4>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
                                     <div class="md:col-span-2"><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
                                             Order Email Address</label><input type="email"
                                             class="w-full input-premium cc-field"></div>
                                     <div class="md:col-span-2"><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Name
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Name
                                             on the Card</label><input type="text" class="w-full input-premium cc-field">
                                     </div>
                                     <div class="md:col-span-2"><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Billing
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Billing
                                             Address</label><input type="text" class="w-full input-premium cc-field">
                                     </div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label><input
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label><input
                                             type="text" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State</label><input
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State</label><input
                                             type="text" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip</label><input
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label><input
                                             type="text" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Card
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Card
                                             Number</label><input type="text" class="w-full input-premium cc-field"
                                             placeholder="XXXX XXXX XXXX XXXX"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">CVV</label><input
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">CVV</label><input
                                             type="text" class="w-full input-premium cc-field" placeholder="XXX"
                                             maxlength="4"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Expiry
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Expiry
                                             Date</label><input type="month" class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Purchase
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
                                             Order Number</label><input type="text"
                                             class="w-full input-premium cc-field"></div>
                                     <div><label
-                                            class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Authorized
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Authorized
                                             Value</label><input type="text" class="w-full input-premium cc-field"
                                             placeholder="$0.00"></div>
                                 </div>
                             </div>
 
-                            <!-- CC Authorization Notice -->
-                            <div class="mt-4 premium-card p-4 bg-brand-bg/40 border-l-4 border-brand-crimson">
-                                <p class="text-sm text-brand-textSecondary leading-relaxed">
-                                    By submitting this form, I authorize Ink Well Impressions Solutions to charge my
-                                    credit card for the purchase order(s) listed above.
-                                </p>
+                            <div
+                                class="mt-3 sm:mt-4 premium-card p-2 sm:p-3 md:p-4 bg-brand-bg/40 border-l-4 border-brand-crimson cc-agreement">
+                                <p class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary leading-relaxed">By
+                                    submitting this form, I authorize Ink Well Impressions Solutions to charge my credit
+                                    card for the purchase order(s) listed above.</p>
                             </div>
 
-                            <!-- Credit Card Submit Button -->
-                            <div class="mt-6">
+                            <div class="mt-4 sm:mt-5 md:mt-6">
                                 <button type="button" onclick="submitCreditCard()"
-                                    class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto">
-                                    <i class="fa-regular fa-credit-card mr-2"></i> Submit Credit Card Authorization
+                                    class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">
+                                    <i class="fa-regular fa-credit-card mr-1 sm:mr-2"></i> Submit Credit Card
+                                    Authorization
                                 </button>
                             </div>
                         </div>
 
-                        <!-- ============================================ -->
-                        <!-- SHARED SIGNATURE SECTION -->
-                        <!-- ============================================ -->
-                        <div class="mb-8 premium-card p-6 border-l-4 border-brand-navy bg-brand-bg/20">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                        <!-- SHARED SIGNATURE -->
+                        <div
+                            class="mb-6 sm:mb-8 premium-card p-3 sm:p-4 md:p-6 border-l-4 border-brand-navy bg-brand-bg/20">
+                            <h3
+                                class="text-sm sm:text-base md:text-lg font-semibold text-brand-text mb-3 sm:mb-4 flex items-center gap-2">
+                                <span class="w-1 h-4 sm:h-5 bg-brand-crimson rounded-full inline-block"></span>
                                 Authorized Signature
                             </h3>
 
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Full
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Full
                                         Name *</label><input type="text" id="signature-name"
                                         class="w-full input-premium" required></div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Signature
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Signature
                                         *</label><input type="text" id="signature-field" class="w-full input-premium"
                                         placeholder="Type full name as signature" required></div>
                                 <div><label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Date
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Date
                                         Signed *</label><input type="date" id="signature-date"
                                         class="w-full input-premium" required></div>
                             </div>
 
-                            <div class="mt-4 flex items-start gap-3">
+                            <div class="mt-3 sm:mt-4 flex items-start gap-2 sm:gap-3 cc-agreement">
                                 <input type="checkbox" id="global-agreement"
-                                    class="w-4 h-4 mt-1 accent-brand-crimson border-brand-border rounded" required>
-                                <label for="global-agreement" class="text-sm text-brand-textSecondary">I confirm that
+                                    class="w-3 h-3 sm:w-4 sm:h-4 mt-1 accent-brand-crimson border-brand-border rounded"
+                                    required>
+                                <label for="global-agreement"
+                                    class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary">I confirm that
                                     all information provided is accurate and complete. *</label>
                             </div>
                         </div>
                     </form>
-                    <!-- 5. Purchase Order Form -->
-                    <!-- 5. Purchase Order Form - Simplified -->
-                    <form id="form-po" class="form-panel hidden opacity-0 transition-opacity duration-300">
-                        <h2 class="text-2xl font-serif text-brand-text mb-6 border-b border-brand-border pb-4">Submit
-                            Purchase Order</h2>
 
-                        <!-- Section 1 — Company Information -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                    <!-- 5. Purchase Order Form -->
+                    <form id="form-po" class="form-panel hidden opacity-0 transition-opacity duration-300">
+                        <h2
+                            class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
+                            Submit Purchase Order</h2>
+
+                        <div class="mb-4 sm:mb-6 md:mb-8">
+                            <h3
+                                class="text-xs sm:text-sm md:text-base font-semibold text-brand-text mb-3 sm:mb-4 flex items-center gap-2">
+                                <span class="w-1 h-4 sm:h-5 bg-brand-crimson rounded-full inline-block"></span>
                                 Company Information
                             </h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
-                                        Name *</label>
-                                    <input type="text" class="w-full input-premium" placeholder="Enter company name"
-                                        required>
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Contact
-                                        Person *</label>
-                                    <input type="text" class="w-full input-premium" placeholder="Enter contact person"
-                                        required>
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Email
-                                        Address *</label>
-                                    <input type="email" class="w-full input-premium" placeholder="email@company.com"
-                                        required>
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Phone
-                                        Number *</label>
-                                    <input type="tel" class="w-full input-premium" placeholder="+1 (555) 000-0000"
-                                        required>
-                                </div>
-                                <div class="md:col-span-2">
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Company
-                                        Address</label>
-                                    <input type="text" class="w-full input-premium" placeholder="Street address">
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">City</label>
-                                    <input type="text" class="w-full input-premium" placeholder="City">
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">State
-                                        / Province</label>
-                                    <input type="text" class="w-full input-premium" placeholder="State">
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Zip
-                                        / Postal Code</label>
-                                    <input type="text" class="w-full input-premium" placeholder="Zip code">
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-brand-textSecondary mb-1.5 uppercase tracking-wider">Country</label>
-                                    <input type="text" class="w-full input-premium" placeholder="Country">
-                                </div>
-
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
+                                        Name *</label><input type="text" class="w-full input-premium"
+                                        placeholder="Enter company name" required></div>
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Contact
+                                        Person *</label><input type="text" class="w-full input-premium"
+                                        placeholder="Enter contact person" required></div>
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Email
+                                        Address *</label><input type="email" class="w-full input-premium"
+                                        placeholder="email@company.com" required></div>
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Phone
+                                        Number *</label><input type="tel" class="w-full input-premium"
+                                        placeholder="+1 (555) 000-0000" required></div>
+                                <div class="md:col-span-2"><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
+                                        Address</label><input type="text" class="w-full input-premium"
+                                        placeholder="Street address"></div>
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label><input
+                                        type="text" class="w-full input-premium" placeholder="City"></div>
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State
+                                        / Province</label><input type="text" class="w-full input-premium"
+                                        placeholder="State"></div>
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip
+                                        / Postal Code</label><input type="text" class="w-full input-premium"
+                                        placeholder="Zip code"></div>
+                                <div><label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Country</label><input
+                                        type="text" class="w-full input-premium" placeholder="Country"></div>
                             </div>
                         </div>
 
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
+                        <hr class="border-brand-border my-4 sm:my-5 md:my-6">
 
-                        <!-- Section 2 — Upload Purchase Order -->
-                        <div class="mb-8">
-                            <h3 class="text-md font-semibold text-brand-text mb-4 flex items-center gap-2">
-                                <span class="w-1 h-5 bg-brand-crimson rounded-full inline-block"></span>
+                        <div class="mb-4 sm:mb-6 md:mb-8">
+                            <h3
+                                class="text-xs sm:text-sm md:text-base font-semibold text-brand-text mb-3 sm:mb-4 flex items-center gap-2">
+                                <span class="w-1 h-4 sm:h-5 bg-brand-crimson rounded-full inline-block"></span>
                                 Upload Your Purchase Order
                             </h3>
 
                             <div
-                                class="flex justify-center flex-col items-center w-full h-48 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-xl cursor-pointer hover:border-brand-crimson group">
-                                <svg class="w-16 h-16 text-brand-textSecondary mb-4 group-hover:text-brand-crimson transition"
+                                class="flex justify-center flex-col items-center w-full h-32 sm:h-40 md:h-48 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-xl cursor-pointer hover:border-brand-crimson group file-dropzone">
+                                <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-brand-textSecondary mb-2 sm:mb-3 md:mb-4 group-hover:text-brand-crimson transition"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                         d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                                 </svg>
                                 <span
-                                    class="text-sm text-brand-textSecondary group-hover:text-brand-crimson transition font-medium">Click
-                                    to upload or drag & drop your PO file</span>
-                                <span class="text-xs text-brand-gray mt-2">Supported: PDF, DOC, DOCX, XLS, XLSX, PNG,
-                                    JPG</span>
+                                    class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary group-hover:text-brand-crimson transition font-medium text-center">Click
+                                    to upload or drag &amp; drop your PO file</span>
+                                <span
+                                    class="text-[8px] sm:text-[9px] md:text-xs text-brand-gray mt-1 sm:mt-2 text-center">Supported:
+                                    PDF, DOC, DOCX, XLS, XLSX, PNG, JPG</span>
                                 <span id="poFileName"
-                                    class="text-xs text-brand-crimson mt-2 font-semibold hidden"></span>
+                                    class="text-[9px] sm:text-[10px] md:text-xs text-brand-crimson mt-1 sm:mt-2 font-semibold hidden"></span>
                                 <input type="file" id="poFileInput" class="hidden"
                                     accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg">
                             </div>
                         </div>
 
-                        <!-- Subtle Separator -->
-                        <hr class="border-brand-border my-6">
+                        <hr class="border-brand-border my-4 sm:my-5 md:my-6">
 
-                        <!-- Section 3 — Agreement -->
-                        <div class="mb-8">
-                            <div class="flex items-start gap-3">
+                        <div class="mb-4 sm:mb-6 md:mb-8">
+                            <div class="flex items-start gap-2 sm:gap-3">
                                 <input type="checkbox" id="po-agreement"
-                                    class="w-4 h-4 mt-1 accent-brand-crimson border-brand-border rounded" required>
-                                <label for="po-agreement" class="text-sm text-brand-textSecondary">I confirm that all
-                                    purchase order information is accurate and I have attached the official PO document.
-                                    *</label>
+                                    class="w-3 h-3 sm:w-4 sm:h-4 mt-1 accent-brand-crimson border-brand-border rounded"
+                                    required>
+                                <label for="po-agreement"
+                                    class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary">I confirm that
+                                    all purchase order information is accurate and I have attached the official PO
+                                    document. *</label>
                             </div>
                         </div>
 
-                        <!-- Submit Button -->
-                        <div class="flex flex-col items-start gap-2">
+                        <div class="flex flex-col items-center sm:items-start gap-1 sm:gap-2">
                             <button type="submit"
-                                class="btn-crimson px-8 py-3 rounded font-medium w-full md:w-auto text-base">
-                                <i class="fa-regular fa-paper-plane mr-2"></i> Submit Purchase Order
+                                class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">
+                                <i class="fa-regular fa-paper-plane mr-1 sm:mr-2"></i> Submit Purchase Order
                             </button>
-                            <p class="text-xs text-brand-gray mt-2">Our team will review your purchase order and contact
-                                you within one business day.</p>
+                            <p
+                                class="text-[8px] sm:text-[9px] md:text-xs text-brand-gray mt-1 sm:mt-2 text-center sm:text-left">
+                                Our team will review your purchase order and contact you within one business day.</p>
                         </div>
                     </form>
 
@@ -1038,14 +1197,14 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer-premium text-brand-textSecondary py-6 mt-auto">
+    <!-- Footer - RESPONSIVE FIXED -->
+    <footer class="footer-premium text-brand-textSecondary py-4 sm:py-5 md:py-6 mt-auto">
         <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+            class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-[8px] sm:text-[9px] md:text-xs">
             <p>&copy; 2026 INKWELL IMPRESSIONS SOLUTIONS. All Rights Reserved.</p>
-            <div class="flex gap-6">
+            <div class="flex gap-3 sm:gap-4 md:gap-6">
                 <a href="#" class="hover:text-brand-text transition">Privacy Policy</a>
-                <a href="#" class="hover:text-brand-text transition">Terms & Conditions</a>
+                <a href="#" class="hover:text-brand-text transition">Terms &amp; Conditions</a>
             </div>
         </div>
     </footer>
@@ -1054,516 +1213,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../config/supabase.js"></script>
-    <!-- Tab Switching Script -->
-    <script>
 
-        // ============================================================
-        // FORM SUBMIT HANDLERS - ALL 5 FORMS (FIXED)
-        // ============================================================
-
-        // 1. QUOTE FORM
-        // 1. QUOTE FORM
-        const quoteForm = document.getElementById('form-quote');
-        if (quoteForm) {
-            quoteForm.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const btn = this.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-
-                btn.disabled = true;
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-                try {
-                    const formData = new FormData();
-                    formData.append('request_type', 'quotation');
-                    formData.append('first_name', this.querySelector('input[placeholder="John"]').value);
-                    formData.append('last_name', this.querySelector('input[placeholder="Doe"]').value);
-                    formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
-                    formData.append('email', this.querySelector('input[placeholder="john@acmecorp.com"]').value);
-                    formData.append('phone', this.querySelector('input[placeholder="+1 (555) 000-0000"]').value);
-
-                    // ====== NEW FIELDS ======
-                    formData.append('asi_number', this.querySelector('input[placeholder="Enter ASI/PPAI/SAGE number"]').value);
-                    formData.append('item', this.querySelector('input[placeholder="e.g. IB29, MQIB6000"]').value);
-                    formData.append('item_qty', this.querySelector('input[placeholder="Enter quantity"]').value);
-                    // ====== END NEW FIELDS ======
-
-                    formData.append('category', this.querySelector('select').value);
-                    formData.append('quantity', this.querySelector('input[placeholder="e.g. 500"]').value);
-                    formData.append('date', this.querySelector('input[type="date"]').value);
-                    formData.append('details', this.querySelector('textarea').value);
-
-                    const fileInput = this.querySelector('input[type="file"]');
-                    if (fileInput && fileInput.files.length > 0) {
-                        for (let i = 0; i < fileInput.files.length; i++) {
-                            formData.append('attachments', fileInput.files[i]);
-                        }
-                    }
-
-                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                        method: 'POST',
-                        body: formData
-                    });
-
-                    const result = await response.json();
-                    if (!response.ok) throw new Error(result.message || 'Failed');
-
-                    alert('✅ Quote Request Sent Successfully!');
-                    this.reset();
-                } catch (error) {
-                    console.error(error);
-                    alert('❌ Failed to send. Please try again.');
-                } finally {
-                    btn.disabled = false;
-                    btn.innerHTML = originalText;
-                }
-            });
-        }
-
-        // 2. MOCKUP FORM
-        // 2. MOCKUP FORM
-        const mockupForm = document.getElementById('form-mockup');
-        if (mockupForm) {
-            mockupForm.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const btn = this.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-
-                btn.disabled = true;
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-                try {
-                    const formData = new FormData();
-                    formData.append('request_type', 'mockup');
-                    formData.append('company', this.querySelector('input[placeholder="Acme Corp"]').value);
-                    formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
-                    formData.append('email', this.querySelector('input[type="email"]').value);
-
-                    // ====== NEW FIELDS ======
-                    formData.append('asi_number', this.querySelector('input[placeholder="Enter ASI/PPAI/SAGE number"]').value);
-                    formData.append('item', this.querySelector('input[placeholder="e.g. IB29, MQIB6000"]').value);
-                    formData.append('item_qty', this.querySelector('input[placeholder="Enter quantity"]').value);
-                    // ====== END NEW FIELDS ======
-
-                    formData.append('product', this.querySelector('input[placeholder="e.g., Matte Black Tumbler, Cotton Tote Bag"]').value);
-                    formData.append('instructions', this.querySelector('textarea').value);
-
-                    const fileInput = this.querySelector('input[type="file"]');
-                    if (fileInput && fileInput.files.length > 0) {
-                        for (let i = 0; i < fileInput.files.length; i++) {
-                            formData.append('logo_files', fileInput.files[i]);
-                        }
-                    }
-
-                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                        method: 'POST',
-                        body: formData
-                    });
-
-                    const result = await response.json();
-                    if (!response.ok) throw new Error(result.message || 'Failed');
-
-                    alert('✅ Mockup Request Sent Successfully!');
-                    this.reset();
-                } catch (error) {
-                    console.error(error);
-                    alert('❌ Failed to send. Please try again.');
-                } finally {
-                    btn.disabled = false;
-                    btn.innerHTML = originalText;
-                }
-            });
-        }
-
-        // 3. FREIGHT FORM
-        const freightForm = document.getElementById('form-freight');
-        if (freightForm) {
-            freightForm.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const btn = this.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-
-                btn.disabled = true;
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-                try {
-                    const formData = new FormData();
-                    formData.append('request_type', 'freight');  // ✅ FIXED
-                    formData.append('name', this.querySelector('input[placeholder="John Doe"]').value);
-                    formData.append('email', this.querySelector('input[type="email"]').value);
-                    formData.append('address', this.querySelector('input[placeholder="123 Main St"]').value);
-                    formData.append('city', this.querySelector('input[placeholder="New York"]').value);
-                    formData.append('state', this.querySelector('input[placeholder="NY"]').value);
-                    formData.append('zip', this.querySelector('input[placeholder="10001"]').value);
-                    formData.append('country', this.querySelector('input[placeholder="USA"]').value);
-                    formData.append('volume', this.querySelector('input[placeholder="e.g., 2 Pallets, ~500 lbs"]').value);
-                    formData.append('delivery_type', this.querySelector('select').value);
-
-                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                        method: 'POST',
-                        body: formData
-                    });
-
-                    const result = await response.json();
-                    if (!response.ok) throw new Error(result.message || 'Failed');
-
-                    alert('✅ Freight Estimate Request Sent Successfully!');
-                    this.reset();
-                } catch (error) {
-                    console.error(error);
-                    alert('❌ Failed to send. Please try again.');
-                } finally {
-                    btn.disabled = false;
-                    btn.innerHTML = originalText;
-                }
-            });
-        }
-
-        // 4. CREDIT APPLICATION FORM
-        const creditForm = document.getElementById('form-credit');
-        if (creditForm) {
-            creditForm.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const btn = this.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-
-                btn.disabled = true;
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-                try {
-                    const formData = new FormData();
-                    formData.append('request_type', 'credit');  // ✅ FIXED
-
-                    // Business Information
-                    formData.append('business_name', document.querySelector('#form-credit input[placeholder="Acme Corp"]')?.value || '');
-                    formData.append('date', document.querySelector('#form-credit input[type="date"]')?.value || '');
-                    formData.append('address', document.querySelectorAll('#form-credit input[type="text"]')[2]?.value || '');
-                    formData.append('city', document.querySelectorAll('#form-credit input[type="text"]')[3]?.value || '');
-                    formData.append('state', document.querySelectorAll('#form-credit input[type="text"]')[4]?.value || '');
-                    formData.append('zip', document.querySelectorAll('#form-credit input[type="text"]')[5]?.value || '');
-                    formData.append('telephone', document.querySelector('#form-credit input[type="tel"]')?.value || '');
-                    formData.append('fax', document.querySelectorAll('#form-credit input[type="text"]')[7]?.value || '');
-
-                    // Card 1
-                    formData.append('po_email', document.querySelector('#form-credit input[type="email"]')?.value || '');
-                    formData.append('ap_email', document.querySelectorAll('#form-credit input[type="email"]')[1]?.value || '');
-                    formData.append('finance_contact', document.querySelectorAll('#form-credit input[type="text"]')[8]?.value || '');
-                    formData.append('card_name_1', document.querySelectorAll('#form-credit input[type="text"]')[9]?.value || '');
-                    formData.append('billing_address_1', document.querySelectorAll('#form-credit input[type="text"]')[10]?.value || '');
-                    formData.append('city_1', document.querySelectorAll('#form-credit input[type="text"]')[11]?.value || '');
-                    formData.append('state_1', document.querySelectorAll('#form-credit input[type="text"]')[12]?.value || '');
-                    formData.append('zip_1', document.querySelectorAll('#form-credit input[type="text"]')[13]?.value || '');
-
-                    const card1Usage = document.querySelector('input[name="card1-usage"]:checked');
-                    formData.append('card_usage_1', card1Usage ? card1Usage.value : '');
-                    formData.append('po_number_1', document.querySelectorAll('#form-credit input[type="text"]')[14]?.value || '');
-                    formData.append('auth_value_1', document.querySelectorAll('#form-credit input[type="text"]')[15]?.value || '');
-
-                    // Card 2
-                    formData.append('card_name_2', document.querySelectorAll('#form-credit input[type="text"]')[16]?.value || '');
-                    formData.append('billing_address_2', document.querySelectorAll('#form-credit input[type="text"]')[17]?.value || '');
-                    formData.append('city_2', document.querySelectorAll('#form-credit input[type="text"]')[18]?.value || '');
-                    formData.append('state_2', document.querySelectorAll('#form-credit input[type="text"]')[19]?.value || '');
-                    formData.append('zip_2', document.querySelectorAll('#form-credit input[type="text"]')[20]?.value || '');
-
-                    const card2Usage = document.querySelector('input[name="card2-usage"]:checked');
-                    formData.append('card_usage_2', card2Usage ? card2Usage.value : '');
-                    formData.append('po_number_2', document.querySelectorAll('#form-credit input[type="text"]')[21]?.value || '');
-                    formData.append('auth_value_2', document.querySelectorAll('#form-credit input[type="text"]')[22]?.value || '');
-
-                    // Comments & Signature
-                    formData.append('comments', document.querySelector('#form-credit textarea')?.value || '');
-                    formData.append('card_holder_name', document.querySelectorAll('#form-credit input[type="text"]')[23]?.value || '');
-                    formData.append('signature', document.querySelectorAll('#form-credit input[type="text"]')[24]?.value || '');
-                    formData.append('signed_date', document.querySelectorAll('#form-credit input[type="date"]')[1]?.value || '');
-
-                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                        method: 'POST',
-                        body: formData
-                    });
-
-                    const result = await response.json();
-                    if (!response.ok) throw new Error(result.message || 'Failed');
-
-                    alert('✅ Credit Application Submitted Successfully!');
-                    this.reset();
-                } catch (error) {
-                    console.error(error);
-                    alert('❌ Failed to submit. Please try again.');
-                } finally {
-                    btn.disabled = false;
-                    btn.innerHTML = originalText;
-                }
-            });
-        }
-
-        // 5. PURCHASE ORDER FORM
-        // 5. PURCHASE ORDER FORM - SIMPLIFIED
-        const poForm = document.getElementById('form-po');
-        if (poForm) {
-            poForm.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const btn = this.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-
-                btn.disabled = true;
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-
-                try {
-                    const formData = new FormData();
-                    formData.append('request_type', 'po');
-
-                    // Company Information
-                    const inputs = this.querySelectorAll('input');
-                    formData.append('company_name', inputs[0]?.value || '');
-                    formData.append('contact_person', inputs[1]?.value || '');
-                    formData.append('email', inputs[2]?.value || '');
-                    formData.append('phone', inputs[3]?.value || '');
-                    formData.append('address', inputs[4]?.value || '');
-                    formData.append('city', inputs[5]?.value || '');
-                    formData.append('state', inputs[6]?.value || '');
-                    formData.append('zip', inputs[7]?.value || '');
-                    formData.append('country', inputs[8]?.value || '');
-                    formData.append('tax_id', inputs[9]?.value || '');
-
-                    // PO File
-                    const poFileInput = document.getElementById('poFileInput');
-                    if (poFileInput && poFileInput.files.length > 0) {
-                        formData.append('po_file', poFileInput.files[0]);
-                    }
-
-                    const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                        method: 'POST',
-                        body: formData
-                    });
-
-                    const result = await response.json();
-                    if (!response.ok) throw new Error(result.message || 'Failed');
-
-                    alert('✅ Purchase Order Submitted Successfully!');
-                    this.reset();
-                    document.getElementById('poFileName').classList.add('hidden');
-                    document.getElementById('poFileName').textContent = '';
-
-                } catch (error) {
-                    console.error(error);
-                    alert('❌ Failed to submit. Please try again.');
-                } finally {
-                    btn.disabled = false;
-                    btn.innerHTML = originalText;
-                }
-            });
-        }
-
-        // PO File Input Handler - Show file name
-        const poFileInput = document.getElementById('poFileInput');
-        if (poFileInput) {
-            poFileInput.addEventListener('change', function (e) {
-                const fileName = document.getElementById('poFileName');
-                if (this.files.length > 0) {
-                    fileName.textContent = '📎 ' + this.files[0].name;
-                    fileName.classList.remove('hidden');
-                } else {
-                    fileName.classList.add('hidden');
-                }
-            });
-
-            // Click on dropzone to trigger file input
-            const dropzone = poFileInput.closest('.flex');
-            if (dropzone) {
-                dropzone.addEventListener('click', () => poFileInput.click());
-                // Drag and drop support
-                dropzone.addEventListener('dragover', (e) => {
-                    e.preventDefault();
-                    dropzone.classList.add('border-brand-crimson', 'bg-brand-crimson/5');
-                });
-                dropzone.addEventListener('dragleave', () => {
-                    dropzone.classList.remove('border-brand-crimson', 'bg-brand-crimson/5');
-                });
-                dropzone.addEventListener('drop', (e) => {
-                    e.preventDefault();
-                    dropzone.classList.remove('border-brand-crimson', 'bg-brand-crimson/5');
-                    if (e.dataTransfer.files.length > 0) {
-                        poFileInput.files = e.dataTransfer.files;
-                        const fileName = document.getElementById('poFileName');
-                        fileName.textContent = '📎 ' + e.dataTransfer.files[0].name;
-                        fileName.classList.remove('hidden');
-                    }
-                });
-            }
-        }
-
-        // ============================================================
-        // HAMBURGER MENU & TAB SWITCHING (Existing Code)
-        // ============================================================
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const hamburgerIcon = document.getElementById('hamburgerIcon');
-
-        hamburgerBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            hamburgerIcon.classList.toggle('fa-bars');
-            hamburgerIcon.classList.toggle('fa-xmark');
-        });
-
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                hamburgerIcon.classList.add('fa-bars');
-                hamburgerIcon.classList.remove('fa-xmark');
-            });
-        });
-
-        function showForm(formId) {
-            document.querySelectorAll('.form-panel').forEach(form => {
-                form.classList.add('hidden');
-                form.classList.remove('opacity-100');
-                form.classList.add('opacity-0');
-            });
-
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.className = "tab-btn w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30";
-                const svg = btn.querySelector('svg');
-                if (svg) svg.classList.add('opacity-0');
-            });
-
-            const activeForm = document.getElementById('form-' + formId);
-            activeForm.classList.remove('hidden');
-            setTimeout(() => {
-                activeForm.classList.remove('opacity-0');
-                activeForm.classList.add('opacity-100');
-            }, 10);
-
-            const activeTab = document.getElementById('tab-' + formId);
-            activeTab.className = "tab-btn active w-full flex items-center justify-between text-left px-5 py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson";
-            const activeSvg = activeTab.querySelector('svg');
-            if (activeSvg) activeSvg.classList.remove('opacity-0');
-        }
-        // ============================================================
-        // NET 30 SUBMIT
-        // ============================================================
-        async function submitNet30() {
-            const btn = event.target;
-            const originalText = btn.innerHTML;
-
-            // Check agreement
-            const agreement = document.getElementById('net30-agreement');
-            if (!agreement.checked) {
-                alert('Please agree to the Net 30 terms and conditions.');
-                return;
-            }
-
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Submitting...';
-
-            try {
-                const formData = new FormData();
-                formData.append('request_type', 'net30');
-
-                // Get all net30 fields
-                document.querySelectorAll('.net30-field').forEach(input => {
-                    formData.append(input.previousElementSibling?.textContent?.trim()?.toLowerCase() || input.name || 'field', input.value);
-                });
-
-                // Add signature fields
-                formData.append('signature_name', document.getElementById('signature-name').value);
-                formData.append('signature', document.getElementById('signature-field').value);
-                formData.append('signature_date', document.getElementById('signature-date').value);
-
-                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-                if (!response.ok) throw new Error(result.message || 'Failed');
-
-                alert('✅ Net 30 Application Submitted Successfully!');
-
-                // Clear only net30 fields
-                document.querySelectorAll('.net30-field').forEach(input => input.value = '');
-                agreement.checked = false;
-
-            } catch (error) {
-                console.error(error);
-                alert('❌ Failed to submit. Please try again.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        }
-
-        // ============================================================
-        // CREDIT CARD SUBMIT
-        // ============================================================
-        async function submitCreditCard() {
-            const btn = event.target;
-            const originalText = btn.innerHTML;
-
-            // Check global agreement
-            const globalAgreement = document.getElementById('global-agreement');
-            if (!globalAgreement.checked) {
-                alert('Please confirm that all information is accurate.');
-                return;
-            }
-
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Submitting...';
-
-            try {
-                const formData = new FormData();
-                formData.append('request_type', 'credit_card');
-
-                // Get all credit card fields
-                document.querySelectorAll('.cc-field').forEach(input => {
-                    formData.append(input.previousElementSibling?.textContent?.trim()?.toLowerCase() || input.name || 'field', input.value);
-                });
-
-                // Add signature fields
-                formData.append('signature_name', document.getElementById('signature-name').value);
-                formData.append('signature', document.getElementById('signature-field').value);
-                formData.append('signature_date', document.getElementById('signature-date').value);
-
-                const response = await fetch('https://inkwell-email-api.arijbaig97.workers.dev', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-                if (!response.ok) throw new Error(result.message || 'Failed');
-
-                alert('✅ Credit Card Authorization Submitted Successfully!');
-
-                // Clear only credit card fields
-                document.querySelectorAll('.cc-field').forEach(input => input.value = '');
-                globalAgreement.checked = false;
-
-            } catch (error) {
-                console.error(error);
-                alert('❌ Failed to submit. Please try again.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        }
-
-        // File input handler
-        document.querySelectorAll('input[type="file"]').forEach(input => {
-            const dropzone = input.closest('.flex');
-            if (dropzone) {
-                dropzone.addEventListener('click', () => input.click());
-                input.addEventListener('change', function (e) {
-                    const name = e.target.files[0]?.name || '';
-                    const label = dropzone.querySelector('span');
-                    if (label && name) {
-                        label.textContent = '✓ ' + name;
-                        label.classList.add('text-brand-crimson');
-                    }
-                });
-            }
-        });
-
-    </script>
+    <!-- ============================================================ -->
+    <!-- JAVASCRIPT - ALL FORM SUBMITS & TAB SWITCHING -->
+    <!-- ============================================================ -->
+    <script src="./config/contact.js"></script>
 
 </body>
 

@@ -49,7 +49,9 @@
       font-family: 'Playfair Display', serif;
     }
 
-    /* full-width hero */
+    /* ============================================================ */
+    /* HERO - RESPONSIVE FIXED */
+    /* ============================================================ */
     .hero-full {
       width: 100vw;
       position: relative;
@@ -57,14 +59,35 @@
       right: 50%;
       margin-left: -50vw;
       margin-right: -50vw;
-      height: 88vh;
-      min-height: 560px;
+      height: 60vh;
+      min-height: 400px;
       max-height: 820px;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
       background: #f5f5f5;
+    }
+
+    @media (min-width: 640px) {
+      .hero-full {
+        height: 70vh;
+        min-height: 480px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero-full {
+        height: 80vh;
+        min-height: 520px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-full {
+        height: 88vh;
+        min-height: 560px;
+      }
     }
 
     .hero-full img {
@@ -99,7 +122,7 @@
       pointer-events: none;
     }
 
-    /* faded background text */
+    /* faded background text - RESPONSIVE */
     .bg-text-container {
       position: absolute;
       inset: 0;
@@ -116,7 +139,7 @@
       font-family: 'Playfair Display', serif;
       font-weight: 700;
       color: rgba(19, 24, 53, 0.025);
-      font-size: clamp(5rem, 22vw, 15rem);
+      font-size: clamp(3rem, 10vw, 8rem);
       line-height: 0.82;
       letter-spacing: 0.02em;
       text-transform: uppercase;
@@ -124,42 +147,76 @@
       transform: translateY(-6%);
     }
 
-    /* about two-col */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.8rem 5.5rem;
-      max-width: 820px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    @media (max-width: 768px) {
-      .about-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        max-width: 600px;
-        text-align: center;
+    @media (min-width: 768px) {
+      .bg-text-container .faded {
+        font-size: clamp(4rem, 16vw, 12rem);
       }
     }
 
-    /* feature cards – existing, made bolder */
+    @media (min-width: 1024px) {
+      .bg-text-container .faded {
+        font-size: clamp(5rem, 22vw, 15rem);
+      }
+    }
+
+    /* ============================================================ */
+    /* ABOUT GRID - RESPONSIVE */
+    /* ============================================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.8rem 5.5rem;
+        max-width: 820px;
+        text-align: left;
+      }
+    }
+
+    /* ============================================================ */
+    /* FEATURE CARDS - RESPONSIVE */
+    /* ============================================================ */
     .feature-row {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       border-top: 1px solid rgba(19, 24, 53, .08);
     }
 
+    @media (min-width: 768px) {
+      .feature-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     .feature-item {
-      padding: 3rem;
+      padding: 1.5rem;
       border-bottom: 1px solid rgba(19, 24, 53, .08);
       position: relative;
       transition: .35s ease;
       background: #fff;
     }
 
+    @media (min-width: 768px) {
+      .feature-item {
+        padding: 3rem;
+      }
+    }
+
     .feature-item:nth-child(odd) {
-      border-right: 1px solid rgba(19, 24, 53, .08);
+      border-right: none;
+    }
+
+    @media (min-width: 768px) {
+      .feature-item:nth-child(odd) {
+        border-right: 1px solid rgba(19, 24, 53, .08);
+      }
     }
 
     .feature-item.full {
@@ -174,41 +231,70 @@
     .feature-item .num {
       display: block;
       font-family: "Playfair Display", serif;
-      font-size: 4.2rem;
+      font-size: 3rem;
       font-weight: 700;
-      color: rgba(19, 24, 53, .09);
+      color: #D62828 !important;
       line-height: 1;
-      margin-bottom: 1.4rem;
-      transition: .35s;
-    }
-
-    .feature-item h4 {
-      font-size: 1.55rem;
-      font-weight: 700;
-      color: #131835;
-      letter-spacing: -0.03em;
       margin-bottom: 1rem;
       transition: .35s;
     }
 
-    .feature-accent {
-      width: 42px;
-      height: 2px;
-      background: #D62828;
-      margin-bottom: 1.3rem;
+    @media (min-width: 768px) {
+      .feature-item .num {
+        font-size: 4.2rem;
+        margin-bottom: 1.4rem;
+      }
+    }
+
+    .feature-item h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #131835;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
       transition: .35s;
     }
 
+    @media (min-width: 768px) {
+      .feature-item h4 {
+        font-size: 1.55rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .feature-accent {
+      width: 32px;
+      height: 2px;
+      background: #D62828;
+      margin-bottom: 1rem;
+      transition: .35s;
+    }
+
+    @media (min-width: 768px) {
+      .feature-accent {
+        width: 42px;
+        margin-bottom: 1.3rem;
+      }
+    }
+
     .feature-item p {
-      font-size: 1rem;
-      line-height: 1.9;
+      font-size: 0.9rem;
+      line-height: 1.8;
       color: #5E6678;
-      max-width: 92%;
+      max-width: 100%;
       font-weight: 400;
     }
 
+    @media (min-width: 768px) {
+      .feature-item p {
+        font-size: 1rem;
+        line-height: 1.9;
+        max-width: 92%;
+      }
+    }
+
     .feature-item:hover .num {
-      color: #D62828;
+      color: #D62828 !important;
     }
 
     .feature-item:hover h4 {
@@ -219,89 +305,13 @@
       width: 72px;
     }
 
-    @media(max-width:768px) {
-      .feature-row {
-        grid-template-columns: 1fr;
-      }
-
-      .feature-item {
-        border-right: none !important;
-        padding: 2rem 1.5rem;
-      }
-
-      .feature-item.full {
-        grid-column: auto;
-      }
-
-      .feature-item .num {
-        font-size: 3rem;
-      }
-
-      .feature-item h4 {
-        font-size: 1.3rem;
-      }
-
-      .feature-item p {
-        max-width: 100%;
-      }
-    }
-
-    /* stats */
-    .stat-card {
-      text-align: center;
-      padding: 1rem;
-      transition: .35s ease;
-      opacity: 0;
-      /* hidden initially, GSAP will reveal */
-      transform: translateY(20px);
-    }
-
-    .stat-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(3.4rem, 5vw, 5rem);
-      font-weight: 700;
-      color: #131835;
-      line-height: 1;
-      letter-spacing: -.04em;
-      transition: .35s ease;
-    }
-
-    .stat-card h3 span {
-      color: #D62828;
-      font-size: .55em;
-    }
-
-    .stat-line {
-      width: 42px;
-      height: 2px;
-      background: #D62828;
-      margin: 24px auto 20px;
-      transition: .35s ease;
-    }
-
-    .stat-card p {
-      font-size: .82rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .22em;
-      color: #6B7280;
-      line-height: 1.6;
-    }
-
-    .stat-card:hover h3 {
-      color: #D62828;
-      transform: translateY(-4px);
-    }
-
-    .stat-card:hover .stat-line {
-      width: 70px;
-    }
-
-    /* ── Story + Mission + Vision cards ── */
+    /* ============================================================ */
+    /* STORY/MISSION/VISION CARDS - RESPONSIVE */
+    /* ============================================================ */
     .story-mission-card {
       position: relative;
       overflow: hidden;
-      padding: 3rem 2.5rem;
+      padding: 1.8rem;
       background: #ffffff;
       border: 1px solid rgba(19, 24, 53, 0.10);
       min-height: 100%;
@@ -309,6 +319,18 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      .story-mission-card {
+        padding: 2.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .story-mission-card {
+        padding: 3rem 2.5rem;
+      }
     }
 
     .story-mission-card:hover {
@@ -320,87 +342,171 @@
     .story-mission-card .bg-num {
       position: absolute;
       top: 1.5rem;
-      right: 2rem;
+      right: 1.2rem;
       font-family: "Playfair Display", serif;
-      font-size: 5rem;
+      font-size: 3.5rem;
       line-height: 1;
       font-weight: 700;
       color: rgba(19, 24, 53, 0.055);
       pointer-events: none;
     }
 
+    @media (min-width: 768px) {
+      .story-mission-card .bg-num {
+        font-size: 4rem;
+        right: 1.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .story-mission-card .bg-num {
+        font-size: 5rem;
+        right: 2rem;
+      }
+    }
+
     .story-mission-card .red-accent {
-      width: 42px;
+      width: 32px;
       height: 2px;
       background: #D62828;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .story-mission-card .red-accent {
+        width: 42px;
+        margin-bottom: 1.5rem;
+      }
     }
 
     .story-mission-card h3 {
       position: relative;
       font-family: "Playfair Display", serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: #131835;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       text-transform: uppercase;
       letter-spacing: -0.02em;
+    }
+
+    @media (min-width: 768px) {
+      .story-mission-card h3 {
+        font-size: 1.7rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .story-mission-card h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
     }
 
     .story-mission-card p {
       position: relative;
       color: #5E6678;
-      font-size: 1rem;
-      line-height: 1.9;
-      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin-bottom: 0.8rem;
+    }
+
+    @media (min-width: 768px) {
+      .story-mission-card p {
+        font-size: 0.98rem;
+        line-height: 1.9;
+        margin-bottom: 1rem;
+      }
     }
 
     .story-mission-card p:last-child {
       margin-bottom: 0;
     }
 
-    /* ── Feature numbers: RED BY DEFAULT ── */
-    .feature-item .num {
-      color: #D62828 !important;
+    /* ============================================================ */
+    /* STATS - RESPONSIVE */
+    /* ============================================================ */
+    .stat-card {
+      text-align: center;
+      padding: 0.8rem;
+      transition: .35s ease;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    @media (min-width: 768px) {
+      .stat-card {
+        padding: 1rem;
+      }
+    }
+
+    .stat-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
       font-weight: 700;
+      color: #131835;
+      line-height: 1;
+      letter-spacing: -.04em;
+      transition: .35s ease;
     }
 
-    .feature-item:hover .num {
-      color: #D62828 !important;
-    }
-
-    /* stronger feature headings */
-    .feature-item h4 {
-      font-weight: 700;
-      font-size: 1.5rem;
-    }
-
-    .feature-item p {
-      font-weight: 400;
-    }
-
-    /* mobile */
-    @media (max-width: 768px) {
-      .story-mission-card {
-        padding: 2.2rem 1.8rem;
-      }
-
-      .story-mission-card h3 {
-        font-size: 1.7rem;
-      }
-
-      .story-mission-card .bg-num {
-        font-size: 4rem;
-        right: 1.2rem;
-      }
-
-      .story-mission-card p {
-        font-size: 0.98rem;
+    @media (min-width: 768px) {
+      .stat-card h3 {
+        font-size: clamp(3.4rem, 5vw, 5rem);
       }
     }
 
-    /* GSAP initial states */
+    .stat-card h3 span {
+      color: #D62828;
+      font-size: .55em;
+    }
+
+    .stat-line {
+      width: 32px;
+      height: 2px;
+      background: #D62828;
+      margin: 16px auto 14px;
+      transition: .35s ease;
+    }
+
+    @media (min-width: 768px) {
+      .stat-line {
+        width: 42px;
+        margin: 24px auto 20px;
+      }
+    }
+
+    .stat-card p {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: #6B7280;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 768px) {
+      .stat-card p {
+        font-size: 0.82rem;
+        letter-spacing: .22em;
+        line-height: 1.6;
+      }
+    }
+
+    .stat-card:hover h3 {
+      color: #D62828;
+      transform: translateY(-4px);
+    }
+
+    .stat-card:hover .stat-line {
+      width: 70px;
+    }
+
+    /* ============================================================ */
+    /* GSAP INITIAL STATES */
+    /* ============================================================ */
     .gsap-fade-up,
     .gsap-features,
     .gsap-feature-item,
@@ -413,73 +519,181 @@
       opacity: 0;
       transform: translateY(20px);
     }
+
+    /* ============================================================ */
+    /* RESPONSIVE - ADDITIONAL FIXES */
+    /* ============================================================ */
+
+    /* About Intro Heading */
+    .about-intro-heading {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .about-intro-heading {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .about-intro-heading {
+        font-size: 4.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .about-intro-heading {
+        font-size: 6rem;
+      }
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 640px) {
+      .section-title {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .section-title {
+        font-size: 5rem;
+      }
+    }
+
+    /* Hero Heading */
+    .hero-heading {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-heading {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero-heading {
+        font-size: 4.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-heading {
+        font-size: 5.5rem;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .hero-heading {
+        font-size: 7rem;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- NAV (unchanged) -->
-  <nav class="bg-brand-blue text-white px-4 sm:px-8 flex justify-between items-center fixed w-full z-50">
-    <div class="flex items-center">
-      <a href="index.html"><img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
-          class="h-32 sm:h-36 lg:h-40 xl:h-48 w-auto object-contain" /></a>
+  <!-- NAV - RESPONSIVE FIXED -->
+  <nav class="bg-brand-blue text-white px-3 sm:px-4 md:px-6 lg:px-8 flex justify-between items-center fixed w-full z-50 py-1">
+    <div class="flex items-center shrink-0">
+      <a href="index.html">
+        <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
+          class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
+      </a>
     </div>
-    <ul class="hidden md:flex space-x-6 lg:space-x-8 text-[14px] font-medium uppercase tracking-wide">
-      <li><a href="index.html" class="text-brand-red">Home</a></li>
+    <ul class="hidden md:flex space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
+      <li><a href="index.html" class="hover:text-brand-red transition">Home</a></li>
       <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
       <li><a href="categories.html" class="hover:text-brand-red transition">Categories</a></li>
-      <li><a href="about.html" class="hover:text-brand-red transition">About Us</a></li>
+      <li><a href="about.html" class="text-brand-red">About Us</a></li>
       <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
     </ul>
-    <div class="flex items-center gap-3 sm:gap-4">
-      <button
-        class="hidden sm:block bg-brand-red hover:bg-red-700 text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">LOGIN/SIGNUP</button>
-      <i class="fa-solid fa-search cursor-pointer"></i>
-      <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
+    <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
+      <button class="hidden lg:block bg-brand-red hover:bg-red-700 text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wide transition">
+        LOGIN/SIGNUP
+      </button>
+      <i class="fa-solid fa-search cursor-pointer text-sm sm:text-base"></i>
+      <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none" aria-label="Toggle Menu">
         <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
       </button>
     </div>
   </nav>
 
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-blue text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
+    <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
+      <li><a href="index.html" class="block py-2 border-b border-gray-700">Home</a></li>
+      <li><a href="products.html" class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Products</a></li>
+      <li><a href="categories.html" class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Categories</a></li>
+      <li><a href="about.html" class="text-brand-red block py-2 border-b border-gray-700">About Us</a></li>
+      <li><a href="contact.html" class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Contact</a></li>
+    </ul>
+    <button class="w-full bg-brand-red hover:bg-red-700 text-white px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wide transition mt-1 sm:mt-2">
+      LOGIN/SIGNUP
+    </button>
+  </div>
+
   <!-- ABOUT SECTION -->
   <section id="about-section" class="relative w-full overflow-hidden bg-white">
 
-    <!-- HERO -->
-    <div class="hero-full relative">
-      <img src="./assets/about-image.jpg" alt="Premium printing craftsmanship" class="w-full h-full object-cover" />
+    <!-- HERO - RESPONSIVE FIXED -->
+    <div class="hero-full relative mt-[60px] sm:mt-[70px] md:mt-[80px] lg:mt-[100px]">
+
+      <img src="./assets/about-image-two.webp" alt="Premium printing and promotional products"
+        class="w-full h-full object-cover" />
+
       <div class="hero-overlay-top"></div>
       <div class="hero-gradient"></div>
+
+      <!-- CENTER HERO CONTENT -->
+      <div class="absolute inset-0 z-10 flex items-center justify-center text-center px-4 sm:px-6">
+
+        <div class="max-w-4xl mx-auto text-white">
+
+          <!-- heading - RESPONSIVE CLASSES -->
+          <h1 class="font-serif hero-heading font-bold leading-[0.98] tracking-[-0.04em]">
+            Printing that Makes<br>
+            <span class="italic font-bold text-brand-red">an Impression</span>
+          </h1>
+
+        </div>
+      </div>
+
     </div>
 
-    <!-- ABOUT US – prominent heading, introduction, story, mission, features, stats -->
-    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 md:pt-28 pb-8">
+    <!-- ABOUT US - introduction, story, mission, features, stats -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 md:pt-20 lg:pt-28 pb-6 sm:pb-8">
 
       <!-- faded background -->
-      <div class="bg-text-container"><span class="faded">INKWELL<br>IMPRESSIONS</span></div>
+      <div class="bg-text-container">
+        <span class="faded">
+          INKWELL<br>IMPRESSIONS
+        </span>
+      </div>
 
-      <!-- 1. ABOUT US – prominent editorial heading -->
-      <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 md:pt-28 pb-8">
+      <!-- ABOUT US INTRO - RESPONSIVE FIXED -->
+      <div class="relative z-10 max-w-7xl mx-auto px-0">
 
-        <div class="text-center max-w-4xl mx-auto mb-20 gsap-fade-up">
+        <div class="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20 gsap-fade-up">
 
-          <!-- ONLY ONE ABOUT US HEADING -->
-          <div class="flex items-center justify-center gap-4 mb-7">
-            <span class="w-10 h-[1px] bg-[#D62828]"></span>
-            <span class="text-[#D62828] uppercase tracking-[0.35em] text-xs font-semibold">
-              About Us
-            </span>
-            <span class="w-10 h-[1px] bg-[#D62828]"></span>
-          </div>
-
-          <h2
-            class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-[#131835] tracking-[-0.035em] leading-[1.05]">
-            Precision Printing.<br>
-            Powerful Impact.
+          <!-- heading - RESPONSIVE CLASSES -->
+          <h2 class="font-serif about-intro-heading font-bold text-[#131835] tracking-[-0.035em] leading-[1.05]">
+            About Us
           </h2>
 
-          <div class="w-14 h-[2px] bg-[#D62828] mx-auto my-8"></div>
+          <div class="w-10 sm:w-12 md:w-14 h-[2px] bg-[#D62828] mx-auto my-6 sm:my-7 md:my-8"></div>
 
-          <p class="text-[#131835]/70 text-base md:text-lg leading-[1.9] font-normal max-w-3xl mx-auto">
+          <p class="text-[#131835]/70 text-sm sm:text-base md:text-lg leading-[1.8] sm:leading-[1.9] font-normal max-w-3xl mx-auto">
             Inkwell Impressions provides printing and promotional solutions for businesses
             that care about how their brand is presented. From everyday business stationery
             to custom promotional products, we focus on dependable quality, clean finishing
@@ -488,12 +702,11 @@
 
         </div>
 
-        <!-- OUR STORY + OUR MISSION + OUR VISION (3 cards) -->
-        <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-24 gsap-fade-up">
+        <!-- OUR STORY + OUR MISSION + OUR VISION (3 cards) - RESPONSIVE FIXED -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto mb-16 sm:mb-20 md:mb-24 gsap-fade-up">
 
           <!-- OUR STORY -->
           <div class="story-mission-card">
-
             <div class="red-accent"></div>
             <h3>Our Story</h3>
             <p>
@@ -525,9 +738,8 @@
             </p>
           </div>
 
-          <!-- OUR VISION (new) -->
+          <!-- OUR VISION -->
           <div class="story-mission-card">
-
             <div class="red-accent"></div>
             <h3>Our Vision</h3>
             <p>
@@ -535,26 +747,25 @@
               reliability and modern solutions. We aim to continuously improve the way businesses create, present and
               promote their brands through professionally produced print materials.
             </p>
-
           </div>
 
         </div>
 
-        <!-- WHY INKWELL (unchanged) -->
-        <div class="relative z-10 max-w-6xl mx-auto px-0 py-8 gsap-features">
+        <!-- WHY INKWELL - RESPONSIVE FIXED -->
+        <div class="relative z-10 max-w-6xl mx-auto px-0 py-6 sm:py-8 gsap-features">
 
-          <div class="text-center mb-14">
-            <div class="flex items-center justify-center gap-4 mb-5">
-              <span class="w-8 h-[1px] bg-[#D62828]"></span>
-              <span class="text-[#D62828] uppercase tracking-[0.3em] text-xs font-semibold">
+          <div class="text-center mb-10 sm:mb-12 md:mb-14">
+            <div class="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-5">
+              <span class="w-6 sm:w-8 h-[1px] bg-[#D62828]"></span>
+              <span class="text-[#D62828] uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[10px] sm:text-xs font-semibold">
                 Why Inkwell
               </span>
-              <span class="w-8 h-[1px] bg-[#D62828]"></span>
+              <span class="w-6 sm:w-8 h-[1px] bg-[#D62828]"></span>
             </div>
-            <h3 class="font-serif text-3xl md:text-5xl font-bold text-[#131835]">
+            <h3 class="font-serif section-title font-bold text-[#131835]">
               What We Bring to Every Order
             </h3>
-            <div class="w-12 h-[2px] bg-[#D62828] mx-auto mt-5"></div>
+            <div class="w-10 sm:w-12 md:w-14 h-[2px] bg-[#D62828] mx-auto mt-4 sm:mt-5"></div>
           </div>
 
           <div class="feature-row">
@@ -610,26 +821,26 @@
           </div>
         </div>
 
-        <!-- COMPANY STATS – enhanced with "BY THE NUMBERS" and "Built on Consistency." -->
-        <div class="relative z-10 max-w-7xl mx-auto px-0 py-24 gsap-stats">
+        <!-- COMPANY STATS - RESPONSIVE FIXED -->
+        <div class="relative z-10 max-w-7xl mx-auto px-0 py-12 sm:py-16 md:py-20 lg:py-24 gsap-stats">
 
           <!-- editorial header -->
-          <div class="text-center mb-16">
-            <div class="flex items-center justify-center gap-4 mb-4">
-              <span class="w-10 h-[1px] bg-[#D62828]"></span>
-              <span class="text-[#D62828] uppercase tracking-[0.35em] text-xs font-semibold">
+          <div class="text-center mb-10 sm:mb-12 md:mb-16">
+            <div class="flex items-center justify-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+              <span class="w-8 sm:w-10 h-[1px] bg-[#D62828]"></span>
+              <span class="text-[#D62828] uppercase tracking-[0.25em] sm:tracking-[0.35em] text-[10px] sm:text-xs font-semibold">
                 By the Numbers
               </span>
-              <span class="w-10 h-[1px] bg-[#D62828]"></span>
+              <span class="w-8 sm:w-10 h-[1px] bg-[#D62828]"></span>
             </div>
-            <h3 class="font-serif text-4xl md:text-5xl font-bold text-[#131835]">
+            <h3 class="font-serif section-title font-bold text-[#131835]">
               Built on Consistency.
             </h3>
-            <div class="w-14 h-[2px] bg-[#D62828] mx-auto mt-6"></div>
+            <div class="w-10 sm:w-12 md:w-14 h-[2px] bg-[#D62828] mx-auto mt-4 sm:mt-5 md:mt-6"></div>
           </div>
 
-          <!-- stats grid -->
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- stats grid - RESPONSIVE -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
 
             <div class="stat-card" data-count="886">
               <h3><span class="counter-num">0</span><span>+</span></h3>
@@ -658,46 +869,42 @@
           </div>
         </div>
 
-      </div> <!-- end relative z-10 max-w-7xl -->
+      </div>
 
-    </div> <!-- end relative z-10 max-w-7xl -->
+    </div>
 
   </section>
 
-  <footer class="bg-brand-blue text-white pt-16 pb-8">
-    <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+  <!-- FOOTER - RESPONSIVE FIXED -->
+  <footer class="bg-brand-blue text-white pt-10 sm:pt-12 md:pt-16 pb-6 sm:pb-8">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-8 sm:mb-10 md:mb-12">
+      
+      <!-- Column 1: Logo -->
       <div class="lg:col-span-1">
-        <div class="mb-4">
-          <img src="./logo bold.png" alt="Inkwell Impressions Logo" class="h-24 w-auto object-contain" />
+        <div class="mb-3 sm:mb-4">
+          <img src="./logo bold.png" alt="Inkwell Impressions Logo" class="h-16 sm:h-20 md:h-24 w-auto object-contain" />
         </div>
-        <p class="text-xs text-gray-400 mb-6">Your global partner for premium printing, packaging, corporate
-          gifts and promotional products.</p>
-        <div class="flex items-center gap-3">
-          <a href="https://www.linkedin.com/in/inkwell-impressions-2007883b4" target="_blank"
-            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
-            <i class="fa-brands fa-linkedin-in"></i>
+        <p class="text-[10px] sm:text-xs text-gray-400 mb-4 sm:mb-6">Your global partner for premium printing, packaging, corporate gifts and promotional products.</p>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="#" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-linkedin-in text-xs sm:text-sm"></i>
           </a>
-
-          <a href="https://www.instagram.com/inkwellimpressionspromo/" target="_blank"
-            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
-            <i class="fa-brands fa-instagram"></i>
+          <a href="#" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-instagram text-xs sm:text-sm"></i>
           </a>
-
-          <a href="https://www.facebook.com/profile.php?id=61552261877738" target="_blank"
-            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
-            <i class="fa-brands fa-facebook-f"></i>
+          <a href="#" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-facebook-f text-xs sm:text-sm"></i>
           </a>
-
-          <a href="https://x.com/Inkwell_Imp" target="_blank"
-            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
-            <i class="fa-brands fa-twitter"></i>
+          <a href="#" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
+            <i class="fa-brands fa-twitter text-xs sm:text-sm"></i>
           </a>
         </div>
       </div>
 
+      <!-- Column 2: Quick Links -->
       <div>
-        <h4 class="font-bold uppercase text-xs mb-4">Quick Links</h4>
-        <ul class="text-xs text-gray-400 space-y-2">
+        <h4 class="font-bold uppercase text-[10px] sm:text-xs mb-3 sm:mb-4">Quick Links</h4>
+        <ul class="text-[10px] sm:text-xs text-gray-400 space-y-1.5 sm:space-y-2">
           <li class="hover:text-white cursor-pointer">Home</li>
           <li class="hover:text-white cursor-pointer">Products</li>
           <li class="hover:text-white cursor-pointer">Categories</li>
@@ -706,20 +913,21 @@
         </ul>
       </div>
 
+      <!-- Column 3: Products -->
       <div>
-        <h4 class="font-bold uppercase text-xs mb-4">Products</h4>
-        <ul class="text-xs text-gray-400 space-y-2">
+        <h4 class="font-bold uppercase text-[10px] sm:text-xs mb-3 sm:mb-4">Products</h4>
+        <ul class="text-[10px] sm:text-xs text-gray-400 space-y-1.5 sm:space-y-2">
           <li class="hover:text-white cursor-pointer">Promotional Products</li>
           <li class="hover:text-white cursor-pointer">Corporate Gifts</li>
           <li class="hover:text-white cursor-pointer">Printing Solutions</li>
-
           <li class="hover:text-white cursor-pointer">Custom Merchandise</li>
         </ul>
       </div>
 
+      <!-- Column 4: Support -->
       <div>
-        <h4 class="font-bold uppercase text-xs mb-4">Support</h4>
-        <ul class="text-xs text-gray-400 space-y-2">
+        <h4 class="font-bold uppercase text-[10px] sm:text-xs mb-3 sm:mb-4">Support</h4>
+        <ul class="text-[10px] sm:text-xs text-gray-400 space-y-1.5 sm:space-y-2">
           <li class="hover:text-white cursor-pointer">Request a Quote</li>
           <li class="hover:text-white cursor-pointer">Request Mockup</li>
           <li class="hover:text-white cursor-pointer">Product Sample</li>
@@ -728,135 +936,40 @@
         </ul>
       </div>
 
+      <!-- Column 5: Contact Info -->
       <div>
-        <h4 class="font-bold uppercase text-xs mb-4">Contact Info</h4>
-        <ul class="text-xs text-gray-400 space-y-4">
-          <li class="flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-3"></i> 5900 Balcones Drive
-            STE 100
-            Suite 456,<br>Austin, TX, 78731
-            USA</li>
-          <li class="flex items-center"><i class="fa-solid fa-envelope mr-3"></i> info@inkwell-impressions.com
-          </li>
-          <li class="flex items-center"><i class="fa-solid fa-phone mr-3"></i> +1 (212) 555-7890</li>
+        <h4 class="font-bold uppercase text-[10px] sm:text-xs mb-3 sm:mb-4">Contact Info</h4>
+        <ul class="text-[10px] sm:text-xs text-gray-400 space-y-3 sm:space-y-4">
+          <li class="flex items-start"><i class="fa-solid fa-location-dot mt-0.5 sm:mt-1 mr-2 sm:mr-3 text-xs sm:text-sm"></i> 5900 Balcones Drive STE 100 Suite 456,<br>Austin, TX, 78731 USA</li>
+          <li class="flex items-center"><i class="fa-solid fa-envelope mr-2 sm:mr-3 text-xs sm:text-sm"></i> info@inkwell-impressions.com</li>
+          <li class="flex items-center"><i class="fa-solid fa-phone mr-2 sm:mr-3 text-xs sm:text-sm"></i> +1 (212) 555-7890</li>
         </ul>
       </div>
     </div>
 
-    <div
-      class="container mx-auto px-8 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+    <!-- Bottom Bar -->
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 border-t border-gray-700 pt-4 sm:pt-5 md:pt-6 flex flex-col sm:flex-row justify-between items-center text-[10px] sm:text-xs text-gray-500">
       <p>&copy; 2026 Inkwell Impressions Solutions. All Rights Reserved.</p>
-      <div class="space-x-4 mt-4 md:mt-0">
-        <span class="hover:text-white cursor-pointer">Pri vacy Policy</span>
-        <span class="hover:text-white cursor-pointer">Terms & Conditions</span>
+      <div class="space-x-3 sm:space-x-4 mt-3 sm:mt-0">
+        <span class="hover:text-white cursor-pointer">Privacy Policy</span>
+        <span class="hover:text-white cursor-pointer">Terms &amp; Conditions</span>
       </div>
     </div>
   </footer>
 
-  <!-- ═══ GSAP – subtle premium motion ═══ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
-  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./config/about.js"></script>
+
+  <!-- Mobile Menu Toggle -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      gsap.registerPlugin(ScrollTrigger);
-
-      const ease = 'power2.out';
-
-      // ---------- 1. Fade-up for intro ----------
-      const fadeEls = document.querySelectorAll('.gsap-fade-up');
-      if (fadeEls.length) {
-        gsap.fromTo(fadeEls, { opacity: 0, y: 20 }, {
-          opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: ease,
-          scrollTrigger: { trigger: fadeEls[0], start: 'top 88%', toggleActions: 'play none none none' }
-        });
-      }
-
-      // ---------- 2. Features container ----------
-      const featContainer = document.querySelector('.gsap-features');
-      if (featContainer) {
-        gsap.fromTo(featContainer, { opacity: 0, y: 16 }, {
-          opacity: 1, y: 0, duration: 0.7, ease: ease,
-          scrollTrigger: { trigger: featContainer, start: 'top 90%', toggleActions: 'play none none none' }
-        });
-      }
-
-      // ---------- 3. Individual feature items stagger ----------
-      const featItems = document.querySelectorAll('.feature-item');
-      if (featItems.length) {
-        gsap.fromTo(featItems, { opacity: 0, y: 10 }, {
-          opacity: 1, y: 0, duration: 0.5, stagger: 0.06, ease: ease,
-          scrollTrigger: { trigger: featItems[0], start: 'top 92%', toggleActions: 'play none none none' }
-        });
-      }
-
-      // ---------- 4. Stats container (gsap-stats) ----------
-      const statsContainer = document.querySelector('.gsap-stats');
-      if (statsContainer) {
-        gsap.fromTo(statsContainer, { opacity: 0, y: 16 }, {
-          opacity: 1, y: 0, duration: 0.7, ease: ease,
-          scrollTrigger: { trigger: statsContainer, start: 'top 90%', toggleActions: 'play none none none' }
-        });
-      }
-
-      // ---------- 5. Stat cards: fade + slide + counter ----------
-      const statCards = document.querySelectorAll('.stat-card');
-      if (statCards.length) {
-        // first, reveal each card with stagger
-        gsap.fromTo(statCards, { opacity: 0, y: 20 }, {
-          opacity: 1, y: 0, duration: 0.6, stagger: 0.08, ease: ease,
-          scrollTrigger: {
-            trigger: statCards[0],
-            start: 'top 90%',
-            toggleActions: 'play none none none',
-            // once revealed, trigger counter
-            onEnter: () => {
-              statCards.forEach(card => {
-                const numSpan = card.querySelector('.counter-num');
-                if (!numSpan) return;
-                const target = parseInt(card.getAttribute('data-count'), 10);
-                if (isNaN(target)) return;
-                // only count once
-                if (card.dataset.counted === 'true') return;
-                card.dataset.counted = 'true';
-
-                // GSAP counter animation
-                gsap.fromTo(numSpan, { innerText: 0 }, {
-                  innerText: target,
-                  duration: 1.4,
-                  ease: 'power2.out',
-                  snap: { innerText: 1 },
-                  onUpdate: function () {
-                    numSpan.innerText = Math.floor(parseFloat(numSpan.innerText));
-                  }
-                });
-              });
-            },
-            // prevent re-trigger
-            once: true
-          }
-        });
-      }
-
-      // ---------- 6. Trust badge (safely guard) ----------
-      const trust = document.querySelector('.gsap-trust');
-      if (trust) {
-        gsap.fromTo(trust, { opacity: 0, y: 14 }, {
-          opacity: 1, y: 0, duration: 0.6, ease: ease,
-          scrollTrigger: { trigger: trust, start: 'top 92%', toggleActions: 'play none none none' }
-        });
-      }
-
-      // ---------- 7. Additional: Story/Mission/Vision cards stagger (already part of gsap-fade-up, but we add a subtle extra stagger) ----------
-      const storyCards = document.querySelectorAll('.story-mission-card');
-      if (storyCards.length && !document.querySelector('.gsap-fade-up')) {
-        // only if not already handled by fade-up
-        gsap.fromTo(storyCards, { opacity: 0, y: 15 }, {
-          opacity: 1, y: 0, duration: 0.6, stagger: 0.08, ease: ease,
-          scrollTrigger: { trigger: storyCards[0], start: 'top 88%', toggleActions: 'play none none none' }
-        });
-      }
-
+    document.getElementById('hamburgerBtn').addEventListener('click', function() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('hamburgerIcon');
+      menu.classList.toggle('hidden');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
     });
   </script>
 

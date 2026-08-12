@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inkwell Impressions | Luxury Showcase</title>
+  <title>Inkwell Impressions | Awwwards · Apple Premium</title>
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
 
-  <!-- Tailwind CSS -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,22 +36,52 @@
   </script>
 
   <style>
-    /* --- reset & base --- */
+    /* reset + base */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body,
     html {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background-color: #0B132B;
+      background: #0B132B;
       font-family: 'Inter', sans-serif;
     }
 
-    /* --- slide layers --- */
+    /* custom cursor - hidden on mobile */
+    .custom-cursor {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(201, 169, 110, 0.15);
+      border: 1.5px solid rgba(201, 169, 110, 0.6);
+      backdrop-filter: blur(2px);
+      transform: translate(-50%, -50%);
+      transition: width 0.2s, height 0.2s, background 0.2s;
+      mix-blend-mode: difference;
+    }
+
+    .custom-cursor.hover {
+      width: 56px;
+      height: 56px;
+      background: rgba(214, 40, 40, 0.2);
+      border-color: #D62828;
+    }
+
+    @media (max-width: 1024px) {
+      .custom-cursor {
+        display: none !important;
+      }
+    }
+
+    /* slides */
     .slide {
       opacity: 0;
       visibility: hidden;
@@ -57,17 +90,19 @@
       z-index: 1;
       transition: opacity 0.2s;
     }
+
     .slide.active {
       opacity: 1;
       visibility: visible;
       z-index: 10;
     }
 
-    /* --- 3D product wrapper --- */
+    /* product wrapper 3D */
     .product-wrapper {
       perspective: 1800px;
       transform-style: preserve-3d;
     }
+
     .product-render {
       will-change: transform, opacity;
       transform-style: preserve-3d;
@@ -79,15 +114,15 @@
       height: 100%;
       position: relative;
     }
+
     .product-render img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      max-height: 82vh;
       filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.25));
       transition: filter 0.4s;
     }
-    /* subtle reflection via pseudo */
+
     .product-render::after {
       content: '';
       position: absolute;
@@ -102,7 +137,6 @@
       z-index: 0;
     }
 
-    /* --- floor shadow (realistic) --- */
     .floor-shadow {
       position: absolute;
       bottom: -10px;
@@ -115,19 +149,18 @@
       pointer-events: none;
       z-index: -1;
     }
+
     .dark-bg .floor-shadow {
       background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 75%);
     }
 
-    /* --- premium glass navigation --- */
+    /* glass nav - RESPONSIVE FIXED */
     .nav-btn {
-      width: 56px;
-      height: 56px;
       border-radius: 50%;
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      backdrop-filter: blur(16px) saturate(200%);
+      -webkit-backdrop-filter: blur(16px) saturate(200%);
       background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
       transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
       color: rgba(255, 255, 255, 0.8);
@@ -136,7 +169,10 @@
       justify-content: center;
       cursor: pointer;
       pointer-events: auto;
+      width: 40px;
+      height: 40px;
     }
+
     .nav-btn:hover {
       transform: scale(1.08);
       background: rgba(214, 40, 40, 0.85);
@@ -144,24 +180,63 @@
       color: #fff;
       box-shadow: 0 12px 40px rgba(214, 40, 40, 0.35);
     }
+
     .nav-btn svg {
-      width: 28px;
-      height: 28px;
+      width: 20px;
+      height: 20px;
       stroke-width: 1.2;
     }
 
-    /* --- progress indicator --- */
+    @media (min-width: 640px) {
+      .nav-btn {
+        width: 48px;
+        height: 48px;
+      }
+
+      .nav-btn svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .nav-btn {
+        width: 56px;
+        height: 56px;
+      }
+
+      .nav-btn svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    /* progress - RESPONSIVE FIXED */
     .progress-indicator {
       font-feature-settings: "ss02" on;
       letter-spacing: 0.15em;
       background: rgba(0, 0, 0, 0.15);
       backdrop-filter: blur(8px);
-      padding: 0.4rem 1.2rem;
+      padding: 0.3rem 0.8rem;
       border-radius: 40px;
       border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.7rem;
     }
 
-    /* --- category label (floating tag) --- */
+    @media (min-width: 640px) {
+      .progress-indicator {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .progress-indicator {
+        font-size: 1rem;
+      }
+    }
+
+    /* category tag */
     .category-tag {
       display: inline-block;
       background: rgba(255, 255, 255, 0.04);
@@ -176,59 +251,66 @@
       font-weight: 400;
     }
 
-    /* --- unique background environments --- */
+    /* bg variants */
     .bg-tote {
       background: #F5EFE6;
-      background-image: radial-gradient(circle at 70% 40%, rgba(214, 40, 40, 0.06) 0%, transparent 60%),
-                        repeating-linear-gradient(45deg, rgba(0,0,0,0.01) 0px, rgba(0,0,0,0.01) 2px, transparent 2px, transparent 8px);
+      background-image: radial-gradient(circle at 70% 40%, rgba(214, 40, 40, 0.06) 0%, transparent 60%), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.01) 0px, rgba(0, 0, 0, 0.01) 2px, transparent 2px, transparent 8px);
     }
+
     .bg-apparel {
       background: radial-gradient(ellipse at 50% 30%, #2A3A5C 0%, #0B132B 80%);
     }
+
     .bg-gifts {
       background: #FCF9F2;
       background-image: radial-gradient(circle at 30% 80%, rgba(201, 169, 110, 0.08) 0%, transparent 50%);
     }
+
     .bg-packaging {
       background: #EDF0F5;
       background-image: radial-gradient(circle at 70% 60%, #ffffff 0%, #dce1ea 100%);
     }
+
     .bg-printing {
       background: #F7F8FA;
-      background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.01) 0px, rgba(0,0,0,0.01) 1px, transparent 1px, transparent 12px);
+      background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.01) 0px, rgba(0, 0, 0, 0.01) 1px, transparent 1px, transparent 12px);
     }
+
     .bg-tech {
-      background: radial-gradient(ellipse at 60% 20%, rgba(214, 40, 40, 0.08) 0%, transparent 50%),
-                  radial-gradient(ellipse at 20% 80%, #1C2541 0%, #050914 100%);
+      background: radial-gradient(ellipse at 60% 20%, rgba(214, 40, 40, 0.08) 0%, transparent 50%), radial-gradient(ellipse at 20% 80%, #1C2541 0%, #050914 100%);
       background-color: #050914;
     }
 
-    /* --- editorial typography --- */
+    /* editorial text - RESPONSIVE FIXED */
     .slide-text .category-sup {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       letter-spacing: 0.35em;
       color: #D62828;
       font-weight: 500;
       text-transform: uppercase;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
       display: block;
     }
+
     .slide-text h2 {
       font-family: 'Playfair Display', serif;
       font-weight: 600;
       letter-spacing: -0.02em;
       line-height: 1.05;
     }
+
     .slide-text p {
       font-weight: 300;
       line-height: 1.7;
-      max-width: 28rem;
+      max-width: 100%;
+      font-size: 0.85rem;
     }
+
     .slide-text .btn-luxury {
       background: #D62828;
       color: white;
-      padding: 0.9rem 2.8rem;
-      font-size: 0.7rem;
+      padding: 0.6rem 1.8rem;
+      font-size: 0.6rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       font-weight: 500;
@@ -238,222 +320,381 @@
       transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
       cursor: pointer;
     }
+
     .slide-text .btn-luxury:hover {
       background: #0B132B;
       box-shadow: 0 16px 48px rgba(11, 19, 43, 0.3);
       transform: translateY(-2px);
     }
 
-    /* --- responsive adjustments --- */
-    @media (max-width: 1024px) {
-      .slide-text h2 { font-size: 4.2rem !important; }
-      .product-render img { max-height: 65vh; }
-      .nav-btn { width: 48px; height: 48px; }
+    @media (min-width: 640px) {
+      .slide-text p {
+        font-size: 0.95rem;
+      }
+
+      .slide-text .btn-luxury {
+        padding: 0.7rem 2.2rem;
+        font-size: 0.65rem;
+      }
     }
-    @media (max-width: 768px) {
-      .slide-text h2 { font-size: 3.2rem !important; }
-      .slide-text p { font-size: 0.95rem !important; max-width: 100% !important; }
-      .product-render img { max-height: 50vh; }
-      .nav-btn { width: 40px; height: 40px; }
-      .nav-btn svg { width: 20px; height: 20px; }
-      .floor-shadow { height: 80px; width: 80%; bottom: -5px; }
+
+    @media (min-width: 768px) {
+      .slide-text p {
+        max-width: 28rem;
+        font-size: 1rem;
+      }
+
+      .slide-text .btn-luxury {
+        padding: 0.9rem 2.8rem;
+        font-size: 0.7rem;
+      }
     }
+
+    /* morphing blob background - RESPONSIVE */
+    .blob-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.3;
+      animation: morph 12s ease-in-out infinite alternate;
+    }
+
+    @keyframes morph {
+      0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        transform: translate(0, 0) scale(1) rotate(0deg);
+      }
+
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        transform: translate(30px, -20px) scale(1.2) rotate(5deg);
+      }
+
+      100% {
+        border-radius: 40% 60% 30% 70% / 40% 50% 70% 50%;
+        transform: translate(-20px, 30px) scale(0.9) rotate(-3deg);
+      }
+    }
+
     @media (max-width: 480px) {
-      .slide-text h2 { font-size: 2.4rem !important; }
-      .slide-text p { font-size: 0.8rem !important; }
-      .slide-text .btn-luxury { padding: 0.6rem 1.8rem; font-size: 0.6rem; }
-      .product-render img { max-height: 40vh; }
-      .nav-btn { width: 34px; height: 34px; }
-      .nav-btn svg { width: 16px; height: 16px; }
-      .floor-shadow { height: 50px; width: 90%; }
+      .blob {
+        filter: blur(40px);
+        opacity: 0.15;
+      }
+    }
+
+    /* ============================================================ */
+    /* RESPONSIVE FIXES - COMPLETE */
+    /* ============================================================ */
+
+    /* Slide Text Heading - Mobile First */
+    .slide-text h2 {
+      font-size: 2.2rem !important;
+    }
+
+    @media (min-width: 480px) {
+      .slide-text h2 {
+        font-size: 2.6rem !important;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .slide-text h2 {
+        font-size: 3.2rem !important;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .slide-text h2 {
+        font-size: 4rem !important;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .slide-text h2 {
+        font-size: 5rem !important;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .slide-text h2 {
+        font-size: 6rem !important;
+      }
+    }
+
+    /* Product Image Height - Mobile First */
+    .product-render img {
+      max-height: 35vh;
+    }
+
+    @media (min-width: 480px) {
+      .product-render img {
+        max-height: 40vh;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .product-render img {
+        max-height: 50vh;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .product-render img {
+        max-height: 60vh;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .product-render img {
+        max-height: 82vh;
+      }
+    }
+
+    /* Floor Shadow - Mobile First */
+    .floor-shadow {
+      height: 50px;
+      width: 90%;
+      bottom: -5px;
+    }
+
+    @media (min-width: 640px) {
+      .floor-shadow {
+        height: 80px;
+        width: 80%;
+        bottom: -8px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .floor-shadow {
+        height: 140px;
+        width: 75%;
+        bottom: -10px;
+      }
+    }
+
+    /* Slide Visual Height - Mobile First */
+    .slide-visual {
+      height: 30vh;
+    }
+
+    @media (min-width: 640px) {
+      .slide-visual {
+        height: 45vh;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .slide-visual {
+        height: 55vh;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .slide-visual {
+        height: 100%;
+      }
+    }
+
+    /* Nav arrows position - Mobile First */
+    .fixed .nav-btn {
+      margin: 0 4px;
+    }
+
+    @media (min-width: 640px) {
+      .fixed .nav-btn {
+        margin: 0 8px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .fixed .nav-btn {
+        margin: 0 16px;
+      }
     }
   </style>
 </head>
-<body class="font-sans antialiased text-navy select-none">
-<nav class="bg-navy text-white fixed top-0 left-0 w-full z-50 px-4 sm:px-8 py-1">
+
+<body>
+
+  <!-- custom cursor - hidden on mobile via CSS -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- NAV - RESPONSIVE FIXED -->
+  <nav class="bg-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-
-        <!-- Logo -->
-        <div class="flex items-center shrink-0">
-            <a href="index.html">
-                <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
-                    class="h-32 sm:h-36 lg:h-40 xl:h-48 w-auto object-contain" />
-            </a>
-        </div>
-
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wide">
-            <li><a href="index.html" class="text-accentred">Home</a></li>
-            <li><a href="products.html" class="hover:text-accentred transition">Products</a></li>
-            <li><a class="hover:text-accentred transition">Categories</a></li>
-            <li><a class="hover:text-accentred transition">About Us</a></li>
-            <li><a href="contact.html" class="hover:text-accentred transition">Contact</a></li>
-        </ul>
-
-        <!-- Right -->
-        <div class="flex items-center gap-3 sm:gap-4 shrink-0">
-            <button
-                class="hidden lg:block bg-accentred hover:bg-accentred/80 text-white px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold uppercase tracking-wide transition">
-                LOGIN/SIGNUP
-            </button>
-
-            <i class="fa-solid fa-search cursor-pointer"></i>
-
-            <button id="hamburgerBtn" class="md:hidden text-white text-2xl focus:outline-none"
-                aria-label="Toggle Menu">
-                <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-
+      <!-- Logo - Mobile First: chhota -->
+      <div class="flex items-center shrink-0">
+        <a href="index.html">
+          <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
+            class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
+        </a>
+      </div>
+      <!-- Desktop Menu -->
+      <ul
+        class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
+        <li><a href="index.html" class="hover:text-accentred transition">Home</a></li>
+        <li><a href="products.html" class="hover:text-accentred transition">Products</a></li>
+        <li><a class="text-accentred">Categories</a></li>
+        <li><a class="hover:text-accentred transition">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-accentred transition">Contact</a></li>
+      </ul>
+      <!-- Right -->
+      <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
+        <button
+          class="hidden lg:block bg-accentred hover:bg-accentred/80 text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wide transition">
+          LOGIN/SIGNUP
+        </button>
+        <i class="fa-solid fa-search cursor-pointer text-sm sm:text-base"></i>
+        <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
+          aria-label="Toggle Menu">
+          <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
-</nav>
+  </nav>
 
-  <!-- --- Navigation (glass) --- -->
-  <div class="fixed inset-0 z-50 pointer-events-none flex items-center justify-between px-4 md:px-8 lg:px-16">
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+    class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
+    <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
+      <li><a href="index.html" class="block py-2 border-b border-gray-700">Home</a></li>
+      <li><a href="products.html"
+          class="hover:text-accentred block py-2 border-b border-gray-700 transition">Products</a></li>
+      <li><a href="categories.html" class="text-accentred block py-2 border-b border-gray-700">Categories</a></li>
+      <li><a href="about.html" class="hover:text-accentred block py-2 border-b border-gray-700 transition">About Us</a>
+      </li>
+      <li><a href="contact.html" class="hover:text-accentred block py-2 border-b border-gray-700 transition">Contact</a>
+      </li>
+    </ul>
+    <button
+      class="w-full bg-accentred hover:bg-accentred/80 text-white px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wide transition mt-1 sm:mt-2">
+      LOGIN/SIGNUP
+    </button>
+  </div>
+
+  <!-- Navigation glass - RESPONSIVE FIXED -->
+  <div class="fixed inset-0 z-50 pointer-events-none flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-16">
     <button id="btn-prev" class="nav-btn pointer-events-auto" aria-label="Previous">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M15 19l-7-7 7-7"/></svg>
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M15 19l-7-7 7-7" />
+      </svg>
     </button>
     <button id="btn-next" class="nav-btn pointer-events-auto" aria-label="Next">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 5l7 7-7 7"/></svg>
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 5l7 7-7 7" />
+      </svg>
     </button>
   </div>
 
-  <!-- --- Progress Indicator (elegant) --- -->
-  <div class="fixed bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-50 pointer-events-none mix-blend-difference">
-    <div class="progress-indicator text-white font-serif text-sm md:text-base tracking-[0.25em]">
-      <span id="current-slide">01</span> <span class="text-white/30 mx-1">/</span> <span class="text-white/30">06</span>
+  <!-- Progress - RESPONSIVE FIXED -->
+  <div
+    class="fixed bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 left-1/2 -translate-x-1/2 z-50 pointer-events-none mix-blend-difference">
+    <div class="progress-indicator text-white font-serif tracking-[0.25em]">
+      <span id="current-slide">01</span> <span class="text-white/30 mx-0.5 sm:mx-1">/</span> <span
+        class="text-white/30">06</span>
     </div>
   </div>
 
-  <!-- --- Carousel --- -->
-  <main id="carousel" class="relative w-full h-full overflow-hidden mt-[100px]">
+  <!-- Carousel -->
+  <main id="carousel" class="relative w-full h-full overflow-hidden mt-[60px] sm:mt-[70px] md:mt-[80px]">
 
-    <!-- Slide 1: Tote Bags -->
-    <section class="slide active bg-tote text-navy ">
-<div class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-2 sm:gap-4 lg:gap-0">        <div class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0">
-          <span class="category-sup">Category 01</span>
-          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] mb-4 md:mb-6">Tote<br>Bags</h2>
-          <p class="text-base md:text-xl text-gray-700 font-light mb-6 md:mb-10 leading-relaxed">
-            Premium custom printed canvas. Sustainable, heavy‑grade materials engineered for elevated corporate identities.
-          </p>
-          <div>
-            <button class="btn-luxury">Explore Products</button>
-          </div>
+    <!-- Slide 1: Tote -->
+    <section class="slide active bg-tote text-navy">
+      <div class="blob-bg">
+        <div class="blob" style="width:200px;height:200px;background:#D62828;top:-10%;right:-5%;opacity:0.06;"></div>
+      </div>
+      <div
+        class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
+        <div
+          class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
+          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Tote<br>Bags</h2>
+          <p class="text-gray-700 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Premium custom printed
+            canvas. Sustainable, heavy‑grade materials engineered for elevated corporate identities.</p>
+          <div class="flex justify-center lg:justify-start"><button class="btn-luxury">Explore Products</button></div>
         </div>
-        <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center h-[25vh] sm:h-[55vh] md:h-[65vh] lg:h-full relative product-wrapper">
+        <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/tote-category.webp" alt="Tote Bag" class="w-full h-full object-contain" style="max-height: 100vh;" />
+            <img src="assets/categories tote.png" alt="Tote Bag" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 2: Printed Apparel -->
+    <!-- Slide 2: Apparel -->
     <section class="slide bg-apparel text-white dark-bg">
-      <div class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-2 sm:gap-4 lg:gap-0">
-        <div class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0">
-          <span class="category-sup">Category 02</span>
-          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] mb-4 md:mb-6">Printed<br>Apparel</h2>
-          <p class="text-base md:text-xl text-gray-300 font-light mb-6 md:mb-10 leading-relaxed">
-            Floating fabrics with intricate thread details. Crisp, color‑accurate prints that command global attention.
-          </p>
-          <div>
-            <button class="btn-luxury">Explore Products</button>
-          </div>
+      <div class="blob-bg">
+        <div class="blob" style="width:250px;height:250px;background:#D62828;bottom:-20%;left:-10%;opacity:0.05;"></div>
+      </div>
+      <div
+        class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
+        <div
+          class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
+          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Printed<br>Apparel</h2>
+          <p class="text-gray-300 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Floating fabrics with
+            intricate thread details. Crisp, color‑accurate prints that command global attention.</p>
+          <div class="flex justify-center lg:justify-start"><button class="btn-luxury">Explore Products</button></div>
         </div>
-         <div class="slide-visual w-full lg:w-12/12 flex justify-center items-center h-[25vh] sm:h-[55vh] md:h-[65vh] lg:h-full relative product-wrapper">
+        <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/shirt.webp" alt="Tote Bag" class="w-full h-full object-contain" style="max-height: 100vh;" />
+            <img src="assets/shirt.webp" alt="Apparel" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 3: Corporate Gifts -->
+    <!-- Slide 3: Gifts -->
     <section class="slide bg-gifts text-navy">
-      <div class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-2 sm:gap-4 lg:gap-0">
-        <div class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0">
-          <span class="category-sup">Category 03</span>
-          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] mb-4 md:mb-6">Corporate<br>Gifts</h2>
-          <p class="text-base md:text-xl text-gray-700 font-light mb-6 md:mb-10 leading-relaxed">
-            Curated luxury in customized matte‑finish boxes. Premium stationery and executive products for lasting impressions.
-          </p>
-          <div>
-            <button class="btn-luxury">Explore Products</button>
-          </div>
+      <div class="blob-bg">
+        <div class="blob" style="width:220px;height:220px;background:#C9A96E;top:20%;right:-5%;opacity:0.06;"></div>
+      </div>
+      <div
+        class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
+        <div
+          class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
+          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Corporate<br>Gifts</h2>
+          <p class="text-gray-700 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Curated luxury in customized
+            matte‑finish boxes. Premium stationery and executive products for lasting impressions.</p>
+          <div class="flex justify-center lg:justify-start"><button class="btn-luxury">Explore Products</button></div>
         </div>
-        <div class="slide-visual w-full lg:w-12/12 flex justify-center items-center h-[25vh] sm:h-[55vh] md:h-[65vh] lg:h-full relative product-wrapper">
+        <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/Corportae gifts.webp" alt="Tote Bag" class="w-full h-full object-contain" style="max-height: 100vh;" />
+            <img src="assets/Corportae gifts.webp" alt="Gifts" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 4: Packaging Solutions -->
-    <!-- <section class="slide bg-packaging text-navy">
-      <div class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-between max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-2 sm:gap-4 lg:gap-0">
-        <div class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0">
-          <span class="category-sup">Category 04</span>
-          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] mb-4 md:mb-6">Packaging<br>Solutions</h2>
-          <p class="text-base md:text-xl text-gray-700 font-light mb-6 md:mb-10 leading-relaxed">
-            Architectural‑grade corrugated and rigid packaging. Engineered for extreme protection, designed for the ultimate unboxing.
-          </p>
-          <div>
-            <button class="btn-luxury">Explore Products</button>
-          </div>
-        </div>
-        <div class="slide-visual w-full lg:w-7/12 flex justify-center items-center h-[25vh] sm:h-[55vh] md:h-[65vh] lg:h-full relative product-wrapper">
-          <div class="product-render w-full h-full flex items-center justify-center">
-            <span class="text-gray-400/40 font-serif italic text-2xl">[ 3D Custom Box ]</span>
-            <div class="floor-shadow"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Slide 5: Printing Solutions -->
-<!--      
-    <section class="slide bg-printing text-navy">
-      <div class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-between max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-2 sm:gap-4 lg:gap-0">
-        <div class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0">
-          <span class="category-sup">Category 05</span>
-          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] mb-4 md:mb-6">Printing<br>Solutions</h2>
-          <p class="text-base md:text-xl text-gray-700 font-light mb-6 md:mb-10 leading-relaxed">
-            High‑fidelity offset and digital commercial printing. Spot UV, foil stamping, and embossing for tactile brand experiences.
-          </p>
-          <div>
-            <button class="btn-luxury">Explore Products</button>
-          </div>
-        </div>
-        <div class="slide-visual w-full lg:w-7/12 flex justify-center items-center h-[25vh] sm:h-[55vh] md:h-[65vh] lg:h-full relative product-wrapper">
-          <div class="product-render w-full h-full flex items-center justify-center">
-            <span class="text-gray-400/40 font-serif italic text-2xl">[ 3D Stacked Business Cards ]</span>
-            <div class="floor-shadow"></div>
-          </div>
-        </div>
-      </div>
-    </section> --> -->
-
-    <!-- Slide 6: Technology Products -->
+    <!-- Slide 4: Tech -->
     <section class="slide bg-tech text-white dark-bg">
-      <div class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-2 sm:gap-4 lg:gap-0">
-        <div class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0">
-          <span class="category-sup">Category 06</span>
-          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] mb-4 md:mb-6">Tech<br>Products</h2>
-          <p class="text-base md:text-xl text-gray-300 font-light mb-6 md:mb-10 leading-relaxed">
-            Premium functional technology etched with your insignia. From high‑capacity power banks to high‑fidelity audio gear.
-          </p>
-          <div>
-            <button class="btn-luxury">Explore Products</button>
-          </div>
+      <div class="blob-bg">
+        <div class="blob" style="width:300px;height:300px;background:#D62828;bottom:-20%;right:-10%;opacity:0.04;">
         </div>
-           <div class="slide-visual w-full lg:w-12/12 flex justify-center items-center h-[25vh] sm:h-[55vh] md:h-[65vh] lg:h-full relative product-wrapper">
+      </div>
+      <div
+        class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
+        <div
+          class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
+          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Tech<br>Products</h2>
+          <p class="text-gray-300 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Premium functional
+            technology etched with your insignia. From high‑capacity power banks to high‑fidelity audio gear.</p>
+          <div class="flex justify-center lg:justify-start"><button class="btn-luxury">Explore Products</button></div>
+        </div>
+        <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/Tech Products.webp" alt="Tote Bag" class="w-full h-full object-contain" style="max-height: 100vh;" />
+            <img src="assets/Tech Products.webp" alt="Tech" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
@@ -461,110 +702,22 @@
     </section>
   </main>
 
-  <!-- GSAP -->
+  <!-- GSAP + Font Awesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <script src="./config/categories.js"></script>
+
+  <!-- Mobile Menu Toggle -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const slides = document.querySelectorAll(".slide");
-      const total = slides.length;
-      const indicator = document.getElementById("current-slide");
-      let current = 0;
-      let isAnimating = false;
-
-      // --- continuous floating + subtle rotation ---
-      slides.forEach((slide) => {
-        const render = slide.querySelector(".product-render");
-        if (render) {
-          gsap.to(render, {
-            y: -18,
-            rotationZ: 0.6,
-            duration: 3.2,
-            ease: "sine.inOut",
-            yoyo: true,
-            repeat: -1,
-          });
-        }
-      });
-
-      // --- premium parallax (depth) ---
-      document.addEventListener("mousemove", (e) => {
-        const x = (e.clientX / window.innerWidth - 0.5) * 24;
-        const y = (e.clientY / window.innerHeight - 0.5) * 24;
-        const active = slides[current];
-        const render = active?.querySelector(".product-render");
-        if (render) {
-          gsap.to(render, {
-            rotationY: x,
-            rotationX: -y,
-            duration: 1.8,
-            ease: "power2.out",
-            overwrite: "auto",
-          });
-        }
-      });
-
-      // --- cinematic transition ---
-      function goToSlide(index) {
-        if (isAnimating || index === current) return;
-        isAnimating = true;
-
-        const cur = slides[current];
-        const next = slides[index];
-        const dir = index > current ? 1 : -1;
-
-        const curText = cur.querySelector(".slide-text").children;
-        const curVis = cur.querySelector(".product-render");
-        const nextText = next.querySelector(".slide-text").children;
-        const nextVis = next.querySelector(".product-render");
-
-        gsap.set(next, { visibility: "visible", zIndex: 10, opacity: 1 });
-        gsap.set(cur, { zIndex: 5 });
-
-        gsap.set(nextVis, { opacity: 0, scale: 1.4, rotationY: dir * 50, z: 400 });
-        gsap.set(nextText, { opacity: 0, y: 40, stagger: 0.1 });
-
-        const tl = gsap.timeline({
-          onComplete: () => {
-            cur.classList.remove("active");
-            next.classList.add("active");
-            gsap.set(cur, { visibility: "hidden", opacity: 0 });
-            current = index;
-            indicator.textContent = `0${current + 1}`;
-            isAnimating = false;
-          },
-        });
-
-        tl.to(curText, { y: -40, opacity: 0, duration: 0.5, stagger: 0.06, ease: "power3.in" }, 0)
-          .to(curVis, { opacity: 0, scale: 0.5, rotationY: dir * -50, z: -400, duration: 0.9, ease: "power3.inOut" }, 0)
-          .to(cur, { opacity: 0, duration: 0.8, ease: "power2.inOut" }, 0.2)
-          .to(nextVis, { opacity: 1, scale: 1, rotationY: 0, z: 0, duration: 1.3, ease: "power4.out" }, 0.5)
-          .to(nextText, { y: 0, opacity: 1, duration: 0.7, stagger: 0.1, ease: "power3.out" }, 0.7);
-      }
-
-      // --- event listeners ---
-      document.getElementById("btn-next").addEventListener("click", () => {
-        let n = current + 1;
-        if (n >= total) n = 0;
-        goToSlide(n);
-      });
-      document.getElementById("btn-prev").addEventListener("click", () => {
-        let p = current - 1;
-        if (p < 0) p = total - 1;
-        goToSlide(p);
-      });
-
-      // keyboard
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "ArrowRight") document.getElementById("btn-next").click();
-        if (e.key === "ArrowLeft") document.getElementById("btn-prev").click();
-      });
-
-      // --- initial entrance ---
-      const initText = slides[0].querySelector(".slide-text").children;
-      const initVis = slides[0].querySelector(".product-render");
-      gsap.from(initText, { y: 50, opacity: 0, duration: 1.2, stagger: 0.15, delay: 0.3, ease: "power4.out" });
-      gsap.from(initVis, { scale: 1.2, rotationY: 18, opacity: 0, duration: 1.6, delay: 0.5, ease: "power3.out" });
+    document.getElementById('hamburgerBtn').addEventListener('click', function () {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('hamburgerIcon');
+      menu.classList.toggle('hidden');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
     });
   </script>
 </body>
+
 </html>
