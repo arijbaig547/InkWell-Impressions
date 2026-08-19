@@ -57,527 +57,8 @@
             }
         }
     </script>
-    <style>
-        /* ============================================================
-           BASE STYLES
-           ============================================================ */
-        body {
-            background-color: #F4F5F9;
-            color: #1A1A2E;
-        }
-
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #F4F5F9;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #17154A;
-            border-radius: 10px;
-        }
-
-        /* ============================================================
-   UTILITY CLASSES
-   ============================================================ */
-        .bg-brand-surface {
-            background: #FFFFFF;
-        }
-
-        .border-brand-border {
-            border-color: rgba(23, 21, 74, 0.08);
-        }
-
-        .color-image-transition {
-            transition: opacity 0.3s ease;
-        }
-
-        /* ============================================================
-   BUTTONS
-   ============================================================ */
-        .btn-crimson {
-            background: #C81F45;
-            color: #fff;
-            transition: all 0.2s;
-        }
-
-        .btn-crimson:hover {
-            background: #B0173C;
-        }
-
-        .btn-outline {
-            border: 1px solid rgba(23, 21, 74, 0.10);
-            background: transparent;
-            transition: all 0.2s;
-            color: #1A1A2E;
-        }
-
-        .btn-outline:hover {
-            border-color: #C81F45;
-            color: #C81F45;
-        }
-
-        /* ============================================================
-   TABLES
-   ============================================================ */
-        .pricing-table th,
-        .pricing-table td {
-            padding: 0.75rem 0.5rem;
-            border-bottom: 1px solid rgba(23, 21, 74, 0.06);
-            text-align: center;
-        }
-
-        .pricing-table th:first-child,
-        .pricing-table td:first-child {
-            text-align: left;
-        }
-
-        .pricing-table thead th {
-            color: #3D3D5C;
-        }
-
-        .pricing-table tbody td {
-            color: #1A1A2E;
-        }
-
-        .pricing-table tbody tr:hover td {
-            background: rgba(23, 21, 74, 0.02);
-        }
-
-        .pricing-extra-row {
-            display: none !important;
-        }
-
-        .pricing-extra-row.show {
-            display: table-row !important;
-        }
-
-        /* ============================================================
-   QUANTITY ROW RED COLOR - FINAL
-   ============================================================ */
-        #pricing-thead th,
-        #pricing-thead tr,
-        #pricing-thead th:first-child,
-        #p-qty-1,
-        #p-qty-2,
-        #p-qty-3,
-        #p-qty-4,
-        #p-qty-5,
-        #p-qty-6 {
-            color: #C81F45 !important;
-        }
-
-        #pricing-thead th[style],
-        #pricing-thead tr[style] {
-            color: #C81F45 !important;
-        }
-
-        #pricing-thead tr * {
-            color: #C81F45 !important;
-        }
-
-        /* Bold bhi chahiye toh yeh bhi add karo */
-        #pricing-thead th,
-        #pricing-thead tr,
-        #p-qty-1,
-        #p-qty-2,
-        #p-qty-3,
-        #p-qty-4,
-        #p-qty-5,
-        #p-qty-6 {
-            font-weight: 700 !important;
-        }
-
-        /* ============================================================
-   TABS
-   ============================================================ */
-        .tab-btn {
-            transition: all 0.2s;
-        }
-
-        .tab-btn.active {
-            color: #C81F45;
-            border-bottom-color: #C81F45;
-        }
-
-        .tab-btn:not(.active) {
-            color: #3D3D5C;
-            border-bottom-color: transparent;
-        }
-
-        .tab-btn:not(.active):hover {
-            color: #1A1A2E;
-        }
-
-        /* ============================================================
-   CARDS
-   ============================================================ */
-        .related-product-card {
-            transition: all 0.3s ease;
-        }
-
-        .related-product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .related-product-card img {
-            transition: transform 0.3s ease;
-        }
-
-        .related-product-card:hover img {
-            transform: scale(1.05);
-        }
-
-        /* ============================================================
-   THUMBNAILS
-   ============================================================ */
-        .thumb-active {
-            border: 2px solid #C81F45;
-        }
-
-        /* ============================================================
-   FILE UPLOAD
-   ============================================================ */
-        .file-upload-wrapper {
-            position: relative;
-        }
-
-        .file-input {
-            position: absolute;
-            opacity: 0;
-            width: 0.1px;
-            height: 0.1px;
-            z-index: -1;
-        }
-
-        .file-label {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 16px;
-            border: 2px dashed rgba(23, 21, 74, 0.15);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s;
-            background: #F8F9FC;
-            color: #3D3D5C;
-            font-size: 14px;
-            flex-wrap: wrap;
-        }
-
-        .file-label:hover {
-            border-color: #C81F45;
-            background: #fff;
-        }
-
-        .file-label .file-name {
-            color: #1A1A2E;
-            font-weight: 500;
-            margin-left: auto;
-            font-size: 13px;
-        }
-
-        /* ============================================================
-   MODALS
-   ============================================================ */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(8px);
-            z-index: 1000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .modal-overlay.active {
-            display: flex;
-        }
-
-        .modal-content {
-            background: #FFFFFF;
-            border-radius: 20px;
-            max-width: 650px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
-            animation: modalSlideIn 0.3s ease;
-        }
-
-        @keyframes modalSlideIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .modal-header {
-            background: linear-gradient(135deg, #17154A 0%, #222063 100%);
-            padding: 24px 30px;
-            border-radius: 20px 20px 0 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .modal-header h2 {
-            color: #fff;
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .modal-close {
-            background: rgba(255, 255, 255, 0.15);
-            border: none;
-            color: #fff;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            font-size: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal-close:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: rotate(90deg);
-        }
-
-        .modal-body {
-            padding: 30px;
-        }
-
-        .modal-footer {
-            padding: 16px 30px 24px;
-            border-top: 1px solid rgba(23, 21, 74, 0.06);
-            display: flex;
-            justify-content: flex-end;
-            gap: 12px;
-        }
-
-        .modal-footer .btn-submit {
-            background: #C81F45;
-            color: #fff;
-            padding: 12px 36px;
-            border: none;
-            border-radius: 10px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .modal-footer .btn-submit:hover {
-            background: #B0173C;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(200, 31, 69, 0.3);
-        }
-
-        .modal-footer .btn-cancel {
-            background: transparent;
-            color: #3D3D5C;
-            padding: 12px 24px;
-            border: 1px solid rgba(23, 21, 74, 0.1);
-            border-radius: 10px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .modal-footer .btn-cancel:hover {
-            background: rgba(23, 21, 74, 0.05);
-        }
-
-        /* Quotation Modal - Extra Styles */
-        .modal-quotation {
-            max-width: 700px;
-        }
-
-        .modal-quotation .modal-body {
-            padding: 30px;
-        }
-
-        /* ============================================================
-   FORMS
-   ============================================================ */
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 12px;
-            font-weight: 600;
-            color: #3D3D5C;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 5px;
-        }
-
-        .form-group select,
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px 14px;
-            border: 1px solid rgba(23, 21, 74, 0.12);
-            border-radius: 10px;
-            font-size: 14px;
-            transition: all 0.3s;
-            background: #F8F9FC;
-            color: #1A1A2E;
-        }
-
-        .form-group select:focus,
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #C81F45;
-            box-shadow: 0 0 0 3px rgba(200, 31, 69, 0.1);
-            background: #fff;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .radio-group {
-            display: flex;
-            gap: 16px;
-            padding-top: 6px;
-            flex-wrap: wrap;
-        }
-
-        .radio-group label {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            font-weight: 400;
-            text-transform: none;
-            color: #1A1A2E;
-            cursor: pointer;
-        }
-
-        .radio-group input[type="radio"] {
-            width: 18px;
-            height: 18px;
-            accent-color: #C81F45;
-            cursor: pointer;
-        }
-
-        /* ============================================================
-   RESPONSIVE STYLES
-   ============================================================ */
-        @media (max-width: 640px) {
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
-            .modal-content {
-                max-width: 100%;
-                border-radius: 12px;
-                margin: 10px;
-            }
-
-            .modal-header {
-                padding: 16px 18px;
-            }
-
-            .modal-header h2 {
-                font-size: 18px;
-            }
-
-            .modal-body {
-                padding: 16px 18px;
-            }
-
-            .modal-footer {
-                padding: 14px 18px;
-                flex-direction: column;
-            }
-
-            .modal-footer .btn-submit,
-            .modal-footer .btn-cancel {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .modal-quotation {
-                max-width: 100%;
-                margin: 10px;
-                border-radius: 12px;
-            }
-
-            .modal-quotation .modal-body {
-                padding: 16px 18px;
-            }
-
-            .modal-quotation .flex.items-center.gap-4 {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .radio-group {
-                gap: 10px;
-            }
-
-            .radio-group label {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .modal-header h2 {
-                font-size: 16px;
-            }
-
-            .modal-close {
-                width: 32px;
-                height: 32px;
-                font-size: 16px;
-            }
-
-            .form-group label {
-                font-size: 11px;
-            }
-
-            .form-group select,
-            .form-group input,
-            .form-group textarea {
-                font-size: 13px;
-                padding: 8px 12px;
-            }
-
-            .file-label {
-                font-size: 12px;
-                padding: 8px 12px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
 </head>
 
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
@@ -596,7 +77,8 @@
             </div>
 
             <!-- Desktop Menu -->
-            <ul class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
+            <ul
+                class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
                 <li><a href="index.html" class="hover:text-brand-crimson">Home</a></li>
                 <li><a href="products.html" class="text-brand-crimson hover:text-brand-crimson transition">Products</a>
                 </li>
@@ -607,12 +89,16 @@
 
             <!-- Right -->
             <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
-                <button
-                    class="hidden lg:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wide transition">
-                    LOGIN/SIGNUP
-                </button>
+                <a href="contact.html">
+                    <button
+                        class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+                        <span class="relative z-10 flex items-center gap-2">
+                            <i class="fa-solid fa-file-signature text-[9px]"></i>
+                            REQUEST A QUOTE
+                        </span>
+                    </button>
+                </a>
 
-                <i class="fa-solid fa-search cursor-pointer text-sm sm:text-base"></i>
 
                 <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                     aria-label="Toggle Menu">
@@ -639,23 +125,30 @@
         </ul>
 
         <button
-            class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wide transition mt-1 sm:mt-2">
-            LOGIN/SIGNUP
+            class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+            <span class="relative z-10 flex items-center gap-2">
+                <i class="fa-solid fa-file-signature text-[9px]"></i>
+                REQUEST A QUOTE
+            </span>
         </button>
     </div>
 
     <!-- Main Content - RESPONSIVE FIXED -->
-    <main class="max-w-[1440px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 pt-[72px] sm:pt-[80px] md:pt-[100px] lg:pt-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px]" id="app">
+    <main
+        class="max-w-[1440px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 pt-[72px] sm:pt-[80px] md:pt-[100px] lg:pt-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px]"
+        id="app">
 
         <!-- Breadcrumbs - RESPONSIVE FIXED -->
-        <div class="text-[10px] sm:text-xs text-brand-textSecondary mb-4 sm:mb-6 flex items-center flex-wrap gap-1 sm:gap-2">
+        <div
+            class="text-[10px] sm:text-xs text-brand-textSecondary mb-4 sm:mb-6 flex items-center flex-wrap gap-1 sm:gap-2">
             <a href="#" class="hover:text-brand-text transition-colors">Home</a>
             <i class="fa-solid fa-chevron-right text-[6px] sm:text-[8px]"></i>
             <a href="#" class="hover:text-brand-text transition-colors">Products</a>
             <i class="fa-solid fa-chevron-right text-[6px] sm:text-[8px]"></i>
             <a href="#" class="hover:text-brand-text transition-colors">Bags & Totes</a>
             <i class="fa-solid fa-chevron-right text-[6px] sm:text-[8px]"></i>
-            <span class="text-brand-text truncate max-w-[120px] sm:max-w-full" id="product-name-breadcrumb">Loading...</span>
+            <span class="text-brand-text truncate max-w-[120px] sm:max-w-full"
+                id="product-name-breadcrumb">Loading...</span>
         </div>
 
         <!-- Product Layout Grid - RESPONSIVE FIXED -->
@@ -690,16 +183,22 @@
                 <!-- Features Bar - RESPONSIVE FIXED -->
                 <div
                     class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-0 px-3 sm:px-4 py-2 sm:py-3 bg-brand-surface rounded-lg border border-brand-border text-[10px] sm:text-xs text-brand-textSecondary">
-                    <div class="flex items-center gap-1 sm:gap-2"><i class="fa-solid fa-medal text-brand-crimson text-xs sm:text-sm"></i> Premium Quality</div>
-                    <div class="flex items-center gap-1 sm:gap-2"><i class="fa-solid fa-tags text-brand-crimson text-xs sm:text-sm"></i> Bulk Pricing</div>
-                    <div class="flex items-center gap-1 sm:gap-2"><i class="fa-solid fa-bolt text-brand-crimson text-xs sm:text-sm"></i> Fast Turnaround</div>
-                    <div class="flex items-center gap-1 sm:gap-2"><i class="fa-solid fa-globe text-brand-crimson text-xs sm:text-sm"></i> Global Delivery</div>
+                    <div class="flex items-center gap-1 sm:gap-2"><i
+                            class="fa-solid fa-medal text-brand-crimson text-xs sm:text-sm"></i> Premium Quality</div>
+                    <div class="flex items-center gap-1 sm:gap-2"><i
+                            class="fa-solid fa-tags text-brand-crimson text-xs sm:text-sm"></i> Bulk Pricing</div>
+                    <div class="flex items-center gap-1 sm:gap-2"><i
+                            class="fa-solid fa-bolt text-brand-crimson text-xs sm:text-sm"></i> Fast Turnaround</div>
+                    <div class="flex items-center gap-1 sm:gap-2"><i
+                            class="fa-solid fa-globe text-brand-crimson text-xs sm:text-sm"></i> Global Delivery</div>
                 </div>
 
                 <!-- Available Colors - RESPONSIVE FIXED -->
                 <div class="mt-6 sm:mt-[50px]">
-                    <h3 class="text-[10px] sm:text-xs font-bold tracking-wider mb-3 sm:mb-4 text-brand-text">AVAILABLE COLORS</h3>
-                    <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-y-3 sm:gap-y-4 gap-x-1 sm:gap-x-2 text-center" id="color-grid">
+                    <h3 class="text-[10px] sm:text-xs font-bold tracking-wider mb-3 sm:mb-4 text-brand-text">AVAILABLE
+                        COLORS</h3>
+                    <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-y-3 sm:gap-y-4 gap-x-1 sm:gap-x-2 text-center"
+                        id="color-grid">
                     </div>
                 </div>
 
@@ -713,21 +212,26 @@
                     <span
                         class="inline-block border border-brand-crimson text-brand-crimson px-2 py-0.5 text-base sm:text-xl rounded mb-2 sm:mb-3"
                         id="product-code">IB611</span>
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text mb-1" id="product-title">Loading...</h1>
-                    <div class="text-brand-crimson font-script text-2xl sm:text-3xl md:text-4xl mt-[-3px] sm:mt-[-5px]" id="product-subtitle"></div>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text mb-1"
+                        id="product-title">Loading...</h1>
+                    <div class="text-brand-crimson font-script text-2xl sm:text-3xl md:text-4xl mt-[-3px] sm:mt-[-5px]"
+                        id="product-subtitle"></div>
                 </div>
 
-                <p class="text-brand-textSecondary text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 max-w-2xl" id="product-description"></p>
+                <p class="text-brand-textSecondary text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 max-w-2xl"
+                    id="product-description"></p>
 
                 <!-- Specifications Box - RESPONSIVE FIXED -->
-                <div class="grid grid-cols-2 gap-3 sm:gap-10 bg-brand-surface border border-brand-border rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
+                <div
+                    class="grid grid-cols-2 gap-3 sm:gap-10 bg-brand-surface border border-brand-border rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
                     <div class="flex items-center gap-2 sm:gap-3">
                         <div
                             class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-brand-border flex items-center justify-center text-brand-crimson text-xs sm:text-base">
                             <i class="fa-solid fa-arrows-up-down-left-right"></i>
                         </div>
                         <div>
-                            <div class="text-[8px] sm:text-[10px] text-brand-textSecondary uppercase tracking-wider">Item Size</div>
+                            <div class="text-[8px] sm:text-[10px] text-brand-textSecondary uppercase tracking-wider">
+                                Item Size</div>
                             <div class="text-xs sm:text-sm font-medium text-brand-text" id="product-size"></div>
                         </div>
                     </div>
@@ -737,7 +241,8 @@
                             <i class="fa-solid fa-object-group"></i>
                         </div>
                         <div>
-                            <div class="text-[8px] sm:text-[10px] text-brand-textSecondary uppercase tracking-wider">Imprint Area</div>
+                            <div class="text-[8px] sm:text-[10px] text-brand-textSecondary uppercase tracking-wider">
+                                Imprint Area</div>
                             <div class="text-xs sm:text-sm font-medium text-brand-text" id="product-imprint"></div>
                         </div>
                     </div>
@@ -764,7 +269,9 @@
 
                 <!-- Pricing Section - RESPONSIVE FIXED -->
                 <div class="mb-2 sm:mb-4" id="pricing-section">
-                    <div class="text-[8px] sm:text-[10px] font-bold text-brand-textSecondary mb-1 sm:mb-2 tracking-wider">SPOT PRINTING PRICING (USD)</div>
+                    <div
+                        class="text-[8px] sm:text-[10px] font-bold text-brand-textSecondary mb-1 sm:mb-2 tracking-wider">
+                        SPOT PRINTING PRICING (USD)</div>
                     <div class="overflow-x-auto">
                         <table class="w-full pricing-table text-[10px] sm:text-xs min-w-[400px] sm:min-w-full">
                             <thead id="pricing-thead">
@@ -786,37 +293,46 @@
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
                             <!-- Price Includes -->
                             <div class="flex items-start gap-2 sm:gap-3">
-                                <i class="fa-solid fa-certificate text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
+                                <i
+                                    class="fa-solid fa-certificate text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
                                 <div>
                                     <div class="text-[8px] sm:text-[10px] text-brand-textSecondary">Price Includes</div>
-                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium" id="dynamic-price-includes">1 Color, 1 Location</div>
+                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium"
+                                        id="dynamic-price-includes">1 Color, 1 Location</div>
                                 </div>
                             </div>
 
                             <!-- Lead Time -->
                             <div class="flex items-start gap-2 sm:gap-3">
-                                <i class="fa-regular fa-clock text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
+                                <i
+                                    class="fa-regular fa-clock text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
                                 <div>
-                                    <div class="text-[8px] sm:text-[10px] text-brand-textSecondary" id="dynamic-lead-label">Production Time</div>
-                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium" id="dynamic-lead-time">5-7 Business Days</div>
+                                    <div class="text-[8px] sm:text-[10px] text-brand-textSecondary"
+                                        id="dynamic-lead-label">Production Time</div>
+                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium"
+                                        id="dynamic-lead-time">5-7 Business Days</div>
                                 </div>
                             </div>
 
                             <!-- Setup Charge -->
                             <div class="flex items-start gap-2 sm:gap-3" id="setup-charge-container">
-                                <i class="fa-solid fa-gear text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
+                                <i
+                                    class="fa-solid fa-gear text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
                                 <div>
                                     <div class="text-[8px] sm:text-[10px] text-brand-textSecondary">Setup Charge</div>
-                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium" id="dynamic-setup-charge">$56.25 (V)</div>
+                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium"
+                                        id="dynamic-setup-charge">$56.25 (V)</div>
                                 </div>
                             </div>
 
                             <!-- Repeat Setup -->
                             <div class="flex items-start gap-2 sm:gap-3" id="repeat-setup-container">
-                                <i class="fa-regular fa-arrows-rotate text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
+                                <i
+                                    class="fa-regular fa-arrows-rotate text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
                                 <div>
                                     <div class="text-[8px] sm:text-[10px] text-brand-textSecondary">Repeat Setup</div>
-                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium" id="dynamic-repeat-setup">$25.00 (V)</div>
+                                    <div class="text-[10px] sm:text-xs text-brand-text font-medium"
+                                        id="dynamic-repeat-setup">$25.00 (V)</div>
                                 </div>
                             </div>
                         </div>
@@ -851,7 +367,8 @@
         </div>
 
         <!-- Bottom Section: Tabs & Detailed Specs - RESPONSIVE FIXED -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mt-8 sm:mt-12 border-t border-brand-border pt-6 sm:pt-8">
+        <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mt-8 sm:mt-12 border-t border-brand-border pt-6 sm:pt-8">
 
             <!-- Left Column: Tabs - RESPONSIVE FIXED -->
             <div class="lg:col-span-5">
@@ -901,7 +418,8 @@
                 </div>
 
                 <div class="modal-body">
-                    <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
+                    <div
+                        class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
                         <img id="quotationProductImage" src="" alt="Product"
                             class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-lg">
                         <div>
@@ -921,44 +439,54 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="quotationQuantity"><i class="fa-solid fa-hashtag mr-1"></i> Quantity</label>
-                                <input type="number" id="quotationQuantity" name="quantity" placeholder="0" min="1" required>
+                                <input type="number" id="quotationQuantity" name="quantity" placeholder="0" min="1"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <label for="quotationZip"><i class="fa-solid fa-location-dot mr-1"></i> Ship to Zip Code</label>
+                                <label for="quotationZip"><i class="fa-solid fa-location-dot mr-1"></i> Ship to Zip
+                                    Code</label>
                                 <input type="text" id="quotationZip" name="zip_code" placeholder="Enter zip code">
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="quotationCompany"><i class="fa-regular fa-building mr-1"></i> Company Name</label>
-                                <input type="text" id="quotationCompany" name="company" placeholder="Enter company name" required>
+                                <label for="quotationCompany"><i class="fa-regular fa-building mr-1"></i> Company
+                                    Name</label>
+                                <input type="text" id="quotationCompany" name="company" placeholder="Enter company name"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="quotationEmail"><i class="fa-regular fa-envelope mr-1"></i> Email</label>
-                                <input type="email" id="quotationEmail" name="email" placeholder="Enter email address" required>
+                                <input type="email" id="quotationEmail" name="email" placeholder="Enter email address"
+                                    required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="quotationPhone"><i class="fa-solid fa-phone mr-1"></i> Phone</label>
-                                <input type="tel" id="quotationPhone" name="phone" placeholder="Enter phone number" required>
+                                <input type="tel" id="quotationPhone" name="phone" placeholder="Enter phone number"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <label for="quotationAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE #</label>
-                                <input type="text" id="quotationAsi" name="asi_ppai_sage" placeholder="Enter ASI/PPAI/SAGE number">
+                                <label for="quotationAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE
+                                    #</label>
+                                <input type="text" id="quotationAsi" name="asi_ppai_sage"
+                                    placeholder="Enter ASI/PPAI/SAGE number">
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="quotationItem"><i class="fa-solid fa-box mr-1"></i> Item *</label>
-                                <input type="text" id="quotationItem" name="item" placeholder="e.g. IB29, MQIB6000" required>
+                                <input type="text" id="quotationItem" name="item" placeholder="e.g. IB29, MQIB6000"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="quotationItemQty"><i class="fa-solid fa-hashtag mr-1"></i> Qty *</label>
-                                <input type="number" id="quotationItemQty" name="item_qty" placeholder="Enter quantity" min="1" required>
+                                <input type="number" id="quotationItemQty" name="item_qty" placeholder="Enter quantity"
+                                    min="1" required>
                             </div>
                         </div>
 
@@ -976,8 +504,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="quotationDetails"><i class="fa-regular fa-file-lines mr-1"></i> Project Details</label>
-                            <textarea id="quotationDetails" name="project_details" placeholder="Describe your project requirements..." rows="4"></textarea>
+                            <label for="quotationDetails"><i class="fa-regular fa-file-lines mr-1"></i> Project
+                                Details</label>
+                            <textarea id="quotationDetails" name="project_details"
+                                placeholder="Describe your project requirements..." rows="4"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -1015,8 +545,10 @@
                 </div>
 
                 <div class="modal-body">
-                    <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
-                        <img id="mockupProductImage" src="" alt="Product" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-lg">
+                    <div
+                        class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
+                        <img id="mockupProductImage" src="" alt="Product"
+                            class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-lg">
                         <div>
                             <h3 id="mockupProductName" class="font-serif text-base sm:text-lg text-brand-text"></h3>
                             <p id="mockupProductCode" class="text-xs sm:text-sm text-brand-textSecondary"></p>
@@ -1032,20 +564,25 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="mockupLogo"><i class="fa-solid fa-upload mr-1"></i> Upload Logo / Artwork</label>
+                            <label for="mockupLogo"><i class="fa-solid fa-upload mr-1"></i> Upload Logo /
+                                Artwork</label>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="mockupAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE #</label>
-                                    <input type="text" id="mockupAsi" name="asi_ppai_sage" placeholder="Enter ASI/PPAI/SAGE number">
+                                    <label for="mockupAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE
+                                        #</label>
+                                    <input type="text" id="mockupAsi" name="asi_ppai_sage"
+                                        placeholder="Enter ASI/PPAI/SAGE number">
                                 </div>
                                 <div class="form-group">
                                     <label for="mockupItem"><i class="fa-solid fa-box mr-1"></i> Item *</label>
-                                    <input type="text" id="mockupItem" name="item" placeholder="e.g. IB29, MQIB6000" required>
+                                    <input type="text" id="mockupItem" name="item" placeholder="e.g. IB29, MQIB6000"
+                                        required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="mockupItemQty"><i class="fa-solid fa-hashtag mr-1"></i> Qty *</label>
-                                <input type="number" id="mockupItemQty" name="item_qty" placeholder="Enter quantity" min="1" required>
+                                <input type="number" id="mockupItemQty" name="item_qty" placeholder="Enter quantity"
+                                    min="1" required>
                             </div>
                             <div class="file-upload-wrapper">
                                 <input type="file" id="mockupLogo" class="file-input"
@@ -1055,7 +592,8 @@
                                     <span id="mockupFileName" class="file-name">No file chosen</span>
                                 </label>
                             </div>
-                            <p class="text-[8px] sm:text-[10px] text-brand-textSecondary mt-1">Supported: PNG, JPG, SVG, AI, EPS, PDF (Max 10MB)</p>
+                            <p class="text-[8px] sm:text-[10px] text-brand-textSecondary mt-1">Supported: PNG, JPG, SVG,
+                                AI, EPS, PDF (Max 10MB)</p>
                         </div>
 
                         <div class="form-row">
@@ -1086,7 +624,8 @@
                                 <input type="number" id="mockupQuantity" placeholder="Enter quantity" min="0">
                             </div>
                             <div class="form-group">
-                                <label for="mockupLogoColors"><i class="fa-solid fa-palette mr-1"></i> Colors in Logo</label>
+                                <label for="mockupLogoColors"><i class="fa-solid fa-palette mr-1"></i> Colors in
+                                    Logo</label>
                                 <input type="number" id="mockupLogoColors" placeholder="e.g. 1, 2, 4" min="1" max="10">
                             </div>
                         </div>
@@ -1103,8 +642,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="mockupInstructions"><i class="fa-regular fa-comment mr-1"></i> Special Instructions</label>
-                            <textarea id="mockupInstructions" placeholder="Any specific requirements for the mockup?"></textarea>
+                            <label for="mockupInstructions"><i class="fa-regular fa-comment mr-1"></i> Special
+                                Instructions</label>
+                            <textarea id="mockupInstructions"
+                                placeholder="Any specific requirements for the mockup?"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -1127,6 +668,7 @@
         </div>
 
         <!-- FREIGHT ESTIMATE MODAL -->
+        <!-- FREIGHT ESTIMATE MODAL -->
         <div id="freightModal" class="modal-overlay">
             <div class="modal-content modal-freight">
                 <div class="modal-header">
@@ -1137,8 +679,10 @@
                 </div>
 
                 <div class="modal-body">
-                    <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
-                        <img id="freightProductImage" src="" alt="Product" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-lg">
+                    <div
+                        class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
+                        <img id="freightProductImage" src="" alt="Product"
+                            class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-lg">
                         <div>
                             <h3 id="freightProductName" class="font-serif text-base sm:text-lg text-brand-text"></h3>
                             <p id="freightProductCode" class="text-xs sm:text-sm text-brand-textSecondary"></p>
@@ -1146,15 +690,37 @@
                     </div>
 
                     <form id="freightForm">
+                        <!-- ===== NEW: ASI / PPAI / SAGE # ===== -->
+                        <div class="form-group">
+                            <label for="freightAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE
+                                #</label>
+                            <input type="text" id="freightAsi" name="asi_number"
+                                placeholder="Enter ASI/PPAI/SAGE number">
+                        </div>
+
+                        <!-- ===== NEW: Item / Style No. ===== -->
+                        <div class="form-group">
+                            <label for="freightItem"><i class="fa-solid fa-box mr-1"></i> Item / Style No.</label>
+                            <input type="text" id="freightItem" name="item" placeholder="e.g. STL-100, BGR-204">
+                        </div>
+
+                        <!-- Quantity -->
+                        <div class="form-group">
+                            <label for="freightQty"><i class="fa-solid fa-hashtag mr-1"></i> Quantity *</label>
+                            <input type="number" id="freightQty" name="item_qty" placeholder="Enter quantity" min="1"
+                                required>
+                        </div>
+
                         <div class="form-group">
                             <label for="freightEmail"><i class="fa-regular fa-envelope mr-1"></i> Your Email *</label>
-                            <input type="email" id="freightEmail" placeholder="Enter your email address" required>
+                            <input type="email" id="freightEmail" name="email" placeholder="Enter your email address"
+                                required>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="freightCountry"><i class="fa-solid fa-globe mr-1"></i> Country *</label>
-                                <select id="freightCountry" required>
+                                <select id="freightCountry" name="country" required>
                                     <option value="">Select Country</option>
                                     <option value="us">United States</option>
                                     <option value="ca">Canada</option>
@@ -1169,8 +735,9 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="freightState"><i class="fa-solid fa-location-dot mr-1"></i> State / Province *</label>
-                                <select id="freightState" required>
+                                <label for="freightState"><i class="fa-solid fa-location-dot mr-1"></i> State / Province
+                                    *</label>
+                                <select id="freightState" name="state" required>
                                     <option value="">Select State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -1228,25 +795,24 @@
 
                         <div class="form-group">
                             <label for="freightZip"><i class="fa-solid fa-mailbox mr-1"></i> Zip / Postal Code *</label>
-                            <input type="text" id="freightZip" placeholder="Enter zip / postal code" required>
+                            <input type="text" id="freightZip" name="zip" placeholder="Enter zip / postal code"
+                                required>
                         </div>
 
                         <div class="form-group">
                             <label><i class="fa-solid fa-house mr-1"></i> Is Residential Address?</label>
                             <div class="radio-group">
                                 <label><input type="radio" name="freightResidential" value="yes"> Yes</label>
-                                <label><input type="radio" name="freightResidential" value="no" checked> No (Commercial)</label>
+                                <label><input type="radio" name="freightResidential" value="no" checked> No
+                                    (Commercial)</label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="freightQuantity"><i class="fa-solid fa-hashtag mr-1"></i> Quantity *</label>
-                            <input type="number" id="freightQuantity" placeholder="Enter quantity" min="1" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="freightInstructions"><i class="fa-regular fa-comment mr-1"></i> Special Instructions</label>
-                            <textarea id="freightInstructions" placeholder="Any special delivery instructions?"></textarea>
+                            <label for="freightInstructions"><i class="fa-regular fa-comment mr-1"></i> Special
+                                Instructions</label>
+                            <textarea id="freightInstructions" name="instructions"
+                                placeholder="Any special delivery instructions?"></textarea>
                         </div>
 
                         <p class="text-xs text-brand-textSecondary mt-2">* Fields are mandatory</p>
@@ -1266,28 +832,38 @@
         <div id="templatesModal" class="modal-overlay">
             <div class="modal-content modal-templates" style="max-width: 800px;">
                 <div class="modal-header">
-                    <h2><i class="fa-regular fa-file-lines mr-2"></i> <span id="templatesProductName">Product</span> - Templates</h2>
+                    <h2><i class="fa-regular fa-file-lines mr-2"></i> <span id="templatesProductName">Product</span> -
+                        Templates</h2>
                     <button class="modal-close" id="closeTemplatesModal">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
 
                 <div class="modal-body">
-                    <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
-                        <img id="templatesProductImage" src="" alt="Product" class="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-lg">
+                    <div
+                        class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
+                        <img id="templatesProductImage" src="" alt="Product"
+                            class="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-lg">
                         <div>
-                            <h3 id="templatesProductNameText" class="font-serif text-base sm:text-lg text-brand-text"></h3>
+                            <h3 id="templatesProductNameText" class="font-serif text-base sm:text-lg text-brand-text">
+                            </h3>
                             <p id="templatesProductCodeText" class="text-xs sm:text-sm text-brand-textSecondary"></p>
-                            <p class="text-[10px] sm:text-xs text-brand-textSecondary mt-1"><b>Imprint Area:</b> <span id="templatesImprintArea"></span></p>
+                            <p class="text-[10px] sm:text-xs text-brand-textSecondary mt-1"><b>Imprint Area:</b> <span
+                                    id="templatesImprintArea"></span></p>
                         </div>
                     </div>
 
                     <div class="overflow-x-auto">
-                        <table class="w-full text-xs sm:text-sm border border-brand-border rounded-lg min-w-[400px] sm:min-w-full">
+                        <table
+                            class="w-full text-xs sm:text-sm border border-brand-border rounded-lg min-w-[400px] sm:min-w-full">
                             <thead class="bg-brand-bg/50">
                                 <tr>
-                                    <th class="text-left p-2 sm:p-3 font-semibold text-brand-text border-b border-brand-border">Template</th>
-                                    <th class="text-center p-2 sm:p-3 font-semibold text-brand-text border-b border-brand-border">Download</th>
+                                    <th
+                                        class="text-left p-2 sm:p-3 font-semibold text-brand-text border-b border-brand-border">
+                                        Template</th>
+                                    <th
+                                        class="text-center p-2 sm:p-3 font-semibold text-brand-text border-b border-brand-border">
+                                        Download</th>
                                 </tr>
                             </thead>
                             <tbody id="templatesTableBody">
@@ -1322,7 +898,21 @@
 
     <script src="./config/product.js"></script>
 
-  
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
 
 </body>
 

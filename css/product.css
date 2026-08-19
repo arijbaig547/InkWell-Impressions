@@ -1,0 +1,519 @@
+  /* ============================================================
+           BASE STYLES
+           ============================================================ */
+        body {
+            background-color: #F4F5F9;
+            color: #1A1A2E;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F4F5F9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #17154A;
+            border-radius: 10px;
+        }
+
+        /* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+        .bg-brand-surface {
+            background: #FFFFFF;
+        }
+
+        .border-brand-border {
+            border-color: rgba(23, 21, 74, 0.08);
+        }
+
+        .color-image-transition {
+            transition: opacity 0.3s ease;
+        }
+
+        /* ============================================================
+   BUTTONS
+   ============================================================ */
+        .btn-crimson {
+            background: #C81F45;
+            color: #fff;
+            transition: all 0.2s;
+        }
+
+        .btn-crimson:hover {
+            background: #B0173C;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(23, 21, 74, 0.10);
+            background: transparent;
+            transition: all 0.2s;
+            color: #1A1A2E;
+        }
+
+        .btn-outline:hover {
+            border-color: #C81F45;
+            color: #C81F45;
+        }
+
+        /* ============================================================
+   TABLES
+   ============================================================ */
+        .pricing-table th,
+        .pricing-table td {
+            padding: 0.75rem 0.5rem;
+            border-bottom: 1px solid rgba(23, 21, 74, 0.06);
+            text-align: center;
+        }
+
+        .pricing-table th:first-child,
+        .pricing-table td:first-child {
+            text-align: left;
+        }
+
+        .pricing-table thead th {
+            color: #3D3D5C;
+        }
+
+        .pricing-table tbody td {
+            color: #1A1A2E;
+        }
+
+        .pricing-table tbody tr:hover td {
+            background: rgba(23, 21, 74, 0.02);
+        }
+
+        .pricing-extra-row {
+            display: none !important;
+        }
+
+        .pricing-extra-row.show {
+            display: table-row !important;
+        }
+
+        /* ============================================================
+   QUANTITY ROW RED COLOR - FINAL
+   ============================================================ */
+        #pricing-thead th,
+        #pricing-thead tr,
+        #pricing-thead th:first-child,
+        #p-qty-1,
+        #p-qty-2,
+        #p-qty-3,
+        #p-qty-4,
+        #p-qty-5,
+        #p-qty-6 {
+            color: #C81F45 !important;
+        }
+
+        #pricing-thead th[style],
+        #pricing-thead tr[style] {
+            color: #C81F45 !important;
+        }
+
+        #pricing-thead tr * {
+            color: #C81F45 !important;
+        }
+
+        /* Bold bhi chahiye toh yeh bhi add karo */
+        #pricing-thead th,
+        #pricing-thead tr,
+        #p-qty-1,
+        #p-qty-2,
+        #p-qty-3,
+        #p-qty-4,
+        #p-qty-5,
+        #p-qty-6 {
+            font-weight: 700 !important;
+        }
+
+        /* ============================================================
+   TABS
+   ============================================================ */
+        .tab-btn {
+            transition: all 0.2s;
+        }
+
+        .tab-btn.active {
+            color: #C81F45;
+            border-bottom-color: #C81F45;
+        }
+
+        .tab-btn:not(.active) {
+            color: #3D3D5C;
+            border-bottom-color: transparent;
+        }
+
+        .tab-btn:not(.active):hover {
+            color: #1A1A2E;
+        }
+
+        /* ============================================================
+   CARDS
+   ============================================================ */
+        .related-product-card {
+            transition: all 0.3s ease;
+        }
+
+        .related-product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-product-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .related-product-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* ============================================================
+   THUMBNAILS
+   ============================================================ */
+        .thumb-active {
+            border: 2px solid #C81F45;
+        }
+
+        /* ============================================================
+   FILE UPLOAD
+   ============================================================ */
+        .file-upload-wrapper {
+            position: relative;
+        }
+
+        .file-input {
+            position: absolute;
+            opacity: 0;
+            width: 0.1px;
+            height: 0.1px;
+            z-index: -1;
+        }
+
+        .file-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border: 2px dashed rgba(23, 21, 74, 0.15);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: #F8F9FC;
+            color: #3D3D5C;
+            font-size: 14px;
+            flex-wrap: wrap;
+        }
+
+        .file-label:hover {
+            border-color: #C81F45;
+            background: #fff;
+        }
+
+        .file-label .file-name {
+            color: #1A1A2E;
+            font-weight: 500;
+            margin-left: auto;
+            font-size: 13px;
+        }
+
+        /* ============================================================
+   MODALS
+   ============================================================ */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #FFFFFF;
+            border-radius: 20px;
+            max-width: 650px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #17154A 0%, #222063 100%);
+            padding: 24px 30px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .modal-close {
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .modal-footer {
+            padding: 16px 30px 24px;
+            border-top: 1px solid rgba(23, 21, 74, 0.06);
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+
+        .modal-footer .btn-submit {
+            background: #C81F45;
+            color: #fff;
+            padding: 12px 36px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .modal-footer .btn-submit:hover {
+            background: #B0173C;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 31, 69, 0.3);
+        }
+
+        .modal-footer .btn-cancel {
+            background: transparent;
+            color: #3D3D5C;
+            padding: 12px 24px;
+            border: 1px solid rgba(23, 21, 74, 0.1);
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .modal-footer .btn-cancel:hover {
+            background: rgba(23, 21, 74, 0.05);
+        }
+
+        /* Quotation Modal - Extra Styles */
+        .modal-quotation {
+            max-width: 700px;
+        }
+
+        .modal-quotation .modal-body {
+            padding: 30px;
+        }
+
+        /* ============================================================
+   FORMS
+   ============================================================ */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: #3D3D5C;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .form-group select,
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid rgba(23, 21, 74, 0.12);
+            border-radius: 10px;
+            font-size: 14px;
+            transition: all 0.3s;
+            background: #F8F9FC;
+            color: #1A1A2E;
+        }
+
+        .form-group select:focus,
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #C81F45;
+            box-shadow: 0 0 0 3px rgba(200, 31, 69, 0.1);
+            background: #fff;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 16px;
+            padding-top: 6px;
+            flex-wrap: wrap;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: none;
+            color: #1A1A2E;
+            cursor: pointer;
+        }
+
+        .radio-group input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #C81F45;
+            cursor: pointer;
+        }
+
+        /* ============================================================
+   RESPONSIVE STYLES
+   ============================================================ */
+        @media (max-width: 640px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .modal-content {
+                max-width: 100%;
+                border-radius: 12px;
+                margin: 10px;
+            }
+
+            .modal-header {
+                padding: 16px 18px;
+            }
+
+            .modal-header h2 {
+                font-size: 18px;
+            }
+
+            .modal-body {
+                padding: 16px 18px;
+            }
+
+            .modal-footer {
+                padding: 14px 18px;
+                flex-direction: column;
+            }
+
+            .modal-footer .btn-submit,
+            .modal-footer .btn-cancel {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .modal-quotation {
+                max-width: 100%;
+                margin: 10px;
+                border-radius: 12px;
+            }
+
+            .modal-quotation .modal-body {
+                padding: 16px 18px;
+            }
+
+            .modal-quotation .flex.items-center.gap-4 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .radio-group {
+                gap: 10px;
+            }
+
+            .radio-group label {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .modal-header h2 {
+                font-size: 16px;
+            }
+
+            .modal-close {
+                width: 32px;
+                height: 32px;
+                font-size: 16px;
+            }
+
+            .form-group label {
+                font-size: 11px;
+            }
+
+            .form-group select,
+            .form-group input,
+            .form-group textarea {
+                font-size: 13px;
+                padding: 8px 12px;
+            }
+
+            .file-label {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }

@@ -1613,77 +1613,85 @@
                 }
             });
 
-            const submitBtn = document.getElementById('submitFreight');
-            if (submitBtn) {
-                submitBtn.addEventListener('click', async function (e) {
-                    e.preventDefault();
+           // ============================================================
+// FREIGHT ESTIMATE SUBMIT - UPDATED WITH ASI & ITEM
+// ============================================================
+const submitBtn = document.getElementById('submitFreight');
+if (submitBtn) {
+    submitBtn.addEventListener('click', async function(e) {
+        e.preventDefault();
 
-                    const btn = this;
-                    const originalText = btn.innerHTML;
+        const btn = this;
+        const originalText = btn.innerHTML;
 
-                    btn.disabled = true;
-                    btn.innerHTML = `
-                    <i class="fa-solid fa-spinner fa-spin mr-2"></i>
-                    Sending...
-                `;
+        // Validate required fields
+        const asi = document.getElementById('freightAsi').value;
+        const item = document.getElementById('freightItem').value;
+        const qty = document.getElementById('freightQty').value;
+        const email = document.getElementById('freightEmail').value;
+        const country = document.getElementById('freightCountry').value;
+        const state = document.getElementById('freightState').value;
+        const zip = document.getElementById('freightZip').value;
 
-                    try {
-                        const email = document.getElementById('freightEmail').value;
-                        const country = document.getElementById('freightCountry').value;
-                        const state = document.getElementById('freightState').value;
-                        const zip = document.getElementById('freightZip').value;
-                        const quantity = document.getElementById('freightQuantity').value;
+        if (!email || !country || !state || !zip || !qty) {
+            alert('⚠️ Please fill in all required fields (*)');
+            return;
+        }
 
-                        if (!email || !country || !state || !zip || !quantity) {
-                            alert('⚠️ Please fill in all required fields (*)');
-                            btn.disabled = false;
-                            btn.innerHTML = originalText;
-                            return;
-                        }
+        btn.disabled = true;
+        btn.innerHTML = `
+                <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+                Sending...
+            `;
 
-                        const formData = new FormData();
-                        formData.append("request_type", "freight");
-                        formData.append("product_name", currentFreightProduct?.name || "");
-                        formData.append("product_code", currentFreightProduct?.code || "");
-                        formData.append("product_size", currentFreightProduct?.size || "");
-                        formData.append("email", email);
-                        formData.append("country", country);
-                        formData.append("state", state);
-                        formData.append("zip", zip);
+        try {
+            const formData = new FormData();
+            formData.append("request_type", "freight");
+            
+            // ===== ALL FIELDS =====
+            formData.append("asi_number", asi || '');
+            formData.append("item", item || '');
+            formData.append("item_qty", qty);
+            formData.append("email", email);
+            formData.append("country", country);
+            formData.append("state", state);
+            formData.append("zip", zip);
 
-                        const residentialRadio = document.querySelector('input[name="freightResidential"]:checked');
-                        formData.append("residential", residentialRadio ? residentialRadio.value : "no");
+            const residentialRadio = document.querySelector('input[name="freightResidential"]:checked');
+            formData.append("residential", residentialRadio ? residentialRadio.value : "no");
 
-                        formData.append("quantity", quantity);
-                        formData.append("instructions", document.getElementById('freightInstructions').value);
+            formData.append("instructions", document.getElementById('freightInstructions').value || '');
+            
+            // Product info (from the page)
+            formData.append("product_name", currentFreightProduct?.name || '');
+            formData.append("product_code", currentFreightProduct?.code || '');
 
-                        const response = await fetch(
-                            "https://inkwell-email-api.arijbaig97.workers.dev",
-                            {
-                                method: "POST",
-                                body: formData
-                            }
-                        );
+            const response = await fetch(
+                "https://inkwell-email-api.arijbaig97.workers.dev", {
+                    method: "POST",
+                    body: formData
+                }
+            );
 
-                        const result = await response.json();
+            const result = await response.json();
 
-                        if (!response.ok) {
-                            throw new Error(result.message || "Failed");
-                        }
-
-                        alert("✅ Freight estimate request sent successfully!");
-                        document.getElementById('freightForm').reset();
-                        closeFreightModal();
-
-                    } catch (error) {
-                        console.error(error);
-                        alert("❌ Failed to send freight estimate request. Please try again.");
-                    } finally {
-                        btn.disabled = false;
-                        btn.innerHTML = originalText;
-                    }
-                });
+            if (!response.ok) {
+                throw new Error(result.message || "Failed");
             }
+
+            alert("✅ Freight estimate request sent successfully!");
+            document.getElementById('freightForm').reset();
+            closeFreightModal();
+
+        } catch (error) {
+            console.error(error);
+            alert("❌ Failed to send freight estimate request. Please try again.");
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = originalText;
+        }
+    });
+}
         }
 
         // ============================================================

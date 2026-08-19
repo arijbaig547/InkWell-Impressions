@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ink Well Impressions — Premium Products</title>
+  <title>Products | Inkwell Impressions</title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,654 +43,20 @@
       }
     }
   </script>
-  <style>
-    body {
-      background-color: #F4F5F9;
-      color: #1A1A2E;
-    }
 
-    .custom-scrollbar::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    .custom-scrollbar::-webkit-scrollbar-track {
-      background: #E9EBF2;
-    }
-
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: #17154A;
-      border-radius: 10px;
-    }
-
-    .header-bg {
-      background: linear-gradient(135deg, #17154A 0%, #222063 70%, #2A2870 100%);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .line-clamp-2 {
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .line-clamp-3 {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .truncate {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .premium-card {
-      background: #FFFFFF;
-      border: 1px solid rgba(23, 21, 74, 0.12);
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(23, 21, 74, 0.06);
-      transition: box-shadow 0.25s ease, transform 0.2s ease, border-color 0.2s;
-    }
-
-    .premium-card:hover {
-      box-shadow: 0 12px 32px rgba(23, 21, 74, 0.10);
-      transform: translateY(-3px);
-      border-color: rgba(23, 21, 74, 0.25);
-    }
-
-    .btn-crimson {
-      background: #C81F45;
-      border: 1px solid #C81F45;
-      color: #fff;
-      transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-    }
-
-    .btn-crimson:hover {
-      background: #B0173C;
-      border-color: #B0173C;
-      box-shadow: 0 4px 12px rgba(200, 31, 69, 0.25);
-    }
-
-    .btn-navy {
-      background: #17154A;
-      border: 1px solid #17154A;
-      color: #FFFFFF;
-      transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-    }
-
-    .btn-navy:hover {
-      background: #222063;
-      border-color: #222063;
-      box-shadow: 0 4px 12px rgba(23, 21, 74, 0.2);
-    }
-
-    .btn-outline-navy {
-      background: transparent;
-      border: 1px solid rgba(23, 21, 74, 0.3);
-      color: #17154A;
-      transition: all 0.2s;
-    }
-
-    .btn-outline-navy:hover {
-      background: #17154A;
-      color: #fff;
-      border-color: #17154A;
-    }
-
-    .brand-divider {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .brand-divider::before,
-    .brand-divider::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: rgba(23, 21, 74, 0.15);
-    }
-
-    .brand-divider i {
-      color: #C81F45;
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
-
-    .input-premium {
-      background: #FFFFFF;
-      border: 1px solid rgba(23, 21, 74, 0.15);
-      color: #1A1A2E;
-      border-radius: 8px;
-      padding: 0.5rem 0.75rem;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-
-    .input-premium:focus {
-      outline: none;
-      border-color: #17154A;
-      box-shadow: 0 0 0 3px rgba(23, 21, 74, 0.08);
-    }
-
-    .input-premium::placeholder {
-      color: #8A8AA8;
-    }
-
-    .nav-premium {
-      background: #FFFFFF;
-      border-bottom: 1px solid rgba(23, 21, 74, 0.08);
-      box-shadow: 0 1px 4px rgba(23, 21, 74, 0.04);
-    }
-
-    .icon-accent {
-      color: #C81F45;
-    }
-
-    .badge-navy {
-      background: #17154A;
-      color: #FFFFFF;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .hover-crimson {
-      transition: color 0.2s;
-    }
-
-    .hover-crimson:hover {
-      color: #C81F45;
-    }
-
-    .footer-premium {
-      background: #FFFFFF;
-      border-top: 1px solid rgba(23, 21, 74, 0.08);
-      border-bottom: 4px solid #C81F45;
-    }
-
-    .sidebar-link {
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .sidebar-link:hover {
-      background: rgba(23, 21, 74, 0.04);
-      color: #17154A;
-    }
-
-    .sidebar-link.active {
-      background: #17154A;
-      color: #FFFFFF;
-    }
-
-    .product-img-bg {
-      background: #F8F9FC;
-      border-radius: 8px;
-    }
-
-    /* Popular Cards */
-    @keyframes float {
-      0%,
-      100% {
-        transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-8px) rotate(0.5deg);
-      }
-    }
-
-    @keyframes glowPulse {
-      0%,
-      100% {
-        border-color: rgba(200, 31, 69, 0.2);
-        box-shadow: 0 4px 15px rgba(23, 21, 74, 0.08);
-      }
-      50% {
-        border-color: rgba(200, 31, 69, 0.5);
-        box-shadow: 0 8px 30px rgba(200, 31, 69, 0.2);
-      }
-    }
-
-    @keyframes tagPulse {
-      0%,
-      100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.08);
-      }
-    }
-
-    @keyframes fireBounce {
-      0%,
-      100% {
-        transform: scale(1) rotate(0deg);
-      }
-      25% {
-        transform: scale(1.3) rotate(-10deg);
-      }
-      75% {
-        transform: scale(1.2) rotate(10deg);
-      }
-    }
-
-    @keyframes pricePop {
-      0%,
-      100% {
-        transform: scale(1);
-        color: #C81F45;
-      }
-      50% {
-        transform: scale(1.08);
-        color: #B0173C;
-      }
-    }
-
-    @keyframes shineSlide {
-      0% {
-        left: -100%;
-      }
-      100% {
-        left: 200%;
-      }
-    }
-
-    @keyframes particleFloat {
-      0% {
-        transform: translateY(0) scale(0);
-        opacity: 0;
-      }
-      20% {
-        opacity: 1;
-      }
-      80% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-100px) scale(1);
-        opacity: 0;
-      }
-    }
-
-    @keyframes counterPop {
-      0% {
-        transform: scale(0);
-        opacity: 0;
-      }
-      70% {
-        transform: scale(1.3);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    @keyframes arrowBounce {
-      0%,
-      100% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(5px);
-      }
-    }
-
-    @keyframes livePulse {
-      0%,
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        transform: scale(1.5);
-        opacity: 0.5;
-      }
-    }
-
-    .popular-card {
-      position: relative;
-      background: #FFFFFF;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(23, 21, 74, 0.08);
-      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      cursor: pointer;
-      border: 2px solid rgba(200, 31, 69, 0.15);
-      transform-style: preserve-3d;
-      perspective: 800px;
-      animation: float 4s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
-    }
-
-    .popular-card:nth-child(2) {
-      animation-delay: 0.3s;
-    }
-    .popular-card:nth-child(3) {
-      animation-delay: 0.6s;
-    }
-    .popular-card:nth-child(4) {
-      animation-delay: 0.9s;
-    }
-    .popular-card:nth-child(5) {
-      animation-delay: 1.2s;
-    }
-
-    .popular-card:hover {
-      animation-play-state: paused;
-      transform: translateY(-15px) scale(1.03) rotateX(3deg) rotateY(3deg) !important;
-    }
-
-    .popular-tag {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      background: linear-gradient(135deg, #C81F45, #FF6B8A);
-      color: #fff;
-      font-size: 9px;
-      font-weight: 700;
-      padding: 5px 14px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      box-shadow: 0 4px 20px rgba(200, 31, 69, 0.4);
-      z-index: 2;
-      animation: tagPulse 2s ease-in-out infinite;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .popular-tag .fire-emoji {
-      display: inline-block;
-      animation: fireBounce 1s ease-in-out infinite;
-    }
-
-    .popular-price {
-      display: inline-block;
-      animation: pricePop 2.5s ease-in-out infinite;
-    }
-
-    .popular-card .popular-shine {
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg,
-          transparent 0%,
-          rgba(255, 255, 255, 0.15) 30%,
-          rgba(255, 255, 255, 0.25) 50%,
-          rgba(255, 255, 255, 0.15) 70%,
-          transparent 100%);
-      transform: skewX(-25deg);
-      transition: left 0.8s ease;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .popular-card:hover .popular-shine {
-      left: 200%;
-    }
-
-    .popular-particles {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      overflow: hidden;
-      border-radius: 16px;
-      z-index: 0;
-    }
-
-    .particle {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      animation: particleFloat 4s ease-in-out infinite;
-      opacity: 0;
-    }
-
-    .popular-counter {
-      display: inline-block;
-      animation: counterPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-    }
-
-    .popular-card:hover .popular-hover-icon {
-      animation: arrowBounce 0.8s ease-in-out infinite;
-    }
-
-    .popular-card .popular-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      position: relative;
-      z-index: 1;
-    }
-
-    .popular-card:hover .popular-image {
-      transform: scale(1.08);
-    }
-
-    .popular-card .popular-content {
-      padding: 16px;
-      position: relative;
-      background: #FFFFFF;
-      z-index: 1;
-    }
-
-    .popular-card .popular-name {
-      font-size: 14px;
-      font-weight: 600;
-      color: #1A1A2E;
-      margin-bottom: 4px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .popular-card .popular-code {
-      font-size: 11px;
-      color: #6B6B8A;
-      margin-bottom: 4px;
-    }
-
-    .popular-card .popular-hover-icon {
-      position: absolute;
-      right: 16px;
-      bottom: 16px;
-      width: 36px;
-      height: 36px;
-      background: #C81F45;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 14px;
-      opacity: 0;
-      transform: translateX(10px);
-      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      box-shadow: 0 4px 15px rgba(200, 31, 69, 0.3);
-    }
-
-    .popular-card:hover .popular-hover-icon {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .popular-section {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease;
-    }
-
-    .popular-section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .popular-section .popular-badge {
-      position: relative;
-      display: inline-block;
-    }
-
-    .popular-section .popular-badge::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: linear-gradient(90deg, #C81F45, #FF6B8A);
-      border-radius: 2px;
-      transform: scaleX(0);
-      transition: transform 0.6s ease;
-      transform-origin: left;
-    }
-
-    .popular-section .popular-badge:hover::after {
-      transform: scaleX(1);
-    }
-
-    .live-indicator {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background: #22C55E;
-      border-radius: 50%;
-      animation: livePulse 1.5s ease-in-out infinite;
-    }
-
-    /* Mobile Filter Button */
-    .filter-toggle-btn {
-      display: none;
-    }
-
-    /* Sidebar overlay for mobile */
-    .sidebar-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 60;
-    }
-
-    .sidebar-overlay.active {
-      display: block;
-    }
-
-    .sidebar-mobile {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 85%;
-      max-width: 320px;
-      height: 100%;
-      background: #FFFFFF;
-      z-index: 70;
-      overflow-y: auto;
-      transition: left 0.3s ease;
-      padding: 20px;
-      box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .sidebar-mobile.active {
-      left: 0;
-    }
-
-    .sidebar-mobile .close-btn {
-      position: absolute;
-      top: 12px;
-      right: 16px;
-      font-size: 24px;
-      color: #1A1A2E;
-      cursor: pointer;
-      background: none;
-      border: none;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 1023px) {
-      .filter-toggle-btn {
-        display: flex;
-      }
-      .sidebar-desktop {
-        display: none !important;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .popular-card {
-        animation-duration: 3s;
-      }
-      .popular-card:nth-child(2) {
-        animation-delay: 0.2s;
-      }
-      .popular-card:nth-child(3) {
-        animation-delay: 0.4s;
-      }
-      .popular-card:nth-child(4) {
-        animation-delay: 0.6s;
-      }
-      .popular-card:nth-child(5) {
-        animation-delay: 0.8s;
-      }
-      .popular-card .popular-image {
-        height: 150px;
-      }
-      .popular-card .popular-name {
-        font-size: 12px;
-      }
-      .popular-card .popular-price {
-        font-size: 14px;
-      }
-      .popular-tag {
-        font-size: 7px;
-        padding: 3px 10px;
-      }
-      .popular-card .popular-hover-icon {
-        display: none;
-      }
-      .header-bg {
-        padding: 12px 16px !important;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .popular-card .popular-image {
-        height: 120px;
-      }
-      .popular-card .popular-content {
-        padding: 12px;
-      }
-      .popular-card .popular-name {
-        font-size: 11px;
-      }
-      .popular-card .popular-code {
-        font-size: 9px;
-      }
-      .popular-card .popular-price {
-        font-size: 12px;
-      }
-      .popular-card .popular-hover-icon {
-        width: 28px;
-        height: 28px;
-        font-size: 11px;
-        right: 12px;
-        bottom: 12px;
-      }
-      .footer-premium .grid {
-        gap: 16px !important;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/products.css">
 </head>
 
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notification">
+    <div class="flex items-center justify-between">
+      <span id="toastMessage">Product added to cart!</span>
+      <button class="toast-close" onclick="hideToast()">×</button>
+    </div>
+  </div>
 
   <!-- Overlay -->
   <div id="sidebarOverlay" class="sidebar-overlay"></div>
@@ -716,20 +82,28 @@
         </a>
       </div>
 
-      <ul class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
+      <ul
+        class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
         <li><a href="index.html" class="hover:text-brand-crimson transition">Home</a></li>
         <li><a href="products.html" class="text-brand-crimson">Products</a></li>
-        <li><a class="hover:text-brand-crimson transition">Categories</a></li>
-        <li><a class="hover:text-brand-crimson transition">About Us</a></li>
+        <li><a href="categories.html" class="hover:text-brand-crimson transition">Categories</a></li>
+        <li><a href="about.html" class="hover:text-brand-crimson transition">About Us</a></li>
         <li><a href="contact.html" class="hover:text-brand-crimson transition">Contact</a></li>
       </ul>
 
       <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
-        <button class="hidden lg:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wide transition">
-          LOGIN/SIGNUP
-        </button>
-        <i class="fa-solid fa-search cursor-pointer text-sm sm:text-base"></i>
-        <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none" aria-label="Toggle Menu">
+        <a href="contact.html">
+          <button
+            class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+            <span class="relative z-10 flex items-center gap-2">
+              <i class="fa-solid fa-file-signature text-[9px]"></i>
+              REQUEST A QUOTE
+            </span>
+          </button>
+        </a>
+        
+        <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
+          aria-label="Toggle Menu">
           <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -738,25 +112,37 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
+  <div id="mobileMenu"
+    class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
-      <li><a href="index.html" class="text-brand-crimson block py-2 border-b border-gray-700">Home</a></li>
-      <li><a href="products.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Products</a></li>
-      <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
-      <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
-      <li><a href="contact.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
+      <li><a href="index.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Home</a>
+      </li>
+      <li><a href="products.html" class="text-brand-crimson block py-2 border-b border-gray-700">Products</a></li>
+      <li><a href="categories.html"
+          class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
+      <li><a href="about.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About
+          Us</a></li>
+      <li><a href="contact.html"
+          class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
     </ul>
-    <button class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wide transition mt-1 sm:mt-2">
-      LOGIN/SIGNUP
-    </button>
+    <a href="contact.html">
+      <button
+        class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+        <span class="relative z-10 flex items-center gap-2">
+          <i class="fa-solid fa-file-signature text-[9px]"></i>
+          REQUEST A QUOTE
+        </span>
+      </button>
+    </a>
   </div>
-
   <!-- Header -->
   <header class="header-bg text-white py-4 sm:py-6 md:py-8 lg:py-10 px-3 sm:px-4 md:px-6 lg:px-8">
-    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 pt-[72px] sm:pt-[80px] md:pt-[100px] lg:pt-[195px]">
+    <div
+      class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 pt-[72px] sm:pt-[80px] md:pt-[100px] lg:pt-[195px]">
 
       <div class="text-center md:text-left w-full md:w-auto header-content opacity-0">
-        <div class="text-[10px] sm:text-xs text-white/70 mb-2 sm:mb-3 flex items-center justify-center md:justify-start gap-1 sm:gap-2">
+        <div
+          class="text-[10px] sm:text-xs text-white/70 mb-2 sm:mb-3 flex items-center justify-center md:justify-start gap-1 sm:gap-2">
           <a href="#" class="hover:text-white transition-colors">Home</a>
           <i class="fa-solid fa-chevron-right text-[6px] sm:text-[8px]"></i>
           <span class="text-white">Products</span>
@@ -764,10 +150,12 @@
         <h1 class="text-2xl sm:text-3xl md:text-4xl font-serif mb-1 sm:mb-2">
           <span class="text-brand-crimson italic pr-1 sm:pr-2">Our</span>PRODUCTS
         </h1>
-        <p class="text-[11px] sm:text-sm text-white/70 font-light">Premium quality bags and promotional merchandise for your brand</p>
+        <p class="text-[11px] sm:text-sm text-white/70 font-light">Premium quality bags and promotional merchandise for
+          your brand</p>
       </div>
 
-      <div class="flex flex-wrap justify-center md:justify-end gap-3 sm:gap-4 md:gap-6 lg:gap-8 header-features opacity-0">
+      <div
+        class="flex flex-wrap justify-center md:justify-end gap-3 sm:gap-4 md:gap-6 lg:gap-8 header-features opacity-0">
         <div class="flex items-center gap-2 sm:gap-3">
           <i class="fa-solid fa-gear text-brand-crimson text-base sm:text-xl"></i>
           <div>
@@ -801,10 +189,12 @@
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-[1400px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8 flex flex-col lg:flex-row gap-4 sm:gap-6">
+  <main
+    class="max-w-[1400px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8 flex flex-col lg:flex-row gap-4 sm:gap-6">
 
     <!-- Sidebar Desktop -->
-    <aside class="hidden lg:block w-full lg:w-[260px] flex-shrink-0 sidebar-desktop sidebar-anim opacity-0" id="sidebar">
+    <aside class="hidden lg:block w-full lg:w-[260px] flex-shrink-0 sidebar-desktop sidebar-anim opacity-0"
+      id="sidebar">
       <!-- injected by JS -->
     </aside>
 
@@ -812,38 +202,49 @@
     <div class="flex-1 w-full">
 
       <!-- Toolbar with Filter Button -->
-      <div class="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-between premium-card p-2 sm:p-3 mb-4 sm:mb-6 toolbar-anim opacity-0" id="toolbar">
+      <div
+        class="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-between premium-card p-2 sm:p-3 mb-4 sm:mb-6 toolbar-anim opacity-0"
+        id="toolbar">
 
         <!-- Left: Grid/List + Filter Button -->
         <div class="flex items-center gap-2 sm:gap-4 w-full sm:w-auto mb-2 sm:mb-0">
           <div class="flex bg-[#F4F5F9] rounded overflow-hidden border border-brand-border">
-            <button class="px-2 sm:px-3 py-1 sm:py-1.5 bg-brand-navy text-white text-xs sm:text-sm"><i class="fa-solid fa-grid-2"></i></button>
-            <button class="px-2 sm:px-3 py-1 sm:py-1.5 text-brand-textSecondary hover:text-brand-text text-xs sm:text-sm"><i class="fa-solid fa-list"></i></button>
+            <button id="gridViewBtn" class="px-2 sm:px-3 py-1 sm:py-1.5 bg-brand-navy text-white text-xs sm:text-sm"><i
+                class="fa-solid fa-grid-2"></i></button>
+            <button id="listViewBtn"
+              class="px-2 sm:px-3 py-1 sm:py-1.5 text-brand-textSecondary hover:text-brand-text text-xs sm:text-sm"><i
+                class="fa-solid fa-list"></i></button>
           </div>
 
-          <!-- FILTER TOGGLE BUTTON - Mobile pe dikhega -->
-          <button id="filterToggleBtn" class="filter-toggle-btn lg:hidden flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 sm:py-1.5 border border-brand-border rounded-lg text-brand-textSecondary hover:text-brand-text hover:border-brand-navy transition text-xs sm:text-sm">
+          <!-- FILTER TOGGLE BUTTON -->
+          <button id="filterToggleBtn"
+            class="filter-toggle-btn lg:hidden flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 sm:py-1.5 border border-brand-border rounded-lg text-brand-textSecondary hover:text-brand-text hover:border-brand-navy transition text-xs sm:text-sm">
             <i class="fa-solid fa-sliders"></i>
             <span>Filter</span>
           </button>
 
-          <span class="text-[10px] sm:text-sm text-brand-textSecondary" id="product-count-label">Showing 1–12 of 128</span>
+          <span class="text-[10px] sm:text-sm text-brand-textSecondary" id="product-count-label">Showing 1–12 of
+            128</span>
         </div>
 
         <!-- Right: Search + Sort -->
         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3 w-full sm:w-auto">
           <div class="relative w-full sm:w-40 md:w-48">
-            <select id="sort-select" class="w-full appearance-none input-premium cursor-pointer text-xs sm:text-sm py-1.5 sm:py-2">
+            <select id="sort-select"
+              class="w-full appearance-none input-premium cursor-pointer text-xs sm:text-sm py-1.5 sm:py-2">
               <option value="popular">Popular</option>
               <option value="price-low">Price: Low to High</option>
               <option value="price-high">Price: High to Low</option>
               <option value="newest">Newest</option>
             </select>
-            <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-[8px] sm:text-[10px] text-brand-textSecondary pointer-events-none"></i>
+            <i
+              class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-[8px] sm:text-[10px] text-brand-textSecondary pointer-events-none"></i>
           </div>
           <div class="relative w-full sm:w-48 md:w-56 lg:w-64">
-            <input id="search-input" type="text" placeholder="Search..." class="w-full input-premium pl-3 pr-7 sm:pr-8 text-xs sm:text-sm py-1.5 sm:py-2" />
-            <i class="fa-solid fa-magnifying-glass absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 text-brand-textSecondary text-xs sm:text-sm"></i>
+            <input id="search-input" type="text" placeholder="Search products..."
+              class="w-full input-premium pl-3 pr-7 sm:pr-8 text-xs sm:text-sm py-1.5 sm:py-2" />
+            <i
+              class="fa-solid fa-magnifying-glass absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 text-brand-textSecondary text-xs sm:text-sm"></i>
           </div>
         </div>
       </div>
@@ -853,11 +254,14 @@
         <div class="relative mb-4 sm:mb-6 md:mb-8">
           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 sm:gap-4">
             <div class="flex items-center gap-3 sm:gap-4">
-              <div class="h-[2px] sm:h-[3px] w-8 sm:w-12 bg-gradient-to-r from-brand-crimson to-brand-crimson/50 rounded-full"></div>
+              <div
+                class="h-[2px] sm:h-[3px] w-8 sm:w-12 bg-gradient-to-r from-brand-crimson to-brand-crimson/50 rounded-full">
+              </div>
               <div class="h-[2px] sm:h-[3px] w-10 sm:w-16 bg-gradient-to-r from-brand-crimson/50 to-transparent"></div>
             </div>
           </div>
-          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-text leading-tight mt-2 sm:mt-3 md:mt-4">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-text leading-tight mt-2 sm:mt-3 md:mt-4">
             Top
             <span class="text-brand-crimson relative">
               Picks
@@ -869,7 +273,8 @@
           <p class="text-brand-textSecondary text-xs sm:text-sm mt-1 sm:mt-2">Most popular items our customers love</p>
         </div>
 
-        <div id="popular-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
+        <div id="popular-grid"
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
           <!-- injected by JS -->
         </div>
       </div>
@@ -880,7 +285,8 @@
           <div class="w-full border-t border-brand-border"></div>
         </div>
         <div class="relative flex justify-center">
-          <span class="bg-brand-bg px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 text-[10px] sm:text-xs font-semibold text-brand-textSecondary uppercase tracking-[0.15em] sm:tracking-[0.2em] rounded-full border border-brand-border shadow-sm">
+          <span
+            class="bg-brand-bg px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 text-[10px] sm:text-xs font-semibold text-brand-textSecondary uppercase tracking-[0.15em] sm:tracking-[0.2em] rounded-full border border-brand-border shadow-sm">
             <i class="fa-regular fa-grid-2 text-brand-crimson mr-1 sm:mr-2"></i>
             All Products
           </span>
@@ -888,7 +294,8 @@
       </div>
 
       <!-- All Products -->
-      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10">
+      <div id="product-grid"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10">
         <!-- injected by JS -->
       </div>
 
@@ -897,6 +304,7 @@
         <i class="fa-regular fa-face-frown text-3xl sm:text-4xl text-brand-textSecondary mb-2 sm:mb-3"></i>
         <h3 class="text-base sm:text-lg font-semibold text-brand-text">No products found.</h3>
         <p class="text-xs sm:text-sm text-brand-textSecondary">Try another search or filter.</p>
+        <button id="clearFiltersBtn" class="mt-4 btn-crimson px-6 py-2 rounded-lg text-sm">Clear Filters</button>
       </div>
 
     </div>
@@ -904,7 +312,8 @@
 
   <!-- Footer -->
   <footer class="footer-premium text-brand-text py-4 sm:py-5 md:py-6">
-    <div class="max-w-[1400px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 footer-features opacity-0">
+    <div
+      class="max-w-[1400px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 footer-features opacity-0">
       <div class="flex items-center gap-2 sm:gap-3 md:gap-4">
         <i class="fa-solid fa-tags text-brand-crimson text-lg sm:text-xl md:text-2xl"></i>
         <div>
@@ -940,7 +349,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="./config/products.js"></script>
 
-  <!-- Mobile Menu & Sidebar Toggle -->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
 
 </body>
 

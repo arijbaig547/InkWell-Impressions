@@ -40,356 +40,47 @@
             }
         }
     </script>
-    <style>
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
 
-        ::-webkit-scrollbar-track {
-            background: #F4F5F9;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #17154A;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #222063;
-        }
-
-        .premium-card {
-            background: #FFFFFF;
-            border: 1px solid rgba(23, 21, 74, 0.10);
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(23, 21, 74, 0.04);
-            transition: box-shadow 0.25s ease, transform 0.2s ease, border-color 0.2s;
-        }
-
-        .premium-card:hover {
-            box-shadow: 0 12px 32px rgba(23, 21, 74, 0.08);
-            transform: translateY(-2px);
-            border-color: rgba(23, 21, 74, 0.20);
-        }
-
-        .input-premium {
-            background: #FFFFFF;
-            border: 1px solid rgba(23, 21, 74, 0.12);
-            color: #1A1A2E;
-            border-radius: 8px;
-            padding: 0.5rem 0.75rem;
-            transition: border-color 0.2s, box-shadow 0.2s;
-            font-size: 0.875rem;
-            width: 100%;
-        }
-
-        .input-premium:focus {
-            outline: none;
-            border-color: #17154A;
-            box-shadow: 0 0 0 3px rgba(23, 21, 74, 0.06);
-        }
-
-        .input-premium::placeholder {
-            color: #8A8AA8;
-        }
-
-        @media (max-width: 640px) {
-            .input-premium {
-                font-size: 0.8rem;
-                padding: 0.4rem 0.6rem;
-            }
-        }
-
-        .btn-crimson {
-            background: #C81F45;
-            border: 1px solid #C81F45;
-            color: #fff;
-            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .btn-crimson:hover {
-            background: #B0173C;
-            border-color: #B0173C;
-            box-shadow: 0 4px 12px rgba(200, 31, 69, 0.20);
-        }
-
-        .btn-navy {
-            background: #17154A;
-            border: 1px solid #17154A;
-            color: #FFFFFF;
-            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .btn-navy:hover {
-            background: #222063;
-            border-color: #222063;
-            box-shadow: 0 4px 12px rgba(23, 21, 74, 0.15);
-        }
-
-        .header-bg {
-            background: linear-gradient(135deg, #17154A 0%, #222063 70%, #2A2870 100%);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .tab-btn {
-            transition: all 0.2s ease;
-            border-left: 3px solid transparent;
-        }
-
-        .tab-btn.active {
-            background: rgba(23, 21, 74, 0.04);
-            color: #17154A;
-            border-left-color: #C81F45;
-        }
-
-        .tab-btn:not(.active):hover {
-            background: rgba(23, 21, 74, 0.03);
-            color: #1A1A2E;
-        }
-
-        .form-panel {
-            transition: opacity 0.25s ease;
-        }
-
-        /* Mobile Responsive Fixes */
-        @media (max-width: 640px) {
-            .tab-btn {
-                font-size: 0.7rem !important;
-                padding: 0.5rem 0.75rem !important;
-            }
-
-            .tab-btn svg {
-                width: 14px !important;
-                height: 14px !important;
-            }
-
-            .premium-card .p-6 {
-                padding: 0.75rem !important;
-            }
-
-            .premium-card .p-10 {
-                padding: 1rem !important;
-            }
-
-            .premium-card .p-4 {
-                padding: 0.75rem !important;
-            }
-
-            .header-bg .text-4xl {
-                font-size: 1.8rem !important;
-            }
-
-            .header-bg .text-lg {
-                font-size: 0.9rem !important;
-            }
-
-            .header-bg .py-10 {
-                padding-top: 1.5rem !important;
-                padding-bottom: 1.5rem !important;
-            }
-
-            .header-bg .pt-\[185px\] {
-                padding-top: 70px !important;
-            }
-
-            .form-panel h2 {
-                font-size: 1.3rem !important;
-            }
-
-            .form-panel .text-sm {
-                font-size: 0.75rem !important;
-            }
-
-            .form-panel label {
-                font-size: 0.6rem !important;
-            }
-
-            .btn-crimson,
-            .btn-navy {
-                font-size: 0.7rem !important;
-                padding: 0.5rem 1rem !important;
-                width: 100% !important;
-            }
-
-            .footer-premium .text-xs {
-                font-size: 0.6rem !important;
-            }
-
-            .footer-premium .gap-6 {
-                gap: 0.75rem !important;
-            }
-
-            .hero-response-badge {
-                font-size: 0.6rem !important;
-                padding: 0.2rem 0.6rem !important;
-            }
-
-            .direct-contact a {
-                font-size: 0.7rem !important;
-            }
-
-            .direct-contact .text-sm {
-                font-size: 0.7rem !important;
-            }
-
-            .direct-contact .text-base {
-                font-size: 0.8rem !important;
-            }
-
-            .file-dropzone {
-                height: 8rem !important;
-            }
-
-            .file-dropzone svg {
-                width: 2.5rem !important;
-                height: 2.5rem !important;
-            }
-
-            .file-dropzone .text-sm {
-                font-size: 0.65rem !important;
-            }
-
-            .file-dropzone .text-xs {
-                font-size: 0.55rem !important;
-            }
-
-            .credit-section .p-6 {
-                padding: 0.75rem !important;
-            }
-
-            .credit-section h3 {
-                font-size: 1rem !important;
-            }
-
-            .credit-section h4 {
-                font-size: 0.85rem !important;
-            }
-
-            .net30-agreement label {
-                font-size: 0.7rem !important;
-            }
-
-            .cc-agreement label {
-                font-size: 0.7rem !important;
-            }
-
-            .sticky {
-                position: relative !important;
-                top: 0 !important;
-            }
-
-            .lg\:sticky {
-                position: relative !important;
-            }
-
-            .lg\:top-24 {
-                top: 0 !important;
-            }
-
-            .gap-8 {
-                gap: 1rem !important;
-            }
-
-            .gap-12 {
-                gap: 1.5rem !important;
-            }
-
-            .main-grid {
-                gap: 1rem !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .tab-btn {
-                font-size: 0.6rem !important;
-                padding: 0.4rem 0.5rem !important;
-            }
-
-            .tab-btn svg {
-                width: 12px !important;
-                height: 12px !important;
-            }
-
-            .header-bg .text-4xl {
-                font-size: 1.5rem !important;
-            }
-
-            .header-bg .text-lg {
-                font-size: 0.8rem !important;
-            }
-
-            .form-panel h2 {
-                font-size: 1.1rem !important;
-            }
-
-            .premium-card .p-4 {
-                padding: 0.5rem !important;
-            }
-
-            .input-premium {
-                font-size: 0.7rem !important;
-                padding: 0.35rem 0.5rem !important;
-            }
-
-            .btn-crimson,
-            .btn-navy {
-                font-size: 0.6rem !important;
-                padding: 0.4rem 0.8rem !important;
-            }
-
-            .credit-section .p-6 {
-                padding: 0.5rem !important;
-            }
-
-            .credit-section h3 {
-                font-size: 0.85rem !important;
-            }
-
-            .credit-section h4 {
-                font-size: 0.75rem !important;
-            }
-        }
-    </style>
 </head>
 
 <body class="font-sans antialiased bg-brand-bg text-brand-text overflow-x-hidden min-h-screen flex flex-col">
 
-    <!-- Navigation - RESPONSIVE FIXED -->
+    <!-- ============================================================ -->
+    <!-- NAVIGATION -->
+    <!-- ============================================================ -->
     <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-
-            <!-- Logo - MOBILE FIX: chhota -->
             <div class="flex items-center shrink-0">
                 <a href="index.html">
                     <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
                         class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
                 </a>
             </div>
-
-            <!-- Desktop Menu -->
             <ul
                 class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
                 <li><a href="index.html" class="hover:text-brand-crimson transition">Home</a></li>
                 <li><a href="products.html" class="hover:text-brand-crimson transition">Products</a></li>
                 <li><a href="categories.html" class="hover:text-brand-crimson transition">Categories</a></li>
-                <li><a href="about.html" hover:text-brand-crimson transition">About Us</a></li>
+                <li><a href="about.html" class="hover:text-brand-crimson transition">About Us</a></li>
                 <li><a href="contact.html" class="text-brand-crimson">Contact</a></li>
             </ul>
-
-            <!-- Right -->
             <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
+                <a href="#">
                 <button
-                    class="hidden lg:block bg-brand-crimson hover:bg-brand-crimsonHover text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wide transition">
-                    LOGIN/SIGNUP
+                    class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+                    <span class="relative z-10 flex items-center gap-2">
+                        <i class="fa-solid fa-file-signature text-[9px]"></i>
+                        REQUEST A QUOTE
+                    </span>
                 </button>
-                <i class="fa-solid fa-search cursor-pointer text-sm sm:text-base"></i>
+                </a>
                 <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                     aria-label="Toggle Menu">
                     <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
                 </button>
             </div>
-
         </div>
     </nav>
 
@@ -397,21 +88,28 @@
     <div id="mobileMenu"
         class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
         <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
-            <li><a href="index.html" class="text-brand-crimson block py-2 border-b border-gray-700">Home</a></li>
+            <li><a href="index.html" class="block py-2 border-b border-gray-700">Home</a></li>
             <li><a href="products.html"
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Products</a></li>
-            <li><a href="categories.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
-            <li><a href="about.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
+            <li><a href="categories.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
+            <li><a href="about.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
             <li><a href="contact.html"
-                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
+                    class="text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
         </ul>
         <button
-            class="w-full bg-brand-crimson hover:bg-brand-crimsonHover text-white px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wide transition mt-1 sm:mt-2">
-            LOGIN/SIGNUP
+            class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+            <span class="relative z-10 flex items-center gap-2">
+                <i class="fa-solid fa-file-signature text-[9px]"></i>
+                REQUEST A QUOTE
+            </span>
         </button>
     </div>
 
-    <!-- Page Header - RESPONSIVE FIXED -->
+    <!-- ============================================================ -->
+    <!-- PAGE HEADER -->
+    <!-- ============================================================ -->
     <header class="header-bg text-white py-4 sm:py-6 md:py-8 lg:py-10 px-3 sm:px-4 md:px-6 lg:px-8">
         <div
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 pt-[70px] sm:pt-[80px] md:pt-[100px] lg:pt-[185px]">
@@ -421,7 +119,8 @@
                     With Us</span>
                 <h1
                     class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-2 sm:mb-3 md:mb-4">
-                    How can we help your business?</h1>
+                    How can we help your business?
+                </h1>
                 <p class="text-white/70 max-w-2xl text-sm sm:text-base md:text-lg">Select the inquiry type below and our
                     global B2B support team will get back to you with tailored solutions.</p>
             </div>
@@ -435,16 +134,19 @@
         </div>
     </header>
 
-    <!-- Main Content - RESPONSIVE FIXED -->
+    <!-- ============================================================ -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================================================ -->
     <main class="flex-grow py-6 sm:py-8 md:py-12 pb-12 sm:pb-16 md:pb-20 relative z-10">
         <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-start main-grid">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-start">
 
-                <!-- Sidebar Form Navigation - RESPONSIVE FIXED -->
+                <!-- ========================================================== -->
+                <!-- SIDEBAR - 5 TABS -->
+                <!-- ========================================================== -->
                 <div class="lg:col-span-4 sticky top-20 lg:top-32">
                     <div class="premium-card p-3 sm:p-4 shadow-lg">
-
                         <nav class="flex flex-col gap-1 sm:gap-1.5" id="form-tabs">
 
                             <button onclick="showForm('quote')" id="tab-quote"
@@ -504,14 +206,11 @@
 
                         </nav>
 
-                        <!-- Contact - RESPONSIVE FIXED -->
-                        <div
-                            class="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-brand-border direct-contact">
-
+                        <!-- Direct Contact -->
+                        <div class="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-brand-border">
                             <h4
                                 class="text-brand-text font-semibold mb-4 sm:mb-5 md:mb-6 text-[10px] sm:text-xs md:text-sm tracking-wide uppercase">
                                 Direct Contact</h4>
-
                             <div class="space-y-2 sm:space-y-3 md:space-y-4">
                                 <a href="mailto:sales@inkwell-impressions.com"
                                     class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
@@ -519,39 +218,32 @@
                                         class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">sales@inkwell-impressions.com</span>
                                 </a>
-
                                 <a href="mailto:cs@inkwell-impressions.com"
                                     class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
                                         class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">cs@inkwell-impressions.com</span>
                                 </a>
-
                                 <a href="mailto:info@inkwell-impressions.com"
                                     class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
                                         class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">info@inkwell-impressions.com</span>
                                 </a>
-
                                 <a href="mailto:accounts@inkwell-impressions.com"
                                     class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
                                         class="fa-regular fa-envelope text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
                                     <span class="break-all">accounts@inkwell-impressions.com</span>
                                 </a>
-
                                 <div class="border-t border-brand-border/40 my-2 sm:my-3"></div>
-
-                                <a href="tel:+12125557890"
+                                <a href="tel:+7373057447"
                                     class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
                                         class="fa-solid fa-phone text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
-                                    <span>+1 (212) 555-7890</span>
+                                    <span>737-305-7447</span>
                                 </a>
-
                                 <div class="border-t border-brand-border/40 my-2 sm:my-3"></div>
-
                                 <div
                                     class="flex items-start gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary py-1">
                                     <i
@@ -566,289 +258,575 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
 
-                <!-- Forms Area - RESPONSIVE FIXED -->
+                <!-- ========================================================== -->
+                <!-- FORMS AREA - 5 FORMS -->
+                <!-- ========================================================== -->
                 <div
                     class="lg:col-span-8 premium-card p-3 sm:p-4 md:p-6 lg:p-10 shadow-lg relative min-h-[500px] sm:min-h-[550px] md:min-h-[600px]">
 
-                    <!-- 1. Quote Form -->
-                    <form id="form-quote" class="form-panel block transition-opacity duration-300">
+                    <!-- ========================================================== -->
+                    <!-- FORM 1: REQUEST A QUOTE -->
+                    <!-- ========================================================== -->
+                    <!-- ========================================================== -->
+                    <!-- FORM 1: REQUEST A QUOTE - FIXED -->
+                    <!-- ========================================================== -->
+                    <form id="form-quote" class="form-panel block" enctype="multipart/form-data" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
-                            Request a Quote</h2>
+                            <i class="fa-regular fa-pen-to-square mr-2 text-brand-crimson"></i> Request a Quote
+                        </h2>
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">First
-                                    Name *</label><input type="text" class="w-full input-premium" placeholder="John"
-                                    required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Last
-                                    Name *</label><input type="text" class="w-full input-premium" placeholder="Doe"
-                                    required></div>
-                            <div class="md:col-span-2"><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
-                                    Name *</label><input type="text" class="w-full input-premium"
-                                    placeholder="Acme Corp" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Business
-                                    Email *</label><input type="email" class="w-full input-premium"
-                                    placeholder="john@acmecorp.com" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Phone
-                                    Number</label><input type="tel" class="w-full input-premium"
-                                    placeholder="+1 (555) 000-0000"></div>
 
-                            <!-- ASI / PPAI / SAGE # -->
-                            <div class="md:col-span-2 mt-1">
-                                <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">ASI
-                                    / PPAI / SAGE #</label>
-                                <input type="text" class="w-full input-premium"
-                                    placeholder="Enter ASI/PPAI/SAGE number">
-                            </div>
-
-                            <!-- Item -->
+                            <!-- Select Color -->
                             <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Item
-                                    *</label>
-                                <input type="text" class="w-full input-premium" placeholder="e.g. IB29, MQIB6000"
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-palette mr-1"></i> Select Color *
+                                </label>
+                                <select name="color" class="w-full input-premium appearance-none cursor-pointer"
                                     required>
-                            </div>
-
-                            <!-- Qty -->
-                            <div>
-                                <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Qty
-                                    *</label>
-                                <input type="number" class="w-full input-premium" placeholder="Enter quantity" min="1"
-                                    required>
-                            </div>
-
-                            <div class="md:col-span-2 mt-1">
-                                <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Product
-                                    Category *</label>
-                                <select class="w-full input-premium appearance-none cursor-pointer" required>
-                                    <option value="" disabled selected>Select a category</option>
-                                    <option value="promotional">Promotional Products (Pens, Mugs, etc.)</option>
-                                    <option value="apparel">Custom Apparel (T-shirts, Hoodies, Hats)</option>
-                                    <option value="packaging">Packaging Solutions (Boxes, Bags, Tape)</option>
-                                    <option value="corporate">Premium Corporate Gifts</option>
-                                    <option value="other">Other Printing Solutions</option>
+                                    <option value="">Select Color</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                    <option value="navy">Navy Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="blue">Royal Blue</option>
+                                    <option value="green">Forest Green</option>
+                                    <option value="gray">Gray</option>
+                                    <option value="pink">Pink</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="purple">Purple</option>
+                                    <option value="brown">Brown</option>
                                 </select>
+                                <div class="error-message" data-error="color">Please select a color.</div>
                             </div>
 
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Estimated
-                                    Quantity *</label><input type="number" class="w-full input-premium"
-                                    placeholder="e.g. 500" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Required
-                                    By Date</label><input type="date" class="w-full input-premium"></div>
-
-                            <div class="md:col-span-2">
+                            <!-- Quantity - SIRF EK (Merged) -->
+                            <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Project
-                                    Details / Requirements *</label>
-                                <textarea class="w-full input-premium h-20 sm:h-24 md:h-28 resize-none"
-                                    placeholder="Please describe your project, preferred materials, colors, and any specific requirements..."
-                                    required></textarea>
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-hashtag mr-1"></i> Quantity *
+                                </label>
+                                <input type="number" name="quantity" class="w-full input-premium"
+                                    placeholder="Enter quantity" min="1" required>
+                                <div class="error-message" data-error="quantity">Please enter a valid quantity (minimum
+                                    1).</div>
                             </div>
-                        </div>
-                        <div class="flex flex-col items-center sm:items-start gap-2 sm:gap-3">
-                            <button type="submit"
-                                class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">Submit
-                                Quote Request</button>
-                            <p
-                                class="text-[8px] sm:text-[10px] md:text-xs text-brand-gray mt-1 text-center sm:text-left">
-                                <i class="fa-regular fa-envelope mr-1"></i>
-                                For quote inquiries: <br class="sm:hidden"><a
-                                    href="mailto:sales@inkwell-impressions.com"
-                                    class="text-brand-crimson hover:underline">sales@inkwell-impressions.com</a> |
-                                <a href="mailto:cs@inkwell-impressions.com"
-                                    class="text-brand-crimson hover:underline">cs@inkwell-impressions.com</a> |
-                                <a href="mailto:info@inkwell-impressions.com"
-                                    class="text-brand-crimson hover:underline">info@inkwell-impressions.com</a>
-                            </p>
-                        </div>
-                    </form>
 
-                    <!-- 2. Mockup Form -->
-                    <form id="form-mockup" class="form-panel hidden opacity-0 transition-opacity duration-300">
-                        <h2
-                            class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
-                            Request a Design Mockup</h2>
-                        <p
-                            class="text-xs sm:text-sm text-brand-textSecondary mb-4 sm:mb-6 md:mb-8 border-l-3 border-brand-crimson pl-3 sm:pl-4 bg-brand-bg/30 p-2 sm:p-3 rounded">
-                            Upload your logo and let our design team show you exactly how your brand will look on our
-                            products.</p>
+                            <!-- Ship to Zip Code -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-location-dot mr-1"></i> Ship to Zip Code
+                                </label>
+                                <input type="text" name="zip_code" class="w-full input-premium"
+                                    placeholder="Enter zip code">
+                                <div class="error-message" data-error="zip_code">Please enter a valid ZIP code (e.g.
+                                    12345 or 12345-6789).</div>
+                            </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
-                            <div class="md:col-span-2"><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
-                                    Name *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Contact
-                                    Name *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Email
-                                    Address *</label><input type="email" class="w-full input-premium" required></div>
+                            <!-- Company Name -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-building mr-1"></i> Company Name *
+                                </label>
+                                <input type="text" name="company" class="w-full input-premium"
+                                    placeholder="Enter company name" required>
+                                <div class="error-message" data-error="company">Please enter a valid company name.</div>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-envelope mr-1"></i> Email *
+                                </label>
+                                <input type="email" name="email" class="w-full input-premium"
+                                    placeholder="Enter email address" required>
+                                <div class="error-message" data-error="email">Please enter a valid email address.</div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-phone mr-1"></i> Phone *
+                                </label>
+                                <input type="tel" name="phone" class="w-full input-premium"
+                                    placeholder="Enter phone number" required>
+                                <div class="error-message" data-error="phone">Please enter a valid phone number (digits
+                                    only).</div>
+                            </div>
 
                             <!-- ASI / PPAI / SAGE # -->
                             <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">ASI
-                                    / PPAI / SAGE #</label>
-                                <input type="text" class="w-full input-premium"
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE #
+                                </label>
+                                <input type="text" name="asi_ppai_sage" class="w-full input-premium"
                                     placeholder="Enter ASI/PPAI/SAGE number">
+                                <div class="error-message" data-error="asi_ppai_sage">ASI/PPAI/SAGE # should contain
+                                    only numbers.</div>
                             </div>
 
                             <!-- Item -->
                             <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Item
-                                    *</label>
-                                <input type="text" class="w-full input-premium" placeholder="e.g. IB29, MQIB6000"
-                                    required>
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-box mr-1"></i> Item *
+                                </label>
+                                <input type="text" name="item" class="w-full input-premium"
+                                    placeholder="e.g. IB29, MQIB6000" required>
+                                <div class="error-message" data-error="item">Item should contain only letters, numbers,
+                                    dash or underscore.</div>
                             </div>
 
-                            <!-- Qty -->
+                            <!-- In Hand Date -->
                             <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Qty
-                                    *</label>
-                                <input type="number" class="w-full input-premium" placeholder="Enter quantity" min="1"
-                                    required>
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-calendar mr-1"></i> In Hand Date
+                                </label>
+                                <input type="date" name="in_hand_date" class="w-full input-premium" min="2020-01-01"
+                                    max="2100-12-31">
+                                <div class="error-message" data-error="in_hand_date">Please select a valid date
+                                    (2020-2100).</div>
                             </div>
 
-                            <div class="md:col-span-2 mt-1">
-                                <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Target
-                                    Product(s) *</label>
-                                <input type="text" class="w-full input-premium"
-                                    placeholder="e.g., Matte Black Tumbler, Cotton Tote Bag" required>
-                            </div>
-
+                            <!-- Need Freight Estimate? -->
                             <div class="md:col-span-2">
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Upload
-                                    Logo / Artwork (Vector AI, EPS, SVG or High-Res PNG) *</label>
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-truck mr-1"></i> Need Freight Estimate?
+                                </label>
+                                <div class="flex gap-4 sm:gap-6 pt-1">
+                                    <label
+                                        class="flex items-center gap-2 text-xs sm:text-sm text-brand-text cursor-pointer">
+                                        <input type="radio" name="freight_estimate" value="Yes"
+                                            class="accent-brand-crimson w-4 h-4"> Yes
+                                    </label>
+                                    <label
+                                        class="flex items-center gap-2 text-xs sm:text-sm text-brand-text cursor-pointer">
+                                        <input type="radio" name="freight_estimate" value="No" checked
+                                            class="accent-brand-crimson w-4 h-4"> No
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Project Details -->
+                            <div class="md:col-span-2">
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-file-lines mr-1"></i> Project Details
+                                </label>
+                                <textarea name="project_details" class="w-full input-premium h-20 sm:h-24 resize-none"
+                                    placeholder="Describe your project requirements..."></textarea>
+                            </div>
+
+                            <!-- Attach File -->
+                            <div class="md:col-span-2">
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-paperclip mr-1"></i> Attach File
+                                </label>
                                 <div
-                                    class="flex justify-center flex-col items-center w-full h-24 sm:h-28 md:h-32 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg cursor-pointer hover:border-brand-crimson group file-dropzone">
-                                    <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-brand-textSecondary mb-1 sm:mb-2 group-hover:text-brand-crimson transition"
+                                    class="file-dropzone flex justify-center flex-col items-center w-full h-20 sm:h-24 md:h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg hover:border-brand-crimson group">
+                                    <svg class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-brand-textSecondary mb-1 group-hover:text-brand-crimson transition"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                             d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                                     </svg>
                                     <span
-                                        class="text-[10px] sm:text-xs text-brand-textSecondary group-hover:text-brand-crimson transition font-medium">Click
-                                        to upload</span>
-                                    <input type="file" class="hidden" accept=".ai,.eps,.svg,.png,.jpg,.jpeg">
+                                        class="text-[9px] sm:text-[10px] text-brand-textSecondary group-hover:text-brand-crimson transition font-medium text-center">Click
+                                        to upload or drag &amp; drop</span>
+                                    <span class="text-[7px] sm:text-[8px] text-brand-gray mt-1 text-center">Supported:
+                                        JPG, JPEG, PNG, PDF, AI, EPS, SVG</span>
+                                    <span id="quoteFileNames"
+                                        class="text-[9px] sm:text-[10px] text-brand-crimson mt-1 font-semibold hidden"></span>
+                                    <input type="file" name="attachment" id="quoteFileInput" class="hidden" multiple
+                                        accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.svg">
                                 </div>
                             </div>
 
-                            <div class="md:col-span-2">
-                                <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Design
-                                    Instructions / Color Codes (Optional)</label>
-                                <textarea class="w-full input-premium h-20 sm:h-24 resize-none"
-                                    placeholder="Include any specific Pantone colors, placement preferences, or brand guidelines..."></textarea>
-                            </div>
                         </div>
+
                         <button type="submit"
-                            class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">Request
-                            Free Mockup</button>
+                            class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">
+                            <i class="fa-regular fa-paper-plane mr-1 sm:mr-2"></i> Submit Quote Request
+                        </button>
                     </form>
 
-                    <!-- 3. Freight Form -->
-                    <form id="form-freight" class="form-panel hidden opacity-0 transition-opacity duration-300">
+                    <!-- ========================================================== -->
+                    <!-- FORM 2: REQUEST A MOCKUP -->
+                    <!-- ========================================================== -->
+                    <!-- ========================================================== -->
+                    <!-- FORM 2: REQUEST A MOCKUP - FIXED -->
+                    <!-- ========================================================== -->
+                    <form id="form-mockup" class="form-panel hidden opacity-0" enctype="multipart/form-data" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
-                            Freight &amp; Shipping Estimate</h2>
+                            <i class="fa-regular fa-image mr-2 text-brand-crimson"></i> Request a Mockup
+                        </h2>
+                        <p
+                            class="text-xs sm:text-sm text-brand-textSecondary mb-4 sm:mb-6 border-l-3 border-brand-crimson pl-3 sm:pl-4 bg-brand-bg/30 p-2 sm:p-3 rounded">
+                            Upload your logo and let our design team show you exactly how your brand will look on our
+                            products.
+                        </p>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Contact
-                                    Name *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Email
-                                    Address *</label><input type="email" class="w-full input-premium" required></div>
 
-                            <div class="md:col-span-2 mt-2 sm:mt-3 border-b border-brand-border pb-1 sm:pb-2">
-                                <h3 class="text-brand-text font-medium text-xs sm:text-sm">Destination Address</h3>
-                            </div>
-
-                            <div class="md:col-span-2"><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Street
-                                    Address *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City
-                                    *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State
-                                    / Province *</label><input type="text" class="w-full input-premium" required></div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip
-                                    / Postal Code *</label><input type="text" class="w-full input-premium" required>
-                            </div>
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Country
-                                    *</label><input type="text" class="w-full input-premium" required></div>
-
-                            <div class="md:col-span-2 mt-2 sm:mt-3 border-b border-brand-border pb-1 sm:pb-2">
-                                <h3 class="text-brand-text font-medium text-xs sm:text-sm">Shipment Details</h3>
-                            </div>
-
-                            <div><label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Estimated
-                                    Order Volume / Weight</label><input type="text" class="w-full input-premium"
-                                    placeholder="e.g., 2 Pallets, ~500 lbs"></div>
+                            <!-- Select Color -->
                             <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Delivery
-                                    Type</label>
-                                <select class="w-full input-premium appearance-none cursor-pointer">
-                                    <option value="standard">Standard Commercial (Loading Dock)</option>
-                                    <option value="liftgate">Commercial w/ Liftgate Required</option>
-                                    <option value="residential">Residential Delivery</option>
-                                    <option value="trade">Trade Show / Exhibition</option>
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-palette mr-1"></i> Select Color
+                                </label>
+                                <select name="color" class="w-full input-premium appearance-none cursor-pointer">
+                                    <option value="">Select Color</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                    <option value="navy">Navy Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="blue">Royal Blue</option>
+                                    <option value="green">Forest Green</option>
+                                    <option value="gray">Gray</option>
+                                    <option value="pink">Pink</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="purple">Purple</option>
+                                    <option value="brown">Brown</option>
                                 </select>
                             </div>
 
-                            <div class="md:col-span-2 mt-2 sm:mt-3 border-b border-brand-border pb-1 sm:pb-2">
-                                <h3 class="text-brand-text font-medium text-xs sm:text-sm">Items to Ship</h3>
+                            <!-- ASI / PPAI / SAGE # -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE #
+                                </label>
+                                <input type="text" name="asi_ppai_sage" class="w-full input-premium"
+                                    placeholder="Enter ASI/PPAI/SAGE number">
+                                <div class="error-message" data-error="asi_ppai_sage">ASI/PPAI/SAGE # should contain
+                                    only numbers.</div>
                             </div>
 
+                            <!-- Item -->
                             <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Item
-                                    / Style No.</label>
-                                <input type="text" class="w-full input-premium" placeholder="e.g., STL-100, BGR-204">
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-box mr-1"></i> Item *
+                                </label>
+                                <input type="text" name="item" class="w-full input-premium"
+                                    placeholder="e.g. IB29, MQIB6000" required>
+                                <div class="error-message" data-error="item">Item should contain only letters, numbers,
+                                    dash or underscore.</div>
                             </div>
+
+                            <!-- Quantity - SIRF EK (Merged - Item Qty removed, sirf Quantity rakha) -->
                             <div>
                                 <label
-                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Quantity</label>
-                                <input type="number" class="w-full input-premium" placeholder="e.g., 24" min="1">
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-hashtag mr-1"></i> Quantity *
+                                </label>
+                                <input type="number" name="quantity" class="w-full input-premium"
+                                    placeholder="Enter quantity" min="1" required>
+                                <div class="error-message" data-error="quantity">Please enter a valid quantity (minimum
+                                    1).</div>
+                            </div>
+
+                            <!-- Placement -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-square mr-1"></i> Placement
+                                </label>
+                                <select name="placement" class="w-full input-premium appearance-none cursor-pointer">
+                                    <option value="front">Front</option>
+                                    <option value="back">Back</option>
+                                    <option value="left-sleeve">Left Sleeve</option>
+                                    <option value="right-sleeve">Right Sleeve</option>
+                                    <option value="full-print">Full Print</option>
+                                </select>
+                            </div>
+
+                            <!-- Printing Method -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-print mr-1"></i> Printing Method
+                                </label>
+                                <select name="method" class="w-full input-premium appearance-none cursor-pointer">
+                                    <option value="spot">Spot Printing</option>
+                                    <option value="transfer">Heat Transfer</option>
+                                    <option value="blank">Blank (No Print)</option>
+                                    <option value="embroidery">Embroidery</option>
+                                </select>
+                            </div>
+
+                            <!-- Colors in Logo -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-palette mr-1"></i> Colors in Logo
+                                </label>
+                                <input type="number" name="logo_colors" class="w-full input-premium"
+                                    placeholder="e.g. 1, 2, 4" min="1" max="10">
+                                <div class="error-message" data-error="logo_colors">Please enter a valid number between
+                                    1 and 10.</div>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-envelope mr-1"></i> Email
+                                </label>
+                                <input type="email" name="email" class="w-full input-premium"
+                                    placeholder="Enter email address">
+                                <div class="error-message" data-error="email">Please enter a valid email address.</div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-phone mr-1"></i> Phone
+                                </label>
+                                <input type="tel" name="phone" class="w-full input-premium"
+                                    placeholder="Enter phone number">
+                                <div class="error-message" data-error="phone">Phone number should contain only digits.
+                                </div>
+                            </div>
+
+                            <!-- Need Freight Estimate? -->
+                            <div class="md:col-span-2">
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-truck mr-1"></i> Need Freight Estimate?
+                                </label>
+                                <div class="flex gap-4 sm:gap-6 pt-1">
+                                    <label
+                                        class="flex items-center gap-2 text-xs sm:text-sm text-brand-text cursor-pointer">
+                                        <input type="radio" name="mockup_freight" value="yes"
+                                            class="accent-brand-crimson w-4 h-4"> Yes
+                                    </label>
+                                    <label
+                                        class="flex items-center gap-2 text-xs sm:text-sm text-brand-text cursor-pointer">
+                                        <input type="radio" name="mockup_freight" value="no" checked
+                                            class="accent-brand-crimson w-4 h-4"> No
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Special Instructions -->
+                            <div class="md:col-span-2">
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-comment mr-1"></i> Special Instructions
+                                </label>
+                                <textarea name="instructions" class="w-full input-premium h-20 sm:h-24 resize-none"
+                                    placeholder="Any specific requirements for the mockup?"></textarea>
+                            </div>
+
+                            <!-- Upload Logo / Artwork -->
+                            <div class="md:col-span-2">
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-upload mr-1"></i> Upload Logo / Artwork
+                                </label>
+                                <div
+                                    class="file-dropzone flex justify-center flex-col items-center w-full h-20 sm:h-24 md:h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg hover:border-brand-crimson group">
+                                    <svg class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-brand-textSecondary mb-1 group-hover:text-brand-crimson transition"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                    </svg>
+                                    <span
+                                        class="text-[9px] sm:text-[10px] text-brand-textSecondary group-hover:text-brand-crimson transition font-medium text-center">Click
+                                        to upload or drag &amp; drop</span>
+                                    <span class="text-[7px] sm:text-[8px] text-brand-gray mt-1 text-center">Supported:
+                                        PNG, JPG, SVG, AI, EPS, PDF</span>
+                                    <span id="mockupFileName"
+                                        class="text-[9px] sm:text-[10px] text-brand-crimson mt-1 font-semibold hidden"></span>
+                                    <input type="file" name="logo_files" id="mockupFileInput" class="hidden" multiple
+                                        accept=".png,.jpg,.jpeg,.svg,.ai,.eps,.pdf">
+                                </div>
                             </div>
 
                         </div>
+
                         <button type="submit"
-                            class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">Get
-                            Estimate</button>
+                            class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">
+                            <i class="fa-regular fa-image mr-1 sm:mr-2"></i> Request Free Mockup
+                        </button>
                     </form>
 
-                    <!-- 4. Credit Application Form -->
-                    <form id="form-credit"
-                        class="form-panel hidden opacity-0 transition-opacity duration-300 credit-section">
+                    <!-- ========================================================== -->
+                    <!-- FORM 3: FREIGHT ESTIMATE -->
+                    <!-- ========================================================== -->
+                    <form id="form-freight" class="form-panel hidden opacity-0" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
-                            Corporate Credit Application</h2>
+                            <i class="fa-solid fa-truck-fast mr-2 text-brand-crimson"></i> Freight &amp; Shipping
+                            Estimate
+                        </h2>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
+
+                            <!-- Your Email -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-envelope mr-1"></i> Your Email *
+                                </label>
+                                <input type="email" name="email" class="w-full input-premium"
+                                    placeholder="Enter your email address" required>
+                                <div class="error-message" data-error="email">Please enter a valid email address.</div>
+                            </div>
+
+                            <!-- ASI / PPAI / SAGE # -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE #
+                                </label>
+                                <input type="text" name="asi_number" class="w-full input-premium"
+                                    placeholder="Enter ASI/PPAI/SAGE number">
+                                <div class="error-message" data-error="asi_number">ASI/PPAI/SAGE # should contain only
+                                    numbers.</div>
+                            </div>
+
+                            <!-- Item / Style No. -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-box mr-1"></i> Item / Style No.
+                                </label>
+                                <input type="text" name="item" class="w-full input-premium"
+                                    placeholder="e.g. STL-100, BGR-204">
+                                <div class="error-message" data-error="item">Item should contain only letters, numbers,
+                                    dash or underscore.</div>
+                            </div>
+
+                            <!-- Quantity -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-hashtag mr-1"></i> Quantity *
+                                </label>
+                                <input type="number" name="item_qty" class="w-full input-premium"
+                                    placeholder="Enter quantity" min="1" required>
+                                <div class="error-message" data-error="item_qty">Please enter a valid quantity (minimum
+                                    1).</div>
+                            </div>
+
+                            <!-- Country -->
+                            <!-- Country -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-globe mr-1"></i> Country *
+                                </label>
+                                <select name="country" id="freightCountry"
+                                    class="w-full input-premium appearance-none cursor-pointer" required>
+                                    <option value="">Select Country</option>
+                                    <option value="us">United States</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="pk">Pakistan</option>
+                                    <option value="in">India</option>
+                                    <option value="au">Australia</option>
+                                    <option value="de">Germany</option>
+                                    <option value="fr">France</option>
+                                    <option value="ae">UAE</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message" data-error="country">Please select a country.</div>
+                            </div>
+
+                            <!-- State / Province -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-location-dot mr-1"></i> State / Province *
+                                </label>
+                                <select name="state" id="freightState"
+                                    class="w-full input-premium appearance-none cursor-pointer" required>
+                                    <option value="">Select State/Province</option>
+                                </select>
+                                <div class="error-message" data-error="state">Please select a state/province.</div>
+                            </div>
+
+                            <!-- Zip / Postal Code -->
+                            <div>
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-mailbox mr-1"></i> Zip / Postal Code *
+                                </label>
+                                <input type="text" name="zip" class="w-full input-premium"
+                                    placeholder="Enter zip / postal code" required>
+                                <div class="error-message" data-error="zip">Please enter a valid ZIP code (e.g. 12345 or
+                                    12345-6789).</div>
+                            </div>
+
+                            <!-- Is Residential Address? -->
+                            <div class="md:col-span-2">
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-solid fa-house mr-1"></i> Is Residential Address?
+                                </label>
+                                <div class="flex gap-4 sm:gap-6 pt-1">
+                                    <label
+                                        class="flex items-center gap-2 text-xs sm:text-sm text-brand-text cursor-pointer">
+                                        <input type="radio" name="residential" value="yes"
+                                            class="accent-brand-crimson w-4 h-4"> Yes
+                                    </label>
+                                    <label
+                                        class="flex items-center gap-2 text-xs sm:text-sm text-brand-text cursor-pointer">
+                                        <input type="radio" name="residential" value="no" checked
+                                            class="accent-brand-crimson w-4 h-4"> No (Commercial)
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Special Instructions -->
+                            <div class="md:col-span-2">
+                                <label
+                                    class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
+                                    <i class="fa-regular fa-comment mr-1"></i> Special Instructions
+                                </label>
+                                <textarea name="instructions" class="w-full input-premium h-20 sm:h-24 resize-none"
+                                    placeholder="Any special delivery instructions?"></textarea>
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <p class="text-[10px] sm:text-xs text-brand-gray">* Fields are mandatory</p>
+                            </div>
+
+                        </div>
+
+                        <button type="submit"
+                            class="btn-crimson px-6 sm:px-8 py-2 sm:py-3 rounded font-medium w-full sm:w-auto text-xs sm:text-sm">
+                            <i class="fa-solid fa-truck-fast mr-1 sm:mr-2"></i> Get Freight Estimate
+                        </button>
+                    </form>
+
+                    <!-- ========================================================== -->
+                    <!-- FORM 4: CREDIT APPLICATION -->
+                    <!-- ========================================================== -->
+                    <form id="form-credit" class="form-panel hidden opacity-0 credit-section" novalidate>
+                        <h2
+                            class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
+                            Corporate Credit Application
+                        </h2>
 
                         <!-- NET 30 SECTION -->
                         <div id="net30-section"
@@ -862,45 +840,79 @@
                                 your business information to apply for Net-30 credit terms.</p>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
-                                <div><label
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Business
-                                        Name *</label><input type="text" class="w-full input-premium net30-field"
-                                        required></div>
-                                <div><label
+                                        Name *</label>
+                                    <input type="text" name="business_name" class="w-full input-premium"
+                                        placeholder="Acme Corp" required>
+                                    <div class="error-message" data-error="business_name">Please enter a valid business
+                                        name.</div>
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Date
-                                        *</label><input type="date" class="w-full input-premium net30-field" required>
+                                        *</label>
+                                    <input type="date" name="date" class="w-full input-premium" required>
+                                    <div class="error-message" data-error="date">Please select a valid date.</div>
                                 </div>
-                                <div class="md:col-span-2"><label
+                                <div class="md:col-span-2">
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Address
-                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                        *</label>
+                                    <input type="text" name="address" class="w-full input-premium"
+                                        placeholder="123 Main St" required>
                                 </div>
-                                <div><label
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City
-                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                        *</label>
+                                    <input type="text" name="city" class="w-full input-premium" placeholder="New York"
+                                        required>
                                 </div>
-                                <div><label
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State
-                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                        *</label>
+                                    <input type="text" name="state" class="w-full input-premium" placeholder="NY"
+                                        required>
                                 </div>
-                                <div><label
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip
-                                        *</label><input type="text" class="w-full input-premium net30-field" required>
+                                        *</label>
+                                    <input type="text" name="zip" class="w-full input-premium" placeholder="10001"
+                                        required>
+                                    <div class="error-message" data-error="zip">Please enter a valid ZIP code.</div>
                                 </div>
-                                <div><label
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Telephone
-                                        *</label><input type="tel" class="w-full input-premium net30-field" required>
+                                        *</label>
+                                    <input type="tel" name="telephone" class="w-full input-premium"
+                                        placeholder="+1 (555) 000-0000" required>
+                                    <div class="error-message" data-error="telephone">Phone number should contain only
+                                        digits.</div>
                                 </div>
-                                <div><label
-                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Fax</label><input
-                                        type="text" class="w-full input-premium net30-field"></div>
-                                <div class="md:col-span-2"><label
+                                <div>
+                                    <label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Fax</label>
+                                    <input type="text" name="fax" class="w-full input-premium"
+                                        placeholder="+1 (555) 000-0001">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Tax
-                                        ID / EIN</label><input type="text" class="w-full input-premium net30-field"
-                                        placeholder="XX-XXXXXXX"></div>
-                                <div class="md:col-span-2"><label
+                                        ID / EIN</label>
+                                    <input type="text" name="tax_id" class="w-full input-premium"
+                                        placeholder="XX-XXXXXXX">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">DUNS
-                                        Number (if applicable)</label><input type="text"
-                                        class="w-full input-premium net30-field"></div>
+                                        Number (if applicable)</label>
+                                    <input type="text" name="duns" class="w-full input-premium">
+                                </div>
                             </div>
 
                             <div class="mt-4 sm:mt-5 md:mt-6 pt-3 sm:pt-4 border-t border-brand-border net30-agreement">
@@ -913,6 +925,7 @@
                                         the Net 30 terms and conditions. I understand that invoices are due within 30
                                         days of receipt. *</label>
                                 </div>
+                                <div class="error-message" data-error="net30_agreement">Please agree to the terms.</div>
                             </div>
 
                             <div class="mt-4 sm:mt-5 md:mt-6">
@@ -942,46 +955,84 @@
                                     Card 1
                                 </h4>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
-                                    <div class="md:col-span-2"><label
+                                    <div class="md:col-span-2">
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
-                                            Order Email Address</label><input type="email"
-                                            class="w-full input-premium cc-field"></div>
-                                    <div class="md:col-span-2"><label
+                                            Order Email Address</label>
+                                        <input type="email" name="po_email" class="w-full input-premium"
+                                            placeholder="po@company.com">
+                                        <div class="error-message" data-error="po_email">Please enter a valid email
+                                            address.</div>
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Name
-                                            on the Card</label><input type="text" class="w-full input-premium cc-field">
+                                            on the Card</label>
+                                        <input type="text" name="card_name_1" class="w-full input-premium"
+                                            placeholder="John Doe">
                                     </div>
-                                    <div class="md:col-span-2"><label
+                                    <div class="md:col-span-2">
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Billing
-                                            Address</label><input type="text" class="w-full input-premium cc-field">
+                                            Address</label>
+                                        <input type="text" name="billing_address_1" class="w-full input-premium"
+                                            placeholder="123 Main St">
                                     </div>
-                                    <div><label
-                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label><input
-                                            type="text" class="w-full input-premium cc-field"></div>
-                                    <div><label
-                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State</label><input
-                                            type="text" class="w-full input-premium cc-field"></div>
-                                    <div><label
-                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label><input
-                                            type="text" class="w-full input-premium cc-field"></div>
-                                    <div><label
+                                    <div>
+                                        <label
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label>
+                                        <input type="text" name="city_1" class="w-full input-premium"
+                                            placeholder="New York">
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State</label>
+                                        <input type="text" name="state_1" class="w-full input-premium" placeholder="NY">
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label>
+                                        <input type="text" name="zip_1" class="w-full input-premium"
+                                            placeholder="10001">
+                                        <div class="error-message" data-error="zip_1">Please enter a valid ZIP code.
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Card
-                                            Number</label><input type="text" class="w-full input-premium cc-field"
-                                            placeholder="XXXX XXXX XXXX XXXX"></div>
-                                    <div><label
+                                            Number</label>
+                                        <input type="text" name="card_number_1" class="w-full input-premium"
+                                            placeholder="XXXX XXXX XXXX XXXX">
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">CVV
-                                            *</label><input type="text" class="w-full input-premium cc-field"
-                                            placeholder="XXX" maxlength="4"></div>
-                                    <div><label
+                                            *</label>
+                                        <input type="text" name="cvv_1" class="w-full input-premium" placeholder="XXX"
+                                            maxlength="4">
+                                        <div class="error-message" data-error="cvv_1">CVV should contain only digits.
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Expiry
-                                            Date</label><input type="month" class="w-full input-premium cc-field"></div>
-                                    <div><label
+                                            Date</label>
+                                        <input type="month" name="expiry_1" class="w-full input-premium">
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
-                                            Order Number</label><input type="text"
-                                            class="w-full input-premium cc-field"></div>
-                                    <div><label
+                                            Order Number</label>
+                                        <input type="text" name="po_number_1" class="w-full input-premium"
+                                            placeholder="PO-12345">
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Authorized
-                                            Value</label><input type="text" class="w-full input-premium cc-field"
-                                            placeholder="$0.00"></div>
+                                            Value</label>
+                                        <input type="text" name="auth_value_1" class="w-full input-premium"
+                                            placeholder="$0.00">
+                                    </div>
                                 </div>
                             </div>
 
@@ -994,46 +1045,83 @@
                                         class="text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-gray ml-1 sm:ml-2">(Optional)</span>
                                 </h4>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
-                                    <div class="md:col-span-2"><label
+                                    <div class="md:col-span-2">
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
-                                            Order Email Address</label><input type="email"
-                                            class="w-full input-premium cc-field"></div>
-                                    <div class="md:col-span-2"><label
+                                            Order Email Address</label>
+                                        <input type="email" name="po_email_2" class="w-full input-premium"
+                                            placeholder="po@company.com">
+                                        <div class="error-message" data-error="po_email_2">Please enter a valid email
+                                            address.</div>
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Name
-                                            on the Card</label><input type="text" class="w-full input-premium cc-field">
+                                            on the Card</label>
+                                        <input type="text" name="card_name_2" class="w-full input-premium"
+                                            placeholder="Jane Doe">
                                     </div>
-                                    <div class="md:col-span-2"><label
+                                    <div class="md:col-span-2">
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Billing
-                                            Address</label><input type="text" class="w-full input-premium cc-field">
+                                            Address</label>
+                                        <input type="text" name="billing_address_2" class="w-full input-premium"
+                                            placeholder="123 Main St">
                                     </div>
-                                    <div><label
-                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label><input
-                                            type="text" class="w-full input-premium cc-field"></div>
-                                    <div><label
-                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State</label><input
-                                            type="text" class="w-full input-premium cc-field"></div>
-                                    <div><label
-                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label><input
-                                            type="text" class="w-full input-premium cc-field"></div>
-                                    <div><label
+                                    <div>
+                                        <label
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label>
+                                        <input type="text" name="city_2" class="w-full input-premium"
+                                            placeholder="New York">
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State</label>
+                                        <input type="text" name="state_2" class="w-full input-premium" placeholder="NY">
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label>
+                                        <input type="text" name="zip_2" class="w-full input-premium"
+                                            placeholder="10001">
+                                        <div class="error-message" data-error="zip_2">Please enter a valid ZIP code.
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Card
-                                            Number</label><input type="text" class="w-full input-premium cc-field"
-                                            placeholder="XXXX XXXX XXXX XXXX"></div>
-                                    <div><label
-                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">CVV</label><input
-                                            type="text" class="w-full input-premium cc-field" placeholder="XXX"
-                                            maxlength="4"></div>
-                                    <div><label
+                                            Number</label>
+                                        <input type="text" name="card_number_2" class="w-full input-premium"
+                                            placeholder="XXXX XXXX XXXX XXXX">
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">CVV</label>
+                                        <input type="text" name="cvv_2" class="w-full input-premium" placeholder="XXX"
+                                            maxlength="4">
+                                        <div class="error-message" data-error="cvv_2">CVV should contain only digits.
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Expiry
-                                            Date</label><input type="month" class="w-full input-premium cc-field"></div>
-                                    <div><label
+                                            Date</label>
+                                        <input type="month" name="expiry_2" class="w-full input-premium">
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Purchase
-                                            Order Number</label><input type="text"
-                                            class="w-full input-premium cc-field"></div>
-                                    <div><label
+                                            Order Number</label>
+                                        <input type="text" name="po_number_2" class="w-full input-premium"
+                                            placeholder="PO-67890">
+                                    </div>
+                                    <div>
+                                        <label
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Authorized
-                                            Value</label><input type="text" class="w-full input-premium cc-field"
-                                            placeholder="$0.00"></div>
+                                            Value</label>
+                                        <input type="text" name="auth_value_2" class="w-full input-premium"
+                                            placeholder="$0.00">
+                                    </div>
                                 </div>
                             </div>
 
@@ -1061,22 +1149,29 @@
                                 <span class="w-1 h-4 sm:h-5 bg-brand-crimson rounded-full inline-block"></span>
                                 Authorized Signature
                             </h3>
-
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
-                                <div><label
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Full
-                                        Name *</label><input type="text" id="signature-name"
-                                        class="w-full input-premium" required></div>
-                                <div><label
+                                        Name *</label>
+                                    <input type="text" id="signature-name" name="signature_name"
+                                        class="w-full input-premium" required>
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Signature
-                                        *</label><input type="text" id="signature-field" class="w-full input-premium"
-                                        placeholder="Type full name as signature" required></div>
-                                <div><label
+                                        *</label>
+                                    <input type="text" id="signature-field" name="signature"
+                                        class="w-full input-premium" placeholder="Type full name as signature" required>
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Date
-                                        Signed *</label><input type="date" id="signature-date"
-                                        class="w-full input-premium" required></div>
+                                        Signed *</label>
+                                    <input type="date" id="signature-date" name="signature_date"
+                                        class="w-full input-premium" required>
+                                </div>
                             </div>
-
                             <div class="mt-3 sm:mt-4 flex items-start gap-2 sm:gap-3 cc-agreement">
                                 <input type="checkbox" id="global-agreement"
                                     class="w-3 h-3 sm:w-4 sm:h-4 mt-1 accent-brand-crimson border-brand-border rounded"
@@ -1085,14 +1180,19 @@
                                     class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary">I confirm that
                                     all information provided is accurate and complete. *</label>
                             </div>
+                            <div class="error-message" data-error="global_agreement">Please confirm that all information
+                                is accurate.</div>
                         </div>
                     </form>
 
-                    <!-- 5. Purchase Order Form -->
-                    <form id="form-po" class="form-panel hidden opacity-0 transition-opacity duration-300">
+                    <!-- ========================================================== -->
+                    <!-- FORM 5: PURCHASE ORDER -->
+                    <!-- ========================================================== -->
+                    <form id="form-po" class="form-panel hidden opacity-0" enctype="multipart/form-data" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
-                            Submit Purchase Order</h2>
+                            Submit Purchase Order
+                        </h2>
 
                         <div class="mb-4 sm:mb-6 md:mb-8">
                             <h3
@@ -1101,40 +1201,79 @@
                                 Company Information
                             </h3>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
-                                <div><label
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
-                                        Name *</label><input type="text" class="w-full input-premium"
-                                        placeholder="Enter company name" required></div>
-                                <div><label
+                                        Name *</label>
+                                    <input type="text" name="company_name" class="w-full input-premium"
+                                        placeholder="Acme Corp" required>
+                                    <div class="error-message" data-error="company_name">Please enter a valid company
+                                        name.</div>
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Contact
-                                        Person *</label><input type="text" class="w-full input-premium"
-                                        placeholder="Enter contact person" required></div>
-                                <div><label
+                                        Person *</label>
+                                    <input type="text" name="contact_person" class="w-full input-premium"
+                                        placeholder="John Doe" required>
+                                    <div class="error-message" data-error="contact_person">Please enter a valid contact
+                                        person name.</div>
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Email
-                                        Address *</label><input type="email" class="w-full input-premium"
-                                        placeholder="email@company.com" required></div>
-                                <div><label
+                                        Address *</label>
+                                    <input type="email" name="email" class="w-full input-premium"
+                                        placeholder="john@acmecorp.com" required>
+                                    <div class="error-message" data-error="email">Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Phone
-                                        Number *</label><input type="tel" class="w-full input-premium"
-                                        placeholder="+1 (555) 000-0000" required></div>
-                                <div class="md:col-span-2"><label
+                                        Number *</label>
+                                    <input type="tel" name="phone" class="w-full input-premium"
+                                        placeholder="+1 (555) 000-0000" required>
+                                    <div class="error-message" data-error="phone">Phone number should contain only
+                                        digits.</div>
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Company
-                                        Address</label><input type="text" class="w-full input-premium"
-                                        placeholder="Street address"></div>
-                                <div><label
-                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label><input
-                                        type="text" class="w-full input-premium" placeholder="City"></div>
-                                <div><label
+                                        Address</label>
+                                    <input type="text" name="address" class="w-full input-premium"
+                                        placeholder="123 Main St">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">City</label>
+                                    <input type="text" name="city" class="w-full input-premium" placeholder="New York">
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">State
-                                        / Province</label><input type="text" class="w-full input-premium"
-                                        placeholder="State"></div>
-                                <div><label
+                                        / Province</label>
+                                    <input type="text" name="state" class="w-full input-premium" placeholder="NY">
+                                </div>
+                                <div>
+                                    <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip
-                                        / Postal Code</label><input type="text" class="w-full input-premium"
-                                        placeholder="Zip code"></div>
-                                <div><label
-                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Country</label><input
-                                        type="text" class="w-full input-premium" placeholder="Country"></div>
+                                        / Postal Code</label>
+                                    <input type="text" name="zip" class="w-full input-premium" placeholder="10001">
+                                    <div class="error-message" data-error="zip">Please enter a valid ZIP code.</div>
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Country</label>
+                                    <input type="text" name="country" class="w-full input-premium" placeholder="USA">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label
+                                        class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Tax
+                                        ID / EIN</label>
+                                    <input type="text" name="tax_id" class="w-full input-premium"
+                                        placeholder="XX-XXXXXXX">
+                                </div>
                             </div>
                         </div>
 
@@ -1148,7 +1287,7 @@
                             </h3>
 
                             <div
-                                class="flex justify-center flex-col items-center w-full h-32 sm:h-40 md:h-48 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-xl cursor-pointer hover:border-brand-crimson group file-dropzone">
+                                class="file-dropzone flex justify-center flex-col items-center w-full h-32 sm:h-40 md:h-48 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-xl hover:border-brand-crimson group">
                                 <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-brand-textSecondary mb-2 sm:mb-3 md:mb-4 group-hover:text-brand-crimson transition"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -1162,7 +1301,7 @@
                                     PDF, DOC, DOCX, XLS, XLSX, PNG, JPG</span>
                                 <span id="poFileName"
                                     class="text-[9px] sm:text-[10px] md:text-xs text-brand-crimson mt-1 sm:mt-2 font-semibold hidden"></span>
-                                <input type="file" id="poFileInput" class="hidden"
+                                <input type="file" name="po_file" id="poFileInput" class="hidden"
                                     accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg">
                             </div>
                         </div>
@@ -1179,6 +1318,8 @@
                                     all purchase order information is accurate and I have attached the official PO
                                     document. *</label>
                             </div>
+                            <div class="error-message" data-error="po_agreement">Please confirm that all information is
+                                accurate.</div>
                         </div>
 
                         <div class="flex flex-col items-center sm:items-start gap-1 sm:gap-2">
@@ -1188,7 +1329,8 @@
                             </button>
                             <p
                                 class="text-[8px] sm:text-[9px] md:text-xs text-brand-gray mt-1 sm:mt-2 text-center sm:text-left">
-                                Our team will review your purchase order and contact you within one business day.</p>
+                                Our team will review your purchase order and contact you within one business day.
+                            </p>
                         </div>
                     </form>
 
@@ -1197,8 +1339,10 @@
         </div>
     </main>
 
-    <!-- Footer - RESPONSIVE FIXED -->
-    <footer class="footer-premium text-brand-textSecondary py-4 sm:py-5 md:py-6 mt-auto">
+    <!-- ============================================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================================ -->
+    <footer class="footer-premium text-brand-textSecondary py-4 sm:py-5 md:py-6 mt-auto border-t border-brand-border">
         <div
             class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-[8px] sm:text-[9px] md:text-xs">
             <p>&copy; 2026 INKWELL IMPRESSIONS SOLUTIONS. All Rights Reserved.</p>
@@ -1209,15 +1353,33 @@
         </div>
     </footer>
 
-    <!-- Font Awesome -->
+    <!-- ============================================================ -->
+    <!-- FONT AWESOME -->
+    <!-- ============================================================ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="../config/supabase.js"></script>
 
     <!-- ============================================================ -->
-    <!-- JAVASCRIPT - ALL FORM SUBMITS & TAB SWITCHING -->
+    <!-- SCRIPTS -->
     <!-- ============================================================ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="./config/contact.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 </body>
 

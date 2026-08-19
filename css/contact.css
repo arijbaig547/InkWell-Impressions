@@ -1,0 +1,234 @@
+/* ============================================================ */
+/* CONTACT PAGE SPECIFIC STYLES                                 */
+/* ============================================================ */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F4F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #17154A;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #222063;
+}
+
+.premium-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(23, 21, 74, 0.10);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(23, 21, 74, 0.04);
+    transition: box-shadow 0.25s ease, transform 0.2s ease, border-color 0.2s;
+}
+
+.premium-card:hover {
+    box-shadow: 0 12px 32px rgba(23, 21, 74, 0.08);
+    transform: translateY(-2px);
+    border-color: rgba(23, 21, 74, 0.20);
+}
+
+.input-premium {
+    background: #FFFFFF;
+    border: 1px solid rgba(23, 21, 74, 0.12);
+    color: #1A1A2E;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+.input-premium:focus {
+    outline: none;
+    border-color: #17154A;
+    box-shadow: 0 0 0 3px rgba(23, 21, 74, 0.06);
+}
+
+.input-premium::placeholder {
+    color: #8A8AA8;
+}
+
+/* ===== VALIDATION STYLES ===== */
+.input-premium.error {
+    border-color: #C81F45 !important;
+    box-shadow: 0 0 0 3px rgba(200, 31, 69, 0.15) !important;
+}
+
+.input-premium.success {
+    border-color: #22C55E !important;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15) !important;
+}
+
+.error-message {
+    color: #C81F45;
+    font-size: 10px;
+    margin-top: 4px;
+    display: none;
+    font-weight: 500;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.input-premium:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+    .input-premium {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+.btn-crimson {
+    background: #C81F45;
+    border: 1px solid #C81F45;
+    color: #fff;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-crimson:hover {
+    background: #B0173C;
+    border-color: #B0173C;
+    box-shadow: 0 4px 12px rgba(200, 31, 69, 0.20);
+}
+
+.btn-crimson:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-navy {
+    background: #17154A;
+    border: 1px solid #17154A;
+    color: #FFFFFF;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-navy:hover {
+    background: #222063;
+    border-color: #222063;
+    box-shadow: 0 4px 12px rgba(23, 21, 74, 0.15);
+}
+
+.btn-navy:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.header-bg {
+    background: linear-gradient(135deg, #17154A 0%, #222063 70%, #2A2870 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tab-btn {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.tab-btn.active {
+    background: rgba(23, 21, 74, 0.04);
+    color: #17154A;
+    border-left-color: #C81F45;
+}
+
+.tab-btn:not(.active):hover {
+    background: rgba(23, 21, 74, 0.03);
+    color: #1A1A2E;
+}
+
+.tab-btn.active svg {
+    opacity: 1 !important;
+}
+
+.form-panel {
+    transition: opacity 0.25s ease;
+}
+
+.file-dropzone {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-dropzone:hover {
+    border-color: #C81F45;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+    .tab-btn {
+        font-size: 0.7rem !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+
+    .tab-btn svg {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    .premium-card .p-6 {
+        padding: 0.75rem !important;
+    }
+
+    .premium-card .p-10 {
+        padding: 1rem !important;
+    }
+
+    .header-bg .text-4xl {
+        font-size: 1.8rem !important;
+    }
+
+    .header-bg .text-lg {
+        font-size: 0.9rem !important;
+    }
+
+    .header-bg .py-10 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .header-bg .pt-\[185px\] {
+        padding-top: 70px !important;
+    }
+
+    .btn-crimson,
+    .btn-navy {
+        font-size: 0.7rem !important;
+        padding: 0.5rem 1rem !important;
+        width: 100% !important;
+    }
+
+    .gap-8 {
+        gap: 1rem !important;
+    }
+
+    .gap-12 {
+        gap: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-btn {
+        font-size: 0.6rem !important;
+        padding: 0.4rem 0.5rem !important;
+    }
+
+    .header-bg .text-4xl {
+        font-size: 1.5rem !important;
+    }
+
+    .input-premium {
+        font-size: 0.7rem !important;
+        padding: 0.35rem 0.5rem !important;
+    }
+}

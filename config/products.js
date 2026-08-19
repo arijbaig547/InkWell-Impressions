@@ -515,7 +515,7 @@
                 <img src="${product.image}" alt="${product.name}" class="popular-image">
                 
                 <div class="popular-content">
-                    <p class="popular-code">${product.code}</p>
+                    <h1 class="popular-code">${product.code}</h1>
                     <h4 class="popular-name">${product.name}</h4>
                     
                     <!-- Rating Stars -->

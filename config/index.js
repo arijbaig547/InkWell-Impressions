@@ -1,151 +1,188 @@
- const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const hamburgerIcon = document.getElementById('hamburgerIcon');
-
-        hamburgerBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            // Toggle icon between bars and X
-            hamburgerIcon.classList.toggle('fa-bars');
-            hamburgerIcon.classList.toggle('fa-xmark');
-        });
-
-        // Close menu when clicking a link (optional but better UX)
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                hamburgerIcon.classList.add('fa-bars');
-                hamburgerIcon.classList.remove('fa-xmark');
-            });
-        });
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Hero Animations
-        const heroTl = gsap.timeline();
-        heroTl.from(".gs-hero-left > *", { y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" })
-            .from(".gs-hero-center > div", { y: 50, opacity: 0, duration: 0.8, stagger: 0.2, ease: "back.out(1.7)" }, "-=0.6")
-            .from(".gs-hero-right > *", { x: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }, "-=0.8");
-
-        // Stats Animations
-        gsap.from(".gs-stat", {
-            scrollTrigger: { trigger: ".gs-stat", start: "top 85%" },
-            y: 30, opacity: 0, duration: 0.6, stagger: 0.15, ease: "power2.out"
-        });
-
-        // Categories Animations
-        gsap.from(".gs-category", {
-            scrollTrigger: { trigger: ".gs-category", start: "top 80%" },
-            y: 40, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out"
-        });
-
-        // Why Choose Us Animations
-        gsap.from(".gs-why-left > *", {
-            scrollTrigger: { trigger: ".gs-why-left", start: "top 80%" },
-            x: -40, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out"
-        });
-        gsap.from(".gs-why-right", {
-            scrollTrigger: { trigger: ".gs-why-right", start: "top 80%" },
-            y: 30, opacity: 0, duration: 0.6, stagger: 0.1, ease: "power2.out"
-        });
-
-        // About Animations
-        gsap.from(".gs-about-img", {
-            scrollTrigger: { trigger: ".gs-about-img", start: "top 80%" },
-            x: -50, opacity: 0, duration: 1, ease: "power2.out"
-        });
-        gsap.from(".gs-about-text > *", {
-            scrollTrigger: { trigger: ".gs-about-text", start: "top 80%" },
-            x: 50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power2.out"
-        });
-
-        // CTA Animation
-        gsap.from(".gs-cta > *", {
-            scrollTrigger: { trigger: ".gs-cta", start: "top 90%" },
-            y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out"
-        });
-        // gsap.from(".hero-center-bag", {
-        //     y: 50,
-        //     scale: 0.8,
-        //     opacity: 0,
-        //     duration: 0.5,
-        //     ease: "back.out(1.7)"
-        // }, "-=0.6")
-        gsap.from(".hero-center-bag", {
-            opacity: 0,
-            y: 40,
-            scale: 0.9,
-            duration: 1.5,
-            ease: "expo.out",
-            delay: 0.3
-        });
-
-       document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.review-card');
-    const prevBtn = document.getElementById('reviews-prev');
-    const nextBtn = document.getElementById('reviews-next');
-    let currentPage = 0;
-    const cardsPerPage = 2;
-    const totalPages = Math.ceil(cards.length / cardsPerPage);
-
-    function showPage(page) {
-        // Hide all cards with animation
-        cards.forEach((card, index) => {
-            const shouldShow = index >= page * cardsPerPage && index < (page + 1) * cardsPerPage;
+document.addEventListener('DOMContentLoaded', function() {
+    // ===== HAMBURGER MENU =====
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    const body = document.body;
+    
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
             
-            if (shouldShow) {
-                card.classList.remove('hidden');
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px) scale(0.95)';
-                
-                setTimeout(() => {
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0) scale(1)';
-                }, 50 + (index % cardsPerPage) * 100);
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                body.style.overflow = 'hidden';
+                hamburgerIcon.classList.remove('fa-bars');
+                hamburgerIcon.classList.add('fa-xmark');
             } else {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(-10px) scale(0.95)';
-                
-                setTimeout(() => {
-                    card.classList.add('hidden');
-                }, 300);
+                mobileMenu.classList.add('hidden');
+                body.style.overflow = '';
+                hamburgerIcon.classList.remove('fa-xmark');
+                hamburgerIcon.classList.add('fa-bars');
             }
         });
-
-        currentPage = page;
     }
-
-    function nextPage() {
-        const next = (currentPage + 1) % totalPages;
-        showPage(next);
-    }
-
-    function prevPage() {
-        const prev = (currentPage - 1 + totalPages) % totalPages;
-        showPage(prev);
-    }
-
-    // Event listeners with smooth transitions
-    nextBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        nextPage();
+    
+    mobileMenu.addEventListener('click', function(e) {
+        if (e.target === mobileMenu) {
+            mobileMenu.classList.add('hidden');
+            body.style.overflow = '';
+            hamburgerIcon.classList.remove('fa-xmark');
+            hamburgerIcon.classList.add('fa-bars');
+        }
+    });
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            body.style.overflow = '';
+            hamburgerIcon.classList.remove('fa-xmark');
+            hamburgerIcon.classList.add('fa-bars');
+        }
     });
 
-    prevBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        prevPage();
+    // ===== GSAP REGISTER PLUGIN =====
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ===== HERO ANIMATIONS =====
+    const heroTl = gsap.timeline();
+    heroTl.from(".gs-hero-left > *", { y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" })
+        .from(".gs-hero-center > div", { y: 50, opacity: 0, duration: 0.8, stagger: 0.2, ease: "back.out(1.7)" }, "-=0.6")
+        .from(".gs-hero-right > *", { x: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }, "-=0.8");
+
+    // ===== HERO CENTER BAG =====
+    gsap.from(".hero-center-bag", {
+        opacity: 0,
+        y: 40,
+        scale: 0.9,
+        duration: 1.5,
+        ease: "expo.out",
+        delay: 0.3
+    });
+
+    // ===== STATS ANIMATIONS =====
+    gsap.from(".gs-stat", {
+        scrollTrigger: { trigger: ".gs-stat", start: "top 85%" },
+        y: 30, opacity: 0, duration: 0.6, stagger: 0.15, ease: "power2.out"
+    });
+
+    // ===== CATEGORIES ANIMATIONS =====
+    gsap.from(".gs-category", {
+        scrollTrigger: { trigger: ".gs-category", start: "top 80%" },
+        y: 40, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out"
+    });
+
+    // ===== WHY CHOOSE US ANIMATIONS =====
+    gsap.from(".gs-why-left > *", {
+        scrollTrigger: { trigger: ".gs-why-left", start: "top 80%" },
+        x: -40, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out"
+    });
+    gsap.from(".gs-why-right", {
+        scrollTrigger: { trigger: ".gs-why-right", start: "top 80%" },
+        y: 30, opacity: 0, duration: 0.6, stagger: 0.1, ease: "power2.out"
+    });
+
+    // ===== ABOUT ANIMATIONS =====
+    gsap.from(".gs-about-img", {
+        scrollTrigger: { trigger: ".gs-about-img", start: "top 80%" },
+        x: -50, opacity: 0, duration: 1, ease: "power2.out"
+    });
+    gsap.from(".gs-about-text > *", {
+        scrollTrigger: { trigger: ".gs-about-text", start: "top 80%" },
+        x: 50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power2.out"
+    });
+
+    // ===== CTA ANIMATION =====
+    gsap.from(".gs-cta > *", {
+        scrollTrigger: { trigger: ".gs-cta", start: "top 90%" },
+        y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out"
+    });
+
+    // ============================================================
+    // ===== REVIEWS AUTO-SLIDER - 4 INDIVIDUAL REVIEWS =====
+    // ============================================================
+    const track = document.getElementById('reviews-track');
+    const slides = document.querySelectorAll('.review-slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const prevBtn = document.getElementById('reviews-prev');
+    const nextBtn = document.getElementById('reviews-next');
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoSlideInterval;
+
+    function goToSlide(index) {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        currentIndex = index;
+        
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('bg-brand-red', i === currentIndex);
+            dot.classList.toggle('bg-gray-300', i !== currentIndex);
+        });
+    }
+
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+        goToSlide(currentIndex - 1);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 4000);
+    }
+
+    // Event Listeners
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            prevSlide();
+            resetAutoSlide();
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            nextSlide();
+            resetAutoSlide();
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+            goToSlide(index);
+            resetAutoSlide();
+        });
     });
 
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'ArrowRight') nextPage();
-        if (e.key === 'ArrowLeft') prevPage();
+        if (e.key === 'ArrowRight') {
+            nextSlide();
+            resetAutoSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+            resetAutoSlide();
+        }
     });
 
-    // Initialize
-    showPage(0);
-});
+    // Start auto-sliding
+    autoSlideInterval = setInterval(nextSlide, 4000);
 
-        // Industries Animation
-        // gsap.from(".gs-industries > div > div", {
-        //     scrollTrigger: { trigger: ".gs-industries", start: "top 85%" },
-        //     y: 20, opacity: 0, duration: 0.5, stagger: 0.05, ease: "power1.out"
-        // });
+    // Pause on hover
+    const carouselWrapper = track ? track.parentElement : null;
+    if (carouselWrapper) {
+        carouselWrapper.addEventListener('mouseenter', function() {
+            clearInterval(autoSlideInterval);
+        });
+        carouselWrapper.addEventListener('mouseleave', function() {
+            autoSlideInterval = setInterval(nextSlide, 4000);
+        });
+    }
+});
