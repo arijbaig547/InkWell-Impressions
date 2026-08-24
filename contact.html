@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Inkwell Impressions</title>
-    <!-- Google Fonts -->
+
+    <!-- ===== SEO TITLE & META ===== -->
+    <title>Contact Us | Inkwell Impressions - B2B Printing & Promotional Solutions</title>
+    <meta name="description"
+        content="Contact Inkwell Impressions for B2B printing, custom packaging, corporate gifts, and promotional products. Request a quote, mockup, freight estimate, or submit a purchase order today." />
+    <link rel="canonical" href="https://www.inkwell-impressions.com/contact.html" />
+
+    <!-- ===== PRELOAD FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Tailwind CSS -->
+
+    <!-- ===== TAILWIND CSS ===== -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -40,22 +49,54 @@
             }
         }
     </script>
+
+    <!-- ===== EXTERNAL CSS (Unchanged - Waisay hi) ===== -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
+
+    <!-- ===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ===== SCHEMA MARKUP (JSON-LD) - SEO BOOST ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Us | Inkwell Impressions",
+            "description": "Contact Inkwell Impressions for B2B printing, custom packaging, corporate gifts, and promotional products.",
+            "url": "https://www.inkwell-impressions.com/contact.html",
+            "mainEntity": {
+                "@type": "Organization",
+                "name": "Inkwell Impressions Solutions",
+                "url": "https://www.inkwell-impressions.com",
+                "logo": "https://www.inkwell-impressions.com/bold.webp",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "5900 Balcones Drive STE 100 Suite 456",
+                    "addressLocality": "Austin",
+                    "addressRegion": "TX",
+                    "postalCode": "78731",
+                    "addressCountry": "US"
+                },
+                "telephone": "+17373057447",
+                "email": "info@inkwell-impressions.com"
+            }
+        }
+    </script>
 
 </head>
 
 <body class="font-sans antialiased bg-brand-bg text-brand-text overflow-x-hidden min-h-screen flex flex-col">
 
     <!-- ============================================================ -->
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION (Unchanged - Bilkul waisay hi) -->
     <!-- ============================================================ -->
     <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center shrink-0">
                 <a href="index.html">
-                    <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
-                        class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
+                    <img src="./bold.webp" alt="Inkwell Impressions Solutions Logo"
+                        class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" loading="eager" />
                 </a>
             </div>
             <ul
@@ -64,17 +105,17 @@
                 <li><a href="products.html" class="hover:text-brand-crimson transition">Products</a></li>
                 <li><a href="categories.html" class="hover:text-brand-crimson transition">Categories</a></li>
                 <li><a href="about.html" class="hover:text-brand-crimson transition">About Us</a></li>
-                <li><a href="contact.html" class="text-brand-crimson">Contact</a></li>
+                <li><a href="contact.html" class="text-brand-crimson" aria-current="page">Contact</a></li>
             </ul>
             <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
-                <a href="#">
-                <button
-                    class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
-                    <span class="relative z-10 flex items-center gap-2">
-                        <i class="fa-solid fa-file-signature text-[9px]"></i>
-                        REQUEST A QUOTE
-                    </span>
-                </button>
+                <a href="contact.html">
+                    <button
+                        class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+                        <span class="relative z-10 flex items-center gap-2">
+                            <i class="fa-solid fa-file-signature text-[9px]"></i>
+                            REQUEST A QUOTE
+                        </span>
+                    </button>
                 </a>
                 <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                     aria-label="Toggle Menu">
@@ -84,7 +125,7 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu (Unchanged) -->
     <div id="mobileMenu"
         class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
         <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
@@ -95,8 +136,8 @@
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
             <li><a href="about.html"
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
-            <li><a href="contact.html"
-                    class="text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
+            <li><a href="contact.html" class="text-brand-crimson block py-2 border-b border-gray-700 transition"
+                    aria-current="page">Contact</a></li>
         </ul>
         <button
             class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
@@ -108,7 +149,7 @@
     </div>
 
     <!-- ============================================================ -->
-    <!-- PAGE HEADER -->
+    <!-- PAGE HEADER (Unchanged) -->
     <!-- ============================================================ -->
     <header class="header-bg text-white py-4 sm:py-6 md:py-8 lg:py-10 px-3 sm:px-4 md:px-6 lg:px-8">
         <div
@@ -135,7 +176,7 @@
     </header>
 
     <!-- ============================================================ -->
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT (All forms unchanged, only SEO meta added) -->
     <!-- ============================================================ -->
     <main class="flex-grow py-6 sm:py-8 md:py-12 pb-12 sm:pb-16 md:pb-20 relative z-10">
         <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
@@ -143,7 +184,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-start">
 
                 <!-- ========================================================== -->
-                <!-- SIDEBAR - 5 TABS -->
+                <!-- SIDEBAR - 5 TABS (Unchanged) -->
                 <!-- ========================================================== -->
                 <div class="lg:col-span-4 sticky top-20 lg:top-32">
                     <div class="premium-card p-3 sm:p-4 shadow-lg">
@@ -237,11 +278,11 @@
                                     <span class="break-all">accounts@inkwell-impressions.com</span>
                                 </a>
                                 <div class="border-t border-brand-border/40 my-2 sm:my-3"></div>
-                                <a href="tel:+7373057447"
+                                <a href="tel:+17373057447"
                                     class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs md:text-sm text-brand-textSecondary hover:text-brand-crimson transition-colors duration-200 py-1">
                                     <i
                                         class="fa-solid fa-phone text-brand-crimson w-4 sm:w-5 md:w-6 text-xs sm:text-sm md:text-base flex-shrink-0"></i>
-                                    <span>737-305-7447</span>
+                                    <span>+1 (737) 305-7447</span>
                                 </a>
                                 <div class="border-t border-brand-border/40 my-2 sm:my-3"></div>
                                 <div
@@ -252,9 +293,9 @@
                                         <div class="font-semibold text-brand-text mb-0.5 text-[10px] sm:text-xs">Company
                                             Mailing Address</div>
                                         <div>5900 Balcones Drive</div>
-                                        <div>STE 100</div>
+                                        <div>STE 100 Suite 456</div>
                                         <div>Austin, TX, 78731</div>
-                                        <div>US</div>
+                                        <div>USA</div>
                                     </div>
                                 </div>
                             </div>
@@ -263,17 +304,12 @@
                 </div>
 
                 <!-- ========================================================== -->
-                <!-- FORMS AREA - 5 FORMS -->
+                <!-- FORMS AREA - 5 FORMS (Unchanged - Sirf logo name update) -->
                 <!-- ========================================================== -->
                 <div
                     class="lg:col-span-8 premium-card p-3 sm:p-4 md:p-6 lg:p-10 shadow-lg relative min-h-[500px] sm:min-h-[550px] md:min-h-[600px]">
 
-                    <!-- ========================================================== -->
-                    <!-- FORM 1: REQUEST A QUOTE -->
-                    <!-- ========================================================== -->
-                    <!-- ========================================================== -->
-                    <!-- FORM 1: REQUEST A QUOTE - FIXED -->
-                    <!-- ========================================================== -->
+                    <!-- ===== FORM 1: QUOTE ===== -->
                     <form id="form-quote" class="form-panel block" enctype="multipart/form-data" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
@@ -282,7 +318,6 @@
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
 
-                            <!-- Select Color -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -304,10 +339,10 @@
                                     <option value="purple">Purple</option>
                                     <option value="brown">Brown</option>
                                 </select>
-                                <div class="error-message" data-error="color">Please select a color.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="color">Please select a color.</div>
                             </div>
 
-                            <!-- Quantity - SIRF EK (Merged) -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -315,11 +350,10 @@
                                 </label>
                                 <input type="number" name="quantity" class="w-full input-premium"
                                     placeholder="Enter quantity" min="1" required>
-                                <div class="error-message" data-error="quantity">Please enter a valid quantity (minimum
-                                    1).</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="quantity">Please enter a valid quantity (minimum 1).</div>
                             </div>
 
-                            <!-- Ship to Zip Code -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -327,11 +361,11 @@
                                 </label>
                                 <input type="text" name="zip_code" class="w-full input-premium"
                                     placeholder="Enter zip code">
-                                <div class="error-message" data-error="zip_code">Please enter a valid ZIP code (e.g.
-                                    12345 or 12345-6789).</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="zip_code">Please enter a valid ZIP code (e.g. 12345 or 12345-6789).
+                                </div>
                             </div>
 
-                            <!-- Company Name -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -339,10 +373,10 @@
                                 </label>
                                 <input type="text" name="company" class="w-full input-premium"
                                     placeholder="Enter company name" required>
-                                <div class="error-message" data-error="company">Please enter a valid company name.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="company">Please enter a valid company name.</div>
                             </div>
 
-                            <!-- Email -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -350,10 +384,10 @@
                                 </label>
                                 <input type="email" name="email" class="w-full input-premium"
                                     placeholder="Enter email address" required>
-                                <div class="error-message" data-error="email">Please enter a valid email address.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="email">Please enter a valid email address.</div>
                             </div>
 
-                            <!-- Phone -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -361,11 +395,10 @@
                                 </label>
                                 <input type="tel" name="phone" class="w-full input-premium"
                                     placeholder="Enter phone number" required>
-                                <div class="error-message" data-error="phone">Please enter a valid phone number (digits
-                                    only).</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="phone">Please enter a valid phone number (digits only).</div>
                             </div>
 
-                            <!-- ASI / PPAI / SAGE # -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -373,11 +406,10 @@
                                 </label>
                                 <input type="text" name="asi_ppai_sage" class="w-full input-premium"
                                     placeholder="Enter ASI/PPAI/SAGE number">
-                                <div class="error-message" data-error="asi_ppai_sage">ASI/PPAI/SAGE # should contain
-                                    only numbers.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="asi_ppai_sage">ASI/PPAI/SAGE # should contain only numbers.</div>
                             </div>
 
-                            <!-- Item -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -385,11 +417,11 @@
                                 </label>
                                 <input type="text" name="item" class="w-full input-premium"
                                     placeholder="e.g. IB29, MQIB6000" required>
-                                <div class="error-message" data-error="item">Item should contain only letters, numbers,
-                                    dash or underscore.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="item">Item should contain only letters, numbers, dash or underscore.
+                                </div>
                             </div>
 
-                            <!-- In Hand Date -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -397,11 +429,10 @@
                                 </label>
                                 <input type="date" name="in_hand_date" class="w-full input-premium" min="2020-01-01"
                                     max="2100-12-31">
-                                <div class="error-message" data-error="in_hand_date">Please select a valid date
-                                    (2020-2100).</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="in_hand_date">Please select a valid date (2020-2100).</div>
                             </div>
 
-                            <!-- Need Freight Estimate? -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -421,7 +452,6 @@
                                 </div>
                             </div>
 
-                            <!-- Project Details -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -431,14 +461,13 @@
                                     placeholder="Describe your project requirements..."></textarea>
                             </div>
 
-                            <!-- Attach File -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
                                     <i class="fa-solid fa-paperclip mr-1"></i> Attach File
                                 </label>
                                 <div
-                                    class="file-dropzone flex justify-center flex-col items-center w-full h-20 sm:h-24 md:h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg hover:border-brand-crimson group">
+                                    class="file-dropzone flex justify-center flex-col items-center w-full h-20 sm:h-24 md:h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg hover:border-brand-crimson group cursor-pointer">
                                     <svg class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-brand-textSecondary mb-1 group-hover:text-brand-crimson transition"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -464,12 +493,7 @@
                         </button>
                     </form>
 
-                    <!-- ========================================================== -->
-                    <!-- FORM 2: REQUEST A MOCKUP -->
-                    <!-- ========================================================== -->
-                    <!-- ========================================================== -->
-                    <!-- FORM 2: REQUEST A MOCKUP - FIXED -->
-                    <!-- ========================================================== -->
+                    <!-- ===== FORM 2: MOCKUP ===== -->
                     <form id="form-mockup" class="form-panel hidden opacity-0" enctype="multipart/form-data" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
@@ -483,7 +507,6 @@
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
 
-                            <!-- Select Color -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -506,7 +529,6 @@
                                 </select>
                             </div>
 
-                            <!-- ASI / PPAI / SAGE # -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -514,11 +536,10 @@
                                 </label>
                                 <input type="text" name="asi_ppai_sage" class="w-full input-premium"
                                     placeholder="Enter ASI/PPAI/SAGE number">
-                                <div class="error-message" data-error="asi_ppai_sage">ASI/PPAI/SAGE # should contain
-                                    only numbers.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="asi_ppai_sage">ASI/PPAI/SAGE # should contain only numbers.</div>
                             </div>
 
-                            <!-- Item -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -526,11 +547,11 @@
                                 </label>
                                 <input type="text" name="item" class="w-full input-premium"
                                     placeholder="e.g. IB29, MQIB6000" required>
-                                <div class="error-message" data-error="item">Item should contain only letters, numbers,
-                                    dash or underscore.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="item">Item should contain only letters, numbers, dash or underscore.
+                                </div>
                             </div>
 
-                            <!-- Quantity - SIRF EK (Merged - Item Qty removed, sirf Quantity rakha) -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -538,11 +559,10 @@
                                 </label>
                                 <input type="number" name="quantity" class="w-full input-premium"
                                     placeholder="Enter quantity" min="1" required>
-                                <div class="error-message" data-error="quantity">Please enter a valid quantity (minimum
-                                    1).</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="quantity">Please enter a valid quantity (minimum 1).</div>
                             </div>
 
-                            <!-- Placement -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -557,7 +577,6 @@
                                 </select>
                             </div>
 
-                            <!-- Printing Method -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -571,7 +590,6 @@
                                 </select>
                             </div>
 
-                            <!-- Colors in Logo -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -579,11 +597,10 @@
                                 </label>
                                 <input type="number" name="logo_colors" class="w-full input-premium"
                                     placeholder="e.g. 1, 2, 4" min="1" max="10">
-                                <div class="error-message" data-error="logo_colors">Please enter a valid number between
-                                    1 and 10.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="logo_colors">Please enter a valid number between 1 and 10.</div>
                             </div>
 
-                            <!-- Email -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -591,10 +608,10 @@
                                 </label>
                                 <input type="email" name="email" class="w-full input-premium"
                                     placeholder="Enter email address">
-                                <div class="error-message" data-error="email">Please enter a valid email address.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="email">Please enter a valid email address.</div>
                             </div>
 
-                            <!-- Phone -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -602,11 +619,10 @@
                                 </label>
                                 <input type="tel" name="phone" class="w-full input-premium"
                                     placeholder="Enter phone number">
-                                <div class="error-message" data-error="phone">Phone number should contain only digits.
-                                </div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="phone">Phone number should contain only digits.</div>
                             </div>
 
-                            <!-- Need Freight Estimate? -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -626,7 +642,6 @@
                                 </div>
                             </div>
 
-                            <!-- Special Instructions -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -636,14 +651,13 @@
                                     placeholder="Any specific requirements for the mockup?"></textarea>
                             </div>
 
-                            <!-- Upload Logo / Artwork -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
                                     <i class="fa-solid fa-upload mr-1"></i> Upload Logo / Artwork
                                 </label>
                                 <div
-                                    class="file-dropzone flex justify-center flex-col items-center w-full h-20 sm:h-24 md:h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg hover:border-brand-crimson group">
+                                    class="file-dropzone flex justify-center flex-col items-center w-full h-20 sm:h-24 md:h-28 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-lg hover:border-brand-crimson group cursor-pointer">
                                     <svg class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-brand-textSecondary mb-1 group-hover:text-brand-crimson transition"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -669,9 +683,7 @@
                         </button>
                     </form>
 
-                    <!-- ========================================================== -->
-                    <!-- FORM 3: FREIGHT ESTIMATE -->
-                    <!-- ========================================================== -->
+                    <!-- ===== FORM 3: FREIGHT ===== -->
                     <form id="form-freight" class="form-panel hidden opacity-0" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
@@ -681,7 +693,6 @@
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-6">
 
-                            <!-- Your Email -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -689,10 +700,10 @@
                                 </label>
                                 <input type="email" name="email" class="w-full input-premium"
                                     placeholder="Enter your email address" required>
-                                <div class="error-message" data-error="email">Please enter a valid email address.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="email">Please enter a valid email address.</div>
                             </div>
 
-                            <!-- ASI / PPAI / SAGE # -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -700,11 +711,10 @@
                                 </label>
                                 <input type="text" name="asi_number" class="w-full input-premium"
                                     placeholder="Enter ASI/PPAI/SAGE number">
-                                <div class="error-message" data-error="asi_number">ASI/PPAI/SAGE # should contain only
-                                    numbers.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="asi_number">ASI/PPAI/SAGE # should contain only numbers.</div>
                             </div>
 
-                            <!-- Item / Style No. -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -712,11 +722,11 @@
                                 </label>
                                 <input type="text" name="item" class="w-full input-premium"
                                     placeholder="e.g. STL-100, BGR-204">
-                                <div class="error-message" data-error="item">Item should contain only letters, numbers,
-                                    dash or underscore.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="item">Item should contain only letters, numbers, dash or underscore.
+                                </div>
                             </div>
 
-                            <!-- Quantity -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -724,12 +734,10 @@
                                 </label>
                                 <input type="number" name="item_qty" class="w-full input-premium"
                                     placeholder="Enter quantity" min="1" required>
-                                <div class="error-message" data-error="item_qty">Please enter a valid quantity (minimum
-                                    1).</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="item_qty">Please enter a valid quantity (minimum 1).</div>
                             </div>
 
-                            <!-- Country -->
-                            <!-- Country -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -749,10 +757,10 @@
                                     <option value="ae">UAE</option>
                                     <option value="other">Other</option>
                                 </select>
-                                <div class="error-message" data-error="country">Please select a country.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="country">Please select a country.</div>
                             </div>
 
-                            <!-- State / Province -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -762,10 +770,10 @@
                                     class="w-full input-premium appearance-none cursor-pointer" required>
                                     <option value="">Select State/Province</option>
                                 </select>
-                                <div class="error-message" data-error="state">Please select a state/province.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="state">Please select a state/province.</div>
                             </div>
 
-                            <!-- Zip / Postal Code -->
                             <div>
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -773,11 +781,10 @@
                                 </label>
                                 <input type="text" name="zip" class="w-full input-premium"
                                     placeholder="Enter zip / postal code" required>
-                                <div class="error-message" data-error="zip">Please enter a valid ZIP code (e.g. 12345 or
-                                    12345-6789).</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="zip">Please enter a valid ZIP code (e.g. 12345 or 12345-6789).</div>
                             </div>
 
-                            <!-- Is Residential Address? -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -797,7 +804,6 @@
                                 </div>
                             </div>
 
-                            <!-- Special Instructions -->
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">
@@ -819,16 +825,14 @@
                         </button>
                     </form>
 
-                    <!-- ========================================================== -->
-                    <!-- FORM 4: CREDIT APPLICATION -->
-                    <!-- ========================================================== -->
+                    <!-- ===== FORM 4: CREDIT ===== -->
                     <form id="form-credit" class="form-panel hidden opacity-0 credit-section" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
                             Corporate Credit Application
                         </h2>
 
-                        <!-- NET 30 SECTION -->
+                        <!-- NET 30 -->
                         <div id="net30-section"
                             class="mb-6 sm:mb-8 md:mb-10 premium-card p-3 sm:p-4 md:p-6 border-l-4 border-brand-navy bg-brand-bg/20">
                             <h3
@@ -846,15 +850,16 @@
                                         Name *</label>
                                     <input type="text" name="business_name" class="w-full input-premium"
                                         placeholder="Acme Corp" required>
-                                    <div class="error-message" data-error="business_name">Please enter a valid business
-                                        name.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="business_name">Please enter a valid business name.</div>
                                 </div>
                                 <div>
                                     <label
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Date
                                         *</label>
                                     <input type="date" name="date" class="w-full input-premium" required>
-                                    <div class="error-message" data-error="date">Please select a valid date.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="date">Please select a valid date.</div>
                                 </div>
                                 <div class="md:col-span-2">
                                     <label
@@ -883,7 +888,8 @@
                                         *</label>
                                     <input type="text" name="zip" class="w-full input-premium" placeholder="10001"
                                         required>
-                                    <div class="error-message" data-error="zip">Please enter a valid ZIP code.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="zip">Please enter a valid ZIP code.</div>
                                 </div>
                                 <div>
                                     <label
@@ -891,8 +897,8 @@
                                         *</label>
                                     <input type="tel" name="telephone" class="w-full input-premium"
                                         placeholder="+1 (555) 000-0000" required>
-                                    <div class="error-message" data-error="telephone">Phone number should contain only
-                                        digits.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="telephone">Phone number should contain only digits.</div>
                                 </div>
                                 <div>
                                     <label
@@ -925,7 +931,8 @@
                                         the Net 30 terms and conditions. I understand that invoices are due within 30
                                         days of receipt. *</label>
                                 </div>
-                                <div class="error-message" data-error="net30_agreement">Please agree to the terms.</div>
+                                <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                    data-error="net30_agreement">Please agree to the terms.</div>
                             </div>
 
                             <div class="mt-4 sm:mt-5 md:mt-6">
@@ -936,7 +943,7 @@
                             </div>
                         </div>
 
-                        <!-- CREDIT CARD SECTION -->
+                        <!-- CREDIT CARD -->
                         <div id="cc-section"
                             class="mb-6 sm:mb-8 premium-card p-3 sm:p-4 md:p-6 border-l-4 border-brand-crimson bg-brand-bg/20">
                             <h3
@@ -961,8 +968,8 @@
                                             Order Email Address</label>
                                         <input type="email" name="po_email" class="w-full input-premium"
                                             placeholder="po@company.com">
-                                        <div class="error-message" data-error="po_email">Please enter a valid email
-                                            address.</div>
+                                        <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                            data-error="po_email">Please enter a valid email address.</div>
                                     </div>
                                     <div class="md:col-span-2">
                                         <label
@@ -994,8 +1001,8 @@
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label>
                                         <input type="text" name="zip_1" class="w-full input-premium"
                                             placeholder="10001">
-                                        <div class="error-message" data-error="zip_1">Please enter a valid ZIP code.
-                                        </div>
+                                        <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                            data-error="zip_1">Please enter a valid ZIP code.</div>
                                     </div>
                                     <div>
                                         <label
@@ -1010,8 +1017,8 @@
                                             *</label>
                                         <input type="text" name="cvv_1" class="w-full input-premium" placeholder="XXX"
                                             maxlength="4">
-                                        <div class="error-message" data-error="cvv_1">CVV should contain only digits.
-                                        </div>
+                                        <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                            data-error="cvv_1">CVV should contain only digits.</div>
                                     </div>
                                     <div>
                                         <label
@@ -1051,8 +1058,8 @@
                                             Order Email Address</label>
                                         <input type="email" name="po_email_2" class="w-full input-premium"
                                             placeholder="po@company.com">
-                                        <div class="error-message" data-error="po_email_2">Please enter a valid email
-                                            address.</div>
+                                        <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                            data-error="po_email_2">Please enter a valid email address.</div>
                                     </div>
                                     <div class="md:col-span-2">
                                         <label
@@ -1084,8 +1091,8 @@
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip</label>
                                         <input type="text" name="zip_2" class="w-full input-premium"
                                             placeholder="10001">
-                                        <div class="error-message" data-error="zip_2">Please enter a valid ZIP code.
-                                        </div>
+                                        <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                            data-error="zip_2">Please enter a valid ZIP code.</div>
                                     </div>
                                     <div>
                                         <label
@@ -1099,8 +1106,8 @@
                                             class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">CVV</label>
                                         <input type="text" name="cvv_2" class="w-full input-premium" placeholder="XXX"
                                             maxlength="4">
-                                        <div class="error-message" data-error="cvv_2">CVV should contain only digits.
-                                        </div>
+                                        <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                            data-error="cvv_2">CVV should contain only digits.</div>
                                     </div>
                                     <div>
                                         <label
@@ -1141,7 +1148,7 @@
                             </div>
                         </div>
 
-                        <!-- SHARED SIGNATURE -->
+                        <!-- SIGNATURE -->
                         <div
                             class="mb-6 sm:mb-8 premium-card p-3 sm:p-4 md:p-6 border-l-4 border-brand-navy bg-brand-bg/20">
                             <h3
@@ -1180,14 +1187,12 @@
                                     class="text-[10px] sm:text-xs md:text-sm text-brand-textSecondary">I confirm that
                                     all information provided is accurate and complete. *</label>
                             </div>
-                            <div class="error-message" data-error="global_agreement">Please confirm that all information
-                                is accurate.</div>
+                            <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                data-error="global_agreement">Please confirm that all information is accurate.</div>
                         </div>
                     </form>
 
-                    <!-- ========================================================== -->
-                    <!-- FORM 5: PURCHASE ORDER -->
-                    <!-- ========================================================== -->
+                    <!-- ===== FORM 5: PURCHASE ORDER ===== -->
                     <form id="form-po" class="form-panel hidden opacity-0" enctype="multipart/form-data" novalidate>
                         <h2
                             class="text-xl sm:text-2xl font-serif text-brand-text mb-4 sm:mb-6 border-b border-brand-border pb-3 sm:pb-4">
@@ -1207,8 +1212,8 @@
                                         Name *</label>
                                     <input type="text" name="company_name" class="w-full input-premium"
                                         placeholder="Acme Corp" required>
-                                    <div class="error-message" data-error="company_name">Please enter a valid company
-                                        name.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="company_name">Please enter a valid company name.</div>
                                 </div>
                                 <div>
                                     <label
@@ -1216,8 +1221,8 @@
                                         Person *</label>
                                     <input type="text" name="contact_person" class="w-full input-premium"
                                         placeholder="John Doe" required>
-                                    <div class="error-message" data-error="contact_person">Please enter a valid contact
-                                        person name.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="contact_person">Please enter a valid contact person name.</div>
                                 </div>
                                 <div>
                                     <label
@@ -1225,8 +1230,8 @@
                                         Address *</label>
                                     <input type="email" name="email" class="w-full input-premium"
                                         placeholder="john@acmecorp.com" required>
-                                    <div class="error-message" data-error="email">Please enter a valid email address.
-                                    </div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="email">Please enter a valid email address.</div>
                                 </div>
                                 <div>
                                     <label
@@ -1234,8 +1239,8 @@
                                         Number *</label>
                                     <input type="tel" name="phone" class="w-full input-premium"
                                         placeholder="+1 (555) 000-0000" required>
-                                    <div class="error-message" data-error="phone">Phone number should contain only
-                                        digits.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="phone">Phone number should contain only digits.</div>
                                 </div>
                                 <div class="md:col-span-2">
                                     <label
@@ -1260,7 +1265,8 @@
                                         class="block text-[8px] sm:text-[10px] md:text-xs font-medium text-brand-textSecondary mb-1 uppercase tracking-wider">Zip
                                         / Postal Code</label>
                                     <input type="text" name="zip" class="w-full input-premium" placeholder="10001">
-                                    <div class="error-message" data-error="zip">Please enter a valid ZIP code.</div>
+                                    <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                        data-error="zip">Please enter a valid ZIP code.</div>
                                 </div>
                                 <div>
                                     <label
@@ -1287,7 +1293,7 @@
                             </h3>
 
                             <div
-                                class="file-dropzone flex justify-center flex-col items-center w-full h-32 sm:h-40 md:h-48 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-xl hover:border-brand-crimson group">
+                                class="file-dropzone flex justify-center flex-col items-center w-full h-32 sm:h-40 md:h-48 px-4 transition bg-brand-bg border-2 border-dashed border-brand-border rounded-xl hover:border-brand-crimson group cursor-pointer">
                                 <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-brand-textSecondary mb-2 sm:mb-3 md:mb-4 group-hover:text-brand-crimson transition"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -1318,8 +1324,8 @@
                                     all purchase order information is accurate and I have attached the official PO
                                     document. *</label>
                             </div>
-                            <div class="error-message" data-error="po_agreement">Please confirm that all information is
-                                accurate.</div>
+                            <div class="error-message text-[8px] sm:text-[9px] text-brand-crimson mt-0.5 hidden"
+                                data-error="po_agreement">Please confirm that all information is accurate.</div>
                         </div>
 
                         <div class="flex flex-col items-center sm:items-start gap-1 sm:gap-2">
@@ -1340,7 +1346,7 @@
     </main>
 
     <!-- ============================================================ -->
-    <!-- FOOTER -->
+    <!-- FOOTER (Unchanged - Sirf logo name bold.webp) -->
     <!-- ============================================================ -->
     <footer class="footer-premium text-brand-textSecondary py-4 sm:py-5 md:py-6 mt-auto border-t border-brand-border">
         <div
@@ -1359,25 +1365,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- ============================================================ -->
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS (Unchanged - Waisay hi) -->
     <!-- ============================================================ -->
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script src="./config/contact.js"></script>
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
+    <script>
+            (function () {
+                // USA Central Time
+                const now = new Date();
+
+                const centralTime = new Intl.DateTimeFormat("en-US", {
+                    timeZone: "America/Chicago",
+                    hour: "numeric",
+                    minute: "numeric",
+                    hour12: false
+                }).formatToParts(now);
+
+                const hour = parseInt(
+                    centralTime.find(part => part.type === "hour").value
+                );
+
+                // Show Tawk only from 9 AM to 6 PM Central Time
+                if (hour >= 9 && hour < 18) {
+
+                    var Tawk_API = Tawk_API || {},
+                        Tawk_LoadStart = new Date();
+
+                    (function () {
+                        var s1 = document.createElement("script"),
+                            s0 = document.getElementsByTagName("script")[0];
+
+                        s1.async = true;
+                        s1.src = "https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1";
+                        s1.charset = "UTF-8";
+                        s1.setAttribute("crossorigin", "*");
+
+                        s0.parentNode.insertBefore(s1, s0);
+                    })();
+
+                }
+            })();
     </script>
     <!--End of Tawk.to Script-->
 

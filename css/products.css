@@ -476,6 +476,56 @@
       color: #6B6B8A;
       margin-bottom: 4px;
     }
+    /* Pagination Styles */
+#pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.pagination-btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: white;
+  color: #1a202c;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-btn:hover:not(.disabled):not(.active) {
+  background: #f7fafc;
+  border-color: #C81F45;
+  color: #C81F45;
+}
+
+.pagination-btn.active {
+  background: #C81F45;
+  border-color: #C81F45;
+  color: white;
+}
+
+.pagination-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pagination-dots {
+  padding: 0 4px;
+  color: #a0aec0;
+  font-size: 14px;
+}
 
     .popular-card .popular-hover-icon {
       position: absolute;

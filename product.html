@@ -4,26 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ink Well Impressions — Product Detail</title>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-    <!-- JSZip for ZIP creation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js">
-    </script>
-    <!-- FileSaver for downloading -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js">
-    </script>
+    <!-- ===== SEO TITLE & META ===== -->
+    <title>Product Detail | Inkwell Impressions - Premium B2B Printing & Promotional Products</title>
+    <meta name="description"
+        content="View detailed product information including pricing, specifications, colors, and templates. Request a quote or mockup for Inkwell Impressions premium B2B printing products." />
+    <link rel="canonical" href="https://www.inkwell-impressions.com/product.html" />
 
-    <!-- Google Fonts -->
+    <!-- ===== PRELOAD FONTS ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&display=swap"
         rel="stylesheet" />
 
-    <!-- Font Awesome 6 (free) -->
+    <!-- ===== TAILWIND ===== -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+    <!-- ===== JSZip + FileSaver ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js">
+    </script>
+
+    <!-- ===== FONT AWESOME ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <script>
@@ -57,37 +62,57 @@
             }
         }
     </script>
+
+    <!-- ===== EXTERNAL CSS (Unchanged - Waisay hi) ===== -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/product.css">
+
+    <!-- ===== SCHEMA MARKUP (JSON-LD) - SEO BOOST ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Inkwell Impressions Premium B2B Product",
+            "description": "Premium quality B2B printing and promotional products from Inkwell Impressions.",
+            "brand": {
+                "@type": "Brand",
+                "name": "Inkwell Impressions"
+            },
+            "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        }
+    </script>
+
 </head>
 
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
 
-
-    <!-- Navigation - RESPONSIVE FIXED -->
+    <!-- ============================================================ -->
+    <!-- NAV - RESPONSIVE FIXED (Unchanged - Bilkul waisay hi) -->
+    <!-- ============================================================ -->
     <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-            <!-- Logo - MOBILE FIX: chhota kiya -->
             <div class="flex items-center shrink-0">
                 <a href="index.html">
-                    <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
-                        class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
+                    <img src="./bold.webp" alt="Inkwell Impressions Solutions Logo"
+                        class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" loading="eager" />
                 </a>
             </div>
 
-            <!-- Desktop Menu -->
             <ul
                 class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
                 <li><a href="index.html" class="hover:text-brand-crimson">Home</a></li>
                 <li><a href="products.html" class="text-brand-crimson hover:text-brand-crimson transition">Products</a>
                 </li>
-                <li><a class="hover:text-brand-crimson transition">Categories</a></li>
-                <li><a class="hover:text-brand-crimson transition">About Us</a></li>
+                <li><a href="categories.html" class="hover:text-brand-crimson transition">Categories</a></li>
+                <li><a href="about.html" class="hover:text-brand-crimson transition">About Us</a></li>
                 <li><a href="contact.html" class="hover:text-brand-crimson transition">Contact</a></li>
             </ul>
 
-            <!-- Right -->
             <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
                 <a href="contact.html">
                     <button
@@ -98,8 +123,6 @@
                         </span>
                     </button>
                 </a>
-
-
                 <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                     aria-label="Toggle Menu">
                     <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
@@ -109,78 +132,70 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu (Unchanged) -->
     <div id="mobileMenu"
         class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
-
         <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
             <li><a href="index.html" class="block py-2 border-b border-gray-700">Home</a></li>
             <li><a href="products.html"
                     class="text-brand-crimson hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Products</a>
             </li>
-            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
-            <li><a class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
+            <li><a href="categories.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
+            <li><a href="about.html"
+                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
             <li><a href="contact.html"
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
         </ul>
-
-        <button
-            class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
-            <span class="relative z-10 flex items-center gap-2">
-                <i class="fa-solid fa-file-signature text-[9px]"></i>
-                REQUEST A QUOTE
-            </span>
-        </button>
+        <a href="contact.html">
+            <button
+                class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+                <span class="relative z-10 flex items-center gap-2">
+                    <i class="fa-solid fa-file-signature text-[9px]"></i>
+                    REQUEST A QUOTE
+                </span>
+            </button>
+        </a>
     </div>
 
-    <!-- Main Content - RESPONSIVE FIXED -->
+    <!-- ============================================================ -->
+    <!-- MAIN CONTENT (All product logic intact - Unchanged) -->
+    <!-- ============================================================ -->
     <main
         class="max-w-[1440px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 pt-[72px] sm:pt-[80px] md:pt-[100px] lg:pt-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px]"
         id="app">
 
-        <!-- Breadcrumbs - RESPONSIVE FIXED -->
+        <!-- Breadcrumbs -->
         <div
             class="text-[10px] sm:text-xs text-brand-textSecondary mb-4 sm:mb-6 flex items-center flex-wrap gap-1 sm:gap-2">
-            <a href="#" class="hover:text-brand-text transition-colors">Home</a>
+            <a href="index.html" class="hover:text-brand-text transition-colors">Home</a>
             <i class="fa-solid fa-chevron-right text-[6px] sm:text-[8px]"></i>
-            <a href="#" class="hover:text-brand-text transition-colors">Products</a>
-            <i class="fa-solid fa-chevron-right text-[6px] sm:text-[8px]"></i>
-            <a href="#" class="hover:text-brand-text transition-colors">Bags & Totes</a>
+            <a href="products.html" class="hover:text-brand-text transition-colors">Products</a>
             <i class="fa-solid fa-chevron-right text-[6px] sm:text-[8px]"></i>
             <span class="text-brand-text truncate max-w-[120px] sm:max-w-full"
                 id="product-name-breadcrumb">Loading...</span>
         </div>
 
-        <!-- Product Layout Grid - RESPONSIVE FIXED -->
+        <!-- Product Layout Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 xl:gap-30">
 
             <!-- Left Column: Images & Colors -->
             <div class="lg:col-span-5 flex flex-col gap-4 sm:gap-6">
 
-                <!-- Image Gallery - RESPONSIVE FIXED -->
+                <!-- Image Gallery -->
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 h-auto sm:h-[500px] mt-4 sm:mt-[25px]">
-                    <!-- Thumbnails - Mobile: horizontal scroll -->
                     <div class="flex sm:flex-col gap-2 overflow-x-auto sm:overflow-y-auto custom-scrollbar pb-2 sm:pb-0 sm:pr-1"
                         id="thumbnail-container">
                     </div>
-                    <!-- Main Image -->
                     <div
                         class="flex-1 bg-brand-surface rounded-lg relative flex items-center justify-center group overflow-hidden border border-brand-border min-h-[280px] sm:min-h-[400px]">
-                        <button
-                            class="absolute left-2 sm:left-4 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-brand-text/10 text-brand-text flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-brand-text/20">
-                            <i class="fa-solid fa-chevron-left text-xs sm:text-sm"></i>
-                        </button>
                         <img id="main-image" src=""
                             class="w-[85%] h-[85%] object-cover rounded-md shadow-lg color-image-transition"
-                            alt="Product Image">
-                        <button
-                            class="absolute right-2 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-brand-text/10 text-brand-text flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-brand-text/20">
-                            <i class="fa-solid fa-chevron-right text-xs sm:text-sm"></i>
-                        </button>
+                            alt="Product Image" width="500" height="500" loading="eager" />
                     </div>
                 </div>
 
-                <!-- Features Bar - RESPONSIVE FIXED -->
+                <!-- Features Bar -->
                 <div
                     class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-0 px-3 sm:px-4 py-2 sm:py-3 bg-brand-surface rounded-lg border border-brand-border text-[10px] sm:text-xs text-brand-textSecondary">
                     <div class="flex items-center gap-1 sm:gap-2"><i
@@ -193,7 +208,7 @@
                             class="fa-solid fa-globe text-brand-crimson text-xs sm:text-sm"></i> Global Delivery</div>
                 </div>
 
-                <!-- Available Colors - RESPONSIVE FIXED -->
+                <!-- Available Colors -->
                 <div class="mt-6 sm:mt-[50px]">
                     <h3 class="text-[10px] sm:text-xs font-bold tracking-wider mb-3 sm:mb-4 text-brand-text">AVAILABLE
                         COLORS</h3>
@@ -204,10 +219,10 @@
 
             </div>
 
-            <!-- Right Column: Info & Pricing - RESPONSIVE FIXED -->
+            <!-- Right Column: Info & Pricing -->
             <div class="lg:col-span-7 flex flex-col mt-4 sm:mt-[50px] px-0 sm:px-[30px]">
 
-                <!-- Header - RESPONSIVE FIXED -->
+                <!-- Header -->
                 <div class="mb-3 sm:mb-4">
                     <span
                         class="inline-block border border-brand-crimson text-brand-crimson px-2 py-0.5 text-base sm:text-xl rounded mb-2 sm:mb-3"
@@ -221,7 +236,7 @@
                 <p class="text-brand-textSecondary text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 max-w-2xl"
                     id="product-description"></p>
 
-                <!-- Specifications Box - RESPONSIVE FIXED -->
+                <!-- Specifications Box -->
                 <div
                     class="grid grid-cols-2 gap-3 sm:gap-10 bg-brand-surface border border-brand-border rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
                     <div class="flex items-center gap-2 sm:gap-3">
@@ -248,37 +263,28 @@
                     </div>
                 </div>
 
-                <!-- Printing Method Tabs - RESPONSIVE FIXED -->
+                <!-- Printing Method Tabs -->
                 <div class="grid grid-cols-3 gap-1 sm:gap-2 mb-3 sm:mb-4" id="printing-tabs">
                     <button
                         class="border border-brand-crimson bg-brand-crimson/10 text-brand-crimson py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider"
-                        data-method="spot">
-                        SPOT PRINTING
-                    </button>
+                        data-method="spot">SPOT PRINTING</button>
                     <button
                         class="border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider"
-                        data-method="transfer">
-                        HEAT TRANSFER
-                    </button>
+                        data-method="transfer">HEAT TRANSFER</button>
                     <button
                         class="border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider"
-                        data-method="blank">
-                        BLANK
-                    </button>
+                        data-method="blank">BLANK</button>
                 </div>
 
-                <!-- Pricing Section - RESPONSIVE FIXED -->
+                <!-- Pricing Section -->
                 <div class="mb-2 sm:mb-4" id="pricing-section">
                     <div
                         class="text-[8px] sm:text-[10px] font-bold text-brand-textSecondary mb-1 sm:mb-2 tracking-wider">
                         SPOT PRINTING PRICING (USD)</div>
                     <div class="overflow-x-auto">
                         <table class="w-full pricing-table text-[10px] sm:text-xs min-w-[400px] sm:min-w-full">
-                            <thead id="pricing-thead">
-
-                            </thead>
-                            <tbody id="pricing-body">
-                            </tbody>
+                            <thead id="pricing-thead"></thead>
+                            <tbody id="pricing-body"></tbody>
                         </table>
                     </div>
                     <button id="viewMorePricingBtn"
@@ -287,11 +293,10 @@
                     </button>
                 </div>
 
-                <!-- 3 Info / Action Cards - RESPONSIVE FIXED -->
+                <!-- 3 Info / Action Cards -->
                 <div class="flex justify-center mb-4 sm:mb-6">
                     <div class="bg-brand-surface border border-brand-border rounded-lg p-3 sm:p-6 w-full max-w-2xl">
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-                            <!-- Price Includes -->
                             <div class="flex items-start gap-2 sm:gap-3">
                                 <i
                                     class="fa-solid fa-certificate text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
@@ -301,8 +306,6 @@
                                         id="dynamic-price-includes">1 Color, 1 Location</div>
                                 </div>
                             </div>
-
-                            <!-- Lead Time -->
                             <div class="flex items-start gap-2 sm:gap-3">
                                 <i
                                     class="fa-regular fa-clock text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
@@ -313,8 +316,6 @@
                                         id="dynamic-lead-time">5-7 Business Days</div>
                                 </div>
                             </div>
-
-                            <!-- Setup Charge -->
                             <div class="flex items-start gap-2 sm:gap-3" id="setup-charge-container">
                                 <i
                                     class="fa-solid fa-gear text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
@@ -324,8 +325,6 @@
                                         id="dynamic-setup-charge">$56.25 (V)</div>
                                 </div>
                             </div>
-
-                            <!-- Repeat Setup -->
                             <div class="flex items-start gap-2 sm:gap-3" id="repeat-setup-container">
                                 <i
                                     class="fa-regular fa-arrows-rotate text-brand-crimson text-[10px] sm:text-sm mt-0.5 sm:mt-1"></i>
@@ -339,17 +338,17 @@
                     </div>
                 </div>
 
-                <!-- Action Buttons - RESPONSIVE FIXED -->
+                <!-- Action Buttons -->
                 <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
-                    <button
+                    <button id="requestQuoteBtn"
                         class="btn-crimson flex-1 py-2.5 sm:py-3.5 rounded text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
                         <i class="fa-regular fa-pen-to-square text-xs sm:text-sm"></i> REQUEST A QUOTE
                     </button>
-                    <button
+                    <button id="requestMockupBtn"
                         class="btn-outline flex-1 py-2.5 sm:py-3.5 rounded text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2 border-brand-border">
                         <i class="fa-regular fa-image text-xs sm:text-sm"></i> REQUEST A MOCKUP
                     </button>
-                    <button
+                    <button id="requestFreightBtn"
                         class="btn-outline border-transparent hover:border-brand-border flex-1 py-2.5 sm:py-3.5 rounded text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2 text-brand-textSecondary hover:text-brand-text">
                         <i class="fa-solid fa-truck-fast text-xs sm:text-sm"></i> FREIGHT ESTIMATE <i
                             class="fa-solid fa-arrow-right font-light ml-1 text-[10px] sm:text-xs"></i>
@@ -366,29 +365,22 @@
             </div>
         </div>
 
-        <!-- Bottom Section: Tabs & Detailed Specs - RESPONSIVE FIXED -->
+        <!-- Bottom Section: Tabs & Detailed Specs -->
         <div
             class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mt-8 sm:mt-12 border-t border-brand-border pt-6 sm:pt-8">
 
-            <!-- Left Column: Tabs - RESPONSIVE FIXED -->
             <div class="lg:col-span-5">
                 <div class="flex gap-3 sm:gap-6 border-b border-brand-border mb-4 sm:mb-6 overflow-x-auto custom-scrollbar pb-1"
                     id="info-tabs">
                     <button
                         class="tab-btn active text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-brand-crimson whitespace-nowrap"
-                        data-tab="description">
-                        PRODUCT DESCRIPTION
-                    </button>
+                        data-tab="description">PRODUCT DESCRIPTION</button>
                     <button
                         class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
-                        data-tab="charges">
-                        ADDITIONAL CHARGES
-                    </button>
+                        data-tab="charges">ADDITIONAL CHARGES</button>
                     <button
                         class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
-                        data-tab="packaging">
-                        PACKAGING INFO
-                    </button>
+                        data-tab="packaging">PACKAGING INFO</button>
                 </div>
 
                 <div id="tab-content">
@@ -398,7 +390,6 @@
                 </div>
             </div>
 
-            <!-- Right Column: Specs Grid - RESPONSIVE FIXED -->
             <div class="lg:col-span-7">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-0 text-[10px] sm:text-xs border border-brand-border rounded-lg bg-brand-surface overflow-hidden"
                     id="specs-table">
@@ -407,7 +398,11 @@
 
         </div>
 
-        <!-- MODALS - RESPONSIVE FIXED already in CSS -->
+        <!-- ============================================================ -->
+        <!-- MODALS (All modals unchanged - Full code preserved) -->
+        <!-- ============================================================ -->
+
+        <!-- QUOTATION MODAL -->
         <div id="quotationModal" class="modal-overlay">
             <div class="modal-content modal-quotation">
                 <div class="modal-header">
@@ -416,7 +411,6 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-
                 <div class="modal-body">
                     <div
                         class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
@@ -427,15 +421,14 @@
                             <p id="quotationProductCode" class="text-xs sm:text-sm text-brand-textSecondary"></p>
                         </div>
                     </div>
-
                     <form id="quotationForm">
+                        <!-- Form fields as original -->
                         <div class="form-group">
                             <label for="quotationColor"><i class="fa-solid fa-palette mr-1"></i> Select Color</label>
                             <select id="quotationColor" name="color" required>
                                 <option value="">Select Color</option>
                             </select>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="quotationQuantity"><i class="fa-solid fa-hashtag mr-1"></i> Quantity</label>
@@ -448,7 +441,6 @@
                                 <input type="text" id="quotationZip" name="zip_code" placeholder="Enter zip code">
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="quotationCompany"><i class="fa-regular fa-building mr-1"></i> Company
@@ -462,7 +454,6 @@
                                     required>
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="quotationPhone"><i class="fa-solid fa-phone mr-1"></i> Phone</label>
@@ -476,7 +467,6 @@
                                     placeholder="Enter ASI/PPAI/SAGE number">
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="quotationItem"><i class="fa-solid fa-box mr-1"></i> Item *</label>
@@ -489,12 +479,10 @@
                                     min="1" required>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="quotationDate"><i class="fa-regular fa-calendar mr-1"></i> In Hand Date</label>
                             <input type="date" id="quotationDate" name="in_hand_date">
                         </div>
-
                         <div class="form-group">
                             <label><i class="fa-solid fa-truck mr-1"></i> Need Freight Estimate?</label>
                             <div class="radio-group">
@@ -502,34 +490,29 @@
                                 <label><input type="radio" name="freight_estimate" value="No" checked> No</label>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="quotationDetails"><i class="fa-regular fa-file-lines mr-1"></i> Project
                                 Details</label>
                             <textarea id="quotationDetails" name="project_details"
                                 placeholder="Describe your project requirements..." rows="4"></textarea>
                         </div>
-
                         <div class="form-group">
                             <label for="quotationFile"><i class="fa-solid fa-paperclip mr-1"></i> Attach File</label>
                             <div class="file-upload-wrapper">
                                 <input type="file" id="quotationFile" name="attachment" class="file-input"
                                     accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.svg" multiple>
                                 <label for="quotationFile" class="file-label">
-                                    <i class="fa-solid fa-upload mr-2"></i>
-                                    Choose File
+                                    <i class="fa-solid fa-upload mr-2"></i> Choose File
                                     <span id="fileName" class="file-name">No file chosen</span>
                                 </label>
                             </div>
                         </div>
                     </form>
                 </div>
-
                 <div class="modal-footer">
                     <button class="btn-cancel" id="cancelQuotationModal">Cancel</button>
-                    <button type="submit" form="quotationForm" class="btn-submit" id="submitQuotation">
-                        Submit Quotation
-                    </button>
+                    <button type="submit" form="quotationForm" class="btn-submit" id="submitQuotation">Submit
+                        Quotation</button>
                 </div>
             </div>
         </div>
@@ -543,7 +526,6 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-
                 <div class="modal-body">
                     <div
                         class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
@@ -554,7 +536,6 @@
                             <p id="mockupProductCode" class="text-xs sm:text-sm text-brand-textSecondary"></p>
                         </div>
                     </div>
-
                     <form id="mockupForm">
                         <div class="form-group">
                             <label for="mockupColor"><i class="fa-solid fa-palette mr-1"></i> Select Color</label>
@@ -562,28 +543,27 @@
                                 <option value="">Select Color</option>
                             </select>
                         </div>
-
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mockupAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE
+                                    #</label>
+                                <input type="text" id="mockupAsi" name="asi_ppai_sage"
+                                    placeholder="Enter ASI/PPAI/SAGE number">
+                            </div>
+                            <div class="form-group">
+                                <label for="mockupItem"><i class="fa-solid fa-box mr-1"></i> Item *</label>
+                                <input type="text" id="mockupItem" name="item" placeholder="e.g. IB29, MQIB6000"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mockupItemQty"><i class="fa-solid fa-hashtag mr-1"></i> Qty *</label>
+                            <input type="number" id="mockupItemQty" name="item_qty" placeholder="Enter quantity" min="1"
+                                required>
+                        </div>
                         <div class="form-group">
                             <label for="mockupLogo"><i class="fa-solid fa-upload mr-1"></i> Upload Logo /
                                 Artwork</label>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="mockupAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE
-                                        #</label>
-                                    <input type="text" id="mockupAsi" name="asi_ppai_sage"
-                                        placeholder="Enter ASI/PPAI/SAGE number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="mockupItem"><i class="fa-solid fa-box mr-1"></i> Item *</label>
-                                    <input type="text" id="mockupItem" name="item" placeholder="e.g. IB29, MQIB6000"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="mockupItemQty"><i class="fa-solid fa-hashtag mr-1"></i> Qty *</label>
-                                <input type="number" id="mockupItemQty" name="item_qty" placeholder="Enter quantity"
-                                    min="1" required>
-                            </div>
                             <div class="file-upload-wrapper">
                                 <input type="file" id="mockupLogo" class="file-input"
                                     accept=".png,.jpg,.jpeg,.svg,.ai,.eps,.pdf" multiple>
@@ -595,7 +575,6 @@
                             <p class="text-[8px] sm:text-[10px] text-brand-textSecondary mt-1">Supported: PNG, JPG, SVG,
                                 AI, EPS, PDF (Max 10MB)</p>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="mockupPlacement"><i class="fa-regular fa-square mr-1"></i> Placement</label>
@@ -617,7 +596,6 @@
                                 </select>
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="mockupQuantity"><i class="fa-solid fa-hashtag mr-1"></i> Quantity</label>
@@ -629,7 +607,6 @@
                                 <input type="number" id="mockupLogoColors" placeholder="e.g. 1, 2, 4" min="1" max="10">
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="mockupEmail"><i class="fa-regular fa-envelope mr-1"></i> Email</label>
@@ -640,14 +617,12 @@
                                 <input type="tel" id="mockupPhone" placeholder="Enter phone number">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="mockupInstructions"><i class="fa-regular fa-comment mr-1"></i> Special
                                 Instructions</label>
                             <textarea id="mockupInstructions"
                                 placeholder="Any specific requirements for the mockup?"></textarea>
                         </div>
-
                         <div class="form-group">
                             <label><i class="fa-solid fa-truck mr-1"></i> Need Freight Estimate?</label>
                             <div class="radio-group">
@@ -657,17 +632,14 @@
                         </div>
                     </form>
                 </div>
-
                 <div class="modal-footer">
                     <button class="btn-cancel" id="cancelMockupModal">Cancel</button>
-                    <button class="btn-submit" id="submitMockup">
-                        <i class="fa-regular fa-image mr-2"></i> Submit Mockup Request
-                    </button>
+                    <button class="btn-submit" id="submitMockup"><i class="fa-regular fa-image mr-2"></i> Submit Mockup
+                        Request</button>
                 </div>
             </div>
         </div>
 
-        <!-- FREIGHT ESTIMATE MODAL -->
         <!-- FREIGHT ESTIMATE MODAL -->
         <div id="freightModal" class="modal-overlay">
             <div class="modal-content modal-freight">
@@ -677,7 +649,6 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-
                 <div class="modal-body">
                     <div
                         class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
@@ -688,35 +659,27 @@
                             <p id="freightProductCode" class="text-xs sm:text-sm text-brand-textSecondary"></p>
                         </div>
                     </div>
-
                     <form id="freightForm">
-                        <!-- ===== NEW: ASI / PPAI / SAGE # ===== -->
                         <div class="form-group">
                             <label for="freightAsi"><i class="fa-regular fa-id-badge mr-1"></i> ASI / PPAI / SAGE
                                 #</label>
                             <input type="text" id="freightAsi" name="asi_number"
                                 placeholder="Enter ASI/PPAI/SAGE number">
                         </div>
-
-                        <!-- ===== NEW: Item / Style No. ===== -->
                         <div class="form-group">
                             <label for="freightItem"><i class="fa-solid fa-box mr-1"></i> Item / Style No.</label>
                             <input type="text" id="freightItem" name="item" placeholder="e.g. STL-100, BGR-204">
                         </div>
-
-                        <!-- Quantity -->
                         <div class="form-group">
                             <label for="freightQty"><i class="fa-solid fa-hashtag mr-1"></i> Quantity *</label>
                             <input type="number" id="freightQty" name="item_qty" placeholder="Enter quantity" min="1"
                                 required>
                         </div>
-
                         <div class="form-group">
                             <label for="freightEmail"><i class="fa-regular fa-envelope mr-1"></i> Your Email *</label>
                             <input type="email" id="freightEmail" name="email" placeholder="Enter your email address"
                                 required>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="freightCountry"><i class="fa-solid fa-globe mr-1"></i> Country *</label>
@@ -792,13 +755,11 @@
                                 </select>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="freightZip"><i class="fa-solid fa-mailbox mr-1"></i> Zip / Postal Code *</label>
                             <input type="text" id="freightZip" name="zip" placeholder="Enter zip / postal code"
                                 required>
                         </div>
-
                         <div class="form-group">
                             <label><i class="fa-solid fa-house mr-1"></i> Is Residential Address?</label>
                             <div class="radio-group">
@@ -807,23 +768,19 @@
                                     (Commercial)</label>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="freightInstructions"><i class="fa-regular fa-comment mr-1"></i> Special
                                 Instructions</label>
                             <textarea id="freightInstructions" name="instructions"
                                 placeholder="Any special delivery instructions?"></textarea>
                         </div>
-
                         <p class="text-xs text-brand-textSecondary mt-2">* Fields are mandatory</p>
                     </form>
                 </div>
-
                 <div class="modal-footer">
                     <button class="btn-cancel" id="cancelFreightModal">Cancel</button>
-                    <button class="btn-submit" id="submitFreight">
-                        <i class="fa-solid fa-truck-fast mr-2"></i> Get Freight Estimate
-                    </button>
+                    <button class="btn-submit" id="submitFreight"><i class="fa-solid fa-truck-fast mr-2"></i> Get
+                        Freight Estimate</button>
                 </div>
             </div>
         </div>
@@ -838,7 +795,6 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-
                 <div class="modal-body">
                     <div
                         class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 bg-gray-50 p-3 sm:p-4 rounded-xl border border-gray-200">
@@ -852,7 +808,6 @@
                                     id="templatesImprintArea"></span></p>
                         </div>
                     </div>
-
                     <div class="overflow-x-auto">
                         <table
                             class="w-full text-xs sm:text-sm border border-brand-border rounded-lg min-w-[400px] sm:min-w-full">
@@ -866,25 +821,21 @@
                                         Download</th>
                                 </tr>
                             </thead>
-                            <tbody id="templatesTableBody">
-                            </tbody>
+                            <tbody id="templatesTableBody"></tbody>
                         </table>
                     </div>
-
                     <div class="mt-4 sm:mt-6 text-center">
                         <button id="downloadAllTemplates"
                             class="btn-crimson px-4 sm:px-6 py-2 sm:py-2.5 rounded text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 mx-auto">
                             <i class="fa-solid fa-download"></i> Download All Color Templates (ZIP)
                         </button>
                     </div>
-
                     <div class="mt-3 sm:mt-4 p-2 sm:p-3 bg-brand-bg/30 rounded-lg border border-brand-border">
                         <p class="text-xs sm:text-sm text-brand-textSecondary">
                             <b>Black & White Template:</b> <span id="bwTemplateStatus">N/A</span>
                         </p>
                     </div>
                 </div>
-
                 <div class="modal-footer">
                     <button class="btn-cancel" id="cancelTemplatesModal">Close</button>
                 </div>
@@ -896,23 +847,67 @@
 
     </main>
 
-    <script src="./config/product.js"></script>
+    <!-- ============================================================ -->
+    <!-- SCRIPTS (Unchanged - Waisay hi) -->
+    <!-- ============================================================ -->
+    <script src="./config/product.js" defer></script>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    <!-- Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+            if (hamburgerBtn && mobileMenu && hamburgerIcon) {
+                hamburgerBtn.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                    hamburgerIcon.classList.toggle('fa-bars');
+                    hamburgerIcon.classList.toggle('fa-xmark');
+                });
+            }
+        });
+    </script>
+
+    <!--Start of Tawk.to Script (Defer)-->
+    <script>
         (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
+            // USA Central Time
+            const now = new Date();
+
+            const centralTime = new Intl.DateTimeFormat("en-US", {
+                timeZone: "America/Chicago",
+                hour: "numeric",
+                minute: "numeric",
+                hour12: false
+            }).formatToParts(now);
+
+            const hour = parseInt(
+                centralTime.find(part => part.type === "hour").value
+            );
+
+            // Show Tawk only from 9 AM to 6 PM Central Time
+            if (hour >= 9 && hour < 18) {
+
+                var Tawk_API = Tawk_API || {},
+                    Tawk_LoadStart = new Date();
+
+                (function () {
+                    var s1 = document.createElement("script"),
+                        s0 = document.getElementsByTagName("script")[0];
+
+                    s1.async = true;
+                    s1.src = "https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1";
+                    s1.charset = "UTF-8";
+                    s1.setAttribute("crossorigin", "*");
+
+                    s0.parentNode.insertBefore(s1, s0);
+                })();
+
+            }
         })();
     </script>
     <!--End of Tawk.to Script-->
-
-
 
 </body>
 

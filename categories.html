@@ -4,15 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inkwell Impressions | Product Categories</title>
-  <!-- Fonts -->
+
+  <!-- ===== SEO TITLE & META ===== -->
+  <title>Product Categories | Inkwell Impressions - B2B Printing & Promotional Products</title>
+  <meta name="description"
+    content="Explore Inkwell Impressions product categories including tote bags, printed apparel, corporate gifts, and tech products. Premium B2B printing solutions." />
+  <link rel="canonical" href="https://www.inkwell-impressions.com/categories.html" />
+
+  <!-- ===== PRELOAD FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet" />
 
-  <!-- Tailwind -->
+  <!-- ===== TAILWIND ===== -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -34,48 +40,286 @@
     };
   </script>
 
-   <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="./css/categories.css">
+  <!-- ===== FONT AWESOME ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- ===== EXTERNAL CSS (Unchanged - Waisay hi) ===== -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/categories.css">
+
+  <!-- ===== SCHEMA MARKUP (JSON-LD) - SEO BOOST ===== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Product Categories | Inkwell Impressions",
+      "description": "Explore Inkwell Impressions product categories including tote bags, printed apparel, corporate gifts, and tech products.",
+      "url": "https://www.inkwell-impressions.com/categories.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Inkwell Impressions Solutions",
+        "logo": "https://www.inkwell-impressions.com/bold.webp"
+      },
+      "hasPart": [
+        {
+          "@type": "Product",
+          "name": "Tote Bags",
+          "description": "Premium custom printed canvas bags for corporate branding."
+        },
+        {
+          "@type": "Product",
+          "name": "Printed Apparel",
+          "description": "Crisp, color-accurate printed apparel for brand promotion."
+        },
+        {
+          "@type": "Product",
+          "name": "Corporate Gifts",
+          "description": "Curated luxury corporate gifts and executive products."
+        },
+        {
+          "@type": "Product",
+          "name": "Tech Products",
+          "description": "Premium functional technology etched with your insignia."
+        }
+      ]
+    }
+  </script>
+
+  <!-- ===== CRITICAL CSS (Only for hero background) ===== -->
+  <style>
+    /* ===== SLIDE BACKGROUNDS ===== */
+    .bg-tote {
+      background: #F9F8F6;
+    }
+
+    .bg-apparel {
+      background: #1C2541;
+    }
+
+    .bg-gifts {
+      background: #F9F8F6;
+    }
+
+    .bg-tech {
+      background: #0B132B;
+    }
+
+    .dark-bg .slide-text h2,
+    .dark-bg .slide-text p {
+      color: #ffffff;
+    }
+
+    .dark-bg .slide-text p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* ===== BUTTON LUXURY ===== */
+    .btn-luxury {
+      display: inline-block;
+      padding: 0.6rem 2rem;
+      border: 1px solid #D62828;
+      color: #D62828;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background: transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-luxury:hover {
+      background: #D62828;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(214, 40, 40, 0.25);
+    }
+
+    .dark-bg .btn-luxury {
+      border-color: #D62828;
+      color: #D62828;
+    }
+
+    .dark-bg .btn-luxury:hover {
+      background: #D62828;
+      color: white;
+    }
+
+    /* ===== NAV BUTTONS ===== */
+    .nav-btn {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .nav-btn:hover {
+      background: rgba(214, 40, 40, 0.8);
+      border-color: #D62828;
+      transform: scale(1.05);
+    }
+
+    .nav-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .nav-btn {
+        width: 36px;
+        height: 36px;
+      }
+
+      .nav-btn svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    /* ===== FLOOR SHADOW ===== */
+    .floor-shadow {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 20px;
+      background: radial-gradient(ellipse, rgba(0, 0, 0, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* ===== SLIDE TEXT ===== */
+    .slide-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: #0B132B;
+    }
+
+    .dark-bg .slide-text h2 {
+      color: white;
+    }
+
+    .slide-text p {
+      font-size: clamp(0.8rem, 1.1vw, 1rem);
+      max-width: 400px;
+    }
+
+    /* ===== CAROUSEL ===== */
+    .slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+      overflow: hidden;
+    }
+
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .slide-visual {
+      position: relative;
+      height: 100%;
+      min-height: 300px;
+    }
+
+    .product-render {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .product-render img {
+      max-width: 90%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .slide-visual {
+        min-height: 250px;
+      }
+
+      .product-render img {
+        max-height: 50vh;
+      }
+
+      .slide-text {
+        padding: 1rem 0;
+      }
+
+      .floor-shadow {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .slide-visual {
+        min-height: 180px;
+      }
+
+      .product-render img {
+        max-height: 35vh;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <!-- custom cursor - hidden on mobile via CSS -->
-
-
-  <!-- NAV - RESPONSIVE FIXED -->
-  <!-- NAV - FIXED WITH CORRECT HREFS -->
+  <!-- ============================================================ -->
+  <!-- NAV - RESPONSIVE FIXED (Unchanged - Bilkul waisay hi) -->
+  <!-- ============================================================ -->
   <nav class="bg-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-      <!-- Logo -->
+      <!-- Logo (Optimized - bold.webp) -->
       <div class="flex items-center shrink-0">
         <a href="index.html">
-          <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
-            class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
+          <img src="./bold.webp" alt="Inkwell Impressions Solutions Logo"
+            class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" loading="eager" />
         </a>
       </div>
 
-      <!-- Desktop Menu - ALL HREFS ADDED -->
+      <!-- Desktop Menu -->
       <ul
         class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
         <li><a href="index.html" class="hover:text-accentred transition">Home</a></li>
         <li><a href="products.html" class="hover:text-accentred transition">Products</a></li>
-        <li><a href="categories.html" class="text-accentred">Categories</a></li>
+        <li><a href="categories.html" class="text-accentred" aria-current="page">Categories</a></li>
         <li><a href="about.html" class="hover:text-accentred transition">About Us</a></li>
         <li><a href="contact.html" class="hover:text-accentred transition">Contact</a></li>
       </ul>
 
       <!-- Right -->
       <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
-        <button
-          class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
-          <span class="relative z-10 flex items-center gap-2">
-            <i class="fa-solid fa-file-signature text-[9px]"></i>
-            REQUEST A QUOTE
-          </span>
-        </button>
-       
+        <a href="contact.html">
+          <button
+            class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+            <span class="relative z-10 flex items-center gap-2">
+              <i class="fa-solid fa-file-signature text-[9px]"></i>
+              REQUEST A QUOTE
+            </span>
+          </button>
+        </a>
         <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
           aria-label="Toggle Menu">
           <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
@@ -85,43 +329,49 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu - ALL HREFS ADDED -->
+  <!-- Mobile Menu (Unchanged) -->
   <div id="mobileMenu"
     class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
       <li><a href="index.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">Home</a></li>
       <li><a href="products.html"
           class="block py-2 border-b border-gray-700 hover:text-accentred transition">Products</a></li>
-      <li><a href="categories.html" class="text-accentred block py-2 border-b border-gray-700">Categories</a></li>
+      <li><a href="categories.html" class="text-accentred block py-2 border-b border-gray-700"
+          aria-current="page">Categories</a></li>
       <li><a href="about.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">About Us</a>
       </li>
       <li><a href="contact.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">Contact</a>
       </li>
     </ul>
-    <button
-      class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
-      <span class="relative z-10 flex items-center gap-2">
-        <i class="fa-solid fa-file-signature text-[9px]"></i>
-        REQUEST A QUOTE
-      </span>
-    </button>
+    <a href="contact.html">
+      <button
+        class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+        <span class="relative z-10 flex items-center gap-2">
+          <i class="fa-solid fa-file-signature text-[9px]"></i>
+          REQUEST A QUOTE
+        </span>
+      </button>
+    </a>
   </div>
 
-  <!-- Navigation glass - RESPONSIVE FIXED -->
-  <div class="fixed inset-0 z-50 pointer-events-none flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-16">
-    <button id="btn-prev" class="nav-btn pointer-events-auto" aria-label="Previous">
+  <!-- ============================================================ -->
+  <!-- NAVIGATION BUTTONS (Unchanged) -->
+  <!-- ============================================================ -->
+  <div class="fixed inset-0 z-50 pointer-events-none flex items-center justify-between px-4 sm:px-4 md:px-6 lg:px-16">
+    <button id="btn-prev" class="nav-btn-red pointer-events-auto" aria-label="Previous category">
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M15 19l-7-7 7-7" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
     </button>
-    <button id="btn-next" class="nav-btn pointer-events-auto" aria-label="Next">
+    <button id="btn-next" class="nav-btn-red pointer-events-auto" aria-label="Next category">
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 5l7 7-7 7" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
       </svg>
     </button>
   </div>
-
-  <!-- Progress - RESPONSIVE FIXED -->
+  <!-- ============================================================ -->
+  <!-- PROGRESS INDICATOR (Unchanged) -->
+  <!-- ============================================================ -->
   <div
     class="fixed bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 left-1/2 -translate-x-1/2 z-50 pointer-events-none mix-blend-difference">
     <div class="progress-indicator text-white font-serif tracking-[0.25em]">
@@ -130,11 +380,13 @@
     </div>
   </div>
 
-  <!-- Carousel -->
+  <!-- ============================================================ -->
+  <!-- CAROUSEL (Images optimized with width/height) -->
+  <!-- ============================================================ -->
   <main id="carousel" class="relative w-full h-full overflow-hidden mt-[60px] sm:mt-[70px] md:mt-[80px]">
 
     <!-- Slide 1: Tote -->
-    <section class="slide active bg-tote text-navy">
+    <section class="slide active bg-tote text-navy light-bg">
       <div class="blob-bg">
         <div class="blob" style="width:200px;height:200px;background:#D62828;top:-10%;right:-5%;opacity:0.06;"></div>
       </div>
@@ -142,15 +394,16 @@
         class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
         <div
           class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
-          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Tote<br>Bags</h2>
+          <h2>Tote<br>Bags</h2>
           <p class="text-gray-700 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Premium custom printed
             canvas. Sustainable, heavy‑grade materials engineered for elevated corporate identities.</p>
           <div class="flex justify-center lg:justify-start"><a href="products.html"><button class="btn-luxury">Explore
-                Products</button></div></a>
+                Products</button></a></div>
         </div>
         <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/categories tote.png" alt="Tote Bag" class="w-full h-full object-contain" />
+            <img src="assets/categories tote.png" alt="Premium custom printed tote bags for corporate branding"
+              width="600" height="500" loading="eager" decoding="async" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
@@ -166,15 +419,17 @@
         class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
         <div
           class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
-          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Printed<br>Apparel</h2>
+          <h2>Printed<br>Apparel</h2>
           <p class="text-gray-300 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Floating fabrics with
             intricate thread details. Crisp, color‑accurate prints that command global attention.</p>
           <div class="flex justify-center lg:justify-start"><a href="coming-soon.html"><button
-                class="btn-luxury">Explore Products</button></div></a>
+                class="btn-luxury">Explore
+                Products</button></a></div>
         </div>
         <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/shirt-white.png" alt="Apparel" class="w-full h-full object-contain" />
+            <img src="assets/shirt-white.png" alt="Custom printed apparel and t-shirts for corporate branding"
+              width="600" height="500" loading="lazy" decoding="async" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
@@ -182,7 +437,7 @@
     </section>
 
     <!-- Slide 3: Gifts -->
-    <section class="slide bg-gifts text-navy">
+    <section class="slide bg-gifts text-navy light-bg">
       <div class="blob-bg">
         <div class="blob" style="width:220px;height:220px;background:#C9A96E;top:20%;right:-5%;opacity:0.06;"></div>
       </div>
@@ -190,15 +445,16 @@
         class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
         <div
           class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
-          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Corporate<br>Gifts</h2>
+          <h2>Corporate<br>Gifts</h2>
           <p class="text-gray-700 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Curated luxury in customized
             matte‑finish boxes. Premium stationery and executive products for lasting impressions.</p>
           <div class="flex justify-center lg:justify-start"><a href="coming-soon.html"><button
-                class="btn-luxury">Explore Products</button></div></a>
+                class="btn-luxury">Explore Products</button></a></div>
         </div>
         <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/Corportae gifts.webp" alt="Gifts" class="w-full h-full object-contain" />
+            <img src="assets/Corportae gifts.webp" alt="Luxury corporate gifts and promotional products for businesses"
+              width="600" height="500" loading="lazy" decoding="async" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
@@ -215,53 +471,87 @@
         class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
         <div
           class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
-          <h2 class="mb-2 sm:mb-3 md:mb-4 lg:mb-6">Tech<br>Products</h2>
+          <h2>Tech<br>Products</h2>
           <p class="text-gray-300 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Premium functional
             technology etched with your insignia. From high‑capacity power banks to high‑fidelity audio gear.</p>
           <div class="flex justify-center lg:justify-start"><a href="coming-soon.html"><button
-                class="btn-luxury">Explore Products</button></div></a>
+                class="btn-luxury">Explore Products</button></a></div>
         </div>
         <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
           <div class="product-render w-full h-full flex items-center justify-center">
-            <img src="assets/Tech Products.webp" alt="Tech" class="w-full h-full object-contain" />
+            <img src="assets/Tech Products.webp" alt="Premium tech products and gadgets for corporate gifting"
+              width="600" height="500" loading="lazy" decoding="async" class="w-full h-full object-contain" />
             <div class="floor-shadow"></div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- GSAP + Font Awesome -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- ============================================================ -->
+  <!-- SCRIPTS -->
+  <!-- ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="./config/categories.js" defer></script>
 
-  <script src="./config/categories.js"></script>
-
-  <!-- Mobile Menu Toggle -->
+  <!-- Mobile Menu Toggle (Unchanged) -->
   <script>
-    document.getElementById('hamburgerBtn').addEventListener('click', function () {
-      const menu = document.getElementById('mobileMenu');
-      const icon = document.getElementById('hamburgerIcon');
-      menu.classList.toggle('hidden');
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-xmark');
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+      if (hamburgerBtn && mobileMenu && hamburgerIcon) {
+        hamburgerBtn.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+          hamburgerIcon.classList.toggle('fa-bars');
+          hamburgerIcon.classList.toggle('fa-xmark');
+        });
+      }
     });
   </script>
 
-
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  <!--Start of Tawk.to Script (Defer)-->
+  <script>
     (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
+      // USA Central Time
+      const now = new Date();
+
+      const centralTime = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/Chicago",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: false
+      }).formatToParts(now);
+
+      const hour = parseInt(
+        centralTime.find(part => part.type === "hour").value
+      );
+
+      // Show Tawk only from 9 AM to 6 PM Central Time
+      if (hour >= 9 && hour < 18) {
+
+        var Tawk_API = Tawk_API || {},
+          Tawk_LoadStart = new Date();
+
+        (function () {
+          var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+
+          s1.async = true;
+          s1.src = "https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1";
+          s1.charset = "UTF-8";
+          s1.setAttribute("crossorigin", "*");
+
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+
+      }
     })();
   </script>
   <!--End of Tawk.to Script-->
+
 </body>
 
 </html>

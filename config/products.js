@@ -1,489 +1,1259 @@
- // Filter Sidebar Toggle
-    const filterBtn = document.getElementById('filterToggleBtn');
-    const sidebarMobile = document.getElementById('sidebarMobile');
-    const overlay = document.getElementById('sidebarOverlay');
-    const closeBtn = document.getElementById('closeSidebarBtn');
+// Filter Sidebar Toggle
+const filterBtn = document.getElementById('filterToggleBtn');
+const sidebarMobile = document.getElementById('sidebarMobile');
+const overlay = document.getElementById('sidebarOverlay');
+const closeBtn = document.getElementById('closeSidebarBtn');
 
-    function openSidebar() {
-      sidebarMobile.classList.add('active');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
+function openSidebar() {
+  sidebarMobile.classList.add('active');
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSidebar() {
+  sidebarMobile.classList.remove('active');
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+if (filterBtn) {
+  filterBtn.addEventListener('click', openSidebar);
+}
+
+closeBtn.addEventListener('click', closeSidebar);
+overlay.addEventListener('click', closeSidebar);
+
+// Close on escape key
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeSidebar();
+});
+
+// Copy sidebar content to mobile sidebar
+function copySidebarContent() {
+  const desktopSidebar = document.getElementById('sidebar');
+  const mobileSidebar = document.getElementById('sidebarContent');
+  if (desktopSidebar && mobileSidebar) {
+    // Wait for content to load
+    setTimeout(function () {
+      mobileSidebar.innerHTML = desktopSidebar.innerHTML;
+    }, 100);
+  }
+}
+
+// Call on load
+document.addEventListener('DOMContentLoaded', copySidebarContent);
+
+// Also copy when sidebar content changes (if using JS injection)
+
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+hamburgerBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  // Toggle icon between bars and X
+  hamburgerIcon.classList.toggle('fa-bars');
+  hamburgerIcon.classList.toggle('fa-xmark');
+});
+
+// Close menu when clicking a link (optional but better UX)
+document.querySelectorAll('#mobileMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    hamburgerIcon.classList.add('fa-bars');
+    hamburgerIcon.classList.remove('fa-xmark');
+  });
+});
+// ----------------------------------------------
+// 1. PRODUCTS DATA (embedded)
+// ----------------------------------------------
+const products = [{
+  id: "ib29",
+  name: "11X9 Canvas Tote Bag",
+  code: "IB29",
+  slug: "11x9-canvas-tote-bag",
+  category: "Tote Bags",
+  material: "Canvas",
+  size: '9"W x 15"H x 15"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB29/IB29_main.webp",
+  description: "7oz cotton canvas bag with self-fabric handles. Reinforced stitching.",
+  popular: true
+}, {
+  id: "mqib6000",
+  name: "Cotton Tote Bag Natural Body with Color Handles",
+  code: "MQIB6000",
+  slug: "cotton-tote-natural-color-handles",
+  category: "Tote Bags",
+  material: "Cotton",
+  size: '15"W x 16"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/MQIB6000/MQIB6000_main.webp",
+  description: "6oz. 100% cotton tote bag with natural body and color handles.",
+  popular: false
+}, {
+  id: "ib611",
+  name: "Jumbo Canvas Zipper Tote with bottom Gusset",
+  code: "IB611",
+  slug: "jumbo-canvas-zipper-tote",
+  category: "Tote Bags",
+  material: "Canvas",
+  size: '20"W x 15"H x 5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB611/IB611_main.webp",
+  description: "12oz. canvas, 100% cotton, jumbo tote with full length zipper.",
+  popular: false
+}, {
+  id: "iwb201",
+  name: "Single Bottle Canvas Wine Tote",
+  code: "IWB201",
+  slug: "single-bottle-canvas-wine-tote",
+  category: "Bottle Bags",
+  material: "Canvas",
+  size: '3"W x 10.5"H x 3"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp",
+  description: "12 oz. 100% cotton canvas. Single bottle wine tote with reinforced bottom.",
+  popular: false
+},
+{
+  id: "w965",
+  name: "Mini Tote Bag",
+  code: "W965",
+  slug: "mini-tote-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '6"W x 6"H',
+  imprint: '4"W x 4"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W965/W965_main.webp",
+  description: "Mini tote bag made from 80 gsm non-woven fabric with a 10.5-inch handle."
+},
+{
+  id: "w967",
+  name: "Jumbo Heavy Duty Grocery Bag",
+  code: "W967",
+  slug: "jumbo-heavy-duty-grocery-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '13"W x 15"H x 10"D',
+  imprint: '6"W x 10"H',
+  price: 1.80,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W967/W967_main.webp",
+  description: "Jumbo heavy duty grocery bag made from 100 gsm non-woven fabric with 22-inch reinforced handles and bottom and side gussets."
+},
+{
+  "id": "w968",
+  "name": "Foldable Tote",
+  "code": "W968",
+  "slug": "foldable-tote",
+  "category": "Non-Woven Bags",
+  "material": "Non-Woven Fabric",
+  "size": "14.75\"W x 14.75\"H",
+  "imprint": "Front: 4\"W x 2\"H, Back: 10\"W x 10\"H",
+  "price": 1.14,
+  "originalPrice": 50.0,
+  "image": "assets/assets/images/products/non-woven/W968/W968_main.webp",
+  "description": "Foldable tote made from 80 gsm non-woven fabric with an 18-inch handle."
+},
+
+{
+  id: "iwb203",
+  name: "Drawstring Wine Bag",
+  code: "IWB203",
+  slug: "drawstring-wine-bag",
+  category: "Bottle Bags",
+  material: "100% Cotton Canvas",
+  size: '6.25"W x 13"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: 'assets/assets/images/products/drawstring-bags/IWB203/IWB203_natural.webp',
+  description: "Drawstring wine bag made from 7 oz 100% cotton canvas."
+},
+{
+  id: "sbw1611",
+  name: "Cotton Shoe Bag",
+  code: "SBW1611",
+  slug: "cotton-shoe-bag",
+  category: "Shoe Bags",
+  material: "100% Cotton",
+  size: '11.5"W x 15.5"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/shoe-bags/SBW1611/SBW1611_main.webp",
+  description: "Cotton shoe bag made from 7oz 100% cotton with no bottom or side gusset."
+}, {
+  id: "mqib",
+  name: "Cotton Tote Bag",
+  code: "MQIB",
+  slug: "cotton-tote-bag",
+  category: "Tote Bags",
+  material: "Cotton",
+  size: '15"W x 16"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/MQIB/MQIB_main.webp",
+  description: "Premium cotton tote, ideal for everyday use.",
+  popular: true
+}, {
+  id: "ib800",
+  name: "Canvas Promotional Tote Bag",
+  code: "IB800",
+  slug: "canvas-promotional-tote",
+  category: "Tote Bags",
+  material: "Canvas",
+  size: '15"W x 16"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB800/IB800_main.webp",
+  description: "Durable canvas tote with promotional appeal.",
+  popular: true
+}, {
+  id: "w956",
+  name: "Non-Woven Convention Bag",
+  code: "W956",
+  slug: "non-woven-convention-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven",
+  size: '15"W x 16"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W956/W956_main.webp",
+  description: "Lightweight non-woven bag for conventions.",
+  popular: true
+},
+{
+  id: "ids9103",
+  name: "Economical Sports Nylon Backpack",
+  code: "IDS9103",
+  slug: "economical-sports-nylon-backpack",
+  category: "Non-Woven Bags",
+  material: "Polyester",
+  size: '14"W x 18"H',
+  imprint: '8"W x 9"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IDS9103/IDS9103_main.webp",
+  description: "Economical sports nylon backpack made from 210D polyester."
+},
+{
+  id: "ids135200",
+  name: "Polyester Drawstring Backpack",
+  code: "IDS135200",
+  slug: "polyester-drawstring-backpack",
+  category: "Non-Woven Bags",
+  material: "Polyester",
+  size: '15"W x 18.75"H',
+  imprint: '6.5"W x 8.5"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IDS135200/IDS135200_main.webp",
+  description: "Polyester drawstring backpack made from 210D polyester."
+},
+{
+  id: "w977",
+  name: "Insulated Grocery Bag",
+  code: "W977",
+  slug: "insulated-grocery-bag",
+  category: "Non-Woven Bags",
+  material: "Non Woven",
+  size: '13"W x 15"H x 9"D',
+  imprint: '4"W x 4"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W977/W977_main.webp",
+  description: "Insulated grocery bag made from 235 gsm non-woven material with 22-inch reinforced handles and bottom and side gussets."
+},
+{
+  id: "w964",
+  name: "Small Shopper Bag",
+  code: "W964",
+  slug: "small-shopper-bag",
+  category: "Non-Woven Bags",
+  material: "Non Woven",
+  size: '10"W x 12"H x 3"D',
+  imprint: '6"W x 8"H',
+  price: 0.85,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W964/W964_main.webp",
+  description: "Small shopper bag made from 80 gsm non-woven fabric with a 16-inch handle and bottom and side gussets."
+},
+
+{
+  id: "w973",
+  name: "Laminated Tote",
+  code: "W973",
+  slug: "laminated-tote",
+  category: "Non-Woven Bags",
+  material: "Non Woven, Laminated",
+  size: '15.75"W x 12.5"H x 6.25"D',
+  imprint: '10"W x 8"H',
+  price: 1.66,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W973/W973_main.webp",
+  description: "Laminated tote made from 110 gsm non-woven material with 20-inch handles and bottom and side gussets."
+},
+{
+  "id": "w974",
+  "name": "Laminated Tote",
+  "code": "W974",
+  "slug": "laminated-tote",
+  "category": "Non-Woven Bags",
+  "material": "Non-Woven Polypropylene, Laminated",
+  "size": "12.75\"W x 15.75\"H x 4.75\"D",
+  "imprint": "8\"W x 10\"H",
+  "price": 35.00,
+  "originalPrice": 50.0,
+  "image": "assets/assets/images/products/non-woven/W974/W974_main.webp",
+  "description": "Laminated tote made from 110 gsm non-woven polypropylene with 19-inch handles and bottom and side gussets."
+},
+{
+  id: "w961",
+  name: "Jumbo Shopper Bag",
+  code: "W961",
+  slug: "jumbo-shopper-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '20"W x 16"H x 6"D',
+  imprint: '14"W x 10"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W961/W961_main.webp",
+  description: "Jumbo shopper bag made from 80 gsm non-woven fabric with bottom and side gussets.",
+},
+{
+  id: "w957",
+  name: "Non Woven Grocery Bag",
+  code: "W957",
+  slug: "non-woven-grocery-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '12.5"W x 13.5"H x 8.5"D',
+  imprint: '5.5"W X 10"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W957/W957_main.webp",
+  description: "Non woven grocery bag made from 80 gsm non-woven fabric with 22-inch reinforced handles and bottom and side gussets.",
+},
+{
+  id: "w966",
+  name: "Non Woven Laundry Bag",
+  code: "W966",
+  slug: "non-woven-laundry-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '18"W x 24"H',
+  imprint: '4"W x 4"H, 12"W x 14"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W966/W966_main.webp",
+  description: "Non woven laundry bag made from 80 GSM non-woven fabric with front pocket and large back-side imprint area."
+},
+{
+  id: "w962",
+  name: "Non Woven Shopper",
+  code: "W962",
+  slug: "non-woven-shopper",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '16"W x 12"H x 6"D',
+  imprint: '10"W x 8"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W962/W962_main.webp",
+  description: "Non woven shopper bag made from 80 gsm non-woven fabric with bottom and side gussets."
+},
+{
+  "id": "w983",
+  "name": "Newspaper Bag",
+  "code": "W983",
+  "slug": "newspaper-bag",
+  "category": "Non-Woven Bags",
+  "material": "Non-Woven",
+  "size": "12\"W x 14.5\"H x 2.5\"D",
+  "imprint": "8\"W x 9\"H",
+  "price": 35.00,
+  "originalPrice": 50.0,
+  "image": "assets/assets/images/products/non-woven/W983/W983_main.webp",
+  "description": "Newspaper bag made from 80 gsm non-woven fabric with a 14-inch handle."
+},
+{
+  "id": "w976",
+  "name": "Econo Convention Tote",
+  "code": "W976",
+  "slug": "econo-convention-tote",
+  "category": "Non-Woven Bags",
+  "material": "Non-Woven",
+  "size": "15\"W x 16\"H x 1.5\"D",
+  "imprint": "10\"W x 10\"H",
+  "price": 35.00,
+  "originalPrice": 50.0,
+  "image": "assets/assets/images/products/non-woven/W976/W976_main.webp",
+  "description": "Econo convention tote made from 80 gsm non-woven fabric with a bottom gusset and 15-inch handles."
+},
+{
+  id: "ib600",
+  name: "Canvas Jumbo Tote w/ Bottom Gusset",
+  code: "IB600",
+  slug: "canvas-jumbo-tote-w-bottom-gusset",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '20"W x 15"H x 5"D',
+  price: 45.00,
+  originalPrice: 30.00,
+
+  image: "assets/assets/images/products/tote-bags/IB600/IB600_main.webp",
+  description: "Canvas jumbo tote bag with a bottom gusset, made from 100% cotton canvas.",
+  popular: true
+},
+{
+  id: "ib1000",
+  name: "Canvas Gusset Shopping Tote Bag",
+  code: "IB1000",
+  slug: "canvas-gusset-shopping-tote-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '10.5"W x 14"H x 5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB1000/IB1000_main.webp",
+  description: "Canvas shopping tote bag with bottom and side gussets, made from 100% cotton canvas."
+}, {
+  id: "mibl",
+  name: "Light Canvas Tote",
+  code: "MIBL",
+  slug: "light-canvas-tote",
+  category: "Tote Bags",
+  material: "Canvas",
+  size: '15"W x 16"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/MIBL/MIBL_natural.webp",
+  description: "Light canvas tote with a simple, lightweight design. Ideal for promotional use, events, and giveaways."
+},
+{
+  id: "mib",
+  name: "Cotton Canvas Tote",
+  code: "MIB",
+  slug: "cotton-canvas-tote",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '15"W x 16"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/MIB/MIB_natural.webp",
+  description: "Cotton canvas tote with a lightweight 7oz construction and 22\" handles."
+},
+{
+  id: "mqibg",
+  name: "Cotton Tote Bag with Bottom Gusset",
+  code: "MQIBG",
+  slug: "cotton-tote-bag-with-bottom-gusset",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '15"W x 16"H x 3"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/MQIBG/MQIBG_main.webp",
+  description: "Cotton tote bag with a 3-inch bottom gusset, made from 100% cotton."
+},
+{
+  id: "ids125700",
+  name: "Canvas Sports Backpack",
+  code: "IDS125700",
+  slug: "canvas-sports-backpack",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '14"W x 18"H x 2"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IDS125700/IDS125700_natural.webp",
+  description: "Canvas sports backpack made from 12 oz 100% cotton canvas with a bottom gusset."
+},
+{
+  id: "ids4500",
+  name: "Cotton Sports Pack",
+  code: "IDS4500",
+  slug: "cotton-sports-pack",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '14"W x 18"H',
+  price: 3.50,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_natural.webp",
+  description: "Cotton sports pack made from 6 oz 100% cotton with no bottom or side gusset."
+},
+{
+  id: "ib1113",
+  name: "11 X 13 Canvas Tote Bag",
+  code: "IB1113",
+  slug: "11-x-13-canvas-tote-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '11.5"W x 13"H x 1.5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB1113/IB1113_main.webp",
+  description: "11 X 13 canvas tote bag made from 100% cotton canvas with a bottom gusset."
+},
+{
+  id: "ib4400",
+  name: "Cotton Canvas Tote with Color Handles",
+  code: "IB4400",
+  slug: "cotton-canvas-tote-with-color-handles",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '15"W x 15"H x 3"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB4400/IB4400_main.webp",
+  description: "Cotton canvas tote with color handles and a bottom gusset."
+},
+{
+  id: "w955",
+  name: "Large Grocery Bag",
+  code: "W955",
+  slug: "large-grocery-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '15"W x 18"H x 6"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/W955/W955_main.webp",
+  description: "Large grocery bag made from 12oz 100% cotton canvas with bottom and side gussets."
+},
+{
+  id: "ib125200",
+  name: "Canvas Book Bag Gusset",
+  code: "IB125200",
+  slug: "canvas-book-bag-gusset",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '10"W x 12"H x 3"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB125200/IB125200_main.webp",
+  description: "Canvas book bag with a 3-inch bottom gusset, made from 100% cotton canvas."
+},
+{
+  id: "ib750",
+  name: "Canvas Gusset Tote Bag",
+  code: "IB750",
+  slug: "canvas-gusset-tote-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '15"W x 12"H x 4"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB750/IB750_main.webp",
+  description: "Canvas gusset tote bag made from 12oz 100% cotton canvas with bottom and side gussets."
+},
+{
+  id: "ib1200",
+  name: "Canvas Big Tote Bag with Velcro Closure",
+  code: "IB1200",
+  slug: "canvas-big-tote-bag-with-velcro-closure",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '23"W x 17"H x 6"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB1200/IB1200_main.webp",
+  description: "Large canvas tote bag with a Velcro closure, made from 12oz 100% cotton canvas with a bottom gusset."
+},
+
+{
+  id: "ib125300",
+  name: "Cotton Canvas Gusset Tote",
+  code: "IB125300",
+  slug: "cotton-canvas-gusset-tote",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '14"W x 15"H x 4"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB125300/IB125300_main.webp",
+  description: "Cotton canvas gusset tote made from 12oz 100% cotton canvas with bottom and side gussets."
+},
+{
+  id: "ib125400",
+  name: "Canvas Jumbo Shopper Gusset Bag",
+  code: "IB125400",
+  slug: "canvas-jumbo-shopper-gusset-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '14"W x 17"H x 7"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB125400/IB125400_main.webp",
+  description: "Canvas jumbo shopper gusset bag made from 12oz 100% cotton canvas with bottom and side gussets."
+},
+{
+  id: "ib1300",
+  name: "Canvas Zipper Tote Bag (with Color Handles)",
+  code: "IB1300",
+  slug: "canvas-zipper-tote-bag-with-color-handles",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '18"W x 14"H x 4.5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB1300/IB1300_main.webp",
+  description: "Canvas zipper tote bag with color handles, made from 12oz 100% cotton with a bottom gusset."
+},
+{
+  id: "w918",
+  name: "Canvas Big Tote Bag",
+  code: "W918",
+  slug: "canvas-big-tote-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '17"W x 13"H x 5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/W918/W918_main.webp",
+  description: "Canvas big tote bag made from 18 oz 100% cotton canvas with a bottom gusset."
+},
+{
+  id: "ib1100",
+  name: "Canvas Gusset Tote Bag w/ Color Handles",
+  code: "IB1100",
+  slug: "canvas-gusset-tote-bag-w-color-handles",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '14"W x 12"H x 5.25"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB1100/IB1100_main.webp",
+  description: "Canvas gusset tote bag with color handles, made from 12oz 100% cotton."
+},
+{
+  id: "ib1400",
+  name: "Canvas Standard Tote Bag",
+  code: "IB1400",
+  slug: "canvas-standard-tote-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '17"W x 13"H x 5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB1400/IB1400_main.webp",
+  description: "Canvas standard tote bag made from 12oz 100% cotton canvas with bottom and side gussets."
+},
+{
+  id: "ib125800",
+  name: "Small Canvas Deluxe Tote",
+  code: "IB125800",
+  slug: "small-canvas-deluxe-tote",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '18.5"W x 12"H x 5.5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB125800/IB125800_main.webp",
+  description: "Small canvas deluxe tote made from 12oz 100% cotton canvas with a bottom gusset."
+},
+{
+  id: "ib1500",
+  name: "Large Canvas Deluxe Tote",
+  code: "IB1500",
+  slug: "large-canvas-deluxe-tote",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '22"W x 16"H x 6"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB1500/IB1500_navy.webp",
+  description: "Large canvas deluxe tote made from 12oz 100% cotton canvas with a bottom gusset."
+},
+{
+  id: "iwb202",
+  name: "Double Bottle Canvas Wine Tote",
+  code: "IWB202",
+  slug: "double-bottle-canvas-wine-tote",
+  category: "Bottle Bags",
+  material: "100% Cotton",
+  size: '5.5"W x 10.5"H x 3"D',
+  price: 2.27,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/bottle-bags/IWB202/IWB202_main.webp",
+  description: "Double bottle canvas wine tote made from 12 oz 100% cotton with a 13-inch handle."
+},
+{
+  id: "ib125600",
+  name: "Fancy Shopper with Color Stripe Bag",
+  code: "IB125600",
+  slug: "fancy-shopper-with-color-stripe-bag",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '15"W x 16"H x 6"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IB125600/IB125600_main.webp",
+  description: "Fancy shopper with color stripe design made from 100% cotton.",
+},
+{
+  id: "w958",
+  name: "Non Woven Two Tone Tote/Book Bag",
+  code: "W958",
+  slug: "non-woven-two-tone-tote-book-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '11"W x 14"H x 5"D',
+  price: 1.04,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W958/W958_main.webp",
+  description: "Non woven two tone tote/book bag made from 90 gsm non-woven fabric with an 18-inch handle and bottom and side gussets."
+},
+{
+  id: "ids4500",
+  name: "Cotton Sports Pack",
+  code: "IDS4500",
+  slug: "cotton-sports-pack",
+  category: "Tote Bags",
+  material: "100% Cotton",
+  size: '14"W x 18"H',
+  price: 1.73,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_main.webp",
+  description: "Cotton sports pack made from 6 oz 100% cotton material."
+},
+{
+  id: "w975",
+  name: "Econo Tote Bag",
+  code: "W975",
+  slug: "econo-tote-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven",
+  size: '14.25"W x 15"H x 5"D',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/W975/W975_main.webp",
+  description: "Economical non-woven tote.",
+  popular: true
+  // }, {
+  //   id: "ib100",
+  //   name: "Premium Canvas Tote",
+  //   code: "IB100",
+  //   slug: "premium-canvas-tote",
+  //   category: "Tote Bags",
+  //   material: "Canvas",
+  //   size: '15"W x 16"H',
+  //   price: 35.00,
+  //   image: "https://placehold.co/150x150/ffffff/555555?text=Premium",
+  //   description: "High-quality premium canvas tote.",
+  //   popular: true
+},
+  // {
+  //   id: "bp101",
+  //   name: "Classic Backpack",
+  //   code: "BP101",
+  //   slug: "classic-backpack",
+  //   category: "Backpacks",
+  //   material: "Canvas",
+  //   size: '12"W x 18"H x 6"D',
+  //   price: 55.00,
+  //   image: "https://placehold.co/150x150/ffffff/555555?text=Backpack",
+  //   description: "Sturdy canvas backpack with padded straps.",
+  //   popular: false
+  // }, 
+  // {
+  //   id: "cool1",
+  //   name: "Insulated Cooler Bag",
+  //   code: "COOL1",
+  //   slug: "insulated-cooler-bag",
+  //   category: "Cooler Bags",
+  //   material: "Non-Woven",
+  //   size: '10"W x 12"H x 8"D',
+  //   price: 42.00,
+  //   image: "https://placehold.co/150x150/ffffff/555555?text=Cooler",
+  //   description: "Keep your drinks cold with this insulated cooler.",
+  //   popular: false
+  // }, 
+  // {
+  //   id: "acc01",
+  //   name: "Leather Keychain",
+  //   code: "ACC01",
+  //   slug: "leather-keychain",
+  //   category: "Accessories",
+  //   material: "Cotton",
+  //   size: '2"x 4"',
+  //   price: 12.00,
+  //   image: "https://placehold.co/150x150/ffffff/555555?text=Keychain",
+  //   description: "Genuine leather keychain with metal ring.",
+  //   popular: false
+  // }, 
+  // {
+  //   id: "ib202",
+  //   name: "Canvas Drawstring Bag",
+  //   code: "IB202",
+  //   slug: "canvas-drawstring-bag",
+  //   category: "Drawstring Bags",
+  //   material: "Canvas",
+  //   size: '14"W x 18"H',
+  //   price: 18.00,
+  //   image: "https://placehold.co/150x150/ffffff/555555?text=Drawstring",
+  //   description: "Lightweight canvas drawstring bag.",
+  //   popular: false
+  // }
+];
+
+// -------------------------------------------------
+// 2. RENDER ENGINE
+// -------------------------------------------------
+// -------------------------------------------------
+// 2. RENDER ENGINE WITH PAGINATION
+// -------------------------------------------------
+(function () {
+  "use strict";
+
+  const grid = document.getElementById('product-grid');
+  const popularGrid = document.getElementById('popular-grid');
+  const sidebar = document.getElementById('sidebar');
+  const emptyState = document.getElementById('empty-state');
+  const countLabel = document.getElementById('product-count-label');
+  const searchInput = document.getElementById('search-input');
+  const sortSelect = document.getElementById('sort-select');
+
+  // ✅ PAGINATION SETTINGS
+  const PRODUCTS_PER_PAGE = 12;
+  let currentPage = 1;
+  let totalPages = 1;
+
+  let currentCategory = 'All Products';
+  let selectedMaterials = [];
+  let selectedSizes = [];
+  let searchTerm = '';
+
+  // ✅ PAGINATION CONTAINER
+  const paginationContainer = document.getElementById('pagination-container');
+  if (!paginationContainer) {
+    // Agar pagination container nahi hai toh create karo
+    const container = document.createElement('div');
+    container.id = 'pagination-container';
+    container.className = 'flex justify-center items-center gap-2 mt-8 py-4';
+    const gridParent = grid.parentElement;
+    if (gridParent) {
+      gridParent.appendChild(container);
     }
+  }
 
-    function closeSidebar() {
-      sidebarMobile.classList.remove('active');
-      overlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+  function getCategories() {
+    const cats = products.map(p => p.category);
+    return ['All Products', ...new Set(cats)];
+  }
 
-    if (filterBtn) {
-      filterBtn.addEventListener('click', openSidebar);
-    }
+function getMaterials() {
+    const materialMap = new Map();
 
-    closeBtn.addEventListener('click', closeSidebar);
-    overlay.addEventListener('click', closeSidebar);
+    products.forEach(p => {
+        if (!p.material) return;
 
-    // Close on escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeSidebar();
+        const original = p.material.trim();
+        const normalized = original.toLowerCase().replace(/\s+/g, ' ');
+
+        if (!materialMap.has(normalized)) {
+            materialMap.set(normalized, original);
+        }
     });
 
-    // Copy sidebar content to mobile sidebar
-    function copySidebarContent() {
-      const desktopSidebar = document.getElementById('sidebar');
-      const mobileSidebar = document.getElementById('sidebarContent');
-      if (desktopSidebar && mobileSidebar) {
-        // Wait for content to load
-        setTimeout(function() {
-          mobileSidebar.innerHTML = desktopSidebar.innerHTML;
-        }, 100);
+    return [...materialMap.values()];
+}
+
+  function getSizes() {
+    const sizeSet = new Set();
+    products.forEach(p => {
+      if (p.size) {
+        // Normalize size - extra spaces hatao
+        const normalized = p.size.trim().replace(/\s+/g, ' ');
+        sizeSet.add(normalized);
+      }
+    });
+    return [...sizeSet];
+  }
+
+  function getCategoryCount(cat) {
+    if (cat === 'All Products') return products.length;
+    return products.filter(p => p.category === cat).length;
+  }
+
+ function getMaterialCount(mat) {
+  const normalizedMat = mat.trim().replace(/\s+/g, ' ');
+  return products.filter(p => {
+    if (!p.material) return false;
+    const normalizedProductMat = p.material.trim().replace(/\s+/g, ' ');
+    return normalizedProductMat === normalizedMat;
+  }).length;
+}
+
+  function getSizeCount(size) {
+    // ✅ Normalize karke count karo
+    const normalizedSize = size.trim().replace(/\s+/g, ' ');
+    return products.filter(p => {
+      if (!p.size) return false;
+      const normalizedProductSize = p.size.trim().replace(/\s+/g, ' ');
+      return normalizedProductSize === normalizedSize;
+    }).length;
+  }
+
+
+
+  // ✅ Filter mein size compare karte waqt trim karo
+  function getFilteredProducts() {
+    let result = products;
+
+    if (currentCategory !== 'All Products') {
+      result = result.filter(p => p.category === currentCategory);
+    }
+
+    if (selectedMaterials.length > 0) {
+      result = result.filter(p => selectedMaterials.includes(p.material));
+    }
+
+    // ✅ SIZE FILTER FIX - trim aur normalize karke compare karo
+    if (selectedSizes.length > 0) {
+      result = result.filter(p => {
+        if (!p.size) return false;
+        const normalizedProductSize = p.size.trim().replace(/\s+/g, ' ');
+        return selectedSizes.some(size => {
+          const normalizedFilterSize = size.trim().replace(/\s+/g, ' ');
+          return normalizedProductSize === normalizedFilterSize;
+        });
+      });
+    }
+
+    if (searchTerm.trim() !== '') {
+      const s = searchTerm.toLowerCase().trim();
+      result = result.filter(p =>
+        p.name.toLowerCase().includes(s) ||
+        p.code.toLowerCase().includes(s) ||
+        p.category.toLowerCase().includes(s) ||
+        p.material.toLowerCase().includes(s)
+      );
+    }
+    return result;
+  }
+
+  function getSortedProducts(filtered) {
+    const sortVal = sortSelect.value;
+    const arr = [...filtered];
+    if (sortVal === 'price-low') arr.sort((a, b) => a.price - b.price);
+    else if (sortVal === 'price-high') arr.sort((a, b) => b.price - a.price);
+    else if (sortVal === 'newest') arr.reverse();
+    else arr.sort((a, b) => (b.popular ? 1 : 0) - (a.popular ? 1 : 0));
+    return arr;
+  }
+
+  // ✅ GET CURRENT PAGE PRODUCTS
+  function getPaginatedProducts(sorted) {
+    totalPages = Math.ceil(sorted.length / PRODUCTS_PER_PAGE);
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const start = (currentPage - 1) * PRODUCTS_PER_PAGE;
+    const end = start + PRODUCTS_PER_PAGE;
+    return sorted.slice(start, end);
+  }
+
+  // ✅ RENDER PAGINATION BUTTONS
+  function renderPagination(totalItems) {
+    const container = document.getElementById('pagination-container');
+    if (!container) return;
+
+    totalPages = Math.ceil(totalItems / PRODUCTS_PER_PAGE);
+
+    if (totalPages <= 1) {
+      container.innerHTML = '';
+      return;
+    }
+
+    let html = `
+      <button class="pagination-btn prev-btn ${currentPage === 1 ? 'disabled' : ''}" 
+              ${currentPage === 1 ? 'disabled' : ''}
+              data-page="prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+    `;
+
+    // Page numbers
+    const maxVisible = 5;
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+
+    if (endPage - startPage < maxVisible - 1) {
+      startPage = Math.max(1, endPage - maxVisible + 1);
+    }
+
+    if (startPage > 1) {
+      html += `<button class="pagination-btn" data-page="1">1</button>`;
+      if (startPage > 2) {
+        html += `<span class="pagination-dots">...</span>`;
       }
     }
 
-    // Call on load
-    document.addEventListener('DOMContentLoaded', copySidebarContent);
+    for (let i = startPage; i <= endPage; i++) {
+      html += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+    }
 
-    // Also copy when sidebar content changes (if using JS injection)
-    
- 
- const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        html += `<span class="pagination-dots">...</span>`;
+      }
+      html += `<button class="pagination-btn" data-page="${totalPages}">${totalPages}</button>`;
+    }
 
-    hamburgerBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      // Toggle icon between bars and X
-      hamburgerIcon.classList.toggle('fa-bars');
-      hamburgerIcon.classList.toggle('fa-xmark');
-    });
+    html += `
+      <button class="pagination-btn next-btn ${currentPage === totalPages ? 'disabled' : ''}" 
+              ${currentPage === totalPages ? 'disabled' : ''}
+              data-page="next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    `;
 
-    // Close menu when clicking a link (optional but better UX)
-    document.querySelectorAll('#mobileMenu a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        hamburgerIcon.classList.add('fa-bars');
-        hamburgerIcon.classList.remove('fa-xmark');
+    container.innerHTML = html;
+
+    // Event listeners
+    container.querySelectorAll('.pagination-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        if (this.disabled) return;
+        const page = this.dataset.page;
+        if (page === 'prev' && currentPage > 1) {
+          currentPage--;
+        } else if (page === 'next' && currentPage < totalPages) {
+          currentPage++;
+        } else if (page !== 'prev' && page !== 'next') {
+          currentPage = parseInt(page);
+        }
+        renderProducts();
+        // Scroll to top of grid
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
-    // ----------------------------------------------
-    // 1. PRODUCTS DATA (embedded)
-    // ----------------------------------------------
-    const products = [{
-      id: "ib29",
-      name: "11X9 Canvas Tote Bag",
-      code: "IB29",
-      slug: "11x9-canvas-tote-bag",
-      category: "Tote Bags",
-      material: "Canvas",
-      size: '9"W x 15"H x 15"D',
-      price: 30.00,
-      originalPrice: 45.00,
-      image: "assets/assets/images/products/tote-bags/IB29/IB29_main.webp",
-      description: "7oz cotton canvas bag with self-fabric handles. Reinforced stitching.",
-      popular: true
-    }, {
-      id: "mqib6000",
-      name: "Cotton Tote Bag Natural Body with Color Handles",
-      code: "MQIB6000",
-      slug: "cotton-tote-natural-color-handles",
-      category: "Tote Bags",
-      material: "Cotton",
-      size: '15"W x 16"H',
-      price: 30.00,
-      originalPrice: 45.00,
-      image: "assets/assets/images/products/tote-bags/MQIB6000/MQT6000_main.webp",
-      description: "6oz. 100% cotton tote bag with natural body and color handles.",
-      popular: false
-    }, {
-      id: "ib611",
-      name: "Jumbo Canvas Zipper Tote with bottom Gusset",
-      code: "IB611",
-      slug: "jumbo-canvas-zipper-tote",
-      category: "Tote Bags",
-      material: "Canvas",
-      size: '20"W x 15"H x 5"D',
-      price: 30.00,
-      originalPrice: 45.00,
-      image: "assets/assets/images/products/tote-bags/IB611/IB611_main.webp",
-      description: "12oz. canvas, 100% cotton, jumbo tote with full length zipper.",
-      popular: false
-    }, {
-      id: "iwb201",
-      name: "Single Bottle Canvas Wine Tote",
-      code: "IWB201",
-      slug: "single-bottle-canvas-wine-tote",
-      category: "Bottle Bags",
-      material: "Canvas",
-      size: '3"W x 10.5"H x 3"D',
-      price: 30.00,
-      originalPrice: 45.00,
-      image: "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp",
-      description: "12 oz. 100% cotton canvas. Single bottle wine tote with reinforced bottom.",
-      popular: false
-    }, {
-      id: "mqib",
-      name: "Cotton Tote Bag",
-      code: "MQIB",
-      slug: "cotton-tote-bag",
-      category: "Tote Bags",
-      material: "Cotton",
-      size: '15"W x 16"H',
-      price: 30.00,
-      originalPrice: 45.00,
-      image: "assets/assets/images/products/tote-bags/MQIB/MQIB_main.webp",
-      description: "Premium cotton tote, ideal for everyday use.",
-      popular: true
-    }, {
-      id: "ib800",
-      name: "Canvas Promotional Tote Bag",
-      code: "IB800",
-      slug: "canvas-promotional-tote",
-      category: "Tote Bags",
-      material: "Canvas",
-      size: '15"W x 16"H',
-      price: 30.00,
-      originalPrice: 45.00,
-      image: "assets/assets/images/products/tote-bags/IB800/IB800_main.webp",
-      description: "Durable canvas tote with promotional appeal.",
-      popular: true
-    }, {
-      id: "w956",
-      name: "Non-Woven Convention Bag",
-      code: "W956",
-      slug: "non-woven-convention-bag",
-      category: "Non-Woven Bags",
-      material: "Non-Woven",
-      size: '15"W x 16"H',
-      price: 35.00,
-      originalPrice: 50.00,
-      image: "assets/assets/images/products/non-woven/W956/W956_main.webp",
-      description: "Lightweight non-woven bag for conventions.",
-      popular: true
-    }, {
-      id: "w975",
-      name: "Econo Tote Bag",
-      code: "W975",
-      slug: "econo-tote-bag",
-      category: "Tote Bags",
-      material: "Non-Woven",
-      size: '14.25"W x 15"H x 5"D',
-      price: 35.00,
-      originalPrice: 50.00,
-      image: "assets/assets/images/products/non-woven/W975/W975_main.webp",
-      description: "Economical non-woven tote.",
-      popular: true
-      // }, {
-      //   id: "ib100",
-      //   name: "Premium Canvas Tote",
-      //   code: "IB100",
-      //   slug: "premium-canvas-tote",
-      //   category: "Tote Bags",
-      //   material: "Canvas",
-      //   size: '15"W x 16"H',
-      //   price: 35.00,
-      //   image: "https://placehold.co/150x150/ffffff/555555?text=Premium",
-      //   description: "High-quality premium canvas tote.",
-      //   popular: true
-    },
-      // {
-      //   id: "bp101",
-      //   name: "Classic Backpack",
-      //   code: "BP101",
-      //   slug: "classic-backpack",
-      //   category: "Backpacks",
-      //   material: "Canvas",
-      //   size: '12"W x 18"H x 6"D',
-      //   price: 55.00,
-      //   image: "https://placehold.co/150x150/ffffff/555555?text=Backpack",
-      //   description: "Sturdy canvas backpack with padded straps.",
-      //   popular: false
-      // }, 
-      // {
-      //   id: "cool1",
-      //   name: "Insulated Cooler Bag",
-      //   code: "COOL1",
-      //   slug: "insulated-cooler-bag",
-      //   category: "Cooler Bags",
-      //   material: "Non-Woven",
-      //   size: '10"W x 12"H x 8"D',
-      //   price: 42.00,
-      //   image: "https://placehold.co/150x150/ffffff/555555?text=Cooler",
-      //   description: "Keep your drinks cold with this insulated cooler.",
-      //   popular: false
-      // }, 
-      // {
-      //   id: "acc01",
-      //   name: "Leather Keychain",
-      //   code: "ACC01",
-      //   slug: "leather-keychain",
-      //   category: "Accessories",
-      //   material: "Cotton",
-      //   size: '2"x 4"',
-      //   price: 12.00,
-      //   image: "https://placehold.co/150x150/ffffff/555555?text=Keychain",
-      //   description: "Genuine leather keychain with metal ring.",
-      //   popular: false
-      // }, 
-      // {
-      //   id: "ib202",
-      //   name: "Canvas Drawstring Bag",
-      //   code: "IB202",
-      //   slug: "canvas-drawstring-bag",
-      //   category: "Drawstring Bags",
-      //   material: "Canvas",
-      //   size: '14"W x 18"H',
-      //   price: 18.00,
-      //   image: "https://placehold.co/150x150/ffffff/555555?text=Drawstring",
-      //   description: "Lightweight canvas drawstring bag.",
-      //   popular: false
-      // }
-    ];
+  }
 
-    // -------------------------------------------------
-    // 2. RENDER ENGINE
-    // -------------------------------------------------
-    (function () {
-      "use strict";
+  function createProductCard(product) {
+    const div = document.createElement('div');
+    div.className = 'premium-card p-4 relative flex flex-col h-full product-card opacity-0 group cursor-pointer';
+    div.dataset.id = product.id;
+    const link = `product.html?id=${product.id}`;
 
-      const grid = document.getElementById('product-grid');
-      const popularGrid = document.getElementById('popular-grid');
-      const sidebar = document.getElementById('sidebar');
-      const emptyState = document.getElementById('empty-state');
-      const countLabel = document.getElementById('product-count-label');
-      const searchInput = document.getElementById('search-input');
-      const sortSelect = document.getElementById('sort-select');
+    div.innerHTML = `
+        <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">${product.code}</span>
+        <button class="absolute top-4 right-4 text-brand-textSecondary hover:text-brand-crimson z-10 transition-colors"><i class="fa-regular fa-heart"></i></button>
+        <a href="${link}" class="block relative h-48 mb-4 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500">
+            <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
+            <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[9px] px-2 py-0.5 rounded font-medium border border-white/10">${product.size}</div>
+        </a>
+        <div class="flex-1 flex flex-col">
+            <a href="${link}"><h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">${product.name}</h3></a>
+            <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">${product.description}</p>
+            <div class="mt-auto">
+                <div class="text-[12px] text-brand-textSecondary font-medium mb-1">Setup Was</div>
+                <div class="flex items-center gap-2 flex-wrap mb-3">
+                    ${product.originalPrice ? `<span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">$${product.originalPrice.toFixed(2)}</span>` : ''}
+                    <span class="text-brand-crimson font-bold text-base">$${product.price.toFixed(2)}</span>
+                    <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">Now Net</span>
+                </div>
+                <div class="flex items-center gap-1 w-full">
+                    <a href="${link}?action=quote" class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
+                        <i class="fa-regular fa-pen-to-square"></i> QUOTE
+                    </a>
+                    <a href="${link}?action=mockup" class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP
+                    </a>
+                    <a href="${link}?action=freight" class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson">
+                        <i class="fa-solid fa-truck-fast"></i> FREIGHT
+                    </a>
+                </div>
+            </div>
+        </div>
+    `;
 
-      let currentCategory = 'All Products';
-      let selectedMaterials = [];
-      let selectedSizes = [];
-      let searchTerm = '';
+    return div;
+  }
 
-      function getCategories() {
-        const cats = products.map(p => p.category);
-        return ['All Products', ...new Set(cats)];
-      }
+  function renderSidebar() {
+    const cats = getCategories();
+    const materials = getMaterials();
+    const sizes = getSizes();
 
-      function getMaterials() {
-        return [...new Set(products.map(p => p.material))];
-      }
+    let html = `
+    <div class="premium-card mb-6">
+      <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Categories</h3>
+      <ul class="text-sm text-brand-textSecondary font-medium" id="category-list">`;
 
-      function getSizes() {
-        return [...new Set(products.map(p => p.size))];
-      }
+    cats.forEach(cat => {
+      const count = getCategoryCount(cat);
+      const active = currentCategory === cat ? 'active' : '';
+      html += `<li><a href="#" class="flex items-center justify-between px-4 py-2.5 sidebar-link ${active} border-b border-brand-border/30 category-link" data-category="${cat}">${cat} <span class="text-xs font-normal">${count}</span></a></li>`;
+    });
 
-      function getCategoryCount(cat) {
-        if (cat === 'All Products') return products.length;
-        return products.filter(p => p.category === cat).length;
-      }
+    html += `</ul></div>
+    <div class="premium-card">
+      <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Filter By</h3>
+      <div class="p-4 border-b border-brand-border">
+        <div class="flex justify-between items-center mb-3 cursor-pointer">
+          <h4 class="text-sm font-bold text-brand-text">SIZE</h4>
+          <i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i>
+        </div>
+        <div class="space-y-2.5 text-sm text-brand-textSecondary" id="size-filters">`;
 
-      function getMaterialCount(mat) {
-        return products.filter(p => p.material === mat).length;
-      }
+    sizes.forEach(size => {
+      const count = getSizeCount(size);
+      const checked = selectedSizes.includes(size) ? 'checked' : '';
 
-      function getSizeCount(size) {
-        return products.filter(p => p.size === size).length;
-      }
+      html += `<label class="flex items-center justify-between cursor-pointer group">
+        <div class="flex items-center gap-2">
+            <input 
+                type="checkbox" 
+                class="size-check w-4 h-4 border-brand-border rounded text-brand-crimson focus:ring-brand-crimson"
+                value="${size.replace(/"/g, '&quot;')}" 
+                ${checked}
+            >
+            <span class="group-hover:text-brand-text transition-colors">${size}</span>
+        </div>
+        <span class="text-xs text-brand-textSecondary">(${count})</span>
+    </label>`;
+    });
 
-      function getFilteredProducts() {
-        let result = products;
-        if (currentCategory !== 'All Products') {
-          result = result.filter(p => p.category === currentCategory);
+    html += `</div></div>
+    <div class="p-4">
+      <div class="flex justify-between items-center mb-3 cursor-pointer">
+        <h4 class="text-sm font-bold text-brand-text">MATERIAL</h4>
+        <i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i>
+      </div>
+      <div class="space-y-2.5 text-sm text-brand-textSecondary" id="material-filters">`;
+
+    materials.forEach(mat => {
+      const count = getMaterialCount(mat);
+      const checked = selectedMaterials.includes(mat) ? 'checked' : '';
+      html += `<label class="flex items-center justify-between cursor-pointer group">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="material-check w-4 h-4 border-brand-border rounded text-brand-crimson focus:ring-brand-crimson" 
+                       value="${mat}" ${checked}>
+                <span class="group-hover:text-brand-text transition-colors">${mat}</span>
+              </div>
+              <span class="text-xs text-brand-textSecondary">(${count})</span>
+            </label>`;
+    });
+
+    html += `<button class="text-brand-crimson text-xs font-semibold w-full text-center mt-2 hover:underline">+ More</button>
+      </div>
+    </div>
+  </div>`;
+
+    sidebar.innerHTML = html;
+
+    // Event listeners
+    document.querySelectorAll('.category-link').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentCategory = el.dataset.category;
+        currentPage = 1;
+        renderSidebar();
+        renderProducts();
+      });
+    });
+
+    document.querySelectorAll('.size-check').forEach(cb => {
+      cb.addEventListener('change', (e) => {
+        const val = e.target.value;
+        if (e.target.checked) {
+          if (!selectedSizes.includes(val)) selectedSizes.push(val);
+        } else {
+          selectedSizes = selectedSizes.filter(v => v !== val);
         }
-        if (selectedMaterials.length > 0) {
-          result = result.filter(p => selectedMaterials.includes(p.material));
+        currentPage = 1;
+        renderProducts();
+      });
+    });
+
+    document.querySelectorAll('.material-check').forEach(cb => {
+      cb.addEventListener('change', (e) => {
+        const val = e.target.value;
+        if (e.target.checked) {
+          if (!selectedMaterials.includes(val)) selectedMaterials.push(val);
+        } else {
+          selectedMaterials = selectedMaterials.filter(v => v !== val);
         }
-        if (selectedSizes.length > 0) {
-          result = result.filter(p => selectedSizes.includes(p.size));
-        }
-        if (searchTerm.trim() !== '') {
-          const s = searchTerm.toLowerCase().trim();
-          result = result.filter(p =>
-            p.name.toLowerCase().includes(s) ||
-            p.code.toLowerCase().includes(s) ||
-            p.category.toLowerCase().includes(s) ||
-            p.material.toLowerCase().includes(s)
-          );
-        }
-        return result;
-      }
+        currentPage = 1;
+        renderProducts();
+      });
+    });
+  }
 
-      function getSortedProducts(filtered) {
-        const sortVal = sortSelect.value;
-        const arr = [...filtered];
-        if (sortVal === 'price-low') arr.sort((a, b) => a.price - b.price);
-        else if (sortVal === 'price-high') arr.sort((a, b) => b.price - a.price);
-        else if (sortVal === 'newest') arr.reverse();
-        else arr.sort((a, b) => (b.popular ? 1 : 0) - (a.popular ? 1 : 0));
-        return arr;
-      }
-
-      function createProductCard(product) {
-        const div = document.createElement('div');
-        div.className =
-          'premium-card p-4 relative flex flex-col h-full product-card opacity-0 group cursor-pointer';
-        div.dataset.id = product.id;
-        // product link with ID parameter
-        const link = `product.html?id=${product.id}`;
-
-        div.innerHTML = `
-            <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">${product.code}</span>
-            <button class="absolute top-4 right-4 text-brand-textSecondary hover:text-brand-crimson z-10 transition-colors"><i class="fa-regular fa-heart"></i></button>
-            <a href="${link}" class="block relative h-48 mb-4 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500">
-              <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
-              <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[9px] px-2 py-0.5 rounded font-medium border border-white/10">${product.size}</div>
-            </a>
-            <div class="flex-1 flex flex-col">
-              <a href="${link}"><h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">${product.name}</h3></a>
-              <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">${product.description}</p>
-          <div class="mt-auto">
-  <!-- Price Row with Setup Before -->
-<div class="mt-auto">
-  <!-- Setup Was Label -->
-  <div class="text-[12px] text-brand-textSecondary font-medium mb-1">Setup Was</div>
-  
-  <!-- Price Row -->
-  <div class="flex items-center gap-2 flex-wrap mb-3">
-    ${product.originalPrice ? `<span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">$${product.originalPrice.toFixed(2)}</span>` : ''}
-    <span class="text-brand-crimson font-bold text-base">$${product.price.toFixed(2)}</span>
-    <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">Now Net</span>
-  </div>
-  
-  <!-- Buttons -->
-  <div class="flex items-center gap-1 w-full">
-    <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-regular fa-pen-to-square"></i> QUOTE</button>
-    <button class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1"><i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP</button>
-    <button class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson"><i class="fa-solid fa-truck-fast"></i> FREIGHT</button>
-  </div>
-</div>
-          `;
-
-        // Click event on the card to navigate to product detail
-        div.addEventListener('click', function (e) {
-          // Ignore if clicked on button or link inside
-          if (e.target.closest('button') || e.target.closest('a')) return;
-          window.location.href = `product.html?id=${product.id}`;
-        });
-
-        return div;
-      }
-
-      function renderSidebar() {
-        const cats = getCategories();
-        const materials = getMaterials();
-        const sizes = getSizes();
-        let html = `
-            <div class="premium-card mb-6">
-              <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Categories</h3>
-              <ul class="text-sm text-brand-textSecondary font-medium" id="category-list">`;
-        cats.forEach(cat => {
-          const count = getCategoryCount(cat);
-          const active = currentCategory === cat ? 'active' : '';
-          html += `<li><a href="#" class="flex items-center justify-between px-4 py-2.5 sidebar-link ${active} border-b border-brand-border/30 category-link" data-category="${cat}">${cat} <span class="text-xs font-normal">${count}</span></a></li>`;
-        });
-        html += `</ul></div>
-            <div class="premium-card">
-              <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Filter By</h3>
-              <div class="p-4 border-b border-brand-border">
-                <div class="flex justify-between items-center mb-3 cursor-pointer"><h4 class="text-sm font-bold text-brand-text">SIZE</h4><i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i></div>
-                <div class="space-y-2.5 text-sm text-brand-textSecondary" id="size-filters">`;
-        sizes.forEach(size => {
-          const count = getSizeCount(size);
-          const checked = selectedSizes.includes(size) ? 'checked' : '';
-          html += `<label class="flex items-center justify-between cursor-pointer group"><div class="flex items-center gap-2"><input type="checkbox" class="size-check w-4 h-4 border-brand-border rounded text-brand-crimson focus:ring-brand-crimson" value="${size}" ${checked}><span class="group-hover:text-brand-text transition-colors">${size}</span></div><span class="text-xs text-brand-textSecondary">(${count})</span></label>`;
-        });
-        html += `</div></div>
-            <div class="p-4">
-              <div class="flex justify-between items-center mb-3 cursor-pointer"><h4 class="text-sm font-bold text-brand-text">MATERIAL</h4><i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i></div>
-              <div class="space-y-2.5 text-sm text-brand-textSecondary" id="material-filters">`;
-        materials.forEach(mat => {
-          const count = getMaterialCount(mat);
-          const checked = selectedMaterials.includes(mat) ? 'checked' : '';
-          html += `<label class="flex items-center justify-between cursor-pointer group"><div class="flex items-center gap-2"><input type="checkbox" class="material-check w-4 h-4 border-brand-border rounded text-brand-crimson focus:ring-brand-crimson" value="${mat}" ${checked}><span class="group-hover:text-brand-text transition-colors">${mat}</span></div><span class="text-xs text-brand-textSecondary">(${count})</span></label>`;
-        });
-        html += `<button class="text-brand-crimson text-xs font-semibold w-full text-center mt-2 hover:underline">+ More</button></div></div></div>`;
-        sidebar.innerHTML = html;
-
-        document.querySelectorAll('.category-link').forEach(el => {
-          el.addEventListener('click', (e) => {
-            e.preventDefault();
-            currentCategory = el.dataset.category;
-            renderSidebar();
-            applyFiltersAndRender();
-          });
-        });
-        document.querySelectorAll('.size-check').forEach(cb => {
-          cb.addEventListener('change', (e) => {
-            const val = e.target.value;
-            if (e.target.checked) { if (!selectedSizes.includes(val)) selectedSizes.push(val); } else { selectedSizes = selectedSizes.filter(v => v !== val); }
-            applyFiltersAndRender();
-          });
-        });
-        document.querySelectorAll('.material-check').forEach(cb => {
-          cb.addEventListener('change', (e) => {
-            const val = e.target.value;
-            if (e.target.checked) { if (!selectedMaterials.includes(val)) selectedMaterials.push(val); } else { selectedMaterials = selectedMaterials.filter(v => v !== val); }
-            applyFiltersAndRender();
-          });
-        });
-      }
-
-      function renderProducts() {
+  function renderProducts() {
     const filtered = getFilteredProducts();
     const sorted = getSortedProducts(filtered);
     const total = products.length;
     const showing = sorted.length;
-    countLabel.textContent = `Showing 1–${showing} of ${total} products`;
-    grid.innerHTML = '';
-    if (showing === 0) {
-        emptyState.classList.remove('hidden');
+
+    // ✅ UPDATE COUNTER
+    const start = (currentPage - 1) * PRODUCTS_PER_PAGE + 1;
+    const end = Math.min(currentPage * PRODUCTS_PER_PAGE, showing);
+    if (showing > 0) {
+      countLabel.textContent = `Showing ${start}–${end} of ${showing} products`;
     } else {
-        emptyState.classList.add('hidden');
-        
-        // 🔥 ORDER CHANGE: Pehle 3 products (index 0,1,2) ko baad mein, aage wale (3,4,5...) ko pehle
-        const reordered = [];
-        if (sorted.length >= 6) {
-            // Pehle second row ke products (index 3,4,5)
-            reordered.push(sorted[3], sorted[4], sorted[5]);
-            // Phir first row ke products (index 0,1,2)
-            reordered.push(sorted[0], sorted[1], sorted[2]);
-            // Baki ke products (6 se aage) as it is
-            for (let i = 6; i < sorted.length; i++) {
-                reordered.push(sorted[i]);
-            }
-        } else {
-            // Agar 6 se kam hain toh original order rakho
-            reordered.push(...sorted);
-        }
-        
-        reordered.forEach(p => grid.appendChild(createProductCard(p)));
-        gsap.set('.product-card', { y: 30, opacity: 0 });
-        gsap.to('.product-card', { y: 0, opacity: 1, duration: 0.5, stagger: 0.08, ease: 'back.out(1.2)', overwrite: 'auto' });
+      countLabel.textContent = `Showing 0 of 0 products`;
     }
 
-    // Popular products render karo
+    // ✅ GET PAGINATED PRODUCTS
+    const paginated = getPaginatedProducts(sorted);
+
+    grid.innerHTML = '';
+    if (paginated.length === 0) {
+      emptyState.classList.remove('hidden');
+    } else {
+      emptyState.classList.add('hidden');
+
+      // 🔥 ORDER CHANGE: Pehle 3 products (index 0,1,2) ko baad mein, aage wale (3,4,5...) ko pehle
+      const reordered = [];
+      if (paginated.length >= 6) {
+        reordered.push(paginated[3], paginated[4], paginated[5]);
+        reordered.push(paginated[0], paginated[1], paginated[2]);
+        for (let i = 6; i < paginated.length; i++) {
+          reordered.push(paginated[i]);
+        }
+      } else {
+        reordered.push(...paginated);
+      }
+
+      reordered.forEach(p => grid.appendChild(createProductCard(p)));
+      gsap.set('.product-card', { y: 30, opacity: 0 });
+      gsap.to('.product-card', { y: 0, opacity: 1, duration: 0.5, stagger: 0.08, ease: 'back.out(1.2)', overwrite: 'auto' });
+    }
+
+    // ✅ RENDER PAGINATION
+    renderPagination(showing);
+
+    // Popular products render
     const popularProducts = products.filter(p => p.popular === true);
     renderPopularProducts(popularProducts);
-}
+  }
 
-      function renderPopularProducts(popularProducts) {
-        const grid = document.getElementById('popular-grid');
-        if (!grid) return;
+  function renderPopularProducts(popularProducts) {
+    const grid = document.getElementById('popular-grid');
+    if (!grid) return;
 
-        // Trending emojis array
-        const emojis = ['🔥', '⭐', '💫', '✨', '🌟', '🎯', '💎', '👑'];
-        const colors = ['#FF6B6B', '#FFD93D', '#6BCB77', '#4D96FF', '#FF6B8A', '#FFB347', '#A66CFF', '#FF8A5C'];
+    const emojis = ['🔥', '⭐', '💫', '✨', '🌟', '🎯', '💎', '👑'];
+    const colors = ['#FF6B6B', '#FFD93D', '#6BCB77', '#4D96FF', '#FF6B8A', '#FFB347', '#A66CFF', '#FF8A5C'];
 
-        grid.innerHTML = popularProducts.map((product, index) => {
-          const emoji = emojis[index % emojis.length];
-          const color = colors[index % colors.length];
-          const randomBuyers = Math.floor(100 + Math.random() * 900);
+    grid.innerHTML = popularProducts.map((product, index) => {
+      const emoji = emojis[index % emojis.length];
+      const color = colors[index % colors.length];
+      const randomBuyers = Math.floor(100 + Math.random() * 900);
 
-          return `
+      return `
             <div class="popular-card" style="animation-delay: ${index * 0.15}s" 
                  onclick="window.location.href='product.html?id=${product.id}'">
                 <div class="popular-shine"></div>
-                
-                <!-- Floating Particles -->
                 <div class="popular-particles">
                     ${[...Array(6)].map((_, i) => `
                         <div class="particle" style="
@@ -496,14 +1266,10 @@
                         "></div>
                     `).join('')}
                 </div>
-                
-                <!-- Popular Tag with Fire Emoji -->
                 <span class="popular-tag">
                     <span class="fire-emoji">${emoji}</span> 
                     Trending #${index + 1}
                 </span>
-                
-                <!-- Order Counter (Fake Popularity) -->
                 <div class="absolute top-12 left-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full z-10">
                     <span class="text-white text-[10px] font-medium flex items-center gap-1.5">
                         <i class="fa-solid fa-users text-[8px]"></i>
@@ -511,86 +1277,79 @@
                         <span class="text-white/50 text-[8px]">bought</span>
                     </span>
                 </div>
-                
                 <img src="${product.image}" alt="${product.name}" class="popular-image">
-                
                 <div class="popular-content">
                     <h1 class="popular-code">${product.code}</h1>
                     <h4 class="popular-name">${product.name}</h4>
-                    
-                    <!-- Rating Stars -->
                     <div class="flex items-center gap-1 mt-1">
                         <div class="flex text-amber-400 text-[9px]">
                             ${'⭐'.repeat(5)}
                         </div>
                         <span class="text-[9px] text-brand-textSecondary">(${(Math.random() * 150 + 30).toFixed(0)})</span>
                     </div>
-                    
-          <div class="flex items-center gap-2 mt-2 flex-wrap">
-  <span class="text-[12px] text-brand-textSecondary font-medium">Setup Was</span>
-  <span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">$${product.originalPrice.toFixed(2)}</span>
-  <span class="popular-price font-bold text-brand-crimson text-sm">$${product.price.toFixed(2)}</span>
-  <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-1.5 py-0.5 rounded border border-brand-crimson/30">Now Net</span>
-</div>
+                    <div class="flex items-center gap-2 mt-2 flex-wrap">
+                        <span class="text-[12px] text-brand-textSecondary font-medium">Setup Was</span>
+                        <span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">$${product.originalPrice.toFixed(2)}</span>
+                        <span class="popular-price font-bold text-brand-crimson text-sm">$${product.price.toFixed(2)}</span>
+                        <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-1.5 py-0.5 rounded border border-brand-crimson/30">Now Net</span>
+                    </div>
                 </div>
             </div>
         `;
-        }).join('');
+    }).join('');
 
-        // Show section with animation
-        setTimeout(() => {
-          const section = document.getElementById('popular-section');
-          if (section) section.classList.add('visible');
-        }, 200);
-      }
+    setTimeout(() => {
+      const section = document.getElementById('popular-section');
+      if (section) section.classList.add('visible');
+    }, 200);
+  }
 
-      function applyFiltersAndRender() {
-        renderProducts();
-      }
+  function initEvents() {
+    searchInput.addEventListener('input', (e) => {
+      searchTerm = e.target.value;
+      currentPage = 1;
+      renderProducts();
+    });
+    sortSelect.addEventListener('change', () => {
+      currentPage = 1;
+      renderProducts();
+    });
+  }
 
-      function initEvents() {
-        searchInput.addEventListener('input', (e) => {
-          searchTerm = e.target.value;
-          applyFiltersAndRender();
-        });
-        sortSelect.addEventListener('change', () => {
-          applyFiltersAndRender();
-        });
-      }
-      gsap.from(".brand-divider", {
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-      });
+  gsap.from(".brand-divider", {
+    y: 40,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+  });
 
-      gsap.from(".brand-divider span", {
-        scale: 0.8,
-        opacity: 0,
-        stagger: 0.15,
-        duration: 0.8,
-        ease: "back.out(1.7)",
-      });
+  gsap.from(".brand-divider span", {
+    scale: 0.8,
+    opacity: 0,
+    stagger: 0.15,
+    duration: 0.8,
+    ease: "back.out(1.7)",
+  });
 
-      function init() {
-        renderSidebar();
-        renderProducts();
-        initEvents();
+  function init() {
+    renderSidebar();
+    renderProducts();
+    initEvents();
 
-        const tl = gsap.timeline();
-        tl.to(".header-content", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" })
-          .to(".header-features", { opacity: 1, duration: 0.5 }, "-=0.3")
-          .to(".sidebar-anim", { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, "-=0.2")
-          .to(".toolbar-anim", { y: 0, opacity: 1, duration: 0.4 }, "-=0.3")
-          .to(".product-card", { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: "back.out(1.2)" }, "-=0.2")
-          .to(".popular-section", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, "-=0.2")
-          .to(".footer-features", { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, "-=0.3");
+    const tl = gsap.timeline();
+    tl.to(".header-content", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" })
+      .to(".header-features", { opacity: 1, duration: 0.5 }, "-=0.3")
+      .to(".sidebar-anim", { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, "-=0.2")
+      .to(".toolbar-anim", { y: 0, opacity: 1, duration: 0.4 }, "-=0.3")
+      .to(".product-card", { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: "back.out(1.2)" }, "-=0.2")
+      .to(".popular-section", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, "-=0.2")
+      .to(".footer-features", { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, "-=0.3");
 
-        gsap.set(".header-content, .toolbar-anim, .popular-section", { y: 20 });
-        gsap.set(".sidebar-anim", { x: -20 });
-        gsap.set(".product-card", { y: 30 });
-        gsap.set(".footer-features", { y: 15 });
-      }
+    gsap.set(".header-content, .toolbar-anim, .popular-section", { y: 20 });
+    gsap.set(".sidebar-anim", { x: -20 });
+    gsap.set(".product-card", { y: 30 });
+    gsap.set(".footer-features", { y: 15 });
+  }
 
-      init();
-    })();
+  init();
+})();

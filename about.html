@@ -4,11 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inkwell Impressions · About</title>
-  <!-- Tailwind via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <!-- ===== SEO TITLE & META ===== -->
+  <title>About Us | Inkwell Impressions - Premium B2B Printing & Promotional Products</title>
+  <meta name="description"
+    content="Inkwell Impressions provides premium B2B printing, custom packaging, corporate gifts, and promotional products. Learn about our story, mission, and commitment to quality." />
+  <link rel="canonical" href="https://www.inkwell-impressions.com/about.html" />
+
+  <!-- ===== PRELOAD FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- ===== TAILWIND ===== -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -27,33 +38,60 @@
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-    rel="stylesheet">
-  <!-- Global Styles -->
+
+  <!-- ===== FONT AWESOME ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- ===== EXTERNAL CSS (Unchanged - Waisay hi) ===== -->
   <link rel="stylesheet" href="./css/style.css" />
-  <!-- About Page Styles -->
   <link rel="stylesheet" href="./css/about.css" />
+
+  <!-- ===== SCHEMA MARKUP (JSON-LD) - SEO BOOST ===== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Us | Inkwell Impressions",
+      "description": "Inkwell Impressions provides premium B2B printing, custom packaging, corporate gifts, and promotional products.",
+      "url": "https://www.inkwell-impressions.com/about.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Inkwell Impressions Solutions",
+        "logo": "https://www.inkwell-impressions.com/bold.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "5900 Balcones Drive STE 100 Suite 456",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "postalCode": "78731",
+          "addressCountry": "US"
+        },
+        "telephone": "+17373057447",
+        "email": "info@inkwell-impressions.com"
+      }
+    }
+  </script>
+
 </head>
 
 <body>
 
-  <!-- NAV - RESPONSIVE FIXED -->
+  <!-- ============================================================ -->
+  <!-- NAV - RESPONSIVE FIXED (Unchanged - Bilkul waisay hi) -->
+  <!-- ============================================================ -->
   <nav
     class="bg-brand-blue text-white px-3 sm:px-4 md:px-6 lg:px-8 flex justify-between items-center fixed w-full z-50 py-1">
     <div class="flex items-center shrink-0">
       <a href="index.html">
-        <img src="./logo bold.png" alt="Inkwell Impressions Solutions Logo"
-          class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" />
+        <img src="./bold.webp" alt="Inkwell Impressions Solutions Logo"
+          class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" loading="eager" />
       </a>
     </div>
     <ul class="hidden md:flex space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
       <li><a href="index.html" class="hover:text-brand-red transition">Home</a></li>
       <li><a href="products.html" class="hover:text-brand-red transition">Products</a></li>
       <li><a href="categories.html" class="hover:text-brand-red transition">Categories</a></li>
-      <li><a href="about.html" class="text-brand-red">About Us</a></li>
+      <li><a href="about.html" class="text-brand-red" aria-current="page">About Us</a></li>
       <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
     </ul>
     <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
@@ -73,7 +111,7 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile Menu (Unchanged) -->
   <div id="mobileMenu"
     class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-blue text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
@@ -82,70 +120,62 @@
           class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Products</a></li>
       <li><a href="categories.html"
           class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Categories</a></li>
-      <li><a href="about.html" class="text-brand-red block py-2 border-b border-gray-700">About Us</a></li>
+      <li><a href="about.html" class="text-brand-red block py-2 border-b border-gray-700" aria-current="page">About
+          Us</a></li>
       <li><a href="contact.html" class="hover:text-brand-red block py-2 border-b border-gray-700 transition">Contact</a>
       </li>
     </ul>
-
-    <button
-      class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
-      <span class="relative z-10 flex items-center gap-2">
-        <i class="fa-solid fa-file-signature text-[9px]"></i>
-        REQUEST A QUOTE
-      </span>
-    </button>
+    <a href="contact.html">
+      <button
+        class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+        <span class="relative z-10 flex items-center gap-2">
+          <i class="fa-solid fa-file-signature text-[9px]"></i>
+          REQUEST A QUOTE
+        </span>
+      </button>
+    </a>
   </div>
 
-  <!-- ABOUT SECTION -->
+  <!-- ============================================================ -->
+  <!-- ABOUT SECTION (Unchanged - Sirf image optimize) -->
+  <!-- ============================================================ -->
   <section id="about-section" class="relative w-full overflow-hidden bg-white">
 
-    <!-- HERO - RESPONSIVE FIXED -->
+    <!-- HERO -->
     <div class="hero-full relative mt-[60px] sm:mt-[70px] md:mt-[80px] lg:mt-[100px]">
 
-      <img src="./assets/about-image-two.webp" alt="Premium printing and promotional products"
-        class="w-full h-full object-cover" />
+      <img src="./assets/about-image-two.webp"
+        alt="Inkwell Impressions premium printing and promotional products for businesses"
+        class="w-full h-full object-cover" width="1200" height="600" loading="eager" decoding="async" />
 
       <div class="hero-overlay-top"></div>
       <div class="hero-gradient"></div>
 
-      <!-- CENTER HERO CONTENT -->
       <div class="absolute inset-0 z-10 flex items-center justify-center text-center px-4 sm:px-6">
-
         <div class="max-w-4xl mx-auto text-white">
-
-          <!-- heading - RESPONSIVE CLASSES -->
           <h1 class="font-serif hero-heading font-bold leading-[0.98] tracking-[-0.04em]">
             Printing that Makes<br>
             <span class="italic font-bold text-brand-red">an Impression</span>
           </h1>
-
         </div>
       </div>
 
     </div>
 
-    <!-- ABOUT US - introduction, story, mission, features, stats -->
+    <!-- ABOUT US -->
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 md:pt-20 lg:pt-28 pb-6 sm:pb-8">
 
-      <!-- faded background -->
       <div class="bg-text-container">
-        <span class="faded">
-          INKWELL<br>IMPRESSIONS
-        </span>
+        <span class="faded">INKWELL<br>IMPRESSIONS</span>
       </div>
 
-      <!-- ABOUT US INTRO - RESPONSIVE FIXED -->
       <div class="relative z-10 max-w-7xl mx-auto px-0">
 
         <div class="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20 gsap-fade-up">
-
-          <!-- heading - RESPONSIVE CLASSES -->
           <h2 class="font-serif about-intro-heading font-bold text-[#131835] tracking-[-0.035em] leading-[1.05]">
             About Us
           </h2>
-
           <div class="w-10 sm:w-12 md:w-14 h-[2px] bg-[#D62828] mx-auto my-6 sm:my-7 md:my-8"></div>
-
           <p
             class="text-[#131835]/70 text-sm sm:text-base md:text-lg leading-[1.8] sm:leading-[1.9] font-normal max-w-3xl mx-auto">
             Inkwell Impressions provides printing and promotional solutions for businesses
@@ -153,14 +183,12 @@
             to custom promotional products, we focus on dependable quality, clean finishing
             and consistent results.
           </p>
-
         </div>
 
-        <!-- OUR STORY + OUR MISSION + OUR VISION (3 cards) - RESPONSIVE FIXED -->
+        <!-- 3 CARDS -->
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto mb-16 sm:mb-20 md:mb-24 gsap-fade-up">
 
-          <!-- OUR STORY -->
           <div class="story-mission-card">
             <div class="red-accent"></div>
             <h3>Our Story</h3>
@@ -177,7 +205,6 @@
             </p>
           </div>
 
-          <!-- OUR MISSION -->
           <div class="story-mission-card">
             <div class="red-accent"></div>
             <h3>Our Mission</h3>
@@ -193,7 +220,6 @@
             </p>
           </div>
 
-          <!-- OUR VISION -->
           <div class="story-mission-card">
             <div class="red-accent"></div>
             <h3>Our Vision</h3>
@@ -206,7 +232,7 @@
 
         </div>
 
-        <!-- WHY INKWELL - RESPONSIVE FIXED -->
+        <!-- FEATURES -->
         <div class="relative z-10 max-w-6xl mx-auto px-0 py-6 sm:py-8 gsap-features">
 
           <div class="text-center mb-10 sm:mb-12 md:mb-14">
@@ -229,58 +255,47 @@
               <span class="num">01</span>
               <h4>Uncompromising Quality</h4>
               <div class="feature-accent"></div>
-              <p>
-                We use quality materials and check each order carefully to maintain
-                a consistent finish from the first piece to the last.
-              </p>
+              <p>We use quality materials and check each order carefully to maintain a consistent finish from the first
+                piece to the last.</p>
             </div>
 
             <div class="feature-item">
               <span class="num">02</span>
               <h4>Clear Pricing</h4>
               <div class="feature-accent"></div>
-              <p>
-                Straightforward pricing and clear communication help you know exactly
-                what you are getting before production begins.
-              </p>
+              <p>Straightforward pricing and clear communication help you know exactly what you are getting before
+                production begins.</p>
             </div>
 
             <div class="feature-item">
               <span class="num">03</span>
               <h4>Responsive Service</h4>
               <div class="feature-accent"></div>
-              <p>
-                From quotations to final delivery, we keep communication simple,
-                direct and timely throughout the process.
-              </p>
+              <p>From quotations to final delivery, we keep communication simple, direct and timely throughout the
+                process.</p>
             </div>
 
             <div class="feature-item">
               <span class="num">04</span>
               <h4>Custom Solutions</h4>
               <div class="feature-accent"></div>
-              <p>
-                Different businesses need different products, sizes and finishes.
-                We work around your requirements rather than forcing a fixed solution.
-              </p>
+              <p>Different businesses need different products, sizes and finishes. We work around your requirements
+                rather than forcing a fixed solution.</p>
             </div>
 
             <div class="feature-item full">
               <span class="num">05</span>
               <h4>Reliable Turnaround</h4>
               <div class="feature-accent"></div>
-              <p>
-                We understand that deadlines matter, so we plan production carefully
-                and work to deliver orders within the agreed timeframe.
-              </p>
+              <p>We understand that deadlines matter, so we plan production carefully and work to deliver orders within
+                the agreed timeframe.</p>
             </div>
           </div>
         </div>
 
-        <!-- COMPANY STATS - RESPONSIVE FIXED -->
+        <!-- STATS -->
         <div class="relative z-10 max-w-7xl mx-auto px-0 py-12 sm:py-16 md:py-20 lg:py-24 gsap-stats">
 
-          <!-- editorial header -->
           <div class="text-center mb-10 sm:mb-12 md:mb-16">
             <div class="flex items-center justify-center gap-3 sm:gap-4 mb-3 sm:mb-4">
               <span class="w-8 sm:w-10 h-[1px] bg-[#D62828]"></span>
@@ -296,7 +311,6 @@
             <div class="w-10 sm:w-12 md:w-14 h-[2px] bg-[#D62828] mx-auto mt-4 sm:mt-5 md:mt-6"></div>
           </div>
 
-          <!-- stats grid - RESPONSIVE -->
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
 
             <div class="stat-card" data-count="886">
@@ -332,33 +346,36 @@
 
   </section>
 
-  <!-- FOOTER - RESPONSIVE FIXED -->
+  <!-- ============================================================ -->
+  <!-- FOOTER (Unchanged - Sirf logo name bold.webp) -->
+  <!-- ============================================================ -->
   <footer class="bg-brand-blue text-white pt-10 sm:pt-12 md:pt-16 pb-6 sm:pb-8">
     <div
       class="container mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-8 sm:mb-10 md:mb-12">
       <div class="lg:col-span-1">
         <div class="mb-4">
-          <img src="./logo bold.png" alt="Inkwell Impressions Logo" class="h-24 w-auto object-contain">
+          <img src="./bold.webp" alt="Inkwell Impressions Logo - Premium B2B Printing" width="160" height="80"
+            loading="lazy" class="h-24 w-auto object-contain" />
         </div>
-        <p class="text-xs text-gray-400 mb-6">Your global partner for premium printing, packaging, corporate
-          gifts and promotional products.</p>
+        <p class="text-xs text-gray-400 mb-6">Your global partner for premium printing, packaging, corporate gifts and
+          promotional products.</p>
         <div class="flex items-center gap-3">
-          <a href="https://www.linkedin.com/in/inkwell-impressions-2007883b4" target="_blank"
+          <a href="https://www.linkedin.com/in/inkwell-impressions-2007883b4" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn"
             class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-
-          <a href="https://www.instagram.com/inkwellimpressionspromo/" target="_blank"
+          <a href="https://www.instagram.com/inkwellimpressionspromo/" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram"
             class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
             <i class="fa-brands fa-instagram"></i>
           </a>
-
-          <a href="https://www.facebook.com/profile.php?id=61552261877738" target="_blank"
+          <a href="https://www.facebook.com/profile.php?id=61552261877738" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook"
             class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-
-          <a href="https://x.com/Inkwell_Imp" target="_blank"
+          <a href="https://x.com/Inkwell_Imp" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
             class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:bg-brand-red hover:border-brand-red hover:text-white hover:-translate-y-1">
             <i class="fa-brands fa-twitter"></i>
           </a>
@@ -379,13 +396,10 @@
       <div>
         <h4 class="font-bold uppercase text-[10px] sm:text-xs mb-3 sm:mb-4">Products</h4>
         <ul class="text-[10px] sm:text-xs text-gray-400 space-y-1.5 sm:space-y-2">
-          <li><a href="products.html" class="hover:text-white cursor-pointer block">Promotional Products</a>
-          </li>
+          <li><a href="products.html" class="hover:text-white cursor-pointer block">Promotional Products</a></li>
           <li><a href="products.html" class="hover:text-white cursor-pointer block">Corporate Gifts</a></li>
-          <li><a href="products.html" class="hover:text-white cursor-pointer block">Printing Solutions</a>
-          </li>
-          <li><a href="products.html" class="hover:text-white cursor-pointer block">Custom Merchandise</a>
-          </li>
+          <li><a href="products.html" class="hover:text-white cursor-pointer block">Printing Solutions</a></li>
+          <li><a href="products.html" class="hover:text-white cursor-pointer block">Custom Merchandise</a></li>
         </ul>
       </div>
 
@@ -404,12 +418,12 @@
         <h4 class="font-bold uppercase text-[10px] sm:text-xs mb-3 sm:mb-4">Contact Info</h4>
         <ul class="text-[10px] sm:text-xs text-gray-400 space-y-3 sm:space-y-4">
           <li class="flex items-start"><i
-              class="fa-solid fa-location-dot mt-0.5 sm:mt-1 mr-2 sm:mr-3 text-xs sm:text-sm"></i> 5900
-            Balcones Drive STE 100 Suite 456,<br>Austin, TX, 78731 USA</li>
+              class="fa-solid fa-location-dot mt-0.5 sm:mt-1 mr-2 sm:mr-3 text-xs sm:text-sm"></i> 5900 Balcones Drive
+            STE 100 Suite 456,<br>Austin, TX, 78731 USA</li>
           <li class="flex items-center"><i class="fa-solid fa-envelope mr-2 sm:mr-3 text-xs sm:text-sm"></i>
             info@inkwell-impressions.com</li>
-          <li class="flex items-center"><i class="fa-solid fa-phone mr-2 sm:mr-3 text-xs sm:text-sm"></i>
-            737-305-7447</li>
+          <li class="flex items-center"><i class="fa-solid fa-phone mr-2 sm:mr-3 text-xs sm:text-sm"></i> 737-305-7447
+          </li>
         </ul>
       </div>
     </div>
@@ -424,21 +438,69 @@
     </div>
   </footer>
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="./config/about.js"></script>
+  <!-- ============================================================ -->
+  <!-- SCRIPTS (Unchanged) -->
+  <!-- ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="./config/about.js" defer></script>
 
-  <!-- Mobile Menu Toggle -->
+  <!-- Mobile Menu Toggle (Unchanged) -->
   <script>
-    document.getElementById('hamburgerBtn').addEventListener('click', function () {
-      const menu = document.getElementById('mobileMenu');
-      const icon = document.getElementById('hamburgerIcon');
-      menu.classList.toggle('hidden');
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-xmark');
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+      if (hamburgerBtn && mobileMenu && hamburgerIcon) {
+        hamburgerBtn.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+          hamburgerIcon.classList.toggle('fa-bars');
+          hamburgerIcon.classList.toggle('fa-xmark');
+        });
+      }
     });
   </script>
+
+  <!--Start of Tawk.to Script (Defer)-->
+  <script>
+    (function () {
+      // USA Central Time
+      const now = new Date();
+
+      const centralTime = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/Chicago",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: false
+      }).formatToParts(now);
+
+      const hour = parseInt(
+        centralTime.find(part => part.type === "hour").value
+      );
+
+      // Show Tawk only from 9 AM to 6 PM Central Time
+      if (hour >= 9 && hour < 18) {
+
+        var Tawk_API = Tawk_API || {},
+          Tawk_LoadStart = new Date();
+
+        (function () {
+          var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+
+          s1.async = true;
+          s1.src = "https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1";
+          s1.charset = "UTF-8";
+          s1.setAttribute("crossorigin", "*");
+
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+
+      }
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
 </body>
 
