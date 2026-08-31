@@ -792,7 +792,7 @@ if (quoteForm) {
             formData.append('phone', this.querySelector('input[name="phone"]')?.value || '');
             formData.append('asi_ppai_sage', this.querySelector('input[name="asi_ppai_sage"]')?.value || '');
             formData.append('item', this.querySelector('input[name="item"]')?.value || '');
-            formData.append('item_qty', this.querySelector('input[name="item_qty"]')?.value || '');
+            
             formData.append('in_hand_date', this.querySelector('input[name="in_hand_date"]')?.value || '');
             formData.append('freight_estimate', this.querySelector('input[name="freight_estimate"]:checked')?.value || 'No');
             formData.append('project_details', this.querySelector('textarea[name="project_details"]')?.value || '');
@@ -857,7 +857,7 @@ if (mockupForm) {
             formData.append('color', this.querySelector('select[name="color"]')?.value || '');
             formData.append('asi_ppai_sage', this.querySelector('input[name="asi_ppai_sage"]')?.value || '');
             formData.append('item', this.querySelector('input[name="item"]')?.value || '');
-            formData.append('item_qty', this.querySelector('input[name="item_qty"]')?.value || '');
+            
             formData.append('placement', this.querySelector('select[name="placement"]')?.value || 'front');
             formData.append('method', this.querySelector('select[name="method"]')?.value || 'spot');
             formData.append('quantity', this.querySelector('input[name="quantity"]')?.value || '');
@@ -1308,30 +1308,49 @@ if (hamburgerBtn && mobileMenu && hamburgerIcon) {
 // TAB SWITCHING
 // ============================================================
 function showForm(formId) {
+    // hide all forms
     document.querySelectorAll('.form-panel').forEach(form => {
         form.classList.add('hidden');
         form.classList.remove('opacity-100');
         form.classList.add('opacity-0');
     });
-    
+
+    // reset all tabs
     document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.className = "tab-btn w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30";
+        btn.className =
+            "tab-btn w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-textSecondary hover:text-brand-text hover:bg-brand-bg/30";
+
         const svg = btn.querySelector('svg');
         if (svg) svg.classList.add('opacity-0');
     });
-    
+
+    // show selected form
     const activeForm = document.getElementById('form-' + formId);
+
     if (activeForm) {
         activeForm.classList.remove('hidden');
+
         setTimeout(() => {
             activeForm.classList.remove('opacity-0');
             activeForm.classList.add('opacity-100');
-        }, 10);
+
+            // MOBILE SCROLL
+            if (window.innerWidth <= 768) {
+                activeForm.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }, 50);
     }
-    
+
+    // activate selected tab
     const activeTab = document.getElementById('tab-' + formId);
+
     if (activeTab) {
-        activeTab.className = "tab-btn active w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson";
+        activeTab.className =
+            "tab-btn active w-full flex items-center justify-between text-left px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3.5 rounded-lg transition-all duration-200 text-brand-text bg-brand-bg/50 border-l-3 border-brand-crimson";
+
         const activeSvg = activeTab.querySelector('svg');
         if (activeSvg) activeSvg.classList.remove('opacity-0');
     }

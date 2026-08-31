@@ -12,6 +12,7 @@
   <link rel="canonical" href="https://www.inkwell-impressions.com/products.html" />
 
   <!-- ===== PRELOAD FONTS ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -304,7 +305,7 @@
       </div>
 
       <!-- Popular Products -->
-      <div class="mt-6 sm:mt-8 mb-8 sm:mb-12" id="popular-section">
+      <div class="mt-6 sm:mt-8 mb-4 sm:mb-8" id="popular-section">
         <div class="relative mb-4 sm:mb-6 md:mb-8">
           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 sm:gap-4">
             <div class="flex items-center gap-3 sm:gap-4">
@@ -334,7 +335,7 @@
       </div>
 
       <!-- Divider -->
-      <div class="relative my-8 sm:my-10 md:my-12">
+      <div class="relative my-1 sm:my-1 md:my-1">
         <div class="absolute inset-0 flex items-center">
           <div class="w-full border-t border-brand-border"></div>
         </div>
@@ -406,63 +407,8 @@
   <!-- ============================================================ -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="./config/products.js" defer></script>
-
-  <!-- Mobile Menu Toggle -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const hamburgerBtn = document.getElementById('hamburgerBtn');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const hamburgerIcon = document.getElementById('hamburgerIcon');
-
-      if (hamburgerBtn && mobileMenu && hamburgerIcon) {
-        hamburgerBtn.addEventListener('click', function () {
-          mobileMenu.classList.toggle('hidden');
-          hamburgerIcon.classList.toggle('fa-bars');
-          hamburgerIcon.classList.toggle('fa-xmark');
-        });
-      }
-    });
-  </script>
-
-  <!--Start of Tawk.to Script (Defer)-->
-  <script>
-    (function () {
-      // USA Central Time
-      const now = new Date();
-
-      const centralTime = new Intl.DateTimeFormat("en-US", {
-        timeZone: "America/Chicago",
-        hour: "numeric",
-        minute: "numeric",
-        hour12: false
-      }).formatToParts(now);
-
-      const hour = parseInt(
-        centralTime.find(part => part.type === "hour").value
-      );
-
-      // Show Tawk only from 9 AM to 6 PM Central Time
-      if (hour >= 9 && hour < 18) {
-
-        var Tawk_API = Tawk_API || {},
-          Tawk_LoadStart = new Date();
-
-        (function () {
-          var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-
-          s1.async = true;
-          s1.src = "https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1";
-          s1.charset = "UTF-8";
-          s1.setAttribute("crossorigin", "*");
-
-          s0.parentNode.insertBefore(s1, s0);
-        })();
-
-      }
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
+  <script type="text/javascript" src="./config/chat.js"></script>
+ 
 
 </body>
 

@@ -29,19 +29,7 @@ document.addEventListener('keydown', function (e) {
 });
 
 // Copy sidebar content to mobile sidebar
-function copySidebarContent() {
-  const desktopSidebar = document.getElementById('sidebar');
-  const mobileSidebar = document.getElementById('sidebarContent');
-  if (desktopSidebar && mobileSidebar) {
-    // Wait for content to load
-    setTimeout(function () {
-      mobileSidebar.innerHTML = desktopSidebar.innerHTML;
-    }, 100);
-  }
-}
 
-// Call on load
-document.addEventListener('DOMContentLoaded', copySidebarContent);
 
 // Also copy when sidebar content changes (if using JS injection)
 
@@ -144,7 +132,7 @@ const products = [{
   material: "Non-Woven Fabric",
   size: '13"W x 15"H x 10"D',
   imprint: '6"W x 10"H',
-  price: 1.80,
+  price: 35.00,
   originalPrice: 50.00,
   image: "assets/assets/images/products/non-woven/W967/W967_main.webp",
   description: "Jumbo heavy duty grocery bag made from 100 gsm non-woven fabric with 22-inch reinforced handles and bottom and side gussets."
@@ -158,7 +146,7 @@ const products = [{
   "material": "Non-Woven Fabric",
   "size": "14.75\"W x 14.75\"H",
   "imprint": "Front: 4\"W x 2\"H, Back: 10\"W x 10\"H",
-  "price": 1.14,
+  "price": 35.00,
   "originalPrice": 50.0,
   "image": "assets/assets/images/products/non-woven/W968/W968_main.webp",
   "description": "Foldable tote made from 80 gsm non-woven fabric with an 18-inch handle."
@@ -280,8 +268,8 @@ const products = [{
   material: "Non Woven",
   size: '10"W x 12"H x 3"D',
   imprint: '6"W x 8"H',
-  price: 0.85,
-  originalPrice: 50.00,
+  "price": 35.00,
+  "originalPrice": 50.0,
   image: "assets/assets/images/products/non-woven/W964/W964_main.webp",
   description: "Small shopper bag made from 80 gsm non-woven fabric with a 16-inch handle and bottom and side gussets."
 },
@@ -295,8 +283,8 @@ const products = [{
   material: "Non Woven, Laminated",
   size: '15.75"W x 12.5"H x 6.25"D',
   imprint: '10"W x 8"H',
-  price: 1.66,
-  originalPrice: 50.00,
+  "price": 35.00,
+  "originalPrice": 50.0,
   image: "assets/assets/images/products/non-woven/W973/W973_main.webp",
   description: "Laminated tote made from 110 gsm non-woven material with 20-inch handles and bottom and side gussets."
 },
@@ -406,8 +394,8 @@ const products = [{
   category: "Tote Bags",
   material: "100% Cotton Canvas",
   size: '20"W x 15"H x 5"D',
-  price: 45.00,
-  originalPrice: 30.00,
+  price: 30.00,
+  originalPrice: 45.00,
 
   image: "assets/assets/images/products/tote-bags/IB600/IB600_main.webp",
   description: "Canvas jumbo tote bag with a bottom gusset, made from 100% cotton canvas.",
@@ -485,7 +473,7 @@ const products = [{
   category: "Tote Bags",
   material: "100% Cotton",
   size: '14"W x 18"H',
-  price: 3.50,
+  price: 30.00,
   originalPrice: 45.00,
   image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_natural.webp",
   description: "Cotton sports pack made from 6 oz 100% cotton with no bottom or side gusset."
@@ -681,7 +669,7 @@ const products = [{
   category: "Bottle Bags",
   material: "100% Cotton",
   size: '5.5"W x 10.5"H x 3"D',
-  price: 2.27,
+  price: 30.00,
   originalPrice: 45.00,
   image: "assets/assets/images/products/bottle-bags/IWB202/IWB202_main.webp",
   description: "Double bottle canvas wine tote made from 12 oz 100% cotton with a 13-inch handle."
@@ -707,24 +695,12 @@ const products = [{
   category: "Non-Woven Bags",
   material: "Non-Woven Fabric",
   size: '11"W x 14"H x 5"D',
-  price: 1.04,
+  price: 35.00,
   originalPrice: 50.00,
   image: "assets/assets/images/products/non-woven/W958/W958_main.webp",
   description: "Non woven two tone tote/book bag made from 90 gsm non-woven fabric with an 18-inch handle and bottom and side gussets."
 },
-{
-  id: "ids4500",
-  name: "Cotton Sports Pack",
-  code: "IDS4500",
-  slug: "cotton-sports-pack",
-  category: "Tote Bags",
-  material: "100% Cotton",
-  size: '14"W x 18"H',
-  price: 1.73,
-  originalPrice: 50.00,
-  image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_main.webp",
-  description: "Cotton sports pack made from 6 oz 100% cotton material."
-},
+
 {
   id: "w975",
   name: "Econo Tote Bag",
@@ -805,14 +781,88 @@ const products = [{
   // }
 ];
 
+// ============================================================
+// LAZY LOADING - IMAGES (Add after products array)
+// ============================================================
+
+/**
+ * Lazy load images using Intersection Observer API
+ */
+function initLazyLoading() {
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          const src = img.getAttribute('data-src');
+
+          if (src) {
+            img.src = src;
+            img.removeAttribute('data-src');
+            img.classList.add('loaded');
+          }
+
+          observer.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '50px 0px',
+      threshold: 0.01
+    });
+
+    document.querySelectorAll('.lazy-image').forEach(img => {
+      imageObserver.observe(img);
+    });
+  } else {
+    // Fallback for older browsers
+    document.querySelectorAll('.lazy-image').forEach(img => {
+      const src = img.getAttribute('data-src');
+      if (src) {
+        img.src = src;
+        img.removeAttribute('data-src');
+      }
+    });
+  }
+}
+
+/**
+ * Lazy load background images (for divs with background-image)
+ */
+function initLazyBackground() {
+  if ('IntersectionObserver' in window) {
+    const bgObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const bg = el.getAttribute('data-bg');
+
+          if (bg) {
+            el.style.backgroundImage = `url(${bg})`;
+            el.removeAttribute('data-bg');
+            el.classList.add('loaded');
+          }
+
+          observer.unobserve(el);
+        }
+      });
+    }, {
+      rootMargin: '50px 0px',
+      threshold: 0.01
+    });
+
+    document.querySelectorAll('[data-bg]').forEach(el => {
+      bgObserver.observe(el);
+    });
+  }
+}
+
 // -------------------------------------------------
-// 2. RENDER ENGINE
-// -------------------------------------------------
-// -------------------------------------------------
-// 2. RENDER ENGINE WITH PAGINATION
+// 2. RENDER ENGINE WITH PAGINATION - FIXED VERSION
 // -------------------------------------------------
 (function () {
   "use strict";
+
+
 
   const grid = document.getElementById('product-grid');
   const popularGrid = document.getElementById('popular-grid');
@@ -832,10 +882,12 @@ const products = [{
   let selectedSizes = [];
   let searchTerm = '';
 
+  // ✅ STORE FIXED RANDOM VALUES FOR POPULAR PRODUCTS
+  let popularCache = null;
+
   // ✅ PAGINATION CONTAINER
   const paginationContainer = document.getElementById('pagination-container');
   if (!paginationContainer) {
-    // Agar pagination container nahi hai toh create karo
     const container = document.createElement('div');
     container.id = 'pagination-container';
     container.className = 'flex justify-center items-center gap-2 mt-8 py-4';
@@ -850,28 +902,10 @@ const products = [{
     return ['All Products', ...new Set(cats)];
   }
 
-function getMaterials() {
-    const materialMap = new Map();
-
-    products.forEach(p => {
-        if (!p.material) return;
-
-        const original = p.material.trim();
-        const normalized = original.toLowerCase().replace(/\s+/g, ' ');
-
-        if (!materialMap.has(normalized)) {
-            materialMap.set(normalized, original);
-        }
-    });
-
-    return [...materialMap.values()];
-}
-
   function getSizes() {
     const sizeSet = new Set();
     products.forEach(p => {
       if (p.size) {
-        // Normalize size - extra spaces hatao
         const normalized = p.size.trim().replace(/\s+/g, ' ');
         sizeSet.add(normalized);
       }
@@ -884,17 +918,7 @@ function getMaterials() {
     return products.filter(p => p.category === cat).length;
   }
 
- function getMaterialCount(mat) {
-  const normalizedMat = mat.trim().replace(/\s+/g, ' ');
-  return products.filter(p => {
-    if (!p.material) return false;
-    const normalizedProductMat = p.material.trim().replace(/\s+/g, ' ');
-    return normalizedProductMat === normalizedMat;
-  }).length;
-}
-
   function getSizeCount(size) {
-    // ✅ Normalize karke count karo
     const normalizedSize = size.trim().replace(/\s+/g, ' ');
     return products.filter(p => {
       if (!p.size) return false;
@@ -903,9 +927,6 @@ function getMaterials() {
     }).length;
   }
 
-
-
-  // ✅ Filter mein size compare karte waqt trim karo
   function getFilteredProducts() {
     let result = products;
 
@@ -913,11 +934,8 @@ function getMaterials() {
       result = result.filter(p => p.category === currentCategory);
     }
 
-    if (selectedMaterials.length > 0) {
-      result = result.filter(p => selectedMaterials.includes(p.material));
-    }
+    // MATERIAL FILTER REMOVED - No longer filtering by material
 
-    // ✅ SIZE FILTER FIX - trim aur normalize karke compare karo
     if (selectedSizes.length > 0) {
       result = result.filter(p => {
         if (!p.size) return false;
@@ -951,7 +969,6 @@ function getMaterials() {
     return arr;
   }
 
-  // ✅ GET CURRENT PAGE PRODUCTS
   function getPaginatedProducts(sorted) {
     totalPages = Math.ceil(sorted.length / PRODUCTS_PER_PAGE);
     if (currentPage > totalPages) currentPage = totalPages;
@@ -962,7 +979,6 @@ function getMaterials() {
     return sorted.slice(start, end);
   }
 
-  // ✅ RENDER PAGINATION BUTTONS
   function renderPagination(totalItems) {
     const container = document.getElementById('pagination-container');
     if (!container) return;
@@ -982,7 +998,6 @@ function getMaterials() {
       </button>
     `;
 
-    // Page numbers
     const maxVisible = 5;
     let startPage = Math.max(1, currentPage - 2);
     let endPage = Math.min(totalPages, startPage + maxVisible - 1);
@@ -1019,7 +1034,6 @@ function getMaterials() {
 
     container.innerHTML = html;
 
-    // Event listeners
     container.querySelectorAll('.pagination-btn').forEach(btn => {
       btn.addEventListener('click', function () {
         if (this.disabled) return;
@@ -1032,7 +1046,6 @@ function getMaterials() {
           currentPage = parseInt(page);
         }
         renderProducts();
-        // Scroll to top of grid
         grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
@@ -1046,11 +1059,18 @@ function getMaterials() {
 
     div.innerHTML = `
         <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">${product.code}</span>
-        <button class="absolute top-4 right-4 text-brand-textSecondary hover:text-brand-crimson z-10 transition-colors"><i class="fa-regular fa-heart"></i></button>
-        <a href="${link}" class="block relative h-48 mb-4 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500">
+        
+        <a href="${link}" class="block relative h-48 mb-1 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500 overflow-visible">
             <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
-            <div class="absolute bottom-0 bg-brand-navy/90 text-white text-[9px] px-2 py-0.5 rounded font-medium border border-white/10">${product.size}</div>
         </a>
+        
+        <!-- ✅ Size Badge - Ab properly visible with overlap effect -->
+        <div class="relative flex justify-center -mt-2 mb-3 z-10">
+            <span class="bg-brand-navy/90 text-white text-[9px] font-medium px-3 py-0.5 rounded border border-white/10 shadow-md backdrop-blur-sm whitespace-nowrap">
+                ${product.size}
+            </span>
+        </div>
+        
         <div class="flex-1 flex flex-col">
             <a href="${link}"><h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">${product.name}</h3></a>
             <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">${product.description}</p>
@@ -1079,177 +1099,39 @@ function getMaterials() {
     return div;
   }
 
-  function renderSidebar() {
-    const cats = getCategories();
-    const materials = getMaterials();
-    const sizes = getSizes();
-
-    let html = `
-    <div class="premium-card mb-6">
-      <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Categories</h3>
-      <ul class="text-sm text-brand-textSecondary font-medium" id="category-list">`;
-
-    cats.forEach(cat => {
-      const count = getCategoryCount(cat);
-      const active = currentCategory === cat ? 'active' : '';
-      html += `<li><a href="#" class="flex items-center justify-between px-4 py-2.5 sidebar-link ${active} border-b border-brand-border/30 category-link" data-category="${cat}">${cat} <span class="text-xs font-normal">${count}</span></a></li>`;
-    });
-
-    html += `</ul></div>
-    <div class="premium-card">
-      <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Filter By</h3>
-      <div class="p-4 border-b border-brand-border">
-        <div class="flex justify-between items-center mb-3 cursor-pointer">
-          <h4 class="text-sm font-bold text-brand-text">SIZE</h4>
-          <i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i>
-        </div>
-        <div class="space-y-2.5 text-sm text-brand-textSecondary" id="size-filters">`;
-
-    sizes.forEach(size => {
-      const count = getSizeCount(size);
-      const checked = selectedSizes.includes(size) ? 'checked' : '';
-
-      html += `<label class="flex items-center justify-between cursor-pointer group">
-        <div class="flex items-center gap-2">
-            <input 
-                type="checkbox" 
-                class="size-check w-4 h-4 border-brand-border rounded text-brand-crimson focus:ring-brand-crimson"
-                value="${size.replace(/"/g, '&quot;')}" 
-                ${checked}
-            >
-            <span class="group-hover:text-brand-text transition-colors">${size}</span>
-        </div>
-        <span class="text-xs text-brand-textSecondary">(${count})</span>
-    </label>`;
-    });
-
-    html += `</div></div>
-    <div class="p-4">
-      <div class="flex justify-between items-center mb-3 cursor-pointer">
-        <h4 class="text-sm font-bold text-brand-text">MATERIAL</h4>
-        <i class="fa-solid fa-chevron-up text-xs text-brand-textSecondary"></i>
-      </div>
-      <div class="space-y-2.5 text-sm text-brand-textSecondary" id="material-filters">`;
-
-    materials.forEach(mat => {
-      const count = getMaterialCount(mat);
-      const checked = selectedMaterials.includes(mat) ? 'checked' : '';
-      html += `<label class="flex items-center justify-between cursor-pointer group">
-              <div class="flex items-center gap-2">
-                <input type="checkbox" class="material-check w-4 h-4 border-brand-border rounded text-brand-crimson focus:ring-brand-crimson" 
-                       value="${mat}" ${checked}>
-                <span class="group-hover:text-brand-text transition-colors">${mat}</span>
-              </div>
-              <span class="text-xs text-brand-textSecondary">(${count})</span>
-            </label>`;
-    });
-
-    html += `<button class="text-brand-crimson text-xs font-semibold w-full text-center mt-2 hover:underline">+ More</button>
-      </div>
-    </div>
-  </div>`;
-
-    sidebar.innerHTML = html;
-
-    // Event listeners
-    document.querySelectorAll('.category-link').forEach(el => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        currentCategory = el.dataset.category;
-        currentPage = 1;
-        renderSidebar();
-        renderProducts();
-      });
-    });
-
-    document.querySelectorAll('.size-check').forEach(cb => {
-      cb.addEventListener('change', (e) => {
-        const val = e.target.value;
-        if (e.target.checked) {
-          if (!selectedSizes.includes(val)) selectedSizes.push(val);
-        } else {
-          selectedSizes = selectedSizes.filter(v => v !== val);
-        }
-        currentPage = 1;
-        renderProducts();
-      });
-    });
-
-    document.querySelectorAll('.material-check').forEach(cb => {
-      cb.addEventListener('change', (e) => {
-        const val = e.target.value;
-        if (e.target.checked) {
-          if (!selectedMaterials.includes(val)) selectedMaterials.push(val);
-        } else {
-          selectedMaterials = selectedMaterials.filter(v => v !== val);
-        }
-        currentPage = 1;
-        renderProducts();
-      });
-    });
-  }
-
-  function renderProducts() {
-    const filtered = getFilteredProducts();
-    const sorted = getSortedProducts(filtered);
-    const total = products.length;
-    const showing = sorted.length;
-
-    // ✅ UPDATE COUNTER
-    const start = (currentPage - 1) * PRODUCTS_PER_PAGE + 1;
-    const end = Math.min(currentPage * PRODUCTS_PER_PAGE, showing);
-    if (showing > 0) {
-      countLabel.textContent = `Showing ${start}–${end} of ${showing} products`;
-    } else {
-      countLabel.textContent = `Showing 0 of 0 products`;
-    }
-
-    // ✅ GET PAGINATED PRODUCTS
-    const paginated = getPaginatedProducts(sorted);
-
-    grid.innerHTML = '';
-    if (paginated.length === 0) {
-      emptyState.classList.remove('hidden');
-    } else {
-      emptyState.classList.add('hidden');
-
-      // 🔥 ORDER CHANGE: Pehle 3 products (index 0,1,2) ko baad mein, aage wale (3,4,5...) ko pehle
-      const reordered = [];
-      if (paginated.length >= 6) {
-        reordered.push(paginated[3], paginated[4], paginated[5]);
-        reordered.push(paginated[0], paginated[1], paginated[2]);
-        for (let i = 6; i < paginated.length; i++) {
-          reordered.push(paginated[i]);
-        }
-      } else {
-        reordered.push(...paginated);
-      }
-
-      reordered.forEach(p => grid.appendChild(createProductCard(p)));
-      gsap.set('.product-card', { y: 30, opacity: 0 });
-      gsap.to('.product-card', { y: 0, opacity: 1, duration: 0.5, stagger: 0.08, ease: 'back.out(1.2)', overwrite: 'auto' });
-    }
-
-    // ✅ RENDER PAGINATION
-    renderPagination(showing);
-
-    // Popular products render
-    const popularProducts = products.filter(p => p.popular === true);
-    renderPopularProducts(popularProducts);
-  }
-
-  function renderPopularProducts(popularProducts) {
-    const grid = document.getElementById('popular-grid');
-    if (!grid) return;
-
+  // ✅ GENERATE FIXED POPULAR DATA ONCE
+  function generatePopularCache() {
     const emojis = ['🔥', '⭐', '💫', '✨', '🌟', '🎯', '💎', '👑'];
     const colors = ['#FF6B6B', '#FFD93D', '#6BCB77', '#4D96FF', '#FF6B8A', '#FFB347', '#A66CFF', '#FF8A5C'];
 
-    grid.innerHTML = popularProducts.map((product, index) => {
-      const emoji = emojis[index % emojis.length];
-      const color = colors[index % colors.length];
-      const randomBuyers = Math.floor(100 + Math.random() * 900);
+    const popularProducts = products.filter(p => p.popular === true);
 
+    return popularProducts.map((product, index) => {
+      const randomBuyers = Math.floor(100 + Math.random() * 900);
+      const randomRating = (Math.random() * 150 + 30).toFixed(0);
+      const randomReviews = (Math.random() * 150 + 30).toFixed(0);
+
+      return {
+        ...product,
+        emoji: emojis[index % emojis.length],
+        color: colors[index % colors.length],
+        buyers: randomBuyers,
+        rating: randomRating,
+        reviews: randomReviews,
+        index: index + 1
+      };
+    });
+  }
+
+  function renderPopularProducts() {
+    const grid = document.getElementById('popular-grid');
+    if (!grid) return;
+
+    if (!popularCache) {
+      popularCache = generatePopularCache();
+    }
+
+    grid.innerHTML = popularCache.map((product, index) => {
       return `
             <div class="popular-card" style="animation-delay: ${index * 0.15}s" 
                  onclick="window.location.href='product.html?id=${product.id}'">
@@ -1262,30 +1144,28 @@ function getMaterials() {
                             animation-duration: ${3 + Math.random() * 4}s;
                             width: ${2 + Math.random() * 5}px;
                             height: ${2 + Math.random() * 5}px;
-                            background: ${[color, '#C81F45', '#FF6B8A', '#FFD700'][i % 4]};
+                            background: ${[product.color, '#C81F45', '#FF6B8A', '#FFD700'][i % 4]};
                         "></div>
                     `).join('')}
                 </div>
                 <span class="popular-tag">
-                    <span class="fire-emoji">${emoji}</span> 
-                    Trending #${index + 1}
+                    <i class="fa-solid fa-fire" style="color: #FF6B35; margin-right: 4px;"></i>
+                    Trending #${product.index}
                 </span>
-                <div class="absolute top-12 left-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full z-10">
-                    <span class="text-white text-[10px] font-medium flex items-center gap-1.5">
-                        <i class="fa-solid fa-users text-[8px]"></i>
-                        <span class="popular-counter">${randomBuyers}+</span>
-                        <span class="text-white/50 text-[8px]">bought</span>
-                    </span>
-                </div>
+               
                 <img src="${product.image}" alt="${product.name}" class="popular-image">
                 <div class="popular-content">
                     <h1 class="popular-code">${product.code}</h1>
                     <h4 class="popular-name">${product.name}</h4>
                     <div class="flex items-center gap-1 mt-1">
                         <div class="flex text-amber-400 text-[9px]">
-                            ${'⭐'.repeat(5)}
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <span class="text-[9px] text-brand-textSecondary">(${(Math.random() * 150 + 30).toFixed(0)})</span>
+                        <span class="text-[9px] text-brand-textSecondary">(${product.reviews})</span>
                     </div>
                     <div class="flex items-center gap-2 mt-2 flex-wrap">
                         <span class="text-[12px] text-brand-textSecondary font-medium">Setup Was</span>
@@ -1304,6 +1184,156 @@ function getMaterials() {
     }, 200);
   }
 
+  function copySidebarContent() {
+    const desktopSidebar = document.getElementById('sidebar');
+    const mobileSidebar = document.getElementById('sidebarContent');
+
+    if (!desktopSidebar || !mobileSidebar) return;
+
+    // Copy fresh sidebar HTML to mobile
+    mobileSidebar.innerHTML = desktopSidebar.innerHTML;
+
+    // Attach events after copying
+    attachSidebarEvents();
+  }
+
+  function attachSidebarEvents() {
+    const sidebars = [
+        document.getElementById('sidebar'),
+        document.getElementById('sidebarContent')
+    ];
+
+    sidebars.forEach(sidebarEl => {
+        if (!sidebarEl) return;
+
+        // Remove old listeners by replacing category links
+        sidebarEl.querySelectorAll('.category-link').forEach(link => {
+
+            // Clone link so old event listeners are removed
+            const newLink = link.cloneNode(true);
+            link.replaceWith(newLink);
+
+            newLink.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                currentCategory = this.dataset.category;
+                currentPage = 1;
+
+                // Clear search when category changes
+                searchTerm = '';
+
+                if (searchInput) {
+                    searchInput.value = '';
+                }
+
+                // Update sidebar
+                renderSidebar();
+
+                // Render filtered products
+                renderProducts();
+
+                // Close mobile sidebar
+                if (typeof closeSidebar === 'function') {
+                    closeSidebar();
+                }
+
+                // Bring products slightly into view
+                
+            });
+        });
+    });
+}
+
+  // Attach events to all size checkboxes (both desktop and mobile)
+
+
+  function renderSidebar() {
+    const cats = getCategories();
+    // const sizes = getSizes();  // ← REMOVED
+
+    let html = `
+    <div class="premium-card mb-6">
+      <h3 class="text-xs font-bold text-brand-textSecondary uppercase tracking-wider p-4 border-b border-brand-border">Categories</h3>
+      <ul class="text-sm text-brand-textSecondary font-medium" id="category-list">`;
+
+    cats.forEach(cat => {
+      const count = getCategoryCount(cat);
+      const active = currentCategory === cat ? 'active' : '';
+      html += `<li><a href="#" class="flex items-center justify-between px-4 py-2.5 sidebar-link ${active} border-b border-brand-border/30 category-link" data-category="${cat}">${cat} <span class="text-xs font-normal">${count}</span></a></li>`;
+    });
+
+
+
+    sidebar.innerHTML = html;
+    copySidebarContent();
+  }
+
+  function renderProducts() {
+    const filtered = getFilteredProducts();
+    const sorted = getSortedProducts(filtered);
+    const total = products.length;
+    const showing = sorted.length;
+
+    const start = (currentPage - 1) * PRODUCTS_PER_PAGE + 1;
+    const end = Math.min(currentPage * PRODUCTS_PER_PAGE, showing);
+
+    if (showing > 0) {
+      countLabel.textContent = `Showing ${start}–${end} of ${showing} products`;
+    } else {
+      countLabel.textContent = `Showing 0 of 0 products`;
+    }
+
+    const paginated = getPaginatedProducts(sorted);
+
+    grid.innerHTML = '';
+
+    if (paginated.length === 0) {
+      emptyState.classList.remove('hidden');
+    } else {
+      emptyState.classList.add('hidden');
+
+      const reordered = [];
+
+      if (paginated.length >= 6) {
+        reordered.push(paginated[3], paginated[4], paginated[5]);
+        reordered.push(paginated[0], paginated[1], paginated[2]);
+
+        for (let i = 6; i < paginated.length; i++) {
+          reordered.push(paginated[i]);
+        }
+      } else {
+        reordered.push(...paginated);
+      }
+
+      reordered.forEach(p => grid.appendChild(createProductCard(p)));
+
+      gsap.set('.product-card', { y: 30, opacity: 0 });
+
+      gsap.to('.product-card', {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: 'back.out(1.2)',
+        overwrite: 'auto'
+      });
+    }
+
+    renderPagination(showing);
+    renderPopularProducts();
+
+    const popularSection = document.getElementById('popular-section');
+
+    const hasActiveFilter =
+      currentCategory !== 'All Products' ||
+      selectedSizes.length > 0 ||
+      searchTerm.trim() !== '';
+
+    if (popularSection && hasActiveFilter) {
+      grid.parentElement.appendChild(popularSection);
+    }
+  }
+
   function initEvents() {
     searchInput.addEventListener('input', (e) => {
       searchTerm = e.target.value;
@@ -1316,22 +1346,22 @@ function getMaterials() {
     });
   }
 
-  gsap.from(".brand-divider", {
-    y: 40,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-  });
-
-  gsap.from(".brand-divider span", {
-    scale: 0.8,
-    opacity: 0,
-    stagger: 0.15,
-    duration: 0.8,
-    ease: "back.out(1.7)",
+  // Initial mobile sidebar setup
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
+      copySidebarContent();
+      attachSidebarEvents();
+    }, 150);
   });
 
   function init() {
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('search');
+    if (searchQuery && searchInput) {
+      searchInput.value = searchQuery;
+      searchTerm = searchQuery;
+    }
     renderSidebar();
     renderProducts();
     initEvents();

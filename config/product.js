@@ -1,23 +1,21 @@
 // ============================================================
 // HAMBURGER MENU
 // ============================================================
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const mobileMenu = document.getElementById('mobileMenu');
-const hamburgerIcon = document.getElementById('hamburgerIcon');
 
-hamburgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-    hamburgerIcon.classList.toggle('fa-bars');
-    hamburgerIcon.classList.toggle('fa-xmark');
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+    if (hamburgerBtn && mobileMenu && hamburgerIcon) {
+        hamburgerBtn.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-xmark');
+        });
+    }
 });
 
-document.querySelectorAll('#mobileMenu a').forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        hamburgerIcon.classList.add('fa-bars');
-        hamburgerIcon.classList.remove('fa-xmark');
-    });
-});
 
 // ============================================================
 // NOTIFICATION FUNCTION
@@ -115,14 +113,14 @@ const products = [{
     description: "Mini tote bag made from 80 gsm non-woven fabric with a 10.5-inch handle.",
 
     colors: [
-    { name: 'Black', hex: '#000000', image: 'assets/assets/images/products/non-woven/W965/W965_black.webp' },
-    { name: 'Burgundy', hex: '#800020', image: 'assets/assets/images/products/non-woven/W965/W965_burgundy.webp' },
-    { name: 'Ivory', hex: '#FFFFF0', image: 'assets/assets/images/products/non-woven/W965/W965_ivory.webp' },
-    { name: 'Red', hex: '#FF0000', image: 'assets/assets/images/products/non-woven/W965/W965_red.webp' },
-    { name: 'Royal', hex: '#4169E1', image: 'assets/assets/images/products/non-woven/W965/W965_royal.webp' },
-    { name: 'White', hex: '#FFFFFF', image: 'assets/assets/images/products/non-woven/W965/W965_white.webp' },
-    { name: 'Yellow', hex: '#FFFF00', image: 'assets/assets/images/products/non-woven/W965/W965_yellow.webp' }
-],
+        { name: 'Black', hex: '#000000', image: 'assets/assets/images/products/non-woven/W965/W965_black.webp' },
+        { name: 'Burgundy', hex: '#800020', image: 'assets/assets/images/products/non-woven/W965/W965_burgundy.webp' },
+        { name: 'Ivory', hex: '#FFFFF0', image: 'assets/assets/images/products/non-woven/W965/W965_ivory.webp' },
+        { name: 'Red', hex: '#FF0000', image: 'assets/assets/images/products/non-woven/W965/W965_red.webp' },
+        { name: 'Royal', hex: '#4169E1', image: 'assets/assets/images/products/non-woven/W965/W965_royal.webp' },
+        { name: 'White', hex: '#FFFFFF', image: 'assets/assets/images/products/non-woven/W965/W965_white.webp' },
+        { name: 'Yellow', hex: '#FFFF00', image: 'assets/assets/images/products/non-woven/W965/W965_yellow.webp' }
+    ],
     images: [
         "assets/assets/images/products/non-woven/W965/W965_main.webp",
         "assets/assets/images/products/non-woven/W965/W965_black.webp",
@@ -228,215 +226,216 @@ const products = [{
     }
 },
 {
-  "id": "w968",
-  "name": "Foldable Tote",
-  "code": "W968",
-  "slug": "foldable-tote",
-  "category": "Non-Woven Bags",
-  "material": "Non Woven",
-  "size": "14.75\"W x 14.75\"H",
-  "imprint": "Front: 4\"W x 2\"H, Back: 10\"W x 10\"H",
-  "price": 1.14,
-  "originalPrice": 50.0,
-  "image": "assets/assets/images/products/non-woven/W968/W968_main.webp",
-  "description": "Foldable tote made from 80 gsm non-woven fabric with an 18-inch handle.",
-  "colors": [
-    {
-      "name": "Black",
-      "hex": "#000000",
-      "image": "assets/assets/images/products/non-woven/W968/W968_black.webp"
-    },
-    {
-      "name": "Hunter Green",
-      "hex": "#355E3B",
-      "image": "assets/assets/images/products/non-woven/W968/W968_hunter_green.webp"
-    },
-    {
-      "name": "Red",
-      "hex": "#FF0000",
-      "image": "assets/assets/images/products/non-woven/W968/W968_red.webp"
-    },
-    {
-      "name": "Royal",
-      "hex": "#4169E1",
-      "image": "assets/assets/images/products/non-woven/W968/W968_royal.webp"
-    },
-    {
-      "name": "White",
-      "hex": "#FFFFFF",
-      "image": "assets/assets/images/products/non-woven/W968/W968_white.webp"
-    }
-  ],
-  "images": [
-    "assets/assets/images/products/non-woven/W968/W968_main.webp",
-    "assets/assets/images/products/non-woven/W968/W968_black.webp",
-    "assets/assets/images/products/non-woven/W968/W968_hunter_green.webp",
-    "assets/assets/images/products/non-woven/W968/W968_red.webp",
-    "assets/assets/images/products/non-woven/W968/W968_royal.webp",
-    "assets/assets/images/products/non-woven/W968/W968_white.webp"
-  ],
-  "specs": {
-    "itemNo": "W968",
-    "gusset": "Bottom: No, Side: No",
-    "weight": "80 gsm",
+    "id": "w968",
+    "name": "Foldable Tote",
+    "code": "W968",
+    "slug": "foldable-tote",
+    "category": "Non-Woven Bags",
     "material": "Non Woven",
-    "handle": "18\"",
-    "origin": "USA",
-    "packagingOptions": [
-      {
-        "type": "Blank",
-        "qtyPerBox": "200 pcs",
-        "boxWeight": "27 lbs",
-        "boxDims": "20\" X 16\" X 14\""
-      },
-      {
-        "type": "Printed Large Box",
-        "qtyPerBox": "250 pcs",
-        "boxWeight": "21 lbs",
-        "boxDims": "16\" X 16\" X 20\""
-      },
-      {
-        "type": "Printed Medium Box",
-        "qtyPerBox": "125 pcs",
-        "boxWeight": "11 lbs",
-        "boxDims": "8\" X 16\" X 20\""
-      }
-    ]
-  },
-  "pricing": {
-    "spot": {
-      "label": "SPOT PRINTING PRICING (USD)",
-      "quantities": [72, 288, 500, 1000, 2000, 3000],
-      "rows": [
+    "size": "14.75\"W x 14.75\"H",
+    "imprint": "Front: 4\"W x 2\"H, Back: 10\"W x 10\"H",
+    "price": 1.14,
+    "originalPrice": 50.0,
+    "image": "assets/assets/images/products/non-woven/W968/W968_main.webp",
+    "description": "Foldable tote made from 80 gsm non-woven fabric with an 18-inch handle.",
+    "colors": [
         {
-          "label": "COLOR",
-          "prices": ["$2.04", "$1.90", "$1.80", "$1.69", "$1.59", "$1.49"]
+            "name": "Black",
+            "hex": "#000000",
+            "image": "assets/assets/images/products/non-woven/W968/W968_black.webp"
         },
         {
-          "label": "ADD LOCATION",
-          "prices": ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
+            "name": "Hunter Green",
+            "hex": "#355E3B",
+            "image": "assets/assets/images/products/non-woven/W968/W968_hunter_green.webp"
         },
         {
-          "label": "ADD COLOR",
-          "prices": ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56", "$0.56"]
+            "name": "Red",
+            "hex": "#FF0000",
+            "image": "assets/assets/images/products/non-woven/W968/W968_red.webp"
+        },
+        {
+            "name": "Royal",
+            "hex": "#4169E1",
+            "image": "assets/assets/images/products/non-woven/W968/W968_royal.webp"
+        },
+        {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "image": "assets/assets/images/products/non-woven/W968/W968_white.webp"
         }
-      ],
-      "priceIncludes": "1 Color, 1 Location",
-      "leadTime": "5-7 Business Days",
-      "setupCharge": "$62.50 (V)",
-      "repeatSetup": "$37.50 (V)"
+    ],
+    "images": [
+        "assets/assets/images/products/non-woven/W968/W968_main.webp",
+        "assets/assets/images/products/non-woven/W968/W968_black.webp",
+        "assets/assets/images/products/non-woven/W968/W968_hunter_green.webp",
+        "assets/assets/images/products/non-woven/W968/W968_red.webp",
+        "assets/assets/images/products/non-woven/W968/W968_royal.webp",
+        "assets/assets/images/products/non-woven/W968/W968_white.webp"
+    ],
+    "specs": {
+        "itemNo": "W968",
+        "gusset": "Bottom: No, Side: No",
+        "weight": "80 gsm",
+        "material": "Non Woven",
+        "handle": "18\"",
+        "origin": "USA",
+        "packagingOptions": [
+            {
+                "type": "Blank",
+                "qtyPerBox": "200 pcs",
+                "boxWeight": "27 lbs",
+                "boxDims": "20\" X 16\" X 14\""
+            },
+            {
+                "type": "Printed Large Box",
+                "qtyPerBox": "250 pcs",
+                "boxWeight": "21 lbs",
+                "boxDims": "16\" X 16\" X 20\""
+            },
+            {
+                "type": "Printed Medium Box",
+                "qtyPerBox": "125 pcs",
+                "boxWeight": "11 lbs",
+                "boxDims": "8\" X 16\" X 20\""
+            }
+        ]
     },
-    "transfer": {
-      "label": "HEAT TRANSFER PRICING (USD)",
-      "quantities": [100, 250, 500, 1000, 2000, 3000],
-      "rows": [
-        {
-          "label": "COLOR",
-          "prices": ["$3.85", "$3.59", "$3.49", "$3.27", "$3.08", "$2.89"]
+    "pricing": {
+        "spot": {
+            "label": "SPOT PRINTING PRICING (USD)",
+            "quantities": [72, 288, 500, 1000, 2000, 3000],
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$2.04", "$1.90", "$1.80", "$1.69", "$1.59", "$1.49"]
+                },
+                {
+                    "label": "ADD LOCATION",
+                    "prices": ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
+                },
+                {
+                    "label": "ADD COLOR",
+                    "prices": ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56", "$0.56"]
+                }
+            ],
+            "priceIncludes": "1 Color, 1 Location",
+            "leadTime": "5-7 Business Days",
+            "setupCharge": "$62.50 (V)",
+            "repeatSetup": "$37.50 (V)"
         },
-        {
-          "label": "ADD LOCATION (V)",
-          "prices": ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
+        "transfer": {
+            "label": "HEAT TRANSFER PRICING (USD)",
+            "quantities": [100, 250, 500, 1000, 2000, 3000],
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$3.85", "$3.59", "$3.49", "$3.27", "$3.08", "$2.89"]
+                },
+                {
+                    "label": "ADD LOCATION (V)",
+                    "prices": ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
+                }
+            ],
+            "priceIncludes": "1 Color, 1 Location",
+            "leadTime": "5-7 Business Days"
+        },
+        "blank": {
+            "label": "BLANK PRICING (USD)",
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$1.14"]
+                }
+            ],
+            "priceIncludes": "Blank",
+            "leadTime": "Within 1 to 2 Business Days",
+            "moq": "No minimums. Can order as little as one piece."
         }
-      ],
-      "priceIncludes": "1 Color, 1 Location",
-      "leadTime": "5-7 Business Days"
     },
-    "blank": {
-      "label": "BLANK PRICING (USD)",
-      "rows": [
-        {
-          "label": "COLOR",
-          "prices": ["$1.14"]
-        }
-      ],
-      "priceIncludes": "Blank",
-      "leadTime": "Within 1 to 2 Business Days",
-      "moq": "No minimums. Can order as little as one piece."
+    "additionalCharges": {
+        "pmsMatch": "$56.25 (V)",
+        "setupCharge": "$62.50 (V)",
+        "repeatSetup": "$37.50 (V)",
+        "lessThanMinimum": "Call for pricing"
     }
-  },
-  "additionalCharges": {
-    "pmsMatch": "$56.25 (V)",
-    "setupCharge": "$62.50 (V)",
-    "repeatSetup": "$37.50 (V)",
-    "lessThanMinimum": "Call for pricing"
-  }
 },
 
 {
-  id: "w973",
-  name: "Laminated Tote",
-  code: "W973",
-  slug: "laminated-tote",
-  category: "Non-Woven Bags",
-  material: "Non-Woven, Laminated",
-  size: "15.75\"W x 12.5\"H x 6.25\"D",
-  imprint: "10\"W x 8\"H",
-  price: 1.66,
-  originalPrice: 50.0,
-  image: "assets/assets/images/products/non-woven/W973/W973_main.webp",
-  description: "Laminated tote made from 110 gsm non-woven fabric with a 20-inch handle and bottom and side gussets.",
-  colors: [
-    { name: "Black", hex: "#000000", image: "assets/assets/images/products/non-woven/W973/W973_black.webp" },
-    { name: "Hunter-Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/W973/W973_hunter_green.webp" },
-    { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/non-woven/W973/W973_ivory.webp" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/non-woven/W973/W973_red.webp" },
-    { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/non-woven/W973/W973_royal.webp" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/W973/W973_white.webp" }
-  ],
-  images: [
-    "assets/assets/images/products/non-woven/W973/W973_main.webp",
-    "assets/assets/images/products/non-woven/W973/W973_black.webp",
-    "assets/assets/images/products/non-woven/W973/W973_hunter_green.webp",
-    "assets/assets/images/products/non-woven/W973/W973_ivory.webp",
-    "assets/assets/images/products/non-woven/W973/W973_red.webp",
-    "assets/assets/images/products/non-woven/W973/W973_royal.webp",
-    "assets/assets/images/products/non-woven/W973/W973_white.webp"
-  ],
-  "specs": {
-    itemNo: "W973",
-    gusset: "Bottom: Yes, Side: Yes",
-    weight: "110 gsm",
-    material: "Non Woven, Laminated",
-    handle: "20\"",
-    origin: "USA",
-    packagingOptions: [
-      { type: "Blank", qtyPerBox: "100 pcs", boxWeight: "27 lbs", boxDims: "20\" X 16\" X 14\"" },
-      { type: "Printed Large Box", qtyPerBox: "125 pcs", boxWeight: "21 lbs", boxDims: "16\" X 16\" X 20\"" },
-      { type: "Printed Medium Box", qtyPerBox: "50 pcs", boxWeight: "9 lbs", boxDims: "8\" X 16\" X 20\"" }
-    ]
-  },
-  pricing: {
-    spot: {
-      label: "SPOT PRINTING PRICING (USD)",
-      quantities: [72, 288, 500, 1000, 2000, 3000],
-      rows: [
-        { label: "COLOR", prices: ["$3.04", "$2.92", "$2.77", "$2.70", "$2.54", "$2.38"] },
-        { label: "ADD LOCATION", prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"] }
-      ],
-      priceIncludes: "1 Color, 1 Location",
-      leadTime: "5-7 Business Days",
-      setupCharge: "$62.50 (V)",
-      repeatSetup: "$37.50 (V)"
+    id: "w973",
+    name: "Laminated Tote",
+    code: "W973",
+    slug: "laminated-tote",
+    category: "Non-Woven Bags",
+    material: "Non-Woven, Laminated",
+    size: "15.75\"W x 12.5\"H x 6.25\"D",
+    imprint: "10\"W x 8\"H",
+    price: 1.66,
+    originalPrice: 50.0,
+    image: "assets/assets/images/products/non-woven/W973/W973_main.webp",
+    description: "Laminated tote made from 110 gsm non-woven fabric with a 20-inch handle and bottom and side gussets.",
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/non-woven/W973/W973_black.webp" },
+        { name: "Hunter-Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/W973/W973_hunter_green.webp" },
+        { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/non-woven/W973/W973_ivory.webp" },
+        { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/non-woven/W973/W973_red.webp" },
+        { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/non-woven/W973/W973_royal.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/W973/W973_white.webp" }
+    ],
+    images: [
+        "assets/assets/images/products/non-woven/W973/W973_main.webp",
+        "assets/assets/images/products/non-woven/W973/W973_black.webp",
+        "assets/assets/images/products/non-woven/W973/W973_hunter_green.webp",
+        "assets/assets/images/products/non-woven/W973/W973_ivory.webp",
+        "assets/assets/images/products/non-woven/W973/W973_red.webp",
+        "assets/assets/images/products/non-woven/W973/W973_royal.webp",
+        "assets/assets/images/products/non-woven/W973/W973_white.webp"
+    ],
+    "specs": {
+        itemNo: "W973",
+        gusset: "Bottom: Yes, Side: Yes",
+        weight: "110 gsm",
+        material: "Non Woven, Laminated",
+        handle: "20\"",
+        origin: "USA",
+        packagingOptions: [
+            { type: "Blank", qtyPerBox: "100 pcs", boxWeight: "27 lbs", boxDims: "20\" X 16\" X 14\"" },
+            { type: "Printed Large Box", qtyPerBox: "125 pcs", boxWeight: "21 lbs", boxDims: "16\" X 16\" X 20\"" },
+            { type: "Printed Medium Box", qtyPerBox: "50 pcs", boxWeight: "9 lbs", boxDims: "8\" X 16\" X 20\"" }
+        ]
     },
-    // ❌ transfer property hatadi - ab ye show nahi hoga
-    blank: {
-      label: "BLANK PRICING (USD)",
-      rows: [
-        { label: "COLOR", prices: ["$1.66"] }
-      ],
-      priceIncludes: "Blank",
-      leadTime: "Within 1 to 2 Business Days",
-      moq: "No minimums. Can order as little as one piece"
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [72, 288, 500, 1000, 2000, 3000],
+            rows: [
+                { label: "COLOR", prices: ["$3.04", "$2.92", "$2.77", "$2.70", "$2.54", "$2.38"] },
+                { label: "ADD LOCATION", prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days",
+            setupCharge: "$62.50 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        // ❌ transfer property hatadi - ab ye show nahi hoga
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$1.66"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece"
+        }
+    },
+    additionalCharges: {
+        pmsMatch: "$56.25 (V)",
+        setupCharge: "$62.50 (V)",
+        repeatSetup: "$37.50 (V)",
+        lessThanMinimum: "Call for pricing"
     }
-  },
-  additionalCharges: {
-    pmsMatch: "$56.25 (V)",
-    setupCharge: "$62.50 (V)",
-    repeatSetup: "$37.50 (V)",
-    lessThanMinimum: "Call for pricing"
-  }
 },
+
 {
     id: "w964",
     name: "Small Shopper Bag",
@@ -449,7 +448,7 @@ const products = [{
     price: 0.85,
     originalPrice: 50.00,
     image: "assets/assets/images/products/non-woven/W964/W964_main.webp",
-    description: "Small shopper bag made from 80 gsm non-woven fabric with a 16-inch handle and bottom and side gussets.",
+    description: "Small shopper bag made from 80 gsm non-woven material with bottom and side gussets.",
 
     colors: [
         {
@@ -545,8 +544,12 @@ const products = [{
                     prices: ["$1.66", "$1.55", "$1.46", "$1.37", "$1.29", "$1.21"]
                 },
                 {
-                    label: "ADD LOCATION",
+                    label: "ADD LOCATION (V)",
                     prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
+                },
+                {
+                    label: "ADD COLOR (V)",
+                    prices: ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56", "$0.56"]
                 }
             ],
             priceIncludes: "1 Color, 1 Location",
@@ -564,7 +567,7 @@ const products = [{
                     prices: ["$5.19", "$4.84", "$4.68", "$4.38", "$4.13", "$3.88"]
                 },
                 {
-                    label: "ADD LOCATION",
+                    label: "ADD LOCATION (V)",
                     prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
                 }
             ],
@@ -597,156 +600,157 @@ const products = [{
 },
 
 
+
 {
-  "id": "w967",
-  "name": "Jumbo Heavy Duty Grocery Bag",
-  "code": "W967",
-  "slug": "jumbo-heavy-duty-grocery-bag",
-  "category": "Non-Woven Bags",
-  "material": "Non Woven",
-  "size": "13\"W x 15\"H x 10\"D",
-  "imprint": "6\"W x 10\"H",
-  "price": 1.8,
-  "originalPrice": 50.0,
-  "image": "assets/assets/images/products/non-woven/W967/W967_main.webp",
-  "description": "Jumbo heavy duty grocery bag made from 100 gsm non-woven fabric with reinforced handles and bottom and side gussets.",
-  "colors": [
-    {
-      "name": "Black",
-      "hex": "#000000",
-      "image": "assets/assets/images/products/non-woven/W967/W967_black.webp"
-    },
-    {
-      "name": "Hunter-Green",
-      "hex": "#355E3B",
-      "image": "assets/assets/images/products/non-woven/W967/W967_hunter_green.webp"
-    },
-    {
-      "name": "Navy",
-      "hex": "#000080",
-      "image": "assets/assets/images/products/non-woven/W967/W967_navy.webp"
-    },
-    {
-      "name": "Orange",
-      "hex": "#FFA500",
-      "image": "assets/assets/images/products/non-woven/W967/W967_orange.webp"
-    },
-    {
-      "name": "Red",
-      "hex": "#FF0000",
-      "image": "assets/assets/images/products/non-woven/W967/W967_red.webp"
-    },
-    {
-      "name": "Royal",
-      "hex": "#4169E1",
-      "image": "assets/assets/images/products/non-woven/W967/W967_royal.webp"
-    },
-    {
-      "name": "White",
-      "hex": "#FFFFFF",
-      "image": "assets/assets/images/products/non-woven/W967/W967_white.webp"
-    }
-  ],
-  "images": [
-    "assets/assets/images/products/non-woven/W967/W967_main.webp",
-    "assets/assets/images/products/non-woven/W967/W967_black.webp",
-    "assets/assets/images/products/non-woven/W967/W967_hunter_green.webp",
-    "assets/assets/images/products/non-woven/W967/W967_navy.webp",
-    "assets/assets/images/products/non-woven/W967/W967_orange.webp",
-    "assets/assets/images/products/non-woven/W967/W967_red.webp",
-    "assets/assets/images/products/non-woven/W967/W967_royal.webp",
-    "assets/assets/images/products/non-woven/W967/W967_white.webp"
-  ],
-  "specs": {
-    "itemNo": "W967",
-    "gusset": "Bottom: Yes, Side: Yes",
-    "weight": "100 gsm",
+    "id": "w967",
+    "name": "Jumbo Heavy Duty Grocery Bag",
+    "code": "W967",
+    "slug": "jumbo-heavy-duty-grocery-bag",
+    "category": "Non-Woven Bags",
     "material": "Non Woven",
-    "handle": "22\" Reinforced Handles",
-    "origin": "USA",
-    "packagingOptions": [
-      {
-        "type": "Blank",
-        "qtyPerBox": "150 pcs",
-        "boxWeight": "38 lbs",
-        "boxDims": "28\" X 15\" X 18\""
-      },
-      {
-        "type": "Printed Large Box",
-        "qtyPerBox": "100 pcs",
-        "boxWeight": "25 lbs",
-        "boxDims": "16\" X 16\" X 20\""
-      },
-      {
-        "type": "Printed Medium Box",
-        "qtyPerBox": "40 pcs",
-        "boxWeight": "8 lbs",
-        "boxDims": "9\" X 16\" X 20\""
-      }
-    ]
-  },
-  "pricing": {
-    "spot": {
-      "label": "SPOT PRINTING PRICING (USD)",
-      "quantities": [72, 288, 500, 1000, 2000, 3000],
-      "rows": [
+    "size": "13\"W x 15\"H x 10\"D",
+    "imprint": "6\"W x 10\"H",
+    "price": 1.8,
+    "originalPrice": 50.0,
+    "image": "assets/assets/images/products/non-woven/W967/W967_main.webp",
+    "description": "Jumbo heavy duty grocery bag made from 100 gsm non-woven fabric with reinforced handles and bottom and side gussets.",
+    "colors": [
         {
-          "label": "COLOR",
-          "prices": ["$2.69", "$2.58", "$2.54", "$2.39", "$2.24", "$2.09"]
+            "name": "Black",
+            "hex": "#000000",
+            "image": "assets/assets/images/products/non-woven/W967/W967_black.webp"
         },
         {
-          "label": "ADD LOCATION",
-          "prices": ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
+            "name": "Hunter-Green",
+            "hex": "#355E3B",
+            "image": "assets/assets/images/products/non-woven/W967/W967_hunter_green.webp"
         },
         {
-          "label": "ADD COLOR",
-          "prices": ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56", "$0.56"]
+            "name": "Navy",
+            "hex": "#000080",
+            "image": "assets/assets/images/products/non-woven/W967/W967_navy.webp"
+        },
+        {
+            "name": "Orange",
+            "hex": "#FFA500",
+            "image": "assets/assets/images/products/non-woven/W967/W967_orange.webp"
+        },
+        {
+            "name": "Red",
+            "hex": "#FF0000",
+            "image": "assets/assets/images/products/non-woven/W967/W967_red.webp"
+        },
+        {
+            "name": "Royal",
+            "hex": "#4169E1",
+            "image": "assets/assets/images/products/non-woven/W967/W967_royal.webp"
+        },
+        {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "image": "assets/assets/images/products/non-woven/W967/W967_white.webp"
         }
-      ],
-      "priceIncludes": "1 Color, 1 Location",
-      "leadTime": "5-7 Business Days",
-      "setupCharge": "$62.50 (V)",
-      "repeatSetup": "$37.50 (V)"
+    ],
+    "images": [
+        "assets/assets/images/products/non-woven/W967/W967_main.webp",
+        "assets/assets/images/products/non-woven/W967/W967_black.webp",
+        "assets/assets/images/products/non-woven/W967/W967_hunter_green.webp",
+        "assets/assets/images/products/non-woven/W967/W967_navy.webp",
+        "assets/assets/images/products/non-woven/W967/W967_orange.webp",
+        "assets/assets/images/products/non-woven/W967/W967_red.webp",
+        "assets/assets/images/products/non-woven/W967/W967_royal.webp",
+        "assets/assets/images/products/non-woven/W967/W967_white.webp"
+    ],
+    "specs": {
+        "itemNo": "W967",
+        "gusset": "Bottom: Yes, Side: Yes",
+        "weight": "100 gsm",
+        "material": "Non Woven",
+        "handle": "22\" Reinforced Handles",
+        "origin": "USA",
+        "packagingOptions": [
+            {
+                "type": "Blank",
+                "qtyPerBox": "150 pcs",
+                "boxWeight": "38 lbs",
+                "boxDims": "28\" X 15\" X 18\""
+            },
+            {
+                "type": "Printed Large Box",
+                "qtyPerBox": "100 pcs",
+                "boxWeight": "25 lbs",
+                "boxDims": "16\" X 16\" X 20\""
+            },
+            {
+                "type": "Printed Medium Box",
+                "qtyPerBox": "40 pcs",
+                "boxWeight": "8 lbs",
+                "boxDims": "9\" X 16\" X 20\""
+            }
+        ]
     },
-    "transfer": {
-      "label": "HEAT TRANSFER PRICING (USD)",
-      "quantities": [100, 250, 500, 1000, 2000, 3000],
-      "rows": [
-        {
-          "label": "COLOR",
-          "prices": ["$6.11", "$5.70", "$5.49", "$5.15", "$4.85", "$4.55"]
+    "pricing": {
+        "spot": {
+            "label": "SPOT PRINTING PRICING (USD)",
+            "quantities": [72, 288, 500, 1000, 2000, 3000],
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$2.69", "$2.58", "$2.54", "$2.39", "$2.24", "$2.09"]
+                },
+                {
+                    "label": "ADD LOCATION",
+                    "prices": ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
+                },
+                {
+                    "label": "ADD COLOR",
+                    "prices": ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56", "$0.56"]
+                }
+            ],
+            "priceIncludes": "1 Color, 1 Location",
+            "leadTime": "5-7 Business Days",
+            "setupCharge": "$62.50 (V)",
+            "repeatSetup": "$37.50 (V)"
         },
-        {
-          "label": "ADD LOCATION",
-          "prices": ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
+        "transfer": {
+            "label": "HEAT TRANSFER PRICING (USD)",
+            "quantities": [100, 250, 500, 1000, 2000, 3000],
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$6.11", "$5.70", "$5.49", "$5.15", "$4.85", "$4.55"]
+                },
+                {
+                    "label": "ADD LOCATION",
+                    "prices": ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
+                }
+            ],
+            "priceIncludes": "Heat Transfer, 1 Location",
+            "leadTime": "7-10 Business Days",
+            "setupCharge": "FREE",
+            "repeatSetup": "FREE"
+        },
+        "blank": {
+            "label": "BLANK PRICING (USD)",
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$1.80"]
+                }
+            ],
+            "priceIncludes": "Blank",
+            "leadTime": "Within 1 to 2 Business Days",
+            "moq": "No minimums. Can order as little as one piece."
         }
-      ],
-      "priceIncludes": "Heat Transfer, 1 Location",
-      "leadTime": "7-10 Business Days",
-      "setupCharge": "FREE",
-      "repeatSetup": "FREE"
     },
-    "blank": {
-      "label": "BLANK PRICING (USD)",
-      "rows": [
-        {
-          "label": "COLOR",
-          "prices": ["$1.80"]
-        }
-      ],
-      "priceIncludes": "Blank",
-      "leadTime": "Within 1 to 2 Business Days",
-      "moq": "No minimums. Can order as little as one piece."
+    "additionalCharges": {
+        "pmsMatch": "$56.25 (V)",
+        "setupCharge": "$62.50 (V)",
+        "repeatSetup": "$37.50 (V)",
+        "lessThanMinimum": "Call for pricing"
     }
-  },
-  "additionalCharges": {
-    "pmsMatch": "$56.25 (V)",
-    "setupCharge": "$62.50 (V)",
-    "repeatSetup": "$37.50 (V)",
-    "lessThanMinimum": "Call for pricing"
-  }
 },
- {
+{
     id: "mqib6000",
     name: "Cotton Tote Bag Natural Body with Color Handles",
     code: "MQIB6000",
@@ -804,7 +808,6 @@ const products = [{
             label: "SPOT PRINTING PRICING (USD)",
             quantities: [72, 288, 500, 1000, 2000, 3000],
             rows: [
-                { label: "NATURAL", prices: ["$3.69", "$2.77", "$2.60", "$2.44", "$2.24", "$2.13"] },
                 { label: "COLOR", prices: ["$4.72", "$3.96", "$3.63", "$3.46", "$3.27", "$3.17"] },
                 { label: "ADD LOCATION ", prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"] },
                 { label: "ADD COLOR", prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"] }
@@ -1363,17 +1366,18 @@ const products = [{
     price: 7.78,
     image: "assets/assets/images/products/tote-bags/IB125800/IB125800_main.webp",
     description: "Small canvas deluxe tote made from 12oz 100% cotton canvas with a bottom gusset.",
+    // IB125800 - ISME IMAGE ADD KAREIN
     colors: [
-        { name: "Black", hex: "#111111" },
-        { name: "Chocolate", hex: "#6B4226" },
-        { name: "Light-Pink", hex: "#F3C6C8" },
-        { name: "Lime", hex: "#A8C93A" },
-        { name: "Maroon", hex: "#800000" },
-        { name: "Natural", hex: "#E8DCC4" },
-        { name: "Navy", hex: "#1F3A5F" },
-        { name: "Purple", hex: "#800080" },
-        { name: "Red", hex: "#D32F2F" },
-        { name: "Royal", hex: "#4169E1" }
+        { name: "Black", hex: "#111111", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_black.webp" },
+        { name: "Chocolate", hex: "#6B4226", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_chocolate.webp" },
+        { name: "Light-Pink", hex: "#F3C6C8", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_light_pink.webp" },
+        { name: "Lime", hex: "#A8C93A", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_lime.webp" },
+        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_maroon.webp" },
+        { name: "Natural", hex: "#E8DCC4", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_natural.webp" },
+        { name: "Navy", hex: "#1F3A5F", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_navy.webp" },
+        { name: "Purple", hex: "#800080", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_purple.webp" },
+        { name: "Red", hex: "#D32F2F", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_red.webp" },
+        { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_royal.webp" }
     ],
     weight: "12oz",
     handle: '26"',
@@ -1948,10 +1952,10 @@ const products = [{
     ],
     specs: {
         itemNo: "MIBL",
-        gusset: "N/A",
-        weight: "N/A",
+        gusset: "Bottom: No Side: No",
+        weight: "4oz",
         material: "Canvas",
-        handle: "N/A",
+        handle: "22'",
         origin: "USA",
         packagingOptions: [
             {
@@ -2010,11 +2014,13 @@ const products = [{
     colors: [
         {
             name: "Black",
-            image: "assets/assets/images/products/bottle-bags/IWB202/IWB202_black.webp"
+            image: "assets/assets/images/products/bottle-bags/IWB202/IWB202_black.webp",
+            hex: "#000000"
         },
         {
             name: "Natural",
-            image: "assets/assets/images/products/bottle-bags/IWB202/IWB202_natural.webp"
+            image: "assets/assets/images/products/bottle-bags/IWB202/IWB202_natural.webp",
+            hex: "#F5F5DC"
         }
     ],
 
@@ -2401,7 +2407,7 @@ const products = [{
 
     images: [
         "assets/assets/images/products/tote-bags/W955/W955_main.webp",
-        "assets/assets/images/products/tote-bags/W955/W955_natural.webp"
+
     ],
 
     specs: {
@@ -2561,9 +2567,9 @@ const products = [{
     specs: {
         itemNo: "IB125200",
         gusset: "Bottom: Yes Side: Yes",
-        weight: "-",
+        weight: "12oz",
         material: "100% Cotton Canvas",
-        handle: "-",
+        handle: "21' ",
         origin: "USA",
         packagingOptions: [
             {
@@ -3221,38 +3227,14 @@ const products = [{
     description: "Non woven shopper bag made from 80 gsm non-woven fabric with bottom and side gussets.",
 
     colors: [
-        {
-            name: "Black",
-            image: "assets/assets/images/products/non-woven/W962/W962_black.webp"
-        },
-        {
-            name: "Hunter-Green",
-            image: "assets/assets/images/products/non-woven/W962/W962_hunter_green.webp"
-        },
-        {
-            name: "Navy",
-            image: "assets/assets/images/products/non-woven/W962/W962_navy.webp"
-        },
-        {
-            name: "Orange",
-            image: "assets/assets/images/products/non-woven/W962/W962_orange.webp"
-        },
-        {
-            name: "Red",
-            image: "assets/assets/images/products/non-woven/W962/W962_red.webp"
-        },
-        {
-            name: "Royal",
-            image: "assets/assets/images/products/non-woven/W962/W962_royal.webp"
-        },
-        {
-            name: "White",
-            image: "assets/assets/images/products/non-woven/W962/W962_white.webp"
-        },
-        {
-            name: "Yellow",
-            image: "assets/assets/images/products/non-woven/W962/W962_yellow.webp"
-        }
+        { name: "Black", image: "assets/assets/images/products/non-woven/W962/W962_black.webp", hex: "#000000" },
+        { name: "Hunter-Green", image: "assets/assets/images/products/non-woven/W962/W962_hunter_green.webp", hex: "#355E3B" },
+        { name: "Navy", image: "assets/assets/images/products/non-woven/W962/W962_navy.webp", hex: "#000080" },
+        { name: "Orange", image: "assets/assets/images/products/non-woven/W962/W962_orange.webp", hex: "#FFA500" },
+        { name: "Red", image: "assets/assets/images/products/non-woven/W962/W962_red.webp", hex: "#FF0000" },
+        { name: "Royal", image: "assets/assets/images/products/non-woven/W962/W962_royal.webp", hex: "#4169E1" },
+        { name: "White", image: "assets/assets/images/products/non-woven/W962/W962_white.webp", hex: "#FFFFFF" },
+        { name: "Yellow", image: "assets/assets/images/products/non-woven/W962/W962_yellow.webp", hex: "#FFFF00" }
     ],
 
     images: [
@@ -3373,15 +3355,15 @@ const products = [{
     description: "Non woven grocery bag made from 80 gsm non-woven fabric with 22-inch reinforced handles and bottom and side gussets.",
 
     colors: [
-        { name: "Black", image: "assets/assets/images/products/non-woven/W957/W957_black.webp" },
-        { name: "Burgundy", image: "assets/assets/images/products/non-woven/W957/W957_burgundy.webp" },
-        { name: "Dark-Grey", image: "assets/assets/images/products/non-woven/W957/W957_dark_grey.webp" },
-        { name: "Hunter-Green", image: "assets/assets/images/products/non-woven/W957/W957_hunter_green.webp" },
-        { name: "Kelly", image: "assets/assets/images/products/non-woven/W957/W957_kelly.webp" },
-        { name: "Navy", image: "assets/assets/images/products/non-woven/W957/W957_navy.webp" },
-        { name: "Red", image: "assets/assets/images/products/non-woven/W957/W957_red.webp" },
-        { name: "Royal", image: "assets/assets/images/products/non-woven/W957/W957_royal.webp" },
-        { name: "White", image: "assets/assets/images/products/non-woven/W957/W957_white.webp" }
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/non-woven/W957/W957_black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/W957/W957_burgundy.webp" },
+        { name: "Dark-Grey", hex: "#4A4A4A", image: "assets/assets/images/products/non-woven/W957/W957_dark_grey.webp" },
+        { name: "Hunter-Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/W957/W957_hunter_green.webp" },
+        { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/W957/W957_kelly.webp" },
+        { name: "Navy", hex: "#000080", image: "assets/assets/images/products/non-woven/W957/W957_navy.webp" },
+        { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/non-woven/W957/W957_red.webp" },
+        { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/non-woven/W957/W957_royal.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/W957/W957_white.webp" }
     ],
 
     images: [
@@ -3635,12 +3617,13 @@ const products = [{
         {
             name: "Black",
             image: 'assets/assets/images/products/drawstring-bags/IWB203/IWB203_black.webp',
-            hex: "#00000"
+            hex: "#000000"
         },
         {
             name: "Natural",
-            image: "assets/assets/images/products/shoe-bags/SBW1611/SBW1611_natural.webp"
-        },
+            image: "assets/assets/images/products/shoe-bags/SBW1611/SBW1611_natural.webp",
+            hex: "#F5F0E1"
+        }
     ],
 
     images: [
@@ -3932,7 +3915,9 @@ const products = [{
         },
         blank: {
             label: "BLANK PRICING (USD)",
-            rows: []
+            "rows": [
+                { "label": "NATURAL", "prices": ["$1.92"] }
+            ]
         }
     },
     additionalCharges: {
@@ -4428,7 +4413,25 @@ const products = [{
             repeatSetup: "$37.50 (V)"
         },
 
-      
+        // ✅ HEAT TRANSFER ADDED
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2000, 3000],
+            rows: [
+                {
+                    label: "COLOR",
+                    prices: ["$4.92", "$4.59", "$4.44", "$4.16", "$3.91", "$3.66"]
+                },
+                {
+                    label: "ADD LOCATION (V)",
+                    prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
+                }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-10 Business Days",
+            setupCharge: "FREE",
+            repeatSetup: "FREE"
+        },
 
         blank: {
             label: "BLANK PRICING (USD)",
@@ -4452,125 +4455,125 @@ const products = [{
     }
 },
 {
-  "id": "w974",
-  "name": "Laminated Tote",
-  "code": "W974",
-  "slug": "laminated-tote",
-  "category": "Non-Woven Bags",
-  "material": "Non-Woven Polypropylene, Laminated",
-  "size": "12.75\"W x 15.75\"H x 4.75\"D",
-  "imprint": "8\"W x 10\"H",
-  "price": 1.64,
-  "originalPrice": 50.0,
-  "image": "assets/assets/images/products/non-woven/W974/W974_main.webp",
-  "description": "Laminated tote made from 110 gsm non-woven polypropylene with a 19-inch handle and bottom and side gussets.",
-  "colors": [
-    {
-      "name": "Black",
-      "hex": "#000000",
-      "image": "assets/assets/images/products/non-woven/W974/W974_black.webp"
-    },
-    {
-      "name": "Hunter Green",
-      "hex": "#355E3B",
-      "image": "assets/assets/images/products/non-woven/W974/W974_hunter_green.webp"
-    },
-    {
-      "name": "Natural",
-      "hex": "#F5F5DC",
-      "image": "assets/assets/images/products/non-woven/W974/W974_natural.webp"
-    },
-    {
-      "name": "Red",
-      "hex": "#FF0000",
-      "image": "assets/assets/images/products/non-woven/W974/W974_red.webp"
-    },
-    {
-      "name": "Royal",
-      "hex": "#4169E1",
-      "image": "assets/assets/images/products/non-woven/W974/W974_royal.webp"
-    },
-    {
-      "name": "White",
-      "hex": "#FFFFFF",
-      "image": "assets/assets/images/products/non-woven/W974/W974_white.webp"
-    }
-  ],
-  "images": [
-    "assets/assets/images/products/non-woven/W974/W974_main.webp",
-    "assets/assets/images/products/non-woven/W974/W974_black.webp",
-    "assets/assets/images/products/non-woven/W974/W974_hunter_green.webp",
-    "assets/assets/images/products/non-woven/W974/W974_natural.webp",
-    "assets/assets/images/products/non-woven/W974/W974_red.webp",
-    "assets/assets/images/products/non-woven/W974/W974_royal.webp",
-    "assets/assets/images/products/non-woven/W974/W974_white.webp"
-  ],
-  "specs": {
-    "itemNo": "W974",
-    "gusset": "Bottom: Yes, Side: Yes",
-    "weight": "110 gsm",
+    "id": "w974",
+    "name": "Laminated Tote",
+    "code": "W974",
+    "slug": "laminated-tote",
+    "category": "Non-Woven Bags",
     "material": "Non-Woven Polypropylene, Laminated",
-    "handle": "19\"",
-    "origin": "USA",
-    "packagingOptions": [
-      {
-        "type": "Blank",
-        "qtyPerBox": "100 pcs",
-        "boxWeight": "27 lbs",
-        "boxDims": "20\" x 16\" x 14\""
-      },
-      {
-        "type": "Printed Large Box",
-        "qtyPerBox": "150 pcs",
-        "boxWeight": "21 lbs",
-        "boxDims": "16\" x 16\" x 20\""
-      },
-      {
-        "type": "Printed Medium Box",
-        "qtyPerBox": "75 pcs",
-        "boxWeight": "11 lbs",
-        "boxDims": "8\" x 16\" x 20\""
-      }
-    ]
-  },
-  "pricing": {
-    "spot": {
-      "label": "SPOT PRINTING PRICING (USD)",
-      "quantities": [72, 288, 500, 1000, 2000, 3000],
-      "rows": [
+    "size": "12.75\"W x 15.75\"H x 4.75\"D",
+    "imprint": "8\"W x 10\"H",
+    "price": 1.64,
+    "originalPrice": 50.0,
+    "image": "assets/assets/images/products/non-woven/W974/W974_main.webp",
+    "description": "Laminated tote made from 110 gsm non-woven polypropylene with a 19-inch handle and bottom and side gussets.",
+    "colors": [
         {
-          "label": "COLOR",
-          "prices": ["$3.01", "$2.90", "$2.75", "$2.68", "$2.52", "$2.36"]
+            "name": "Black",
+            "hex": "#000000",
+            "image": "assets/assets/images/products/non-woven/W974/W974_black.webp"
         },
         {
-          "label": "ADD LOCATION",
-          "prices": ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
-        }
-      ],
-      "priceIncludes": "1 Color, 1 Location",
-      "leadTime": "5-7 Business Days",
-      "setupCharge": "$62.50 (V)",
-      "repeatSetup": "$37.50 (V)"
-    },
-    "blank": {
-      "label": "BLANK PRICING (USD)",
-      "rows": [
+            "name": "Hunter Green",
+            "hex": "#355E3B",
+            "image": "assets/assets/images/products/non-woven/W974/W974_hunter_green.webp"
+        },
         {
-          "label": "COLOR",
-          "prices": ["$1.64"]
+            "name": "Natural",
+            "hex": "#F5F5DC",
+            "image": "assets/assets/images/products/non-woven/W974/W974_natural.webp"
+        },
+        {
+            "name": "Red",
+            "hex": "#FF0000",
+            "image": "assets/assets/images/products/non-woven/W974/W974_red.webp"
+        },
+        {
+            "name": "Royal",
+            "hex": "#4169E1",
+            "image": "assets/assets/images/products/non-woven/W974/W974_royal.webp"
+        },
+        {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "image": "assets/assets/images/products/non-woven/W974/W974_white.webp"
         }
-      ],
-      "priceIncludes": "Blank",
-      "leadTime": "Within 1 to 2 Business Days",
-      "moq": "No minimums. Can order as little as one piece."
+    ],
+    "images": [
+        "assets/assets/images/products/non-woven/W974/W974_main.webp",
+        "assets/assets/images/products/non-woven/W974/W974_black.webp",
+        "assets/assets/images/products/non-woven/W974/W974_hunter_green.webp",
+        "assets/assets/images/products/non-woven/W974/W974_natural.webp",
+        "assets/assets/images/products/non-woven/W974/W974_red.webp",
+        "assets/assets/images/products/non-woven/W974/W974_royal.webp",
+        "assets/assets/images/products/non-woven/W974/W974_white.webp"
+    ],
+    "specs": {
+        "itemNo": "W974",
+        "gusset": "Bottom: Yes, Side: Yes",
+        "weight": "110 gsm",
+        "material": "Non-Woven Polypropylene, Laminated",
+        "handle": "19\"",
+        "origin": "USA",
+        "packagingOptions": [
+            {
+                "type": "Blank",
+                "qtyPerBox": "100 pcs",
+                "boxWeight": "27 lbs",
+                "boxDims": "20\" x 16\" x 14\""
+            },
+            {
+                "type": "Printed Large Box",
+                "qtyPerBox": "150 pcs",
+                "boxWeight": "21 lbs",
+                "boxDims": "16\" x 16\" x 20\""
+            },
+            {
+                "type": "Printed Medium Box",
+                "qtyPerBox": "75 pcs",
+                "boxWeight": "11 lbs",
+                "boxDims": "8\" x 16\" x 20\""
+            }
+        ]
+    },
+    "pricing": {
+        "spot": {
+            "label": "SPOT PRINTING PRICING (USD)",
+            "quantities": [72, 288, 500, 1000, 2000, 3000],
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$3.01", "$2.90", "$2.75", "$2.68", "$2.52", "$2.36"]
+                },
+                {
+                    "label": "ADD LOCATION",
+                    "prices": ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
+                }
+            ],
+            "priceIncludes": "1 Color, 1 Location",
+            "leadTime": "5-7 Business Days",
+            "setupCharge": "$62.50 (V)",
+            "repeatSetup": "$37.50 (V)"
+        },
+        "blank": {
+            "label": "BLANK PRICING (USD)",
+            "rows": [
+                {
+                    "label": "COLOR",
+                    "prices": ["$1.64"]
+                }
+            ],
+            "priceIncludes": "Blank",
+            "leadTime": "Within 1 to 2 Business Days",
+            "moq": "No minimums. Can order as little as one piece."
+        }
+    },
+    "additionalCharges": {
+        "pmsMatch": "$56.25 (V)",
+        "setupCharge": "$62.50 (V)",
+        "repeatSetup": "$37.50 (V)",
+        "lessThanMinimum": "Call for pricing"
     }
-  },
-  "additionalCharges": {
-    "pmsMatch": "$56.25 (V)",
-    "setupCharge": "$62.50 (V)",
-    "repeatSetup": "$37.50 (V)",
-    "lessThanMinimum": "Call for pricing"
-  }
 },
 {
     id: "w983",
@@ -4654,6 +4657,20 @@ const products = [{
             leadTime: "7-10 Business Days",
             setupCharge: "FREE",
             repeatSetup: "FREE"
+        },
+
+        // ✅ BLANK PRICING ADDED
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                {
+                    label: "NATURAL",
+                    prices: ["$1.46"]
+                }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
         }
     },
 
@@ -4664,127 +4681,7 @@ const products = [{
         lessThanMinimum: "Call for pricing"
     }
 },
-{
-  "id": "w973",
-  "name": "Laminated Tote",
-  "code": "W973",
-  "slug": "laminated-tote",
-  "category": "Non-Woven Bags",
-  "material": "Non-Woven, Laminated",
-  "size": "15.75\"W x 12.5\"H x 6.25\"D",
-  "imprint": "10\"W x 8\"H",
-  "price": 1.66,
-  "originalPrice": 50.0,
-  "image": "assets/assets/images/products/non-woven/W973/W973_main.webp",
-  "description": "Laminated tote made from 110 gsm non-woven material with a 20-inch handle and bottom and side gussets.",
-  "colors": [
-    {
-      "name": "Black",
-      "hex": "#000000",
-      "image": "assets/assets/images/products/non-woven/W973/W973_black.webp"
-    },
-    {
-      "name": "Hunter Green",
-      "hex": "#355E3B",
-      "image": "assets/assets/images/products/non-woven/W973/W973_hunter_green.webp"
-    },
-    {
-      "name": "Ivory",
-      "hex": "#FFFFF0",
-      "image": "assets/assets/images/products/non-woven/W973/W973_ivory.webp"
-    },
-    {
-      "name": "Red",
-      "hex": "#FF0000",
-      "image": "assets/assets/images/products/non-woven/W973/W973_red.webp"
-    },
-    {
-      "name": "Royal",
-      "hex": "#4169E1",
-      "image": "assets/assets/images/products/non-woven/W973/W973_royal.webp"
-    },
-    {
-      "name": "White",
-      "hex": "#FFFFFF",
-      "image": "assets/assets/images/products/non-woven/W973/W973_white.webp"
-    }
-  ],
-  "images": [
-    "assets/assets/images/products/non-woven/W973/W973_main.webp",
-    "assets/assets/images/products/non-woven/W973/W973_black.webp",
-    "assets/assets/images/products/non-woven/W973/W973_hunter_green.webp",
-    "assets/assets/images/products/non-woven/W973/W973_ivory.webp",
-    "assets/assets/images/products/non-woven/W973/W973_red.webp",
-    "assets/assets/images/products/non-woven/W973/W973_royal.webp",
-    "assets/assets/images/products/non-woven/W973/W973_white.webp"
-  ],
-  "specs": {
-    "itemNo": "W973",
-    "gusset": "Bottom: Yes, Side: Yes",
-    "weight": "110 gsm",
-    "material": "Non Woven, Laminated",
-    "handle": "20\"",
-    "origin": "USA",
-    "packagingOptions": [
-      {
-        "type": "Blank",
-        "qtyPerBox": "100 pcs",
-        "boxWeight": "27 lbs",
-        "boxDims": "20\" x 16\" x 14\""
-      },
-      {
-        "type": "Printed Large Box",
-        "qtyPerBox": "125 pcs",
-        "boxWeight": "21 lbs",
-        "boxDims": "16\" x 16\" x 20\""
-      },
-      {
-        "type": "Printed Medium Box",
-        "qtyPerBox": "50 pcs",
-        "boxWeight": "9 lbs",
-        "boxDims": "8\" x 16\" x 20\""
-      }
-    ]
-  },
-  "pricing": {
-    "spot": {
-      "label": "SPOT PRINTING PRICING (USD)",
-      "quantities": [72, 288, 500, 1000, 2000, 3000],
-      "rows": [
-        {
-          "label": "COLOR",
-          "prices": ["$3.04", "$2.92", "$2.77", "$2.70", "$2.54", "$2.38"]
-        },
-        {
-          "label": "ADD LOCATION",
-          "prices": ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
-        }
-      ],
-      "priceIncludes": "1 Color, 1 Location",
-      "leadTime": "5-7 Business Days",
-      "setupCharge": "$62.50 (V)",
-      "repeatSetup": "$37.50 (V)"
-    },
-    "blank": {
-      "label": "BLANK PRICING (USD)",
-      "rows": [
-        {
-          "label": "COLOR",
-          "prices": ["$1.66"]
-        }
-      ],
-      "priceIncludes": "Blank",
-      "leadTime": "Within 1 to 2 Business Days",
-      "moq": "No minimums. Can order as little as one piece."
-    }
-  },
-  "additionalCharges": {
-    "pmsMatch": "$56.25 (V)",
-    "setupCharge": "$62.50 (V)",
-    "repeatSetup": "$37.50 (V)",
-    "lessThanMinimum": "Call for pricing"
-  }
-},
+
 
 
 {
@@ -4901,11 +4798,25 @@ const products = [{
                     label: "ADD LOCATION",
                     prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
                 }
-            ]
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-10 Business Days",
+            setupCharge: "FREE",
+            repeatSetup: "FREE"
         },
 
+        // ✅ BLANK PRICING ADDED
         blank: {
-            label: "BLANK PRICING (USD)"
+            label: "BLANK PRICING (USD)",
+            rows: [
+                {
+                    label: "COLOR",
+                    prices: ["$8.45"]
+                }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
         }
     },
 
@@ -4916,6 +4827,7 @@ const products = [{
         lessThanMinimum: "Call for pricing"
     }
 },
+
 {
     id: "ib1400",
     name: "Canvas Standard Tote Bag",
@@ -4929,16 +4841,56 @@ const products = [{
     image: "assets/assets/images/products/tote-bags/IB1400/IB1400_main.webp",
     description: "Canvas standard tote bag made from 12oz 100% cotton with bottom and side gussets.",
     colors: [
-        { name: "Black", hex: "#111111" },
-        { name: "Chocolate", hex: "#6B4226" },
-        { name: "Light-Pink", hex: "#F3C6C8" },
-        { name: "Lime", hex: "#A8C93A" },
-        { name: "Maroon", hex: "#800000" },
-        { name: "Natural", hex: "#E8DCC4" },
-        { name: "Navy", hex: "#1F3A5F" },
-        { name: "Purple", hex: "#800080" },
-        { name: "Red", hex: "#D32F2F" },
-        { name: "Royal", hex: "#4169E1" }
+        {
+            name: "Black",
+            hex: "#111111",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_black.webp"
+        },
+        {
+            name: "Chocolate",
+            hex: "#6B4226",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_chocolate.webp"
+        },
+        {
+            name: "Light-Pink",
+            hex: "#F3C6C8",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_light_pink.webp"
+        },
+        {
+            name: "Lime",
+            hex: "#A8C93A",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_lime.webp"
+        },
+        {
+            name: "Maroon",
+            hex: "#800000",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_maroon.webp"
+        },
+        {
+            name: "Natural",
+            hex: "#E8DCC4",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_natural.webp"
+        },
+        {
+            name: "Navy",
+            hex: "#1F3A5F",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_navy.webp"
+        },
+        {
+            name: "Purple",
+            hex: "#800080",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_purple.webp"
+        },
+        {
+            name: "Red",
+            hex: "#D32F2F",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_red.webp"
+        },
+        {
+            name: "Royal",
+            hex: "#4169E1",
+            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_royal.webp"
+        }
     ],
     weight: "12oz",
     handle: '22"',
@@ -5010,100 +4962,7 @@ const products = [{
         lessThanMinimum: "$50.00 (V)"
     }
 },
-{
-    id: "ib125800",
-    name: "Small Canvas Deluxe Tote",
-    code: "IB125800",
-    slug: "small-canvas-deluxe-tote",
-    category: "Tote Bags",
-    material: "100% Cotton Canvas",
-    size: '18.5"W x 12"H x 5.5"D',
-    imprint: '3.75"W x 2.31"H',
-    price: 7.78,
-    image: "assets/assets/images/products/tote-bags/IB125800/IB125800_main.webp",
-    description: "Small canvas deluxe tote made from 12oz 100% cotton canvas with a bottom gusset.",
-    colors: [
-        { name: "Black", hex: "#111111" },
-        { name: "Chocolate", hex: "#6B4226" },
-        { name: "Light-Pink", hex: "#F3C6C8" },
-        { name: "Lime", hex: "#A8C93A" },
-        { name: "Maroon", hex: "#800000" },
-        { name: "Natural", hex: "#E8DCC4" },
-        { name: "Navy", hex: "#1F3A5F" },
-        { name: "Purple", hex: "#800080" },
-        { name: "Red", hex: "#D32F2F" },
-        { name: "Royal", hex: "#4169E1" }
-    ],
-    weight: "12oz",
-    handle: '26"',
-    gusset: "Bottom: Yes Side: No",
-    origin: "USA",
-    packagingOptions: [
-        {
-            type: "Standard",
-            qtyPerBox: "72 pcs",
-            boxWeight: "51.79 lbs",
-            boxDims: '19.5" x 13.5" x 22.5"'
-        }
-    ],
-    pricing: {
-        spot: {
-            label: "SPOT PRINTING PRICING (USD)",
-            quantities: [72, 288, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$10.60", "$9.69", "$9.35", "$9.19", "$9.00", "$8.90"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$11.71", "$10.77", "$10.44", "$10.27", "$10.08", "$9.98"]
-                },
-                {
-                    label: "ADD LOCATION",
-                    prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"]
-                },
-                {
-                    label: "ADD COLOR",
-                    prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"]
-                }
-            ]
-        },
-        transfer: {
-            label: "HEAT TRANSFER PRICING (USD)",
-            quantities: [100, 250, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$14.54", "$13.60", "$13.27", "$13.13", "$13.08", "$13.04"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$15.21", "$14.27", "$13.94", "$13.79", "$13.75", "$13.71"]
-                }
-            ]
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$7.78"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$8.41"]
-                }
-            ]
-        }
-    },
-    additionalCharges: {
-        pmsMatch: "$25.00 (V)",
-        setupCharge: "$56.25 (V)",
-        repeatSetup: "$25.00 (V)",
-        lessThanMinimum: "$50.25 (V)"
-    }
-},
+
 {
     id: "ids135200",
     name: "Polyester Drawstring Backpack",
@@ -5385,7 +5244,26 @@ const products = [{
         material: "Non-Woven Fabric",
         handle: "N/A",
         origin: "USA",
-        packagingOptions: []
+        packagingOptions: [
+            {
+                type: "Blank",
+                qtyPerBox: "200 pcs",
+                boxWeight: "28 lbs",
+                boxDims: '17" x 20" x 12"'
+            },
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "200 pcs",
+                boxWeight: "20 lbs",
+                boxDims: '14" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "100 pcs",
+                boxWeight: "10 lbs",
+                boxDims: '9" x 16" x 20"'
+            }
+        ]
     },
 
     pricing: {
@@ -5452,156 +5330,7 @@ const products = [{
         lessThanMinimum: "Call for pricing"
     }
 },
-{
-    id: "ids4500",
-    name: "Cotton Sports Pack",
-    code: "IDS4500",
-    slug: "cotton-sports-pack",
-    category: "Tote Bags",
-    material: "100% Cotton",
-    size: '14"W x 18"H',
-    imprint: '8"W x 10"H',
-    price: 1.73,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_main.webp",
-    description: "Cotton sports pack made from 6 oz 100% cotton material.",
 
-    colors: [
-        { name: "Army", hex: "#5B6248", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_army.webp" },
-        { name: "Azalea", hex: "#E83E8C", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_azalea.webp" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_black.webp" },
-        { name: "Carolina Blue", hex: "#56A0D2", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_carolina_blue.webp" },
-        { name: "Chocolate", hex: "#7B3F00", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_chocolate.webp" },
-        { name: "Forest Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_forest_green.webp" },
-        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_gold.webp" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_grey.webp" },
-        { name: "Hot Pink", hex: "#FF69B4", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_hot_pink.webp" },
-        { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_kelly.webp" },
-        { name: "Lavender", hex: "#B57EDC", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_lavender.webp" },
-        { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_light_pink.webp" },
-        { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_lime.webp" },
-        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_maroon.webp" },
-        { name: "Natural", hex: "#F5E6C8", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_natural.webp" },
-        { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_navy.webp" },
-        { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_orange.webp" },
-        { name: "Purple", hex: "#800080", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_purple.webp" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_red.webp" },
-        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_royal.webp" },
-        { name: "Sapphire", hex: "#0F52BA", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_sapphire.webp" },
-        { name: "Texas Orange", hex: "#BF5700", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_texas_orange.webp" },
-        { name: "Turqoise", hex: "#40E0D0", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_turqoise.webp" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_white.webp" },
-        { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/tote-bags/IDS4500/IDS4500_yellow.webp" }
-    ],
-
-    images: [
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_main.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_army.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_azalea.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_black.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_carolina_blue.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_chocolate.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_forest_green.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_gold.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_grey.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_hot_pink.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_kelly.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_lavender.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_light_pink.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_lime.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_maroon.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_natural.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_navy.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_orange.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_purple.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_red.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_royal.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_sapphire.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_texas_orange.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_turqoise.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_white.webp",
-        "assets/assets/images/products/tote-bags/IDS4500/IDS4500_yellow.webp"
-    ],
-
-    specs: {
-        itemNo: "IDS4500",
-        gusset: "Bottom: No Side: No",
-        weight: "6 oz",
-        material: "100% Cotton"
-    },
-
-    pricing: {
-        spot: {
-            label: "SPOT PRINTING PRICING (USD)",
-            quantities: [72, 288, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$4.00", "$3.25", "$2.92", "$2.75", "$2.56", "$2.46"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$5.06", "$4.29", "$3.96", "$3.79", "$3.60", "$3.50"]
-                },
-                {
-                    label: "ADD LOCATION (V)",
-                    prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"]
-                },
-                {
-                    label: "ADD COLOR (V)",
-                    prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"]
-                }
-            ],
-            priceIncludes: "1 Color, 1 Location",
-            leadTime: "5-7 Business Days",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "$25.00 (V)"
-        },
-
-        transfer: {
-            label: "HEAT TRANSFER PRICING (USD)",
-            quantities: [100, 250, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$8.10", "$7.17", "$6.83", "$6.69", "$6.65", "$6.60"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$8.73", "$7.79", "$7.46", "$7.31", "$7.27", "$7.23"]
-                }
-            ],
-            priceIncludes: "Heat Transfer, 1 Location",
-            leadTime: "7-10 Business Days",
-            setupCharge: "FREE",
-            repeatSetup: "FREE"
-        },
-
-        blank: {
-            label: "BLANK PRICING (USD)",
-            rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$1.73"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$2.31"]
-                }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 1 to 2 Business Days",
-            moq: "No minimums. Can order as little as one piece."
-        }
-    },
-
-    additionalCharges: {
-        pmsMatch: "$25.00 (V)",
-        setupCharge: "$56.25 (V)",
-        repeatSetup: "$25.00 (V)",
-        lessThanMinimum: "$50.00 (V)"
-    }
-},
 {
     id: "w958",
     name: "Non Woven Two Tone Tote/Book Bag",
@@ -6134,7 +5863,7 @@ const productTemplates = {};
 // Har product ke liye templates generate karo
 products.forEach(product => {
     if (!product.colors || product.colors.length === 0) return;
-    
+
     const colorTemplates = product.colors.map(color => {
         return {
             name: color.name,
@@ -6142,7 +5871,7 @@ products.forEach(product => {
             pdf: `assets/assets/templates/${product.code}/${color.name}.pdf`
         };
     });
-    
+
     productTemplates[product.id] = {
         colors: colorTemplates,
         imprintArea: product.imprint || 'N/A',
@@ -6254,15 +5983,15 @@ async function downloadSingleTemplate(colorName, product) {
     try {
         // ✅ EXACT name rakho (capital letter ke saath)
         const colorSlug = colorName; // "Red", "Natural", "Black", etc.
-        
+
         // Path with double assets
         const pdfPath = `assets/assets/templates/${product.code}/${colorSlug}.pdf`;
-        
+
         console.log('📄 Checking PDF:', pdfPath);
-        
+
         // Check karo ke PDF exist karti hai ya nahi
         const response = await fetch(pdfPath, { method: 'HEAD' });
-        
+
         if (!response.ok) {
             throw new Error(`PDF not found: ${pdfPath}`);
         }
@@ -6351,8 +6080,8 @@ function openTemplatesModal(product) {
 
     // ✅ EXACT name rakho (capital letter ke saath)
     const templateData = productTemplates[product.id] || {
-        colors: product.colors.map(c => ({ 
-            name: c.name, 
+        colors: product.colors.map(c => ({
+            name: c.name,
             hex: c.hex,
             pdf: `assets/assets/templates/${product.code}/${c.name}.pdf`  // ✅ c.name EXACT
         })),
@@ -6362,7 +6091,7 @@ function openTemplatesModal(product) {
     };
 
     document.getElementById('templatesImprintArea').textContent = templateData.imprintArea;
-    
+
     // BW Template Status
     const bwStatus = document.getElementById('bwTemplateStatus');
     if (templateData.bwTemplate) {
@@ -6500,6 +6229,268 @@ function getRelatedProducts(currentProduct, allProducts, limit = 4) {
 
     return related.slice(0, limit);
 }
+
+let currentImagesProduct = null;
+
+function openImagesModal(product) {
+    currentImagesProduct = product;
+
+    const modal = document.getElementById('imagesModal');
+    if (!modal) return;
+
+    // ============================================================
+    // SET PRODUCT INFO
+    // ============================================================
+    const productImage = document.getElementById('imagesProductImage');
+    const productName = document.getElementById('imagesProductNameText');
+    const productCode = document.getElementById('imagesProductCodeText');
+
+    if (productImage) {
+        productImage.src = product.image || '';
+    }
+
+    if (productName) {
+        productName.textContent = product.name || '';
+    }
+
+    if (productCode) {
+        productCode.textContent =
+            `${product.code || ''} | ${product.size || ''}`;
+    }
+
+    // ============================================================
+    // IMAGE TABLE
+    // ============================================================
+    const tbody = document.getElementById('imagesTableBody');
+
+    if (!tbody) return;
+
+    tbody.innerHTML = '';
+
+    // ============================================================
+    // GET IMAGES ONLY FROM COLORS ARRAY
+    // ============================================================
+    let images = [];
+
+    if (Array.isArray(product.colors)) {
+        images = product.colors
+            .map(color => color.image)
+            .filter(Boolean);
+    }
+
+    // Remove duplicate images
+    images = [...new Set(images)];
+
+    // ============================================================
+    // GENERATE IMAGE ROWS
+    // ============================================================
+    images.forEach((img, index) => {
+
+        const fileName = img.split('/').pop();
+
+        const displayName = fileName
+            .replace(/\.[^/.]+$/, '')
+            .replace(/_/g, ' ')
+            .replace(/-/g, ' ');
+
+        const tr = document.createElement('tr');
+
+        tr.className =
+            'border-b border-brand-border hover:bg-brand-bg/20 transition-colors';
+
+        tr.innerHTML = `
+            <td class="p-2 sm:p-3">
+                <div class="flex items-center gap-3">
+
+                    <img
+                        src="${img}"
+                        alt="${displayName}"
+                        class="w-16 h-16 object-cover rounded border border-brand-border cursor-pointer hover:opacity-80 transition-opacity"
+                        onclick="window.open('${img}', '_blank')"
+                    />
+
+                    <div class="flex flex-col">
+                        <span class="text-brand-text font-medium">
+                            ${displayName}
+                        </span>
+
+                        <span class="text-xs text-gray-500">
+                            Image ${index + 1} of ${images.length}
+                        </span>
+                    </div>
+
+                </div>
+            </td>
+
+            <td class="p-2 sm:p-3 text-center">
+                <a
+                    href="${img}"
+                    download="${fileName}"
+                    class="text-brand-crimson hover:underline text-sm flex items-center justify-center gap-1 download-image-btn"
+                    data-image="${img}"
+                    data-filename="${fileName}"
+                >
+                    <i class="fa-regular fa-circle-down"></i>
+                    Download
+                </a>
+            </td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+
+    // ============================================================
+    // DOWNLOAD EVENTS
+    // ============================================================
+    document.querySelectorAll('.download-image-btn').forEach(btn => {
+
+        btn.addEventListener('click', function (e) {
+
+            e.preventDefault();
+
+            const imageUrl = this.dataset.image;
+            const fileName = this.dataset.filename;
+
+            if (!imageUrl) return;
+
+            const link = document.createElement('a');
+
+            link.href = imageUrl;
+            link.download = fileName || 'image.webp';
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            document.body.removeChild(link);
+        });
+    });
+
+    // ============================================================
+    // SHOW MODAL
+    // ============================================================
+    modal.classList.add('active');
+
+    document.body.style.overflow = 'hidden';
+}
+
+
+// ============================================================
+// CLOSE MODAL
+// ============================================================
+function closeImagesModal() {
+
+    const modal = document.getElementById('imagesModal');
+
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+
+// ============================================================
+// INIT IMAGES MODAL
+// ============================================================
+function initImagesModal() {
+
+    const imagesBtn = document.getElementById('imagesBtn');
+
+    if (imagesBtn) {
+
+        imagesBtn.addEventListener('click', function (e) {
+
+            e.preventDefault();
+
+            if (currentQuotationProduct) {
+
+                openImagesModal(currentQuotationProduct);
+
+            } else {
+
+                console.error('No product selected for images!');
+
+            }
+        });
+    }
+
+
+    const closeBtn =
+        document.getElementById('closeImagesModal');
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeImagesModal);
+    }
+
+
+    const cancelBtn =
+        document.getElementById('cancelImagesModal');
+
+    if (cancelBtn) {
+        cancelBtn.addEventListener('click', closeImagesModal);
+    }
+
+
+    const modal =
+        document.getElementById('imagesModal');
+
+    if (modal) {
+
+        modal.addEventListener('click', function (e) {
+
+            if (e.target === this) {
+                closeImagesModal();
+            }
+
+        });
+    }
+
+
+    document.addEventListener('keydown', function (e) {
+
+        if (e.key === 'Escape') {
+
+            const modal =
+                document.getElementById('imagesModal');
+
+            if (
+                modal &&
+                modal.classList.contains('active')
+            ) {
+                closeImagesModal();
+            }
+        }
+    });
+}
+
+// ============================================================
+// PATCH: CALL initImagesModal() INSIDE EXISTING INIT()
+// ============================================================
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        initImagesModal();
+    }, 500);
+});
+
+(function patchInit() {
+    const observer = new MutationObserver(function (mutations, obs) {
+        const productName = document.getElementById('product-title');
+        if (productName && productName.textContent !== 'Loading...') {
+            initImagesModal();
+            obs.disconnect();
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    setTimeout(function () {
+        const productName = document.getElementById('product-title');
+        if (productName && productName.textContent !== 'Loading...') {
+            initImagesModal();
+        }
+    }, 1000);
+})();
+
+console.log('✅ Images button and modal added successfully!');
 
 // ============================================================
 // 3. RENDER RELATED PRODUCTS
@@ -6720,9 +6711,9 @@ function initQuotationModal() {
             formData.append("email", document.getElementById("quotationEmail").value);
             formData.append("phone", document.getElementById("quotationPhone").value);
             // ====== NEW FIELDS ======
-            formData.append("asi_number", document.getElementById("quotationAsi").value);
-            formData.append("item", document.getElementById("quotationItem").value);
-            formData.append("item_qty", document.getElementById("quotationItemQty").value);
+            formData.append("asi_ppai_sage", document.getElementById("quotationAsi").value);
+             formData.append("item", document.getElementById("quotationItem").value);
+
             // ====== END NEW FIELDS ======
             formData.append("in_hand_date", document.getElementById("quotationDate").value);
 
@@ -6891,7 +6882,7 @@ function initMockupModal() {
                 formData.append("phone", document.getElementById('mockupPhone').value);
                 formData.append("asi_number", document.getElementById('mockupAsi').value);
                 formData.append("item", document.getElementById('mockupItem').value);
-                formData.append("item_qty", document.getElementById('mockupItemQty').value);
+
                 formData.append("instructions", document.getElementById('mockupInstructions').value);
 
                 const freightRadio = document.querySelector('input[name="mockupFreight"]:checked');
@@ -7271,18 +7262,34 @@ function initFreightModal() {
         });
     }
     function renderSpecsTable() {
-        const s = product.specs || { itemNo: product.code, gusset: "Bottom: Yes Side: No", weight: "12oz", material: "100% Cotton Canvas", handle: "24\"", origin: "USA" };
+        const s = product.specs || {
+            itemNo: product.code,
+            gusset: "Bottom: Yes Side: No",
+            weight: "12oz",
+            material: "100% Cotton Canvas",
+            handle: "24\"",
+            origin: "USA"
+        };
+
+        const originValue = s.origin || s.decoratedIn || "USA";
+
+        // ✅ Agar handle "-" ya "N/A" hai toh row mat dikhao
+        const showHandle = s.handle && s.handle !== "-" && s.handle !== "N/A";
+        const handleRow = showHandle ? `
+        <div class="flex border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">HANDLE SIZE</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.handle}</div></div>
+    ` : '';
+
         specsTable.innerHTML = `
-                <div class="flex border-b border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">ITEM NO</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.itemNo}</div></div>
-                <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div></div>
-                <div class="flex border-b border-r border-brand-border">
-    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY WEIGHT</div>
-    <div class="w-1/2 p-3 font-medium text-brand-text">${s.weight ?? '-'}</div>
-</div>
-                <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY MATERIAL</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div></div>
-                <div class="flex border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">HANDLE SIZE</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.handle}</div></div>
-                <div class="flex"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.origin}</div></div>
-            `;
+        <div class="flex border-b border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">ITEM NO</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.itemNo}</div></div>
+        <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div></div>
+        <div class="flex border-b border-r border-brand-border">
+            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY WEIGHT</div>
+            <div class="w-1/2 p-3 font-medium text-brand-text">${s.weight ?? '-'}</div>
+        </div>
+        <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY MATERIAL</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div></div>
+        ${handleRow}
+        <div class="flex"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div><div class="w-1/2 p-3 font-medium text-brand-text">${originValue}</div></div>
+    `;
     }
 
     function renderMainInfo() {
@@ -7407,198 +7414,198 @@ function initFreightModal() {
     }
     // initPrintTabs function mein modify karein
     function initPrintTabs() {
-    const container = document.getElementById('printing-tabs');
-    if (!container) return;
+        const container = document.getElementById('printing-tabs');
+        if (!container) return;
 
-    const viewMoreBtn = document.getElementById('viewMorePricingBtn');
-    const pricing = product.pricing || {};
+        const viewMoreBtn = document.getElementById('viewMorePricingBtn');
+        const pricing = product.pricing || {};
 
-    // ✅ Dynamic tabs generate karo - SIRF WOHI JO EXIST KARTE HAIN
-    const tabDefinitions = [];
+        // ✅ Dynamic tabs generate karo - SIRF WOHI JO EXIST KARTE HAIN
+        const tabDefinitions = [];
 
-    if (pricing.spot) {
-        tabDefinitions.push({
-            method: 'spot',
-            label: 'SPOT PRINTING'
-        });
-    }
+        if (pricing.spot) {
+            tabDefinitions.push({
+                method: 'spot',
+                label: 'SPOT PRINTING'
+            });
+        }
 
-    // ✅ SIRF TABHI TRANSFER TAB JAB pricing.transfer EXIST KARE
-    if (pricing.transfer) {
-        tabDefinitions.push({
-            method: 'transfer',
-            label: 'HEAT TRANSFER'
-        });
-    }
+        // ✅ SIRF TABHI TRANSFER TAB JAB pricing.transfer EXIST KARE
+        if (pricing.transfer) {
+            tabDefinitions.push({
+                method: 'transfer',
+                label: 'HEAT TRANSFER'
+            });
+        }
 
-    if (pricing.blank) {
-        tabDefinitions.push({
-            method: 'blank',
-            label: 'BLANK'
-        });
-    }
+        if (pricing.blank) {
+            tabDefinitions.push({
+                method: 'blank',
+                label: 'BLANK'
+            });
+        }
 
-    // Agar koi tab nahi hai toh return
-    if (tabDefinitions.length === 0) {
-        container.innerHTML = '<p class="text-center text-brand-textSecondary py-4">No pricing available</p>';
-        return;
-    }
+        // Agar koi tab nahi hai toh return
+        if (tabDefinitions.length === 0) {
+            container.innerHTML = '<p class="text-center text-brand-textSecondary py-4">No pricing available</p>';
+            return;
+        }
 
-    // Tabs render karo
-    container.innerHTML = tabDefinitions.map((tab, index) => {
-        const isActive = index === 0 ? 'active' : '';
-        return `
+        // Tabs render karo
+        container.innerHTML = tabDefinitions.map((tab, index) => {
+            const isActive = index === 0 ? 'active' : '';
+            return `
             <button class="border ${isActive ? 'border-brand-crimson bg-brand-crimson/10 text-brand-crimson' : 'border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text'} 
                     transition-colors py-2.5 text-xs font-semibold rounded tracking-wider flex-1" 
                     data-method="${tab.method}">
                 ${tab.label}
             </button>
         `;
-    }).join('');
+        }).join('');
 
-    // Method info object
-    const methodInfo = {
-        spot: {
-            leadTime: '5-7 Business Days',
-            leadLabel: 'Production Time',
-            setupCharge: '$56.25 (V)',
-            repeatSetup: '$25.00 (V)',
-            showRepeatSetup: true,
-            showSetupCharge: true,
-            priceIncludes: '1 Color, 1 Location',
-            showViewMore: true
-        },
-        transfer: {
-            leadTime: '7-10 Business Days',
-            leadLabel: 'Production Time',
-            setupCharge: 'Free',
-            repeatSetup: 'Free',
-            showRepeatSetup: false,
-            showSetupCharge: true,
-            priceIncludes: 'Heat Transfer, 1 Location',
-            showViewMore: false
-        },
-        blank: {
-            leadTime: 'Within 1-2 Business Days',
-            leadLabel: 'Lead Time',
-            setupCharge: 'No Setup Fee',
-            repeatSetup: 'No Setup Fee',
-            showRepeatSetup: false,
-            showSetupCharge: false,
-            priceIncludes: 'Blank Product Only',
-            showViewMore: false
-        }
-    };
+        // Method info object
+        const methodInfo = {
+            spot: {
+                leadTime: '5-7 Business Days',
+                leadLabel: 'Production Time',
+                setupCharge: '$56.25 (V)',
+                repeatSetup: '$25.00 (V)',
+                showRepeatSetup: true,
+                showSetupCharge: true,
+                priceIncludes: '1 Color, 1 Location',
+                showViewMore: true
+            },
+            transfer: {
+                leadTime: '7-10 Business Days',
+                leadLabel: 'Production Time',
+                setupCharge: 'Free',
+                repeatSetup: 'Free',
+                showRepeatSetup: false,
+                showSetupCharge: true,
+                priceIncludes: 'Heat Transfer, 1 Location',
+                showViewMore: false
+            },
+            blank: {
+                leadTime: 'Within 1-2 Business Days',
+                leadLabel: 'Lead Time',
+                setupCharge: 'No Setup Fee',
+                repeatSetup: 'No Setup Fee',
+                showRepeatSetup: false,
+                showSetupCharge: false,
+                priceIncludes: 'Blank Product Only',
+                showViewMore: false
+            }
+        };
 
-    // Click handlers attach karo
-    container.querySelectorAll('button').forEach(tab => {
-        tab.addEventListener('click', function () {
-            const method = this.dataset.method;
-            currentMethod = method;
+        // Click handlers attach karo
+        container.querySelectorAll('button').forEach(tab => {
+            tab.addEventListener('click', function () {
+                const method = this.dataset.method;
+                currentMethod = method;
 
-            // Tab style update
-            container.querySelectorAll('button').forEach(t => {
-                t.className = 'border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2.5 text-xs font-semibold rounded tracking-wider flex-1';
-            });
-            this.className = 'border border-brand-crimson bg-brand-crimson/10 text-brand-crimson py-2.5 text-xs font-semibold rounded tracking-wider flex-1';
+                // Tab style update
+                container.querySelectorAll('button').forEach(t => {
+                    t.className = 'border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2.5 text-xs font-semibold rounded tracking-wider flex-1';
+                });
+                this.className = 'border border-brand-crimson bg-brand-crimson/10 text-brand-crimson py-2.5 text-xs font-semibold rounded tracking-wider flex-1';
 
-            renderPricing(method);
+                renderPricing(method);
 
-            const info = methodInfo[method];
-            if (info) {
-                document.getElementById('dynamic-lead-label').textContent = info.leadLabel;
-                document.getElementById('dynamic-lead-time').textContent = info.leadTime;
-                document.getElementById('dynamic-setup-charge').textContent = info.setupCharge;
-                document.getElementById('dynamic-repeat-setup').textContent = info.repeatSetup;
-                document.getElementById('dynamic-price-includes').textContent = info.priceIncludes;
+                const info = methodInfo[method];
+                if (info) {
+                    document.getElementById('dynamic-lead-label').textContent = info.leadLabel;
+                    document.getElementById('dynamic-lead-time').textContent = info.leadTime;
+                    document.getElementById('dynamic-setup-charge').textContent = info.setupCharge;
+                    document.getElementById('dynamic-repeat-setup').textContent = info.repeatSetup;
+                    document.getElementById('dynamic-price-includes').textContent = info.priceIncludes;
 
-                const setupContainer = document.getElementById('setup-charge-container');
-                if (setupContainer) {
-                    setupContainer.style.display = info.showSetupCharge ? 'flex' : 'none';
-                }
+                    const setupContainer = document.getElementById('setup-charge-container');
+                    if (setupContainer) {
+                        setupContainer.style.display = info.showSetupCharge ? 'flex' : 'none';
+                    }
 
-                const repeatContainer = document.getElementById('repeat-setup-container');
-                if (repeatContainer) {
-                    repeatContainer.style.display = info.showRepeatSetup ? 'flex' : 'none';
-                }
+                    const repeatContainer = document.getElementById('repeat-setup-container');
+                    if (repeatContainer) {
+                        repeatContainer.style.display = info.showRepeatSetup ? 'flex' : 'none';
+                    }
 
-                if (viewMoreBtn) {
-                    if (info.showViewMore && method === 'spot') {
-                        viewMoreBtn.style.display = 'block';
-                    } else {
-                        viewMoreBtn.style.display = 'none';
-                        pricingExpanded = false;
-                        document.querySelectorAll('.pricing-extra-row').forEach(row => {
-                            row.classList.remove('show');
-                        });
-                        viewMoreBtn.innerHTML = 'VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>';
+                    if (viewMoreBtn) {
+                        if (info.showViewMore && method === 'spot') {
+                            viewMoreBtn.style.display = 'block';
+                        } else {
+                            viewMoreBtn.style.display = 'none';
+                            pricingExpanded = false;
+                            document.querySelectorAll('.pricing-extra-row').forEach(row => {
+                                row.classList.remove('show');
+                            });
+                            viewMoreBtn.innerHTML = 'VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>';
+                        }
                     }
                 }
-            }
+            });
         });
-    });
 
-    // Pehla tab active karo (agar exist karta hai)
-    const firstTab = container.querySelector('button');
-    if (firstTab) {
-        firstTab.click();
+        // Pehla tab active karo (agar exist karta hai)
+        const firstTab = container.querySelector('button');
+        if (firstTab) {
+            firstTab.click();
+        }
     }
-}
     // ============================================================
-// AUTO-OPEN MODAL BASED ON URL PARAMETER
-// ============================================================
-// ============================================================
-// AUTO-OPEN MODAL BASED ON URL PARAMETER
-// ============================================================
-function checkAndOpenModal(product) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const action = urlParams.get('action');
+    // AUTO-OPEN MODAL BASED ON URL PARAMETER
+    // ============================================================
+    // ============================================================
+    // AUTO-OPEN MODAL BASED ON URL PARAMETER
+    // ============================================================
+    function checkAndOpenModal(product) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const action = urlParams.get('action');
 
-    if (action === 'quote') {
-        setTimeout(() => {
-            openQuotationModal(product);
-        }, 500);
-    } else if (action === 'mockup') {
-        setTimeout(() => {
-            openMockupModal(product);
-        }, 500);
-    } else if (action === 'freight') {
-        setTimeout(() => {
-            openFreightModal(product);
-        }, 500);
+        if (action === 'quote') {
+            setTimeout(() => {
+                openQuotationModal(product);
+            }, 500);
+        } else if (action === 'mockup') {
+            setTimeout(() => {
+                openMockupModal(product);
+            }, 500);
+        } else if (action === 'freight') {
+            setTimeout(() => {
+                openFreightModal(product);
+            }, 500);
+        }
     }
-}
 
-function init() {
-    currentQuotationProduct = product;
-    currentMockupProduct = product;
-    currentFreightProduct = product;
+    function init() {
+        currentQuotationProduct = product;
+        currentMockupProduct = product;
+        currentFreightProduct = product;
 
-    renderMainInfo();
-    renderThumbnails();
-    renderColors();
-    renderSpecsTable();
-    renderAdditionalCharges();
-    renderPackagingInfo();
-    renderPricing('spot');
-    setTimeout(() => {
-        document.querySelectorAll('.pricing-extra-col').forEach(col => {
-            col.classList.remove('show');
-        });
-    }, 100);
-    initTabs();
-    initPrintTabs();
-    renderRelatedProducts(product, products);
-    initQuotationModal();
-    initViewMoreButton();
-    initMockupModal();
-    initFreightModal();
-    initTemplatesModal();
-    
-    // ✅ PRODUCT PASS KARO
-    checkAndOpenModal(product);
-}
+        renderMainInfo();
+        renderThumbnails();
+        renderColors();
+        renderSpecsTable();
+        renderAdditionalCharges();
+        renderPackagingInfo();
+        renderPricing('spot');
+        setTimeout(() => {
+            document.querySelectorAll('.pricing-extra-col').forEach(col => {
+                col.classList.remove('show');
+            });
+        }, 100);
+        initTabs();
+        initPrintTabs();
+        renderRelatedProducts(product, products);
+        initQuotationModal();
+        initViewMoreButton();
+        initMockupModal();
+        initFreightModal();
+        initTemplatesModal();
 
-init();
+        // ✅ PRODUCT PASS KARO
+        checkAndOpenModal(product);
+    }
+
+    init();
 
 })();

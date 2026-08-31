@@ -1354,7 +1354,7 @@
             <p>&copy; 2026 INKWELL IMPRESSIONS SOLUTIONS. All Rights Reserved.</p>
             <div class="flex gap-3 sm:gap-4 md:gap-6">
                 <a href="#" class="hover:text-brand-text transition">Privacy Policy</a>
-                <a href="#" class="hover:text-brand-text transition">Terms &amp; Conditions</a>
+                <a href="terms-and-conditions.html" class="hover:text-brand-text transition">Terms &amp; Conditions</a>
             </div>
         </div>
     </footer>
@@ -1370,46 +1370,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./config/contact.js"></script>
+    <script type="text/javascript" src="./config/chat.js"></script>
 
-    <!--Start of Tawk.to Script-->
-    <script>
-            (function () {
-                // USA Central Time
-                const now = new Date();
-
-                const centralTime = new Intl.DateTimeFormat("en-US", {
-                    timeZone: "America/Chicago",
-                    hour: "numeric",
-                    minute: "numeric",
-                    hour12: false
-                }).formatToParts(now);
-
-                const hour = parseInt(
-                    centralTime.find(part => part.type === "hour").value
-                );
-
-                // Show Tawk only from 9 AM to 6 PM Central Time
-                if (hour >= 9 && hour < 18) {
-
-                    var Tawk_API = Tawk_API || {},
-                        Tawk_LoadStart = new Date();
-
-                    (function () {
-                        var s1 = document.createElement("script"),
-                            s0 = document.getElementsByTagName("script")[0];
-
-                        s1.async = true;
-                        s1.src = "https://embed.tawk.to/6a58f4381d475d1d4bfcc286/1jtlnjvm1";
-                        s1.charset = "UTF-8";
-                        s1.setAttribute("crossorigin", "*");
-
-                        s0.parentNode.insertBefore(s1, s0);
-                    })();
-
-                }
-            })();
-    </script>
-    <!--End of Tawk.to Script-->
 
 </body>
 
