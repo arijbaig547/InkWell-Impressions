@@ -19,14 +19,12 @@
         rel="stylesheet" />
 
     <!-- ===== TAILWIND ===== -->
-    <script src="https://cdn.tailwindcss.com">
-    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- ===== JSZip + FileSaver ===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
     <!-- ===== FONT AWESOME ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -63,11 +61,11 @@
         }
     </script>
 
-    <!-- ===== EXTERNAL CSS (Unchanged - Waisay hi) ===== -->
+    <!-- ===== EXTERNAL CSS ===== -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/product.css">
 
-    <!-- ===== SCHEMA MARKUP (JSON-LD) - SEO BOOST ===== -->
+    <!-- ===== SCHEMA MARKUP ===== -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -91,9 +89,10 @@
 <body class="font-sans antialiased selection:bg-brand-crimson selection:text-white">
 
     <!-- ============================================================ -->
-    <!-- NAV - RESPONSIVE FIXED (Unchanged - Bilkul waisay hi) -->
+    <!-- NAV -->
     <!-- ============================================================ -->
     <nav class="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
+
         <div class="max-w-7xl mx-auto flex items-center justify-between">
 
             <div class="flex items-center shrink-0">
@@ -105,15 +104,63 @@
 
             <ul
                 class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
-                <li><a href="index.html" class="hover:text-brand-crimson">Home</a></li>
-                <li><a href="products.html" class="text-brand-crimson hover:text-brand-crimson transition">Products</a>
+
+                <li>
+                    <a href="index.html" class="hover:text-brand-crimson">Home</a>
                 </li>
-                <li><a href="categories.html" class="hover:text-brand-crimson transition">Categories</a></li>
-                <li><a href="about.html" class="hover:text-brand-crimson transition">About Us</a></li>
-                <li><a href="contact.html" class="hover:text-brand-crimson transition">Contact</a></li>
+
+                <li>
+                    <a href="products.html" class="text-brand-crimson hover:text-brand-crimson transition">Products</a>
+                </li>
+
+                <li>
+                    <a href="categories.html" class="hover:text-brand-crimson transition">Categories</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="hover:text-brand-crimson transition">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="hover:text-brand-crimson transition">Contact</a>
+                </li>
+
             </ul>
 
             <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
+
+                <!-- SEARCH -->
+                <form action="products.html" method="get" class="hidden lg:flex items-center relative group">
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2
+                        text-gray-400 text-[11px] group-focus-within:text-brand-crimson
+                        transition-colors duration-300"></i>
+                        <input type="text" name="search" placeholder="Search products..." autocomplete="off" class="w-36 xl:w-48 h-9 pl-8 pr-3
+                        bg-white/10 backdrop-blur-sm
+                        text-white placeholder:text-gray-400
+                        text-[11px] xl:text-xs
+                        border border-white/20
+                        rounded-full
+                        outline-none
+                        transition-all duration-300
+                        focus:w-44 xl:focus:w-56
+                        focus:bg-white/15
+                        focus:border-brand-crimson
+                        focus:ring-2 focus:ring-brand-crimson/20
+                        hover:border-white/40" />
+                        <button type="submit" aria-label="Search products" class="absolute right-1 top-1/2 -translate-y-1/2
+                        w-7 h-7 rounded-full
+                        bg-brand-crimson text-white
+                        flex items-center justify-center
+                        hover:scale-105
+                        active:scale-95
+                        transition-all duration-300 shadow-md">
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- REQUEST A QUOTE -->
                 <a href="contact.html">
                     <button
                         class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
@@ -123,18 +170,24 @@
                         </span>
                     </button>
                 </a>
+
+                <!-- HAMBURGER -->
                 <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                     aria-label="Toggle Menu">
                     <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
                 </button>
+
             </div>
 
         </div>
+
     </nav>
 
-    <!-- Mobile Menu (Unchanged) -->
+
+    <!-- Mobile Menu -->
     <div id="mobileMenu"
         class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
+
         <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
             <li><a href="index.html" class="block py-2 border-b border-gray-700">Home</a></li>
             <li><a href="products.html"
@@ -142,11 +195,12 @@
             </li>
             <li><a href="categories.html"
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Categories</a></li>
-            <li><a href="about.html"
-                    class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About Us</a></li>
+            <li><a href="about.html" class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">About
+                    Us</a></li>
             <li><a href="contact.html"
                     class="hover:text-brand-crimson block py-2 border-b border-gray-700 transition">Contact</a></li>
         </ul>
+
         <a href="contact.html">
             <button
                 class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
@@ -156,10 +210,25 @@
                 </span>
             </button>
         </a>
+
+        <!-- MOBILE SEARCH -->
+        <div class="py-2">
+            <form action="products.html" method="get" class="flex items-center">
+                <input type="text" name="search" placeholder="Search products..." autocomplete="off"
+                    class="bg-white/10 text-white placeholder:text-gray-400 text-xs px-3 py-2 rounded-l-sm border border-white/20 focus:border-brand-crimson focus:outline-none w-full" />
+                <button type="submit" aria-label="Search products"
+                    class="bg-brand-crimson hover:bg-red-700 text-white px-3 py-2 rounded-r-sm transition">
+                    <i class="fa-solid fa-search text-xs"></i>
+                </button>
+            </form>
+        </div>
+
     </div>
 
+
+
     <!-- ============================================================ -->
-    <!-- MAIN CONTENT (All product logic intact - Unchanged) -->
+    <!-- MAIN CONTENT -->
     <!-- ============================================================ -->
     <main
         class="max-w-[1440px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 pt-[72px] sm:pt-[80px] md:pt-[100px] lg:pt-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px]"
@@ -176,11 +245,40 @@
                 id="product-name-breadcrumb">Loading...</span>
         </div>
 
-        <!-- Product Layout Grid -->
+
+        <!-- ============================================================ -->
+        <!-- PRODUCT LAYOUT GRID (3-BLOCK STRUCTURE) -->
+        <!-- ============================================================ -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 xl:gap-30">
 
-            <!-- Left Column: Images & Colors -->
-            <div class="lg:col-span-5 flex flex-col gap-4 sm:gap-6">
+            <!-- ======================================================= -->
+            <!-- BLOCK A: PRODUCT HEADER (Mobile 1st, Desktop Right Top) -->
+            <!-- ======================================================= -->
+            <div
+                class="lg:col-span-7 lg:col-start-6 lg:row-start-1 order-1 lg:order-1 px-0 sm:px-[30px] lg:pt-[75px]">
+
+                <!-- Header -->
+                <div class="mb-3 sm:mb-4">
+                    <span
+                        class="inline-block border border-brand-crimson text-brand-crimson px-2 py-0.5 text-base sm:text-xl rounded mb-2 sm:mb-3"
+                        id="product-code">IB611</span>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text mb-1"
+                        id="product-title">Loading...</h1>
+                    <div class="text-brand-crimson font-script text-2xl sm:text-3xl md:text-4xl mt-[-3px] sm:mt-[-5px]"
+                        id="product-subtitle"></div>
+                </div>
+
+                <p class="text-brand-textSecondary text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 max-w-2xl"
+                    id="product-description"></p>
+
+            </div>
+
+
+            <!-- ======================================================= -->
+            <!-- BLOCK B: IMAGES + COLORS (Mobile 2nd, Desktop Left Span) -->
+            <!-- ======================================================= -->
+            <div
+                class="lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:row-span-2 order-2 lg:order-2 flex flex-col gap-4 sm:gap-6">
 
                 <!-- Image Gallery -->
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 h-auto sm:h-[500px] mt-4 sm:mt-[25px]">
@@ -219,22 +317,11 @@
 
             </div>
 
-            <!-- Right Column: Info & Pricing -->
-            <div class="lg:col-span-7 flex flex-col mt-4 sm:mt-[50px] px-0 sm:px-[30px]">
 
-                <!-- Header -->
-                <div class="mb-3 sm:mb-4">
-                    <span
-                        class="inline-block border border-brand-crimson text-brand-crimson px-2 py-0.5 text-base sm:text-xl rounded mb-2 sm:mb-3"
-                        id="product-code">IB611</span>
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text mb-1"
-                        id="product-title">Loading...</h1>
-                    <div class="text-brand-crimson font-script text-2xl sm:text-3xl md:text-4xl mt-[-3px] sm:mt-[-5px]"
-                        id="product-subtitle"></div>
-                </div>
-
-                <p class="text-brand-textSecondary text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 max-w-2xl"
-                    id="product-description"></p>
+            <!-- ======================================================= -->
+            <!-- BLOCK C: SPECS, PRICING, BUTTONS (Mobile 3rd, Desktop Right Bottom) -->
+            <!-- ======================================================= -->
+            <div class="lg:col-span-7 lg:col-start-6 lg:row-start-2 order-3 lg:order-3 px-0 sm:px-[30px]">
 
                 <!-- Specifications Box -->
                 <div
@@ -354,13 +441,13 @@
                             class="fa-solid fa-arrow-right font-light ml-1 text-[10px] sm:text-xs"></i>
                     </button>
                 </div>
+
                 <div class="mt-2 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                     <button id="templatesBtn"
                         class="btn-outline py-2.5 sm:py-3.5 rounded text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2 border-brand-border hover:border-brand-crimson hover:text-brand-crimson transition-colors">
                         <i class="fa-regular fa-file-lines text-xs sm:text-sm"></i> VIEW TEMPLATES
                         <i class="fa-solid fa-chevron-down ml-1 text-[10px] sm:text-xs"></i>
                     </button>
-                    <!-- NEW: IMAGES BUTTON -->
                     <button id="imagesBtn"
                         class="btn-outline py-2.5 sm:py-3.5 rounded text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2 border-brand-border hover:border-brand-crimson hover:text-brand-crimson transition-colors">
                         <i class="fa-regular fa-images text-xs sm:text-sm"></i> VIEW IMAGES
@@ -369,9 +456,12 @@
                 </div>
 
             </div>
+
         </div>
 
-        <!-- Bottom Section: Tabs & Detailed Specs -->
+        <!-- ============================================================ -->
+        <!-- BOTTOM SECTION: TABS & DETAILED SPECS -->
+        <!-- ============================================================ -->
         <div
             class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mt-8 sm:mt-12 border-t border-brand-border pt-6 sm:pt-8">
 
@@ -387,12 +477,20 @@
                     <button
                         class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
                         data-tab="packaging">PACKAGING INFO</button>
+                    <button
+                        class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
+                        data-tab="additional-info">ADDITIONAL INFO</button>
                 </div>
 
                 <div id="tab-content">
                     <p class="text-xs sm:text-sm text-brand-textSecondary leading-relaxed" id="tab-description"></p>
                     <div id="tab-charges" class="hidden text-xs sm:text-sm text-brand-textSecondary"></div>
                     <div id="tab-packaging" class="hidden text-xs sm:text-sm text-brand-textSecondary"></div>
+                    <div id="tab-additional-info" class="hidden text-xs sm:text-sm text-brand-textSecondary">
+                        <div id="spec-picture-container" class="flex flex-col items-center gap-4">
+                            <!-- Spec picture JS se inject hoga -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -405,7 +503,7 @@
         </div>
 
         <!-- ============================================================ -->
-        <!-- MODALS (All modals unchanged - Full code preserved) -->
+        <!-- MODALS -->
         <!-- ============================================================ -->
 
         <!-- QUOTATION MODAL -->
@@ -428,7 +526,6 @@
                         </div>
                     </div>
                     <form id="quotationForm">
-                        <!-- Form fields as original -->
                         <div class="form-group">
                             <label for="quotationColor"><i class="fa-solid fa-palette mr-1"></i> Select Color</label>
                             <select id="quotationColor" name="color" required>
@@ -479,7 +576,6 @@
                                 <input type="text" id="quotationItem" name="item" placeholder="e.g. IB29, MQIB6000"
                                     required>
                             </div>
-
                         </div>
                         <div class="form-group">
                             <label for="quotationDate"><i class="fa-regular fa-calendar mr-1"></i> In Hand Date</label>
@@ -558,7 +654,6 @@
                                     required>
                             </div>
                         </div>
-                       
                         <div class="form-group">
                             <label for="mockupLogo"><i class="fa-solid fa-upload mr-1"></i> Upload Logo /
                                 Artwork</label>
@@ -783,6 +878,7 @@
             </div>
         </div>
 
+        <!-- IMAGES MODAL -->
         <div id="imagesModal" class="modal-overlay">
             <div class="modal-content modal-images" style="max-width: 800px;">
                 <div class="modal-header">
@@ -885,17 +981,26 @@
             </div>
         </div>
 
+        <!-- SPEC IMAGE LIGHTBOX MODAL -->
+        <div id="specImageModal" class="spec-image-modal">
+            <div class="spec-image-modal-content">
+                <button type="button" id="closeSpecImageModal" class="spec-image-modal-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img id="specImageModalImg" src="" alt="Spec Sheet" />
+            </div>
+        </div>
+
         <!-- Related Products Section -->
         <div id="related-products-container"></div>
 
     </main>
 
     <!-- ============================================================ -->
-    <!-- SCRIPTS (Unchanged - Waisay hi) -->
+    <!-- SCRIPTS -->
     <!-- ============================================================ -->
     <script src="./config/product.js" defer></script>
     <script type="text/javascript" src="./config/chat.js"></script>
-   
 
 </body>
 

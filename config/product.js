@@ -24,6 +24,70 @@ function showNotification(message, type = 'success') {
     // Simple alert for now - you can make it fancy later
     alert(message);
 }
+function downloadSpecPicture() {
+    const container = document.getElementById('spec-picture-container');
+    if (!container) {
+        alert('❌ No spec sheet available');
+        return;
+    }
+
+    // Spec sheet element dhundo (white card)
+    const specElement = container.querySelector('.bg-white');
+    if (!specElement) {
+        alert('❌ Spec sheet not found');
+        return;
+    }
+
+    // Check if html2canvas is loaded
+    if (typeof html2canvas === 'undefined') {
+        alert('❌ html2canvas library not loaded. Please refresh the page.');
+        return;
+    }
+
+    // Get current product code for filename
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id') || 'product';
+
+    // Show loading indicator
+    const btn = event?.target?.closest('button');
+    const originalHTML = btn?.innerHTML;
+    if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Generating...';
+    }
+
+    // Convert to canvas with 2x scale for high quality
+    html2canvas(specElement, {
+        backgroundColor: '#ffffff',
+        scale: 2,
+        useCORS: true,
+        logging: false,
+        allowTaint: true
+    }).then(canvas => {
+        // Create download link
+        const link = document.createElement('a');
+        link.download = `${productId}_spec_sheet.png`;
+        link.href = canvas.toDataURL('image/png');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Reset button
+        if (btn) {
+            btn.disabled = false;
+            btn.innerHTML = originalHTML || '<i class="fa-solid fa-download"></i> DOWNLOAD SPEC PICTURE';
+        }
+    }).catch(err => {
+        console.error('Spec picture download error:', err);
+        alert('❌ Could not download spec picture. Please try again.');
+
+        // Reset button
+        if (btn) {
+            btn.disabled = false;
+            btn.innerHTML = originalHTML || '<i class="fa-solid fa-download"></i> DOWNLOAD SPEC PICTURE';
+        }
+    });
+}
 
 // ============================================================
 // 1. PRODUCT DATA WITH LOCAL IMAGES
@@ -5853,7 +5917,1385 @@ const products = [{
         repeatSetup: "$37.50 (V)",
         lessThanMinimum: "Call for pricing"
     }
-}];
+},
+{
+    id: "ABW8700",
+    name: "Fleece Throw",
+    code: "ABW8700",
+    slug: "fleece-throw",
+    category: "Blankets",
+    material: "100% Polyester Fleece",
+    size: '50" x 60"',
+    imprint: '8" x 10"',
+    price: 10.52,
+    originalPrice: 10.52,
+    image: "assets/assets/images/products/blankets/IW8700/8700-Red.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8700/8700-Feature.png",
+    description: "Premium 13.8-ounce anti-pill fleece throw. Made from 100% polyester with 260 GSM weight. Features matching whipstitch trim and non-branded label. Charcoal has black whipstitch. Perfect for corporate gifting, promotional events, and everyday use. Machine washable for easy care.",
+    popular: true,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Red", hex: "#C41E3A", sku: "8700-69", gtin: "00671867700695", pms: "199C", image: "assets/assets/images/products/blankets/IW8700/8700-Red.jpg" },
+        { name: "Navy", hex: "#1B1F3B", sku: "8700-73", gtin: "00671867700732", pms: "N/A", image: "assets/assets/images/products/blankets/IW8700/8700-Navy.jpg" },
+        { name: "Black", hex: "#000000", sku: "8700-77", gtin: "00671867700770", pms: "Black C", image: "assets/assets/images/products/blankets/IW8700/8700-Black.jpg" },
+        { name: "Heather Grey", hex: "#A9A9A9", sku: "8700-78", gtin: "00671867700787", pms: "14-4106TPX", image: "assets/assets/images/products/blankets/IW8700/8700-Grey.jpg" },
+        { name: "Charcoal", hex: "#36454F", sku: "8700-79", gtin: "00671867700794", pms: "Cool Gray 10 C", image: "assets/assets/images/products/blankets/IW8700/8700-Charcoal.jpg" },
+        { name: "Royal", hex: "#002366", sku: "8700-86", gtin: "00671867700862", pms: "N/A", image: "assets/assets/images/products/blankets/IW8700/8700-Royal.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8700/8700-Red.jpg",
+        "assets/assets/images/products/blankets/IW8700/8700-Navy.jpg",
+        "assets/assets/images/products/blankets/IW8700/8700-Black.jpg",
+        "assets/assets/images/products/blankets/IW8700/8700-Grey.jpg",
+        "assets/assets/images/products/blankets/IW8700/8700-Charcoal.jpg",
+        "assets/assets/images/products/blankets/IW8700/8700-Royal.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8700",
+        gtin: "00671867700695",
+        gusset: "N/A",
+        weight: "13.8 oz / 260 GSM",
+        material: "100% Polyester Fleece",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Bulk Packaging",
+                qtyPerBox: "20 pcs",
+                boxWeight: "24 lbs",
+                boxDims: '24.5" x 15" x 17"',
+                cartonVolume: "3.62 cu ft",
+                pieceWeight: "1.20 lbs",
+                note: "10 pcs. per polybag / 2 polybags in a box"
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$10.52"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8701",
+    name: "Fleece/Nylon Picnic Blanket",
+    code: "ABW8701",
+    slug: "fleece-nylon-picnic-blanket",
+    category: "Blankets",
+    material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
+    size: '50" x 60" (Closed 10" x 12")',
+    imprint: "N/A",
+    price: 16.84,
+    originalPrice: 16.84,
+    image: "assets/assets/images/products/blankets/IW8701/8701-Black.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8701/8701-Feature.png",
+    description: "Fleece/Nylon Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon. Easy fold design with non-branded label/tag. Top: Polyester Fleece. Shell: Polyester Oxford, Polyurethane coating.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Navy",
+            hex: "#1B1F3B",
+            sku: "8701-73",
+            gtin: "00671867701739",
+            pms: "N/A",
+            image: "assets/assets/images/products/blankets/IW8701/8701-Navy.jpg"
+        },
+        {
+            name: "Black",
+            hex: "#000000",
+            sku: "8701-77",
+            gtin: "00671867701777",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8701/8701-Black.jpg"
+        },
+        {
+            name: "Cinder Grey",
+            hex: "#A9A9A9",
+            sku: "8701-78",
+            gtin: "00671867634105",
+            pms: "Cool Gray 6C",
+            image: "assets/assets/images/products/blankets/IW8701/8701-Cinder Gray.jpg"
+        },
+        {
+            name: "Royal",
+            hex: "#002366",
+            sku: "8701-86",
+            gtin: "00671867701869",
+            pms: "7693C",
+            image: "assets/assets/images/products/blankets/IW8701/8701-Royal.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8701/8701-Navy.jpg",
+        "assets/assets/images/products/blankets/IW8701/8701-Black.jpg",
+        "assets/assets/images/products/blankets/IW8701/8701-Cinder Gray.jpg",
+        "assets/assets/images/products/blankets/IW8701/8701-Royal.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8701",
+        gtin: "00671867701739",
+        gusset: "N/A",
+        weight: "N/A",
+        material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
+        handle: "Attached carry handles",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Bulk Packaging",
+                qtyPerBox: "20 pcs",
+                boxWeight: "34 lbs",
+                boxDims: '20.5" x 12.5" x 25"',
+                cartonVolume: "3.71 cu ft",
+                pieceWeight: "1.75 lbs",
+                note: "10 pcs. per polybag / 2 polybags in a box"
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$16.84"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+
+{
+    id: "ABW8702",
+    name: "Fleece/Nylon Print Picnic Blanket",
+    code: "ABW8702",
+    slug: "fleece-nylon-print-picnic-blanket",
+    category: "Blankets",
+    material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
+    size: '50" x 60" (Closed 10" x 12")',
+    imprint: "N/A",
+    price: 16.84,
+    originalPrice: 16.84,
+    image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8702/8702-Feature.png",
+    description: "Fleece/Nylon Print Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon. Easy fold design with non-branded label/tag. Top: Polyester Fleece. Shell: Polyester Oxford, Polyurethane coating.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Blackwatch",
+            hex: "#0B2E1E",
+            sku: "8702-82",
+            gtin: "00671867702828",
+            pms: "Green=342C / Navy=295C",
+            image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8702",
+        gtin: "00671867702828",
+        gusset: "N/A",
+        weight: "N/A",
+        material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
+        handle: "Attached carry handles",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Bulk Packaging",
+                qtyPerBox: "20 pcs",
+                boxWeight: "34 lbs",
+                boxDims: '20.5" x 12.5" x 25"',
+                cartonVolume: "3.71 cu ft",
+                pieceWeight: "1.75 lbs",
+                note: "10 pcs. per polybag / 2 polybags in a box"
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$16.84"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+
+{
+    id: "ABW8710",
+    name: "Sweatshirt Blanket Throw",
+    code: "ABW8710",
+    slug: "sweatshirt-blanket-throw",
+    category: "Blankets",
+    material: "52/48 Poly/Cotton",
+    size: '50" x 60"',
+    imprint: "N/A",
+    price: 16.22,
+    originalPrice: 16.22,
+    image: "assets/assets/images/products/blankets/IW8710/8710-Black.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8710/8710-Feature.png",
+    description: "Sweatshirt blanket throw made from 52/48 Poly/Cotton. 50\" x 60\", 280 G/SM. Able to be screen printed or embroidered. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Black",
+            hex: "#000000",
+            sku: "8710-77",
+            gtin: "00671867710779",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8710/8710-Black.jpg"
+        },
+        {
+            name: "Heather Grey",
+            hex: "#A9A9A9",
+            sku: "8710-78",
+            gtin: "00671867710786",
+            pms: "N/A",
+            image: "assets/assets/images/products/blankets/IW8710/8710-Heather Grey.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8710/8710-Black.jpg",
+        "assets/assets/images/products/blankets/IW8710/8710-Heather Grey.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8710",
+        gtin: "00671867710779",
+        gusset: "N/A",
+        weight: "280 GSM",
+        material: "52/48 Poly/Cotton",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Bulk Packaging",
+                qtyPerBox: "20 pcs",
+                boxWeight: "28 lbs",
+                boxDims: '16.5" x 13" x 25"',
+                cartonVolume: "3.1 cu ft",
+                pieceWeight: "1.00 lbs",
+                note: "Bulk packing"
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$16.22"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8711",
+    name: "Value Fleece Blanket",
+    code: "ABW8711",
+    slug: "value-fleece-blanket",
+    category: "Blankets",
+    material: "100% Polar Fleece Fabric",
+    size: '50" x 60"',
+    imprint: "N/A",
+    price: 8.22,
+    originalPrice: 8.22,
+    image: "assets/assets/images/products/blankets/IW8711/8711-Black.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8711/8711-Feature.png",
+    description: "6.5-ounce, 100% Polar Fleece Fabric. 200 G/SM. 50\" x 60\". Matching whipstitch trim. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Red",
+            hex: "#C41E3A",
+            sku: "8711-69",
+            gtin: "00671867711691",
+            pms: "186C",
+            image: "assets/assets/images/products/blankets/IW8711/8711-Red.jpg"
+        },
+        {
+            name: "Navy",
+            hex: "#1B1F3B",
+            sku: "8711-73",
+            gtin: "00671867711738",
+            pms: "2767C",
+            image: "assets/assets/images/products/blankets/IW8711/8711-Navy.jpg"
+        },
+        {
+            name: "Forest",
+            hex: "#228B22",
+            sku: "8711-76",
+            gtin: "00671867711769",
+            pms: "N/A",
+            image: "assets/assets/images/products/blankets/IW8711/8711-Forest Green.jpg"
+        },
+        {
+            name: "Black",
+            hex: "#000000",
+            sku: "8711-77",
+            gtin: "00671867711776",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8711/8711-Black.jpg"
+        },
+        {
+            name: "Cinder Grey",
+            hex: "#A9A9A9",
+            sku: "8711-78",
+            gtin: "00671867711783",
+            pms: "415C",
+            image: "assets/assets/images/products/blankets/IW8711/8711-Gray.jpg"
+        },
+        {
+            name: "Royal",
+            hex: "#002366",
+            sku: "8711-86",
+            gtin: "00671867711868",
+            pms: "7683C",
+            image: "assets/assets/images/products/blankets/IW8711/8711-Royal.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8711/8711-Black.jpg",
+        "assets/assets/images/products/blankets/IW8711/8711-Forest Green.jpg",
+        "assets/assets/images/products/blankets/IW8711/8711-Gray.jpg",
+        "assets/assets/images/products/blankets/IW8711/8711-Navy.jpg",
+        "assets/assets/images/products/blankets/IW8711/8711-Red.jpg",
+        "assets/assets/images/products/blankets/IW8711/8711-Royal.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8711",
+        gtin: "00671867711691",
+        gusset: "N/A",
+        weight: "6.5 oz / 200 GSM",
+        material: "100% Polar Fleece Fabric",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Bulk Packaging",
+                qtyPerBox: "30 pcs",
+                boxWeight: "26 lbs",
+                boxDims: '25" x 15" x 17"',
+                cartonVolume: "3.69 cu ft",
+                pieceWeight: "0.94 lbs",
+                note: "15 pcs. per polybag / 2 polybags in a box"
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$8.22"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8712",
+    name: "Micro Mink Sherpa Blankets",
+    code: "ABW8712",
+    slug: "micro-mink-sherpa-blankets",
+    category: "Blankets",
+    material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
+    size: '50" x 60"',
+    imprint: "N/A",
+    price: 23.12,
+    originalPrice: 23.12,
+    image: "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8712/8712-Feature.png",
+    description: "Cozy fleece face that reverses to soft luxurious sherpa. MM-220 g/sqm; SH-240 g/sqm. 100% polyester, one side faux micro mink, other side faux lambswool sherpa. Fully hemmed. Hidden 15\" zip pocket for easy embroidery access. 50\" x 60\". Machine wash & dry. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Navy",
+            hex: "#1B1F3B",
+            sku: "8712-73",
+            gtin: "00671867712735",
+            pms: "534C",
+            image: "assets/assets/images/products/blankets/IW8712/8712-Navy.jpg"
+        },
+        {
+            name: "Forest",
+            hex: "#228B22",
+            sku: "8712-76",
+            gtin: "00671867712766",
+            pms: "7734C",
+            image: "assets/assets/images/products/blankets/IW8712/8712-Forest Green.jpg"
+        },
+        {
+            name: "Black",
+            hex: "#000000",
+            sku: "8712-77",
+            gtin: "00671867712773",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8712/8712-Black.jpg"
+        },
+        {
+            name: "Grey",
+            hex: "#A9A9A9",
+            sku: "8712-78",
+            gtin: "00671867712780",
+            pms: "421C",
+            image: "assets/assets/images/products/blankets/IW8712/8712-Gray.jpg"
+        },
+        {
+            name: "Royal",
+            hex: "#002366",
+            sku: "8712-86",
+            gtin: "00671867712865",
+            pms: "7683C",
+            image: "assets/assets/images/products/blankets/IW8712/8712-Royal.jpg"
+        },
+        {
+            name: "Cream",
+            hex: "#F5F0DC",
+            sku: "8712-87",
+            gtin: "00671867712872",
+            pms: "11-4201 TPX",
+            image: "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg"
+        },
+        {
+            name: "Cam",
+            hex: "#4B5320",
+            sku: "8712-Cam",
+            gtin: "00671867712995",
+            pms: "4685C",
+            image: "assets/assets/images/products/blankets/IW8712/8712-Cam.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg",
+        "assets/assets/images/products/blankets/IW8712/8712-Forest Green.jpg",
+        "assets/assets/images/products/blankets/IW8712/8712-Navy.jpg",
+        "assets/assets/images/products/blankets/IW8712/8712-Royal.jpg",
+        "assets/assets/images/products/blankets/IW8712/8712-Black.jpg",
+        "assets/assets/images/products/blankets/IW8712/8712-Gray.jpg",
+        "assets/assets/images/products/blankets/IW8712/8712-Cam.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8712",
+        gtin: "00671867712735",
+        gusset: "N/A",
+        weight: "MM-220 g/sqm; SH-240 g/sqm",
+        material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "10 pcs",
+                boxWeight: "24 lbs",
+                boxDims: '25" x 15" x 17"',
+                cartonVolume: "3.69 cu ft",
+                pieceWeight: "2.33 lbs",
+                note: "Individual zippered vinyl bag. 10 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$23.12"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8718",
+    name: "Fleece Roll Up Blanket",
+    code: "ABW8718",
+    slug: "fleece-roll-up-blanket",
+    category: "Blankets",
+    material: "100% Polyester Anti-Pill Fleece",
+    size: '47" x 53"',
+    imprint: "N/A",
+    price: 8.42,
+    originalPrice: 8.42,
+    image: "assets/assets/images/products/blankets/IW8718/8718-Black.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8718/8718-Feature.png",
+    description: "100% Polyester easy roll up blanket. 47\" x 53\". Anti-pill fleece, 180 G/SM. Trim has matching flap with pocket, handle, VELCRO® and whipstitch. Non-branded label/tag.",
+    popular: false,
+
+    // ✅ FLAGS
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Navy",
+            hex: "#1B1F3B",
+            sku: "8718-73",
+            gtin: "00671867718737",
+            pms: "534C",
+            image: "assets/assets/images/products/blankets/IW8718/8718-Navy.jpg"
+        },
+        {
+            name: "Black",
+            hex: "#000000",
+            sku: "8718-??",
+            gtin: "",
+            pms: "",
+            image: "assets/assets/images/products/blankets/IW8718/8718-Black.jpg"
+        },
+        {
+            name: "Gray",
+            hex: "#A9A9A9",
+            sku: "8718-??",
+            gtin: "",
+            pms: "",
+            image: "assets/assets/images/products/blankets/IW8718/8718-Gray.jpg"
+        },
+        {
+            name: "Royal",
+            hex: "#002366",
+            sku: "8718-??",
+            gtin: "",
+            pms: "",
+            image: "assets/assets/images/products/blankets/IW8718/8718-Royal.jpg"
+        },
+        {
+            name: "Sage",
+            hex: "#A5A69A",
+            sku: "8718-??",
+            gtin: "",
+            pms: "",
+            image: "assets/assets/images/products/blankets/IW8718/8718-Sage.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8718/8718-Black.jpg",
+        "assets/assets/images/products/blankets/IW8718/8718-Gray.jpg",
+        "assets/assets/images/products/blankets/IW8718/8718-Royal.jpg",
+        "assets/assets/images/products/blankets/IW8718/8718-Sage.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8718",
+        gtin: "00671867718737",
+        gusset: "N/A",
+        weight: "180 G/SM",
+        material: "100% Polyester Anti-Pill Fleece",
+        handle: "Matching flap with handle",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Bulk Packaging",
+                qtyPerBox: "30 pcs",
+                boxWeight: "27 lbs",
+                boxDims: '24" x 13" x 21"',
+                cartonVolume: "3.79 cu ft",
+                pieceWeight: "0.83 lbs",
+                note: "10 pcs. per polybag / 3 polybags in a box"
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$8.42"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8721",
+    name: "Mink Touch Luxury Blanket",
+    code: "ABW8721",
+    slug: "mink-touch-luxury-blanket",
+    category: "Blankets",
+    material: "100% Polyester Faux Mink",
+    size: '50" x 60"',
+    imprint: "N/A",
+    price: 16.84,
+    originalPrice: 16.84,
+    image: "assets/assets/images/products/blankets/IW8721/8721-Black.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8721/8721-Feature.png",
+    description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Finish self hem decorative top stitch finish. 50\" x 60\". Vinyl zippered bag with mink touch card in pocket included. Machine wash & dry. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Navy",
+            hex: "#1B1F3B",
+            sku: "8721-73",
+            gtin: "00671867630824",
+            pms: "295C",
+            image: "assets/assets/images/products/blankets/IW8721/8721-Navy.jpg"
+        },
+        {
+            name: "Black",
+            hex: "#000000",
+            sku: "8721-77",
+            gtin: "00671867630770",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8721/8721-Black.jpg"
+        },
+        {
+            name: "Grey",
+            hex: "#A9A9A9",
+            sku: "8721-78",
+            gtin: "00671867630817",
+            pms: "429C",
+            image: "assets/assets/images/products/blankets/IW8721/8721-Gray.jpg"
+        },
+        {
+            name: "Royal",
+            hex: "#002366",
+            sku: "8721-86",
+            gtin: "00671867630848",
+            pms: "7684C",
+            image: "assets/assets/images/products/blankets/IW8721/8721-Royal.jpg"
+        },
+        {
+            name: "Cream",
+            hex: "#F5F0DC",
+            sku: "8721-87",
+            gtin: "00671867630794",
+            pms: "11-4300 TPX",
+            image: "assets/assets/images/products/blankets/IW8721/8721-Cream.png"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8721/8721-Black.jpg",
+        "assets/assets/images/products/blankets/IW8721/8721-Cream.png",
+        "assets/assets/images/products/blankets/IW8721/8721-Gray.jpg",
+        "assets/assets/images/products/blankets/IW8721/8721-Navy.jpg",
+        "assets/assets/images/products/blankets/IW8721/8721-Royal.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8721",
+        gtin: "00671867630824",
+        gusset: "N/A",
+        weight: "300 g/sqm",
+        material: "100% Polyester Faux Mink",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "20 pcs",
+                boxWeight: "35 lbs",
+                boxDims: '26" x 14" x 21"',
+                cartonVolume: "4.42 cu ft",
+                pieceWeight: "1.54 lbs",
+                note: "Individual zippered vinyl bag. 20 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$16.84"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8722",
+    name: "Mink Touch Luxury Baby Blanket",
+    code: "ABW8722",
+    slug: "mink-touch-luxury-baby-blanket",
+    category: "Blankets",
+    material: "100% Polyester Faux Mink",
+    size: '30" x 40"',
+    imprint: "N/A",
+    price: 8.64,
+    originalPrice: 8.64,
+    image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8722/8722-Feature.png",
+    description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Self hem decorative top stitch finish. 30\" x 40\". Vinyl zippered bag with mink touch card in pocket included. Machine wash & dry. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Pure White",
+            hex: "#FFFFFF",
+            sku: "8722-67",
+            gtin: "00671867630879",
+            pms: "White C",
+            image: "assets/assets/images/products/blankets/IW8722/8722-Pure White.jpg"
+        },
+        {
+            name: "Baby Pink",
+            hex: "#F4C2C2",
+            sku: "8722-71",
+            gtin: "00671867630862",
+            pms: "705C",
+            image: "assets/assets/images/products/blankets/IW8722/8722-Baby Pink.jpg"
+        },
+        {
+            name: "Baby Blue",
+            hex: "#A7C7E7",
+            sku: "8722-75",
+            gtin: "00671867630855",
+            pms: "649C",
+            image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8722/8722-Pure White.jpg",
+        "assets/assets/images/products/blankets/IW8722/8722-Baby Pink.jpg",
+        "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8722",
+        gtin: "00671867630879",
+        gusset: "N/A",
+        weight: "300 g/sqm",
+        material: "100% Polyester Faux Mink",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "40 pcs",
+                boxWeight: "31 lbs",
+                boxDims: '21" x 20" x 17"',
+                cartonVolume: "4.13 cu ft",
+                pieceWeight: "0.65 lbs",
+                note: "Individual zippered vinyl bag. 40 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$8.64"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8723",
+    name: "Mink Touch Luxury Robe",
+    code: "ABW8723",
+    slug: "mink-touch-luxury-robe",
+    category: "Blankets",
+    material: "100% Polyester Faux Mink",
+    size: '60" x 72"',
+    imprint: "N/A",
+    price: 33.68,
+    originalPrice: 33.68,
+    image: "assets/assets/images/products/blankets/IW8723/8723-White.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8723/8723-Feature.png",
+    description: "100% Polyester Faux Mink. Weight: 270 g/sqm. 48\" length. Full length shawl collar, belt loops, collar loop, 2 front pockets and matching belt. One Size Fits All. Vinyl zippered bag with mink touch card in pocket included. Machine wash & dry. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "White",
+            hex: "#FFFFFF",
+            sku: "8723-67",
+            gtin: "00671867630909",
+            pms: "White C",
+            image: "assets/assets/images/products/blankets/IW8723/8723-White.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8723/8723-White.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8723",
+        gtin: "00671867630909",
+        gusset: "N/A",
+        weight: "270 g/sqm",
+        material: "100% Polyester Faux Mink",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "N/A",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "10 pcs",
+                boxWeight: "21 lbs",
+                boxDims: '24" x 15" x 17"',
+                cartonVolume: "3.54 cu ft",
+                pieceWeight: "2.00 lbs",
+                note: "Individual zippered vinyl bag. 10 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$33.68"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8726",
+    name: "Oversized Micro Mink Sherpa Blanket",
+    code: "ABW8726",
+    slug: "oversized-micro-mink-sherpa-blanket",
+    category: "Blankets",
+    material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
+    size: '60" x 72"',
+    imprint: "N/A",
+    price: 33.68,
+    originalPrice: 33.68,
+    image: "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8726/8726-Feature.png",
+    description: "Cozy fleece face that reverses to soft luxurious sherpa. 220 g/sqm. 100% polyester, one side faux micro mink, other side faux lambswool sherpa. Fully hemmed. Hidden zip pocket for easy embroidery access. 60\" x 72\". Machine wash & dry. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Grey",
+            hex: "#A9A9A9",
+            sku: "8726-78",
+            gtin: "00671867632804",
+            pms: "421C",
+            image: "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8726",
+        gtin: "00671867632804",
+        gusset: "N/A",
+        weight: "220 g/sqm",
+        material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "N/A",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "8 pcs",
+                boxWeight: "25 lbs",
+                boxDims: '29" x 17" x 15"',
+                cartonVolume: "4.28 cu ft",
+                pieceWeight: "3.13 lbs",
+                note: "Individual zippered vinyl bag. 8 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$33.68"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8727",
+    name: "Oversized Mink Touch Blanket",
+    code: "ABW8727",
+    slug: "oversized-mink-touch-blanket",
+    category: "Blankets",
+    material: "100% Polyester Faux Mink",
+    size: '60" x 72"',
+    imprint: "N/A",
+    price: 23.68,
+    originalPrice: 23.68,
+    image: "assets/assets/images/products/blankets/IW8727/8727-Black.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8727/8727-Feature.png",
+    description: "Size: 60\" x 72\". Weight: 300 g/sm. Content: 100% Polyester Faux Mink. Trim: Finish self hem decorative top stitch finish. Machine wash & dry. Packaging: 10/carton, Vinyl zippered bag with mink touch card in pocket included. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Navy",
+            hex: "#1B1F3B",
+            sku: "8727-73",
+            gtin: "00671867634082",
+            pms: "295C",
+            image: "assets/assets/images/products/blankets/IW8727/8727-Navy.jpg"
+        },
+        {
+            name: "Black",
+            hex: "#000000",
+            sku: "8727-77",
+            gtin: "00671867634051",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8727/8727-Black.jpg"
+        },
+        {
+            name: "Grey",
+            hex: "#A9A9A9",
+            sku: "8727-78",
+            gtin: "00671867634075",
+            pms: "Cool Gray 7C",
+            image: "assets/assets/images/products/blankets/IW8727/8727-Grey.jpg"
+        },
+        {
+            name: "Cream",
+            hex: "#F5F0DC",
+            sku: "8727-87",
+            gtin: "00671867634068",
+            pms: "11-4300 TPX",
+            image: "assets/assets/images/products/blankets/IW8727/8727-Cream.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8727/8727-Navy.jpg",
+        "assets/assets/images/products/blankets/IW8727/8727-Black.jpg",
+        "assets/assets/images/products/blankets/IW8727/8727-Grey.jpg",
+        "assets/assets/images/products/blankets/IW8727/8727-Cream.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8727",
+        gtin: "00671867634082",
+        gusset: "N/A",
+        weight: "300 g/sm",
+        material: "100% Polyester Faux Mink",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "10 pcs",
+                boxWeight: "27 lbs",
+                boxDims: '29" x 16" x 14"',
+                cartonVolume: "3.76 cu ft",
+                pieceWeight: "2.25 lbs",
+                note: "Individual zippered vinyl bag. 10 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$23.68"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8729",
+    name: "Frosted Sherpa Blanket",
+    code: "ABW8729",
+    slug: "frosted-sherpa-blanket",
+    category: "Blankets",
+    material: "100% Polyester Soft Printed",
+    size: '50" x 60"',
+    imprint: "N/A",
+    price: 21.58,
+    originalPrice: 21.58,
+    image: "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8729/8729-Feature.png",
+    description: "Frosted fleece sherpa with luxurious feel. 100% polyester soft printed blanket. Folded hem. 50\" x 60\". Machine wash & dry. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Grey",
+            hex: "#A9A9A9",
+            sku: "8729-78",
+            gtin: "00671867642100",
+            pms: "5315C",
+            image: "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8729",
+        gtin: "00671867642100",
+        gusset: "N/A",
+        weight: "N/A",
+        material: "100% Polyester Soft Printed",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "N/A",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "14 pcs",
+                boxWeight: "19 lbs",
+                boxDims: '26" x 15" x 20"',
+                cartonVolume: "4.51 cu ft",
+                pieceWeight: "1.39 lbs",
+                note: "Individual zippered vinyl bag. 14 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$21.58"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8730",
+    name: "Faux Fur Sherpa Blanket",
+    code: "ABW8730",
+    slug: "faux-fur-sherpa-blanket",
+    category: "Blankets",
+    material: "100% Polyester (Faux Chinchilla / Faux Lambswool Sherpa)",
+    size: '50" x 60"',
+    imprint: "N/A",
+    price: 26.32,
+    originalPrice: 26.32,
+    image: "assets/assets/images/products/blankets/IW8730/8730-Grey.jpg",
+    featureImage: "assets/assets/images/products/blankets/IW8730/8730-Feature.png",
+    description: "Snug faux chinchilla fur front that reverses to faux sherpa back. 100% polyester, one side faux chinchilla, other side faux lambswool sherpa. Concealed zipper hem in corner. 50\" x 60\". Machine wash & dry. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Grey",
+            hex: "#A9A9A9",
+            sku: "8730-78",
+            gtin: "00671867642117",
+            pms: "Cool Gray 5C",
+            image: "assets/assets/images/products/blankets/IW8730/8730-Grey.jpg"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8730/8730-Grey.jpg"
+    ],
+
+    specs: {
+        itemNo: "ABW8730",
+        gtin: "00671867642117",
+        gusset: "N/A",
+        weight: "N/A",
+        material: "100% Polyester (Faux Chinchilla / Faux Lambswool Sherpa)",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "N/A",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "10 pcs",
+                boxWeight: "28 lbs",
+                boxDims: '26.75" x 15" x 15.5"',
+                cartonVolume: "3.6 cu ft",
+                pieceWeight: "2.80 lbs",
+                note: "Individual zippered vinyl bag. 10 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$26.32"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+}
+];
 
 // ============================================================
 // PRODUCT TEMPLATES - AUTO GENERATE (Sab products ke liye)
@@ -6238,141 +7680,85 @@ function openImagesModal(product) {
     const modal = document.getElementById('imagesModal');
     if (!modal) return;
 
-    // ============================================================
-    // SET PRODUCT INFO
-    // ============================================================
     const productImage = document.getElementById('imagesProductImage');
     const productName = document.getElementById('imagesProductNameText');
     const productCode = document.getElementById('imagesProductCodeText');
 
-    if (productImage) {
-        productImage.src = product.image || '';
-    }
+    if (productImage) productImage.src = product.image || '';
+    if (productName) productName.textContent = product.name || '';
 
-    if (productName) {
-        productName.textContent = product.name || '';
-    }
-
+    // ✅ Inkwell Item No. show karo (SKU nahi)
     if (productCode) {
-        productCode.textContent =
-            `${product.code || ''} | ${product.size || ''}`;
+        productCode.textContent = `${product.code} | ${product.size || ''}`;
     }
 
-    // ============================================================
-    // IMAGE TABLE
-    // ============================================================
     const tbody = document.getElementById('imagesTableBody');
-
     if (!tbody) return;
-
     tbody.innerHTML = '';
 
-    // ============================================================
-    // GET IMAGES ONLY FROM COLORS ARRAY
-    // ============================================================
     let images = [];
-
     if (Array.isArray(product.colors)) {
-        images = product.colors
-            .map(color => color.image)
-            .filter(Boolean);
+        images = product.colors.map(color => color.image).filter(Boolean);
     }
-
-    // Remove duplicate images
     images = [...new Set(images)];
 
-    // ============================================================
-    // GENERATE IMAGE ROWS
-    // ============================================================
     images.forEach((img, index) => {
+        // ✅ File name mein Inkwell code use karo
+        const originalFileName = img.split('/').pop();
+        const extension = originalFileName.split('.').pop();
 
-        const fileName = img.split('/').pop();
-
-        const displayName = fileName
-            .replace(/\.[^/.]+$/, '')
-            .replace(/_/g, ' ')
-            .replace(/-/g, ' ');
+        // ✅ Naya filename Inkwell code ke saath
+        const colorName = product.colors?.[index]?.name || `Image${index + 1}`;
+        const inkwellFileName = `${product.code}-${colorName.replace(/\s+/g, '-')}.${extension}`;
 
         const tr = document.createElement('tr');
-
-        tr.className =
-            'border-b border-brand-border hover:bg-brand-bg/20 transition-colors';
+        tr.className = 'border-b border-brand-border hover:bg-brand-bg/20 transition-colors';
 
         tr.innerHTML = `
             <td class="p-2 sm:p-3">
                 <div class="flex items-center gap-3">
-
-                    <img
-                        src="${img}"
-                        alt="${displayName}"
-                        class="w-16 h-16 object-cover rounded border border-brand-border cursor-pointer hover:opacity-80 transition-opacity"
-                        onclick="window.open('${img}', '_blank')"
-                    />
-
+                    <img src="${img}" alt="${inkwellFileName}" 
+                         class="w-16 h-16 object-cover rounded border border-brand-border cursor-pointer hover:opacity-80 transition-opacity"
+                         onclick="window.open('${img}', '_blank')" />
                     <div class="flex flex-col">
-                        <span class="text-brand-text font-medium">
-                            ${displayName}
-                        </span>
-
-                        <span class="text-xs text-gray-500">
-                            Image ${index + 1} of ${images.length}
-                        </span>
+                        <span class="text-brand-text font-medium">${product.code} - ${colorName}</span>
+                        <span class="text-xs text-gray-500">Image ${index + 1} of ${images.length}</span>
                     </div>
-
                 </div>
             </td>
-
             <td class="p-2 sm:p-3 text-center">
-                <a
-                    href="${img}"
-                    download="${fileName}"
-                    class="text-brand-crimson hover:underline text-sm flex items-center justify-center gap-1 download-image-btn"
-                    data-image="${img}"
-                    data-filename="${fileName}"
-                >
-                    <i class="fa-regular fa-circle-down"></i>
-                    Download
+                <a href="${img}" download="${inkwellFileName}"
+                   class="text-brand-crimson hover:underline text-sm flex items-center justify-center gap-1 download-image-btn"
+                   data-image="${img}"
+                   data-filename="${inkwellFileName}">
+                    <i class="fa-regular fa-circle-down"></i> Download
                 </a>
             </td>
         `;
-
         tbody.appendChild(tr);
     });
 
-    // ============================================================
-    // DOWNLOAD EVENTS
-    // ============================================================
     document.querySelectorAll('.download-image-btn').forEach(btn => {
-
         btn.addEventListener('click', function (e) {
-
             e.preventDefault();
-
             const imageUrl = this.dataset.image;
             const fileName = this.dataset.filename;
-
             if (!imageUrl) return;
-
             const link = document.createElement('a');
-
             link.href = imageUrl;
             link.download = fileName || 'image.webp';
-
             document.body.appendChild(link);
-
             link.click();
-
             document.body.removeChild(link);
         });
     });
 
-    // ============================================================
-    // SHOW MODAL
-    // ============================================================
     modal.classList.add('active');
-
     document.body.style.overflow = 'hidden';
 }
+
+
+
 
 
 // ============================================================
@@ -6712,7 +8098,7 @@ function initQuotationModal() {
             formData.append("phone", document.getElementById("quotationPhone").value);
             // ====== NEW FIELDS ======
             formData.append("asi_ppai_sage", document.getElementById("quotationAsi").value);
-             formData.append("item", document.getElementById("quotationItem").value);
+            formData.append("item", document.getElementById("quotationItem").value);
 
             // ====== END NEW FIELDS ======
             formData.append("in_hand_date", document.getElementById("quotationDate").value);
@@ -7195,6 +8581,9 @@ function initFreightModal() {
                         thumbnails[0].classList.remove('border-brand-border');
                     }
                 }
+                if (product.category === "Blankets") {
+                    renderSpecsTable(color);
+                }
             });
             colorGrid.appendChild(div);
         });
@@ -7210,15 +8599,14 @@ function initFreightModal() {
         const isBlank = method === 'blank' || !data.quantities;
         const thead = document.getElementById('pricing-thead');
 
-        // HEADER RENDER - Sirf 6 columns (extra columns nahi)
+        // HEADER RENDER
         if (thead) {
             thead.style.display = isBlank ? 'none' : '';
             if (!isBlank) {
                 const quantities = data.quantities || [];
                 let html = `<tr style="color: #C81F45 !important; text-transform: uppercase; letter-spacing: 0.05em;">
-                <th style="color: #C81F45 !important; text-align: left;">Quantity</th>`;
+            <th style="color: #C81F45 !important; text-align: left;">Quantity</th>`;
 
-                // Sirf pehle 6 columns
                 for (let i = 0; i < 6 && i < quantities.length; i++) {
                     html += `<th id="p-qty-${i + 1}" style="color: #C81F45 !important;">${quantities[i]}</th>`;
                 }
@@ -7231,17 +8619,44 @@ function initFreightModal() {
         // BODY RENDER
         pricingBody.innerHTML = '';
 
-        // Pehli 2 rows (NATURAL, COLOR) - hamesha dikhengi
-        // Baaki rows (ADD LOCATION, ADD COLOR) - hidden initially
+        // ✅ BLANK KE LIYE SPECIAL HANDLING - Sirf ek "PRICING" row
+        if (isBlank) {
+            // Sab colors ki prices collect karo (agar different hain)
+            const allPrices = [];
+            data.rows.forEach(row => {
+                if (row.prices && row.prices.length > 0) {
+                    allPrices.push(...row.prices);
+                }
+            });
+
+            // Unique prices nikaalo
+            const uniquePrices = [...new Set(allPrices)];
+
+            // Agar sab prices same hain toh sirf ek row
+            const tr = document.createElement('tr');
+            let html = `<td class="font-medium text-brand-textSecondary">PRICING</td>`;
+
+            if (uniquePrices.length === 1) {
+                // Sab colors ki same price
+                html += `<td class="text-brand-text">${uniquePrices[0]}</td>`;
+            } else {
+                // Different prices - comma separated ya pehli price
+                html += `<td class="text-brand-text">${uniquePrices.join(' / ')}</td>`;
+            }
+            html += `<td class="text-brand-textSecondary">R</td>`;
+            tr.innerHTML = html;
+            pricingBody.appendChild(tr);
+
+            return; // ⬅️ IMPORTANT: Yahan return kar do
+        }
+
+        // Spot/Transfer ke liye normal rendering
         data.rows.forEach((row, index) => {
             const tr = document.createElement('tr');
-
-            // Agar yeh 3rd ya 4th row hai (ADD LOCATION, ADD COLOR)
             const isExtraRow = index >= 2;
 
             let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
 
-            // Sirf 6 prices (extra columns nahi)
             for (let i = 0; i < 6 && i < row.prices.length; i++) {
                 html += `<td class="text-brand-text">${row.prices[i]}</td>`;
             }
@@ -7253,7 +8668,6 @@ function initFreightModal() {
             }
             tr.innerHTML = html;
 
-            // Extra rows ko hide karein
             if (isExtraRow) {
                 tr.className = 'pricing-extra-row';
             }
@@ -7261,35 +8675,127 @@ function initFreightModal() {
             pricingBody.appendChild(tr);
         });
     }
-    function renderSpecsTable() {
+    function renderSpecsTable(selectedColor) {
         const s = product.specs || {
             itemNo: product.code,
-            gusset: "Bottom: Yes Side: No",
-            weight: "12oz",
-            material: "100% Cotton Canvas",
-            handle: "24\"",
+            gusset: "N/A",
+            weight: "N/A",
+            material: "N/A",
+            handle: "N/A",
             origin: "USA"
         };
 
         const originValue = s.origin || s.decoratedIn || "USA";
 
-        // ✅ Agar handle "-" ya "N/A" hai toh row mat dikhao
+        // ✅ Handle row condition
         const showHandle = s.handle && s.handle !== "-" && s.handle !== "N/A";
         const handleRow = showHandle ? `
-        <div class="flex border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">HANDLE SIZE</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.handle}</div></div>
+        <div class="flex border-r border-brand-border">
+            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">HANDLE SIZE</div>
+            <div class="w-1/2 p-3 font-medium text-brand-text">${s.handle}</div>
+        </div>
     ` : '';
 
+        // ✅ Gusset row condition
+        const showGusset = !product.hideGusset;
+        const gussetRow = showGusset ? `
+        <div class="flex border-b border-brand-border">
+            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div>
+            <div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div>
+        </div>
+    ` : '';
+
+        // ============================================================
+        // ✅ SKU / GTIN / PMS ROWS — Sirf Blankets (ABW) ke liye
+        // ============================================================
+        let colorInfoRows = '';
+        if (product.category === "Blankets" && selectedColor) {
+            const skuVal = selectedColor.sku || 'N/A';
+            const gtinVal = selectedColor.gtin || 'N/A';
+            const pmsVal = selectedColor.pms || 'N/A';
+
+            colorInfoRows = `
+            <div class="flex border-b border-r border-brand-border">
+                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COLOR</div>
+                <div class="w-1/2 p-3 font-medium text-brand-text">${selectedColor.name}</div>
+            </div>
+            <div class="flex border-b border-r border-brand-border">
+                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">SKU</div>
+                <div class="w-1/2 p-3 font-medium text-brand-text">${skuVal}</div>
+            </div>
+            <div class="flex border-b border-r border-brand-border">
+                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GTIN</div>
+                <div class="w-1/2 p-3 font-medium text-brand-text">${gtinVal}</div>
+            </div>
+            <div class="flex border-b border-r border-brand-border">
+                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">PMS COLOR</div>
+                <div class="w-1/2 p-3 font-medium text-brand-text">${pmsVal}</div>
+            </div>
+        `;
+        }
+
         specsTable.innerHTML = `
-        <div class="flex border-b border-r border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">ITEM NO</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.itemNo}</div></div>
-        <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div></div>
+        <div class="flex border-b border-r border-brand-border">
+            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">ITEM NO</div>
+            <div class="w-1/2 p-3 font-medium text-brand-text">${s.itemNo}</div>
+        </div>
+
+        ${colorInfoRows}
+
+        ${gussetRow}
+
         <div class="flex border-b border-r border-brand-border">
             <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY WEIGHT</div>
             <div class="w-1/2 p-3 font-medium text-brand-text">${s.weight ?? '-'}</div>
         </div>
-        <div class="flex border-b border-brand-border"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY MATERIAL</div><div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div></div>
+        <div class="flex border-b border-brand-border">
+            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY MATERIAL</div>
+            <div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div>
+        </div>
         ${handleRow}
-        <div class="flex"><div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div><div class="w-1/2 p-3 font-medium text-brand-text">${originValue}</div></div>
+        <div class="flex">
+            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div>
+            <div class="w-1/2 p-3 font-medium text-brand-text">${originValue}</div>
+        </div>
     `;
+    }
+
+    // ============================================================
+
+
+
+    // ✅ YAHAN PASTE KARO - renderAdditionalInfo() ko
+    function renderAdditionalInfo() {
+        const container = document.getElementById('spec-picture-container');
+        if (!container) return;
+
+        if (!product.showSpecPicture) {
+            container.innerHTML = '<p class="text-brand-textSecondary text-center py-4">No additional info available.</p>';
+            return;
+        }
+
+        // ✅ Feature image use karo
+        const featureImg = product.featureImage || product.image;
+
+        container.innerHTML = `
+        <div class="w-full flex justify-center">
+            <img 
+                src="${featureImg}" 
+                alt="${product.name} Spec" 
+                class="w-full max-w-4xl h-auto object-contain rounded-lg shadow-lg border border-brand-border bg-white p-2 cursor-zoom-in hover:shadow-xl transition-shadow"
+                id="spec-picture-image"
+                title="Click to view full size"
+            />
+        </div>
+    `;
+
+        // ✅ Click event lagao image pe
+        const specImg = document.getElementById('spec-picture-image');
+        if (specImg) {
+            specImg.addEventListener('click', function () {
+                openSpecImageModal(this.src, this.alt);
+            });
+        }
     }
 
     function renderMainInfo() {
@@ -7335,31 +8841,23 @@ function initFreightModal() {
             let html = `<div class="space-y-4 text-sm text-brand-textSecondary">`;
             s.packagingOptions.forEach(option => {
                 html += `
-                        <div class="border border-brand-border rounded-lg p-3">
-                            <p class="font-semibold text-brand-text">${option.type}</p>
-                            ${option.qtyPerBox ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
-                            ${option.boxWeight ? `<p><strong>Box Weight:</strong> ${option.boxWeight}</p>` : ''}
-                            ${option.boxDims ? `<p><strong>Box Dims:</strong> ${option.boxDims}</p>` : ''}
-                        </div>
-                    `;
+                <div class="border border-brand-border rounded-lg p-3">
+                    <p class="font-semibold text-brand-text">${option.type}</p>
+                    ${option.qtyPerBox ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
+                    ${option.boxWeight ? `<p><strong>Box Weight:</strong> ${option.boxWeight}</p>` : ''}
+                    ${option.boxDims ? `<p><strong>Box Dims:</strong> ${option.boxDims}</p>` : ''}
+                    ${option.cartonVolume ? `<p><strong>Carton Volume:</strong> ${option.cartonVolume}</p>` : ''}
+                    ${option.pieceWeight ? `<p><strong>Piece Weight:</strong> ${option.pieceWeight}</p>` : ''}
+                    ${option.note ? `<p class="text-xs italic mt-2">${option.note}</p>` : ''}
+                </div>
+            `;
             });
             html += `</div>`;
             packagingTab.innerHTML = html;
             return;
         }
 
-        if (s.boxQuantity || s.boxWeight || s.boxDims || s.origin) {
-            packagingTab.innerHTML = `
-                    <div class="space-y-2 text-sm text-brand-textSecondary">
-                        ${s.boxQuantity ? `<p><strong>Quantity Per Box:</strong> ${s.boxQuantity}</p>` : ''}
-                        ${s.boxWeight ? `<p><strong>Box Weight:</strong> ${s.boxWeight}</p>` : ''}
-                        ${s.boxDims ? `<p><strong>Box Dims:</strong> ${s.boxDims}</p>` : ''}
-                        ${s.origin ? `<p><strong>Country of Origin:</strong> ${s.origin}</p>` : ''}
-                    </div>
-                `;
-        } else {
-            packagingTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No packaging information available for this product.</p>`;
-        }
+        // ... baaki code same
     }
 
     function initTabs() {
@@ -7368,6 +8866,7 @@ function initFreightModal() {
             description: document.getElementById('tab-description'),
             charges: document.getElementById('tab-charges'),
             packaging: document.getElementById('tab-packaging'),
+            'additional-info': document.getElementById('tab-additional-info'),  // ✅ ADD
         };
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
@@ -7381,7 +8880,7 @@ function initFreightModal() {
                 tab.classList.remove('border-transparent');
                 const tabName = tab.dataset.tab;
                 Object.keys(contents).forEach(key => {
-                    contents[key].classList.add('hidden');
+                    if (contents[key]) contents[key].classList.add('hidden');
                 });
                 if (contents[tabName]) {
                     contents[tabName].classList.remove('hidden');
@@ -7420,32 +8919,19 @@ function initFreightModal() {
         const viewMoreBtn = document.getElementById('viewMorePricingBtn');
         const pricing = product.pricing || {};
 
-        // ✅ Dynamic tabs generate karo - SIRF WOHI JO EXIST KARTE HAIN
+        // ✅ Dynamic tabs generate karo
         const tabDefinitions = [];
 
         if (pricing.spot) {
-            tabDefinitions.push({
-                method: 'spot',
-                label: 'SPOT PRINTING'
-            });
+            tabDefinitions.push({ method: 'spot', label: 'SPOT PRINTING' });
         }
-
-        // ✅ SIRF TABHI TRANSFER TAB JAB pricing.transfer EXIST KARE
         if (pricing.transfer) {
-            tabDefinitions.push({
-                method: 'transfer',
-                label: 'HEAT TRANSFER'
-            });
+            tabDefinitions.push({ method: 'transfer', label: 'HEAT TRANSFER' });
         }
-
         if (pricing.blank) {
-            tabDefinitions.push({
-                method: 'blank',
-                label: 'BLANK'
-            });
+            tabDefinitions.push({ method: 'blank', label: 'BLANK' });
         }
 
-        // Agar koi tab nahi hai toh return
         if (tabDefinitions.length === 0) {
             container.innerHTML = '<p class="text-center text-brand-textSecondary py-4">No pricing available</p>';
             return;
@@ -7455,55 +8941,55 @@ function initFreightModal() {
         container.innerHTML = tabDefinitions.map((tab, index) => {
             const isActive = index === 0 ? 'active' : '';
             return `
-            <button class="border ${isActive ? 'border-brand-crimson bg-brand-crimson/10 text-brand-crimson' : 'border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text'} 
-                    transition-colors py-2.5 text-xs font-semibold rounded tracking-wider flex-1" 
-                    data-method="${tab.method}">
-                ${tab.label}
-            </button>
-        `;
+        <button class="border ${isActive ? 'border-brand-crimson bg-brand-crimson/10 text-brand-crimson' : 'border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text'} 
+                transition-colors py-2.5 text-xs font-semibold rounded tracking-wider flex-1" 
+                data-method="${tab.method}">
+            ${tab.label}
+        </button>
+    `;
         }).join('');
 
-        // Method info object
+        // ✅ DYNAMIC methodInfo - product ke pricing data se
         const methodInfo = {
             spot: {
-                leadTime: '5-7 Business Days',
+                leadTime: pricing.spot?.leadTime || '5-7 Business Days',
                 leadLabel: 'Production Time',
-                setupCharge: '$56.25 (V)',
-                repeatSetup: '$25.00 (V)',
+                setupCharge: pricing.spot?.setupCharge || '$56.25 (V)',
+                repeatSetup: pricing.spot?.repeatSetup || '$25.00 (V)',
                 showRepeatSetup: true,
                 showSetupCharge: true,
-                priceIncludes: '1 Color, 1 Location',
+                priceIncludes: pricing.spot?.priceIncludes || '1 Color, 1 Location',
                 showViewMore: true
             },
             transfer: {
-                leadTime: '7-10 Business Days',
+                leadTime: pricing.transfer?.leadTime || '7-10 Business Days',
                 leadLabel: 'Production Time',
-                setupCharge: 'Free',
-                repeatSetup: 'Free',
+                setupCharge: pricing.transfer?.setupCharge || 'Free',
+                repeatSetup: pricing.transfer?.repeatSetup || 'Free',
                 showRepeatSetup: false,
                 showSetupCharge: true,
-                priceIncludes: 'Heat Transfer, 1 Location',
+                priceIncludes: pricing.transfer?.priceIncludes || 'Heat Transfer, 1 Location',
                 showViewMore: false
             },
             blank: {
-                leadTime: 'Within 1-2 Business Days',
+                // ✅ Product ke pricing.blank.leadTime se uthao
+                leadTime: pricing.blank?.leadTime || 'Within 1-2 Business Days',
                 leadLabel: 'Lead Time',
-                setupCharge: 'No Setup Fee',
-                repeatSetup: 'No Setup Fee',
+                setupCharge: pricing.blank?.setupCharge || 'No Setup Fee',
+                repeatSetup: pricing.blank?.repeatSetup || 'No Setup Fee',
                 showRepeatSetup: false,
                 showSetupCharge: false,
-                priceIncludes: 'Blank Product Only',
+                priceIncludes: pricing.blank?.priceIncludes || 'Blank Product Only',
                 showViewMore: false
             }
         };
 
-        // Click handlers attach karo
+        // Baaki code same rahega...
         container.querySelectorAll('button').forEach(tab => {
             tab.addEventListener('click', function () {
                 const method = this.dataset.method;
                 currentMethod = method;
 
-                // Tab style update
                 container.querySelectorAll('button').forEach(t => {
                     t.className = 'border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2.5 text-xs font-semibold rounded tracking-wider flex-1';
                 });
@@ -7545,7 +9031,6 @@ function initFreightModal() {
             });
         });
 
-        // Pehla tab active karo (agar exist karta hai)
         const firstTab = container.querySelector('button');
         if (firstTab) {
             firstTab.click();
@@ -7576,6 +9061,72 @@ function initFreightModal() {
         }
     }
 
+    // ============================================================
+    // SPEC IMAGE LIGHTBOX MODAL FUNCTIONS
+    // ============================================================
+    function openSpecImageModal(imageSrc, imageAlt) {
+        const modal = document.getElementById('specImageModal');
+        const modalImg = document.getElementById('specImageModalImg');
+
+        if (!modal || !modalImg) return;
+
+        modalImg.src = imageSrc;
+        modalImg.alt = imageAlt || 'Spec Sheet';
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSpecImageModal() {
+        const modal = document.getElementById('specImageModal');
+        if (!modal) return;
+
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+
+        // Image clear karo (optional - memory ke liye)
+        setTimeout(() => {
+            const modalImg = document.getElementById('specImageModalImg');
+            if (modalImg) modalImg.src = '';
+        }, 300);
+    }
+
+    // ============================================================
+    // INIT SPEC IMAGE MODAL EVENTS
+    // ============================================================
+    function initSpecImageModal() {
+        const modal = document.getElementById('specImageModal');
+        const closeBtn = document.getElementById('closeSpecImageModal');
+
+        if (!modal) return;
+
+        // ✅ Close button - stopPropagation ke saath
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();   // ✅ IMPORTANT
+                closeSpecImageModal();
+            });
+        }
+
+        // Background click pe close (sirf modal ke bahar click pe)
+        modal.addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeSpecImageModal();
+            }
+        });
+
+        // ESC key pe close
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                const modalEl = document.getElementById('specImageModal');
+                if (modalEl && modalEl.classList.contains('active')) {
+                    closeSpecImageModal();
+                }
+            }
+        });
+    }
+
     function init() {
         currentQuotationProduct = product;
         currentMockupProduct = product;
@@ -7583,8 +9134,13 @@ function initFreightModal() {
 
         renderMainInfo();
         renderThumbnails();
+
+        renderAdditionalInfo();
         renderColors();
-        renderSpecsTable();
+
+        // ✅ Default selected color = colors[0]
+        const defaultColor = (product.colors && product.colors.length > 0) ? product.colors[0] : null;
+        renderSpecsTable(defaultColor);
         renderAdditionalCharges();
         renderPackagingInfo();
         renderPricing('spot');
@@ -7601,8 +9157,66 @@ function initFreightModal() {
         initMockupModal();
         initFreightModal();
         initTemplatesModal();
+        initSpecImageModal();
 
-        // ✅ PRODUCT PASS KARO
+        // ============================================================
+        // ✅ HIDE ELEMENTS BASED ON PRODUCT FLAGS
+        // ============================================================
+
+        // Mockup button
+        if (product.hideMockup) {
+            const mockupBtn = document.getElementById('requestMockupBtn');
+            if (mockupBtn) mockupBtn.style.display = 'none';
+        }
+
+        // Templates button
+        if (product.hideTemplates) {
+            const templatesBtn = document.getElementById('templatesBtn');
+            if (templatesBtn) templatesBtn.style.display = 'none';
+        }
+
+        // Row 2 adjust
+        if (product.hideTemplates && product.hideMockup) {
+            const row2 = document.getElementById('action-buttons-row2');
+            if (row2) {
+                row2.classList.remove('grid-cols-1', 'sm:grid-cols-2');
+                row2.classList.add('grid-cols-1');
+            }
+        }
+
+        // Additional Charges tab
+        if (product.hideCharges) {
+            const chargesTab = document.querySelector('#info-tabs .tab-btn[data-tab="charges"]');
+            if (chargesTab) chargesTab.style.display = 'none';
+        }
+
+        // ============================================================
+        // ✅ BLANKETS - SIRF HIDE KARO (Alignment waisi hi rahegi)
+        // ============================================================
+        if (product.hideImprint) {
+
+            // 1. Setup Charge hide
+            const setupContainer = document.getElementById('setup-charge-container');
+            if (setupContainer) setupContainer.style.display = 'none';
+
+            // 2. Repeat Setup hide
+            const repeatContainer = document.getElementById('repeat-setup-container');
+            if (repeatContainer) repeatContainer.style.display = 'none';
+
+            // 3. Imprint Area hide
+            const imprintSpecs = document.getElementById('product-imprint');
+            if (imprintSpecs) {
+                const imprintParent = imprintSpecs.closest('.flex.items-center');
+                if (imprintParent) imprintParent.style.display = 'none';
+            }
+        }
+
+        // Additional Info tab - sirf blankets ke liye
+        if (!product.showAdditionalInfoTab) {
+            const addInfoTab = document.querySelector('#info-tabs .tab-btn[data-tab="additional-info"]');
+            if (addInfoTab) addInfoTab.style.display = 'none';
+        }
+
         checkAndOpenModal(product);
     }
 

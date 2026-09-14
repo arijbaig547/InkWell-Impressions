@@ -427,6 +427,213 @@
             accent-color: #C81F45;
             cursor: pointer;
         }
+        /* ============================================================
+   BLANKETS PAGE - CENTER ALIGNMENT (only for blanket-page)
+   ============================================================ */
+
+/* 1. Item Size box center */
+body.blanket-page #product-size,
+body.blanket-page #product-size * {
+    text-align: center !important;
+}
+
+body.blanket-page .grid.grid-cols-2.gap-3.sm\:gap-10 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
+
+body.blanket-page .grid.grid-cols-2.gap-3.sm\:gap-10 > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+}
+
+/* 2. BLANK tab heading + pricing table center */
+body.blanket-page #pricing-section > .text-brand-textSecondary {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+body.blanket-page #pricing-body tr {
+    text-align: center !important;
+}
+
+body.blanket-page #pricing-body td {
+    text-align: center !important;
+}
+
+/* 3. Price Includes / Lead Time cards center */
+body.blanket-page .flex.justify-center.mb-4.sm\:mb-6 > div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+body.blanket-page .bg-brand-surface.border.border-brand-border.rounded-lg.p-3.sm\:p-6 .grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    text-align: center !important;
+}
+
+body.blanket-page .bg-brand-surface.border.border-brand-border.rounded-lg.p-3.sm\:p-6 .grid > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    flex: 0 0 auto !important;
+    min-width: 120px !important;
+}
+
+body.blanket-page .bg-brand-surface.border.border-brand-border.rounded-lg.p-3.sm\:p-6 .grid > div > div {
+    text-align: center !important;
+}
+
+/* 4. Action buttons center */
+body.blanket-page > main .flex.flex-col.sm\:flex-row.gap-2.sm\:gap-4 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.75rem !important;
+}
+
+body.blanket-page > main .flex.flex-col.sm\:flex-row.gap-2.sm\:gap-4 > button {
+    flex: 0 1 auto !important;
+    min-width: 180px !important;
+    max-width: 280px !important;
+}
+
+body.blanket-page .mt-2.sm\:mt-4.grid.grid-cols-1.sm\:grid-cols-2 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.75rem !important;
+}
+
+body.blanket-page .mt-2.sm\:mt-4.grid.grid-cols-1.sm\:grid-cols-2 > button {
+    flex: 0 1 auto !important;
+    min-width: 200px !important;
+}
+
+/* 5. Specifications box (item size) - full width center */
+body.blanket-page .grid.grid-cols-2.gap-3.sm\:gap-10.bg-brand-surface {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+/* ============================================================ */
+/* SPEC IMAGE LIGHTBOX MODAL */
+/* ============================================================ */
+.spec-image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.spec-image-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.spec-image-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    overflow: visible;           /* ✅ CHANGE: auto se visible karo */
+    z-index: 1;
+}
+
+.spec-image-modal.active .spec-image-modal-content {
+    transform: scale(1);
+}
+
+.spec-image-modal-content img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(90vh - 60px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.spec-image-modal-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 36px;
+    height: 36px;
+    background: #C81F45;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    z-index: 99999;              /* ✅ HIGH z-index */
+    pointer-events: auto;        /* ✅ CLICKABLE */
+}
+
+.spec-image-modal-close:hover {
+    background: #a01838;
+    transform: scale(1.1);
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+    .spec-image-modal-content {
+        padding: 8px;
+        border-radius: 8px;
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+
+    .spec-image-modal-close {
+        top: -10px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .spec-image-modal-content img {
+        max-height: calc(95vh - 40px);
+    }
+}
 
         /* ============================================================
    RESPONSIVE STYLES

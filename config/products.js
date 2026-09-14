@@ -714,71 +714,203 @@ const products = [{
   image: "assets/assets/images/products/non-woven/W975/W975_main.webp",
   description: "Economical non-woven tote.",
   popular: true
-  // }, {
-  //   id: "ib100",
-  //   name: "Premium Canvas Tote",
-  //   code: "IB100",
-  //   slug: "premium-canvas-tote",
-  //   category: "Tote Bags",
-  //   material: "Canvas",
-  //   size: '15"W x 16"H',
-  //   price: 35.00,
-  //   image: "https://placehold.co/150x150/ffffff/555555?text=Premium",
-  //   description: "High-quality premium canvas tote.",
-  //   popular: true
 },
-  // {
-  //   id: "bp101",
-  //   name: "Classic Backpack",
-  //   code: "BP101",
-  //   slug: "classic-backpack",
-  //   category: "Backpacks",
-  //   material: "Canvas",
-  //   size: '12"W x 18"H x 6"D',
-  //   price: 55.00,
-  //   image: "https://placehold.co/150x150/ffffff/555555?text=Backpack",
-  //   description: "Sturdy canvas backpack with padded straps.",
-  //   popular: false
-  // }, 
-  // {
-  //   id: "cool1",
-  //   name: "Insulated Cooler Bag",
-  //   code: "COOL1",
-  //   slug: "insulated-cooler-bag",
-  //   category: "Cooler Bags",
-  //   material: "Non-Woven",
-  //   size: '10"W x 12"H x 8"D',
-  //   price: 42.00,
-  //   image: "https://placehold.co/150x150/ffffff/555555?text=Cooler",
-  //   description: "Keep your drinks cold with this insulated cooler.",
-  //   popular: false
-  // }, 
-  // {
-  //   id: "acc01",
-  //   name: "Leather Keychain",
-  //   code: "ACC01",
-  //   slug: "leather-keychain",
-  //   category: "Accessories",
-  //   material: "Cotton",
-  //   size: '2"x 4"',
-  //   price: 12.00,
-  //   image: "https://placehold.co/150x150/ffffff/555555?text=Keychain",
-  //   description: "Genuine leather keychain with metal ring.",
-  //   popular: false
-  // }, 
-  // {
-  //   id: "ib202",
-  //   name: "Canvas Drawstring Bag",
-  //   code: "IB202",
-  //   slug: "canvas-drawstring-bag",
-  //   category: "Drawstring Bags",
-  //   material: "Canvas",
-  //   size: '14"W x 18"H',
-  //   price: 18.00,
-  //   image: "https://placehold.co/150x150/ffffff/555555?text=Drawstring",
-  //   description: "Lightweight canvas drawstring bag.",
-  //   popular: false
-  // }
+{
+  id: "ABW8700",
+  name: "Fleece Throw Blanket",
+  code: "ABW8700",
+  slug: "fleece-throw-blanket",
+  category: "Blankets",
+  material: "100% Polyester Fleece",
+  size: '50" x 60"',
+  price: 10.52,
+
+  image: "assets/assets/images/products/blankets/IW8700/8700-Red.jpg",
+  description: "Premium anti-pill fleece throw blanket. Perfect for corporate gifting and promotional events.",
+  popular: false
+},
+{
+  id: "ABW8701",
+  name: "Fleece/Nylon Picnic Blanket",
+  code: "ABW8701",
+  slug: "fleece-nylon-picnic-blanket",
+  category: "Blankets",
+  material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
+  size: '50" x 60"',
+  price: 8.42,
+  image: "assets/assets/images/products/blankets/IW8701/8701-Navy.jpg",
+  description: "Fleece/Nylon Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon.",
+  popular: false
+},
+{
+  id: "ABW8702",
+  name: "Fleece/Nylon Print Picnic Blanket",
+  code: "ABW8702",
+  slug: "fleece-nylon-print-picnic-blanket",
+  category: "Blankets",
+  material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
+  size: '50" x 60"',
+  price: 16.84,
+  image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg",
+  description: "Fleece/Nylon Print Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon.",
+  popular: false
+},
+{
+  id: "ABW8707",
+  name: "Micro Coral Fleece Blanket",
+  code: "ABW8707",
+  slug: "micro-coral-fleece-blanket",
+  category: "Blankets",
+  material: "100% Polyester Micro Coral Fleece",
+  size: '50" x 60"',
+  price: 14.22,
+  image: "assets/assets/images/products/blankets/IW8707/8707-Navy.jpg",
+  description: "Lightweight and velvety soft micro coral fleece blanket. 8.5-ounce, 100% polyester, 280 G/SM. Fully hemmed with matching polyester tricot binding. Clear vinyl zipper bag included.",
+  popular: false
+},
+{
+  id: "ABW8710",
+  name: "Sweatshirt Blanket Throw",
+  code: "ABW8710",
+  slug: "sweatshirt-blanket-throw",
+  category: "Blankets",
+  material: "52/48 Poly/Cotton",
+  size: '50" x 60"',
+  price: 16.22,
+  image: "assets/assets/images/products/blankets/IW8710/8710-Black.jpg",
+  description: "Sweatshirt blanket throw made from 52/48 Poly/Cotton. 50\" x 60\", 280 G/SM. Able to be screen printed or embroidered.",
+  popular: false
+},
+{
+  id: "ABW8711",
+  name: "Value Fleece Blanket",
+  code: "ABW8711",
+  slug: "value-fleece-blanket",
+  category: "Blankets",
+  material: "100% Polar Fleece Fabric",
+  size: '50" x 60"',
+  price: 8.22,
+  image: "assets/assets/images/products/blankets/IW8711/8711-Black.jpg",
+  description: "6.5-ounce, 100% Polar Fleece Fabric. 200 G/SM. 50\" x 60\". Matching whipstitch trim. Non-branded label/tag.",
+  popular: false
+},
+{
+  id: "ABW8712",
+  name: "Micro Mink Sherpa Blankets",
+  code: "ABW8712",
+  slug: "micro-mink-sherpa-blankets",
+  category: "Blankets",
+  material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
+  size: '50" x 60"',
+  price: 23.12,
+  image: "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg",
+  description: "Cozy fleece face that reverses to soft luxurious sherpa. Hidden 15\" zip pocket for easy embroidery access. 50\" x 60\". Machine wash & dry.",
+  popular: false
+},
+{
+  id: "ABW8718",
+  name: "Fleece Roll Up Blanket",
+  code: "ABW8718",
+  slug: "fleece-roll-up-blanket",
+  category: "Blankets",
+  material: "100% Polyester Anti-Pill Fleece",
+  size: '47" x 53"',
+  price: 8.42,
+  image: "assets/assets/images/products/blankets/IW8718/8718-Black.jpg",
+  description: "100% Polyester easy roll up blanket. 47\" x 53\". Anti-pill fleece, 180 G/SM. Trim has matching flap with pocket, handle, VELCRO® and whipstitch.",
+  popular: false
+},
+{
+  id: "ABW8721",
+  name: "Mink Touch Luxury Blanket",
+  code: "ABW8721",
+  slug: "mink-touch-luxury-blanket",
+  category: "Blankets",
+  material: "100% Polyester Faux Mink",
+  size: '50" x 60"',
+  price: 16.84,
+  image: "assets/assets/images/products/blankets/IW8721/8721-Black.jpg",
+  description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Self hem decorative top stitch finish. 50\" x 60\". Vinyl zippered bag with mink touch card in pocket included.",
+  popular: false
+},
+{
+  id: "ABW8722",
+  name: "Mink Touch Luxury Baby Blanket",
+  code: "ABW8722",
+  slug: "mink-touch-luxury-baby-blanket",
+  category: "Blankets",
+  material: "100% Polyester Faux Mink",
+  size: '30" x 40"',
+  price: 8.64,
+  image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg",
+  description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Self hem decorative top stitch finish. 30\" x 40\". Vinyl zippered bag with mink touch card in pocket included.",
+  popular: false
+},
+{
+  id: "ABW8723",
+  name: "Mink Touch Luxury Robe",
+  code: "ABW8723",
+  slug: "mink-touch-luxury-robe",
+  category: "Blankets",
+  material: "100% Polyester Faux Mink",
+  size: '60" x 72"',
+  price: 33.68,
+  image: "assets/assets/images/products/blankets/IW8723/8723-White.jpg",
+  description: "100% Polyester Faux Mink. Weight: 270 g/sqm. 48\" length. Full length shawl collar, belt loops, collar loop, 2 front pockets and matching belt. One Size Fits All.",
+  popular: false
+},
+{
+  id: "ABW8726",
+  name: "Oversized Micro Mink Sherpa Blanket",
+  code: "ABW8726",
+  slug: "oversized-micro-mink-sherpa-blanket",
+  category: "Blankets",
+  material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
+  size: '60" x 72"',
+  price: 33.68,
+  image: "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg",
+  description: "Cozy fleece face that reverses to soft luxurious sherpa. 220 g/sqm. Fully hemmed. Hidden zip pocket for easy embroidery access. 60\" x 72\". Machine wash & dry.",
+  popular: false
+},
+{
+  id: "ABW8727",
+  name: "Oversized Mink Touch Blanket",
+  code: "ABW8727",
+  slug: "oversized-mink-touch-blanket",
+  category: "Blankets",
+  material: "100% Polyester Faux Mink",
+  size: '60" x 72"',
+  price: 23.68,
+  image: "assets/assets/images/products/blankets/IW8727/8727-Black.jpg",
+  description: "Size: 60\" x 72\". Weight: 300 g/sm. Content: 100% Polyester Faux Mink. Trim: Finish self hem decorative top stitch finish. Machine wash & dry. Vinyl zippered bag with mink touch card in pocket included.",
+  popular: false
+},
+{
+  id: "ABW8729",
+  name: "Frosted Sherpa Blanket",
+  code: "ABW8729",
+  slug: "frosted-sherpa-blanket",
+  category: "Blankets",
+  material: "100% Polyester Soft Printed",
+  size: '50" x 60"',
+  price: 21.58,
+  image: "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg",
+  description: "Frosted fleece sherpa with luxurious feel. 100% polyester soft printed blanket. Folded hem. 50\" x 60\". Machine wash & dry.",
+  popular: false
+},
+{
+  id: "ABW8730",
+  name: "Faux Fur Sherpa Blanket",
+  code: "ABW8730",
+  slug: "faux-fur-sherpa-blanket",
+  category: "Blankets",
+  material: "100% Polyester (Faux Chinchilla / Faux Lambswool Sherpa)",
+  size: '50" x 60"',
+  price: 26.32,
+  image: "assets/assets/images/products/blankets/IW8730/8730-Heather Gray.jpg",
+  description: "Snug faux chinchilla fur front that reverses to faux sherpa back. 100% polyester, one side faux chinchilla, other side faux lambswool sherpa. Concealed zipper hem in corner. 50\" x 60\". Machine wash & dry.",
+  popular: false
+}
 ];
 
 // ============================================================
@@ -1057,14 +1189,19 @@ function initLazyBackground() {
     div.dataset.id = product.id;
     const link = `product.html?id=${product.id}`;
 
+    // Blankets don't show "Setup Was" or original price
+    const isBlanket = product.category?.toLowerCase() === 'blankets';
+
     div.innerHTML = `
-        <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">${product.code}</span>
+        <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">
+            ${product.code}
+        </span>
         
         <a href="${link}" class="block relative h-48 mb-1 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500 overflow-visible">
             <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
         </a>
         
-        <!-- ✅ Size Badge - Ab properly visible with overlap effect -->
+        <!-- Size Badge -->
         <div class="relative flex justify-center -mt-2 mb-3 z-10">
             <span class="bg-brand-navy/90 text-white text-[9px] font-medium px-3 py-0.5 rounded border border-white/10 shadow-md backdrop-blur-sm whitespace-nowrap">
                 ${product.size}
@@ -1072,25 +1209,59 @@ function initLazyBackground() {
         </div>
         
         <div class="flex-1 flex flex-col">
-            <a href="${link}"><h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">${product.name}</h3></a>
-            <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">${product.description}</p>
+            <a href="${link}">
+                <h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">
+                    ${product.name}
+                </h3>
+            </a>
+
+            <p class="text-xs text-brand-textSecondary mb-3 line-clamp-3">
+                ${product.description}
+            </p>
+
             <div class="mt-auto">
-                <div class="text-[12px] text-brand-textSecondary font-medium mb-1">Setup Was</div>
+
+                ${!isBlanket ? `
+                    <div class="text-[12px] text-brand-textSecondary font-medium mb-1">
+                        Setup Was
+                    </div>
+                ` : ''}
+
                 <div class="flex items-center gap-2 flex-wrap mb-3">
-                    ${product.originalPrice ? `<span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">$${product.originalPrice.toFixed(2)}</span>` : ''}
-                    <span class="text-brand-crimson font-bold text-base">$${product.price.toFixed(2)}</span>
-                    <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">Now Net</span>
+
+                    ${product.originalPrice && !isBlanket ? `
+                        <span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">
+                            $${product.originalPrice.toFixed(2)}
+                        </span>
+                    ` : ''}
+
+                    <span class="text-brand-crimson font-bold text-base">
+                        $${product.price.toFixed(2)}
+                    </span>
+
+                    <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">
+                        Net Price
+                    </span>
+
                 </div>
+
                 <div class="flex items-center gap-1 w-full">
-                    <a href="${link}?action=quote" class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
+
+                    <a href="${link}?action=quote"
+                        class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
                         <i class="fa-regular fa-pen-to-square"></i> QUOTE
                     </a>
-                    <a href="${link}?action=mockup" class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
+
+                    <a href="${link}?action=mockup"
+                        class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
                         <i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP
                     </a>
-                    <a href="${link}?action=freight" class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson">
+
+                    <a href="${link}?action=freight"
+                        class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson">
                         <i class="fa-solid fa-truck-fast"></i> FREIGHT
                     </a>
+
                 </div>
             </div>
         </div>
@@ -1199,50 +1370,60 @@ function initLazyBackground() {
 
   function attachSidebarEvents() {
     const sidebars = [
-        document.getElementById('sidebar'),
-        document.getElementById('sidebarContent')
+      document.getElementById('sidebar'),
+      document.getElementById('sidebarContent')
     ];
 
     sidebars.forEach(sidebarEl => {
-        if (!sidebarEl) return;
+      if (!sidebarEl) return;
 
-        // Remove old listeners by replacing category links
-        sidebarEl.querySelectorAll('.category-link').forEach(link => {
+      // Remove old listeners by replacing category links
+      sidebarEl.querySelectorAll('.category-link').forEach(link => {
 
-            // Clone link so old event listeners are removed
-            const newLink = link.cloneNode(true);
-            link.replaceWith(newLink);
+        // Clone link so old event listeners are removed
+        const newLink = link.cloneNode(true);
+        link.replaceWith(newLink);
 
-            newLink.addEventListener('click', function (e) {
-                e.preventDefault();
+        newLink.addEventListener('click', function (e) {
+          e.preventDefault();
 
-                currentCategory = this.dataset.category;
-                currentPage = 1;
+          currentCategory = this.dataset.category;
+          currentPage = 1;
 
-                // Clear search when category changes
-                searchTerm = '';
+          const url = new URL(window.location.href);
 
-                if (searchInput) {
-                    searchInput.value = '';
-                }
+          if (currentCategory === 'All Products') {
+            url.searchParams.delete('category');
+          } else {
+            url.searchParams.set('category', currentCategory);
+          }
 
-                // Update sidebar
-                renderSidebar();
+          window.history.replaceState({}, '', url);
 
-                // Render filtered products
-                renderProducts();
+          // Clear search when category changes
+          searchTerm = '';
 
-                // Close mobile sidebar
-                if (typeof closeSidebar === 'function') {
-                    closeSidebar();
-                }
+          if (searchInput) {
+            searchInput.value = '';
+          }
 
-                // Bring products slightly into view
-                
-            });
+          // Update sidebar
+          renderSidebar();
+
+          // Render filtered products
+          renderProducts();
+
+          // Close mobile sidebar
+          if (typeof closeSidebar === 'function') {
+            closeSidebar();
+          }
+
+          // Bring products slightly into view
+
         });
+      });
     });
-}
+  }
 
   // Attach events to all size checkboxes (both desktop and mobile)
 
@@ -1357,28 +1538,90 @@ function initLazyBackground() {
   function init() {
 
     const urlParams = new URLSearchParams(window.location.search);
+
+    // Category from URL
+    const categoryQuery = urlParams.get('category');
+
+    if (categoryQuery) {
+      const matchedCategory = getCategories().find(
+        cat => cat.toLowerCase() === categoryQuery.toLowerCase()
+      );
+
+      if (matchedCategory) {
+        currentCategory = matchedCategory;
+      }
+    }
+
+    // Search from URL
     const searchQuery = urlParams.get('search');
+
     if (searchQuery && searchInput) {
       searchInput.value = searchQuery;
       searchTerm = searchQuery;
     }
+
     renderSidebar();
     renderProducts();
     initEvents();
 
     const tl = gsap.timeline();
-    tl.to(".header-content", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" })
-      .to(".header-features", { opacity: 1, duration: 0.5 }, "-=0.3")
-      .to(".sidebar-anim", { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, "-=0.2")
-      .to(".toolbar-anim", { y: 0, opacity: 1, duration: 0.4 }, "-=0.3")
-      .to(".product-card", { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: "back.out(1.2)" }, "-=0.2")
-      .to(".popular-section", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, "-=0.2")
-      .to(".footer-features", { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, "-=0.3");
 
-    gsap.set(".header-content, .toolbar-anim, .popular-section", { y: 20 });
-    gsap.set(".sidebar-anim", { x: -20 });
-    gsap.set(".product-card", { y: 30 });
-    gsap.set(".footer-features", { y: 15 });
+    tl.to(".header-content", {
+      y: 0,
+      opacity: 1,
+      duration: 0.6,
+      ease: "power2.out"
+    })
+      .to(".header-features", {
+        opacity: 1,
+        duration: 0.5
+      }, "-=0.3")
+      .to(".sidebar-anim", {
+        x: 0,
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, "-=0.2")
+      .to(".toolbar-anim", {
+        y: 0,
+        opacity: 1,
+        duration: 0.4
+      }, "-=0.3")
+      .to(".product-card", {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: "back.out(1.2)"
+      }, "-=0.2")
+      .to(".popular-section", {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+        ease: "power2.out"
+      }, "-=0.2")
+      .to(".footer-features", {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        stagger: 0.1
+      }, "-=0.3");
+
+    gsap.set(".header-content, .toolbar-anim, .popular-section", {
+      y: 20
+    });
+
+    gsap.set(".sidebar-anim", {
+      x: -20
+    });
+
+    gsap.set(".product-card", {
+      y: 30
+    });
+
+    gsap.set(".footer-features", {
+      y: 15
+    });
   }
 
   init();

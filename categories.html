@@ -288,10 +288,12 @@
   <!-- ============================================================ -->
   <!-- NAV - RESPONSIVE FIXED (Unchanged - Bilkul waisay hi) -->
   <!-- ============================================================ -->
+  ```html
   <nav class="bg-navy text-white fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 lg:px-8 py-1">
+
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-      <!-- Logo (Optimized - bold.webp) -->
+      <!-- Logo -->
       <div class="flex items-center shrink-0">
         <a href="index.html">
           <img src="./bold.webp" alt="Inkwell Impressions Solutions Logo"
@@ -302,57 +304,194 @@
       <!-- Desktop Menu -->
       <ul
         class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
-        <li><a href="index.html" class="hover:text-accentred transition">Home</a></li>
-        <li><a href="products.html" class="hover:text-accentred transition">Products</a></li>
-        <li><a href="categories.html" class="text-accentred" aria-current="page">Categories</a></li>
-        <li><a href="about.html" class="hover:text-accentred transition">About Us</a></li>
-        <li><a href="contact.html" class="hover:text-accentred transition">Contact</a></li>
+
+        <li>
+          <a href="index.html" class="hover:text-accentred transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="products.html" class="hover:text-accentred transition">
+            Products
+          </a>
+        </li>
+
+        <li>
+          <a href="categories.html" class="text-accentred" aria-current="page">
+            Categories
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html" class="hover:text-accentred transition">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html" class="hover:text-accentred transition">
+            Contact
+          </a>
+        </li>
+
       </ul>
 
       <!-- Right -->
       <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
+
+        <!-- SEARCH -->
+        <form action="products.html" method="get" class="hidden lg:flex items-center relative group">
+
+          <div class="relative">
+
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2
+                        text-gray-400 text-[11px] group-focus-within:text-accentred
+                        transition-colors duration-300">
+            </i>
+
+            <input type="text" name="search" placeholder="Search products..." autocomplete="off" class="w-36 xl:w-48 h-9 pl-8 pr-3
+                        bg-white/10 backdrop-blur-sm
+                        text-white placeholder:text-gray-400
+                        text-[11px] xl:text-xs
+                        border border-white/20
+                        rounded-full
+                        outline-none
+                        transition-all duration-300
+                        focus:w-44 xl:focus:w-56
+                        focus:bg-white/15
+                        focus:border-accentred
+                        focus:ring-2 focus:ring-accentred/20
+                        hover:border-white/40" />
+
+            <button type="submit" aria-label="Search products" class="absolute right-1 top-1/2 -translate-y-1/2
+                        w-7 h-7 rounded-full
+                        bg-accentred text-white
+                        flex items-center justify-center
+                        hover:scale-105
+                        active:scale-95
+                        transition-all duration-300 shadow-md">
+
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+
+            </button>
+
+          </div>
+
+        </form>
+
+        <!-- REQUEST A QUOTE -->
         <a href="contact.html">
+
           <button
             class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+
             <span class="relative z-10 flex items-center gap-2">
+
               <i class="fa-solid fa-file-signature text-[9px]"></i>
+
               REQUEST A QUOTE
+
             </span>
+
           </button>
+
         </a>
+
+        <!-- Hamburger -->
         <button id="hamburgerBtn" class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
           aria-label="Toggle Menu">
+
           <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+
         </button>
+
       </div>
 
     </div>
+
   </nav>
 
-  <!-- Mobile Menu (Unchanged) -->
+
+  <!-- Mobile Menu -->
+
   <div id="mobileMenu"
     class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
+
     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
-      <li><a href="index.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">Home</a></li>
-      <li><a href="products.html"
-          class="block py-2 border-b border-gray-700 hover:text-accentred transition">Products</a></li>
-      <li><a href="categories.html" class="text-accentred block py-2 border-b border-gray-700"
-          aria-current="page">Categories</a></li>
-      <li><a href="about.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">About Us</a>
+
+      <li>
+        <a href="index.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">
+          Home
+        </a>
       </li>
-      <li><a href="contact.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">Contact</a>
+
+      <li>
+        <a href="products.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">
+          Products
+        </a>
       </li>
+
+      <li>
+        <a href="categories.html" class="text-accentred block py-2 border-b border-gray-700" aria-current="page">
+          Categories
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">
+          About Us
+        </a>
+      </li>
+
+      <li>
+        <a href="contact.html" class="block py-2 border-b border-gray-700 hover:text-accentred transition">
+          Contact
+        </a>
+      </li>
+
     </ul>
+
+    <!-- REQUEST A QUOTE -->
     <a href="contact.html">
+
       <button
         class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+
         <span class="relative z-10 flex items-center gap-2">
+
           <i class="fa-solid fa-file-signature text-[9px]"></i>
+
           REQUEST A QUOTE
+
         </span>
+
       </button>
+
     </a>
+
+    <!-- MOBILE SEARCH -->
+    <div class="py-2">
+
+      <form action="products.html" method="get" class="flex items-center">
+
+        <input type="text" name="search" placeholder="Search products..." autocomplete="off"
+          class="bg-white/10 text-white placeholder:text-gray-400 text-xs px-3 py-2 rounded-l-sm border border-white/20 focus:border-accentred focus:outline-none w-full" />
+
+        <button type="submit" aria-label="Search products"
+          class="bg-accentred hover:opacity-90 text-white px-3 py-2 rounded-r-sm transition">
+
+          <i class="fa-solid fa-search text-xs"></i>
+
+        </button>
+
+      </form>
+
+    </div>
+
   </div>
+
+
 
   <!-- ============================================================ -->
   <!-- NAVIGATION BUTTONS (Unchanged) -->
@@ -435,6 +574,47 @@
         </div>
       </div>
     </section>
+
+  <section class="slide bg-tote text-navy light-bg">
+
+      <div class="blob-bg">
+
+        <div class="blob" style="width:200px;height:200px;background:#D62828;top:-10%;right:-5%;opacity:0.06;"></div>
+
+      </div>
+
+      <div
+        class="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-center max-w-[100rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-24 z-10 h-full w-full gap-1 sm:gap-2 md:gap-4 lg:gap-0">
+
+        <div
+          class="slide-text w-full lg:w-5/12 flex flex-col justify-center z-20 px-2 md:px-0 text-center lg:text-left">
+
+          <h2>Blanket<br>Collection</h2>
+
+          <p class="text-gray-700 font-light mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed">Premium fleece, mink, sherpa and luxury blankets. Soft, durable and designed for elevated corporate gifting and branded experiences.</p>
+
+          <div class="flex justify-center lg:justify-start"><a href="products.html?category=Blankets"><button class="btn-luxury">Explore
+                Products</button></a></div>
+
+        </div>
+
+        <div class="slide-visual w-full lg:w-10/12 flex justify-center items-center relative product-wrapper">
+
+          <div class="product-render w-full h-full flex items-center justify-center">
+
+            <img src="assets/blankets.png" alt="Premium fleece, mink, sherpa and luxury blankets for corporate gifting"
+              width="600" height="500" loading="eager" decoding="async" class="w-full h-full object-contain" />
+
+            <div class="floor-shadow"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
 
     <!-- Slide 3: Gifts -->
     <section class="slide bg-gifts text-navy light-bg">
