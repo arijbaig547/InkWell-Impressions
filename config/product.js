@@ -66,8 +66,8 @@ function downloadSpecPicture() {
     }).then(canvas => {
         // Create download link
         const link = document.createElement('a');
-        link.download = `${productId}_spec_sheet.png`;
-        link.href = canvas.toDataURL('image/png');
+        link.download = `${productId}_spec_sheet.webp`;
+        link.href = canvas.toDataURL('image/webp');
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -107,7 +107,7 @@ const products = [{
     popular: true,
     colors: [
         { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/tote-bags/IB29/IB29_natural.webp" },
-        { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IB29/IB29_black.jpg" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IB29/IB29_black.webp" },
         { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/IB29/IB29_navy.webp" },
         { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/tote-bags/IB29/IB29_red.webp" },
         { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB29/IB29_royal.webp" }
@@ -1430,7 +1430,7 @@ const products = [{
     price: 7.78,
     image: "assets/assets/images/products/tote-bags/IB125800/IB125800_main.webp",
     description: "Small canvas deluxe tote made from 12oz 100% cotton canvas with a bottom gusset.",
-    // IB125800 - ISME IMAGE ADD KAREIN
+
     colors: [
         { name: "Black", hex: "#111111", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_black.webp" },
         { name: "Chocolate", hex: "#6B4226", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_chocolate.webp" },
@@ -1443,80 +1443,71 @@ const products = [{
         { name: "Red", hex: "#D32F2F", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_red.webp" },
         { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB125800/IB125800_royal.webp" }
     ],
-    weight: "12oz",
-    handle: '26"',
-    gusset: "Bottom: Yes Side: No",
-    origin: "USA",
-    packagingOptions: [
-        {
-            type: "Standard",
-            qtyPerBox: "72 pcs",
-            boxWeight: "51.79 lbs",
-            boxDims: '19.5" x 13.5" x 22.5"'
-        }
+
+    images: [
+        "assets/assets/images/products/tote-bags/IB125800/IB125800_main.webp",
+        "assets/assets/images/products/tote-bags/IB125800/IB125800_black.webp",
+        "assets/assets/images/products/tote-bags/IB125800/IB125800_natural.webp"
     ],
+
+    specs: {
+        itemNo: "IB125800",
+        gusset: "Bottom: Yes Side: No",
+        weight: "12oz",
+        material: "100% Cotton Canvas",
+        handle: '26"',
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Standard",
+                qtyPerBox: "72 pcs",
+                boxWeight: "51.79 lbs",
+                boxDims: '19.5" x 13.5" x 22.5"'
+            }
+        ]
+    },
+
     pricing: {
         spot: {
             label: "SPOT PRINTING PRICING (USD)",
             quantities: [72, 288, 500, 1000, 2000, 3000],
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$10.60", "$9.69", "$9.35", "$9.19", "$9.00", "$8.90"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$11.71", "$10.77", "$10.44", "$10.27", "$10.08", "$9.98"]
-                },
-                {
-                    label: "ADD LOCATION",
-                    prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"]
-                },
-                {
-                    label: "ADD COLOR",
-                    prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"]
-                }
+                { label: "NATURAL", prices: ["$10.60", "$9.69", "$9.35", "$9.19", "$9.00", "$8.90"] },
+                { label: "COLOR", prices: ["$11.71", "$10.77", "$10.44", "$10.27", "$10.08", "$9.98"] },
+                { label: "ADD LOCATION", prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"] },
+                { label: "ADD COLOR", prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"] }
             ],
             priceIncludes: "1 Color, 1 Location",
             leadTime: "5-7 Business Days",
             setupCharge: "$56.25 (V)",
             repeatSetup: "$25.00 (V)"
         },
+
         transfer: {
             label: "HEAT TRANSFER PRICING (USD)",
             quantities: [100, 250, 500, 1000, 2000, 3000],
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$14.54", "$13.60", "$13.27", "$13.13", "$13.08", "$13.04"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$15.21", "$14.27", "$13.94", "$13.79", "$13.75", "$13.71"]
-                }
+                { label: "NATURAL", prices: ["$14.54", "$13.60", "$13.27", "$13.13", "$13.08", "$13.04"] },
+                { label: "COLOR", prices: ["$15.21", "$14.27", "$13.94", "$13.79", "$13.75", "$13.71"] }
             ],
             priceIncludes: "Heat Transfer, 1 Location",
             leadTime: "7-10 Business Days",
             setupCharge: "FREE",
             repeatSetup: "FREE"
         },
+
         blank: {
             label: "BLANK PRICING (USD)",
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$7.78"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$8.41"]
-                }
+                { label: "NATURAL", prices: ["$7.78"] },
+                { label: "COLOR", prices: ["$8.41"] }
             ],
             priceIncludes: "Blank",
             leadTime: "Within 1 to 2 Business Days",
             moq: "No minimums. Can order as little as one piece"
         }
     },
+
     additionalCharges: {
         pmsMatch: "$25.00 (V)",
         setupCharge: "$56.25 (V)",
@@ -1624,63 +1615,23 @@ const products = [{
     imprint: '3.5"W x 3.5"H',
     price: 12.44,
     image: "assets/assets/images/products/tote-bags/IB1500/IB1500_navy.webp",
-
     description: "Large canvas deluxe tote made from 100% cotton canvas. Features a spacious design with a 22-inch handle and a bottom gusset, making it ideal for promotional use, events, shopping, and everyday carrying.",
 
     popular: false,
 
     colors: [
-        {
-            name: "Black",
-            hex: "#000000",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_black.webp"
-        },
-        {
-            name: "Chocolate",
-            hex: "#7B3F00",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_chocolate.webp"
-        },
-        {
-            name: "Light-Pink",
-            hex: "#FFB6C1",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_light_pink.webp"
-        },
-        {
-            name: "Lime",
-            hex: "#32CD32",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_lime.webp"
-        },
-        {
-            name: "Maroon",
-            hex: "#800000",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_maroon.webp"
-        },
-        {
-            name: "Natural",
-            hex: "#F5F5DC",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_natural.webp"
-        },
-        {
-            name: "Navy",
-            hex: "#000080",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_navy.webp"
-        },
-        {
-            name: "Purple",
-            hex: "#800080",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_purple.webp"
-        },
-        {
-            name: "Red",
-            hex: "#FF0000",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_red.webp"
-        },
-        {
-            name: "Royal",
-            hex: "#4169E1",
-            image: "assets/assets/images/products/tote-bags/IB1500/IB1500_royal.webp"
-        }
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_black.webp" },
+        { name: "Chocolate", hex: "#7B3F00", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_chocolate.webp" },
+        { name: "Light-Pink", hex: "#FFB6C1", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_light_pink.webp" },
+        { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_lime.webp" },
+        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_maroon.webp" },
+        { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_natural.webp" },
+        { name: "Navy", hex: "#000080", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_navy.webp" },
+        { name: "Purple", hex: "#800080", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_purple.webp" },
+        { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_red.webp" },
+        { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB1500/IB1500_royal.webp" }
     ],
+
     images: [
         "assets/assets/images/products/tote-bags/IB1500/IB1500_navy.webp",
         "assets/assets/images/products/tote-bags/IB1500/IB1500_black.webp",
@@ -1692,11 +1643,16 @@ const products = [{
         gusset: "Bottom: Yes Side: No",
         weight: "12oz",
         material: "100% Cotton Canvas",
-        handle: '22"W x 16"H x 6"D',
+        handle: '22"',
         origin: "USA",
-        boxQuantity: "48 pcs",
-        boxWeight: "45.62 lbs",
-        boxDims: '23" x 17.5" x 13.5"'
+        packagingOptions: [
+            {
+                type: "Standard",
+                qtyPerBox: "48 pcs",
+                boxWeight: "45.62 lbs",
+                boxDims: '23" x 17.5" x 13.5"'
+            }
+        ]
     },
 
     pricing: {
@@ -3183,14 +3139,13 @@ const products = [{
     ],
 
     images: [
-
         "assets/assets/images/products/bottle-bags/IWB201/IWB201-black.webp",
         "assets/assets/images/products/bottle-bags/IWB201/IWB201_natural.webp"
     ],
 
     specs: {
         itemNo: "IWB201",
-        gusset: "12 oz",
+        gusset: "Bottom: No Side: No",
         weight: "12 oz",
         material: "100% Cotton Canvas",
         handle: '13"',
@@ -3210,22 +3165,10 @@ const products = [{
             label: "SPOT PRINTING PRICING (USD)",
             quantities: [72, 288, 500, 1000, 2000, 3000],
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$3.92", "$3.27", "$2.94", "$2.77", "$2.58", "$2.48"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$4.33", "$3.69", "$3.35", "$3.19", "$3.00", "$2.90"]
-                },
-                {
-                    label: "ADD LOCATION",
-                    prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"]
-                },
-                {
-                    label: "ADD COLOR",
-                    prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"]
-                }
+                { label: "NATURAL", prices: ["$3.92", "$3.27", "$2.94", "$2.77", "$2.58", "$2.48"] },
+                { label: "COLOR", prices: ["$4.33", "$3.69", "$3.35", "$3.19", "$3.00", "$2.90"] },
+                { label: "ADD LOCATION", prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"] },
+                { label: "ADD COLOR", prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"] }
             ],
             priceIncludes: "1 Color, 1 Location",
             leadTime: "5-7 Business Days",
@@ -3237,14 +3180,8 @@ const products = [{
             label: "HEAT TRANSFER PRICING (USD)",
             quantities: [100, 250, 500, 1000, 2000, 3000],
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$9.60", "$8.16", "$7.58", "$7.06", "$6.90", "$6.73"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$9.94", "$8.50", "$7.92", "$7.40", "$7.24", "$7.07"]
-                }
+                { label: "NATURAL", prices: ["$9.60", "$8.16", "$7.58", "$7.06", "$6.90", "$6.73"] },
+                { label: "COLOR", prices: ["$9.94", "$8.50", "$7.92", "$7.40", "$7.24", "$7.07"] }
             ],
             priceIncludes: "Heat Transfer, 1 Location",
             leadTime: "7-10 Business Days",
@@ -3255,14 +3192,8 @@ const products = [{
         blank: {
             label: "BLANK PRICING (USD)",
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$1.85"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$1.85"]
-                }
+                { label: "NATURAL", prices: ["$1.85"] },
+                { label: "COLOR", prices: ["$1.85"] }
             ],
             priceIncludes: "Blank",
             leadTime: "Within 1 to 2 Business Days",
@@ -4648,7 +4579,7 @@ const products = [{
     material: "Non-Woven Fabric",
     size: '12"W x 14.5"H x 2.5"D',
     imprint: '8"W x 9"H',
-    price: 0.00,
+    price: 1.46,
     originalPrice: 50.00,
     image: "assets/assets/images/products/non-woven/W983/W983_main.webp",
     description: "Newspaper bag made from 80 gsm non-woven fabric with a 14-inch handle.",
@@ -4904,121 +4835,84 @@ const products = [{
     price: 8.53,
     image: "assets/assets/images/products/tote-bags/IB1400/IB1400_main.webp",
     description: "Canvas standard tote bag made from 12oz 100% cotton with bottom and side gussets.",
+
     colors: [
-        {
-            name: "Black",
-            hex: "#111111",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_black.webp"
-        },
-        {
-            name: "Chocolate",
-            hex: "#6B4226",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_chocolate.webp"
-        },
-        {
-            name: "Light-Pink",
-            hex: "#F3C6C8",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_light_pink.webp"
-        },
-        {
-            name: "Lime",
-            hex: "#A8C93A",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_lime.webp"
-        },
-        {
-            name: "Maroon",
-            hex: "#800000",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_maroon.webp"
-        },
-        {
-            name: "Natural",
-            hex: "#E8DCC4",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_natural.webp"
-        },
-        {
-            name: "Navy",
-            hex: "#1F3A5F",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_navy.webp"
-        },
-        {
-            name: "Purple",
-            hex: "#800080",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_purple.webp"
-        },
-        {
-            name: "Red",
-            hex: "#D32F2F",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_red.webp"
-        },
-        {
-            name: "Royal",
-            hex: "#4169E1",
-            image: "assets/assets/images/products/tote-bags/IB1400/IB1400_royal.webp"
-        }
+        { name: "Black", hex: "#111111", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_black.webp" },
+        { name: "Chocolate", hex: "#6B4226", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_chocolate.webp" },
+        { name: "Light-Pink", hex: "#F3C6C8", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_light_pink.webp" },
+        { name: "Lime", hex: "#A8C93A", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_lime.webp" },
+        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_maroon.webp" },
+        { name: "Natural", hex: "#E8DCC4", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_natural.webp" },
+        { name: "Navy", hex: "#1F3A5F", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_navy.webp" },
+        { name: "Purple", hex: "#800080", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_purple.webp" },
+        { name: "Red", hex: "#D32F2F", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_red.webp" },
+        { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/tote-bags/IB1400/IB1400_royal.webp" }
     ],
-    weight: "12oz",
-    handle: '22"',
-    gusset: "Bottom: Yes Side: Yes",
-    origin: "USA",
-    packagingOptions: [
-        {
-            type: "Standard",
-            qtyPerBox: "48 pcs",
-            boxWeight: "38.57 lbs",
-            boxDims: '23" x 14" x 16"'
-        }
+
+    images: [
+        "assets/assets/images/products/tote-bags/IB1400/IB1400_main.webp",
+        "assets/assets/images/products/tote-bags/IB1400/IB1400_black.webp",
+        "assets/assets/images/products/tote-bags/IB1400/IB1400_natural.webp"
     ],
+
+    specs: {
+        itemNo: "IB1400",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "12oz",
+        material: "100% Cotton Canvas",
+        handle: '22"',
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Standard",
+                qtyPerBox: "48 pcs",
+                boxWeight: "38.57 lbs",
+                boxDims: '23" x 14" x 16"'
+            }
+        ]
+    },
+
     pricing: {
         spot: {
             label: "SPOT PRINTING PRICING (USD)",
             quantities: [72, 288, 500, 1000, 2000, 3000],
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$11.41", "$10.48", "$10.15", "$9.98", "$9.79", "$9.69"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$12.39", "$11.44", "$11.10", "$10.94", "$10.75", "$10.65"]
-                },
-                {
-                    label: "ADD LOCATION",
-                    prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"]
-                },
-                {
-                    label: "ADD COLOR",
-                    prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"]
-                }
-            ]
+                { label: "NATURAL", prices: ["$11.41", "$10.48", "$10.15", "$9.98", "$9.79", "$9.69"] },
+                { label: "COLOR", prices: ["$12.39", "$11.44", "$11.10", "$10.94", "$10.75", "$10.65"] },
+                { label: "ADD LOCATION", prices: ["$1.81", "$1.31", "$1.06", "$0.94", "$0.81", "$0.71"] },
+                { label: "ADD COLOR", prices: ["$0.50", "$0.38", "$0.35", "$0.30", "$0.25", "$0.20"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$25.00 (V)"
         },
+
         transfer: {
             label: "HEAT TRANSFER PRICING (USD)",
             quantities: [100, 250, 500, 1000, 2000, 3000],
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$15.33", "$14.40", "$14.06", "$13.92", "$13.88", "$13.83"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$15.88", "$14.94", "$14.60", "$14.46", "$14.42", "$14.38"]
-                }
-            ]
+                { label: "NATURAL", prices: ["$15.33", "$14.40", "$14.06", "$13.92", "$13.88", "$13.83"] },
+                { label: "COLOR", prices: ["$15.88", "$14.94", "$14.60", "$14.46", "$14.42", "$14.38"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-10 Business Days",
+            setupCharge: "FREE",
+            repeatSetup: "FREE"
         },
+
         blank: {
             label: "BLANK PRICING (USD)",
             rows: [
-                {
-                    label: "NATURAL",
-                    prices: ["$8.53"]
-                },
-                {
-                    label: "COLOR",
-                    prices: ["$9.04"]
-                }
-            ]
+                { label: "NATURAL", prices: ["$8.53"] },
+                { label: "COLOR", prices: ["$9.04"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece"
         }
     },
+
     additionalCharges: {
         pmsMatch: "$25.00 (V)",
         setupCharge: "$56.25 (V)",
@@ -5666,7 +5560,7 @@ const products = [{
     category: "Tote Bags",
     material: "100% Cotton Canvas",
     size: '14"W x 12"H x 5.25"D',
-    imprint: "100% Cotton",
+    imprint: '8"W x 5"H',
     price: 8.65,
     image: "assets/assets/images/products/tote-bags/IB1100/IB1100_main.webp",
     description: "Canvas gusset tote bag with color handles, made from 12oz 100% cotton.",
@@ -5826,6 +5720,103 @@ const products = [{
         repeatSetup: "$25.00 (V)",
         lessThanMinimum: "$50.00 (V)"
     }
+},
+{
+    id: "ids969",
+    name: "Non Woven Drawstring Backpack",
+    code: "IDS969",
+    slug: "non-woven-drawstring-backpack",
+    category: "Non-Woven Bags",
+    material: "Non-Woven Fabric",
+    size: '16"W x 18"H',
+    imprint: '10"W x 10"H',
+    price: 1.13,
+    image: "assets/assets/images/products/non-woven/IDS969/IDS969_kelly.webp",
+    description: "Water repellent non-woven drawstring backpack made from 80 GSM polypropylene. Features a cinch closure with rope cord handles — perfect for promotional events, schools, gyms, and giveaways.",
+    popular: false,
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/non-woven/IDS969/IDS969_black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IDS969/IDS969_burgundy.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IDS969/IDS969_hunter_green.webp" },
+        { name: "Kelly", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/IDS969/IDS969_kelly.webp" },
+        { name: "Navy", hex: "#000080", image: "assets/assets/images/products/non-woven/IDS969/IDS969_navy.webp" },
+        { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/non-woven/IDS969/IDS969_red.webp" },
+        { name: "Royal", hex: "#4169E1", image: "assets/assets/images/products/non-woven/IDS969/IDS969_royal.webp" },
+        { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/non-woven/IDS969/IDS969_tan.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IDS969/IDS969_white.webp" },
+        { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/non-woven/IDS969/IDS969_yellow.webp" }
+    ],
+    images: [
+        "assets/assets/images/products/non-woven/IDS969/IDS969_black.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_burgundy.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_hunter_green.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_kelly.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_navy.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_red.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_royal.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_tan.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_white.webp",
+        "assets/assets/images/products/non-woven/IDS969/IDS969_yellow.webp"
+    ],
+    specs: {
+        itemNo: "IDS969",
+        gusset: "Bottom: No Side: No",
+        weight: "80 gsm",
+        material: "Non-Woven Fabric",
+        handle: "Drawstring Cinch Closure. Rope Cord",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Blank",
+                qtyPerBox: "200 pcs",
+                boxWeight: "22 lbs",
+                boxDims: '20" x 16" x 14"'
+            }
+        ]
+    },
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR", prices: ["$2.01", "$1.87", "$1.78", "$1.67", "$1.57"] },
+                { label: "ADD LOCATION", prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63"] },
+                { label: "ADD COLOR", prices: ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days",
+            setupCharge: "$62.50 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "ALL COLORS", prices: ["$5.54", "$5.17", "$4.99", "$4.68", "$4.40"] },
+                { label: "ADD LOCATION", prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "5-7 Business Days",
+            setupCharge: "$125.00 (V)",
+            repeatSetup: "FREE"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$1.13"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+    additionalCharges: {
+        pmsMatch: "$56.25 (V)",
+        setupCharge: "$62.50 (V)",
+        repeatSetup: "$37.50 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)"
+    }
 }, {
     id: "w975",
     name: "Econo Tote Bag",
@@ -5835,7 +5826,7 @@ const products = [{
     material: "Non-Woven Fabric",
     size: '14.25"W x 15"H x 5"D',
     imprint: '10"W x 8"H',
-    price: 25.00,
+    price: 0.93,
     image: "assets/assets/images/products/non-woven/W975/W975_main.webp",
     description: "Economical non-woven tote bag. Perfect for budget-friendly promotions, events, and giveaways. No minimum order quantity required.",
     popular: true,
@@ -5929,8 +5920,8 @@ const products = [{
     imprint: '8" x 10"',
     price: 10.52,
     originalPrice: 10.52,
-    image: "assets/assets/images/products/blankets/IW8700/8700-Red.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8700/8700-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8700/8700-Red.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8700/8700-Feature.webp",
     description: "Premium 13.8-ounce anti-pill fleece throw. Made from 100% polyester with 260 GSM weight. Features matching whipstitch trim and non-branded label. Charcoal has black whipstitch. Perfect for corporate gifting, promotional events, and everyday use. Machine washable for easy care.",
     popular: true,
 
@@ -5945,21 +5936,21 @@ const products = [{
     useInkwellItemNo: true,
 
     colors: [
-        { name: "Red", hex: "#C41E3A", sku: "8700-69", gtin: "00671867700695", pms: "199C", image: "assets/assets/images/products/blankets/IW8700/8700-Red.jpg" },
-        { name: "Navy", hex: "#1B1F3B", sku: "8700-73", gtin: "00671867700732", pms: "N/A", image: "assets/assets/images/products/blankets/IW8700/8700-Navy.jpg" },
-        { name: "Black", hex: "#000000", sku: "8700-77", gtin: "00671867700770", pms: "Black C", image: "assets/assets/images/products/blankets/IW8700/8700-Black.jpg" },
-        { name: "Heather Grey", hex: "#A9A9A9", sku: "8700-78", gtin: "00671867700787", pms: "14-4106TPX", image: "assets/assets/images/products/blankets/IW8700/8700-Grey.jpg" },
-        { name: "Charcoal", hex: "#36454F", sku: "8700-79", gtin: "00671867700794", pms: "Cool Gray 10 C", image: "assets/assets/images/products/blankets/IW8700/8700-Charcoal.jpg" },
-        { name: "Royal", hex: "#002366", sku: "8700-86", gtin: "00671867700862", pms: "N/A", image: "assets/assets/images/products/blankets/IW8700/8700-Royal.jpg" }
+        { name: "Red", hex: "#C41E3A", gtin: "00671867700695", pms: "199C", image: "assets/assets/images/products/blankets/IW8700/8700-Red.webp" },
+        { name: "Navy", hex: "#1B1F3B", gtin: "00671867700732", pms: "N/A", image: "assets/assets/images/products/blankets/IW8700/8700-Navy.webp" },
+        { name: "Black", hex: "#000000", gtin: "00671867700770", pms: "Black C", image: "assets/assets/images/products/blankets/IW8700/8700-Black.webp" },
+        { name: "Heather Grey", hex: "#A9A9A9", gtin: "00671867700787", pms: "14-4106TPX", image: "assets/assets/images/products/blankets/IW8700/8700-Grey.webp" },
+        { name: "Charcoal", hex: "#36454F", gtin: "00671867700794", pms: "Cool Gray 10 C", image: "assets/assets/images/products/blankets/IW8700/8700-Charcoal.webp" },
+        { name: "Royal", hex: "#002366", gtin: "00671867700862", pms: "N/A", image: "assets/assets/images/products/blankets/IW8700/8700-Royal.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8700/8700-Red.jpg",
-        "assets/assets/images/products/blankets/IW8700/8700-Navy.jpg",
-        "assets/assets/images/products/blankets/IW8700/8700-Black.jpg",
-        "assets/assets/images/products/blankets/IW8700/8700-Grey.jpg",
-        "assets/assets/images/products/blankets/IW8700/8700-Charcoal.jpg",
-        "assets/assets/images/products/blankets/IW8700/8700-Royal.jpg"
+        "assets/assets/images/products/blankets/IW8700/8700-Red.webp",
+        "assets/assets/images/products/blankets/IW8700/8700-Navy.webp",
+        "assets/assets/images/products/blankets/IW8700/8700-Black.webp",
+        "assets/assets/images/products/blankets/IW8700/8700-Grey.webp",
+        "assets/assets/images/products/blankets/IW8700/8700-Charcoal.webp",
+        "assets/assets/images/products/blankets/IW8700/8700-Royal.webp"
     ],
 
     specs: {
@@ -6012,8 +6003,8 @@ const products = [{
     imprint: "N/A",
     price: 16.84,
     originalPrice: 16.84,
-    image: "assets/assets/images/products/blankets/IW8701/8701-Black.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8701/8701-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8701/8701-Black.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8701/8701-Feature.webp",
     description: "Fleece/Nylon Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon. Easy fold design with non-branded label/tag. Top: Polyester Fleece. Shell: Polyester Oxford, Polyurethane coating.",
     popular: false,
 
@@ -6031,49 +6022,49 @@ const products = [{
         {
             name: "Navy",
             hex: "#1B1F3B",
-            sku: "8701-73",
+
             gtin: "00671867701739",
             pms: "N/A",
-            image: "assets/assets/images/products/blankets/IW8701/8701-Navy.jpg"
+            image: "assets/assets/images/products/blankets/IW8701/8701-Navy.webp"
         },
         {
             name: "Black",
             hex: "#000000",
-            sku: "8701-77",
+
             gtin: "00671867701777",
             pms: "Black C",
-            image: "assets/assets/images/products/blankets/IW8701/8701-Black.jpg"
+            image: "assets/assets/images/products/blankets/IW8701/8701-Black.webp"
         },
         {
             name: "Cinder Grey",
             hex: "#A9A9A9",
-            sku: "8701-78",
+
             gtin: "00671867634105",
             pms: "Cool Gray 6C",
-            image: "assets/assets/images/products/blankets/IW8701/8701-Cinder Gray.jpg"
+            image: "assets/assets/images/products/blankets/IW8701/8701-Cinder Gray.webp"
         },
         {
             name: "Royal",
             hex: "#002366",
-            sku: "8701-86",
+
             gtin: "00671867701869",
             pms: "7693C",
-            image: "assets/assets/images/products/blankets/IW8701/8701-Royal.jpg"
+            image: "assets/assets/images/products/blankets/IW8701/8701-Royal.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8701/8701-Navy.jpg",
-        "assets/assets/images/products/blankets/IW8701/8701-Black.jpg",
-        "assets/assets/images/products/blankets/IW8701/8701-Cinder Gray.jpg",
-        "assets/assets/images/products/blankets/IW8701/8701-Royal.jpg"
+        "assets/assets/images/products/blankets/IW8701/8701-Navy.webp",
+        "assets/assets/images/products/blankets/IW8701/8701-Black.webp",
+        "assets/assets/images/products/blankets/IW8701/8701-Cinder Gray.webp",
+        "assets/assets/images/products/blankets/IW8701/8701-Royal.webp"
     ],
 
     specs: {
         itemNo: "ABW8701",
         gtin: "00671867701739",
         gusset: "N/A",
-        weight: "N/A",
+        weight: "260 G/SQM",
         material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
         handle: "Attached carry handles",
         careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
@@ -6120,8 +6111,8 @@ const products = [{
     imprint: "N/A",
     price: 16.84,
     originalPrice: 16.84,
-    image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8702/8702-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8702/8702-Feature.webp",
     description: "Fleece/Nylon Print Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon. Easy fold design with non-branded label/tag. Top: Polyester Fleece. Shell: Polyester Oxford, Polyurethane coating.",
     popular: false,
 
@@ -6139,22 +6130,22 @@ const products = [{
         {
             name: "Blackwatch",
             hex: "#0B2E1E",
-            sku: "8702-82",
+
             gtin: "00671867702828",
             pms: "Green=342C / Navy=295C",
-            image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg"
+            image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg"
+        "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.webp"
     ],
 
     specs: {
         itemNo: "ABW8702",
         gtin: "00671867702828",
         gusset: "N/A",
-        weight: "N/A",
+        weight: "1.7 lb/pc",
         material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
         handle: "Attached carry handles",
         careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
@@ -6189,6 +6180,507 @@ const products = [{
         lessThanMinimum: "N/A"
     }
 },
+{
+    id: "ABW8707",
+    name: "Micro Coral Fleece Blanket",
+    code: "ABW8707",
+    slug: "micro-coral-fleece-blanket",
+    category: "Blankets",
+    material: "100% Polyester Micro Coral Fleece",
+    size: '50" x 60"',
+    imprint: "N/A",
+    price: 14.22,
+    originalPrice: 8.53,
+    image: "assets/assets/images/products/blankets/IW8707/8707-Black.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8707/8707-Feature.webp",
+    description: "Lightweight and velvety soft micro coral fleece blanket. 8.5-ounce, 100% polyester, 280 G/SM. Fully hemmed with matching polyester tricot binding. Clear vinyl zipper bag included. Non-branded label/tag.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Navy",
+            hex: "#1B1F3B",
+
+            gtin: "00671867707731",
+            pms: "654C",
+            image: "assets/assets/images/products/blankets/IW8707/8707-Navy.webp"
+        },
+        {
+            name: "Black",
+            hex: "#000000",
+
+            gtin: "00671867707779",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8707/8707-Black.webp"
+        },
+        {
+            name: "Grey",
+            hex: "#A9A9A9",
+
+            gtin: "00671867707786",
+            pms: "Cool Gray 8C",
+            image: "assets/assets/images/products/blankets/IW8707/8707-Gray.webp"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8707/8707-Black.webp",
+        "assets/assets/images/products/blankets/IW8707/8707-Gray.webp",
+        "assets/assets/images/products/blankets/IW8707/8707-Navy.webp"
+    ],
+
+    specs: {
+        itemNo: "ABW8707",
+        gtin: "00671867707731",
+        gusset: "N/A",
+        weight: "8.5 oz / 280 GSM",
+        material: "100% Polyester Micro Coral Fleece",
+        handle: "N/A",
+        careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Zippered Vinyl Bag",
+                qtyPerBox: "20 pcs",
+                boxWeight: "30 lbs",
+                boxDims: '26" x 14" x 18"',
+                cartonVolume: "3.58 cu ft",
+                pieceWeight: "1.46 lbs",
+                note: "Individual zippered vinyl bag. 20 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$14.22"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABW8820",
+    name: "Elastic Carry Strap with Black Webbing Handle",
+    code: "ABW8820",
+    slug: "elastic-carry-strap-black-webbing-handle",
+    category: "Blankets",
+    material: "100% Polyester / Elastic",
+    size: '16" x 12" x 14"',
+    imprint: "N/A",
+    price: 1.20,
+    originalPrice: 1.20,
+    image: "assets/assets/images/products/blankets/IW8820/AB8820-29-Side.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8820/AB8820-29-Feature.webp",
+    description: "100% Polyester / Elastic carry strap with black webbing handle. Elastic strap, webbing handle, one size fits most. 16\" x 12\" x 14\". Do not wash or dry.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Black",
+            hex: "#000000",
+
+            gtin: "00671867646405",
+            pms: "Black C",
+            image: "assets/assets/images/products/blankets/IW8820/AB8820-29-Side.webp"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IW8820/AB8820-29-Side.webp",
+        "assets/assets/images/products/blankets/IW8820/AB8820-29-Top.webp"
+    ],
+
+    specs: {
+        itemNo: "ABW8820",
+        gtin: "00671867646405",
+        gusset: "N/A",
+        weight: "0.02 lbs",
+        material: "100% Polyester / Elastic",
+        handle: "Black Webbing Handle",
+        careInstructions: "Do not wash or dry.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Bulk Packaging",
+                qtyPerBox: "1000 pcs",
+                boxWeight: "20 lbs",
+                boxDims: '16" x 12" x 14"',
+                cartonVolume: "1.55 cu ft",
+                pieceWeight: "0.02 lbs",
+                note: "10 inner packs. 100 per poly bag/per inner pack. 1,000 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$1.20"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABWS99",
+    name: "Small Clear Zippered Blanket Bag",
+    code: "ABWS99",
+    slug: "small-clear-zippered-blanket-bag",
+    category: "Blankets",
+    material: "Clear",
+    size: '10.43" x 10.24" x 2.17"',
+    imprint: "N/A",
+    price: 1.68,
+    originalPrice: 1.68,
+    image: "assets/assets/images/products/blankets/IWS99/CBBS-99Clear.webp",
+    featureImage: "assets/assets/images/products/blankets/IWS99/CBBS-99-Feature.webp",
+    description: "Clear zip bag for blankets with rope handle. Fits style 8722. 10.43\" x 10.24\" x 2.17\". California Prop 65 Compliant. Do not wash or dry.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Clear",
+            hex: "#FFFFFF",
+
+            gtin: "00671867646467",
+            pms: "Clear",
+            image: "assets/assets/images/products/blankets/IWS99/CBBS-99Clear.webp"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IWS99/CBBS-99Clear.webp",
+        "assets/assets/images/products/blankets/IWS99/CBBS-99ClearBackSide.webp"
+    ],
+
+    specs: {
+        itemNo: "ABWS99",
+        gtin: "00671867646467",
+        gusset: "N/A",
+        weight: "0.08 lbs",
+        material: "Clear",
+        handle: "Rope Handle",
+        careInstructions: "Do not wash or dry.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Bags",
+                qtyPerBox: "300 pcs",
+                boxWeight: "25 lbs",
+                boxDims: '13.8" x 15" x 17.75"',
+                cartonVolume: "2.13 cu ft",
+                pieceWeight: "0.08 lbs",
+                note: "Individual bags. 300 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$1.68"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABWM99",
+    name: "Medium Clear Zippered Blanket Bag",
+    code: "ABWM99",
+    slug: "medium-clear-zippered-blanket-bag",
+    category: "Blankets",
+    material: "Clear",
+    size: '14.96" x 12.99" x 2.36"',
+    imprint: "N/A",
+    price: 2.00,
+    originalPrice: 2.00,
+    image: "assets/assets/images/products/blankets/IWM99/CBBM-99_Clear.webp",
+    featureImage: "assets/assets/images/products/blankets/IWM99/CBBM-99-Feature.webp",
+    description: "Clear zip bag for blankets with rope handle. Fits styles 8700, 8707, 8710, 8711 and 8721. 14.96\" x 12.99\" x 2.36\". California Prop 65 Compliant. Do not wash or dry.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Clear",
+            hex: "#FFFFFF",
+
+            gtin: "00671867646450",
+            pms: "Clear",
+            image: "assets/assets/images/products/blankets/IWM99/CBBM-99_Clear.webp"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IWM99/CBBM-99_Clear.webp",
+        "assets/assets/images/products/blankets/IWM99/CBBM-99_Clear_Back_Side.webp"
+    ],
+
+    specs: {
+        itemNo: "ABWM99",
+        gtin: "00671867646450",
+        gusset: "N/A",
+        weight: "0.13 lbs",
+        material: "Clear",
+        handle: "Rope Handle",
+        careInstructions: "Do not wash or dry.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Bags",
+                qtyPerBox: "300 pcs",
+                boxWeight: "37.5 lbs",
+                boxDims: '19.75" x 17.35" x 14.6"',
+                cartonVolume: "2.9 cu ft",
+                pieceWeight: "0.13 lbs",
+                note: "Individual bags. 300 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$2.00"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABWL99",
+    name: "Large Clear Zippered Blanket Bag",
+    code: "ABWL99",
+    slug: "large-clear-zippered-blanket-bag",
+    category: "Blankets",
+    material: "Clear",
+    size: '14.96" x 12.99" x 3.54"',
+    imprint: "N/A",
+    price: 2.10,
+    originalPrice: 2.10,
+    image: "assets/assets/images/products/blankets/IWL99/CBBL-99Clear.webp",
+    featureImage: "assets/assets/images/products/blankets/IWL99/CBBL-99-Feature.webp",
+    description: "Clear zip bag for blankets with rope handle. Fits styles 8712, 8723 and 8727. 14.96\" x 12.99\" x 3.54\". California Prop 65 Compliant. Do not wash or dry.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Clear",
+            hex: "#FFFFFF",
+            gtin: "00671867646443",
+            pms: "Clear",
+            image: "assets/assets/images/products/blankets/IWL99/CBBL-99Clear.webp"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IWL99/CBBL-99Clear.webp",
+        "assets/assets/images/products/blankets/IWL99/CBBL-99_Clear_Back_Side.webp"
+    ],
+
+    specs: {
+        itemNo: "ABWL99",
+        gtin: "00671867646443",
+        gusset: "N/A",
+        weight: "0.14 lbs",
+        material: "Clear",
+        handle: "Rope Handle",
+        careInstructions: "Do not wash or dry.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Bags",
+                qtyPerBox: "300 pcs",
+                boxWeight: "43 lbs",
+                boxDims: '17.75" x 21.75" x 17"',
+                cartonVolume: "3.8 cu ft",
+                pieceWeight: "0.14 lbs",
+                note: "Individual bags. 300 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$2.10"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "ABWXL99",
+    name: "Extra-Large Clear Zippered Blanket Bag",
+    code: "ABWXL99",
+    slug: "extra-large-clear-zippered-blanket-bag",
+    category: "Blankets",
+    material: "Clear",
+    size: '15.35" x 15.35" x 4.72"',
+    imprint: "N/A",
+    price: 2.42,
+    originalPrice: 2.42,
+    image: "assets/assets/images/products/blankets/IWXL99/CBBXL-99_Clear.webp",
+    featureImage: "assets/assets/images/products/blankets/IWXL99/CBBXL-99-Feature.webp",
+    description: "Clear zip bag for blankets with rope handle. Fits styles 8726, 8729 and 8730. 15.35\" x 15.35\" x 4.72\". California Prop 65 Compliant. Do not wash or dry.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        {
+            name: "Clear",
+            hex: "#FFFFFF",
+            gtin: "00671867646474",
+            pms: "Clear",
+            image: "assets/assets/images/products/blankets/IWXL99/CBBXL-99_Clear.webp"
+        }
+    ],
+
+    images: [
+        "assets/assets/images/products/blankets/IWXL99/CBBXL-99_Clear.webp",
+        "assets/assets/images/products/blankets/IWXL99/CBBXL-99_Clear_Back_Side.webp"
+    ],
+
+    specs: {
+        itemNo: "ABWXL99",
+        gtin: "00671867646474",
+        gusset: "N/A",
+        weight: "0.18 lbs",
+        material: "Clear",
+        handle: "Rope Handle",
+        careInstructions: "Do not wash or dry.",
+        origin: "USA",
+        packagingOptions: [
+            {
+                type: "Individual Bags",
+                qtyPerBox: "300 pcs",
+                boxWeight: "54 lbs",
+                boxDims: '21.25" x 21.25" x 16.55"',
+                cartonVolume: "4.32 cu ft",
+                pieceWeight: "0.18 lbs",
+                note: "Individual bags. 300 in a box."
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "PRICING", prices: ["$2.42"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        pmsMatch: "N/A",
+        lessThanMinimum: "N/A"
+    }
+},
 
 {
     id: "ABW8710",
@@ -6201,8 +6693,8 @@ const products = [{
     imprint: "N/A",
     price: 16.22,
     originalPrice: 16.22,
-    image: "assets/assets/images/products/blankets/IW8710/8710-Black.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8710/8710-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8710/8710-Black.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8710/8710-Feature.webp",
     description: "Sweatshirt blanket throw made from 52/48 Poly/Cotton. 50\" x 60\", 280 G/SM. Able to be screen printed or embroidered. Non-branded label/tag.",
     popular: false,
 
@@ -6220,24 +6712,22 @@ const products = [{
         {
             name: "Black",
             hex: "#000000",
-            sku: "8710-77",
             gtin: "00671867710779",
             pms: "Black C",
-            image: "assets/assets/images/products/blankets/IW8710/8710-Black.jpg"
+            image: "assets/assets/images/products/blankets/IW8710/8710-Black.webp"
         },
         {
             name: "Heather Grey",
             hex: "#A9A9A9",
-            sku: "8710-78",
             gtin: "00671867710786",
             pms: "N/A",
-            image: "assets/assets/images/products/blankets/IW8710/8710-Heather Grey.jpg"
+            image: "assets/assets/images/products/blankets/IW8710/8710-Heather Grey.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8710/8710-Black.jpg",
-        "assets/assets/images/products/blankets/IW8710/8710-Heather Grey.jpg"
+        "assets/assets/images/products/blankets/IW8710/8710-Black.webp",
+        "assets/assets/images/products/blankets/IW8710/8710-Heather Grey.webp"
     ],
 
     specs: {
@@ -6290,8 +6780,8 @@ const products = [{
     imprint: "N/A",
     price: 8.22,
     originalPrice: 8.22,
-    image: "assets/assets/images/products/blankets/IW8711/8711-Black.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8711/8711-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8711/8711-Black.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8711/8711-Feature.webp",
     description: "6.5-ounce, 100% Polar Fleece Fabric. 200 G/SM. 50\" x 60\". Matching whipstitch trim. Non-branded label/tag.",
     popular: false,
 
@@ -6309,60 +6799,54 @@ const products = [{
         {
             name: "Red",
             hex: "#C41E3A",
-            sku: "8711-69",
             gtin: "00671867711691",
             pms: "186C",
-            image: "assets/assets/images/products/blankets/IW8711/8711-Red.jpg"
+            image: "assets/assets/images/products/blankets/IW8711/8711-Red.webp"
         },
         {
             name: "Navy",
             hex: "#1B1F3B",
-            sku: "8711-73",
             gtin: "00671867711738",
             pms: "2767C",
-            image: "assets/assets/images/products/blankets/IW8711/8711-Navy.jpg"
+            image: "assets/assets/images/products/blankets/IW8711/8711-Navy.webp"
         },
         {
             name: "Forest",
             hex: "#228B22",
-            sku: "8711-76",
             gtin: "00671867711769",
             pms: "N/A",
-            image: "assets/assets/images/products/blankets/IW8711/8711-Forest Green.jpg"
+            image: "assets/assets/images/products/blankets/IW8711/8711-Forest Green.webp"
         },
         {
             name: "Black",
             hex: "#000000",
-            sku: "8711-77",
             gtin: "00671867711776",
             pms: "Black C",
-            image: "assets/assets/images/products/blankets/IW8711/8711-Black.jpg"
+            image: "assets/assets/images/products/blankets/IW8711/8711-Black.webp"
         },
         {
             name: "Cinder Grey",
             hex: "#A9A9A9",
-            sku: "8711-78",
             gtin: "00671867711783",
             pms: "415C",
-            image: "assets/assets/images/products/blankets/IW8711/8711-Gray.jpg"
+            image: "assets/assets/images/products/blankets/IW8711/8711-Gray.webp"
         },
         {
             name: "Royal",
             hex: "#002366",
-            sku: "8711-86",
             gtin: "00671867711868",
             pms: "7683C",
-            image: "assets/assets/images/products/blankets/IW8711/8711-Royal.jpg"
+            image: "assets/assets/images/products/blankets/IW8711/8711-Royal.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8711/8711-Black.jpg",
-        "assets/assets/images/products/blankets/IW8711/8711-Forest Green.jpg",
-        "assets/assets/images/products/blankets/IW8711/8711-Gray.jpg",
-        "assets/assets/images/products/blankets/IW8711/8711-Navy.jpg",
-        "assets/assets/images/products/blankets/IW8711/8711-Red.jpg",
-        "assets/assets/images/products/blankets/IW8711/8711-Royal.jpg"
+        "assets/assets/images/products/blankets/IW8711/8711-Black.webp",
+        "assets/assets/images/products/blankets/IW8711/8711-Forest Green.webp",
+        "assets/assets/images/products/blankets/IW8711/8711-Gray.webp",
+        "assets/assets/images/products/blankets/IW8711/8711-Navy.webp",
+        "assets/assets/images/products/blankets/IW8711/8711-Red.webp",
+        "assets/assets/images/products/blankets/IW8711/8711-Royal.webp"
     ],
 
     specs: {
@@ -6415,8 +6899,8 @@ const products = [{
     imprint: "N/A",
     price: 23.12,
     originalPrice: 23.12,
-    image: "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8712/8712-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8712/8712-Cream.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8712/8712-Feature.webp",
     description: "Cozy fleece face that reverses to soft luxurious sherpa. MM-220 g/sqm; SH-240 g/sqm. 100% polyester, one side faux micro mink, other side faux lambswool sherpa. Fully hemmed. Hidden 15\" zip pocket for easy embroidery access. 50\" x 60\". Machine wash & dry. Non-branded label/tag.",
     popular: false,
 
@@ -6434,69 +6918,62 @@ const products = [{
         {
             name: "Navy",
             hex: "#1B1F3B",
-            sku: "8712-73",
             gtin: "00671867712735",
             pms: "534C",
-            image: "assets/assets/images/products/blankets/IW8712/8712-Navy.jpg"
+            image: "assets/assets/images/products/blankets/IW8712/8712-Navy.webp"
         },
         {
             name: "Forest",
             hex: "#228B22",
-            sku: "8712-76",
             gtin: "00671867712766",
             pms: "7734C",
-            image: "assets/assets/images/products/blankets/IW8712/8712-Forest Green.jpg"
+            image: "assets/assets/images/products/blankets/IW8712/8712-Forest Green.webp"
         },
         {
             name: "Black",
             hex: "#000000",
-            sku: "8712-77",
             gtin: "00671867712773",
             pms: "Black C",
-            image: "assets/assets/images/products/blankets/IW8712/8712-Black.jpg"
+            image: "assets/assets/images/products/blankets/IW8712/8712-Black.webp"
         },
         {
             name: "Grey",
             hex: "#A9A9A9",
-            sku: "8712-78",
             gtin: "00671867712780",
             pms: "421C",
-            image: "assets/assets/images/products/blankets/IW8712/8712-Gray.jpg"
+            image: "assets/assets/images/products/blankets/IW8712/8712-Gray.webp"
         },
         {
             name: "Royal",
             hex: "#002366",
-            sku: "8712-86",
             gtin: "00671867712865",
             pms: "7683C",
-            image: "assets/assets/images/products/blankets/IW8712/8712-Royal.jpg"
+            image: "assets/assets/images/products/blankets/IW8712/8712-Royal.webp"
         },
         {
             name: "Cream",
             hex: "#F5F0DC",
-            sku: "8712-87",
             gtin: "00671867712872",
             pms: "11-4201 TPX",
-            image: "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg"
+            image: "assets/assets/images/products/blankets/IW8712/8712-Cream.webp"
         },
         {
             name: "Cam",
             hex: "#4B5320",
-            sku: "8712-Cam",
             gtin: "00671867712995",
             pms: "4685C",
-            image: "assets/assets/images/products/blankets/IW8712/8712-Cam.jpg"
+            image: "assets/assets/images/products/blankets/IW8712/8712-Cam.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg",
-        "assets/assets/images/products/blankets/IW8712/8712-Forest Green.jpg",
-        "assets/assets/images/products/blankets/IW8712/8712-Navy.jpg",
-        "assets/assets/images/products/blankets/IW8712/8712-Royal.jpg",
-        "assets/assets/images/products/blankets/IW8712/8712-Black.jpg",
-        "assets/assets/images/products/blankets/IW8712/8712-Gray.jpg",
-        "assets/assets/images/products/blankets/IW8712/8712-Cam.jpg"
+        "assets/assets/images/products/blankets/IW8712/8712-Cream.webp",
+        "assets/assets/images/products/blankets/IW8712/8712-Forest Green.webp",
+        "assets/assets/images/products/blankets/IW8712/8712-Navy.webp",
+        "assets/assets/images/products/blankets/IW8712/8712-Royal.webp",
+        "assets/assets/images/products/blankets/IW8712/8712-Black.webp",
+        "assets/assets/images/products/blankets/IW8712/8712-Gray.webp",
+        "assets/assets/images/products/blankets/IW8712/8712-Cam.webp"
     ],
 
     specs: {
@@ -6549,8 +7026,8 @@ const products = [{
     imprint: "N/A",
     price: 8.42,
     originalPrice: 8.42,
-    image: "assets/assets/images/products/blankets/IW8718/8718-Black.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8718/8718-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8718/8718-Black.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8718/8718-Feature.webp",
     description: "100% Polyester easy roll up blanket. 47\" x 53\". Anti-pill fleece, 180 G/SM. Trim has matching flap with pocket, handle, VELCRO® and whipstitch. Non-branded label/tag.",
     popular: false,
 
@@ -6569,50 +7046,45 @@ const products = [{
         {
             name: "Navy",
             hex: "#1B1F3B",
-            sku: "8718-73",
             gtin: "00671867718737",
             pms: "534C",
-            image: "assets/assets/images/products/blankets/IW8718/8718-Navy.jpg"
+            image: "assets/assets/images/products/blankets/IW8718/8718-Navy.webp"
         },
         {
             name: "Black",
             hex: "#000000",
-            sku: "8718-??",
             gtin: "",
             pms: "",
-            image: "assets/assets/images/products/blankets/IW8718/8718-Black.jpg"
+            image: "assets/assets/images/products/blankets/IW8718/8718-Black.webp"
         },
         {
             name: "Gray",
             hex: "#A9A9A9",
-            sku: "8718-??",
             gtin: "",
             pms: "",
-            image: "assets/assets/images/products/blankets/IW8718/8718-Gray.jpg"
+            image: "assets/assets/images/products/blankets/IW8718/8718-Gray.webp"
         },
         {
             name: "Royal",
             hex: "#002366",
-            sku: "8718-??",
             gtin: "",
             pms: "",
-            image: "assets/assets/images/products/blankets/IW8718/8718-Royal.jpg"
+            image: "assets/assets/images/products/blankets/IW8718/8718-Royal.webp"
         },
         {
             name: "Sage",
             hex: "#A5A69A",
-            sku: "8718-??",
             gtin: "",
             pms: "",
-            image: "assets/assets/images/products/blankets/IW8718/8718-Sage.jpg"
+            image: "assets/assets/images/products/blankets/IW8718/8718-Sage.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8718/8718-Black.jpg",
-        "assets/assets/images/products/blankets/IW8718/8718-Gray.jpg",
-        "assets/assets/images/products/blankets/IW8718/8718-Royal.jpg",
-        "assets/assets/images/products/blankets/IW8718/8718-Sage.jpg"
+        "assets/assets/images/products/blankets/IW8718/8718-Black.webp",
+        "assets/assets/images/products/blankets/IW8718/8718-Gray.webp",
+        "assets/assets/images/products/blankets/IW8718/8718-Royal.webp",
+        "assets/assets/images/products/blankets/IW8718/8718-Sage.webp"
     ],
 
     specs: {
@@ -6665,8 +7137,8 @@ const products = [{
     imprint: "N/A",
     price: 16.84,
     originalPrice: 16.84,
-    image: "assets/assets/images/products/blankets/IW8721/8721-Black.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8721/8721-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8721/8721-Black.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8721/8721-Feature.webp",
     description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Finish self hem decorative top stitch finish. 50\" x 60\". Vinyl zippered bag with mink touch card in pocket included. Machine wash & dry. Non-branded label/tag.",
     popular: false,
 
@@ -6684,51 +7156,46 @@ const products = [{
         {
             name: "Navy",
             hex: "#1B1F3B",
-            sku: "8721-73",
             gtin: "00671867630824",
             pms: "295C",
-            image: "assets/assets/images/products/blankets/IW8721/8721-Navy.jpg"
+            image: "assets/assets/images/products/blankets/IW8721/8721-Navy.webp"
         },
         {
             name: "Black",
             hex: "#000000",
-            sku: "8721-77",
             gtin: "00671867630770",
             pms: "Black C",
-            image: "assets/assets/images/products/blankets/IW8721/8721-Black.jpg"
+            image: "assets/assets/images/products/blankets/IW8721/8721-Black.webp"
         },
         {
             name: "Grey",
             hex: "#A9A9A9",
-            sku: "8721-78",
             gtin: "00671867630817",
             pms: "429C",
-            image: "assets/assets/images/products/blankets/IW8721/8721-Gray.jpg"
+            image: "assets/assets/images/products/blankets/IW8721/8721-Gray.webp"
         },
         {
             name: "Royal",
             hex: "#002366",
-            sku: "8721-86",
             gtin: "00671867630848",
             pms: "7684C",
-            image: "assets/assets/images/products/blankets/IW8721/8721-Royal.jpg"
+            image: "assets/assets/images/products/blankets/IW8721/8721-Royal.webp"
         },
         {
             name: "Cream",
             hex: "#F5F0DC",
-            sku: "8721-87",
             gtin: "00671867630794",
             pms: "11-4300 TPX",
-            image: "assets/assets/images/products/blankets/IW8721/8721-Cream.png"
+            image: "assets/assets/images/products/blankets/IW8721/8721-Cream.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8721/8721-Black.jpg",
-        "assets/assets/images/products/blankets/IW8721/8721-Cream.png",
-        "assets/assets/images/products/blankets/IW8721/8721-Gray.jpg",
-        "assets/assets/images/products/blankets/IW8721/8721-Navy.jpg",
-        "assets/assets/images/products/blankets/IW8721/8721-Royal.jpg"
+        "assets/assets/images/products/blankets/IW8721/8721-Black.webp",
+        "assets/assets/images/products/blankets/IW8721/8721-Cream.webp",
+        "assets/assets/images/products/blankets/IW8721/8721-Gray.webp",
+        "assets/assets/images/products/blankets/IW8721/8721-Navy.webp",
+        "assets/assets/images/products/blankets/IW8721/8721-Royal.webp"
     ],
 
     specs: {
@@ -6781,8 +7248,8 @@ const products = [{
     imprint: "N/A",
     price: 8.64,
     originalPrice: 8.64,
-    image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8722/8722-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8722/8722-Feature.webp",
     description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Self hem decorative top stitch finish. 30\" x 40\". Vinyl zippered bag with mink touch card in pocket included. Machine wash & dry. Non-branded label/tag.",
     popular: false,
 
@@ -6800,33 +7267,30 @@ const products = [{
         {
             name: "Pure White",
             hex: "#FFFFFF",
-            sku: "8722-67",
             gtin: "00671867630879",
             pms: "White C",
-            image: "assets/assets/images/products/blankets/IW8722/8722-Pure White.jpg"
+            image: "assets/assets/images/products/blankets/IW8722/8722-Pure White.webp"
         },
         {
             name: "Baby Pink",
             hex: "#F4C2C2",
-            sku: "8722-71",
             gtin: "00671867630862",
             pms: "705C",
-            image: "assets/assets/images/products/blankets/IW8722/8722-Baby Pink.jpg"
+            image: "assets/assets/images/products/blankets/IW8722/8722-Baby Pink.webp"
         },
         {
             name: "Baby Blue",
             hex: "#A7C7E7",
-            sku: "8722-75",
             gtin: "00671867630855",
             pms: "649C",
-            image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg"
+            image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8722/8722-Pure White.jpg",
-        "assets/assets/images/products/blankets/IW8722/8722-Baby Pink.jpg",
-        "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg"
+        "assets/assets/images/products/blankets/IW8722/8722-Pure White.webp",
+        "assets/assets/images/products/blankets/IW8722/8722-Baby Pink.webp",
+        "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.webp"
     ],
 
     specs: {
@@ -6879,8 +7343,8 @@ const products = [{
     imprint: "N/A",
     price: 33.68,
     originalPrice: 33.68,
-    image: "assets/assets/images/products/blankets/IW8723/8723-White.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8723/8723-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8723/8723-White.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8723/8723-Feature.webp",
     description: "100% Polyester Faux Mink. Weight: 270 g/sqm. 48\" length. Full length shawl collar, belt loops, collar loop, 2 front pockets and matching belt. One Size Fits All. Vinyl zippered bag with mink touch card in pocket included. Machine wash & dry. Non-branded label/tag.",
     popular: false,
 
@@ -6898,15 +7362,14 @@ const products = [{
         {
             name: "White",
             hex: "#FFFFFF",
-            sku: "8723-67",
             gtin: "00671867630909",
             pms: "White C",
-            image: "assets/assets/images/products/blankets/IW8723/8723-White.jpg"
+            image: "assets/assets/images/products/blankets/IW8723/8723-White.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8723/8723-White.jpg"
+        "assets/assets/images/products/blankets/IW8723/8723-White.webp"
     ],
 
     specs: {
@@ -6917,7 +7380,7 @@ const products = [{
         material: "100% Polyester Faux Mink",
         handle: "N/A",
         careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
-        origin: "N/A",
+        origin: "USA",
         packagingOptions: [
             {
                 type: "Individual Zippered Vinyl Bag",
@@ -6959,8 +7422,8 @@ const products = [{
     imprint: "N/A",
     price: 33.68,
     originalPrice: 33.68,
-    image: "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8726/8726-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8726/8726-Gray.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8726/8726-Feature.webp",
     description: "Cozy fleece face that reverses to soft luxurious sherpa. 220 g/sqm. 100% polyester, one side faux micro mink, other side faux lambswool sherpa. Fully hemmed. Hidden zip pocket for easy embroidery access. 60\" x 72\". Machine wash & dry. Non-branded label/tag.",
     popular: false,
 
@@ -6978,15 +7441,14 @@ const products = [{
         {
             name: "Grey",
             hex: "#A9A9A9",
-            sku: "8726-78",
             gtin: "00671867632804",
             pms: "421C",
-            image: "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg"
+            image: "assets/assets/images/products/blankets/IW8726/8726-Gray.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg"
+        "assets/assets/images/products/blankets/IW8726/8726-Gray.webp"
     ],
 
     specs: {
@@ -6997,7 +7459,7 @@ const products = [{
         material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
         handle: "N/A",
         careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
-        origin: "N/A",
+        origin: "USA",
         packagingOptions: [
             {
                 type: "Individual Zippered Vinyl Bag",
@@ -7039,8 +7501,8 @@ const products = [{
     imprint: "N/A",
     price: 23.68,
     originalPrice: 23.68,
-    image: "assets/assets/images/products/blankets/IW8727/8727-Black.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8727/8727-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8727/8727-Black.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8727/8727-Feature.webp",
     description: "Size: 60\" x 72\". Weight: 300 g/sm. Content: 100% Polyester Faux Mink. Trim: Finish self hem decorative top stitch finish. Machine wash & dry. Packaging: 10/carton, Vinyl zippered bag with mink touch card in pocket included. Non-branded label/tag.",
     popular: false,
 
@@ -7058,42 +7520,38 @@ const products = [{
         {
             name: "Navy",
             hex: "#1B1F3B",
-            sku: "8727-73",
             gtin: "00671867634082",
             pms: "295C",
-            image: "assets/assets/images/products/blankets/IW8727/8727-Navy.jpg"
+            image: "assets/assets/images/products/blankets/IW8727/8727-Navy.webp"
         },
         {
             name: "Black",
             hex: "#000000",
-            sku: "8727-77",
             gtin: "00671867634051",
             pms: "Black C",
-            image: "assets/assets/images/products/blankets/IW8727/8727-Black.jpg"
+            image: "assets/assets/images/products/blankets/IW8727/8727-Black.webp"
         },
         {
             name: "Grey",
             hex: "#A9A9A9",
-            sku: "8727-78",
             gtin: "00671867634075",
             pms: "Cool Gray 7C",
-            image: "assets/assets/images/products/blankets/IW8727/8727-Grey.jpg"
+            image: "assets/assets/images/products/blankets/IW8727/8727-Grey.webp"
         },
         {
             name: "Cream",
             hex: "#F5F0DC",
-            sku: "8727-87",
             gtin: "00671867634068",
             pms: "11-4300 TPX",
-            image: "assets/assets/images/products/blankets/IW8727/8727-Cream.jpg"
+            image: "assets/assets/images/products/blankets/IW8727/8727-Cream.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8727/8727-Navy.jpg",
-        "assets/assets/images/products/blankets/IW8727/8727-Black.jpg",
-        "assets/assets/images/products/blankets/IW8727/8727-Grey.jpg",
-        "assets/assets/images/products/blankets/IW8727/8727-Cream.jpg"
+        "assets/assets/images/products/blankets/IW8727/8727-Navy.webp",
+        "assets/assets/images/products/blankets/IW8727/8727-Black.webp",
+        "assets/assets/images/products/blankets/IW8727/8727-Grey.webp",
+        "assets/assets/images/products/blankets/IW8727/8727-Cream.webp"
     ],
 
     specs: {
@@ -7146,8 +7604,8 @@ const products = [{
     imprint: "N/A",
     price: 21.58,
     originalPrice: 21.58,
-    image: "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8729/8729-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8729/8729-Grey.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8729/8729-Feature.webp",
     description: "Frosted fleece sherpa with luxurious feel. 100% polyester soft printed blanket. Folded hem. 50\" x 60\". Machine wash & dry. Non-branded label/tag.",
     popular: false,
 
@@ -7165,26 +7623,25 @@ const products = [{
         {
             name: "Grey",
             hex: "#A9A9A9",
-            sku: "8729-78",
             gtin: "00671867642100",
             pms: "5315C",
-            image: "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg"
+            image: "assets/assets/images/products/blankets/IW8729/8729-Grey.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg"
+        "assets/assets/images/products/blankets/IW8729/8729-Grey.webp"
     ],
 
     specs: {
         itemNo: "ABW8729",
         gtin: "00671867642100",
         gusset: "N/A",
-        weight: "N/A",
+        weight: "1.4 lb/pc",
         material: "100% Polyester Soft Printed",
         handle: "N/A",
         careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
-        origin: "N/A",
+        origin: "USA",
         packagingOptions: [
             {
                 type: "Individual Zippered Vinyl Bag",
@@ -7226,8 +7683,8 @@ const products = [{
     imprint: "N/A",
     price: 26.32,
     originalPrice: 26.32,
-    image: "assets/assets/images/products/blankets/IW8730/8730-Grey.jpg",
-    featureImage: "assets/assets/images/products/blankets/IW8730/8730-Feature.png",
+    image: "assets/assets/images/products/blankets/IW8730/8730-Heather Gray.webp",
+    featureImage: "assets/assets/images/products/blankets/IW8730/8730-Feature.webp",
     description: "Snug faux chinchilla fur front that reverses to faux sherpa back. 100% polyester, one side faux chinchilla, other side faux lambswool sherpa. Concealed zipper hem in corner. 50\" x 60\". Machine wash & dry. Non-branded label/tag.",
     popular: false,
 
@@ -7245,26 +7702,25 @@ const products = [{
         {
             name: "Grey",
             hex: "#A9A9A9",
-            sku: "8730-78",
             gtin: "00671867642117",
             pms: "Cool Gray 5C",
-            image: "assets/assets/images/products/blankets/IW8730/8730-Grey.jpg"
+            image: "assets/assets/images/products/blankets/IW8730/8730-Heather Gray.webp"
         }
     ],
 
     images: [
-        "assets/assets/images/products/blankets/IW8730/8730-Grey.jpg"
+        "assets/assets/images/products/blankets/IW8730/8730-Heather Gray.webp"
     ],
 
     specs: {
         itemNo: "ABW8730",
         gtin: "00671867642117",
         gusset: "N/A",
-        weight: "N/A",
+        weight: "2.8 lb/pc",
         material: "100% Polyester (Faux Chinchilla / Faux Lambswool Sherpa)",
         handle: "N/A",
         careInstructions: "Machine wash cold with like colors. Tumble dry low heat. Do not iron. Do not bleach. No fabric softeners.",
-        origin: "N/A",
+        origin: "USA",
         packagingOptions: [
             {
                 type: "Individual Zippered Vinyl Bag",
@@ -7293,6 +7749,1302 @@ const products = [{
     additionalCharges: {
         pmsMatch: "N/A",
         lessThanMinimum: "N/A"
+    }
+},
+{
+    id: "IT1003",
+    name: "Premium 4.5oz Combed Cotton T-Shirt",
+    code: "IT1003",
+    slug: "premium-combed-cotton-tshirt",
+    category: "T-Shirts",
+    material: "100% Cotton (4.5 oz / 153 GSM, 30-Singles Yarn)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 6.00,
+    originalPrice: 6.00,
+    image: "assets/assets/images/products/T-shirts/IT1003/1003-white-01.jpg",
+    featureImage: "assets/assets/images/products/T-shirts/IT1003/1003-feature.png",
+    description: "Premium 4.5oz combed cotton blank t-shirt (style 1003). The 30-singles yarn delivers a smooth printable surface ideal for screen printing and DTG.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IT1003/1003-white-01.jpg" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IT1003/1003-black-01.jpg" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IT1003/1003-heather-grey-01.jpg" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IT1003/1003-navy-01.jpg" },
+        { name: "Solid Charcoal", hex: "#3A3A3A", image: "assets/assets/images/products/T-shirts/IT1003/1003-solid-charcoal-01.jpg" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IT1003/1003-red-01.jpg" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IT1003/1003-royal-01.jpg" },
+        { name: "Light Pink", hex: "#F4C7CE", image: "assets/assets/images/products/T-shirts/IT1003/1003-light-pink-01.jpg" },
+        { name: "Apricot", hex: "#F5C7A8", image: "assets/assets/images/products/T-shirts/IT1003/1003-apricot-01.jpg" },
+        { name: "Dark Chocolate", hex: "#3B2417", image: "assets/assets/images/products/T-shirts/IT1003/1003-dark-chocolate-01.jpg" },
+        { name: "Military Green", hex: "#5A6242", image: "assets/assets/images/products/T-shirts/IT1003/1003-military-green-01.jpg" },
+        { name: "Sand", hex: "#D9C7A8", image: "assets/assets/images/products/T-shirts/IT1003/1003-sand-01.jpg" },
+        { name: "Texas Orange", hex: "#D2551E", image: "assets/assets/images/products/T-shirts/IT1003/1003-texas-orange-01.jpg" },
+        { name: "Natural", hex: "#EFE9D8", image: "assets/assets/images/products/T-shirts/IT1003/1003-natural-01.jpg" },
+        { name: "Purple", hex: "#5B2A8C", image: "assets/assets/images/products/T-shirts/IT1003/1003-purple-01.jpg" },
+        { name: "Sky Light Blue", hex: "#BFE3F0", image: "assets/assets/images/products/T-shirts/IT1003/1003-sky-light-blue-01.jpg" },
+        { name: "Ash Grey", hex: "#C9C9C9", image: "assets/assets/images/products/T-shirts/IT1003/1003-ash-grey-01.jpg" },
+        { name: "Irish Green", hex: "#1B8A4C", image: "assets/assets/images/products/T-shirts/IT1003/1003-irish-green-01.jpg" },
+        { name: "Pistachio", hex: "#C7E3A8", image: "assets/assets/images/products/T-shirts/IT1003/1003-pistachio-01.jpg" },
+        { name: "Maroon Burgundy", hex: "#5A1A2B", image: "assets/assets/images/products/T-shirts/IT1003/1003-maroon-burgundy-01.jpg" },
+        { name: "Sage", hex: "#A9B79A", image: "assets/assets/images/products/T-shirts/IT1003/1003-sage-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IT1003/1003-white-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-texas-orange-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-black-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-navy-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-heather-grey-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-royal-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-navy-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-red-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-sage-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-maroon-burgundy-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-pistachio-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-irish-green-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-ash-grey-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-purple-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-natural-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-light-pink-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-sky-light-blue-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-sand-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-military-green-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-dark-chocolate-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1003/1003-apricot-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "IT1003",
+        weight: "4.5 oz (153 GSM)",
+        material: "100% Cotton",
+        yarn: "30-Singles Combed Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        label: "Tear Away",
+        packing: "6 dozen per case",
+        origin: "USA",
+
+        // ✅ SIZE-WISE PACKAGING OPTIONS
+        packagingOptions: [
+            {
+                type: "Small",
+                qtyPerBox: "24 pcs",
+                boxWeight: "25 lbs",
+                boxDims: '21" x 14" x 13"'
+            },
+            {
+                type: "Medium",
+                qtyPerBox: "24 pcs",
+                boxWeight: "27 lbs",
+                boxDims: '21" x 14" x 13"'
+            },
+            {
+                type: "Large",
+                qtyPerBox: "24 pcs",
+                boxWeight: "30 lbs",
+                boxDims: '24" x 15" x 14"'
+            },
+            {
+                type: "X-Large",
+                qtyPerBox: "24 pcs",
+                boxWeight: "32 lbs",
+                boxDims: '24" x 15" x 14"'
+            },
+            {
+                type: "2X-Large",
+                qtyPerBox: "24 pcs",
+                boxWeight: "34 lbs",
+                boxDims: '24" x 15" x 14"'
+            },
+            {
+                type: "3X-Large",
+                qtyPerBox: "24 pcs",
+                boxWeight: "36 lbs",
+                boxDims: '25" x 15" x 15"'
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$6.00" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "IT1005",
+    name: "Heavyweight 6.0oz Ringspun Cotton T-Shirt",
+    code: "IT1005",
+    slug: "heavyweight-ringspun-cotton-tshirt",
+    category: "T-Shirts",
+    material: "100% Heavyweight Cotton (6.0 oz / 203 GSM, 20/s Yarn)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 8.22,
+    originalPrice: 8.22,
+    image: "assets/assets/images/products/T-shirts/IT1005/1005-white-01.jpg",
+    featureImage: "assets/assets/images/products/T-shirts/IT1005/1005-feature.png",
+    description: "Heavyweight 6.0 oz cotton blank t-shirt (style 1005). The dense, durable fabric is built for high-volume screen printing and embroidery, with a smooth print surface and side-seam construction that keeps prints aligned.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IT1005/1005-white-01.jpg" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IT1005/1005-black-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IT1005/1005-white-01.jpg",
+        "assets/assets/images/products/T-shirts/IT1005/1005-black-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "IT1005",
+        styleNumber: "1005",
+        season: "Core",
+        weight: "6.0 oz (203 GSM)",
+        material: "100% Heavyweight Cotton",
+        yarn: "20/s Yarn",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Dense surface keeps ink crisp. Ideal for spot color and process",
+            dtg: "Excellent – Ringspun cotton holds fine detail with minimal bleed",
+            embroidery: "Good – Stable fabric. May need needle-timing adjustment on multi-head",
+            heatTransfer: "Excellent – Standard cotton press settings. Clean adhesion",
+            sublimation: "Limited – White only. Muted output on 100% cotton"
+        },
+
+        downloads: {
+            specSheet: "threelayer.com/spec/1005",
+            productPhotos: "threelayer.com/photos/1005",
+            fullDetails: "threelayer.com/product/heavy-cotton-t-shirts-wholesale-1005"
+        },
+
+        additionalInfo: {
+            paragraph: "Introducing our new heavyweight cotton t-shirt. Made from 100% heavyweight cotton using durable 20/s yarn, this tee is perfect for those looking for a sturdier option without sacrificing comfort. With a heavier gauge fabric, it offers a structured fit, side-stitched for enhanced durability, and is ideal for printing.",
+            label: "Tear Away",
+            colors: "S-3XL in Black and White",
+            packing: "6 dozen per case",
+            garmentSpecs: [
+                { size: "S", bodyLength: '28"', chestWidth: '18"' },
+                { size: "M", bodyLength: '29"', chestWidth: '20"' },
+                { size: "L", bodyLength: '30"', chestWidth: '22"' },
+                { size: "XL", bodyLength: '31"', chestWidth: '24"' },
+                { size: "2XL", bodyLength: '32"', chestWidth: '26"' },
+                { size: "3XL", bodyLength: '33"', chestWidth: '28"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$8.22" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "IT3130",
+    name: "Lightweight 8.0oz French Terry Sleeveless Hoodie",
+    code: "IT3130",
+    slug: "french-terry-sleeveless-hoodie",
+    category: "Hoodies",
+    material: "80% Cotton / 20% Polyester French Terry (8.0 oz / 271 GSM)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 8.75,
+    originalPrice: 8.75,
+    image: "assets/assets/images/products/hoodies/IT3130/3130-white-01.jpg",
+    featureImage: "assets/assets/images/products/hoodies/IT3130/3130-feature.png",
+    description: "Lightweight 8.0oz french terry blank sleeveless hoodie (style 3130) in 80/20 cotton-poly. Athletic cut designed for gyms, events, and streetwear.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IT3130/3130-black-01.jpg" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/hoodies/IT3130/3130-heather-grey-01.jpg" },
+        { name: "Light Pink", hex: "#F4C7CE", image: "assets/assets/images/products/hoodies/IT3130/3130-light-pink-01.jpg" },
+        { name: "New Navy", hex: "#1B2A4A", image: "assets/assets/images/products/hoodies/IT3130/3130-new-navy-01.jpg" },
+        { name: "Olive", hex: "#5A6242", image: "assets/assets/images/products/hoodies/IT3130/3130-olive-01.jpg" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/IT3130/3130-red-01.jpg" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/IT3130/3130-royal-01.jpg" },
+        { name: "Sand", hex: "#D9C7A8", image: "assets/assets/images/products/hoodies/IT3130/3130-sand-01.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/IT3130/3130-white-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IT3130/3130-black-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-heather-grey-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-light-pink-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-new-navy-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-olive-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-red-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-royal-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-sand-01.jpg",
+        "assets/assets/images/products/hoodies/IT3130/3130-white-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "IT3130",
+        styleNumber: "3130",
+        season: "Core",
+        weight: "8.0 oz (271 GSM)",
+        material: "80% Cotton, 20% Polyester French Terry",
+        yarn: "French Terry",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '32"', bodyLength: '32"' },
+            { size: "5XL", chest: '34"', bodyLength: '33"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Smooth face, strong ink adhesion",
+            dtg: "Good – Front and back panels print cleanly",
+            embroidery: "Fair – Use stabilizer. Avoid high-count designs on terry knit",
+            heatTransfer: "Good – Standard press temps. Test adhesion on terry side",
+            sublimation: "Not Recommended – Cotton-dominant blend. Sublimation will wash out"
+        },
+
+        additionalInfo: {
+            paragraph: "The 3130 is made from 271 GSM (8.0oz) 80/20 cotton-polyester french terry. Unlike standard fleece, french terry features a flat terry interior rather than a brushed nap, giving the garment lighter drape and better breathability without sacrificing the 8oz weight decorators need. The cotton-dominant blend provides a smooth exterior face for printing, and the hood is fully lined with a heavy drawstring cord. Spandex-reinforced ribbing at the armholes and hem ensures clean edges that hold shape, while double-needle stitching secures all seams. The front pouch pocket adds function and a familiar hoodie silhouette. The casual fit allows comfortable movement for athletic use cases, and the tear-away label supports private-label programs.",
+            label: "Tear Away",
+            colors: "S-5XL in Black, Heather Grey, Red, Royal, Sand, Navy Blue, Olive, Light Pink, and White.",
+            packing: "2 dozen per case",
+            garmentSpecs: [
+                { size: "S", chest: '20"', bodyLength: '26"' },
+                { size: "M", chest: '22"', bodyLength: '27"' },
+                { size: "L", chest: '24"', bodyLength: '28"' },
+                { size: "XL", chest: '26"', bodyLength: '29"' },
+                { size: "2XL", chest: '28"', bodyLength: '30"' },
+                { size: "3XL", chest: '30"', bodyLength: '31"' },
+                { size: "4XL", chest: '32"', bodyLength: '32"' },
+                { size: "5XL", chest: '34"', bodyLength: '33"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$8.75" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "IT5001",
+    name: "Heavyweight Pullover Fleece Hooded Sweatshirt",
+    code: "IT5001",
+    slug: "heavyweight-pullover-fleece-hoodie",
+    category: "Hoodies",
+    material: "Heavyweight Fleece",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 16.75,
+    originalPrice: 16.75,
+    image: "assets/assets/images/products/hoodies/IT5001/5001-red-01.jpeg",
+    featureImage: "assets/assets/images/products/hoodies/IT5001/5001-feature.png",
+    description: "Our heavyweight pullover fleece hooded sweatshirt is generously cut with an amazing feel. Hoodie features include lined hood with self fabric, heavy drawstring cord, and spandex in the ribbing at the cuff and sleeve. Double needle stitching all over. Generous pouch pocket.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IT5001/5001-black-01.jpeg" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/IT5001/5001-red-01.jpeg" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/IT5001/5001-royal-01.jpeg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/IT5001/5001-white-01.jpeg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IT5001/5001-black-01.jpeg",
+        "assets/assets/images/products/hoodies/IT5001/5001-red-01.jpeg",
+        "assets/assets/images/products/hoodies/IT5001/5001-royal-01.jpeg",
+        "assets/assets/images/products/hoodies/IT5001/5001-white-01.jpeg"
+    ],
+
+    specs: {
+        itemNo: "IT5001",
+        styleNumber: "5001",
+        season: "Core",
+        weight: "Heavyweight Fleece",
+        material: "Heavyweight Fleece",
+        yarn: "Fleece",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '32"', bodyLength: '32"' },
+            { size: "5XL", chest: '34"', bodyLength: '33"' }
+        ],
+
+        additionalInfo: {
+            paragraph: "Our heavyweight pullover fleece hooded sweatshirt is generously cut with an amazing feel. Hoodie features include lined hood with self fabric, heavy drawstring cord, and spandex in the ribbing at the cuff and sleeve. Double needle stitching all over. Generous pouch pocket.",
+            label: "Tear Away",
+            colors: "S-5XL in Black, Red, Royal, and White.",
+            packing: "Sold per case",
+            garmentSpecs: [
+                { size: "S", chest: '20"', bodyLength: '26"' },
+                { size: "M", chest: '22"', bodyLength: '27"' },
+                { size: "L", chest: '24"', bodyLength: '28"' },
+                { size: "XL", chest: '26"', bodyLength: '29"' },
+                { size: "2XL", chest: '28"', bodyLength: '30"' },
+                { size: "3XL", chest: '30"', bodyLength: '31"' },
+                { size: "4XL", chest: '32"', bodyLength: '32"' },
+                { size: "5XL", chest: '34"', bodyLength: '33"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$16.75" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "IT5108",
+    name: "Premium Pullover Hoodie 7.8 oz",
+    code: "IT5108",
+    slug: "premium-pullover-hoodie",
+    category: "Pullover Hoodies",
+    material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
+    size: 'XS - 5XL',
+    imprint: "N/A",
+    price: 8.75,
+    originalPrice: 8.75,
+    image: "assets/assets/images/products/hoodies/IT5108/5108-white-01.jpg",
+    featureImage: "assets/assets/images/products/hoodies/IT5108/5108-feature.png",
+    description: "Premium pullover hoodie (style 5108) in 7.8 oz 80/20 cotton-poly fleece with a 100% ringspun cotton face yarn. The printable surface you decorate is 100% cotton, while the blend underneath balances softness with durability and shrink control. Regular fit, self-fabric lined hood, heavy drawstring cord, spandex ribbing at cuffs and waistband, and double-needle stitching throughout.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IT5108/5108-black-01.jpg" },
+        { name: "Dark Heather Charcoal", hex: "#4A4A4A", image: "assets/assets/images/products/hoodies/IT5108/5108-dark-heather-charcoal-01.jpg" },
+        { name: "Fuchsia Hot Pink", hex: "#E91E8C", image: "assets/assets/images/products/hoodies/IT5108/5108-fuchsia-hot-pink-01.jpg" },
+        { name: "Gold Yellow", hex: "#F5C518", image: "assets/assets/images/products/hoodies/IT5108/5108-gold-yellow-01.jpg" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/hoodies/IT5108/5108-heather-grey-01.jpg" },
+        { name: "Light Pink", hex: "#F4C7CE", image: "assets/assets/images/products/hoodies/IT5108/5108-light-pink-01.jpg" },
+        { name: "Maroon Burgundy", hex: "#5A1A2B", image: "assets/assets/images/products/hoodies/IT5108/5108-maroon-burgundy-01.jpg" },
+        { name: "New Heather Charcoal", hex: "#5A5A5A", image: "assets/assets/images/products/hoodies/IT5108/5108-new-heather-charcoal-01.jpg" },
+        { name: "New Navy", hex: "#1B2A4A", image: "assets/assets/images/products/hoodies/IT5108/5108-new-navy-01.jpg" },
+        { name: "Orange", hex: "#F26522", image: "assets/assets/images/products/hoodies/IT5108/5108-orange-01.jpg" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/IT5108/5108-red-01.jpg" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/IT5108/5108-royal-01.jpg" },
+        { name: "Sand", hex: "#D9C7A8", image: "assets/assets/images/products/hoodies/IT5108/5108-sand-01.jpg" },
+        { name: "Sky Light Blue", hex: "#BFE3F0", image: "assets/assets/images/products/hoodies/IT5108/5108-sky-light-blue-01.jpg" },
+        { name: "Texas Orange", hex: "#D2551E", image: "assets/assets/images/products/hoodies/IT5108/5108-texas-orange-01.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/IT5108/5108-white-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IT5108/5108-black-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-dark-heather-charcoal-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-fuchsia-hot-pink-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-fuchsia-hot-pink-02.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-gold-yellow-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-heather-grey-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-light-pink-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-maroon-burgundy-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-new-heather-charcoal-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-new-navy-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-orange-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-red-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-royal-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-sand-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-sky-light-blue-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-texas-orange-01.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-texas-orange-02.jpg",
+        "assets/assets/images/products/hoodies/IT5108/5108-white-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "IT5108",
+        styleNumber: "5108",
+        season: "Core",
+        weight: "7.8 oz (264 GSM)",
+        material: "80% Cotton, 20% Polyester Fleece",
+        yarn: "100% Ringspun Cotton Face",
+        sizes: "XS to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "XS", chest: '18"', bodyLength: '24"' },
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '31"', bodyLength: '32"' },
+            { size: "5XL", chest: '32"', bodyLength: '33"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Cotton-dominant face holds ink. The fleece stays flat",
+            dtg: "Excellent – Even pre-treatment absorption. Sharp detail on finer nap",
+            embroidery: "Good – Cutaway backing recommended for designs over 5\"",
+            heatTransfer: "Excellent – Standard poly-blend settings. Clean bond",
+            sublimation: "Limited – Light colors only. Muted results from cotton content"
+        },
+
+        additionalInfo: {
+            paragraph: "The 7.8 oz (264 GSM) body uses an 80/20 cotton-poly blend with a 100% ringspun cotton face yarn, so the printable surface you decorate is 100% cotton while the blend underneath balances softness with durability and shrink control. The regular fit works across size-inclusive ranges without the billowy excess of oversized cuts, making it reliable for uniform programs and retail alike. The hood is lined in self-fabric for a clean, premium finish, and the heavy drawstring cord adds a tactile quality detail that elevates the garment beyond commodity blanks. Rib cuffs and waistband include spandex for shape retention over time. Double-needle stitching at all seams reinforces high-stress areas, and the pouch pocket is cleanly constructed with reinforced openings. The tear-away label removes in one pull for fast private-label turnarounds. Care: machine wash cold with like colors, tumble dry low.",
+            label: "Tear Away",
+            colors: "XS-5XL in Black, Dark Heather Charcoal, Fuchsia Hot Pink, Gold Yellow, Heather Grey, Light Pink, Maroon Burgundy, New Heather Charcoal, New Navy, Orange, Red, Royal, Sand, Sky Light Blue, Texas Orange, and White.",
+            packing: "Sold per case",
+            garmentSpecs: [
+                { size: "XS", chest: '18"', bodyLength: '24"' },
+                { size: "S", chest: '20"', bodyLength: '26"' },
+                { size: "M", chest: '22"', bodyLength: '27"' },
+                { size: "L", chest: '24"', bodyLength: '28"' },
+                { size: "XL", chest: '26"', bodyLength: '29"' },
+                { size: "2XL", chest: '28"', bodyLength: '30"' },
+                { size: "3XL", chest: '30"', bodyLength: '31"' },
+                { size: "4XL", chest: '31"', bodyLength: '32"' },
+                { size: "5XL", chest: '32"', bodyLength: '33"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$8.75" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "IT5109",
+    name: "Premium 7.8oz Full Zip Hoodie",
+    code: "IT5109",
+    slug: "premium-full-zip-hoodie",
+    category: "Full Zip Hoodies",
+    material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
+    size: 'XS - 5XL',
+    imprint: "N/A",
+    price: 10.00,
+    originalPrice: 10.00,
+    image: "assets/assets/images/products/hoodies/IT5109/5109-black-01.jpg",
+    featureImage: "assets/assets/images/products/hoodies/IT5109/5109-feature.png",
+    description: "Premium 7.8oz blank full zip hoodie (style 5109) in 80/20 cotton-poly fleece. Full-zip silhouette ideal for embroidery and layered branding.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IT5109/5109-black-01.jpg" },
+        { name: "Cream Beige", hex: "#EFE4D0", image: "assets/assets/images/products/hoodies/IT5109/5109-cream-beige-01.jpg" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/hoodies/IT5109/5109-heather-grey-01.jpg" },
+        { name: "Light Pink", hex: "#F4C7CE", image: "assets/assets/images/products/hoodies/IT5109/5109-light-pink-01.jpg" },
+        { name: "New Heather Charcoal", hex: "#5A5A5A", image: "assets/assets/images/products/hoodies/IT5109/5109-new-heather-charcoal-01.jpg" },
+        { name: "New Navy", hex: "#1B2A4A", image: "assets/assets/images/products/hoodies/IT5109/5109-new-navy-01.jpg" },
+        { name: "Olive", hex: "#5A6242", image: "assets/assets/images/products/hoodies/IT5109/5109-olive-01.jpg" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/IT5109/5109-red-01.jpg" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/IT5109/5109-royal-01.jpg" },
+        { name: "Sage", hex: "#A9B79A", image: "assets/assets/images/products/hoodies/IT5109/5109-sage-01.jpg" },
+        { name: "Sand", hex: "#D9C7A8", image: "assets/assets/images/products/hoodies/IT5109/5109-sand-01.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/IT5109/5109-white-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IT5109/5109-black-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-cream-beige-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-cream-beige-02.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-heather-grey-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-light-pink-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-new-heather-charcoal-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-new-navy-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-olive-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-red-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-royal-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-sage-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-sage-02.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-sand-01.jpg",
+        "assets/assets/images/products/hoodies/IT5109/5109-white-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "IT5109",
+        styleNumber: "5109",
+        season: "Core",
+        weight: "7.8 oz (264 GSM)",
+        material: "80% Cotton, 20% Polyester Fleece",
+        yarn: "100% Ringspun Cotton Face",
+        sizes: "XS to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "XS", chest: '18"', bodyLength: '24"' },
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '32"', bodyLength: '32"' },
+            { size: "5XL", chest: '34"', bodyLength: '33"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Ringspun face yields sharp, vibrant prints",
+            dtg: "Good – Clean results once the platen is adjusted around the zipper",
+            embroidery: "Good – Left-chest and back yoke placements work well",
+            heatTransfer: "Good – Cotton face accepts transfers at standard settings",
+            sublimation: "Not Recommended – Muted, vintage style results only. Full brightness needs 100 percent polyester"
+        },
+
+        downloads: {
+            specSheet: "threelayer.com/spec/5109",
+            productPhotos: "threelayer.com/photos/5109",
+            fullDetails: "threelayer.com/product/5109-premium-full-zip-hoodies"
+        },
+
+        additionalInfo: {
+            paragraph: "Constructed from 264 GSM (7.8oz) 80/20 cotton-polyester fleece with a 100% ringspun cotton face yarn, the 5109 features a tighter, smoother surface compared to open-end cotton. That distinction matters for print clarity and hand feel. The 80/20 blend leans into cotton softness while the poly component adds shape retention and reduces pilling over time. The hood is fully lined with a heavy drawstring cord, and spandex-reinforced ribbing at cuffs and hem maintains structure through repeated laundering. Double-needle stitching at all major seams provides production-grade durability. The YKK metal zipper runs the full front with a clean tape finish, the tear-away label enables private-label rebranding, and the regular fit provides consistent sizing across the full size run.",
+            label: "Tear Away",
+            colors: "XS-5XL in Black, New Heather Charcoal, Heather Grey, Navy Blue, Red, Royal, Light Pink, Sand, Cream Beige, Olive, Sage and White.",
+            packing: "2 dozen per case",
+            garmentSpecs: [
+                { size: "XS", chest: '18"', bodyLength: '24"' },
+                { size: "S", chest: '20"', bodyLength: '26"' },
+                { size: "M", chest: '22"', bodyLength: '27"' },
+                { size: "L", chest: '24"', bodyLength: '28"' },
+                { size: "XL", chest: '26"', bodyLength: '29"' },
+                { size: "2XL", chest: '28"', bodyLength: '30"' },
+                { size: "3XL", chest: '30"', bodyLength: '31"' },
+                { size: "4XL", chest: '32"', bodyLength: '32"' },
+                { size: "5XL", chest: '34"', bodyLength: '33"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$10.00" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "IT15001",
+    name: "Ultra-Heavyweight 12oz Oversized Blank Pullover Hoodie",
+    code: "IT15001",
+    slug: "ultra-heavyweight-12oz-oversized-pullover-hoodie",
+    category: "Pullover Hoodies",
+    material: "80% Cotton / 20% Polyester Fleece (12.0 oz / 407 GSM)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 17.45,
+    originalPrice: 17.45,
+    image: "assets/assets/images/products/hoodies/IT15001/15001-black-01.jpg",
+    featureImage: "assets/assets/images/products/hoodies/IT15001/15001-feature.png",
+    description: "Ultra-heavyweight 12oz oversized blank pullover hoodie (style 15001) in 80/20 cotton-poly fleece. Street-ready urban silhouette built for custom decoration.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IT15001/15001-black-01.jpg" },
+        { name: "Natural", hex: "#EFE9D8", image: "assets/assets/images/products/hoodies/IT15001/15001-natural-01.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/IT15001/15001-white-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IT15001/15001-black-01.jpg",
+        "assets/assets/images/products/hoodies/IT15001/15001-natural-01.jpg",
+        "assets/assets/images/products/hoodies/IT15001/15001-natural-02.jpg",
+        "assets/assets/images/products/hoodies/IT15001/15001-white-01.jpg",
+        "assets/assets/images/products/hoodies/IT15001/15001-white-02.jpg"
+    ],
+
+    specs: {
+        itemNo: "IT15001",
+        styleNumber: "15001",
+        season: "Core",
+        weight: "12.0 oz (407 GSM)",
+        material: "80% Cotton, 20% Polyester Fleece",
+        yarn: "Brushed Fleece",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '32"', bodyLength: '32"' },
+            { size: "5XL", chest: '34"', bodyLength: '33"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Dense fleece holds ink. Fabric stays flat on platen",
+            dtg: "Good – Heavier pre-treatment needed on brushed fleece",
+            embroidery: "Excellent – 12 oz body eliminates puckering. Ideal for large designs",
+            heatTransfer: "Good – Increase pressure to compensate for fleece texture",
+            sublimation: "Not Recommended – 80/20 cotton-poly blend prevents viable results"
+        },
+
+        downloads: {
+            specSheet: "threelayer.com/spec/15001",
+            productPhotos: "threelayer.com/photos/15001",
+            fullDetails: "threelayer.com/product/heavyweight-urban-pullover-hoodies-12oz"
+        },
+
+        additionalInfo: {
+            paragraph: "At 12 oz (407 GSM), the 15001 is the heaviest hoodie in the Three Layer lineup. The 80/20 cotton-poly blend balances cotton's print-friendly surface with polyester's shrink resistance and structural memory. Inside, brushed fleece delivers warmth and a luxury hand feel that justifies premium retail pricing for your customers. The hood is fully lined in matching self-fabric with no contrasting mesh or thin jersey liners, giving it a clean, finished look from every angle. Rib cuffs and waistband incorporate spandex to maintain shape after repeated washing and wearing, and double-needle stitching at stress points reinforces durability. The tear-away label enables fast private-label branding, and the kangaroo pocket is roomy with reinforced openings.",
+            label: "Tear Away",
+            colors: "S-5XL in Black, Natural, and White.",
+            packing: "Sold per case",
+            garmentSpecs: [
+                { size: "S", chest: '20"', bodyLength: '26"' },
+                { size: "M", chest: '22"', bodyLength: '27"' },
+                { size: "L", chest: '24"', bodyLength: '28"' },
+                { size: "XL", chest: '26"', bodyLength: '29"' },
+                { size: "2XL", chest: '28"', bodyLength: '30"' },
+                { size: "3XL", chest: '30"', bodyLength: '31"' },
+                { size: "4XL", chest: '32"', bodyLength: '32"' },
+                { size: "5XL", chest: '34"', bodyLength: '33"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$17.45" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "ITP280",
+    name: "Midweight 8.8oz Pullover Hoodie",
+    code: "ITP280",
+    slug: "midweight-pullover-hoodie",
+    category: "Pullover Hoodies",
+    material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
+    size: 'XS - 5XL',
+    imprint: "N/A",
+    price: 9.75,
+    originalPrice: 9.75,
+    image: "assets/assets/images/products/hoodies/ITP280/p280-white-01.jpg",
+    featureImage: "assets/assets/images/products/hoodies/ITP280/p280-feature.png",
+    description: "Midweight 8.8oz blank pullover hoodie (style P280) in 70/30 cotton-poly fleece. Versatile weight for year-round custom apparel programs.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/ITP280/p280-black-01.jpg" },
+        { name: "Chocolate", hex: "#3B2417", image: "assets/assets/images/products/hoodies/ITP280/p280-chocolate-01.jpg" },
+        { name: "Cream Beige", hex: "#EFE4D0", image: "assets/assets/images/products/hoodies/ITP280/p280-cream-beige-01.jpg" },
+        { name: "Dark Heather Charcoal", hex: "#4A4A4A", image: "assets/assets/images/products/hoodies/ITP280/p280-dark-heather-charcoal-01.jpg" },
+        { name: "Gold Yellow", hex: "#F5C518", image: "assets/assets/images/products/hoodies/ITP280/p280-gold-yellow-01.jpg" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/hoodies/ITP280/p280-heather-grey-01.jpg" },
+        { name: "Kelly Green", hex: "#1B8A4C", image: "assets/assets/images/products/hoodies/ITP280/p280-kelly-green-01.jpg" },
+        { name: "Light Pink", hex: "#F4C7CE", image: "assets/assets/images/products/hoodies/ITP280/p280-light-pink-01.jpg" },
+        { name: "Maroon Burgundy", hex: "#5A1A2B", image: "assets/assets/images/products/hoodies/ITP280/p280-maroon-burgundy-01.jpg" },
+        { name: "Natural", hex: "#EFE9D8", image: "assets/assets/images/products/hoodies/ITP280/p280-natural-01.jpg" },
+        { name: "New Heather Charcoal", hex: "#5A5A5A", image: "assets/assets/images/products/hoodies/ITP280/p280-new-heather-charcoal-01.jpg" },
+        { name: "New Navy", hex: "#1B2A4A", image: "assets/assets/images/products/hoodies/ITP280/p280-new-navy-01.jpg" },
+        { name: "Olive", hex: "#5A6242", image: "assets/assets/images/products/hoodies/ITP280/p280-olive-01.jpg" },
+        { name: "PFD", hex: "#F5F0E6", image: "assets/assets/images/products/hoodies/ITP280/p280-pfd-01.jpg" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/ITP280/p280-red-01.jpg" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/ITP280/p280-royal-01.jpg" },
+        { name: "Sage", hex: "#A9B79A", image: "assets/assets/images/products/hoodies/ITP280/p280-sage-01.jpg" },
+        { name: "Sand", hex: "#D9C7A8", image: "assets/assets/images/products/hoodies/ITP280/p280-sand-01.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/ITP280/p280-white-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/ITP280/p280-black-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-chocolate-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-cream-beige-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-dark-heather-charcoal-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-gold-yellow-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-heather-grey-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-kelly-green-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-light-pink-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-maroon-burgundy-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-natural-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-natural-02.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-new-heather-charcoal-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-new-navy-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-olive-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-pfd-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-red-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-royal-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-sage-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-sand-01.jpg",
+        "assets/assets/images/products/hoodies/ITP280/p280-white-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "ITP280",
+        styleNumber: "P280",
+        season: "Core",
+        weight: "8.8 oz (298 GSM)",
+        material: "70% Cotton, 30% Polyester Fleece",
+        yarn: "Cotton-Dominant Face",
+        sizes: "XS to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "XS", chest: '18"', bodyLength: '24"' },
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '31"', bodyLength: '32"' },
+            { size: "5XL", chest: '32"', bodyLength: '33"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Smooth cotton face, ideal ink adhesion",
+            dtg: "Excellent – High cotton content yields sharp detail",
+            embroidery: "Good – Use cut-away backing on fleece areas",
+            heatTransfer: "Good – Cotton face bonds cleanly at standard temps",
+            sublimation: "Not Recommended – Poly content too low for full sublimation"
+        },
+
+        additionalInfo: {
+            paragraph: "The P280 is constructed from 298 GSM (8.8oz) 70/30 cotton-polyester fleece, delivering a substantial hand feel without unnecessary bulk. The cotton-dominant face provides a smooth, print-ready surface, while the poly content adds durability and reduces shrinkage across wash cycles. The hood is fully lined with matching self-fabric and finished with a heavy drawstring cord rather than cheap flat laces. Spandex-reinforced ribbing at the cuffs and waistband holds its shape through repeated wear and washing, and double-needle stitching runs throughout the garment for structural integrity at stress points. The front pouch pocket is reinforced at entry seams, and a tear-away label allows clean rebranding for private-label programs.",
+            label: "Tear Away",
+            colors: "XS-5XL in Black, Chocolate, Cream Beige, Dark Heather Charcoal, Gold Yellow, Heather Grey, Kelly Green, Light Pink, Maroon Burgundy, Natural, New Heather Charcoal, New Navy, Olive, PFD, Red, Royal, Sage, Sand, and White.",
+            packing: "Sold per case",
+            garmentSpecs: [
+                { size: "XS", chest: '18"', bodyLength: '24"' },
+                { size: "S", chest: '20"', bodyLength: '26"' },
+                { size: "M", chest: '22"', bodyLength: '27"' },
+                { size: "L", chest: '24"', bodyLength: '28"' },
+                { size: "XL", chest: '26"', bodyLength: '29"' },
+                { size: "2XL", chest: '28"', bodyLength: '30"' },
+                { size: "3XL", chest: '30"', bodyLength: '31"' },
+                { size: "4XL", chest: '31"', bodyLength: '32"' },
+                { size: "5XL", chest: '32"', bodyLength: '33"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$9.75" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "ITY300",
+    name: "Youth 8.8oz Pullover Hoodie",
+    code: "ITY300",
+    slug: "youth-pullover-hoodie",
+    category: "Pullover Hoodies",
+    material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
+    size: 'XS - 2XL',
+    imprint: "N/A",
+    price: 8.25,
+    originalPrice: 8.25,
+    image: "assets/assets/images/products/hoodies/ITY300/Y300-white-01.jpg",
+    featureImage: "assets/assets/images/products/hoodies/ITY300/Y300-feature.png",
+    description: "Youth-sized 8.8oz blank pullover hoodie (style Y300) in 70/30 cotton-poly fleece. Sized for kids and built for school, team, and youth organization programs.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/ITY300/Y300-black-01.jpg" },
+        { name: "Fuchsia Hot Pink", hex: "#E91E8C", image: "assets/assets/images/products/hoodies/ITY300/Y300-fuchsia-hot-pink-01.jpg" },
+        { name: "Gold Yellow", hex: "#F5C518", image: "assets/assets/images/products/hoodies/ITY300/Y300-gold-yellow-01.jpg" },
+        { name: "Heather Charcoal", hex: "#5A5A5A", image: "assets/assets/images/products/hoodies/ITY300/Y300-heather-charcoal-01.jpg" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/hoodies/ITY300/Y300-heather-grey-01.jpg" },
+        { name: "Light Pink", hex: "#F4C7CE", image: "assets/assets/images/products/hoodies/ITY300/Y300-light-pink-01.jpg" },
+        { name: "Maroon Burgundy", hex: "#5A1A2B", image: "assets/assets/images/products/hoodies/ITY300/Y300-maroon-burgundy-01.jpg" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/hoodies/ITY300/Y300-navy-01.jpg" },
+        { name: "New Navy", hex: "#1B2A4A", image: "assets/assets/images/products/hoodies/ITY300/Y300-new-navy-01.jpg" },
+        { name: "Olive", hex: "#5A6242", image: "assets/assets/images/products/hoodies/ITY300/Y300-olive-01.jpg" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/ITY300/Y300-red-01.jpg" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/ITY300/Y300-royal-01.jpg" },
+        { name: "Sand", hex: "#D9C7A8", image: "assets/assets/images/products/hoodies/ITY300/Y300-sand-01.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/ITY300/Y300-white-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/ITY300/Y300-black-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-fuchsia-hot-pink-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-gold-yellow-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-heather-charcoal-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-heather-grey-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-light-pink-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-maroon-burgundy-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-navy-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-new-navy-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-olive-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-red-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-royal-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-sand-01.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-sand-02.jpg",
+        "assets/assets/images/products/hoodies/ITY300/Y300-white-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "ITY300",
+        styleNumber: "Y300",
+        season: "Core",
+        weight: "8.8 oz (298 GSM)",
+        material: "70% Cotton, 30% Polyester Fleece",
+        yarn: "Cotton-Dominant Face",
+        sizes: "XS to 2XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "XS", chest: '13.5"', bodyLength: '17.5"' },
+            { size: "S", chest: '15"', bodyLength: '18.5"' },
+            { size: "M", chest: '16.5"', bodyLength: '20"' },
+            { size: "L", chest: '18"', bodyLength: '22.5"' },
+            { size: "XL", chest: '19.5"', bodyLength: '24"' },
+            { size: "2XL", chest: '21"', bodyLength: '25.5"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Same setup as adult P280. Vibrant results",
+            dtg: "Excellent – High cotton content. Sharp full-color prints",
+            embroidery: "Good – Standard fleece backing. Left-chest and front center",
+            heatTransfer: "Good – Cotton face bonds at standard press temps",
+            sublimation: "Not Recommended – 70/30 blend insufficient for sublimation"
+        },
+
+        downloads: {
+            specSheet: "threelayer.com/spec/Y300",
+            productPhotos: "threelayer.com/photos/Y300",
+            fullDetails: "threelayer.com/product/y300-youth-pullover-hoodies"
+        },
+
+        additionalInfo: {
+            paragraph: "The Y300 is built from 298 GSM (8.8oz) 70/30 cotton-polyester fleece (the same proven fabric as the adult P280) graded down to youth proportions. The cotton-dominant face provides a smooth surface that takes ink and thread with consistency, and the poly content adds wash-after-wash durability that is critical for youth garments seeing heavy use. The hood is a two-ply construction for a clean, structured look without a separate lining. The front pouch pocket includes a headset cord opening, a detail that differentiates this from generic youth blanks. Spandex-reinforced ribbing at cuffs and waistband maintains shape over time, and the tear-away label allows clean rebranding for school stores, team shops, and private-label youth programs.",
+            label: "Tear Away",
+            colors: "XS-XL available in Black, Heather Charcoal, Fuchsia/Hot Pink, Gold/Yellow, Heather Grey, Maroon Burgundy, Navy Blue, Olive, Light Pink, Red, Royal, Sand, and White.",
+            packing: "2 dozen per case",
+            garmentSpecs: [
+                { size: "XS", chest: '13½"', bodyLength: '17½"' },
+                { size: "S", chest: '15"', bodyLength: '18½"' },
+                { size: "M", chest: '16½"', bodyLength: '20"' },
+                { size: "L", chest: '18"', bodyLength: '22½"' },
+                { size: "XL", chest: '19½"', bodyLength: '24"' },
+                { size: "2XL", chest: '21"', bodyLength: '25½"' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$8.25" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 }
+        ]
+    }
+},
+{
+    id: "ITY5501",
+    name: "Youth 8.8oz Fleece Jogger Pant",
+    code: "ITY5501",
+    slug: "youth-fleece-jogger-pant",
+    category: "Joggers/Sweatpants",
+    material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
+    size: 'XS - 5XL',
+    imprint: "N/A",
+    price: 7.75,
+    originalPrice: 7.75,
+    image: "assets/assets/images/products/pants/ITY5501/Y5501-black-01.jpg",
+    featureImage: "assets/assets/images/products/pants/ITY5501/Y5501-feature.png",
+    description: "Youth-sized 8.8oz blank fleece jogger pants (style Y5501) in 70/30 cotton-poly. Sized for kids with a tapered fit for schools, teams, and youth programs.",
+    popular: false,
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/pants/ITY5501/Y5501-black-01.jpg" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/pants/ITY5501/Y5501-heather-grey-01.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/pants/ITY5501/Y5501-white-01.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/pants/ITY5501/Y5501-black-01.jpg",
+        "assets/assets/images/products/pants/ITY5501/Y5501-heather-grey-01.jpg",
+        "assets/assets/images/products/pants/ITY5501/Y5501-white-01.jpg"
+    ],
+
+    specs: {
+        itemNo: "ITY5501",
+        styleNumber: "Y5501",
+        season: "Core",
+        weight: "8.8 oz (298 GSM)",
+        material: "70% Cotton, 30% Polyester Fleece",
+        yarn: "Cotton-Dominant Face",
+        sizes: "XS to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        origin: "USA",
+
+        sizeChart: [
+            { size: "XS", chest: '9.8"', bodyLength: '23.6"' },
+            { size: "S", chest: '10.6"', bodyLength: '26.4"' },
+            { size: "M", chest: '11.4"', bodyLength: '29.1"' },
+            { size: "L", chest: '12.2"', bodyLength: '31.9"' },
+            { size: "XL", chest: '13"', bodyLength: '34.6"' },
+            { size: "2XL", chest: '13.8"', bodyLength: '37.4"' },
+            { size: "3XL", chest: '14.6"', bodyLength: '40.2"' },
+            { size: "4XL", chest: '15.4"', bodyLength: '43"' },
+            { size: "5XL", chest: '16.2"', bodyLength: '45.8"' }
+        ],
+
+        decoration: {
+            screenPrint: "Excellent – Fleece face holds ink cleanly. Scale artwork to youth panels",
+            dtg: "Good – Adjust ink volume for smaller print area on youth sizing",
+            embroidery: "Fair – Small logos only. Firm stabilizer needed on soft fleece",
+            heatTransfer: "Good – Ideal for names and numbers on youth team programs",
+            sublimation: "Not Recommended – 70/30 cotton-poly blend blocks dye transfer"
+        },
+
+        additionalInfo: {
+            paragraph: "Constructed from 8.8 oz (298 GSM) 70/30 cotton-poly fleece (the same fabric as the adult 8801), the Y5501 ensures hand-feel parity across adult and youth set programs. The regular-fit cut features a tapered leg with cuffed rib bottoms scaled to youth proportions. An elasticated waist with drawstring provides adjustable fit, with a key safety detail: sizes XS, S, and M ship without the drawstring to meet children's safety standards. Off-seam pockets keep thigh panels flat for decoration, and the tear-away label supports fast private-label rebranding. Care: machine wash cold with like colors, tumble dry low.",
+            label: "Tear Away",
+            colors: "XS-5XL in Black, Heather Grey, and White.",
+            packing: "2 dozen per case",
+            garmentSpecs: [
+                { size: "XS", chest: '25 cm', bodyLength: '60 cm' },
+                { size: "S", chest: '27 cm', bodyLength: '67 cm' },
+                { size: "M", chest: '29 cm', bodyLength: '74 cm' },
+                { size: "L", chest: '31 cm', bodyLength: '81 cm' },
+                { size: "XL", chest: '33 cm', bodyLength: '88 cm' },
+                { size: "2XL", chest: '35 cm', bodyLength: '95 cm' },
+                { size: "3XL", chest: '37 cm', bodyLength: '102 cm' },
+                { size: "4XL", chest: '39 cm', bodyLength: '109 cm' },
+                { size: "5XL", chest: '41 cm', bodyLength: '116 cm' }
+            ]
+        }
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - XL", price: "$7.75" },
+            upsizeCharges: [
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.90" },
+                { size: "4XL", charge: "$4.10" },
+                { size: "5XL", charge: "$6.85" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.90 },
+            { size: "4XL", charge: 4.10 },
+            { size: "5XL", charge: 6.85 }
+        ]
     }
 }
 ];
@@ -7330,9 +9082,9 @@ console.log('✅ Product Templates Generated:', Object.keys(productTemplates).le
 // ============================================================
 
 /**
- * Generate a template PNG for a specific color
+ * Generate a template webp for a specific color
  */
-function generateTemplatePNG(colorName, product, imprintArea) {
+function generateTemplatewebp(colorName, product, imprintArea) {
     return new Promise((resolve) => {
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
@@ -7405,7 +9157,7 @@ function generateTemplatePNG(colorName, product, imprintArea) {
 
         canvas.toBlob((blob) => {
             resolve(blob);
-        }, 'image/png');
+        }, 'image/webp');
     });
 }
 
@@ -7480,11 +9232,11 @@ async function downloadAllTemplates(product) {
 
         const zip = new JSZip();
 
-        // Generate PNG for each color
+        // Generate webp for each color
         for (let i = 0; i < colors.length; i++) {
             const color = colors[i];
-            const blob = await generateTemplatePNG(color.name, product, templateData.imprintArea);
-            const fileName = `${product.code}_${color.name.replace(/\s+/g, '_')}_template.png`;
+            const blob = await generateTemplatewebp(color.name, product, templateData.imprintArea);
+            const fileName = `${product.code}_${color.name.replace(/\s+/g, '_')}_template.webp`;
             zip.file(fileName, blob);
         }
 
@@ -8619,61 +10371,78 @@ function initFreightModal() {
         // BODY RENDER
         pricingBody.innerHTML = '';
 
-        // ✅ BLANK KE LIYE SPECIAL HANDLING - Sirf ek "PRICING" row
-        if (isBlank) {
-            // Sab colors ki prices collect karo (agar different hain)
-            const allPrices = [];
-            data.rows.forEach(row => {
-                if (row.prices && row.prices.length > 0) {
-                    allPrices.push(...row.prices);
-                }
+        // ============================================================
+        // ✅ SPECIAL HANDLING: Sirf T-shirt wale products ke liye
+        // (jab basePrice + upsizeCharges maujood ho)
+        // ============================================================
+        if (isBlank && data.basePrice && data.upsizeCharges) {
+
+            // ✅ BASE PRICE ROW (S - XL) — R hi rahega
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+        <td class="font-medium text-brand-textSecondary">${data.basePrice.label}</td>
+        <td class="text-brand-text font-semibold">${data.basePrice.price}</td>
+        <td class="text-brand-textSecondary">R</td>
+    `;
+            pricingBody.appendChild(tr);
+
+            // ✅ UPSIZE CHARGES HEADING
+            const headingTr = document.createElement('tr');
+            headingTr.innerHTML = `
+        <td colspan="3" class="pt-4 pb-2">
+            <span class="text-[11px] font-bold text-brand-crimson uppercase tracking-wider">
+                Upsize Charges
+            </span>
+        </td>
+    `;
+            pricingBody.appendChild(headingTr);
+
+            // ✅ UPSIZE ROWS (2XL, 3XL, 4XL, 5XL) — YAHAN V LAGAYA
+            data.upsizeCharges.forEach(u => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+            <td class="font-medium text-brand-textSecondary pl-4">${u.size}</td>
+            <td class="text-brand-text">${u.charge}</td>
+            <td class="text-brand-textSecondary">V</td>
+        `;
+                pricingBody.appendChild(tr);
             });
 
-            // Unique prices nikaalo
-            const uniquePrices = [...new Set(allPrices)];
-
-            // Agar sab prices same hain toh sirf ek row
-            const tr = document.createElement('tr');
-            let html = `<td class="font-medium text-brand-textSecondary">PRICING</td>`;
-
-            if (uniquePrices.length === 1) {
-                // Sab colors ki same price
-                html += `<td class="text-brand-text">${uniquePrices[0]}</td>`;
-            } else {
-                // Different prices - comma separated ya pehli price
-                html += `<td class="text-brand-text">${uniquePrices.join(' / ')}</td>`;
-            }
-            html += `<td class="text-brand-textSecondary">R</td>`;
-            tr.innerHTML = html;
-            pricingBody.appendChild(tr);
-
-            return; // ⬅️ IMPORTANT: Yahan return kar do
+            return; // ✅ Yahan ruk jao — baaki sab skip
         }
 
-        // Spot/Transfer ke liye normal rendering
-        data.rows.forEach((row, index) => {
-            const tr = document.createElement('tr');
-            const isExtraRow = index >= 2;
+        // ============================================================
+        // ✅ NORMAL RENDERING: Blankets, Tote Bags, sab ke liye
+        // (jitne bhi products hain, unke pricing.rows isi se render hote hain)
+        // ============================================================
+        if (data.rows) {
+            data.rows.forEach((row, index) => {
+                const tr = document.createElement('tr');
 
-            let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
+                // ✅ Extra rows (index 2+) - sirf spot/transfer ke liye
+                const isExtraRow = !isBlank && index >= 2;
 
-            for (let i = 0; i < 6 && i < row.prices.length; i++) {
-                html += `<td class="text-brand-text">${row.prices[i]}</td>`;
-            }
+                let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
 
-            if (row.label.includes('ADD LOCATION') || row.label.includes('ADD COLOR')) {
-                html += `<td class="text-brand-textSecondary">V</td>`;
-            } else {
-                html += `<td class="text-brand-textSecondary">R</td>`;
-            }
-            tr.innerHTML = html;
+                for (let i = 0; i < 6 && i < row.prices.length; i++) {
+                    html += `<td class="text-brand-text">${row.prices[i]}</td>`;
+                }
 
-            if (isExtraRow) {
-                tr.className = 'pricing-extra-row';
-            }
+                if (row.label.includes('ADD LOCATION') || row.label.includes('ADD COLOR')) {
+                    html += `<td class="text-brand-textSecondary">V</td>`;
+                } else {
+                    html += `<td class="text-brand-textSecondary">R</td>`;
+                }
+                tr.innerHTML = html;
 
-            pricingBody.appendChild(tr);
-        });
+                // ✅ Extra row class
+                if (isExtraRow) {
+                    tr.className = 'pricing-extra-row';
+                }
+
+                pricingBody.appendChild(tr);
+            });
+        }
     }
     function renderSpecsTable(selectedColor) {
         const s = product.specs || {
@@ -8710,7 +10479,7 @@ function initFreightModal() {
         // ============================================================
         let colorInfoRows = '';
         if (product.category === "Blankets" && selectedColor) {
-            const skuVal = selectedColor.sku || 'N/A';
+
             const gtinVal = selectedColor.gtin || 'N/A';
             const pmsVal = selectedColor.pms || 'N/A';
 
@@ -8719,10 +10488,7 @@ function initFreightModal() {
                 <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COLOR</div>
                 <div class="w-1/2 p-3 font-medium text-brand-text">${selectedColor.name}</div>
             </div>
-            <div class="flex border-b border-r border-brand-border">
-                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">SKU</div>
-                <div class="w-1/2 p-3 font-medium text-brand-text">${skuVal}</div>
-            </div>
+          
             <div class="flex border-b border-r border-brand-border">
                 <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GTIN</div>
                 <div class="w-1/2 p-3 font-medium text-brand-text">${gtinVal}</div>
@@ -8837,27 +10603,62 @@ function initFreightModal() {
 
         const s = product.specs || {};
 
+        // ✅ CASE 1: Packaging options array (bags, blankets, T-shirts)
         if (s.packagingOptions && s.packagingOptions.length > 0) {
             let html = `<div class="space-y-4 text-sm text-brand-textSecondary">`;
             s.packagingOptions.forEach(option => {
                 html += `
-                <div class="border border-brand-border rounded-lg p-3">
-                    <p class="font-semibold text-brand-text">${option.type}</p>
-                    ${option.qtyPerBox ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
-                    ${option.boxWeight ? `<p><strong>Box Weight:</strong> ${option.boxWeight}</p>` : ''}
-                    ${option.boxDims ? `<p><strong>Box Dims:</strong> ${option.boxDims}</p>` : ''}
-                    ${option.cartonVolume ? `<p><strong>Carton Volume:</strong> ${option.cartonVolume}</p>` : ''}
-                    ${option.pieceWeight ? `<p><strong>Piece Weight:</strong> ${option.pieceWeight}</p>` : ''}
-                    ${option.note ? `<p class="text-xs italic mt-2">${option.note}</p>` : ''}
-                </div>
-            `;
+        <div class="border border-brand-border rounded-lg p-3">
+            <p class="font-semibold text-brand-text">${option.type}</p>
+            ${option.qtyPerBox && option.qtyPerBox !== 'N/A' ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
+            ${option.boxWeight && option.boxWeight !== 'N/A' ? `<p><strong>Box Weight:</strong> ${option.boxWeight}</p>` : ''}
+            ${option.boxDims && option.boxDims !== 'N/A' ? `<p><strong>Box Dims:</strong> ${option.boxDims}</p>` : ''}
+            ${option.cartonVolume && option.cartonVolume !== 'N/A' ? `<p><strong>Carton Volume:</strong> ${option.cartonVolume}</p>` : ''}
+            ${option.pieceWeight && option.pieceWeight !== 'N/A' ? `<p><strong>Piece Weight:</strong> ${option.pieceWeight}</p>` : ''}
+            ${option.note ? `<p class="text-xs italic mt-2">${option.note}</p>` : ''}
+        </div>
+    `;
             });
             html += `</div>`;
             packagingTab.innerHTML = html;
             return;
         }
 
-        // ... baaki code same
+        // ============================================================
+        // ✅ CASE 1.5: boxQuantity / boxWeight / boxDims style
+        // (IB29, MQIB6000, IDS125700, IB800, W956, MQIB, IDS4500 etc.)
+        // ============================================================
+        if (s.boxQuantity || s.boxWeight || s.boxDims) {
+            packagingTab.innerHTML = `
+        <div class="border border-brand-border rounded-lg p-3 text-sm text-brand-textSecondary">
+            <p class="font-semibold text-brand-text mb-2">Standard Packaging</p>
+            ${s.boxQuantity ? `<p><strong>Qty Per Box:</strong> ${s.boxQuantity}</p>` : ''}
+            ${s.boxWeight ? `<p><strong>Box Weight:</strong> ${s.boxWeight}</p>` : ''}
+            ${s.boxDims ? `<p><strong>Box Dims:</strong> ${s.boxDims}</p>` : ''}
+        </div>
+    `;
+            return;
+        }
+
+        // ✅ CASE 2: Fabric/garment specs (T-shirts, hoodies, apparel)
+        if (s.fabricWeight || s.fabric || s.sizes || s.minimumOrder || s.weight || s.material) {
+            packagingTab.innerHTML = `
+        <div class="space-y-2 text-sm text-brand-textSecondary">
+            ${s.fabricWeight ? `<p><strong>Fabric weight:</strong> ${s.fabricWeight}</p>` : ''}
+            ${s.weight ? `<p><strong>Weight:</strong> ${s.weight}</p>` : ''}
+            ${s.fabric ? `<p><strong>Fabric:</strong> ${s.fabric}</p>` : ''}
+            ${s.material ? `<p><strong>Material:</strong> ${s.material}</p>` : ''}
+            ${s.sizes ? `<p><strong>Sizes:</strong> ${s.sizes}</p>` : ''}
+            ${s.minimumOrder ? `<p><strong>Minimum order:</strong> ${s.minimumOrder}</p>` : ''}
+            ${s.label ? `<p><strong>Label:</strong> ${s.label}</p>` : ''}
+            ${s.packing ? `<p><strong>Packing:</strong> ${s.packing}</p>` : ''}
+        </div>
+    `;
+            return;
+        }
+
+        // ✅ CASE 3: Kuch bhi nahi
+        packagingTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No packaging information available.</p>`;
     }
 
     function initTabs() {
@@ -9034,6 +10835,35 @@ function initFreightModal() {
         const firstTab = container.querySelector('button');
         if (firstTab) {
             firstTab.click();
+        }
+
+        // ✅ Grid adjust karo tab change hone pe
+        setTimeout(adjustInfoGrid, 50);
+    }
+
+    // ============================================================
+    // ✅ DYNAMIC GRID ADJUSTMENT
+    // ============================================================
+    function adjustInfoGrid() {
+        const grid = document.getElementById('dynamic-info-grid');
+        if (!grid) return;
+
+        // Visible items count karo
+        const setupContainer = document.getElementById('setup-charge-container');
+        const repeatContainer = document.getElementById('repeat-setup-container');
+
+        let visibleCount = 2; // Price Includes + Lead Time (always visible)
+
+        if (setupContainer && setupContainer.style.display !== 'none') visibleCount++;
+        if (repeatContainer && repeatContainer.style.display !== 'none') visibleCount++;
+
+        // Grid columns adjust karo
+        if (visibleCount === 2) {
+            grid.className = 'grid grid-cols-2 gap-3 sm:gap-6 justify-center max-w-lg mx-auto';
+        } else if (visibleCount === 3) {
+            grid.className = 'grid grid-cols-3 gap-3 sm:gap-4 justify-center';
+        } else {
+            grid.className = 'grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4';
         }
     }
     // ============================================================

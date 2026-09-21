@@ -400,6 +400,7 @@
       animation-delay: 0.3s;
     }
 
+
     .popular-card:nth-child(3) {
       animation-delay: 0.6s;
     }
@@ -477,6 +478,16 @@
       border-radius: 16px;
       z-index: 0;
     }
+    .blink-text {
+  animation: blinkAnim 1s ease-in-out infinite;
+  color: #C81F45;
+  font-weight: 700;
+}
+
+@keyframes blinkAnim {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
 
     .particle {
       position: absolute;

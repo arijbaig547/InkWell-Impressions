@@ -131,13 +131,11 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
         <div class="flex items-center shrink-0">
-
             <a href="index.html">
                 <img src="./bold.webp" alt="Inkwell Impressions Solutions Logo"
                     class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain"
                     loading="eager" />
             </a>
-
         </div>
 
         <ul
@@ -182,12 +180,11 @@
 
         <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
 
-            <!-- SEARCH -->
+            <!-- DESKTOP SEARCH -->
             <form action="products.html" method="get"
                 class="hidden lg:flex items-center relative group">
 
                 <div class="relative">
-
                     <i
                         class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2
                         text-gray-400 text-[11px] group-focus-within:text-brand-crimson
@@ -226,54 +223,77 @@
                         transition-all duration-300 shadow-md">
 
                         <i class="fa-solid fa-arrow-right text-[10px]"></i>
-
                     </button>
-
                 </div>
-
             </form>
 
+            <!-- MOBILE SEARCH -->
+            <form action="products.html" method="get"
+                class="flex lg:hidden items-center relative">
+
+                <div class="relative">
+                    <i
+                        class="fa-solid fa-magnifying-glass absolute left-2 sm:left-3 top-1/2
+                        -translate-y-1/2 text-gray-400 text-[9px] sm:text-[11px]">
+                    </i>
+
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Search..."
+                        autocomplete="off"
+                        class="w-36 sm:w-36 h-8 sm:h-9 pl-7 sm:pl-8 pr-7 sm:pr-8
+                        bg-white/10 backdrop-blur-sm
+                        text-white placeholder:text-gray-400
+                        text-[10px] sm:text-xs
+                        border border-white/20
+                        rounded-full
+                        outline-none
+                        focus:border-brand-crimson
+                        transition-all"
+                    />
+
+                    <button
+                        type="submit"
+                        aria-label="Search products"
+                        class="absolute right-1 top-1/2 -translate-y-1/2
+                        w-6 h-6 rounded-full
+                        bg-brand-crimson text-white
+                        flex items-center justify-center">
+
+                        <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                    </button>
+                </div>
+            </form>
 
             <!-- REQUEST A QUOTE -->
-
             <a href="contact.html">
-
                 <button
                     class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
 
                     <span class="relative z-10 flex items-center gap-2">
-
                         <i class="fa-solid fa-file-signature text-[9px]"></i>
-
                         REQUEST A QUOTE
-
                     </span>
 
                 </button>
-
             </a>
 
-
             <!-- HAMBURGER -->
-
             <button
                 id="hamburgerBtn"
                 class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                 aria-label="Toggle Menu">
 
                 <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
-
             </button>
 
         </div>
-
     </div>
-
 </nav>
 
 
 <!-- Mobile Menu -->
-
 <div id="mobileMenu"
     class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
 
@@ -318,54 +338,18 @@
 
     </ul>
 
-
     <!-- REQUEST A QUOTE -->
-
     <a href="contact.html">
-
         <button
             class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
 
             <span class="relative z-10 flex items-center gap-2">
-
                 <i class="fa-solid fa-file-signature text-[9px]"></i>
-
                 REQUEST A QUOTE
-
             </span>
 
         </button>
-
     </a>
-
-
-    <!-- MOBILE SEARCH -->
-
-    <div class="py-2">
-
-        <form action="products.html" method="get"
-            class="flex items-center">
-
-            <input
-                type="text"
-                name="search"
-                placeholder="Search products..."
-                autocomplete="off"
-                class="bg-white/10 text-white placeholder:text-gray-400 text-xs px-3 py-2 rounded-l-sm border border-white/20 focus:border-brand-crimson focus:outline-none w-full"
-            />
-
-            <button
-                type="submit"
-                aria-label="Search products"
-                class="bg-brand-crimson hover:bg-red-700 text-white px-3 py-2 rounded-r-sm transition">
-
-                <i class="fa-solid fa-search text-xs"></i>
-
-            </button>
-
-        </form>
-
-    </div>
 
 </div>
 
@@ -374,7 +358,7 @@
   <!-- ============================================================ -->
   <!-- HEADER (Unchanged - Sirf image optimize) -->
   <!-- ============================================================ -->
-  <header class="header-bg text-white py-4 sm:py-6 md:py-8 lg:py-10 px-3 sm:px-4 md:px-6 lg:px-8">
+  <header class="header-bg text-white  md:pb-6 lg:pb-6 px-3 sm:px-4 md:px-6 lg:px-8">
     <div
       class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 pt-[72px] sm:pt-[80px] md:pt-[100px] lg:pt-[195px]">
 

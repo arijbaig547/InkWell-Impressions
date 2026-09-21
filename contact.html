@@ -96,64 +96,106 @@
 
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
+        <!-- LOGO -->
         <div class="flex items-center shrink-0">
             <a href="index.html">
-                <img src="./bold.webp" alt="Inkwell Impressions Solutions Logo"
-                    class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain" loading="eager" />
+                <img src="./bold.webp"
+                    alt="Inkwell Impressions Solutions Logo"
+                    class="h-16 sm:h-20 md:h-28 lg:h-32 xl:h-40 w-auto object-contain"
+                    loading="eager" />
             </a>
         </div>
 
+        <!-- DESKTOP MENU -->
         <ul
             class="hidden md:flex items-center space-x-4 lg:space-x-8 text-xs lg:text-sm font-medium uppercase tracking-wide">
 
             <li>
-                <a href="index.html" class="hover:text-brand-crimson transition">
+                <a href="index.html"
+                    class="hover:text-brand-crimson transition">
                     Home
                 </a>
             </li>
 
             <li>
-                <a href="products.html" class="hover:text-brand-crimson transition">
+                <a href="products.html"
+                    class="hover:text-brand-crimson transition">
                     Products
                 </a>
             </li>
 
             <li>
-                <a href="categories.html" class="hover:text-brand-crimson transition">
+                <a href="categories.html"
+                    class="hover:text-brand-crimson transition">
                     Categories
                 </a>
             </li>
 
             <li>
-                <a href="about.html" class="hover:text-brand-crimson transition">
+                <a href="about.html"
+                    class="hover:text-brand-crimson transition">
                     About Us
                 </a>
             </li>
 
             <li>
-                <a href="contact.html" class="text-brand-crimson" aria-current="page">
+                <a href="contact.html"
+                    class="text-brand-crimson"
+                    aria-current="page">
                     Contact
                 </a>
             </li>
 
         </ul>
 
+        <!-- RIGHT SIDE -->
         <div class="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
 
-            <!-- SEARCH -->
+            <!-- MOBILE SEARCH -->
+            <form action="products.html" method="get"
+                class="flex lg:hidden items-center relative">
+
+                <div class="relative">
+
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2
+                        -translate-y-1/2 text-gray-400 text-[10px]">
+                    </i>
+
+                    <input type="text"
+                        name="search"
+                        placeholder="Search..."
+                        autocomplete="off"
+                        class="w-36 sm:w-36 h-8 pl-8 pr-2 bg-white/10
+                        text-white placeholder:text-gray-400 text-[10px] sm:text-xs
+                        border border-white/20 rounded-full outline-none
+                        focus:border-brand-crimson transition-all" />
+
+                    <button type="submit"
+                        aria-label="Search products"
+                        class="absolute right-1 top-1/2 -translate-y-1/2
+                        w-6 h-6 rounded-full bg-brand-crimson text-white
+                        flex items-center justify-center">
+
+                        <i class="fa-solid fa-arrow-right text-[9px]"></i>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+            <!-- DESKTOP SEARCH -->
             <form action="products.html" method="get"
                 class="hidden lg:flex items-center relative group">
 
                 <div class="relative">
 
-                    <i
-                        class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2
-                        text-gray-400 text-[11px] group-focus-within:text-brand-crimson
-                        transition-colors duration-300">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2
+                        -translate-y-1/2 text-gray-400 text-[11px]
+                        group-focus-within:text-brand-crimson transition-colors">
                     </i>
 
-                    <input
-                        type="text"
+                    <input type="text"
                         name="search"
                         placeholder="Search products..."
                         autocomplete="off"
@@ -161,26 +203,20 @@
                         bg-white/10 backdrop-blur-sm
                         text-white placeholder:text-gray-400
                         text-[11px] xl:text-xs
-                        border border-white/20
-                        rounded-full
-                        outline-none
+                        border border-white/20 rounded-full outline-none
                         transition-all duration-300
                         focus:w-44 xl:focus:w-56
                         focus:bg-white/15
                         focus:border-brand-crimson
                         focus:ring-2 focus:ring-brand-crimson/20
-                        hover:border-white/40"
-                    />
+                        hover:border-white/40" />
 
-                    <button
-                        type="submit"
+                    <button type="submit"
                         aria-label="Search products"
                         class="absolute right-1 top-1/2 -translate-y-1/2
-                        w-7 h-7 rounded-full
-                        bg-brand-crimson text-white
+                        w-7 h-7 rounded-full bg-brand-crimson text-white
                         flex items-center justify-center
-                        hover:scale-105
-                        active:scale-95
+                        hover:scale-105 active:scale-95
                         transition-all duration-300 shadow-md">
 
                         <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -194,7 +230,9 @@
             <!-- REQUEST A QUOTE -->
             <a href="contact.html">
                 <button
-                    class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
+                    class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6
+                    py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm
+                    font-bold uppercase tracking-[0.08em] rounded-sm">
 
                     <span class="relative z-10 flex items-center gap-2">
                         <i class="fa-solid fa-file-signature text-[9px]"></i>
@@ -205,8 +243,7 @@
             </a>
 
             <!-- HAMBURGER -->
-            <button
-                id="hamburgerBtn"
+            <button id="hamburgerBtn"
                 class="md:hidden text-white text-xl sm:text-2xl focus:outline-none"
                 aria-label="Toggle Menu">
 
@@ -221,12 +258,14 @@
 </nav>
 
 
-<!-- Mobile Menu (Unchanged + Search Added) -->
+<!-- MOBILE MENU -->
 <div id="mobileMenu"
-    class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40 bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4 space-y-3 sm:space-y-4 border-t border-gray-700">
+    class="hidden md:hidden fixed top-[64px] sm:top-[72px] left-0 w-full z-40
+    bg-brand-navy text-white px-4 sm:px-6 py-3 sm:py-4
+    space-y-3 sm:space-y-4 border-t border-gray-700">
 
-    <ul
-        class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
+    <!-- MOBILE NAVIGATION LINKS -->
+    <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium uppercase tracking-wide">
 
         <li>
             <a href="index.html"
@@ -265,46 +304,6 @@
         </li>
 
     </ul>
-
-
-    <!-- REQUEST A QUOTE -->
-    <button
-        class="login-cta hidden lg:block relative text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.08em] rounded-sm">
-
-        <span class="relative z-10 flex items-center gap-2">
-            <i class="fa-solid fa-file-signature text-[9px]"></i>
-            REQUEST A QUOTE
-        </span>
-
-    </button>
-
-
-    <!-- MOBILE SEARCH -->
-    <div class="py-2">
-
-        <form action="products.html" method="get"
-            class="flex items-center">
-
-            <input
-                type="text"
-                name="search"
-                placeholder="Search products..."
-                autocomplete="off"
-                class="bg-white/10 text-white placeholder:text-gray-400 text-xs px-3 py-2 rounded-l-sm border border-white/20 focus:border-brand-crimson focus:outline-none w-full"
-            />
-
-            <button
-                type="submit"
-                aria-label="Search products"
-                class="bg-brand-crimson hover:bg-red-700 text-white px-3 py-2 rounded-r-sm transition">
-
-                <i class="fa-solid fa-search text-xs"></i>
-
-            </button>
-
-        </form>
-
-    </div>
 
 </div>
 

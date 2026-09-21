@@ -402,6 +402,21 @@ const products = [{
   popular: true
 },
 {
+  id: "ids969",
+  name: "Non Woven Drawstring Backpack",
+  code: "IDS969",
+  slug: "non-woven-drawstring-backpack",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '16"W x 18"H',
+  price: 1.13,
+  originalPrice: 1.13,
+
+  image: "assets/assets/images/products/non-woven/IDS969/IDS969_kelly.webp",
+  description: "Water repellent drawstring backpack made from 80 GSM non-woven polypropylene. Features a cinch closure with rope cord handles.",
+  popular: false
+},
+{
   id: "ib1000",
   name: "Canvas Gusset Shopping Tote Bag",
   code: "IB1000",
@@ -610,6 +625,19 @@ const products = [{
   description: "Canvas big tote bag made from 18 oz 100% cotton canvas with a bottom gusset."
 },
 {
+  id: "ABW8820",
+  name: "Elastic Carry Strap with Black Webbing Handle",
+  code: "ABW8820",
+  slug: "elastic-carry-strap-black-webbing-handle",
+  category: "Blankets",
+  material: "100% Polyester / Elastic",
+  size: '16" x 12" x 14"',
+  price: 1.20,
+  originalPrice: 1.20,
+  image: "assets/assets/images/products/blankets/IW8820/AB8820-29-Side.webp",
+  description: "100% Polyester / Elastic carry strap with black webbing handle. Elastic strap, webbing handle, one size fits most. 16\" x 12\" x 14\". Do not wash or dry."
+},
+{
   id: "ib1100",
   name: "Canvas Gusset Tote Bag w/ Color Handles",
   code: "IB1100",
@@ -725,7 +753,7 @@ const products = [{
   size: '50" x 60"',
   price: 10.52,
 
-  image: "assets/assets/images/products/blankets/IW8700/8700-Red.jpg",
+  image: "assets/assets/images/products/blankets/IW8700/8700-Red.webp",
   description: "Premium anti-pill fleece throw blanket. Perfect for corporate gifting and promotional events.",
   popular: false
 },
@@ -738,7 +766,7 @@ const products = [{
   material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
   size: '50" x 60"',
   price: 8.42,
-  image: "assets/assets/images/products/blankets/IW8701/8701-Navy.jpg",
+  image: "assets/assets/images/products/blankets/IW8701/8701-Navy.webp",
   description: "Fleece/Nylon Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon.",
   popular: false
 },
@@ -751,7 +779,7 @@ const products = [{
   material: "Polyester Fleece / Polyester Oxford with Polyurethane coating",
   size: '50" x 60"',
   price: 16.84,
-  image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.jpg",
+  image: "assets/assets/images/products/blankets/IW8702/8702-Blackwatch.webp",
   description: "Fleece/Nylon Print Picnic Blanket with easy-carry design that unfolds into a full-size picnic blanket. Features attached carry handles, quick close pockets, tubular binding, anti-pill fleece, and water repellent nylon.",
   popular: false
 },
@@ -764,7 +792,7 @@ const products = [{
   material: "100% Polyester Micro Coral Fleece",
   size: '50" x 60"',
   price: 14.22,
-  image: "assets/assets/images/products/blankets/IW8707/8707-Navy.jpg",
+  image: "assets/assets/images/products/blankets/IW8707/8707-Navy.webp",
   description: "Lightweight and velvety soft micro coral fleece blanket. 8.5-ounce, 100% polyester, 280 G/SM. Fully hemmed with matching polyester tricot binding. Clear vinyl zipper bag included.",
   popular: false
 },
@@ -777,7 +805,7 @@ const products = [{
   material: "52/48 Poly/Cotton",
   size: '50" x 60"',
   price: 16.22,
-  image: "assets/assets/images/products/blankets/IW8710/8710-Black.jpg",
+  image: "assets/assets/images/products/blankets/IW8710/8710-Black.webp",
   description: "Sweatshirt blanket throw made from 52/48 Poly/Cotton. 50\" x 60\", 280 G/SM. Able to be screen printed or embroidered.",
   popular: false
 },
@@ -790,7 +818,7 @@ const products = [{
   material: "100% Polar Fleece Fabric",
   size: '50" x 60"',
   price: 8.22,
-  image: "assets/assets/images/products/blankets/IW8711/8711-Black.jpg",
+  image: "assets/assets/images/products/blankets/IW8711/8711-Black.webp",
   description: "6.5-ounce, 100% Polar Fleece Fabric. 200 G/SM. 50\" x 60\". Matching whipstitch trim. Non-branded label/tag.",
   popular: false
 },
@@ -803,7 +831,7 @@ const products = [{
   material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
   size: '50" x 60"',
   price: 23.12,
-  image: "assets/assets/images/products/blankets/IW8712/8712-Cream.jpg",
+  image: "assets/assets/images/products/blankets/IW8712/8712-Cream.webp",
   description: "Cozy fleece face that reverses to soft luxurious sherpa. Hidden 15\" zip pocket for easy embroidery access. 50\" x 60\". Machine wash & dry.",
   popular: false
 },
@@ -816,7 +844,7 @@ const products = [{
   material: "100% Polyester Anti-Pill Fleece",
   size: '47" x 53"',
   price: 8.42,
-  image: "assets/assets/images/products/blankets/IW8718/8718-Black.jpg",
+  image: "assets/assets/images/products/blankets/IW8718/8718-Black.webp",
   description: "100% Polyester easy roll up blanket. 47\" x 53\". Anti-pill fleece, 180 G/SM. Trim has matching flap with pocket, handle, VELCRO® and whipstitch.",
   popular: false
 },
@@ -829,7 +857,7 @@ const products = [{
   material: "100% Polyester Faux Mink",
   size: '50" x 60"',
   price: 16.84,
-  image: "assets/assets/images/products/blankets/IW8721/8721-Black.jpg",
+  image: "assets/assets/images/products/blankets/IW8721/8721-Black.webp",
   description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Self hem decorative top stitch finish. 50\" x 60\". Vinyl zippered bag with mink touch card in pocket included.",
   popular: false
 },
@@ -842,7 +870,7 @@ const products = [{
   material: "100% Polyester Faux Mink",
   size: '30" x 40"',
   price: 8.64,
-  image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.jpg",
+  image: "assets/assets/images/products/blankets/IW8722/8722-Baby Blue.webp",
   description: "100% Polyester Faux Mink. Weight: 300 g/sqm. Self hem decorative top stitch finish. 30\" x 40\". Vinyl zippered bag with mink touch card in pocket included.",
   popular: false
 },
@@ -855,7 +883,7 @@ const products = [{
   material: "100% Polyester Faux Mink",
   size: '60" x 72"',
   price: 33.68,
-  image: "assets/assets/images/products/blankets/IW8723/8723-White.jpg",
+  image: "assets/assets/images/products/blankets/IW8723/8723-White.webp",
   description: "100% Polyester Faux Mink. Weight: 270 g/sqm. 48\" length. Full length shawl collar, belt loops, collar loop, 2 front pockets and matching belt. One Size Fits All.",
   popular: false
 },
@@ -868,7 +896,7 @@ const products = [{
   material: "100% Polyester (Faux Micro Mink / Faux Lambswool Sherpa)",
   size: '60" x 72"',
   price: 33.68,
-  image: "assets/assets/images/products/blankets/IW8726/8726-Gray.jpg",
+  image: "assets/assets/images/products/blankets/IW8726/8726-Gray.webp",
   description: "Cozy fleece face that reverses to soft luxurious sherpa. 220 g/sqm. Fully hemmed. Hidden zip pocket for easy embroidery access. 60\" x 72\". Machine wash & dry.",
   popular: false
 },
@@ -881,7 +909,7 @@ const products = [{
   material: "100% Polyester Faux Mink",
   size: '60" x 72"',
   price: 23.68,
-  image: "assets/assets/images/products/blankets/IW8727/8727-Black.jpg",
+  image: "assets/assets/images/products/blankets/IW8727/8727-Black.webp",
   description: "Size: 60\" x 72\". Weight: 300 g/sm. Content: 100% Polyester Faux Mink. Trim: Finish self hem decorative top stitch finish. Machine wash & dry. Vinyl zippered bag with mink touch card in pocket included.",
   popular: false
 },
@@ -894,7 +922,7 @@ const products = [{
   material: "100% Polyester Soft Printed",
   size: '50" x 60"',
   price: 21.58,
-  image: "assets/assets/images/products/blankets/IW8729/8729-Grey.jpg",
+  image: "assets/assets/images/products/blankets/IW8729/8729-Grey.webp",
   description: "Frosted fleece sherpa with luxurious feel. 100% polyester soft printed blanket. Folded hem. 50\" x 60\". Machine wash & dry.",
   popular: false
 },
@@ -907,8 +935,191 @@ const products = [{
   material: "100% Polyester (Faux Chinchilla / Faux Lambswool Sherpa)",
   size: '50" x 60"',
   price: 26.32,
-  image: "assets/assets/images/products/blankets/IW8730/8730-Heather Gray.jpg",
+  image: "assets/assets/images/products/blankets/IW8730/8730-Heather Gray.webp",
   description: "Snug faux chinchilla fur front that reverses to faux sherpa back. 100% polyester, one side faux chinchilla, other side faux lambswool sherpa. Concealed zipper hem in corner. 50\" x 60\". Machine wash & dry.",
+  popular: false
+},
+{
+  id: "ABWS99",
+  name: "Small Clear Zippered Blanket Bag",
+  code: "ABWS99",
+  slug: "small-clear-zippered-blanket-bag",
+  category: "Blankets",
+  material: "Clear",
+  size: '10.43" x 10.24" x 2.17"',
+  price: 1.68,
+  originalPrice: 1.68,
+  image: "assets/assets/images/products/blankets/IWS99/CBBS-99Clear.webp",
+  description: "Clear zip bag for blankets with rope handle. Fits style 8722. 10.43\" x 10.24\" x 2.17\". California Prop 65 Compliant. Do not wash or dry."
+},
+{
+  id: "ABWM99",
+  name: "Medium Clear Zippered Blanket Bag",
+  code: "ABWM99",
+  slug: "medium-clear-zippered-blanket-bag",
+  category: "Blankets",
+  material: "Clear",
+  size: '14.96" x 12.99" x 2.36"',
+  price: 2.00,
+  originalPrice: 2.00,
+  image: "assets/assets/images/products/blankets/IWM99/CBBM-99_Clear.webp",
+  description: "Clear zip bag for blankets with rope handle. Fits styles 8700, 8707, 8710, 8711 and 8721. 14.96\" x 12.99\" x 2.36\". California Prop 65 Compliant. Do not wash or dry."
+},
+{
+  id: "ABWL99",
+  name: "Large Clear Zippered Blanket Bag",
+  code: "ABWL99",
+  slug: "large-clear-zippered-blanket-bag",
+  category: "Blankets",
+  material: "Clear",
+  size: '14.96" x 12.99" x 3.54"',
+  price: 2.10,
+  originalPrice: 2.10,
+  image: "assets/assets/images/products/blankets/IWL99/CBBL-99Clear.webp",
+  description: "Clear zip bag for blankets with rope handle. Fits styles 8712, 8723 and 8727. 14.96\" x 12.99\" x 3.54\". California Prop 65 Compliant. Do not wash or dry."
+},
+{
+  id: "ABWXL99",
+  name: "Extra-Large Clear Zippered Blanket Bag",
+  code: "ABWXL99",
+  slug: "extra-large-clear-zippered-blanket-bag",
+  category: "Blankets",
+  material: "Clear",
+  size: '15.35" x 15.35" x 4.72"',
+  price: 2.42,
+  originalPrice: 2.42,
+  image: "assets/assets/images/products/blankets/IWXL99/CBBXL-99_Clear.webp",
+  description: "Clear zip bag for blankets with rope handle. Fits styles 8726, 8729 and 8730. 15.35\" x 15.35\" x 4.72\". California Prop 65 Compliant. Do not wash or dry."
+},
+
+{
+  id: "IT1003",
+  name: "Premium Combed Cotton T-Shirt",
+  code: "IT1003",
+  slug: "premium-combed-cotton-tshirt",
+  category: "T-Shirts",
+  material: "100% Combed Cotton (30/s Yarn)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 6.00,
+  image: "assets/assets/images/products/T-shirts/IT1003/1003-texas-orange-01.jpg",
+  description: "Ultra-soft 100% combed cotton tee crafted from fine 30/s yarn for a light, breathable feel. Side-stitched construction delivers lasting durability and shape retention — perfect for everyday wear or custom printing.",
+  popular: false
+},
+{
+  id: "IT1005",
+  name: "Heavyweight Ringspun Cotton T-Shirt",
+  code: "IT1005",
+  slug: "heavyweight-ringspun-cotton-tshirt",
+  category: "T-Shirts",
+  material: "100% Ringspun Cotton (6.0 oz / 203 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 8.22,
+  image: "assets/assets/images/products/T-shirts/IT1005/1005-white-01.jpg",
+  description: "Heavyweight 6.0 oz ringspun cotton blank tee built for high-volume screen printing and embroidery. The dense, durable fabric holds ink crisp and resists stretching on platens, while side-seam construction keeps prints aligned wash after wash.",
+  popular: false
+},
+{
+  id: "IT3130",
+  name: "French Terry Sleeveless Hoodie",
+  code: "IT3130",
+  slug: "french-terry-sleeveless-hoodie",
+  category: "Hoodies",
+  material: "80% Cotton / 20% Polyester French Terry (8.0 oz / 271 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 8.75,
+  image: "assets/assets/images/products/hoodies/IT3130/3130-royal-01.jpg",
+  description: "Lightweight 8.0 oz french terry sleeveless hoodie in an 80/20 cotton-poly blend. Athletic cut built for gyms, events, and streetwear, with a smooth print face and breathable flat terry interior.",
+  popular: false
+},
+{
+  id: "IT5001",
+  name: "Heavyweight Pullover Fleece Hoodie",
+  code: "IT5001",
+  slug: "heavyweight-pullover-fleece-hoodie",
+  category: "Hoodies",
+  material: "Heavyweight Fleece",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 16.75,
+  image: "assets/assets/images/products/hoodies/IT5001/5001-red-01.jpeg",
+  description: "Generously cut heavyweight pullover fleece hoodie with an amazing feel. Features a lined hood, heavy drawstring cord, spandex ribbing at cuffs and hem, double-needle stitching throughout, and a generous pouch pocket.",
+  popular: false
+},
+{
+  id: "IT5108",
+  name: "Premium Pullover Hoodie",
+  code: "IT5108",
+  slug: "premium-pullover-hoodie",
+  category: "Hoodies",
+  material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 8.75,
+  image: "assets/assets/images/products/hoodies/IT5108/5108-white-01.jpg",
+  description: "Premium 7.8 oz pullover hoodie with a 100% ringspun cotton face for a smooth print surface. Regular fit, self-fabric lined hood, heavy drawstring cord, spandex ribbing, and double-needle stitching throughout for lasting durability.",
+  popular: false
+},
+{
+  id: "IT5109",
+  name: "Premium Full Zip Hoodie",
+  code: "IT5109",
+  slug: "premium-full-zip-hoodie",
+  category: "Hoodies",
+  material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 10.00,
+  image: "assets/assets/images/products/hoodies/IT5109/5109-new-navy-01.jpg",
+  description: "Premium 7.8 oz full zip hoodie in 80/20 cotton-poly fleece with a 100% ringspun cotton face for sharp prints. YKK metal zipper, fully lined hood with heavy drawstring, spandex ribbing, and double-needle stitching throughout.",
+  popular: false
+},
+{
+  id: "IT15001",
+  name: "Ultra-Heavyweight 12oz Oversized Pullover Hoodie",
+  code: "IT15001",
+  slug: "ultra-heavyweight-12oz-oversized-pullover-hoodie",
+  category: "Hoodies",
+  material: "80% Cotton / 20% Polyester Fleece (12.0 oz / 407 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 17.45,
+  image: "assets/assets/images/products/hoodies/IT15001/15001-natural-01.jpg",
+  description: "Ultra-heavyweight 12 oz oversized pullover hoodie in 80/20 cotton-poly fleece. The heaviest hoodie in the lineup, with a brushed interior for warmth, fully lined self-fabric hood, and street-ready urban silhouette built for custom decoration.",
+  popular: false
+},
+{
+  id: "ITP280",
+  name: "Midweight Pullover Hoodie",
+  code: "ITP280",
+  slug: "midweight-pullover-hoodie",
+  category: "Hoodies",
+  material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 9.75,
+  image: "assets/assets/images/products/hoodies/ITP280/p280-gold-yellow-01.jpg",
+  description: "Midweight 8.8 oz blank pullover hoodie in 70/30 cotton-poly fleece. A versatile year-round weight with a smooth print-ready cotton face, self-fabric lined hood, spandex ribbing, and double-needle stitching for lasting durability.",
+  popular: false
+},
+{
+  id: "ITY300",
+  name: "Youth Pullover Hoodie",
+  code: "ITY300",
+  slug: "youth-pullover-hoodie",
+  category: "Hoodies",
+  material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 8.25,
+  image: "assets/assets/images/products/hoodies/ITY300/Y300-maroon-burgundy-01.jpg",
+  description: "Youth-sized 8.8 oz blank pullover hoodie in 70/30 cotton-poly fleece. Built for school, team, and youth organization programs with a smooth print face, two-ply hood, and spandex-reinforced ribbing for lasting shape.",
+  popular: false
+},
+{
+  id: "ITY5501",
+  name: "Youth Fleece Jogger Pant",
+  code: "ITY5501",
+  slug: "youth-fleece-jogger-pant",
+  category: "Pants",
+  material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 7.75,
+  image: "assets/assets/images/products/pants/ITY5501/Y5501-black-01.jpg",
+  description: "Youth-sized 8.8 oz blank fleece jogger pants in 70/30 cotton-poly. Tapered fit with cuffed rib bottoms, elasticated waist, and off-seam pockets for flat decoration panels. Sizes XS-M ship without drawstring to meet children's safety standards.",
   popular: false
 }
 ];
@@ -1183,32 +1394,38 @@ function initLazyBackground() {
     });
   }
 
-  function createProductCard(product) {
+function createProductCard(product) {
     const div = document.createElement('div');
     div.className = 'premium-card p-4 relative flex flex-col h-full product-card opacity-0 group cursor-pointer';
     div.dataset.id = product.id;
     const link = `product.html?id=${product.id}`;
+    // Category checks
+    const category = product.category?.toLowerCase() || '';
+    const isBlanket = category === 'blankets';
+    const isTShirt = category.includes('t-shirt') || category.includes('tshirt');
+    const isHoodie = category.includes('hoodie');
+    const isPants = category.includes('pants');
 
-    // Blankets don't show "Setup Was" or original price
-    const isBlanket = product.category?.toLowerCase() === 'blankets';
-
+    // Hide mockup for these categories
+    const hideMockup = isBlanket || isTShirt || isHoodie || isPants;
     div.innerHTML = `
-        <span class="absolute top-4 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">
+
+        <span class="absolute top-1 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">
             ${product.code}
         </span>
-        
+
         <a href="${link}" class="block relative h-48 mb-1 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500 overflow-visible">
             <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
         </a>
-        
+
         <!-- Size Badge -->
-        <div class="relative flex justify-center -mt-2 mb-3 z-10">
+        <div class="relative flex justify-center -mt-[1px] mb-3 z-10">
             <span class="bg-brand-navy/90 text-white text-[9px] font-medium px-3 py-0.5 rounded border border-white/10 shadow-md backdrop-blur-sm whitespace-nowrap">
                 ${product.size}
             </span>
         </div>
-        
         <div class="flex-1 flex flex-col">
+
             <a href="${link}">
                 <h3 class="text-sm font-bold mb-2 text-brand-text line-clamp-2">
                     ${product.name}
@@ -1223,7 +1440,10 @@ function initLazyBackground() {
 
                 ${!isBlanket ? `
                     <div class="text-[12px] text-brand-textSecondary font-medium mb-1">
-                        Setup Was
+                        ${isTShirt || isHoodie || isPants
+                            ? '<span class="blink-text">As Low As</span>'
+                            : 'Setup Was'
+                        }
                     </div>
                 ` : ''}
 
@@ -1239,36 +1459,44 @@ function initLazyBackground() {
                         $${product.price.toFixed(2)}
                     </span>
 
-                    <span class="text-[8px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">
-                        Net Price
+                    <span class="text-[12px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">
+                        ${isBlanket ? 'R' : 'Net Price'}
                     </span>
 
                 </div>
 
                 <div class="flex items-center gap-1 w-full">
 
+                    <!-- QUOTE -->
                     <a href="${link}?action=quote"
                         class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
                         <i class="fa-regular fa-pen-to-square"></i> QUOTE
                     </a>
 
-                    <a href="${link}?action=mockup"
-                        class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP
-                    </a>
+                    <!-- MOCKUP -->
+                    ${!hideMockup ? `
+                        <a href="${link}?action=mockup"
+                            class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP
+                        </a>
+                    ` : ''}
 
+                    <!-- FREIGHT -->
                     <a href="${link}?action=freight"
                         class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson">
                         <i class="fa-solid fa-truck-fast"></i> FREIGHT
                     </a>
 
                 </div>
+
             </div>
+
         </div>
+
     `;
 
     return div;
-  }
+}
 
   // ✅ GENERATE FIXED POPULAR DATA ONCE
   function generatePopularCache() {
