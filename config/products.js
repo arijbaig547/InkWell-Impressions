@@ -1001,7 +1001,7 @@ const products = [{
   material: "100% Combed Cotton (30/s Yarn)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
   price: 6.00,
-  image: "assets/assets/images/products/T-shirts/IT1003/1003-texas-orange-01.jpg",
+  image: "assets/assets/images/products/T-shirts/IT1003/1003-texas-orange-01.webp",
   description: "Ultra-soft 100% combed cotton tee crafted from fine 30/s yarn for a light, breathable feel. Side-stitched construction delivers lasting durability and shape retention — perfect for everyday wear or custom printing.",
   popular: false
 },
@@ -1014,7 +1014,7 @@ const products = [{
   material: "100% Ringspun Cotton (6.0 oz / 203 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
   price: 8.22,
-  image: "assets/assets/images/products/T-shirts/IT1005/1005-white-01.jpg",
+  image: "assets/assets/images/products/T-shirts/IT1005/1005-white-01.webp",
   description: "Heavyweight 6.0 oz ringspun cotton blank tee built for high-volume screen printing and embroidery. The dense, durable fabric holds ink crisp and resists stretching on platens, while side-seam construction keeps prints aligned wash after wash.",
   popular: false
 },
@@ -1026,8 +1026,8 @@ const products = [{
   category: "Hoodies",
   material: "80% Cotton / 20% Polyester French Terry (8.0 oz / 271 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 8.75,
-  image: "assets/assets/images/products/hoodies/IT3130/3130-royal-01.jpg",
+  price: 19.4,
+  image: "assets/assets/images/products/hoodies/IT3130/3130-royal-01.webp",
   description: "Lightweight 8.0 oz french terry sleeveless hoodie in an 80/20 cotton-poly blend. Athletic cut built for gyms, events, and streetwear, with a smooth print face and breathable flat terry interior.",
   popular: false
 },
@@ -1039,8 +1039,8 @@ const products = [{
   category: "Hoodies",
   material: "Heavyweight Fleece",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 16.75,
-  image: "assets/assets/images/products/hoodies/IT5001/5001-red-01.jpeg",
+  price: 37.2,
+  image: "assets/assets/images/products/hoodies/IT5001/5001-red-01.webp",
   description: "Generously cut heavyweight pullover fleece hoodie with an amazing feel. Features a lined hood, heavy drawstring cord, spandex ribbing at cuffs and hem, double-needle stitching throughout, and a generous pouch pocket.",
   popular: false
 },
@@ -1052,8 +1052,8 @@ const products = [{
   category: "Hoodies",
   material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 8.75,
-  image: "assets/assets/images/products/hoodies/IT5108/5108-white-01.jpg",
+  price: 19.4,
+  image: "assets/assets/images/products/hoodies/IT5108/5108-white-01.webp",
   description: "Premium 7.8 oz pullover hoodie with a 100% ringspun cotton face for a smooth print surface. Regular fit, self-fabric lined hood, heavy drawstring cord, spandex ribbing, and double-needle stitching throughout for lasting durability.",
   popular: false
 },
@@ -1065,8 +1065,8 @@ const products = [{
   category: "Hoodies",
   material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 10.00,
-  image: "assets/assets/images/products/hoodies/IT5109/5109-new-navy-01.jpg",
+  price: 22.2,
+  image: "assets/assets/images/products/hoodies/IT5109/5109-new-navy-01.webp",
   description: "Premium 7.8 oz full zip hoodie in 80/20 cotton-poly fleece with a 100% ringspun cotton face for sharp prints. YKK metal zipper, fully lined hood with heavy drawstring, spandex ribbing, and double-needle stitching throughout.",
   popular: false
 },
@@ -1078,8 +1078,8 @@ const products = [{
   category: "Hoodies",
   material: "80% Cotton / 20% Polyester Fleece (12.0 oz / 407 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 17.45,
-  image: "assets/assets/images/products/hoodies/IT15001/15001-natural-01.jpg",
+  price: 38.7,
+  image: "assets/assets/images/products/hoodies/IT15001/15001-natural-01.webp",
   description: "Ultra-heavyweight 12 oz oversized pullover hoodie in 80/20 cotton-poly fleece. The heaviest hoodie in the lineup, with a brushed interior for warmth, fully lined self-fabric hood, and street-ready urban silhouette built for custom decoration.",
   popular: false
 },
@@ -1091,8 +1091,8 @@ const products = [{
   category: "Hoodies",
   material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 9.75,
-  image: "assets/assets/images/products/hoodies/ITP280/p280-gold-yellow-01.jpg",
+  price: 21.6,
+  image: "assets/assets/images/products/hoodies/ITP280/p280-gold-yellow-01.webp",
   description: "Midweight 8.8 oz blank pullover hoodie in 70/30 cotton-poly fleece. A versatile year-round weight with a smooth print-ready cotton face, self-fabric lined hood, spandex ribbing, and double-needle stitching for lasting durability.",
   popular: false
 },
@@ -1104,9 +1104,100 @@ const products = [{
   category: "Hoodies",
   material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 8.25,
-  image: "assets/assets/images/products/hoodies/ITY300/Y300-maroon-burgundy-01.jpg",
+  price: 18.3 ,
+  image: "assets/assets/images/products/hoodies/ITY300/Y300-maroon-burgundy-01.webp",
   description: "Youth-sized 8.8 oz blank pullover hoodie in 70/30 cotton-poly fleece. Built for school, team, and youth organization programs with a smooth print face, two-ply hood, and spandex-reinforced ribbing for lasting shape.",
+  popular: false
+},
+{
+  id: "ITCR280",
+  name: "Midweight Crewneck Sweatshirt",
+  code: "ITCR280",
+  slug: "midweight-crewneck-sweatshirt",
+  category: "Crewneck Sweatshirts",
+  material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 18.3,
+  image: "assets/assets/images/products/sweatshirts/ITCR280/CR280-chocolate-01.webp",
+  description: "Midweight 8.8 oz blank crewneck sweatshirt in 70/30 cotton-poly fleece. Seamless body for uninterrupted printing, set-in sleeves with two-needle coverstitching, and spandex ribbing for shape retention. Classic silhouette ready for screen printing and embroidery.",
+  popular: false
+},
+{
+  id: "ITSCNSS",
+  name: "Crewneck Sweatshirt",
+  code: "ITSCNSS",
+  slug: "crewneck-sweatshirt",
+  category: "Crewneck Sweatshirts",
+  material: "50/50 Cotton/Poly (7.7 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 11.1,
+  image: "assets/assets/images/products/sweatshirts/ITSCNSS/ITSCNSS-navyblue-01.webp",
+  description: "Crewneck sweatshirt in a 50/50 cotton-poly blend. A classic silhouette with a smooth print surface, ready for screen printing, embroidery, and everyday wear.",
+  popular: false
+},
+{
+  id: "IT7770",
+  name: "Fleece Short",
+  code: "IT7770",
+  slug: "fleece-short",
+  category: "Fleece Shorts",
+  material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 280 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 18.3,
+  image: "assets/assets/images/products/shorts/IT7770/7770-black-01.webp",
+  description: "Midweight 8.8 oz fleece short in a 70/30 cotton-poly blend. Relaxed fit with an elasticated waistband, extended waist sizing, and a durable cotton face ideal for screen printing and embroidery.",
+  popular: false
+},
+{
+  id: "IT600MR",
+  name: "Russel Athletic Ringspun Cotton T-Shirt 6.0 Oz",
+  code: "IT600MR",
+  slug: "russel-athletic-ringspun-cotton-tshirt",
+  category: "T-Shirts",
+  material: "100% Ringspun Cotton (6.0 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 4.4,
+  image: "assets/assets/images/products/T-shirts/IT600MR/600MR-black-01.webp",
+  description: "Russel Athletic 6.0 oz ringspun cotton t-shirt. A heavier-weight blank with a smooth print surface, built for screen printing, DTG, and embroidery.",
+  popular: false
+},
+{
+  id: "IT1001",
+  name: "100% Cotton Ringspun T-Shirt 4.5 oz",
+  code: "IT1001",
+  slug: "cotton-ringspun-tshirt",
+  category: "T-Shirts",
+  material: "100% Cotton (4.5 oz, 30-Singles Ringspun)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',  
+  price: 4.44,
+  image: "assets/assets/images/products/T-shirts/IT1001/1001-red-01.webp",
+  description: "100% cotton 4.5 oz t-shirt using only 30-single ringspun cotton for a great feel and superior print face. Ideal for screen printing and DTG.",
+  popular: false
+},
+{
+  id: "IT3903R",
+  name: "Fruit of the Loom HD Cotton T-Shirt",
+  code: "IT3903R",
+  slug: "fruit-of-the-loom-hd-cotton-tshirt",
+  category: "T-Shirts",
+  material: "100% Cotton (HD Cotton)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',  
+  price: 4.4,
+  image: "assets/assets/images/products/T-shirts/IT3930R/3930R-burgundy-01.webp",
+  description: "Fruit of the Loom HD Cotton t-shirt (style 3930R). A durable, high-density cotton blank with a smooth print surface built for screen printing, DTG, and embroidery.",
+  popular: false
+},
+{
+  id: "IT8801",
+  name: "Fleece Jogger Pant",
+  code: "IT8801",
+  slug: "fleece-jogger-pant",
+  category: "Joggers/Sweatpants",
+  material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 290 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',  
+  price: 19.4,
+  image: "assets/assets/images/products/pants/IT8801/8801-orange-01.webp",
+  description: "Midweight 8.8 oz fleece jogger pant in a 70/30 cotton-poly blend. Unisex sizing with a tapered leg, cuffed rib bottoms, and an elasticated waistband with drawstring for adjustable fit.",
   popular: false
 },
 {
@@ -1114,12 +1205,64 @@ const products = [{
   name: "Youth Fleece Jogger Pant",
   code: "ITY5501",
   slug: "youth-fleece-jogger-pant",
-  category: "Pants",
+  category: "Joggers/Sweatpants",
   material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 7.75,
-  image: "assets/assets/images/products/pants/ITY5501/Y5501-black-01.jpg",
+  price: 17.2,
+  image: "assets/assets/images/products/pants/ITY5501/Y5501-black-01.webp",
   description: "Youth-sized 8.8 oz blank fleece jogger pants in 70/30 cotton-poly. Tapered fit with cuffed rib bottoms, elasticated waist, and off-seam pockets for flat decoration panels. Sizes XS-M ship without drawstring to meet children's safety standards.",
+  popular: false
+},
+{
+  id: "ITPNTS",
+  name: "Sweatpants 7.7 oz 50/50",
+  code: "ITPNTS",
+  slug: "sweatpants-50-50",
+  category: "Joggers/Sweatpants",
+  material: "50% Cotton / 50% Polyester (7.7 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 11.0,
+  image: "assets/assets/images/products/pants/ITPNTS/zjswpnts-navy-01.webp",
+  description: "Sweatpants in a 50/50 cotton-poly blend (7.7 oz). Without drawstrings and without side/back pockets. A clean, classic silhouette ready for screen printing and embroidery.",
+  popular: false
+},
+{
+  id: "ITCMFL",
+  name: "Camouflage Fleece Jogger Pant",
+  code: "ITCMFL",
+  slug: "camouflage-fleece-jogger-pant",
+  category: "Joggers/Sweatpants",
+  material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 290 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 19.9,
+  image: "assets/assets/images/products/pants/ITCMFL/8801cmfl-camouflage-01.webp",
+  description: "Camouflage fleece jogger pant in a 70/30 cotton-poly blend (8.8 oz). Tapered leg with cuffed rib bottoms and an elasticated waistband with drawstring for adjustable fit.",
+  popular: false
+},
+{
+  id: "ITT180",
+  name: "Ringspun Cotton Tank Top 5.5 oz",
+  code: "ITT180",
+  slug: "ringspun-cotton-tank-top",
+  category: "Tank Tops",
+  material: "100% Ringspun Cotton (5.5 oz, 20 Singles)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 3.2,
+  image: "assets/assets/images/products/tanktops/ITT180/tt180-black-01.webp",
+  description: "The TT180 tank is updated with a modern fit, featuring a rounded neck and designed with superior ring-spun cotton that acts as a blank canvas for printing. 5.5 oz., 100% ringspun cotton, 20 singles. Side seams, retail fit, Unisex sizing.",
+  popular: false
+},
+{
+  id: "ITZJHSS",
+  name: "Full Zip Hoodie 7.7 oz 50/50",
+  code: "ITZJHSS",
+  slug: "full-zip-hoodie-50-50",
+  category: "Hoodies",
+  material: "50% Cotton / 50% Polyester (7.7 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 11.0,
+  image: "assets/assets/images/products/hoodies/ITZJHSS/zjhss-nay.webp",
+  description: "Full zip hoodie in a 50/50 cotton-poly blend (7.7 oz) without drawstrings. Classic silhouette ready for screen printing and embroidery.",
   popular: false
 }
 ];
@@ -1395,35 +1538,189 @@ function initLazyBackground() {
   }
 
 function createProductCard(product) {
-    const div = document.createElement('div');
-    div.className = 'premium-card p-4 relative flex flex-col h-full product-card opacity-0 group cursor-pointer';
-    div.dataset.id = product.id;
-    const link = `product.html?id=${product.id}`;
-    // Category checks
-    const category = product.category?.toLowerCase() || '';
-    const isBlanket = category === 'blankets';
-    const isTShirt = category.includes('t-shirt') || category.includes('tshirt');
-    const isHoodie = category.includes('hoodie');
-    const isPants = category.includes('pants');
 
-    // Hide mockup for these categories
-    const hideMockup = isBlanket || isTShirt || isHoodie || isPants;
+    const div = document.createElement('div');
+
+    div.className = 'premium-card p-4 relative flex flex-col h-full product-card opacity-0 group cursor-pointer';
+
+    div.dataset.id = product.id;
+
+    const link = `product.html?id=${product.id}`;
+
+    // ============================================================
+    // CATEGORY
+    // ============================================================
+
+    const category = product.category?.toLowerCase().trim() || '';
+
+    // ============================================================
+    // APPAREL
+    // ============================================================
+
+    const isTShirt =
+        category.includes('t-shirt') ||
+        category.includes('tshirt') ||
+        category.includes('t shirt');
+
+    const isHoodie =
+        category.includes('hoodie');
+
+    const isPulloverHoodie =
+        category.includes('pullover hoodie') ||
+        category.includes('pullover hoodies');
+
+    const isFullZipHoodie =
+        category.includes('full zip hoodie') ||
+        category.includes('full zip hoodies');
+
+    const isCrewneck =
+        category.includes('crewneck');
+
+    const isSweatshirt =
+        category.includes('sweatshirt') ||
+        category.includes('sweatshirts');
+
+    const isPants =
+        category.includes('pants') ||
+        category.includes('pant') ||
+        category.includes('jogger') ||
+        category.includes('joggers') ||
+        category.includes('sweatpants') ||
+        category.includes('sweat pant') ||
+        category.includes('sweat pants');
+
+    const isJoggers =
+        category.includes('jogger') ||
+        category.includes('joggers') ||
+        category.includes('sweatpants') ||
+        category.includes('sweat pant') ||
+        category.includes('sweat pants');
+
+    const isShorts =
+        category.includes('short') ||
+        category.includes('shorts') ||
+        category.includes('fleece short') ||
+        category.includes('fleece shorts');
+
+    const isTankTop =
+        category.includes('tank top') ||
+        category.includes('tank tops') ||
+        category.includes('tanktop');
+
+    const isApparel =
+        isTShirt ||
+        isHoodie ||
+        isPulloverHoodie ||
+        isFullZipHoodie ||
+        isCrewneck ||
+        isSweatshirt ||
+        isPants ||
+        isJoggers ||
+        isShorts ||
+        isTankTop;
+
+    // ============================================================
+    // BAGS
+    // ============================================================
+
+    const isToteBag =
+        category.includes('tote bag') ||
+        category.includes('tote bags');
+
+    const isNonWovenBag =
+        category.includes('non-woven') ||
+        category.includes('non woven');
+
+    const isWineTote =
+        category.includes('wine tote') ||
+        category.includes('wine totes');
+
+    const isWineBag =
+        category.includes('wine bag') ||
+        category.includes('wine bags');
+
+    const isShoeBag =
+        category.includes('shoe bag') ||
+        category.includes('shoe bags');
+
+    const isBag =
+        isToteBag ||
+        isNonWovenBag ||
+        isWineTote ||
+        isWineBag ||
+        isShoeBag;
+
+    // ============================================================
+    // OTHERS
+    // ============================================================
+
+    const isBlanket =
+        category === 'blankets' ||
+        category === 'blanket';
+
+    const isCap =
+        category.includes('cap') ||
+        category.includes('caps');
+
+    const isBeanie =
+        category.includes('beanie') ||
+        category.includes('beanies');
+
+    const isAccessory =
+        isCap ||
+        isBeanie;
+
+    // ============================================================
+    // HIDE MOCKUP
+    // Apparel + Blankets = NO MOCKUP
+    // ============================================================
+
+    const hideMockup =
+        isBlanket ||
+        isApparel;
+
+    // ============================================================
+    // PRICE LABEL LOGIC
+    // ============================================================
+
+    const showSetupWas = !isBlanket;
+
+    // ============================================================
+    // SIZE BADGE
+    // ============================================================
+
+    const sizeBadge = product.size ? `
+        <div class="relative flex justify-center -mt-[1px] mb-3 z-10">
+            <span class="bg-brand-navy/90 text-white text-[9px] font-medium px-3 py-0.5 rounded border border-white/10 shadow-md backdrop-blur-sm whitespace-nowrap">
+                ${product.size}
+            </span>
+        </div>
+    ` : '';
+
+    // ============================================================
+    // CARD HTML
+    // ============================================================
+
     div.innerHTML = `
 
         <span class="absolute top-1 left-4 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded z-10 border border-white/10">
             ${product.code}
         </span>
 
-        <a href="${link}" class="block relative h-48 mb-1 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500 overflow-visible">
-            <img src="${product.image}" alt="${product.name}" class="max-h-full object-contain" />
+        <a href="${link}"
+            class="block relative h-48 mb-1 flex items-center justify-center product-img-bg group-hover:scale-105 transition-transform duration-500 overflow-visible">
+
+            <img
+                src="${product.image}"
+                alt="${product.name}"
+                class="max-h-full object-contain"
+            />
+
         </a>
 
         <!-- Size Badge -->
-        <div class="relative flex justify-center -mt-[1px] mb-3 z-10">
-            <span class="bg-brand-navy/90 text-white text-[9px] font-medium px-3 py-0.5 rounded border border-white/10 shadow-md backdrop-blur-sm whitespace-nowrap">
-                ${product.size}
-            </span>
-        </div>
+        ${sizeBadge}
+
         <div class="flex-1 flex flex-col">
 
             <a href="${link}">
@@ -1438,9 +1735,9 @@ function createProductCard(product) {
 
             <div class="mt-auto">
 
-                ${!isBlanket ? `
+                ${showSetupWas ? `
                     <div class="text-[12px] text-brand-textSecondary font-medium mb-1">
-                        ${isTShirt || isHoodie || isPants
+                        ${isApparel
                             ? '<span class="blink-text">As Low As</span>'
                             : 'Setup Was'
                         }
@@ -1449,7 +1746,7 @@ function createProductCard(product) {
 
                 <div class="flex items-center gap-2 flex-wrap mb-3">
 
-                    ${product.originalPrice && !isBlanket ? `
+                    ${product.originalPrice && showSetupWas ? `
                         <span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">
                             $${product.originalPrice.toFixed(2)}
                         </span>
@@ -1460,7 +1757,7 @@ function createProductCard(product) {
                     </span>
 
                     <span class="text-[12px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">
-                        ${isBlanket ? 'R' : 'Net Price'}
+                        ${isBlanket || isApparel ? 'R' : 'Net Price'}
                     </span>
 
                 </div>
@@ -1468,23 +1765,35 @@ function createProductCard(product) {
                 <div class="flex items-center gap-1 w-full">
 
                     <!-- QUOTE -->
-                    <a href="${link}?action=quote"
+                    <a
+                        href="${link}?action=quote"
                         class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
-                        <i class="fa-regular fa-pen-to-square"></i> QUOTE
+
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        QUOTE
+
                     </a>
 
                     <!-- MOCKUP -->
                     ${!hideMockup ? `
-                        <a href="${link}?action=mockup"
+                        <a
+                            href="${link}?action=mockup"
                             class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i> MOCKUP
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            MOCKUP
+
                         </a>
                     ` : ''}
 
                     <!-- FREIGHT -->
-                    <a href="${link}?action=freight"
+                    <a
+                        href="${link}?action=freight"
                         class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson">
-                        <i class="fa-solid fa-truck-fast"></i> FREIGHT
+
+                        <i class="fa-solid fa-truck-fast"></i>
+                        FREIGHT
+
                     </a>
 
                 </div>
@@ -1492,7 +1801,6 @@ function createProductCard(product) {
             </div>
 
         </div>
-
     `;
 
     return div;
