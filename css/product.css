@@ -612,6 +612,44 @@ body.blanket-page .grid.grid-cols-2.gap-3.sm\:gap-10.bg-brand-surface {
     background: #a01838;
     transform: scale(1.1);
 }
+/* ============================================
+   APPAREL STANDOUT THEME (SIRF BADGE + IMAGE)
+   ============================================ */
+
+/* Gold badge */
+.standout-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 100%);
+    color: #3B2417;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 6px rgba(212, 175, 55, 0.3);
+    text-transform: uppercase;
+}
+
+.standout-badge i {
+    font-size: 11px;
+}
+
+/* Golden border on main image */
+.standout-image {
+    border: 2px solid #D4AF37 !important;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2) !important;
+    padding: 4px;
+    background: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.standout-image:hover {
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.35) !important;
+    transform: translateY(-2px);
+}
 
 /* Mobile responsive */
 @media (max-width: 640px) {

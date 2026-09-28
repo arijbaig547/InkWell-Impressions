@@ -1014,7 +1014,7 @@ const products = [{
   material: "100% Ringspun Cotton (6.0 oz / 203 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
   price: 8.22,
-  image: "assets/assets/images/products/T-shirts/IT1005/1005-white-01.webp",
+  image: "assets/assets/images/products/T-shirts/IT1005/1005-black-01.webp",
   description: "Heavyweight 6.0 oz ringspun cotton blank tee built for high-volume screen printing and embroidery. The dense, durable fabric holds ink crisp and resists stretching on platens, while side-seam construction keeps prints aligned wash after wash.",
   popular: false
 },
@@ -1092,7 +1092,7 @@ const products = [{
   material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
   price: 21.6,
-  image: "assets/assets/images/products/hoodies/ITP280/p280-gold-yellow-01.webp",
+  image: "assets/assets/images/products/hoodies/ITP280/P280-gold-yellow-01.webp",
   description: "Midweight 8.8 oz blank pullover hoodie in 70/30 cotton-poly fleece. A versatile year-round weight with a smooth print-ready cotton face, self-fabric lined hood, spandex ribbing, and double-needle stitching for lasting durability.",
   popular: false
 },
@@ -1104,7 +1104,7 @@ const products = [{
   category: "Hoodies",
   material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
   size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
-  price: 18.3 ,
+  price: 18.3,
   image: "assets/assets/images/products/hoodies/ITY300/Y300-maroon-burgundy-01.webp",
   description: "Youth-sized 8.8 oz blank pullover hoodie in 70/30 cotton-poly fleece. Built for school, team, and youth organization programs with a smooth print face, two-ply hood, and spandex-reinforced ribbing for lasting shape.",
   popular: false
@@ -1168,7 +1168,7 @@ const products = [{
   slug: "cotton-ringspun-tshirt",
   category: "T-Shirts",
   material: "100% Cotton (4.5 oz, 30-Singles Ringspun)",
-  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',  
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
   price: 4.44,
   image: "assets/assets/images/products/T-shirts/IT1001/1001-red-01.webp",
   description: "100% cotton 4.5 oz t-shirt using only 30-single ringspun cotton for a great feel and superior print face. Ideal for screen printing and DTG.",
@@ -1181,7 +1181,7 @@ const products = [{
   slug: "fruit-of-the-loom-hd-cotton-tshirt",
   category: "T-Shirts",
   material: "100% Cotton (HD Cotton)",
-  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',  
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
   price: 4.4,
   image: "assets/assets/images/products/T-shirts/IT3930R/3930R-burgundy-01.webp",
   description: "Fruit of the Loom HD Cotton t-shirt (style 3930R). A durable, high-density cotton blank with a smooth print surface built for screen printing, DTG, and embroidery.",
@@ -1194,7 +1194,7 @@ const products = [{
   slug: "fleece-jogger-pant",
   category: "Joggers/Sweatpants",
   material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 290 GSM)",
-  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',  
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
   price: 19.4,
   image: "assets/assets/images/products/pants/IT8801/8801-orange-01.webp",
   description: "Midweight 8.8 oz fleece jogger pant in a 70/30 cotton-poly blend. Unisex sizing with a tapered leg, cuffed rib bottoms, and an elasticated waistband with drawstring for adjustable fit.",
@@ -1264,7 +1264,246 @@ const products = [{
   image: "assets/assets/images/products/hoodies/ITZJHSS/zjhss-nay.webp",
   description: "Full zip hoodie in a 50/50 cotton-poly blend (7.7 oz) without drawstrings. Classic silhouette ready for screen printing and embroidery.",
   popular: false
+},
+{
+  id: "IA1000",
+  name: "Signature Blend Tee",
+  code: "IA1000",
+  slug: "signature-blend-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "60% Ring-spun Combed Cotton / 40% Polyester (4.3 oz / 145 GSM)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 5.73,
+  image: "assets/assets/images/products/T-shirts/IA1000/IA1000-royal_01.webp",
+  description: "Premium 4.3 oz blended unisex tee in 60/40 ring-spun combed cotton and polyester. Smooth, durable, and built for customization.",
+  popular: false
+},
+{
+  id: "IA1003",
+  name: "Vantage V-Neck Tee",
+  code: "IA1003",
+  slug: "vantage-v-neck-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 6.33,
+  image: "assets/assets/images/products/T-shirts/IA1003/IA1003-pink-01.webp",
+  description: "Elevated everyday essential — the Vantage V-Neck Tee delivers a clean, modern silhouette with a 4.3 oz combed cotton face that takes ink and thread beautifully. Built for customization, ready for daily wear.",
+  popular: false
+},
+{
+  id: "IA1004",
+  name: "Vantage Long Sleeve Tee",
+  code: "IA1004",
+  slug: "vantage-long-sleeve-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 8.36,
+  image: "assets/assets/images/products/T-shirts/IA1004/IA1004-neon-yellow-01.webp",
+  description: "Layer-ready staple — the Vantage Long Sleeve Tee brings a refined 4.3 oz combed cotton face to a classic long-sleeve silhouette. Built to print, built to last.",
+  popular: false
+},
+{
+  id: "IA1005",
+  name: "Sculpt Fitted Tee",
+  code: "IA1005",
+  slug: "sculpt-fitted-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 4.42,
+  image: "assets/assets/images/products/T-shirts/IA1005/IA1005-burgundy-01.webp",
+  description: "Tailored to move — the Sculpt Fitted Tee is cut for a flattering women's silhouette in a smooth 4.3 oz combed cotton blend. Made to print, made to fit.",
+  popular: false
+},
+{
+  id: "IA1007",
+  name: "Sprout Youth Tee",
+  code: "IA1007",
+  slug: "sprout-youth-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 4.67,
+  image: "assets/assets/images/products/T-shirts/IA1007/IA1007-navy-01.webp",
+  description: "Built for the next generation — the Sprout Youth Tee brings a soft 4.3 oz combed cotton face to a kid-sized silhouette. Ready for school prints, team graphics, and everyday play.",
+  popular: false
+},
+{
+  id: "IA1010",
+  name: "Velocity Performance Tee",
+  code: "IA1010",
+  slug: "velocity-performance-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Polyester (4.3 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 6.56,
+  image: "assets/assets/images/products/T-shirts/IA1010/IA1010-moss-green-01.webp",
+  description: "Engineered for movement — the Velocity Performance Tee is spun from 100% polyester with a 4.3 oz hand feel that wicks, breathes, and holds vibrant color. Built for training, teamwear, and high-energy events.",
+  popular: false
+},
+{
+  id: "IA1133",
+  name: "Rebel Crop Tee",
+  code: "IA1133",
+  slug: "rebel-crop-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 5.56,
+  image: "assets/assets/images/products/T-shirts/IA1133/IA1133-powder-blue-01.webp",
+  description: "Streetwear energy in a cropped silhouette — the Rebel Crop Tee is cut from the same soft, breathable 4.3 oz jersey as our signature blanks. Relaxed fit, elevated attitude.",
+  popular: false
+},
+{
+  id: "IA1450",
+  name: "Monolith Heavyweight Tee",
+  code: "IA1450",
+  slug: "monolith-heavyweight-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (6.5 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 8.89,
+  image: "assets/assets/images/products/T-shirts/IA1450/IA1450-charcoal-01.webp",
+  description: "Built like a cornerstone — the Monolith Heavyweight Tee uses premium 6.5 oz cotton for a substantial, luxury hand feel that holds its shape and never feels thin. Structured drape, reinforced seams, and a smooth print-ready face make it the perfect canvas for custom work or everyday wear.",
+  popular: false
+},
+{
+  id: "IA5000",
+  name: "Vintage Dye Premium Tee",
+  code: "IA5000",
+  slug: "vintage-dye-premium-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (6.0 oz / 200 GSM, Side Seam)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 10.00,
+  image: "assets/assets/images/products/T-shirts/IA5000/IA5000-black-01.webp",
+  description: "Each piece tells its own story — the Vintage Dye Premium Tee is cut from 6 oz side-seam cotton and treated with a unique garment over-dye process that gives every shirt a one-of-a-kind character. Expect slight variations in color and shade; they're not flaws, they're the signature.",
+  popular: false
+},
+{
+  id: "IA5001",
+  name: "Terra Mineral Wash Tee",
+  code: "IA5001",
+  slug: "terra-mineral-wash-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (6.0 oz / 200 GSM, Side Seam)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 10.67,
+  image: "assets/assets/images/products/T-shirts/IA5001/IA5001-earth-01.webp",
+  description: "Earthy, textured, and unmistakably yours — the Terra Mineral Wash Tee is built on a 6 oz side-seam cotton base and finished with a mineral wash that gives every piece a soft, lived-in character. Subtle shade variations from lot to lot are part of the process, not a defect.",
+  popular: false
+},
+{
+  id: "IA8001",
+  name: "Tactical Elite Performance Polo",
+  code: "IA8001",
+  slug: "tactical-elite-performance-polo",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Polyester (5.2 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 13.33,
+  image: "assets/assets/images/products/T-shirts/IA8001/IA8001-royal-01.webp",
+  description: "Field-tested, boardroom-ready — the Tactical Elite Performance Polo is built from 5.2 oz performance polyester with advanced moisture-wicking, anti-odor technology, and UPF 40+ sun protection. Whether you're on the course or on the clock, it delivers breathable, uncompromised performance all day.",
+  popular: false
+},
+{
+  id: "IA1122",
+  name: "Bloom Crop Hoodie",
+  code: "IA1122",
+  slug: "bloom-crop-hoodie",
+  category: "Hoodies",
+  group: "Apparel",
+  material: "60% Cotton / 40% Polyester Fleece (7.8 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 13.33,
+  image: "assets/assets/images/products/hoodies/IA1122/IA1122-red-01.webp",
+  description: "Soft fleece, cropped cut, everyday cool — the Bloom Crop Hoodie pairs a cozy 7.8 oz cotton-poly blend with a relaxed silhouette made for layering. Designed for girls who move fast and dress smart.",
+  popular: false
+},
+{
+  id: "IA2011",
+  name: "Meridian Fleece Hoodie",
+  code: "IA2011",
+  slug: "meridian-fleece-hoodie",
+  category: "Hoodies",
+  group: "Apparel",
+  material: "60% Cotton / 40% Polyester Fleece (8.4 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 19.00,
+  image: "assets/assets/images/products/hoodies/IA2011/IA2011-royal-01.webp",
+  description: "Warmth, meet durability — the Meridian Fleece Hoodie is built from an 8.4 oz cotton-poly blend with a soft brushed interior and a relaxed unisex fit. Designed for layering, made to last through cold seasons and high-volume decoration.",
+  popular: false
+},
+{
+  id: "IA2013",
+  name: "Meridian Fleece Crew",
+  code: "IA2013",
+  slug: "meridian-fleece-crew",
+  category: "Crewneck Sweatshirts",
+  group: "Apparel",
+  material: "60% Cotton / 40% Polyester Fleece (8.4 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 22.22,
+  image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-irish-green-01.webp",
+  description: "Warmth with a clean finish — the Meridian Fleece Crew is built on the same trusted 8.4 oz cotton-poly fleece as our hoodies, cut into a classic crewneck silhouette. Soft brushed interior, durable construction, and ready for layering or standalone wear.",
+  popular: false
+},
+{
+  id: "IA11001",
+  name: "Ember Burnout Hoodie",
+  code: "IA11001",
+  slug: "ember-burnout-hoodie",
+  category: "Hoodies",
+  group: "Apparel",
+  material: "60% Cotton / 40% Polyester Fleece (9.0 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 21.11,
+  image: "assets/assets/images/products/hoodies/IA11001/IA11001-black-01.webp",
+  description: "Made to fade — the Ember Burnout Hoodie pairs a warm 9 oz cotton-poly fleece with a unique burnout finish that gives every piece a soft, lived-in look. Durable construction, relaxed unisex fit, and ready for custom decoration.",
+  popular: false
+},
+{
+  id: "IA11005",
+  name: "Nantucket Fleece Hoodie",
+  code: "IA11005",
+  slug: "nantucket-fleece-hoodie",
+  category: "Hoodies",
+  group: "Apparel",
+  material: "60% Cotton / 40% Polyester Fleece (9.0 oz)",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 21.11,
+  image: "assets/assets/images/products/hoodies/IA11005/IA11005-salt-and-pepper-01.webp",
+  description: "Coastal-inspired and built for warmth — the Nantucket Fleece Hoodie is cut from a substantial 9 oz cotton-poly blend with a soft brushed interior. Relaxed unisex fit, durable construction, and a classic Salt & Pepper or Black finish that layers effortlessly.",
+  popular: false
+},
+{
+  id: "IA1001",
+  name: "Signature Premium Tee",
+  code: "IA1001",
+  slug: "signature-premium-tee",
+  category: "T-Shirts",
+  group: "Apparel",
+  material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+  size: 'S - XL (2XL, 3XL, 4XL, 5XL available)',
+  price: 5.73,
+  image: "assets/assets/images/products/T-shirts/IA1001/IA1001-peach-01.webp",
+  description: "Everyday luxury, refined — the Signature Premium Tee is spun from ring-spun combed cotton and finished with an enzyme wash for a smooth, lived-in softness that only gets better with every wash. A wardrobe staple built to last.",
+  popular: false
 }
+
 ];
 
 // ============================================================
@@ -1537,7 +1776,7 @@ function initLazyBackground() {
     });
   }
 
-function createProductCard(product) {
+  function createProductCard(product) {
 
     const div = document.createElement('div');
 
@@ -1558,117 +1797,117 @@ function createProductCard(product) {
     // ============================================================
 
     const isTShirt =
-        category.includes('t-shirt') ||
-        category.includes('tshirt') ||
-        category.includes('t shirt');
+      category.includes('t-shirt') ||
+      category.includes('tshirt') ||
+      category.includes('t shirt');
 
     const isHoodie =
-        category.includes('hoodie');
+      category.includes('hoodie');
 
     const isPulloverHoodie =
-        category.includes('pullover hoodie') ||
-        category.includes('pullover hoodies');
+      category.includes('pullover hoodie') ||
+      category.includes('pullover hoodies');
 
     const isFullZipHoodie =
-        category.includes('full zip hoodie') ||
-        category.includes('full zip hoodies');
+      category.includes('full zip hoodie') ||
+      category.includes('full zip hoodies');
 
     const isCrewneck =
-        category.includes('crewneck');
+      category.includes('crewneck');
 
     const isSweatshirt =
-        category.includes('sweatshirt') ||
-        category.includes('sweatshirts');
+      category.includes('sweatshirt') ||
+      category.includes('sweatshirts');
 
     const isPants =
-        category.includes('pants') ||
-        category.includes('pant') ||
-        category.includes('jogger') ||
-        category.includes('joggers') ||
-        category.includes('sweatpants') ||
-        category.includes('sweat pant') ||
-        category.includes('sweat pants');
+      category.includes('pants') ||
+      category.includes('pant') ||
+      category.includes('jogger') ||
+      category.includes('joggers') ||
+      category.includes('sweatpants') ||
+      category.includes('sweat pant') ||
+      category.includes('sweat pants');
 
     const isJoggers =
-        category.includes('jogger') ||
-        category.includes('joggers') ||
-        category.includes('sweatpants') ||
-        category.includes('sweat pant') ||
-        category.includes('sweat pants');
+      category.includes('jogger') ||
+      category.includes('joggers') ||
+      category.includes('sweatpants') ||
+      category.includes('sweat pant') ||
+      category.includes('sweat pants');
 
     const isShorts =
-        category.includes('short') ||
-        category.includes('shorts') ||
-        category.includes('fleece short') ||
-        category.includes('fleece shorts');
+      category.includes('short') ||
+      category.includes('shorts') ||
+      category.includes('fleece short') ||
+      category.includes('fleece shorts');
 
     const isTankTop =
-        category.includes('tank top') ||
-        category.includes('tank tops') ||
-        category.includes('tanktop');
+      category.includes('tank top') ||
+      category.includes('tank tops') ||
+      category.includes('tanktop');
 
     const isApparel =
-        isTShirt ||
-        isHoodie ||
-        isPulloverHoodie ||
-        isFullZipHoodie ||
-        isCrewneck ||
-        isSweatshirt ||
-        isPants ||
-        isJoggers ||
-        isShorts ||
-        isTankTop;
+      isTShirt ||
+      isHoodie ||
+      isPulloverHoodie ||
+      isFullZipHoodie ||
+      isCrewneck ||
+      isSweatshirt ||
+      isPants ||
+      isJoggers ||
+      isShorts ||
+      isTankTop;
 
     // ============================================================
     // BAGS
     // ============================================================
 
     const isToteBag =
-        category.includes('tote bag') ||
-        category.includes('tote bags');
+      category.includes('tote bag') ||
+      category.includes('tote bags');
 
     const isNonWovenBag =
-        category.includes('non-woven') ||
-        category.includes('non woven');
+      category.includes('non-woven') ||
+      category.includes('non woven');
 
     const isWineTote =
-        category.includes('wine tote') ||
-        category.includes('wine totes');
+      category.includes('wine tote') ||
+      category.includes('wine totes');
 
     const isWineBag =
-        category.includes('wine bag') ||
-        category.includes('wine bags');
+      category.includes('wine bag') ||
+      category.includes('wine bags');
 
     const isShoeBag =
-        category.includes('shoe bag') ||
-        category.includes('shoe bags');
+      category.includes('shoe bag') ||
+      category.includes('shoe bags');
 
     const isBag =
-        isToteBag ||
-        isNonWovenBag ||
-        isWineTote ||
-        isWineBag ||
-        isShoeBag;
+      isToteBag ||
+      isNonWovenBag ||
+      isWineTote ||
+      isWineBag ||
+      isShoeBag;
 
     // ============================================================
     // OTHERS
     // ============================================================
 
     const isBlanket =
-        category === 'blankets' ||
-        category === 'blanket';
+      category === 'blankets' ||
+      category === 'blanket';
 
     const isCap =
-        category.includes('cap') ||
-        category.includes('caps');
+      category.includes('cap') ||
+      category.includes('caps');
 
     const isBeanie =
-        category.includes('beanie') ||
-        category.includes('beanies');
+      category.includes('beanie') ||
+      category.includes('beanies');
 
     const isAccessory =
-        isCap ||
-        isBeanie;
+      isCap ||
+      isBeanie;
 
     // ============================================================
     // HIDE MOCKUP
@@ -1676,8 +1915,8 @@ function createProductCard(product) {
     // ============================================================
 
     const hideMockup =
-        isBlanket ||
-        isApparel;
+      isBlanket ||
+      isApparel;
 
     // ============================================================
     // PRICE LABEL LOGIC
@@ -1738,9 +1977,9 @@ function createProductCard(product) {
                 ${showSetupWas ? `
                     <div class="text-[12px] text-brand-textSecondary font-medium mb-1">
                         ${isApparel
-                            ? '<span class="blink-text">As Low As</span>'
-                            : 'Setup Was'
-                        }
+          ? '<span class="blink-text">As Low As</span>'
+          : 'Setup Was'
+        }
                     </div>
                 ` : ''}
 
@@ -1804,7 +2043,7 @@ function createProductCard(product) {
     `;
 
     return div;
-}
+  }
 
   // ✅ GENERATE FIXED POPULAR DATA ONCE
   function generatePopularCache() {
@@ -1955,7 +2194,23 @@ function createProductCard(product) {
           }
 
           // Bring products slightly into view
+          // Scroll to products section center when category changes
+          const productGrid = document.getElementById('product-grid');
 
+          if (productGrid) {
+           setTimeout(() => {
+    const grid = document.getElementById('product-grid');
+
+    if (grid) {
+        const rect = grid.getBoundingClientRect();
+
+        window.scrollTo({
+            top: window.scrollY + rect.top - window.innerHeight * 0.4,
+            behavior: 'smooth'
+        });
+    }
+}, 100);
+          }
         });
       });
     });

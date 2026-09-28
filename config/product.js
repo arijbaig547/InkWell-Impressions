@@ -7757,12 +7757,14 @@ const products = [{
     code: "IT1003",
     slug: "premium-combed-cotton-tshirt",
     category: "T-Shirts",
+    group: "Apparel",
+
     material: "100% Cotton (4.5 oz / 153 GSM, 30-Singles Yarn)",
     size: 'S - 5XL',
     imprint: "N/A",
     price: 6.00,
     originalPrice: 6.00,
-    image: "assets/assets/images/products/T-shirts/IT1003/1003-white-01.webp",
+    image: "assets/assets/images/products/T-shirts/IT1003/1003-purple-01.webp",
     featureImage: "assets/assets/images/products/T-shirts/IT1003/1003-feature.webp",
     description: "Premium 4.5oz combed cotton blank t-shirt (style 1003). The 30-singles yarn delivers a smooth printable surface ideal for screen printing and DTG.",
     popular: false,
@@ -7908,12 +7910,13 @@ const products = [{
     code: "IT1005",
     slug: "heavyweight-ringspun-cotton-tshirt",
     category: "T-Shirts",
+    group: "Apparel",
     material: "100% Heavyweight Cotton (6.0 oz / 203 GSM, 20/s Yarn)",
     size: 'S - 5XL',
     imprint: "N/A",
     price: 8.22,
     originalPrice: 8.22,
-    image: "assets/assets/images/products/T-shirts/IT1005/1005-white-01.webp",
+    image: "assets/assets/images/products/T-shirts/IT1005/1005-black-01.webp",
     featureImage: "assets/assets/images/products/T-shirts/IT1005/1005-feature.webp",
     description: "Heavyweight 6.0 oz cotton blank t-shirt (style 1005). The dense, durable fabric is built for high-volume screen printing and embroidery, with a smooth print surface and side-seam construction that keeps prints aligned.",
     popular: false,
@@ -7974,6 +7977,45 @@ const products = [{
             fullDetails: "threelayer.com/product/heavy-cotton-t-shirts-wholesale-1005"
         },
 
+        packagingOptions: [
+            {
+                type: "Small",
+                qtyPerBox: "72 pcs",
+                boxWeight: "30 lbs",
+                boxDims: '18" x 15" x 9"'
+            },
+            {
+                type: "Medium",
+                qtyPerBox: "72 pcs",
+                boxWeight: "31 lbs",
+                boxDims: '20" x 15" x 9"'
+            },
+            {
+                type: "Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "35 lbs",
+                boxDims: '22" x 15" x 10"'
+            },
+            {
+                type: "X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "39 lbs",
+                boxDims: '24" x 16" x 10"'
+            },
+            {
+                type: "2X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "42 lbs",
+                boxDims: '16" x 16" x 11"'
+            },
+            {
+                type: "3X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "45 lbs",
+                boxDims: '26" x 16" x 11"'
+            }
+        ],
+
         additionalInfo: {
             paragraph: "Introducing our new heavyweight cotton t-shirt. Made from 100% heavyweight cotton using durable 20/s yarn, this tee is perfect for those looking for a sturdier option without sacrificing comfort. With a heavier gauge fabric, it offers a structured fit, side-stitched for enhanced durability, and is ideal for printing.",
             label: "Tear Away",
@@ -8021,12 +8063,13 @@ const products = [{
     code: "IT3130",
     slug: "french-terry-sleeveless-hoodie",
     category: "Hoodies",
+    group: "Apparel",
     material: "80% Cotton / 20% Polyester French Terry (8.0 oz / 271 GSM)",
     size: 'S - 5XL',
     imprint: "N/A",
     price: 19.40,
     originalPrice: 19.40,
-    image: "assets/assets/images/products/hoodies/IT3130/3130-white-01.webp",
+    image: "assets/assets/images/products/hoodies/IT3130/3130-royal-01.webp",
     featureImage: "assets/assets/images/products/hoodies/IT3130/3130-feature.webp",
     description: "Lightweight 8.0oz french terry blank sleeveless hoodie (style 3130) in 80/20 cotton-poly. Athletic cut designed for gyms, events, and streetwear.",
     popular: false,
@@ -8123,6 +8166,7 @@ const products = [{
     code: "IT5001",
     slug: "heavyweight-pullover-fleece-hoodie",
     category: "Hoodies",
+    group: "Apparel",
     material: "Heavyweight Fleece",
     size: 'S - 5XL',
     imprint: "N/A",
@@ -8269,12 +8313,13 @@ const products = [{
     code: "IT5108",
     slug: "premium-pullover-hoodie",
     category: "Pullover Hoodies",
+    group: "Apparel",
     material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
     size: 'XS - 5XL',
     imprint: "N/A",
     price: 19.4,
     originalPrice: 19.4,
-    image: "assets/assets/images/products/hoodies/IT5108/5108-white-01.webp",
+    image: "assets/assets/images/products/hoodies/IT5108/5108-texas-orange-01.webp",
     featureImage: "assets/assets/images/products/hoodies/IT5108/5108-feature.webp",
     description: "Premium pullover hoodie (style 5108) in 7.8 oz 80/20 cotton-poly fleece with a 100% ringspun cotton face yarn. The printable surface you decorate is 100% cotton, while the blend underneath balances softness with durability and shrink control. Regular fit, self-fabric lined hood, heavy drawstring cord, spandex ribbing at cuffs and waistband, and double-needle stitching throughout.",
     popular: false,
@@ -8445,6 +8490,7 @@ const products = [{
     code: "IT5109",
     slug: "premium-full-zip-hoodie",
     category: "Full Zip Hoodies",
+    group: "Apparel",
     material: "80% Cotton / 20% Polyester Fleece (7.8 oz / 264 GSM)",
     size: 'XS - 5XL',
     imprint: "N/A",
@@ -8629,8 +8675,11 @@ const products = [{
     id: "IT15001",
     name: "Ultra-Heavyweight 12oz Oversized Blank Pullover Hoodie",
     code: "IT15001",
+
     slug: "ultra-heavyweight-12oz-oversized-pullover-hoodie",
     category: "Pullover Hoodies",
+    group: "Apparel",
+
     material: "80% Cotton / 20% Polyester Fleece (12.0 oz / 407 GSM)",
     size: 'S - 5XL',
     imprint: "N/A",
@@ -8803,12 +8852,14 @@ const products = [{
     code: "ITP280",
     slug: "midweight-pullover-hoodie",
     category: "Pullover Hoodies",
+    group: "Apparel",
+
     material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
     size: 'XS - 5XL',
     imprint: "N/A",
     price: 21.60,
     originalPrice: 21.60,
-    image: "assets/assets/images/products/hoodies/ITP280/p280-white-01.webp",
+    image: "assets/assets/images/products/hoodies/ITP280/p280-light-pink-01.webp",
     featureImage: "assets/assets/images/products/hoodies/ITP280/p280-feature.webp",
     description: "Midweight 8.8oz blank pullover hoodie (style P280) in 70/30 cotton-poly fleece. Versatile weight for year-round custom apparel programs.",
     popular: false,
@@ -9008,12 +9059,13 @@ const products = [{
     code: "ITY300",
     slug: "youth-pullover-hoodie",
     category: "Pullover Hoodies",
+    group: "Apparel",
     material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
     size: 'XS - 2XL',
     imprint: "N/A",
     price: 18.3,
     originalPrice: 18.3,
-    image: "assets/assets/images/products/hoodies/ITY300/Y300-white-01.webp",
+    image: "assets/assets/images/products/hoodies/ITY300/Y300-gold-yellow-01.webp",
     featureImage: "assets/assets/images/products/hoodies/ITY300/Y300-feature.webp",
     description: "Youth-sized 8.8oz blank pullover hoodie (style Y300) in 70/30 cotton-poly fleece. Sized for kids and built for school, team, and youth organization programs.",
     popular: false,
@@ -9179,12 +9231,13 @@ const products = [{
     code: "ITCR280",
     slug: "midweight-crewneck-sweatshirt",
     category: "Crewneck Sweatshirts",
+    group: "Apparel",
     material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
     size: 'XS - 5XL',
     imprint: "N/A",
-    price: 18.3 ,
-    originalPrice: 18.3 ,
-    image: "assets/assets/images/products/sweatshirts/ITCR280/CR280-white-01.webp",
+    price: 18.3,
+    originalPrice: 18.3,
+    image: "assets/assets/images/products/sweatshirts/ITCR280/CR280-chocolate-01.webp",
     featureImage: "assets/assets/images/products/sweatshirts/ITCR280/CR280-feature.webp",
     description: "Midweight 8.8oz blank crewneck sweatshirt (style CR280) in 70/30 cotton-poly fleece. Classic crewneck silhouette ready for screen printing and embroidery.",
     popular: false,
@@ -9325,6 +9378,7 @@ const products = [{
     code: "IT7770",
     slug: "fleece-short",
     category: "Fleece Shorts",
+    group: "Apparel",
     material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 280 GSM)",
     size: 'S - 5XL',
     imprint: "N/A",
@@ -9462,12 +9516,14 @@ const products = [{
     code: "IT600MR",
     slug: "russel-athletic-ringspun-cotton-tshirt",
     category: "T-Shirts",
+    group: "Apparel",
+
     material: "100% Ringspun Cotton (6.0 oz)",
     size: 'S - 5XL',
     imprint: "N/A",
     price: 4.4,
     originalPrice: 4.4,
-    image: "assets/assets/images/products/T-shirts/IT600MR/600MR-white-01.webp",
+    image: "assets/assets/images/products/T-shirts/IT600MR/600MR-black-01.webp",
     featureImage: "assets/assets/images/products/T-shirts/IT600MR/600MR-feature.webp",
     description: "Russel Athletic 100% ringspun cotton t-shirt (style 600MR) in 6.0 oz. A heavier-weight blank with a smooth print surface, built for screen printing, DTG, and embroidery.",
     popular: false,
@@ -9552,12 +9608,14 @@ const products = [{
     code: "IT1001",
     slug: "cotton-ringspun-tshirt",
     category: "T-Shirts",
+    group: "Apparel",
+
     material: "100% Cotton (4.5 oz, 30-Singles Ringspun)",
     size: 'S - 5XL',
     imprint: "N/A",
     price: 4.44,
     originalPrice: 4.44,
-    image: "assets/assets/images/products/T-shirts/IT1001/1001-white-01.webp",
+    image: "assets/assets/images/products/T-shirts/IT1001/1001-heathergray-01.webp",
     featureImage: "assets/assets/images/products/T-shirts/IT1001/1001-feature.webp",
     description: "100% cotton 4.5 oz t-shirt using only 30 single ringspun cotton for a great feel and superior print face. Ideal for screen printing and DTG.",
     popular: false,
@@ -9646,13 +9704,15 @@ const products = [{
     code: "IT3903R",
     slug: "fruit-of-the-loom-hd-cotton-tshirt",
     category: "T-Shirts",
+    group: "Apparel",
+
     material: "100% Cotton (HD Cotton)",
     size: 'S - 5XL',
     imprint: "N/A",
     price: 4.4,
     originalPrice: 4.4,
-    image: "assets/assets/images/products/T-shirts/IT3903R/3930R-black-01.webp",
-    featureImage: "assets/assets/images/products/T-shirts/IT3903R/3930R-feature.webp",
+    image: "assets/assets/images/products/T-shirts/IT3930R/3930R-burgundy-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IT3930R/3930R-feature.webp",
     description: "Fruit of the Loom HD Cotton t-shirt (style 3930R). A durable, high-density cotton blank with a smooth print surface built for screen printing, DTG, and embroidery.",
     popular: false,
 
@@ -9667,17 +9727,17 @@ const products = [{
     useInkwellItemNo: true,
 
     colors: [
-        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IT3903R/3930R-black-01.webp" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/T-shirts/IT3903R/3930R-burgundy-01.webp" },
-        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/T-shirts/IT3903R/3930R-charcoal-01.webp" },
-        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IT3903R/3930R-heathergray-01.webp" }
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IT3930R/3930R-black-01.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/T-shirts/IT3930R/3930R-burgundy-01.webp" },
+        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/T-shirts/IT3930R/3930R-charcoal-01.webp" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IT3930R/3930R-heathergray-01.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/T-shirts/IT3903R/3930R-black-01.webp",
-        "assets/assets/images/products/T-shirts/IT3903R/3930R-burgundy-01.webp",
-        "assets/assets/images/products/T-shirts/IT3903R/3930R-charcoal-01.webp",
-        "assets/assets/images/products/T-shirts/IT3903R/3930R-heathergray-01.webp"
+        "assets/assets/images/products/T-shirts/IT3930R/3930R-black-01.webp",
+        "assets/assets/images/products/T-shirts/IT3930R/3930R-burgundy-01.webp",
+        "assets/assets/images/products/T-shirts/IT3930R/3930R-charcoal-01.webp",
+        "assets/assets/images/products/T-shirts/IT3930R/3930R-heathergray-01.webp"
     ],
 
     specs: {
@@ -9738,6 +9798,7 @@ const products = [{
     code: "IT8801",
     slug: "fleece-jogger-pant",
     category: "Joggers/Sweatpants",
+    group: "Apparel",
     material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 290 GSM)",
     size: 'XS - 5XL',
     imprint: "N/A",
@@ -9886,6 +9947,7 @@ const products = [{
     id: "ITPNTS",
     name: "Sweatpants 7.7 oz 50/50 Cotton/Poly",
     code: "ITPNTS",
+    group: "Apparel",
     slug: "sweatpants-50-50",
     category: "Joggers/Sweatpants",
     material: "50% Cotton / 50% Polyester (7.7 oz)",
@@ -9976,6 +10038,7 @@ const products = [{
     code: "ITSCNSS",
     slug: "crewneck-sweatshirt",
     category: "Crewneck Sweatshirts",
+    group: "Apparel",
     material: "50% Cotton / 50% Polyester (7.7 oz)",
     size: 'S - 5XL',
     imprint: "N/A",
@@ -10057,11 +10120,154 @@ const products = [{
     }
 },
 {
+    id: "IA1000",
+    name: "Signature Blend Tee",
+    code: "IA1000",
+    slug: "signature-blend-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "60% Ring-spun Combed Cotton / 40% Polyester (4.3 oz / 145 GSM)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 5.73,
+    originalPrice: 5.73,
+    image: "assets/assets/images/products/T-shirts/IA1000/IA1000-royal_01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1000/IA1000-feature.webp",
+    description: "The Signature Blend Tee offers a perfect blend of comfort and durability. Crafted from premium 60% ring-spun combed cotton and 40% polyester fabric, this 4.3 oz (145 GSM) tee is ideal for everyday wear and customization. Its unisex regular fit ensures suitability for all body types, making it a versatile addition to any wardrobe.",
+    popular: false,
+
+    // ✅ OPTION A: STANDOUT FLAGS
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Oatmeal Heather", hex: "#E8DCC4", image: "assets/assets/images/products/T-shirts/IA1000/IA1000-oatmeal_heather_01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1000/IA1000-sports_grey_01.webp" },
+        { name: "Charcoal Heather", hex: "#4A4A4A", image: "assets/assets/images/products/T-shirts/IA1000/IA1000-charcoal_heather_01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA1000/IA1000-red_01.webp" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA1000/IA1000-royal_01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1000/IA1000-royal_01.webp",
+        "assets/assets/images/products/T-shirts/IA1000/IA1000-oatmeal_heather_01.webp",
+        "assets/assets/images/products/T-shirts/IA1000/IA1000-sports_grey_01.webp",
+        "assets/assets/images/products/T-shirts/IA1000/IA1000-charcoal_heather_01.webp",
+        "assets/assets/images/products/T-shirts/IA1000/IA1000-red_01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1000",
+        styleNumber: "1000",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "60% Cotton, 40% Polyester",
+        yarn: "Ring-spun Combed Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+
+        // ✅ ADDITIONAL INFO TAB KE LIYE SIZE CHART
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        fabricNotes: {
+            standard: "100% Cotton – All colors except Heather Gray, Charcoal Heather, and Sport Grey.",
+            heathers: "Heather Gray & Charcoal Heather: 60% Cotton / 40% Polyester.",
+            sportGrey: "Sport Grey: 90% Cotton / 10% Viscose.",
+            construction: "Tubular"
+        },
+
+        // ✅ PACKAGING INFO
+        packagingOptions: [
+            {
+                type: "Small",
+                qtyPerBox: "72 pcs",
+                boxWeight: "23.78 lbs",
+                boxDims: '19.5" x 15" x 9"'
+            },
+            {
+                type: "Medium",
+                qtyPerBox: "72 pcs",
+                boxWeight: "24.50 lbs",
+                boxDims: '20.5" x 15.5" x 9"'
+            },
+            {
+                type: "Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "29.40 lbs",
+                boxDims: '22.5" x 16" x 9"'
+            },
+            {
+                type: "X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "33.12 lbs",
+                boxDims: '23.5" x 16.5" x 9"'
+            },
+            {
+                type: "2X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "36.10 lbs",
+                boxDims: '25" x 17.5" x 9"'
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$5.73" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
     id: "ITY5501",
     name: "Youth 8.8oz Fleece Jogger Pant",
     code: "ITY5501",
     slug: "youth-fleece-jogger-pant",
     category: "Joggers/Sweatpants",
+    group: "Apparel",
     material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 298 GSM)",
     size: 'XS - 5XL',
     imprint: "N/A",
@@ -10180,13 +10386,15 @@ const products = [{
     code: "ITCMFL",
     slug: "camouflage-fleece-jogger-pant",
     category: "Joggers/Sweatpants",
+    group: "Apparel",
+
     material: "70% Cotton / 30% Polyester Fleece (8.8 oz / 290 GSM)",
     size: 'S - 5XL',
     imprint: "N/A",
     price: 19.9,
     originalPrice: 19.9,
-    image: "assets/assets/images/products/pants/ITCMFL/8801cmfl-camoflage-01.webp",
-    featureImage: "assets/assets/images/products/pants/ITCMFL/8801cmfl-feature.webp",
+    image: "assets/assets/images/products/pants/ITCMFL/8801cmfl-camouflage-01.webp",
+    featureImage: "assets/assets/images/products/pants/ITCMFL/8801cmfl-camouflage-feature.webp",
     description: "Camouflage fleece jogger pant (style 8801CMFL) in 70/30 cotton-poly blend. Tapered leg with cuffed rib bottoms and an elasticated waistband with drawstring for adjustable fit.",
     popular: false,
 
@@ -10205,7 +10413,7 @@ const products = [{
     ],
 
     images: [
-        "assets/assets/images/products/pants/ITCMFL/8801cmfl-camoflage-01.webp"
+        "assets/assets/images/products/pants/ITCMFL/8801cmfl-camouflage-01.webp"
     ],
 
     specs: {
@@ -10261,11 +10469,153 @@ const products = [{
     }
 },
 {
+    id: "IA1003",
+    name: "Vantage V-Neck Tee",
+    code: "IA1003",
+    slug: "vantage-v-neck-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 6.33,
+    originalPrice: 6.33,
+    image: "assets/assets/images/products/T-shirts/IA1003/IA1003-white-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1003/IA1003-feature.webp",
+    description: "Elevated everyday essential — the Vantage V-Neck Tee delivers a clean, modern silhouette with a 4.3 oz combed cotton face that takes ink and thread beautifully. Built for customization, ready for daily wear.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1003/IA1003-black-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1003/IA1003-sports-grey-01.webp" },
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/T-shirts/IA1003/IA1003-dust-01.webp" },
+        { name: "Pink", hex: "#F4C7CE", image: "assets/assets/images/products/T-shirts/IA1003/IA1003-pink-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1003/IA1003-white-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA1003/IA1003-navy-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1003/IA1003-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1003/IA1003-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA1003/IA1003-sports-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA1003/IA1003-dust-01.webp",
+        "assets/assets/images/products/T-shirts/IA1003/IA1003-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1003/IA1003-navy-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1003",
+        styleNumber: "1003",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "100% Cotton",
+        yarn: "Combed Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+        
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        fabricNotes: {
+            standard: "100% Cotton – All colors except Heather Gray, Charcoal Heather, and Sport Grey.",
+            heathers: "Heather Gray & Charcoal Heather: 60% Cotton / 40% Polyester.",
+            sportGrey: "Sport Grey: 90% Cotton / 10% Viscose."
+        },
+
+        packagingOptions: [
+            {
+                type: "Small",
+                qtyPerBox: "72 pcs",
+                boxWeight: "23.78 lbs",
+                boxDims: '19.5" x 15" x 9"'
+            },
+            {
+                type: "Medium",
+                qtyPerBox: "72 pcs",
+                boxWeight: "24.50 lbs",
+                boxDims: '20.5" x 15.5" x 9"'
+            },
+            {
+                type: "Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "29.40 lbs",
+                boxDims: '22.5" x 16" x 9"'
+            },
+            {
+                type: "X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "33.12 lbs",
+                boxDims: '23.5" x 16.5" x 9"'
+            },
+            {
+                type: "2X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "36.10 lbs",
+                boxDims: '25" x 17.5" x 9"'
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$6.33" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
     id: "ITZJHSS",
     name: "Full Zip Hoodie 7.7 oz 50/50 Cotton/Poly",
     code: "ITZJHSS",
     slug: "full-zip-hoodie-50-50",
     category: "Full Zip Hoodies",
+    group: "Apparel",
+
     material: "50% Cotton / 50% Polyester (7.7 oz)",
     size: 'S - 5XL',
     imprint: "N/A",
@@ -10354,6 +10704,7 @@ const products = [{
     code: "ITT180",
     slug: "ringspun-cotton-tank-top",
     category: "Tank Tops",
+    group: "Apparel",
     material: "100% Ringspun Cotton (5.5 oz, 20 Singles)",
     size: 'S - 5XL',
     imprint: "N/A",
@@ -10433,6 +10784,1682 @@ const products = [{
             { size: "3XL", charge: 1.90 },
             { size: "4XL", charge: 4.10 },
             { size: "5XL", charge: 6.85 }
+        ]
+    }
+},
+{
+    id: "IA1004",
+    name: "Vantage Long Sleeve Tee",
+    code: "IA1004",
+    slug: "vantage-long-sleeve-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 8.36,
+    originalPrice: 8.36,
+    image: "assets/assets/images/products/T-shirts/IA1004/IA1004-neon-yellow-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1004/IA1004-feature.webp",
+    description: "Layer-ready staple — the Vantage Long Sleeve Tee brings a refined 4.3 oz combed cotton face to a classic long-sleeve silhouette. Built to print, built to last.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Baby Pink", hex: "#F4C7CE", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-baby-pink-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-black-01.webp" },
+        { name: "Charcoal", hex: "#4A4A4A", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-charcoal-01.webp" },
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-dust-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-navy-01.webp" },
+        { name: "Neon Orange", hex: "#FF6B1A", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-neon-orange-01.webp" },
+        { name: "Neon Yellow", hex: "#E8FF00", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-neon-yellow-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-red-01.webp" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-royal-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-sports-grey-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1004/IA1004-white-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-baby-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-charcoal-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-dust-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-navy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-neon-orange-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-neon-yellow-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-red-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-royal-01.webp",
+        "assets/assets/images/products/T-shirts/IA1004/IA1004-sports-grey-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1004",
+        styleNumber: "1004",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "100% Cotton",
+        yarn: "Combed Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        fabricNotes: {
+            standard: "100% Cotton – All colors except Heather Gray, Charcoal Heather, and Sport Grey.",
+            heathers: "Heather Gray & Charcoal Heather: 60% Cotton / 40% Polyester.",
+            sportGrey: "Sport Grey: 90% Cotton / 10% Viscose.",
+            construction: "Tubular"
+        },
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$8.36" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA1005",
+    name: "Sculpt Fitted Tee",
+    code: "IA1005",
+    slug: "sculpt-fitted-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+    size: 'S - 3XL',
+    imprint: "N/A",
+    price: 4.42,
+    originalPrice: 4.42,
+    image: "assets/assets/images/products/T-shirts/IA1005/IA1005-burgundy-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1005/IA1005-feature.webp",
+    description: "Tailored to move — the Sculpt Fitted Tee is cut for a flattering women's silhouette in a smooth 4.3 oz combed cotton blend. Made to print, made to fit.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Baby Pink", hex: "#F4C7CE", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-baby-pink-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-black-01.webp" },
+        { name: "Burgundy", hex: "#5A1A2B", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-burgundy-01.webp" },
+        { name: "Charcoal Heather", hex: "#4A4A4A", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-charcoal-heather-01.webp" },
+        { name: "Hot Pink", hex: "#E91E8C", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-hot-pink-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-navy-01.webp" },
+        { name: "Purple", hex: "#5B2A8C", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-purple-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-red-01.webp" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-royal-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-sports-grey-01.webp" },
+        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-turquoise-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1005/IA1005-white-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-baby-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-burgundy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-charcoal-heather-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-hot-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-navy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-purple-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-red-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-royal-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-sports-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA1005/IA1005-turquoise-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1005",
+        styleNumber: "1005",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "100% Cotton",
+        yarn: "Combed Cotton",
+        sizes: "S to 3XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '16"', bodyLength: '25"' },
+            { size: "M", chest: '17"', bodyLength: '26"' },
+            { size: "L", chest: '18"', bodyLength: '27"' },
+            { size: "XL", chest: '19.5"', bodyLength: '28"' },
+            { size: "2XL", chest: '21"', bodyLength: '29"' },
+            { size: "3XL", chest: '22.5"', bodyLength: '30"' }
+        ],
+
+        fabricNotes: {
+            standard: "100% Cotton – All colors except Heather Gray, Charcoal Heather, and Sport Grey.",
+            heathers: "Heather Gray & Charcoal Heather: 60% Cotton / 40% Polyester.",
+            sportGrey: "Sport Grey: 90% Cotton / 10% Viscose."
+        },
+
+        packagingOptions: [
+            {
+                type: "Small",
+                qtyPerBox: "72 pcs",
+                boxWeight: "23.78 lbs",
+                boxDims: '19.5" x 15" x 9"'
+            },
+            {
+                type: "Medium",
+                qtyPerBox: "72 pcs",
+                boxWeight: "24.50 lbs",
+                boxDims: '20.5" x 15.5" x 9"'
+            },
+            {
+                type: "Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "29.40 lbs",
+                boxDims: '22.5" x 16" x 9"'
+            },
+            {
+                type: "X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "33.12 lbs",
+                boxDims: '23.5" x 16.5" x 9"'
+            },
+            {
+                type: "2X-Large",
+                qtyPerBox: "72 pcs",
+                boxWeight: "36.10 lbs",
+                boxDims: '25" x 17.5" x 9"'
+            }
+        ]
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$4.42" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 }
+        ]
+    }
+},
+{
+    id: "IA1007",
+    name: "Sprout Youth Tee",
+    code: "IA1007",
+    slug: "sprout-youth-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+    size: 'XS - XL',
+    imprint: "N/A",
+    price: 4.67,
+    originalPrice: 4.67,
+    image: "assets/assets/images/products/T-shirts/IA1007/IA1007-navy-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1007/IA1007-feature.webp",
+    description: "Built for the next generation — the Sprout Youth Tee brings a soft 4.3 oz combed cotton face to a kid-sized silhouette. Ready for school prints, team graphics, and everyday play.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Baby Pink", hex: "#F4C7CE", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-baby-pink-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-black-01.webp" },
+        { name: "Burgundy", hex: "#5A1A2B", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-burgundy-01.webp" },
+        { name: "Charcoal Heather", hex: "#4A4A4A", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-charcoal-heather-01.webp" },
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-dust-01.webp" },
+        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-gold-01.webp" },
+        { name: "Heather Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-heather-grey-01.webp" },
+        { name: "Hot Pink", hex: "#E91E8C", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-hot-pink-01.webp" },
+        { name: "Mint", hex: "#B8E8D8", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-mint-01.webp" },
+        { name: "Moss Green", hex: "#5A6242", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-moss-green-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-navy-01.webp" },
+        { name: "Orange", hex: "#F26522", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-orange-01.webp" },
+        { name: "Pacific Blue", hex: "#4A90C2", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-pacific-blue-01.webp" },
+        { name: "Purple", hex: "#5B2A8C", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-purple-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-red-01.webp" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-royal-01.webp" },
+        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-turquoise-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1007/IA1007-white-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-baby-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-burgundy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-charcoal-heather-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-dust-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-gold-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-heather-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-hot-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-mint-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-moss-green-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-navy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-orange-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-pacific-blue-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-purple-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-red-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-royal-01.webp",
+        "assets/assets/images/products/T-shirts/IA1007/IA1007-turquoise-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1007",
+        styleNumber: "1007",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "100% Cotton",
+        yarn: "Combed Cotton",
+        sizes: "XS to XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "XS", chest: '14"', bodyLength: '18"' },
+            { size: "S", chest: '15"', bodyLength: '20"' },
+            { size: "M", chest: '16"', bodyLength: '22"' },
+            { size: "L", chest: '17"', bodyLength: '24"' },
+            { size: "XL", chest: '18"', bodyLength: '26"' }
+        ],
+
+        fabricNotes: {
+            standard: "100% Cotton – All colors except Heather Gray, Charcoal Heather, and Sport Grey.",
+            heathers: "Heather Gray & Charcoal Heather: 60% Cotton / 40% Polyester.",
+            sportGrey: "Sport Grey: 90% Cotton / 10% Viscose.",
+            construction: "Tubular"
+        },
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "XS - XL", price: "$4.67" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA1010",
+    name: "Velocity Performance Tee",
+    code: "IA1010",
+    slug: "velocity-performance-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Polyester (4.3 oz)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 6.56,
+    originalPrice: 6.56,
+    image: "assets/assets/images/products/T-shirts/IA1010/IA1010-moss-green-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1010/IA1010-feature.webp",
+    description: "Engineered for movement — the Velocity Performance Tee is spun from 100% polyester with a 4.3 oz hand feel that wicks, breathes, and holds vibrant color. Built for training, teamwear, and high-energy events.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1010/IA1010-black-01.webp" },
+        { name: "Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1010/IA1010-grey-01.webp" },
+        { name: "Moss Green", hex: "#5A6242", image: "assets/assets/images/products/T-shirts/IA1010/IA1010-moss-green-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA1010/IA1010-navy-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA1010/IA1010-red-01.webp" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA1010/IA1010-royal-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1010/IA1010-white-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1010/IA1010-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1010/IA1010-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA1010/IA1010-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA1010/IA1010-moss-green-01.webp",
+        "assets/assets/images/products/T-shirts/IA1010/IA1010-navy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1010/IA1010-red-01.webp",
+        "assets/assets/images/products/T-shirts/IA1010/IA1010-royal-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1010",
+        styleNumber: "1010",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "100% Polyester",
+        yarn: "Performance Polyester",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$6.56" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA1133",
+    name: "Rebel Crop Tee",
+    code: "IA1133",
+    slug: "rebel-crop-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+    size: 'XS - XL',
+    imprint: "N/A",
+    price: 5.56,
+    originalPrice: 5.56,
+    image: "assets/assets/images/products/T-shirts/IA1133/IA1133-white-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1133/IA1133-feature.webp",
+    description: "Streetwear energy in a cropped silhouette — the Rebel Crop Tee is cut from the same soft, breathable 4.3 oz jersey as our signature blanks. Relaxed fit, elevated attitude.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Baby Pink", hex: "#F4C7CE", image: "assets/assets/images/products/T-shirts/IA1133/IA1133-baby-pink-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1133/IA1133-black-01.webp" },
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/T-shirts/IA1133/IA1133-dust-01.webp" },
+        { name: "Powder Blue", hex: "#B8D8E8", image: "assets/assets/images/products/T-shirts/IA1133/IA1133-powder-blue-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1133/IA1133-sports-grey-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1133/IA1133-white-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1133/IA1133-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1133/IA1133-baby-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1133/IA1133-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA1133/IA1133-dust-01.webp",
+        "assets/assets/images/products/T-shirts/IA1133/IA1133-powder-blue-01.webp",
+        "assets/assets/images/products/T-shirts/IA1133/IA1133-sports-grey-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1133",
+        styleNumber: "1133",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "100% Cotton",
+        yarn: "Jersey Knit",
+        sizes: "XS to XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "XS", chest: '16"', bodyLength: '19"' },
+            { size: "S", chest: '17"', bodyLength: '20"' },
+            { size: "M", chest: '18"', bodyLength: '21"' },
+            { size: "L", chest: '19"', bodyLength: '22"' },
+            { size: "XL", chest: '20"', bodyLength: '23"' }
+        ],
+
+        fabricNotes: {
+            standard: "100% Cotton – All colors except Heather Gray, Charcoal Heather, and Sport Grey.",
+            heathers: "Heather Gray & Charcoal Heather: 60% Cotton / 40% Polyester.",
+            sportGrey: "Sport Grey: 90% Cotton / 10% Viscose."
+        },
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "XS - XL", price: "$5.56" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA1450",
+    name: "Monolith Heavyweight Tee",
+    code: "IA1450",
+    slug: "monolith-heavyweight-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (6.5 oz)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 8.89,
+    originalPrice: 8.89,
+    image: "assets/assets/images/products/T-shirts/IA1450/IA1450-white-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1450/IA1450-feature.webp",
+    description: "Built like a cornerstone — the Monolith Heavyweight Tee uses premium 6.5 oz cotton for a substantial, luxury hand feel that holds its shape and never feels thin. Structured drape, reinforced seams, and a smooth print-ready face make it the perfect canvas for custom work or everyday wear.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1450/IA1450-white-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1450/IA1450-sports-grey-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA1450/IA1450-navy-01.webp" },
+        { name: "Charcoal", hex: "#4A4A4A", image: "assets/assets/images/products/T-shirts/IA1450/IA1450-charcoal-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1450/IA1450-black-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1450/IA1450-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1450/IA1450-sports-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA1450/IA1450-navy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1450/IA1450-charcoal-01.webp",
+        "assets/assets/images/products/T-shirts/IA1450/IA1450-black-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1450",
+        styleNumber: "1450",
+        season: "Core",
+        weight: "6.5 oz (220 GSM)",
+        material: "100% Cotton",
+        yarn: "Heavyweight Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$8.89" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA5000",
+    name: "Vintage Dye Premium Tee",
+    code: "IA5000",
+    slug: "vintage-dye-premium-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (6.0 oz / 200 GSM, Side Seam)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 10.00,
+    originalPrice: 10.00,
+    image: "assets/assets/images/products/T-shirts/IA5000/IA5000-black-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA5000/IA5000-feature.webp",
+    description: "Each piece tells its own story — the Vintage Dye Premium Tee is cut from 6 oz side-seam cotton and treated with a unique garment over-dye process that gives every shirt a one-of-a-kind character. Expect slight variations in color and shade; they're not flaws, they're the signature.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Denim Sapphire", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA5000/IA5000-denim-sapphire-01.webp" },
+        { name: "Ferrari Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA5000/IA5000-ferrari-red-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA5000/IA5000-black-01.webp" },
+        { name: "Wash Denim", hex: "#7A9BC4", image: "assets/assets/images/products/T-shirts/IA5000/IA5000-wash-denim-01.webp" },
+        { name: "Blue Horizon", hex: "#4A90C2", image: "assets/assets/images/products/T-shirts/IA5000/IA5000-blue-horizon-01.webp" },
+        { name: "Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA5000/IA5000-grey-01.webp" },
+        { name: "Jade", hex: "#00A86B", image: "assets/assets/images/products/T-shirts/IA5000/IA5000-jade-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA5000/IA5000-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA5000/IA5000-denim-sapphire-01.webp",
+        "assets/assets/images/products/T-shirts/IA5000/IA5000-ferrari-red-01.webp",
+        "assets/assets/images/products/T-shirts/IA5000/IA5000-wash-denim-01.webp",
+        "assets/assets/images/products/T-shirts/IA5000/IA5000-blue-horizon-01.webp",
+        "assets/assets/images/products/T-shirts/IA5000/IA5000-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA5000/IA5000-jade-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA5000",
+        styleNumber: "5000",
+        season: "Core",
+        weight: "6.0 oz (200 GSM)",
+        material: "100% Cotton",
+        yarn: "Side Seam Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$10.00" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA5001",
+    name: "Terra Mineral Wash Tee",
+    code: "IA5001",
+    slug: "terra-mineral-wash-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (6.0 oz / 200 GSM, Side Seam)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 10.67,
+    originalPrice: 10.67,
+    image: "assets/assets/images/products/T-shirts/IA5001/IA5001-earth-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA5001/IA5001-feature.webp",
+    description: "Earthy, textured, and unmistakably yours — the Terra Mineral Wash Tee is built on a 6 oz side-seam cotton base and finished with a mineral wash that gives every piece a soft, lived-in character. Subtle shade variations from lot to lot are part of the process, not a defect.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Earth", hex: "#8B6F47", image: "assets/assets/images/products/T-shirts/IA5001/IA5001-earth-01.webp" },
+        { name: "Denim", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA5001/IA5001-denim-01.webp" },
+        { name: "Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA5001/IA5001-grey-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA5001/IA5001-black-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA5001/IA5001-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA5001/IA5001-earth-01.webp",
+        "assets/assets/images/products/T-shirts/IA5001/IA5001-denim-01.webp",
+        "assets/assets/images/products/T-shirts/IA5001/IA5001-grey-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA5001",
+        styleNumber: "5001",
+        season: "Core",
+        weight: "6.0 oz (200 GSM)",
+        material: "100% Cotton",
+        yarn: "Side Seam Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$10.67" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA8001",
+    name: "Tactical Elite Performance Polo",
+    code: "IA8001",
+    slug: "tactical-elite-performance-polo",
+    category: "Polos",
+    group: "Apparel",
+    material: "100% Polyester (5.2 oz)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 13.33,
+    originalPrice: 13.33,
+    image: "assets/assets/images/products/T-shirts/IA8001/IA8001-royal-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA8001/IA8001-feature.webp",
+    description: "Field-tested, boardroom-ready — the Tactical Elite Performance Polo is built from 5.2 oz performance polyester with advanced moisture-wicking, anti-odor technology, and UPF 40+ sun protection. Whether you're on the course or on the clock, it delivers breathable, uncompromised performance all day.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA8001/IA8001-red-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA8001/IA8001-white-01.webp" },
+        { name: "Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA8001/IA8001-grey-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA8001/IA8001-black-01.webp" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA8001/IA8001-royal-01.webp" },
+        { name: "Moss Green", hex: "#5A6242", image: "assets/assets/images/products/T-shirts/IA8001/IA8001-moss-green-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA8001/IA8001-navy-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA8001/IA8001-black-01.webp",
+        "assets/assets/images/products/T-shirts/IA8001/IA8001-red-01.webp",
+        "assets/assets/images/products/T-shirts/IA8001/IA8001-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA8001/IA8001-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA8001/IA8001-royal-01.webp",
+        "assets/assets/images/products/T-shirts/IA8001/IA8001-moss-green-01.webp",
+        "assets/assets/images/products/T-shirts/IA8001/IA8001-navy-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA8001",
+        styleNumber: "8001",
+        season: "Core",
+        weight: "5.2 oz",
+        material: "100% Polyester",
+        yarn: "Performance Polyester",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        features: {
+            moistureWicking: "Advanced moisture-wicking technology pulls sweat to surface for rapid evaporation",
+            odorResistance: "Premium anti-odor technology prevents growth of odor-causing bacteria",
+            sunProtection: "UPF 40+ sun protection shields from UVA and UVB rays"
+        },
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$13.33" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA1122",
+    name: "Bloom Crop Hoodie",
+    code: "IA1122",
+    slug: "bloom-crop-hoodie",
+    category: "Hoodies",
+    group: "Apparel",
+    material: "60% Cotton / 40% Polyester Fleece (7.8 oz)",
+    size: 'XS - XL',
+    imprint: "N/A",
+    price: 13.33,
+    originalPrice: 13.33,
+    image: "assets/assets/images/products/hoodies/IA1122/IA1122-dust-01.webp",
+    featureImage: "assets/assets/images/products/hoodies/IA1122/IA1122-feature.webp",
+    description: "Soft fleece, cropped cut, everyday cool — the Bloom Crop Hoodie pairs a cozy 7.8 oz cotton-poly blend with a relaxed silhouette made for layering. Designed for girls who move fast and dress smart.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/hoodies/IA1122/IA1122-dust-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IA1122/IA1122-black-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/IA1122/IA1122-red-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/IA1122/IA1122-white-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IA1122/IA1122-white-01.webp",
+        "assets/assets/images/products/hoodies/IA1122/IA1122-dust-01.webp",
+        "assets/assets/images/products/hoodies/IA1122/IA1122-black-01.webp",
+        "assets/assets/images/products/hoodies/IA1122/IA1122-red-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1122",
+        styleNumber: "1122",
+        season: "Core",
+        weight: "7.8 oz (264 GSM)",
+        material: "60% Cotton / 40% Polyester Fleece",
+        yarn: "Fleece",
+        sizes: "XS to XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "XS", chest: '14"', bodyLength: '17"' },
+            { size: "S", chest: '15"', bodyLength: '18"' },
+            { size: "M", chest: '16"', bodyLength: '19"' },
+            { size: "L", chest: '17"', bodyLength: '20"' },
+            { size: "XL", chest: '18"', bodyLength: '21"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "XS - XL", price: "$13.33" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA2011",
+    name: "Meridian Fleece Hoodie",
+    code: "IA2011",
+    slug: "meridian-fleece-hoodie",
+    category: "Hoodies",
+    group: "Apparel",
+    material: "60% Cotton / 40% Polyester Fleece (8.4 oz)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 19.00,
+    originalPrice: 19.00,
+    image: "assets/assets/images/products/hoodies/IA2011/IA2011-royal-01.webp",
+    featureImage: "assets/assets/images/products/hoodies/IA2011/IA2011-feature.webp",
+    description: "Warmth, meet durability — the Meridian Fleece Hoodie is built from an 8.4 oz cotton-poly blend with a soft brushed interior and a relaxed unisex fit. Designed for layering, made to last through cold seasons and high-volume decoration.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Charcoal Heather", hex: "#4A4A4A", image: "assets/assets/images/products/hoodies/IA2011/IA2011-charcoal-heather-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/hoodies/IA2011/IA2011-sports-grey-01.webp" },
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/hoodies/IA2011/IA2011-dust-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/hoodies/IA2011/IA2011-red-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/hoodies/IA2011/IA2011-white-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IA2011/IA2011-black-01.webp" },
+        { name: "Royal Blue", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/IA2011/IA2011-royal-blue-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/hoodies/IA2011/IA2011-navy-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IA2011/IA2011-white-01.webp",
+        "assets/assets/images/products/hoodies/IA2011/IA2011-black-01.webp",
+        "assets/assets/images/products/hoodies/IA2011/IA2011-charcoal-heather-01.webp",
+        "assets/assets/images/products/hoodies/IA2011/IA2011-sports-grey-01.webp",
+        "assets/assets/images/products/hoodies/IA2011/IA2011-dust-01.webp",
+        "assets/assets/images/products/hoodies/IA2011/IA2011-red-01.webp",
+        "assets/assets/images/products/hoodies/IA2011/IA2011-royal-blue-01.webp",
+        "assets/assets/images/products/hoodies/IA2011/IA2011-navy-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA2011",
+        styleNumber: "2011",
+        season: "Core",
+        weight: "8.4 oz",
+        material: "60% Cotton / 40% Polyester Fleece",
+        yarn: "Fleece",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '32"', bodyLength: '32"' },
+            { size: "5XL", chest: '34"', bodyLength: '33"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$19.00" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA2013",
+    name: "Meridian Fleece Crew",
+    code: "IA2013",
+    slug: "meridian-fleece-crew",
+    category: "Crewneck Sweatshirts",
+    group: "Apparel",
+    material: "60% Cotton / 40% Polyester Fleece (8.4 oz)",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 22.22,
+    originalPrice: 22.22,
+    image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-irish-green-01.webp",
+    featureImage: "assets/assets/images/products/sweatshirts/IA2013/IA2013-feature.webp",
+    description: "Warmth with a clean finish — the Meridian Fleece Crew is built on the same trusted 8.4 oz cotton-poly fleece as our hoodies, cut into a classic crewneck silhouette. Soft brushed interior, durable construction, and ready for layering or standalone wear.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-white-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-black-01.webp" },
+        { name: "Charcoal Heather", hex: "#4A4A4A", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-charcoal-heather-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-sports-grey-01.webp" },
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-dust-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-red-01.webp" },
+        { name: "Royal Blue", hex: "#1E3FBF", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-royal-blue-01.webp" },
+        { name: "Navy", hex: "#1B2A4A", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-navy-01.webp" },
+        { name: "Moss Green", hex: "#5A6242", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-moss-green-01.webp" },
+        { name: "Maroon", hex: "#5A1A2B", image: "assets/assets/images/products/sweatshirts/IA2013/IA2013-maroon-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-white-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-black-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-charcoal-heather-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-sports-grey-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-dust-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-red-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-royal-blue-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-navy-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-moss-green-01.webp",
+        "assets/assets/images/products/sweatshirts/IA2013/IA2013-maroon-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA2013",
+        styleNumber: "2013",
+        season: "Core",
+        weight: "8.4 oz",
+        material: "60% Cotton / 40% Polyester Fleece",
+        yarn: "Fleece",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' },
+            { size: "4XL", chest: '32"', bodyLength: '32"' },
+            { size: "5XL", chest: '34"', bodyLength: '33"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$22.22" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA11001",
+    name: "Ember Burnout Hoodie",
+    code: "IA11001",
+    slug: "ember-burnout-hoodie",
+    category: "Hoodies",
+    group: "Apparel",
+    material: "60% Cotton / 40% Polyester Fleece (9.0 oz)",
+    size: 'S - 3XL',
+    imprint: "N/A",
+    price: 21.11,
+    originalPrice: 21.11,
+    image: "assets/assets/images/products/hoodies/IA11001/IA11001-black-01.webp",
+    featureImage: "assets/assets/images/products/hoodies/IA11001/IA11001-feature.webp",
+    description: "Made to fade — the Ember Burnout Hoodie pairs a warm 9 oz cotton-poly fleece with a unique burnout finish that gives every piece a soft, lived-in look. Durable construction, relaxed unisex fit, and ready for custom decoration.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IA11001/IA11001-black-01.webp" },
+        { name: "Denim", hex: "#1E3FBF", image: "assets/assets/images/products/hoodies/IA11001/IA11001-denim-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IA11001/IA11001-black-01.webp",
+        "assets/assets/images/products/hoodies/IA11001/IA11001-denim-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA11001",
+        styleNumber: "11001",
+        season: "Core",
+        weight: "9.0 oz",
+        material: "60% Cotton / 40% Polyester Fleece",
+        yarn: "Burnout Fleece",
+        sizes: "S to 3XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$21.11" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},
+{
+    id: "IA11005",
+    name: "Nantucket Fleece Hoodie",
+    code: "IA11005",
+    slug: "nantucket-fleece-hoodie",
+    category: "Hoodies",
+    group: "Apparel",
+    material: "60% Cotton / 40% Polyester Fleece (9.0 oz)",
+    size: 'S - 3XL',
+    imprint: "N/A",
+    price: 21.11,
+    originalPrice: 21.11,
+    image: "assets/assets/images/products/hoodies/IA11005/IA11005-black-01.webp",
+    featureImage: "assets/assets/images/products/hoodies/IA11005/IA11005-feature.webp",
+    description: "Coastal-inspired and built for warmth — the Nantucket Fleece Hoodie is cut from a substantial 9 oz cotton-poly blend with a soft brushed interior. Relaxed unisex fit, durable construction, and a classic Salt & Pepper or Black finish that layers effortlessly.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/hoodies/IA11005/IA11005-black-01.webp" },
+        { name: "Salt & Pepper", hex: "#B8B8B8", image: "assets/assets/images/products/hoodies/IA11005/IA11005-salt-and-pepper-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/hoodies/IA11005/IA11005-black-01.webp",
+        "assets/assets/images/products/hoodies/IA11005/IA11005-salt-and-pepper-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA11005",
+        styleNumber: "11005",
+        season: "Core",
+        weight: "9.0 oz",
+        material: "60% Cotton / 40% Polyester Fleece",
+        yarn: "Brushed Fleece",
+        sizes: "S to 3XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '20"', bodyLength: '26"' },
+            { size: "M", chest: '22"', bodyLength: '27"' },
+            { size: "L", chest: '24"', bodyLength: '28"' },
+            { size: "XL", chest: '26"', bodyLength: '29"' },
+            { size: "2XL", chest: '28"', bodyLength: '30"' },
+            { size: "3XL", chest: '30"', bodyLength: '31"' }
+        ],
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$21.11" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
+        ]
+    }
+},{
+    id: "IA1001",
+    name: "Signature Premium Tee",
+    code: "IA1001",
+    slug: "signature-premium-tee",
+    category: "T-Shirts",
+    group: "Apparel",
+    material: "100% Cotton (4.3 oz) – Heathers: 60/40 Cotton/Poly",
+    size: 'S - 5XL',
+    imprint: "N/A",
+    price: 5.73,
+    originalPrice: 5.73,
+    image: "assets/assets/images/products/T-shirts/IA1001/IA1001-peach-01.webp",
+    featureImage: "assets/assets/images/products/T-shirts/IA1001/IA1001-feature.webp",
+    description: "Everyday luxury, refined — the Signature Premium Tee is spun from ring-spun combed cotton and finished with an enzyme wash for a smooth, lived-in softness that only gets better with every wash. A wardrobe staple built to last.",
+    popular: false,
+
+    standout: true,
+    standoutBadge: "PREMIUM APPAREL",
+    standoutAccent: "#D4AF37",
+
+    hideSetupWas: true,
+    hideMockup: true,
+    hideTemplates: true,
+    hideCharges: true,
+    hideImprint: true,
+    hideGusset: true,
+    showSpecPicture: true,
+    showAdditionalInfoTab: true,
+    useInkwellItemNo: true,
+
+    colors: [
+        
+        { name: "Brown", hex: "#5A3825", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-brown-01.webp" },
+        { name: "Moss Green", hex: "#5A6242", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-moss-green-01.webp" },
+        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-gold-01.webp" },
+        { name: "Camo", hex: "#4B5320", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-camo-01.webp" },
+        { name: "Black", hex: "#000000", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-black-01.webp" },
+        { name: "Yellow", hex: "#FFFF00", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-yellow-01.webp" },
+        { name: "Pacific Blue", hex: "#4A90C2", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-pacific-blue-01.webp" },
+        { name: "Purple", hex: "#5B2A8C", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-purple-01.webp" },
+        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-turquoise-01.webp" },
+        { name: "Sawana Brown", hex: "#8B6F47", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-sawana-brown-01.webp" },
+        { name: "Texas Orange", hex: "#D2551E", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-texas-orange-01.webp" },
+        { name: "Dust", hex: "#E8DCC4", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-dust-01.webp" },
+        { name: "Kelly Green", hex: "#1B8A4C", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-kelly-green-01.webp" },
+        { name: "Mustard", hex: "#D4A72C", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-mustard-01.webp" },
+        { name: "Royal", hex: "#1E3FBF", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-royal-01.webp" },
+        { name: "Rust", hex: "#B7410E", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-rust-01.webp" },
+        { name: "Lavender", hex: "#B57EDC", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-lavender-01.webp" },
+        { name: "Pure Navy", hex: "#1B2A4A", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-pure-navy-01.webp" },
+        { name: "Decadent Chocolate", hex: "#3B2417", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-decadent-chocolate-01.webp" },
+        { name: "Baby Pink", hex: "#F4C7CE", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-baby-pink-01.webp" },
+        { name: "Burgundy", hex: "#5A1A2B", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-burgundy-01.webp" },
+        { name: "Peach", hex: "#FFCBA4", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-peach-01.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-white-01.webp" },
+        { name: "Orange", hex: "#F26522", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-orange-01.webp" },
+        { name: "Military Green", hex: "#5A6242", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-military-green-01.webp" },
+        { name: "Hot Pink", hex: "#E91E8C", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-hot-pink-01.webp" },
+        { name: "Mint", hex: "#B8E8D8", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-mint-01.webp" },
+        { name: "Coral", hex: "#FF7F50", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-coral-01.webp" },
+        { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-lime-green-01.webp" },
+        { name: "Red", hex: "#D42B2B", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-red-01.webp" },
+        { name: "Sports Grey", hex: "#B0B0B0", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-sports-grey-01.webp" },
+        { name: "Maroon", hex: "#5A1A2B", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-maroon-01.webp" },
+        { name: "Charcoal Heather", hex: "#4A4A4A", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-charcoal-heather-01.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-white-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-black-01.webp",
+     
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-brown-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-moss-green-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-gold-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-camo-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-yellow-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-pacific-blue-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-purple-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-turquoise-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-sawana-brown-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-texas-orange-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-dust-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-kelly-green-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-mustard-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-royal-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-rust-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-lavender-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-pure-navy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-decadent-chocolate-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-baby-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-burgundy-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-peach-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-orange-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-military-green-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-hot-pink-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-mint-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-coral-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-lime-green-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-red-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-sports-grey-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-maroon-01.webp",
+        "assets/assets/images/products/T-shirts/IA1001/IA1001-charcoal-heather-01.webp"
+    ],
+
+    specs: {
+        itemNo: "IA1001",
+        styleNumber: "1001",
+        season: "Core",
+        weight: "4.3 oz (145 GSM)",
+        material: "100% Cotton",
+        yarn: "Ring-spun Combed Cotton",
+        sizes: "S to 5XL",
+        minimumOrder: "No minimum on stock colors",
+        shipping: "Ships the same day when paid by 12 PM PT",
+        label: "Tear Away",
+
+        sizeChart: [
+            { size: "S", chest: '18"', bodyLength: '28"' },
+            { size: "M", chest: '20"', bodyLength: '29"' },
+            { size: "L", chest: '22"', bodyLength: '30"' },
+            { size: "XL", chest: '24"', bodyLength: '31"' },
+            { size: "2XL", chest: '26"', bodyLength: '32"' },
+            { size: "3XL", chest: '28"', bodyLength: '33"' },
+            { size: "4XL", chest: '30"', bodyLength: '34"' },
+            { size: "5XL", chest: '32"', bodyLength: '35"' }
+        ],
+
+        fabricNotes: {
+            standard: "100% Cotton – All colors except Heather Gray, Charcoal Heather, and Sport Grey.",
+            heathers: "Heather Gray & Charcoal Heather: 60% Cotton / 40% Polyester.",
+            sportGrey: "Sport Grey: 90% Cotton / 10% Viscose.",
+            construction: "Tubular"
+        },
+
+        packagingOptions: "Call for details"
+    },
+
+    pricing: {
+        blank: {
+            label: "BLANK PRICING (USD)",
+            basePrice: { label: "S - L", price: "$5.73" },
+            upsizeCharges: [
+                { size: "XL", charge: "$0.60" },
+                { size: "2XL", charge: "$0.90" },
+                { size: "3XL", charge: "$1.80" },
+                { size: "4XL", charge: "$4.09" },
+                { size: "5XL", charge: "$6.62" }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        upsizeCharges: [
+            { size: "XL", charge: 0.60 },
+            { size: "2XL", charge: 0.90 },
+            { size: "3XL", charge: 1.80 },
+            { size: "4XL", charge: 4.09 },
+            { size: "5XL", charge: 6.62 }
         ]
     }
 }
@@ -10788,6 +12815,44 @@ function initTemplatesModal() {
 // 2. RELATED PRODUCTS FUNCTION
 // ============================================================
 function getRelatedProducts(currentProduct, allProducts, limit = 4) {
+    // ✅ Priority 1: Same group (Apparel ke liye)
+    if (currentProduct.group) {
+        const sameGroup = allProducts.filter(p =>
+            p.id !== currentProduct.id &&
+            p.group === currentProduct.group
+        );
+
+        // Same group ke andar same category wale pehle
+        const sameCategory = sameGroup.filter(p => p.category === currentProduct.category);
+        const otherInGroup = sameGroup.filter(p => p.category !== currentProduct.category);
+
+        let related = [...sameCategory, ...otherInGroup];
+
+        if (related.length >= limit) {
+            return related.slice(0, limit);
+        }
+
+        // Agar group mein kam hain toh material match karo (group ke andar)
+        const sameMaterial = sameGroup.filter(p =>
+            p.material === currentProduct.material &&
+            !related.some(r => r.id === p.id)
+        );
+        related = [...related, ...sameMaterial];
+
+        if (related.length >= limit) {
+            return related.slice(0, limit);
+        }
+
+        // Phir bhi kam hain toh baaki products se fill karo
+        const others = allProducts.filter(p =>
+            p.id !== currentProduct.id &&
+            !related.some(r => r.id === p.id)
+        );
+        related = [...related, ...others];
+        return related.slice(0, limit);
+    }
+
+    // ✅ Priority 2: Bags/Blankets ke liye purana logic (category → material → others)
     let related = allProducts.filter(p =>
         p.id !== currentProduct.id &&
         p.category === currentProduct.category
@@ -11030,38 +13095,44 @@ function renderRelatedProducts(currentProduct, allProducts) {
     if (!container) return;
 
     function getMinimumPrice(product) {
-        // Check if blank pricing exists
+        // ✅ Case 1: basePrice + upsizeCharges (T-shirts, Tank Tops, Hoodies)
+        if (product.pricing && product.pricing.blank && product.pricing.blank.basePrice) {
+            const priceStr = product.pricing.blank.basePrice.price;
+            const priceNum = parseFloat(String(priceStr).replace(/[$,]/g, ''));
+            if (!isNaN(priceNum) && priceNum > 0) {
+                return priceNum * 0.6;
+            }
+        }
+
+        // ✅ Case 2: blank.rows (bags, blankets)
         if (product.pricing && product.pricing.blank && product.pricing.blank.rows) {
-            // Find the NATURAL row in blank pricing
             const naturalRow = product.pricing.blank.rows.find(row =>
-                row.label.toUpperCase() === 'NATURAL'
+                row.label.toUpperCase().includes('NATURAL')
             );
-
-            if (naturalRow && naturalRow.prices && naturalRow.prices.length > 0) {
-                // Get the first price (usually the base price)
-                const priceStr = naturalRow.prices[0];
-                const priceNum = parseFloat(priceStr.replace('$', '').replace(',', ''));
-
+            const targetRow = naturalRow || product.pricing.blank.rows[0];
+            if (targetRow && targetRow.prices && targetRow.prices.length > 0) {
+                const priceNum = parseFloat(String(targetRow.prices[0]).replace(/[$,]/g, ''));
                 if (!isNaN(priceNum) && priceNum > 0) {
-                    // Return 60% of the natural blank price
                     return priceNum * 0.6;
                 }
             }
         }
 
-        // Fallback: agar blank natural nahi mila toh spot printing ki cheapest price lo
+        // ✅ Case 3: spot printing cheapest
         if (product.pricing && product.pricing.spot && product.pricing.spot.rows) {
             let minPrice = Infinity;
             product.pricing.spot.rows.forEach(row => {
                 row.prices.forEach(price => {
-                    const num = parseFloat(price.replace('$', '').replace(',', ''));
-                    if (num < minPrice) minPrice = num;
+                    const num = parseFloat(String(price).replace(/[$,]/g, ''));
+                    if (!isNaN(num) && num < minPrice) minPrice = num;
                 });
             });
-            return minPrice !== Infinity ? minPrice : product.price;
+            if (minPrice !== Infinity) return minPrice;
         }
 
-        return product.price;
+        // ✅ Case 4: Final fallback
+        const fallback = parseFloat(String(product.price || 0).replace(/[$,]/g, ''));
+        return isNaN(fallback) ? 0 : fallback;
     }
 
     const relatedWithMinPrice = related.map(product => ({
@@ -11084,7 +13155,7 @@ function renderRelatedProducts(currentProduct, allProducts) {
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
                                 <p class="text-white text-lg font-bold tracking-wide">
                                     <span class="text-xs font-normal opacity-80">As low as</span> 
-                                    $${product.minPrice.toFixed(2)}
+                                    $${(product.minPrice || 0).toFixed(2)}                                
                                 </p>
                             </div>
                         </div>
@@ -11839,11 +13910,12 @@ function initFreightModal() {
             gusset: "N/A",
             weight: "N/A",
             material: "N/A",
-            handle: "N/A",
-            origin: "USA"
+            handle: "N/A"
+            // ❌ origin hata diya - ab fallback nahi hoga
         };
 
-        const originValue = s.origin || s.decoratedIn || "USA";
+        // ✅ Origin value - agar nahi hai to null rahega (row hide ho jayegi)
+        const originValue = s.origin || s.decoratedIn || null;
 
         // ✅ Handle row condition
         const showHandle = s.handle && s.handle !== "-" && s.handle !== "N/A";
@@ -11860,6 +13932,14 @@ function initFreightModal() {
         <div class="flex border-b border-brand-border">
             <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div>
             <div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div>
+        </div>
+    ` : '';
+
+        // ✅ Origin row condition - sirf tab show hoga jab origin ya decoratedIn ho
+        const originRow = originValue ? `
+        <div class="flex">
+            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div>
+            <div class="w-1/2 p-3 font-medium text-brand-text">${originValue}</div>
         </div>
     ` : '';
 
@@ -11908,10 +13988,7 @@ function initFreightModal() {
             <div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div>
         </div>
         ${handleRow}
-        <div class="flex">
-            <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div>
-            <div class="w-1/2 p-3 font-medium text-brand-text">${originValue}</div>
-        </div>
+        ${originRow}
     `;
     }
 
@@ -11963,23 +14040,44 @@ function initFreightModal() {
         productImprint.textContent = product.imprint || '10"W x 8"H';
         productNameBreadcrumb.textContent = product.name;
         tabDescription.textContent = product.description;
+
+        // ✅ OPTION A: STANDOUT THEME (SIRF BADGE + IMAGE BORDER)
+        if (product.standout) {
+            // 1. Badge insert karo (title ke upar)
+            const titleContainer = productTitle.parentElement;
+            if (titleContainer && !document.getElementById('standoutBadge')) {
+                const badge = document.createElement('div');
+                badge.id = 'standoutBadge';
+                badge.className = 'standout-badge';
+                badge.innerHTML = `
+                <i class="fa-solid fa-crown"></i>
+                ${product.standoutBadge || 'PREMIUM APPAREL'}
+            `;
+                titleContainer.insertBefore(badge, productTitle);
+            }
+
+            // 2. Main image pe golden border
+            if (mainImage) {
+                mainImage.classList.add('standout-image');
+            }
+        }
     }
 
-   function renderAdditionalCharges() {
-    const chargesTab = document.getElementById('tab-charges');
-    if (!chargesTab) return;
+    function renderAdditionalCharges() {
+        const chargesTab = document.getElementById('tab-charges');
+        if (!chargesTab) return;
 
-    // ✅ AGAR hideCharges TRUE HAI TOH KUCH BHI RENDER NA KARO
-    if (product.hideCharges) {
-        chargesTab.innerHTML = '';  // ya 'No charges info'
-        return;
-    }
+        // ✅ AGAR hideCharges TRUE HAI TOH KUCH BHI RENDER NA KARO
+        if (product.hideCharges) {
+            chargesTab.innerHTML = '';  // ya 'No charges info'
+            return;
+        }
 
-    const charges = product.additionalCharges || {};
-    const hasCharges = Object.keys(charges).length > 0;
+        const charges = product.additionalCharges || {};
+        const hasCharges = Object.keys(charges).length > 0;
 
-    if (hasCharges) {
-        chargesTab.innerHTML = `
+        if (hasCharges) {
+            chargesTab.innerHTML = `
             <div class="space-y-2 text-sm text-brand-textSecondary">
                 ${charges.pmsMatch ? `<p><strong>PMS Match:</strong> ${charges.pmsMatch}</p>` : ''}
                 ${charges.setupCharge ? `<p><strong>Setup Charge:</strong> ${charges.setupCharge}</p>` : ''}
@@ -11987,24 +14085,24 @@ function initFreightModal() {
                 ${charges.lessThanMinimum ? `<p><strong>Less than Minimum:</strong> ${charges.lessThanMinimum}</p>` : ''}
             </div>
         `;
-    } else {
-        chargesTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No additional charges information available.</p>`;
+        } else {
+            chargesTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No additional charges information available.</p>`;
+        }
     }
-}
 
-   function renderPackagingInfo() {
-    const packagingTab = document.getElementById('tab-packaging');
-    if (!packagingTab) return;
+    function renderPackagingInfo() {
+        const packagingTab = document.getElementById('tab-packaging');
+        if (!packagingTab) return;
 
-    const s = product.specs || {};
+        const s = product.specs || {};
 
-    // ============================================================
-    // ✅ CASE 1: packagingOptions ARRAY (W965, W968, W973, etc.)
-    // ============================================================
-    if (Array.isArray(s.packagingOptions) && s.packagingOptions.length > 0) {
-        let html = `<div class="space-y-4 text-sm text-brand-textSecondary">`;
-        s.packagingOptions.forEach(option => {
-            html += `
+        // ============================================================
+        // ✅ CASE 1: packagingOptions ARRAY (W965, W968, W973, etc.)
+        // ============================================================
+        if (Array.isArray(s.packagingOptions) && s.packagingOptions.length > 0) {
+            let html = `<div class="space-y-4 text-sm text-brand-textSecondary">`;
+            s.packagingOptions.forEach(option => {
+                html += `
                 <div class="border border-brand-border rounded-lg p-3">
                     ${option.type ? `<p class="font-semibold text-brand-text">${option.type}</p>` : ''}
                     ${option.qtyPerBox && option.qtyPerBox !== 'N/A' ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
@@ -12015,30 +14113,30 @@ function initFreightModal() {
                     ${option.note ? `<p class="text-xs italic mt-2">${option.note}</p>` : ''}
                 </div>
             `;
-        });
-        html += `</div>`;
-        packagingTab.innerHTML = html;
-        return;
-    }
+            });
+            html += `</div>`;
+            packagingTab.innerHTML = html;
+            return;
+        }
 
-    // ============================================================
-    // ✅ CASE 2: packagingOptions STRING (ITSCNSS: "Call for details")
-    // ============================================================
-    if (typeof s.packagingOptions === 'string' && s.packagingOptions.trim() !== '') {
-        packagingTab.innerHTML = `
+        // ============================================================
+        // ✅ CASE 2: packagingOptions STRING (ITSCNSS: "Call for details")
+        // ============================================================
+        if (typeof s.packagingOptions === 'string' && s.packagingOptions.trim() !== '') {
+            packagingTab.innerHTML = `
             <div class="border border-brand-border rounded-lg p-4 text-sm text-brand-textSecondary text-center">
                 <p class="font-medium text-brand-text">${s.packagingOptions}</p>
             </div>
         `;
-        return;
-    }
+            return;
+        }
 
-    // ============================================================
-    // ✅ CASE 3: boxQuantity / boxWeight / boxDims direct fields
-    // (IB29, MQIB6000, IDS125700, IB800, W956, MQIB, IDS4500, etc.)
-    // ============================================================
-    if (s.boxQuantity || s.boxWeight || s.boxDims) {
-        packagingTab.innerHTML = `
+        // ============================================================
+        // ✅ CASE 3: boxQuantity / boxWeight / boxDims direct fields
+        // (IB29, MQIB6000, IDS125700, IB800, W956, MQIB, IDS4500, etc.)
+        // ============================================================
+        if (s.boxQuantity || s.boxWeight || s.boxDims) {
+            packagingTab.innerHTML = `
             <div class="border border-brand-border rounded-lg p-3 text-sm text-brand-textSecondary">
                 <p class="font-semibold text-brand-text mb-2">Standard Packaging</p>
                 ${s.boxQuantity ? `<p><strong>Qty Per Box:</strong> ${s.boxQuantity}</p>` : ''}
@@ -12046,62 +14144,62 @@ function initFreightModal() {
                 ${s.boxDims ? `<p><strong>Box Dims:</strong> ${s.boxDims}</p>` : ''}
             </div>
         `;
-        return;
-    }
-
-    // ============================================================
-    // ✅ CASE 4: Fabric/garment specs (T-shirts, hoodies, apparel)
-    // (IT1003, IT1005, IT3130, IT5001, IT5108, IT5109, IT15001, ITP280, ITY300, ITCR280)
-    // ============================================================
-    if (s.fabricWeight || s.fabric || s.sizes || s.minimumOrder || s.weight || s.material || s.sizeChart) {
-        let html = `<div class="space-y-2 text-sm text-brand-textSecondary">`;
-        if (s.fabricWeight) html += `<p><strong>Fabric weight:</strong> ${s.fabricWeight}</p>`;
-        if (s.weight) html += `<p><strong>Weight:</strong> ${s.weight}</p>`;
-        if (s.fabric) html += `<p><strong>Fabric:</strong> ${s.fabric}</p>`;
-        if (s.material) html += `<p><strong>Material:</strong> ${s.material}</p>`;
-        if (s.yarn) html += `<p><strong>Yarn:</strong> ${s.yarn}</p>`;
-        if (s.sizes) html += `<p><strong>Sizes:</strong> ${s.sizes}</p>`;
-        if (s.minimumOrder) html += `<p><strong>Minimum order:</strong> ${s.minimumOrder}</p>`;
-        if (s.shipping) html += `<p><strong>Shipping:</strong> ${s.shipping}</p>`;
-        if (s.label) html += `<p><strong>Label:</strong> ${s.label}</p>`;
-        if (s.packing) html += `<p><strong>Packing:</strong> ${s.packing}</p>`;
-        if (s.origin) html += `<p><strong>Origin:</strong> ${s.origin}</p>`;
-
-        // ✅ SIZE CHART
-        if (s.sizeChart && s.sizeChart.length > 0) {
-            html += `<div class="mt-4"><p class="font-semibold text-brand-text mb-2">Size Chart (inches)</p>`;
-            html += `<table class="w-full text-xs border-collapse"><thead><tr class="bg-brand-bg/30">`;
-            html += `<th class="p-2 border border-brand-border text-left">Size</th>`;
-            html += `<th class="p-2 border border-brand-border text-left">Chest</th>`;
-            html += `<th class="p-2 border border-brand-border text-left">Body Length</th>`;
-            html += `</tr></thead><tbody>`;
-            s.sizeChart.forEach(row => {
-                html += `<tr><td class="p-2 border border-brand-border">${row.size}</td>`;
-                html += `<td class="p-2 border border-brand-border">${row.chest}</td>`;
-                html += `<td class="p-2 border border-brand-border">${row.bodyLength}</td></tr>`;
-            });
-            html += `</tbody></table></div>`;
+            return;
         }
 
-        // ✅ DECORATION INFO
-        if (s.decoration) {
-            html += `<div class="mt-4"><p class="font-semibold text-brand-text mb-2">Decoration</p>`;
-            Object.entries(s.decoration).forEach(([key, value]) => {
-                html += `<p><strong>${key}:</strong> ${value}</p>`;
-            });
+        // ============================================================
+        // ✅ CASE 4: Fabric/garment specs (T-shirts, hoodies, apparel)
+        // (IT1003, IT1005, IT3130, IT5001, IT5108, IT5109, IT15001, ITP280, ITY300, ITCR280)
+        // ============================================================
+        if (s.fabricWeight || s.fabric || s.sizes || s.minimumOrder || s.weight || s.material || s.sizeChart) {
+            let html = `<div class="space-y-2 text-sm text-brand-textSecondary">`;
+            if (s.fabricWeight) html += `<p><strong>Fabric weight:</strong> ${s.fabricWeight}</p>`;
+            if (s.weight) html += `<p><strong>Weight:</strong> ${s.weight}</p>`;
+            if (s.fabric) html += `<p><strong>Fabric:</strong> ${s.fabric}</p>`;
+            if (s.material) html += `<p><strong>Material:</strong> ${s.material}</p>`;
+            if (s.yarn) html += `<p><strong>Yarn:</strong> ${s.yarn}</p>`;
+            if (s.sizes) html += `<p><strong>Sizes:</strong> ${s.sizes}</p>`;
+            if (s.minimumOrder) html += `<p><strong>Minimum order:</strong> ${s.minimumOrder}</p>`;
+            if (s.shipping) html += `<p><strong>Shipping:</strong> ${s.shipping}</p>`;
+            if (s.label) html += `<p><strong>Label:</strong> ${s.label}</p>`;
+            if (s.packing) html += `<p><strong>Packing:</strong> ${s.packing}</p>`;
+            if (s.origin) html += `<p><strong>Origin:</strong> ${s.origin}</p>`;
+
+            // ✅ SIZE CHART
+            if (s.sizeChart && s.sizeChart.length > 0) {
+                html += `<div class="mt-4"><p class="font-semibold text-brand-text mb-2">Size Chart (inches)</p>`;
+                html += `<table class="w-full text-xs border-collapse"><thead><tr class="bg-brand-bg/30">`;
+                html += `<th class="p-2 border border-brand-border text-left">Size</th>`;
+                html += `<th class="p-2 border border-brand-border text-left">Chest</th>`;
+                html += `<th class="p-2 border border-brand-border text-left">Body Length</th>`;
+                html += `</tr></thead><tbody>`;
+                s.sizeChart.forEach(row => {
+                    html += `<tr><td class="p-2 border border-brand-border">${row.size}</td>`;
+                    html += `<td class="p-2 border border-brand-border">${row.chest}</td>`;
+                    html += `<td class="p-2 border border-brand-border">${row.bodyLength}</td></tr>`;
+                });
+                html += `</tbody></table></div>`;
+            }
+
+            // ✅ DECORATION INFO
+            if (s.decoration) {
+                html += `<div class="mt-4"><p class="font-semibold text-brand-text mb-2">Decoration</p>`;
+                Object.entries(s.decoration).forEach(([key, value]) => {
+                    html += `<p><strong>${key}:</strong> ${value}</p>`;
+                });
+                html += `</div>`;
+            }
+
             html += `</div>`;
+            packagingTab.innerHTML = html;
+            return;
         }
 
-        html += `</div>`;
-        packagingTab.innerHTML = html;
-        return;
+        // ============================================================
+        // ✅ CASE 5: Kuch bhi nahi
+        // ============================================================
+        packagingTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No packaging information available.</p>`;
     }
-
-    // ============================================================
-    // ✅ CASE 5: Kuch bhi nahi
-    // ============================================================
-    packagingTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No packaging information available.</p>`;
-}
 
     function initTabs() {
         const tabs = document.querySelectorAll('#info-tabs .tab-btn');
