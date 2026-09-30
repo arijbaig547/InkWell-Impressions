@@ -82,7 +82,148 @@ const products = [{
   image: "assets/assets/images/products/tote-bags/MQIB6000/MQIB6000_main.webp",
   description: "6oz. 100% cotton tote bag with natural body and color handles.",
   popular: false
-}, {
+},
+{
+  id: "is100",
+  name: "Mesh Pocket Drawstring Backpack",
+  code: "IS100",
+  slug: "mesh-pocket-drawstring-backpack",
+  category: "Drawstring Bags",
+  material: "210D Polyester",
+  size: '14"W x 16.5"H',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/drawstring-bags/IS100/IS100-lime.webp",
+  description: "Lightweight 210D polyester drawstring backpack with zippered front pocket and mesh side panels.",
+  popular: false
+},
+{
+  id: "is128",
+  name: "Showstopping Sparkle Glitter Bag - Large",
+  code: "IS128",
+  slug: "showstopping-sparkle-glitter-bag-large",
+  category: "Non-Woven Bags",
+  material: "Non-Woven, Laminated",
+  size: '17"W x 13"H x 5"D',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg",
+  description: "Laminated 120 GSM glitter bag with full side and bottom gussets.",
+  popular: false
+},
+{
+  id: "is132",
+  name: "Mesh Beach Bag",
+  code: "IS132",
+  slug: "mesh-beach-bag",
+  category: "Tote Bags",
+  material: "Cotton Canvas",
+  size: '20"W x 15"H x 5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg",
+  description: "7 oz cotton canvas beach tote with mesh top and bottom gusset.",
+  popular: false
+},
+{
+  id: "is134",
+  name: "Laminated Gift Tote",
+  code: "IS134",
+  slug: "laminated-gift-tote",
+  category: "Non-Woven Bags",
+  material: "Non-Woven, Laminated",
+  size: '9"W x 12"H x 4.5"D',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg",
+  description: "Matte finish 105 GSM laminated non-woven tote with contrasting gussets and X-reinforced handles.",
+  popular: false
+},
+{
+  id: "is135",
+  name: "Laminated Gift Tote",
+  code: "IS135",
+  slug: "laminated-gift-tote-large",
+  category: "Non-Woven Bags",
+  material: "Non-Woven, Laminated",
+  size: '16"W x 14"H x 6"D',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg",
+  description: "Matte finish 105 GSM laminated non-woven tote with contrasting gussets and X-reinforced handles.",
+  popular: false
+},
+{
+  id: "is121",
+  name: "18 oz. Nautical Cotton Canvas Boat Bag",
+  code: "IS121",
+  slug: "nautical-cotton-canvas-boat-bag",
+  category: "Tote Bags",
+  material: "100% Cotton Canvas",
+  size: '19.75"W x 13.25"H x 7"D',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg",
+  description: "Heavyweight 18 oz cotton canvas boat bag with front pocket and reinforced handles.",
+  popular: false
+},
+{
+    id: "is101",
+    name: "Two Tone Poly Drawstring Backpack With Zipper",
+    code: "IS101",
+    slug: "two-tone-poly-drawstring-backpack-with-zipper",
+    category: "Drawstring Bags",
+    material: "210D Polyester",
+    size: '13"W x 16.75"H',
+    price: 35.00,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.jpg",
+    description: "210D polyester two-tone drawstring backpack with angled front zipper pocket and headphone port.",
+    popular: false
+},
+{
+    id: "is102",
+    name: "Two Tone Drawstring Cinch Bag",
+    code: "IS102",
+    slug: "two-tone-drawstring-cinch-bag",
+    category: "Drawstring Bags",
+    material: "Polyester, Non Woven",
+    size: '13"W x 16.5"H',
+    price: 35.00,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg",
+    description: "Two-tone polyester drawstring cinch bag with angled front zipper and headphone port.",
+    popular: false
+},
+{
+    id: "is104",
+    name: "Modern Affordable Contrasting Sports Pack",
+    code: "IS104",
+    slug: "modern-affordable-contrasting-sports-pack",
+    category: "Drawstring Bags",
+    material: "210D Polyester",
+    size: '14"W x 17.75"H',
+    price: 35.00,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.jpg",
+    description: "210D polyester drawstring sports pack with headphone port and front zipper pocket.",
+    popular: false
+},
+{
+    id: "is105",
+    name: "Nylon Backpack",
+    code: "IS105",
+    slug: "nylon-backpack",
+    category: "Non-Woven Bags",
+    material: "210D Polyester",
+    size: '12"W x 16.5"H x 5"D',
+    price: 35.00,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.jpg",
+    description: "210D polyester backpack with adjustable web straps, front zipper pocket, and side mesh pocket.",
+    popular: false
+},
+{
   id: "ib611",
   name: "Jumbo Canvas Zipper Tote with bottom Gusset",
   code: "IB611",
@@ -2198,18 +2339,18 @@ function initLazyBackground() {
           const productGrid = document.getElementById('product-grid');
 
           if (productGrid) {
-           setTimeout(() => {
-    const grid = document.getElementById('product-grid');
+            setTimeout(() => {
+              const grid = document.getElementById('product-grid');
 
-    if (grid) {
-        const rect = grid.getBoundingClientRect();
+              if (grid) {
+                const rect = grid.getBoundingClientRect();
 
-        window.scrollTo({
-            top: window.scrollY + rect.top - window.innerHeight * 0.4,
-            behavior: 'smooth'
-        });
-    }
-}, 100);
+                window.scrollTo({
+                  top: window.scrollY + rect.top - window.innerHeight * 0.4,
+                  behavior: 'smooth'
+                });
+              }
+            }, 100);
           }
         });
       });

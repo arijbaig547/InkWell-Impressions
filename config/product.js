@@ -10528,7 +10528,7 @@ const products = [{
         minimumOrder: "No minimum on stock colors",
         shipping: "Ships the same day when paid by 12 PM PT",
         label: "Tear Away",
-        
+
 
         sizeChart: [
             { size: "S", chest: '18"', bodyLength: '28"' },
@@ -12298,7 +12298,7 @@ const products = [{
             { size: "5XL", charge: 6.62 }
         ]
     }
-},{
+}, {
     id: "IA1001",
     name: "Signature Premium Tee",
     code: "IA1001",
@@ -12330,7 +12330,7 @@ const products = [{
     useInkwellItemNo: true,
 
     colors: [
-        
+
         { name: "Brown", hex: "#5A3825", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-brown-01.webp" },
         { name: "Moss Green", hex: "#5A6242", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-moss-green-01.webp" },
         { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/T-shirts/IA1001/IA1001-gold-01.webp" },
@@ -12369,7 +12369,7 @@ const products = [{
     images: [
         "assets/assets/images/products/T-shirts/IA1001/IA1001-white-01.webp",
         "assets/assets/images/products/T-shirts/IA1001/IA1001-black-01.webp",
-     
+
         "assets/assets/images/products/T-shirts/IA1001/IA1001-brown-01.webp",
         "assets/assets/images/products/T-shirts/IA1001/IA1001-moss-green-01.webp",
         "assets/assets/images/products/T-shirts/IA1001/IA1001-gold-01.webp",
@@ -12461,6 +12461,963 @@ const products = [{
             { size: "4XL", charge: 4.09 },
             { size: "5XL", charge: 6.62 }
         ]
+    }
+},
+{
+    id: "is100",
+    name: "Mesh Pocket Drawstring Backpack",
+    code: "IS100",
+    slug: "mesh-pocket-drawstring-backpack",
+    category: "Drawstring Bags",
+    material: "210D Polyester",
+    size: '14"W x 16.5"H',
+    imprint: '7"W x 6"H',
+    price: 30.00,
+    originalPrice: 45.00,
+    image: "assets/assets/images/products/drawstring-bags/IS100/IS100-lime.webp",
+    description: "Lightweight 210D polyester drawstring backpack with a zippered front pocket and mesh side panels. Cinch closure with rope cord handles makes it easy to carry, while the mesh sides add ventilation and a sporty look. Ideal for gyms, schools, promotional events, and everyday use.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/drawstring-bags/IS100/IS100-black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/drawstring-bags/IS100/IS100-grey.webp" },
+        { name: "Lime", hex: "#84CC16", image: "assets/assets/images/products/drawstring-bags/IS100/IS100-lime.webp" },
+        { name: "Navy", hex: "#1E2E4A", image: "assets/assets/images/products/drawstring-bags/IS100/IS100-navy.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS100/IS100-red.webp" },
+        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS100/IS100-royal.webp" },
+        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/drawstring-bags/IS100/IS100-teal.webp" }
+    ],
+
+    images: [
+        "assets/assets/images/products/drawstring-bags/IS100/IS100-lime.webp",
+        "assets/assets/images/products/drawstring-bags/IS100/IS100-black.webp",
+        "assets/assets/images/products/drawstring-bags/IS100/IS100-grey.webp",
+        "assets/assets/images/products/drawstring-bags/IS100/IS100-navy.webp",
+        "assets/assets/images/products/drawstring-bags/IS100/IS100-royal.webp",
+        "assets/assets/images/products/drawstring-bags/IS100/IS100-teal.webp"
+    ],
+
+    specs: {
+        itemNo: "IS100",
+        gusset: "Bottom: No Side: No",
+        weight: "210D",
+        material: "210D Polyester",
+        handle: "Drawstring Cinch Closure. Rope Cord",
+
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "350 pcs",
+                boxWeight: "44 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "125 pcs",
+                boxWeight: "17 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR", prices: ["$3.49", "$3.40", "$3.30", "$3.22", "$3.10"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR", prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR", prices: ["$6.56", "$6.06", "$5.78", "$5.35", "$4.98"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '6.5"W x 5.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.65"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing"
+    }
+},
+{
+    id: "is128",
+    name: "Showstopping Sparkle Glitter Bag - Large",
+    code: "IS128",
+    slug: "showstopping-sparkle-glitter-bag-large",
+    category: "Non-Woven Bags",
+    material: "Non-Woven, Laminated",
+    size: '17"W x 13"H x 5"D',
+    imprint: '10"W x 8"H',
+    price: 2.76,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg",
+    description: "Make your brand sparkle with this laminated 120 GSM glitter bag featuring full side and bottom gussets and 22-inch self handles. The shimmering finish catches the eye at trade shows, retail counters, and promotional events, while the roomy 17\" x 13\" x 5\" body carries groceries, gifts, and giveaways with ease.",
+
+    popular: false,
+
+    colors: [
+        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/non-woven/IS128/IS128-Gold.jpg" },
+        { name: "Pewter Grey", hex: "#8A8D8F", image: "assets/assets/images/products/non-woven/IS128/IS128-Pewter Grey.jpg" },
+        { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg",
+        "assets/assets/images/products/non-woven/IS128/IS128-Gold.jpg",
+        "assets/assets/images/products/non-woven/IS128/IS128-Pewter Grey.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS128",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "120 GSM",
+        material: "Non-Woven, Laminated",
+        handle: '22" self handles',
+        
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "150 pcs",
+                boxWeight: "25 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "75 pcs",
+                boxWeight: "13 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$4.09", "$3.99", "$3.88", "$3.78", "$3.64"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.76"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is132",
+    name: "Mesh Beach Bag",
+    code: "IS132",
+    slug: "mesh-beach-bag",
+    category: "Tote Bags",
+    material: "Cotton Canvas",
+    size: '20"W x 15"H x 5"D',
+    imprint: '14"W x 6"H',
+    price: 3.81,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg",
+    description: "Built for sun, sand, and everything in between — this 7 oz cotton canvas beach tote features a breathable mesh top panel that lets sand fall through and keeps wet items ventilated. With a roomy 20\" x 15\" x 5\" body, a bottom gusset for extra capacity, and 22-inch self handles, it's the perfect carry-all for beach days, pool trips, farmers markets, and weekend getaways.",
+
+    popular: false,
+
+    colors: [
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS132",
+        gusset: "Bottom: Yes Side: No",
+        weight: "7 OZ",
+        material: "Cotton Canvas",
+        handle: '22" Self Handles',
+        decoratedIn: "USA",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "175 pcs",
+                boxWeight: "39 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "75 pcs",
+                boxWeight: "18 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "NATURAL",      prices: ["$4.79", "$4.68", "$4.54", "$4.43", "$4.27"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$8.06", "$7.45", "$7.10", "$6.59", "$6.14"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '14"W x 6"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "NATURAL", prices: ["$3.81"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 - Spot Printing (V)",
+        setupChargeTransfer: "$112.50 - Heat Transfer (V)",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+
+{
+    id: "is134",
+    name: "Laminated Gift Tote",
+    code: "IS134",
+    slug: "laminated-gift-tote",
+    category: "Non-Woven Bags",
+    material: "Non-Woven, Laminated",
+    size: '9"W x 12"H x 4.5"D',
+    imprint: '6"W x 6"H',
+    price: 1.83,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg",
+    description: "Polished and practical — this matte-finish 105 GSM laminated non-woven tote pairs a sophisticated look with everyday durability. Contrasting side and bottom gussets add a subtle design detail, while X-reinforced self handles deliver extra strength where it matters. Sized at 9\" x 12\" x 4.5\", it's ideal for gift packaging, boutique retail, cosmetic promotions, and event giveaways.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS134/IS134-Grey.jpg" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS134/IS134-Red.jpg" },
+        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS134/IS134-Royal.jpg" },
+        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS134/IS134-Teal.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS134/IS134-White.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg",
+        "assets/assets/images/products/non-woven/IS134/IS134-Grey.jpg",
+        "assets/assets/images/products/non-woven/IS134/IS134-Red.jpg",
+        "assets/assets/images/products/non-woven/IS134/IS134-Royal.jpg",
+        "assets/assets/images/products/non-woven/IS134/IS134-Teal.jpg",
+        "assets/assets/images/products/non-woven/IS134/IS134-White.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS134",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "105 GSM",
+        material: "Non-Woven, Laminated",
+        handle: '16" Self Handles',
+        decoratedIn: "USA",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "200 pcs",
+                boxWeight: "24 lbs",
+                boxDims: '20" x 16" x 16"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$3.07", "$3.00", "$2.91", "$2.84", "$2.73"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 - Spot Printing (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$1.83"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is135",
+    name: "Laminated Gift Tote",
+    code: "IS135",
+    slug: "laminated-gift-tote-large",
+    category: "Non-Woven Bags",
+    material: "Non-Woven, Laminated",
+    size: '16"W x 14"H x 6"D',
+    imprint: '10"W x 8"H',
+    price: 2.23,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg",
+    description: "A larger take on our bestselling gift tote — this matte-finish 105 GSM laminated non-woven bag pairs a sophisticated look with real carrying capacity. The 16\" x 14\" x 6\" body with contrasting side and bottom gussets and X-reinforced 20-inch self handles makes it ideal for retail packaging, promotional gift sets, trade show giveaways, and event swag that needs to impress.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS135/IS135_Black-White.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS135/IS135_Black-White.jpg",
+        "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS135",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "105 GSM",
+        material: "Non-Woven, Laminated",
+        handle: '20" Self Handles',
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "150 pcs",
+                boxWeight: "24 lbs",
+                boxDims: '20" x 16" x 16"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$3.50", "$3.41", "$3.31", "$3.23", "$3.12"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.23"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V)- Spot Printing",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is121",
+    name: "18 oz. Nautical Cotton Canvas Boat Bag",
+    code: "IS121",
+    slug: "nautical-cotton-canvas-boat-bag",
+    category: "Tote Bags",
+    material: "100% Cotton Canvas",
+    size: '19.75"W x 13.25"H x 7"D',
+    imprint: '4.5"W x 6"H',
+    price: 11.41,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg",
+    description: "Built for the long haul — this 18 oz cotton canvas boat bag delivers the rugged durability of a classic nautical tote with a natural canvas body and contrasting colored trim. The roomy 19.75\" x 13.25\" x 7\" main compartment, front slip pocket, reinforced 24-inch self handles, and bottom gusset make it perfect for boat days, weekend trips, farmers markets, and premium promotional programs that demand a heavyweight feel.",
+
+    popular: false,
+
+    colors: [
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Navy Blue.jpg" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Red.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg",
+        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Navy Blue.jpg",
+        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Red.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS121",
+        gusset: "Bottom: Yes Side: No",
+        weight: "18 oz",
+        material: "100% Cotton Canvas",
+        handle: '24" Reinforced Self Handles',
+        decoratedIn: "USA",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "50 pcs",
+                boxWeight: "45 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "20 pcs",
+                boxWeight: "19 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$13.30", "$12.97", "$12.59", "$12.29", "$11.85"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$17.77", "$16.52", "$15.69", "$14.65", "$13.73"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '4"W x 5.5"H',
+            setupCharge: "$125.00 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$11.41"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25-Spot Printing (V)",
+        setupChargeTransfer: "$125.00-Heat Transfer (V)",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is101",
+    name: "Two Tone Poly Drawstring Backpack With Zipper",
+    code: "IS101",
+    slug: "two-tone-poly-drawstring-backpack-with-zipper",
+    category: "Drawstring Bags",
+    material: "210D Polyester",
+    size: '13"W x 16.75"H',
+    imprint: '8"W x 5"H',
+    price: 2.30,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.jpg",
+    description: "Sporty and functional — this 210D polyester two-tone drawstring backpack pairs a classic cinch silhouette with a front angled zipper pocket and a rubberized headphone port. The rope cord drawstrings double as shoulder straps, making it a lightweight, hands-free carry for gyms, schools, festivals, and promotional giveaways that need to stand out with bold color blocking.",
+
+    popular: false,
+
+    colors: [
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.jpg" },
+        { name: "Orange-Black", hex: "#F97316", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.jpg" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Red-Black.jpg" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Royal Blue-Black.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.jpg",
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.jpg",
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Red-Black.jpg",
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Royal Blue-Black.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS101",
+        gusset: "Bottom: No Side: No",
+        weight: "210D",
+        material: "210D Polyester",
+        handle: "Drawstring Cinch Closure, Rope Cord",
+      
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "400 pcs",
+                boxWeight: "50 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "150 pcs",
+                boxWeight: "21 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$3.08", "$3.01", "$2.92", "$2.85", "$2.74"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$6.10", "$5.63", "$5.37", "$4.97", "$4.62"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '7.5"W x 4.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.30"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25-Spot Printing (V)",
+        setupChargeTransfer: "$112.50-Heat Transfer (V)",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is102",
+    name: "Two Tone Drawstring Cinch Bag",
+    code: "IS102",
+    slug: "two-tone-drawstring-cinch-bag",
+    category: "Drawstring Bags",
+    material: "Polyester, Non Woven",
+    size: '13"W x 16.5"H',
+    imprint: '8"W x 5"H',
+    price: 2.57,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg",
+    description: "A two-tone drawstring cinch bag that blends 300D polyester durability with an 80 GSM non-woven body. The angled front zipper pocket and built-in headphone port make it a practical everyday carry for gyms, schools, festivals, and promotional programs looking for a modern, sporty look.",
+
+    popular: false,
+
+    colors: [
+        { name: "Red-Grey", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg" },
+        { name: "Royal Blue-Grey", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Royal Blue-Grey.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg",
+        "assets/assets/images/products/drawstring-bags/IS102/IS102-Royal Blue-Grey.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS102",
+        gusset: "Bottom: No Side: No",
+        weight: "300D / 80 GSM",
+        material: "Polyester, Non Woven",
+        handle: "Drawstring Cinch Closure. Rope Cord",
+   
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "200 pcs",
+                boxWeight: "29 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "100 pcs",
+                boxWeight: "15 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$3.38", "$3.30", "$3.20", "$3.12", "$3.01"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$6.44", "$5.95", "$5.67", "$5.25", "$4.88"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '7.5"W x 4.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.57"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is104",
+    name: "Modern Affordable Contrasting Sports Pack",
+    code: "IS104",
+    slug: "modern-affordable-contrasting-sports-pack",
+    category: "Drawstring Bags",
+    material: "210D Polyester",
+    size: '14"W x 17.75"H',
+    imprint: '7"W x 7"H',
+    price: 2.41,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.jpg",
+    description: "A budget-friendly sports pack that doesn't compromise on features — this 210D polyester drawstring bag includes a front zipper pocket and a built-in headphone port, making it ideal for students, gym-goers, and promotional giveaways. The contrasting two-tone design adds visual pop while the rope cord drawstrings double as shoulder straps for hands-free carrying.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black-Black", hex: "#1C1C1C", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.jpg" },
+        { name: "Kelly Green-Black", hex: "#1B8A4C", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Kelly Green-Black.jpg" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.jpg" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Royal Blue-Black.jpg" },
+        { name: "Yellow-Black", hex: "#FACC15", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Yellow-Black.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.jpg",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Kelly Green-Black.jpg",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.jpg",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Royal Blue-Black.jpg",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Yellow-Black.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS104",
+        gusset: "Bottom: No Side: No",
+        weight: "210D",
+        material: "210D Polyester",
+        handle: "Drawstring Cinch Closure. Rope Cord",
+        decoratedIn: "USA",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "400 pcs",
+                boxWeight: "48 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "175 pcs",
+                boxWeight: "22 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$3.20", "$3.12", "$3.03", "$2.96", "$2.85"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$6.24", "$5.76", "$5.49", "$5.08", "$4.73"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '6.5"W x 6.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.41"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is105",
+    name: "Nylon Backpack",
+    code: "IS105",
+    slug: "nylon-backpack",
+    category: "Non-Woven Bags",
+    material: "210D Polyester",
+    size: '12"W x 16.5"H x 5"D',
+    imprint: '7"W x 4.5"H',
+    price: 5.58,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS105/IS105-Black.jpg",
+    description: "A practical everyday backpack built from durable 210D polyester with adjustable web shoulder straps and a convenient top carry handle. The front zippered pocket and side mesh pocket keep essentials organized, while the gusseted 12\" x 16.5\" x 5\" main body offers real carrying capacity for school, work, travel, and promotional programs.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS105/IS105-Black.jpg" },
+        { name: "Kelly Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS105/IS105-Kelly Green.jpg" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS105/IS105-Orange.jpg" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS105/IS105-Red.jpg" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS105/IS105-Black.jpg",
+        "assets/assets/images/products/non-woven/IS105/IS105-Kelly Green.jpg",
+        "assets/assets/images/products/non-woven/IS105/IS105-Orange.jpg",
+        "assets/assets/images/products/non-woven/IS105/IS105-Red.jpg",
+        "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS105",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "210D",
+        material: "210D Polyester",
+        handle: "Adjustable Web Shoulder Strap And Carry Handle",
+        decoratedIn: "USA",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "150 pcs",
+                boxWeight: "32 lbs",
+                boxDims: '16" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "50 pcs",
+                boxWeight: "11 lbs",
+                boxDims: '8" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$6.76", "$6.60", "$6.41", "$6.25", "$6.03"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$10.31", "$9.56", "$9.09", "$8.46", "$7.90"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '6.5"W x 4"H (On Pocket OR Above Pocket)',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$5.58"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
     }
 }
 ];
@@ -13801,7 +14758,7 @@ function initFreightModal() {
         });
     }
 
-    function renderPricing(method) {
+         function renderPricing(method) {
         const data = product.pricing[method];
         if (!data) return;
 
@@ -13811,7 +14768,9 @@ function initFreightModal() {
         const isBlank = method === 'blank' || !data.quantities;
         const thead = document.getElementById('pricing-thead');
 
+        // ============================================================
         // HEADER RENDER
+        // ============================================================
         if (thead) {
             thead.style.display = isBlank ? 'none' : '';
             if (!isBlank) {
@@ -13832,55 +14791,73 @@ function initFreightModal() {
         pricingBody.innerHTML = '';
 
         // ============================================================
-        // ✅ SPECIAL HANDLING: Sirf T-shirt wale products ke liye
-        // (jab basePrice + upsizeCharges maujood ho)
+        // ✅ BLANK TAB (Center aligned - jaise Blankets page par)
         // ============================================================
-        if (isBlank && data.basePrice && data.upsizeCharges) {
+        if (isBlank) {
+            // 1. Blank Pricing Rows (bags, blankets)
+            if (data.rows) {
+                data.rows.forEach((row) => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td class="font-medium text-brand-textSecondary">${row.label}</td>
+                        <td class="text-brand-text font-semibold">${row.prices[0]}</td>
+                        <td class="text-brand-textSecondary">R</td>
+                    `;
+                    pricingBody.appendChild(tr);
+                });
+            }
 
-            // ✅ BASE PRICE ROW (S - XL) — R hi rahega
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-        <td class="font-medium text-brand-textSecondary">${data.basePrice.label}</td>
-        <td class="text-brand-text font-semibold">${data.basePrice.price}</td>
-        <td class="text-brand-textSecondary">R</td>
-    `;
-            pricingBody.appendChild(tr);
-
-            // ✅ UPSIZE CHARGES HEADING
-            const headingTr = document.createElement('tr');
-            headingTr.innerHTML = `
-        <td colspan="3" class="pt-4 pb-2">
-            <span class="text-[11px] font-bold text-brand-crimson uppercase tracking-wider">
-                Upsize Charges
-            </span>
-        </td>
-    `;
-            pricingBody.appendChild(headingTr);
-
-            // ✅ UPSIZE ROWS (2XL, 3XL, 4XL, 5XL) — YAHAN V LAGAYA
-            data.upsizeCharges.forEach(u => {
+            // 2. Base Price (T-shirts, hoodies)
+            if (data.basePrice) {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-            <td class="font-medium text-brand-textSecondary pl-4">${u.size}</td>
-            <td class="text-brand-text">${u.charge}</td>
-            <td class="text-brand-textSecondary">V</td>
-        `;
+                    <td class="font-medium text-brand-textSecondary">${data.basePrice.label}</td>
+                    <td class="text-brand-text font-semibold">${data.basePrice.price}</td>
+                    <td class="text-brand-textSecondary">R</td>
+                `;
                 pricingBody.appendChild(tr);
-            });
+            }
 
-            return; // ✅ Yahan ruk jao — baaki sab skip
+            // 3. Upsize Charges (T-shirts, hoodies)
+            if (data.upsizeCharges) {
+                const headingTr = document.createElement('tr');
+                headingTr.innerHTML = `
+                    <td colspan="3" class="pt-4 pb-2">
+                        <span class="text-[11px] font-bold text-brand-crimson uppercase tracking-wider">Upsize Charges</span>
+                    </td>
+                `;
+                pricingBody.appendChild(headingTr);
+
+                data.upsizeCharges.forEach(u => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td class="font-medium text-brand-textSecondary pl-4">${u.size}</td>
+                        <td class="text-brand-text">${u.charge}</td>
+                        <td class="text-brand-textSecondary">V</td>
+                    `;
+                    pricingBody.appendChild(tr);
+                });
+            }
+
+            // ✅ Setup aur Repeat containers ko hide karo
+            const setupContainer = document.getElementById('setup-charge-container');
+            const repeatContainer = document.getElementById('repeat-setup-container');
+            if (setupContainer) setupContainer.style.display = 'none';
+            if (repeatContainer) repeatContainer.style.display = 'none';
+
+            // ✅ Grid ko CENTER karo
+            adjustInfoGrid();
+
+            return; // ✅ Blank ke liye yahan ruk jao
         }
 
         // ============================================================
-        // ✅ NORMAL RENDERING: Blankets, Tote Bags, sab ke liye
-        // (jitne bhi products hain, unke pricing.rows isi se render hote hain)
+        // ✅ SPOT / TRANSFER TAB (Normal rendering)
         // ============================================================
         if (data.rows) {
             data.rows.forEach((row, index) => {
                 const tr = document.createElement('tr');
-
-                // ✅ Extra rows (index 2+) - sirf spot/transfer ke liye
-                const isExtraRow = !isBlank && index >= 2;
+                const isExtraRow = index >= 2; // ADD LOCATION, ADD COLOR
 
                 let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
 
@@ -13895,13 +14872,31 @@ function initFreightModal() {
                 }
                 tr.innerHTML = html;
 
-                // ✅ Extra row class
+                // ✅ Extra rows ke liye class (View More ke liye)
                 if (isExtraRow) {
                     tr.className = 'pricing-extra-row';
                 }
 
                 pricingBody.appendChild(tr);
             });
+        }
+
+        // ============================================================
+        // ✅ SPOT / TRANSFER GRID - Center aligned, no empty space
+        // ============================================================
+        const infoGrid = document.getElementById('dynamic-info-grid');
+        if (infoGrid) {
+            const setupContainer = document.getElementById('setup-charge-container');
+            const repeatContainer = document.getElementById('repeat-setup-container');
+
+            // Setup aur Repeat ko show karo (agar product mein hide nahi hai)
+            if (setupContainer) setupContainer.style.display = 'flex';
+            if (repeatContainer) {
+                repeatContainer.style.display = product.hideImprint ? 'none' : 'flex';
+            }
+
+            // ✅ Grid ko CENTER karo
+            adjustInfoGrid();
         }
     }
     function renderSpecsTable(selectedColor) {
@@ -14081,6 +15076,7 @@ function initFreightModal() {
             <div class="space-y-2 text-sm text-brand-textSecondary">
                 ${charges.pmsMatch ? `<p><strong>PMS Match:</strong> ${charges.pmsMatch}</p>` : ''}
                 ${charges.setupCharge ? `<p><strong>Setup Charge:</strong> ${charges.setupCharge}</p>` : ''}
+                ${charges.setupChargeTransfer ? `<p><strong>Setup Charge:</strong> ${charges.setupChargeTransfer}</p>` : ''}
                 ${charges.repeatSetup ? `<p><strong>Repeat Setup:</strong> ${charges.repeatSetup}</p>` : ''}
                 ${charges.lessThanMinimum ? `<p><strong>Less than Minimum:</strong> ${charges.lessThanMinimum}</p>` : ''}
             </div>
@@ -14368,6 +15364,7 @@ function initFreightModal() {
                             viewMoreBtn.innerHTML = 'VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>';
                         }
                     }
+                        setTimeout(adjustInfoGrid, 10);
                 }
             });
         });
@@ -14384,26 +15381,26 @@ function initFreightModal() {
     // ============================================================
     // ✅ DYNAMIC GRID ADJUSTMENT
     // ============================================================
-    function adjustInfoGrid() {
+          function adjustInfoGrid() {
         const grid = document.getElementById('dynamic-info-grid');
         if (!grid) return;
 
-        // Visible items count karo
         const setupContainer = document.getElementById('setup-charge-container');
         const repeatContainer = document.getElementById('repeat-setup-container');
 
+        // ✅ Visible items count karo
         let visibleCount = 2; // Price Includes + Lead Time (always visible)
 
         if (setupContainer && setupContainer.style.display !== 'none') visibleCount++;
         if (repeatContainer && repeatContainer.style.display !== 'none') visibleCount++;
 
-        // Grid columns adjust karo
+        // ✅ Grid ko center karo — har case mein
         if (visibleCount === 2) {
             grid.className = 'grid grid-cols-2 gap-3 sm:gap-6 justify-center max-w-lg mx-auto';
         } else if (visibleCount === 3) {
-            grid.className = 'grid grid-cols-3 gap-3 sm:gap-4 justify-center';
+            grid.className = 'grid grid-cols-3 gap-3 sm:gap-4 justify-center max-w-2xl mx-auto';
         } else {
-            grid.className = 'grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4';
+            grid.className = 'grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 justify-center';
         }
     }
     // ============================================================
