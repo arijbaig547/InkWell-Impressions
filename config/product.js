@@ -171,133 +171,7 @@ const products = [{
         lessThanMinimum: "$50.00 (V)"
     }
 },
-{
-    id: "w965",
-    name: "Mini Tote Bag",
-    code: "W965",
-    slug: "mini-tote-bag",
-    category: "Non-Woven Bags",
-    material: "Non Woven",
-    size: '6"W x 6"H',
-    imprint: '4"W x 4"H',
-    price: 0.58,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/W965/W965_main.webp",
-    description: "Mini tote bag made from 80 gsm non-woven fabric with a 10.5-inch handle.",
 
-    colors: [
-        { name: 'Black', hex: '#000000', image: 'assets/assets/images/products/non-woven/W965/W965_black.webp' },
-        { name: 'Burgundy', hex: '#800020', image: 'assets/assets/images/products/non-woven/W965/W965_burgundy.webp' },
-        { name: 'Ivory', hex: '#FFFFF0', image: 'assets/assets/images/products/non-woven/W965/W965_ivory.webp' },
-        { name: 'Red', hex: '#FF0000', image: 'assets/assets/images/products/non-woven/W965/W965_red.webp' },
-        { name: 'Royal', hex: '#4169E1', image: 'assets/assets/images/products/non-woven/W965/W965_royal.webp' },
-        { name: 'White', hex: '#FFFFFF', image: 'assets/assets/images/products/non-woven/W965/W965_white.webp' },
-        { name: 'Yellow', hex: '#FFFF00', image: 'assets/assets/images/products/non-woven/W965/W965_yellow.webp' }
-    ],
-    images: [
-        "assets/assets/images/products/non-woven/W965/W965_main.webp",
-        "assets/assets/images/products/non-woven/W965/W965_black.webp",
-        "assets/assets/images/products/non-woven/W965/W965_burgundy.webp",
-        "assets/assets/images/products/non-woven/W965/W965_ivory.webp",
-        "assets/assets/images/products/non-woven/W965/W965_red.webp",
-        "assets/assets/images/products/non-woven/W965/W965_royal.webp",
-        "assets/assets/images/products/non-woven/W965/W965_white.webp",
-        "assets/assets/images/products/non-woven/W965/W965_yellow.webp"
-    ],
-
-    specs: {
-        itemNo: "W965",
-        gusset: "Bottom: No, Side: No",
-        weight: "80 gsm",
-        material: "Non Woven",
-        handle: '10.5"',
-        origin: "USA",
-        packagingOptions: [
-            {
-                type: "Blank",
-                qtyPerBox: "400 pcs",
-                boxWeight: "27 lbs",
-                boxDims: '20" X 16" X 14"'
-            },
-            {
-                type: "Printed Large Box",
-                qtyPerBox: "1000 pcs",
-                boxWeight: "19 lbs",
-                boxDims: '16" X 16" X 20"'
-            },
-            {
-                type: "Printed Medium Box",
-                qtyPerBox: "300 pcs",
-                boxWeight: "6 lbs",
-                boxDims: '8" X 16" X 20"'
-            }
-        ]
-    },
-
-    pricing: {
-        spot: {
-            label: "SPOT PRINTING PRICING (USD)",
-            quantities: [72, 288, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "COLOR",
-                    prices: ["$1.32", "$1.23", "$1.16", "$1.09", "$1.03", "$0.97"]
-                },
-                {
-                    label: "ADD LOCATION",
-                    prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
-                },
-                {
-                    label: "ADD COLOR",
-                    prices: ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56", "$0.56"]
-                }
-            ],
-            priceIncludes: "1 Color, 1 Location",
-            leadTime: "5-7 Business Days",
-            setupCharge: "$62.50 (V)",
-            repeatSetup: "$37.50 (V)"
-        },
-
-        transfer: {
-            label: "HEAT TRANSFER PRICING (USD)",
-            quantities: [100, 250, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "COLOR",
-                    prices: ["$4.85", "$4.53", "$4.38", "$4.10", "$3.86", "$3.62"]
-                },
-                {
-                    label: "ADD LOCATION",
-                    prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
-                }
-            ],
-            priceIncludes: "Heat Transfer, 1 Location",
-            leadTime: "7-10 Business Days",
-            setupCharge: "FREE",
-            repeatSetup: "FREE"
-        },
-
-        blank: {
-            label: "BLANK PRICING (USD)",
-            rows: [
-                {
-                    label: "COLOR",
-                    prices: ["$0.58"]
-                }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 1 to 2 Business Days",
-            moq: "No minimums. Can order as little as one piece."
-        }
-    },
-
-    additionalCharges: {
-        pmsMatch: "$56.25 (V)",
-        setupCharge: "$62.50 (V)",
-        repeatSetup: "$37.50 (V)",
-        lessThanMinimum: "Call for pricing"
-    }
-},
 {
     id: "is68",
     name: "Foldable Tote",
@@ -507,168 +381,7 @@ const products = [{
     }
 },
 
-{
-    id: "w964",
-    name: "Small Shopper Bag",
-    code: "W964",
-    slug: "small-shopper-bag",
-    category: "Non-Woven Bags",
-    material: "Non Woven",
-    size: '10"W x 12"H x 3"D',
-    imprint: '6"W x 8"H',
-    price: 0.85,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/W964/W964_main.webp",
-    description: "Small shopper bag made from 80 gsm non-woven material with bottom and side gussets.",
 
-    colors: [
-        {
-            name: "Black",
-            hex: "#000000",
-            image: "assets/assets/images/products/non-woven/W964/W964_black.webp"
-        },
-        {
-            name: "Burgundy",
-            hex: "#800020",
-            image: "assets/assets/images/products/non-woven/W964/W964_burgundy.webp"
-        },
-        {
-            name: "Kelly",
-            hex: "#4CBB17",
-            image: "assets/assets/images/products/non-woven/W964/W964_kelly.webp"
-        },
-        {
-            name: "Navy",
-            hex: "#000080",
-            image: "assets/assets/images/products/non-woven/W964/W964_navy.webp"
-        },
-        {
-            name: "Pink",
-            hex: "#FFC0CB",
-            image: "assets/assets/images/products/non-woven/W964/W964_pink.webp"
-        },
-        {
-            name: "Red",
-            hex: "#FF0000",
-            image: "assets/assets/images/products/non-woven/W964/W964_red.webp"
-        },
-        {
-            name: "Royal",
-            hex: "#4169E1",
-            image: "assets/assets/images/products/non-woven/W964/W964_royal.webp"
-        },
-        {
-            name: "White",
-            hex: "#FFFFFF",
-            image: "assets/assets/images/products/non-woven/W964/W964_white.webp"
-        }
-    ],
-
-    images: [
-        "assets/assets/images/products/non-woven/W964/W964_main.webp",
-        "assets/assets/images/products/non-woven/W964/W964_black.webp",
-        "assets/assets/images/products/non-woven/W964/W964_burgundy.webp",
-        "assets/assets/images/products/non-woven/W964/W964_kelly.webp",
-        "assets/assets/images/products/non-woven/W964/W964_navy.webp",
-        "assets/assets/images/products/non-woven/W964/W964_pink.webp",
-        "assets/assets/images/products/non-woven/W964/W964_red.webp",
-        "assets/assets/images/products/non-woven/W964/W964_royal.webp",
-        "assets/assets/images/products/non-woven/W964/W964_white.webp"
-    ],
-
-    specs: {
-        itemNo: "W964",
-        gusset: "Bottom: Yes Side: Yes",
-        weight: "80 gsm",
-        material: "Non Woven",
-        handle: '16"',
-        decoratedIn: "USA",
-        packagingOptions: [
-            {
-                type: "Blank",
-                qtyPerBox: "400 pcs",
-                boxWeight: "22 lbs",
-                boxDims: '15" x 21" x 17"'
-            },
-            {
-                type: "Printed Large Box",
-                qtyPerBox: "275 pcs",
-                boxWeight: "19 lbs",
-                boxDims: '16" x 16" x 20"'
-            },
-            {
-                type: "Printed Medium Box",
-                qtyPerBox: "100 pcs",
-                boxWeight: "8 lbs",
-                boxDims: '8" x 16" x 20"'
-            }
-        ]
-    },
-
-    pricing: {
-        spot: {
-            label: "SPOT PRINTING PRICING (USD)",
-            quantities: [72, 288, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "COLOR",
-                    prices: ["$1.66", "$1.55", "$1.46", "$1.37", "$1.29", "$1.21"]
-                },
-                {
-                    label: "ADD LOCATION (V)",
-                    prices: ["$0.63", "$0.63", "$0.63", "$0.63", "$0.63", "$0.63"]
-                },
-                {
-                    label: "ADD COLOR (V)",
-                    prices: ["$0.56", "$0.56", "$0.56", "$0.56", "$0.56", "$0.56"]
-                }
-            ],
-            priceIncludes: "1 Color, 1 Location",
-            leadTime: "5-7 Business Days",
-            setupCharge: "$62.50 (V)",
-            repeatSetup: "$37.50 (V)"
-        },
-
-        transfer: {
-            label: "HEAT TRANSFER PRICING (USD)",
-            quantities: [100, 250, 500, 1000, 2000, 3000],
-            rows: [
-                {
-                    label: "COLOR",
-                    prices: ["$5.19", "$4.84", "$4.68", "$4.38", "$4.13", "$3.88"]
-                },
-                {
-                    label: "ADD LOCATION (V)",
-                    prices: ["$1.69", "$1.69", "$1.69", "$1.69", "$1.69", "$1.69"]
-                }
-            ],
-            priceIncludes: "Heat Transfer, 1 Location",
-            leadTime: "7-10 Business Days",
-            setupCharge: "FREE",
-            repeatSetup: "FREE"
-        },
-
-        blank: {
-            label: "BLANK PRICING (USD)",
-            rows: [
-                {
-                    label: "COLOR",
-                    prices: ["$0.85"]
-                }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 1 to 2 Business Days",
-            moq: "No minimums. Can order as little as one piece."
-        }
-    },
-
-    additionalCharges: {
-        pmsMatch: "$56.25 (V)",
-        setupCharge: "$62.50 (V)",
-        repeatSetup: "$37.50 (V)",
-        lessThanMinimum: "Call for pricing"
-    }
-},
 
 
 
@@ -16794,6 +16507,702 @@ const products = [{
             label: "BLANK PRICING (USD)",
             rows: [
                 { label: "COLOR", prices: ["$1.52"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is109",
+    name: "Drawstring Bag",
+    code: "IS109",
+    slug: "drawstring-bag-is109",
+    category: "Non-Woven Bags",
+    material: "Non-Woven Fabric",
+    size: '13"W x 16.3"H',
+    imprint: '8"W x 6"H',
+    price: 1.27,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.jpg",
+    description: "A lightweight 80 GSM non-woven drawstring bag built for everyday carry. Reinforced corners with metal grommets anchor the rope cord closure for lasting durability, while the 13\" x 16.3\" body offers plenty of room for gym gear, books, and promotional items. A practical, budget-friendly choice for schools, events, gyms, and giveaways.",
+
+    popular: false,
+
+    colors: [
+        { name: "Heather Grey-Black", hex: "#A9A9A9", image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.jpg" },
+        { name: "Heather Grey-Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Blue.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.jpg",
+        "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Blue.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS109",
+        gusset: "Bottom: No Side: No",
+        weight: "80 GSM",
+        material: "Non-Woven Fabric",
+        handle: "Rope Cord",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "350 pcs",
+                boxWeight: "28 lbs",
+                boxDims: '20" x 16" x 17"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "175 pcs",
+                boxWeight: "14 lbs",
+                boxDims: '20" x 16" x 9"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$2.14", "$2.04", "$1.94", "$1.84", "$1.74"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$3.66", "$3.56", "$3.46", "$3.36", "$3.26"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '7.5"W x 5.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$1.27"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is110",
+    name: "RPET Drawstring Bag",
+    code: "IS110",
+    slug: "rpet-drawstring-bag",
+    category: "Non-Woven Bags",
+    material: "RPET",
+    size: '13"W x 16.5"H',
+    imprint: '7"W x 8"H',
+    price: 0, // ← Blank price confirm kar
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS110/IS110-Black.jpg",
+    description: "An eco-conscious drawstring bag made from 600D RPET with a durable PU coating. The rope cord closure and roomy 13\" x 16.5\" body make it ideal for gyms, schools, travel, and outdoor promotions, while the recycled material story adds genuine sustainability value to your brand. Available in four versatile colors.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS110/IS110-Black.jpg" },
+        { name: "Green", hex: "#228B22", image: "assets/assets/images/products/non-woven/IS110/IS110-Green.jpg" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS110/IS110-Grey.jpg" },
+        { name: "Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS110/IS110-Blue.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS110/IS110-Black.jpg",
+        "assets/assets/images/products/non-woven/IS110/IS110-Green.jpg",
+        "assets/assets/images/products/non-woven/IS110/IS110-Grey.jpg",
+        "assets/assets/images/products/non-woven/IS110/IS110-Blue.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS110",
+        gusset: "Bottom: No Side: No",
+        weight: "600D & PU Coating",
+        material: "RPET",
+        handle: "Rope Cord",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "100 pcs",
+                boxWeight: "32 lbs",
+                boxDims: '18.5" x 15" x 13"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$6.06", "$5.96", "$5.86", "$5.76", "$5.66"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$7.58", "$7.48", "$7.38", "$7.28", "$7.18"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '6.5"W x 7.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+       
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is11",
+    name: "Book/Tote Bag",
+    code: "IS11",
+    slug: "book-tote-bag-is11",
+    category: "Tote Bags",
+    material: "12 oz Cotton Canvas",
+    size: '11"W x 14"H x 5"D',
+    imprint: '8"W x 9"H',
+    price: 3.98,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.jpg",
+    description: "A sturdy 12 oz cotton canvas book tote built to handle heavy loads with ease. Full side and bottom gussets expand the 11\" x 14\" x 5\" body for books, groceries, or daily essentials, while a 22-inch self-handle shoulder strap makes it comfortable to carry. Ideal for bookstores, universities, libraries, and everyday promotional use.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS11/IS11-Black.jpg" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/tote-bags/IS11/IS11-Burgundy.jpg" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.jpg" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS11/IS11-Navy Blue.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS11/IS11-White.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/tote-bags/IS11/IS11-Natural.jpg",
+        "assets/assets/images/products/tote-bags/IS11/IS11-Black.jpg",
+        "assets/assets/images/products/tote-bags/IS11/IS11-Burgundy.jpg",
+        "assets/assets/images/products/tote-bags/IS11/IS11-Navy Blue.jpg",
+        "assets/assets/images/products/tote-bags/IS11/IS11-White.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS11",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "12 oz",
+        material: "Cotton Canvas",
+        handle: '22" Self Handles',
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "100 pcs",
+                boxWeight: "40 lbs",
+                boxDims: '20" x 16" x 17"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "50 pcs",
+                boxWeight: "21 lbs",
+                boxDims: '20" x 16" x 9"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "NATURAL",      prices: ["$4.84", "$4.74", "$4.64", "$4.54", "$4.44"] },
+                { label: "COLOR",        prices: ["$7.56", "$7.46", "$7.36", "$7.26", "$7.16"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "NATURAL",      prices: ["$6.36", "$6.26", "$6.16", "$6.06", "$5.96"] },
+                { label: "COLOR",        prices: ["$7.56", "$7.46", "$7.36", "$7.26", "$7.16"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '7.5"W x 8.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "NATURAL", prices: ["$3.98"] },
+                { label: "COLOR",   prices: ["$6.39"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is111",
+    name: "Non Woven Boat Tote",
+    code: "IS111",
+    slug: "non-woven-boat-tote",
+    category: "Non-Woven Bags",
+    material: "Non-Woven Fabric",
+    size: '18"W x 15"H x 6"D',
+    imprint: '5"W x 6"H',
+    price: 2.10,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.jpg",
+    description: "A roomy 80 GSM non-woven boat tote with a sporty color-block design. Contrasting accents on the bottom and straps add a nautical touch, while a front slip pocket keeps essentials handy. Reinforced 26-inch self-handles and a large 18\" x 15\" x 6\" body make it perfect for boat days, beach trips, farmer's markets, and retail promotions.",
+
+    popular: false,
+
+    colors: [
+        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.jpg" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS111/IS111-Black.jpg" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS111/IS111-Grey.jpg" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS111/IS111-Hunter Green.jpg" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS111/IS111-Lime Green.jpg" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS111/IS111-Navy Blue.jpg" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS111/IS111-Orange.jpg" },
+        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/non-woven/IS111/IS111-Purple.jpg" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS111/IS111-Red.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS111/IS111-White.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS111/IS111-Teal.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Black.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Grey.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Hunter Green.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Lime Green.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Navy Blue.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Orange.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Purple.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-Red.jpg",
+        "assets/assets/images/products/non-woven/IS111/IS111-White.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS111",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "80 GSM",
+        material: "Non-Woven Fabric",
+        handle: '26" Self Handles',
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "125 pcs",
+                boxWeight: "23 lbs",
+                boxDims: '20" x 16" x 17"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "50 pcs",
+                boxWeight: "10 lbs",
+                boxDims: '20" x 16" x 9"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$2.96", "$2.86", "$2.76", "$2.66", "$2.56"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$4.49", "$4.39", "$4.29", "$4.19", "$4.09"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '4.5"W x 5.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.10"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is112",
+    name: "Non Woven Apron",
+    code: "IS112",
+    slug: "non-woven-apron",
+    category: "Aprons",
+    material: "Non-Woven Polypropylene",
+    size: '30"W x 24"H',
+    imprint: '7"W x 5"H',
+    price: 2.13,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.jpg",
+    description: "A practical, lightweight apron made from 80 GSM non-woven polypropylene with a comfortable 19-inch neck strap and 24.5-inch adjustable waist ties. Two connected 6-inch-deep front pockets keep tools, pens, and small essentials within easy reach. Ideal for cooking classes, craft events, retail staff, vendor shows, and promotional giveaways.",
+
+    popular: false,
+
+    colors: [
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.jpg" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS112/IS112-Black.jpg" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/non-woven/IS112/IS112-Natural.jpg" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS112/IS112-Navy Blue.jpg" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS112/IS112-Red.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS112/IS112-White.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.jpg",
+        "assets/assets/images/products/non-woven/IS112/IS112-Black.jpg",
+        "assets/assets/images/products/non-woven/IS112/IS112-Natural.jpg",
+        "assets/assets/images/products/non-woven/IS112/IS112-Navy Blue.jpg",
+        "assets/assets/images/products/non-woven/IS112/IS112-Red.jpg",
+        "assets/assets/images/products/non-woven/IS112/IS112-White.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS112",
+        gusset: "Bottom: No Side: No",
+        weight: "80 GSM",
+        material: "Non-Woven Polypropylene",
+        handle: '19" Neck Strap, 24.5" Waist Ties',
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "70 pcs",
+                boxWeight: "34 lbs",
+                boxDims: '14" x 16" x 20"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "35 pcs",
+                boxWeight: "18 lbs",
+                boxDims: '9" x 16" x 20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$2.98", "$2.88", "$2.78", "$2.68", "$2.58"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$4.50", "$4.40", "$4.30", "$4.20", "$4.10"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '6.5"W x 4.5"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$2.13"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is115",
+    name: "Economy Backpack",
+    code: "IS115",
+    slug: "economy-backpack",
+    category: "Non-Woven Bags",
+    material: "600D Polyester",
+    size: '11.8"W x 16.75"H x 4.13"D',
+    imprint: '7"W x 4.5"H',
+    price: 7.78,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS115/IS115-Black.jpg",
+    description: "A dependable 600D polyester backpack built for daily use. Adjustable padded shoulder straps and a top carry handle make it comfortable to haul, while a zippered main compartment and zippered front pocket keep everything organized. Full side and bottom gussets add capacity for books, gym gear, or travel essentials. Great for schools, corporate giveaways, and outdoor promotions.",
+
+    popular: false,
+
+    colors: [
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS115/IS115-Black.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS115/IS115-Black.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS115",
+        gusset: "Bottom: Yes Side: Yes",
+        weight: "600D",
+        material: "600D Polyester",
+        handle: "Adjustable Padded Shoulder Straps & Carrying Handle",
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "50 pcs",
+                boxWeight: "35 lbs",
+                boxDims: '22" x 15" x 15"'
+            },
+            {
+                type: "Printed Medium Box",
+                qtyPerBox: "20 pcs",
+                boxWeight: "18 lbs",
+                boxDims: '20" x 16" x 9"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$8.64", "$8.54", "$8.44", "$8.34", "$8.24"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [100, 250, 500, 1000, 2500],
+            rows: [
+                { label: "COLOR",        prices: ["$10.16", "$10.06", "$9.96", "$9.86", "$9.76"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '6.5"W x 4"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$7.78"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 1 to 2 Business Days",
+            moq: "No minimums. Can order as little as one piece."
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V)",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "is116",
+    name: "Sling Bag",
+    code: "IS116",
+    slug: "sling-bag",
+    category: "Non-Woven Bags",
+    material: "900D Skin Film Polyester",
+    size: '7"W x 12"H x 2"D',
+    imprint: '2.5"W x 4.5"H',
+    price: 12.57,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.jpg",
+    description: "A compact sling bag made from durable 900D skin film polyester with a sleek, modern profile. The adjustable 20–37 inch strap offers a custom fit for crossbody or over-shoulder wear, while the 7\" x 12\" x 2\" body handles daily essentials with ease. Perfect for travel, festivals, commutes, and promotional programs that want a premium feel.",
+
+    popular: false,
+
+    colors: [
+        { name: "Beige", hex: "#D9C7A8", image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.jpg" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS116/IS116-Black.jpg" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS116/IS116-Navy Blue.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/non-woven/IS116/IS116-Beige.jpg",
+        "assets/assets/images/products/non-woven/IS116/IS116-Black.jpg",
+        "assets/assets/images/products/non-woven/IS116/IS116-Navy Blue.jpg"
+    ],
+
+    specs: {
+        itemNo: "IS116",
+        gusset: "Bottom: No Side: No",
+        weight: "900D Skin Film",
+        material: "900D Skin Film Polyester",
+        handle: '20"-37" Adjustable Strap',
+        packagingOptions: [
+            {
+                type: "Printed Large Box",
+                qtyPerBox: "50 pcs",
+                boxWeight: "24 lbs",
+                boxDims: '15.7" x 13" x 17.3"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [6, 12, 25, 50, 150],
+            rows: [
+                { label: "COLOR",        prices: ["$13.44", "$13.34", "$13.24", "$13.14", "$13.04"] },
+                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
+                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+            ],
+            priceIncludes: "1 Color, 1 Location",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "$37.50 (V)"
+        },
+        transfer: {
+            label: "HEAT TRANSFER PRICING (USD)",
+            quantities: [6, 12, 25, 50, 150],
+            rows: [
+                { label: "COLOR",        prices: ["$14.96", "$14.86", "$14.76", "$14.66", "$14.56"] },
+                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
+            ],
+            priceIncludes: "Heat Transfer, 1 Location",
+            leadTime: "7-9 Business Days after art approval",
+            rush: "Yes",
+            imprintArea: '2"W x 4"H',
+            setupCharge: "$112.50 (V)"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            rows: [
+                { label: "COLOR", prices: ["$12.57"] }
             ],
             priceIncludes: "Blank",
             leadTime: "Within 1 to 2 Business Days",
