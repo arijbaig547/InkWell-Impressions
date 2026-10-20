@@ -53,6 +53,46 @@ document.querySelectorAll('#mobileMenu a').forEach(link => {
     hamburgerIcon.classList.remove('fa-xmark');
   });
 });
+
+
+  (function () {
+    // Browser ki purani scroll position restore na kare
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    let hasScrolled = false;
+
+    function scrollToProducts() {
+      if (hasScrolled) return;
+
+      // Agar user khud scroll kar chuka hai to hijack na karein
+      if (window.scrollY > 10) { hasScrolled = true; return; }
+
+      // Products JS se inject hote hain — jab tak grid khali hai wait karein
+      const grid = document.getElementById('product-grid');
+      if (grid && grid.children.length === 0) return;
+
+      const offset = window.innerHeight * 0.20; // viewport ka 25%
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+      if (maxScroll <= 0) return;
+
+      window.scrollTo(0, Math.min(offset, maxScroll));
+      hasScrolled = true;
+    }
+
+    window.addEventListener('load', function () {
+      scrollToProducts();
+
+      // Agar products async render ho rahe hain to thori der poll karein
+      let tries = 0;
+      const iv = setInterval(function () {
+        scrollToProducts();
+        if (hasScrolled || ++tries > 20) clearInterval(iv);
+      }, 100);
+    });
+  })();
 // ----------------------------------------------
 // 1. PRODUCTS DATA (embedded)
 // ----------------------------------------------
@@ -2156,6 +2196,20 @@ const products = [{
   image: "assets/assets/images/products/non-woven/IS75/IS75-main.webp",
   description: "80 gsm non-woven tote bag with bottom gusset and 20-inch self handles.",
   popular: false
+},
+{
+    id: "is13",
+    name: "Faux Leather Handle Tote Bag",
+    code: "IS13",
+    slug: "faux-leather-handle-tote-bag",
+    category: "Tote Bags",
+    material: "12 oz Cotton Canvas",
+    size: '16"W x 13"H x 5"D',
+    price: 30.00,
+    originalPrice: 45.00,
+    image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.jpg",
+    description: "12 oz natural cotton canvas tote with stylish brown faux leather handles.",
+    popular: false
 },
 
 {

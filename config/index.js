@@ -44,21 +44,69 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== GSAP REGISTER PLUGIN =====
     gsap.registerPlugin(ScrollTrigger);
 
-    // ===== HERO ANIMATIONS =====
+
+// ============================================================
+// ===== HERO BAG SLIDER - 3D CIRCULAR CAROUSEL (SINGLE) =====
+// ============================================================
+const bagSlider = document.getElementById('heroBagSlider');
+
+if (bagSlider) {
+    const bagSlides = bagSlider.querySelectorAll('.hero-bag-slide');
+    let bagCurrentIndex = 0;
+    let bagAutoInterval;
+    const BAG_SLIDE_DURATION = 3500;
+
+    function showBagSlide(index) {
+        if (index === bagCurrentIndex) return;
+
+        const currentSlide = bagSlides[bagCurrentIndex];
+        const nextSlide = bagSlides[index];
+
+        // Purani slide ko exit animation do
+        currentSlide.classList.remove('active');
+        currentSlide.classList.add('exiting');
+
+        // Nayi slide ko activate karo
+        nextSlide.classList.add('active');
+
+        // Exit animation complete hone ke baad clean up
+        setTimeout(() => {
+            currentSlide.classList.remove('exiting');
+        }, 900);
+
+        bagCurrentIndex = index;
+    }
+
+    function nextBagSlide() {
+        showBagSlide((bagCurrentIndex + 1) % bagSlides.length);
+    }
+
+    function startBagAutoSlide() {
+        clearInterval(bagAutoInterval);
+        bagAutoInterval = setInterval(nextBagSlide, BAG_SLIDE_DURATION);
+    }
+
+    if (bagSlides.length > 1) {
+        startBagAutoSlide();
+
+        // Hover pe pause
+        bagSlider.addEventListener('mouseenter', () => clearInterval(bagAutoInterval));
+        bagSlider.addEventListener('mouseleave', startBagAutoSlide);
+
+        // Tab hidden ho to pause (resource save)
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) clearInterval(bagAutoInterval);
+            else startBagAutoSlide();
+        });
+    }
+} // ===== HERO ANIMATIONS =====
     const heroTl = gsap.timeline();
     heroTl.from(".gs-hero-left > *", { y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" })
-        .from(".gs-hero-center > div", { y: 50, opacity: 0, duration: 0.8, stagger: 0.2, ease: "back.out(1.7)" }, "-=0.6")
+.from(".gs-hero-center", { y: 50, opacity: 0, duration: 0.8, ease: "back.out(1.7)" }, "-=0.6")
         .from(".gs-hero-right > *", { x: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }, "-=0.8");
 
     // ===== HERO CENTER BAG =====
-    gsap.from(".hero-center-bag", {
-        opacity: 0,
-        y: 40,
-        scale: 0.9,
-        duration: 1.5,
-        ease: "expo.out",
-        delay: 0.3
-    });
+
 
     // ===== STATS ANIMATIONS =====
     gsap.from(".gs-stat", {
