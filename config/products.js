@@ -147,7 +147,7 @@ const products = [{
   size: '17"W x 13"H x 5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg",
+  image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.webp",
   description: "Laminated 120 GSM glitter bag with full side and bottom gussets.",
   popular: false
 },
@@ -161,7 +161,7 @@ const products = [{
   size: '20"W x 15"H x 5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.webp",
   description: "7 oz cotton canvas beach tote with mesh top and bottom gusset.",
   popular: false
 },
@@ -175,7 +175,7 @@ const products = [{
   size: '9"W x 12"H x 4.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS134/IS134-Black.webp",
   description: "Matte finish 105 GSM laminated non-woven tote with contrasting gussets and X-reinforced handles.",
   popular: false
 },
@@ -189,7 +189,7 @@ const products = [{
   size: '16"W x 14"H x 6"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg",
+  image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.webp",
   description: "Matte finish 105 GSM laminated non-woven tote with contrasting gussets and X-reinforced handles.",
   popular: false
 },
@@ -203,7 +203,7 @@ const products = [{
   size: '19.75"W x 13.25"H x 7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.webp",
   description: "Heavyweight 18 oz cotton canvas boat bag with front pocket and reinforced handles.",
   popular: false
 },
@@ -217,7 +217,7 @@ const products = [{
   size: '12.25"W x 14.75"H x 5"G',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.webp",
   description: "10 oz cotton canvas boat bag with contrasting color handles and front pocket.",
   popular: false
 },
@@ -231,7 +231,7 @@ const products = [{
   size: '15.5"W x 10"H x 5.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS125/IS125-Gold.jpg",
+  image: "assets/assets/images/products/non-woven/IS125/IS125-Gold.webp",
   description: "Laminated 105 GSM non-woven gift bag with removable bottom insert.",
   popular: false
 },
@@ -245,7 +245,7 @@ const products = [{
   size: '14"W x 14"H x 5.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS126/IS126-Rose Gold.jpg",
+  image: "assets/assets/images/products/non-woven/IS126/IS126-Rose Gold.webp",
   description: "105 GSM laminated non-woven shopper tote with metallic croc texture.",
   popular: false
 },
@@ -259,7 +259,7 @@ const products = [{
   size: '13"W x 11"H x 5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS127/IS127-Silver.jpg",
+  image: "assets/assets/images/products/non-woven/IS127/IS127-Silver.webp",
   description: "Laminated 120 GSM glitter bag with full side and bottom gussets.",
   popular: false
 },
@@ -273,7 +273,7 @@ const products = [{
   size: '12"W x 13"H x 8"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS16/IS16-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS16/IS16-Natural.webp",
   description: "6 oz cotton canvas grocery tote with full side and bottom gussets.",
   popular: false
 }, {
@@ -284,9 +284,9 @@ const products = [{
   category: "Aprons",
   material: "Cotton Canvas",
   size: '17"W x 9"H',
-  price: 2.05,
+  price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/aprons/IS17/IS17-Natural.jpg",
+  image: "assets/assets/images/products/aprons/IS17/IS17-Natural.webp",
   description: "10 oz cotton canvas contractor waist apron with two front pockets.",
   popular: false
 },
@@ -300,7 +300,7 @@ const products = [{
   size: '17"W x 13"H x 5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.webp",
   description: "18 oz cotton canvas two-tone boat bag with front pocket and top snap closure.",
   popular: false
 },
@@ -314,7 +314,7 @@ const products = [{
   size: '13"W x 16.75"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.jpg",
+  image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.webp",
   description: "210D polyester two-tone drawstring backpack with angled front zipper pocket and headphone port.",
   popular: false
 },
@@ -328,7 +328,7 @@ const products = [{
   size: '13"W x 16.5"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg",
+  image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.webp",
   description: "Two-tone polyester drawstring cinch bag with angled front zipper and headphone port.",
   popular: false
 },
@@ -342,7 +342,7 @@ const products = [{
   size: '14"W x 17.75"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.jpg",
+  image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.webp",
   description: "210D polyester drawstring sports pack with headphone port and front zipper pocket.",
   popular: false
 },
@@ -356,7 +356,7 @@ const products = [{
   size: '12"W x 16.5"H x 5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.jpg",
+  image: "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.webp",
   description: "210D polyester backpack with adjustable web straps, front zipper pocket, and side mesh pocket.",
   popular: false
 },
@@ -370,7 +370,7 @@ const products = [{
   size: '18"W x 10"H x 10"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS106/IS106-Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS106/IS106-Black.webp",
   description: "210D polyester duffle bag with adjustable shoulder strap and web handles.",
   popular: false
 },
@@ -384,7 +384,7 @@ const products = [{
   size: '8"W x 10.75"H x 5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS107/IS107-Red.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS107/IS107-Red.webp",
   description: "210D polyester insulated cooler bag with PEVA lining. Holds 12 cans.",
   popular: false
 },
@@ -398,7 +398,7 @@ const products = [{
   size: '8"W x 6"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS108/IS108-Green.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS108/IS108-Green.webp",
   description: "Round 210D polyester cooler bag with foil lining. Holds 6 cans.",
   popular: false
 },
@@ -412,7 +412,7 @@ const products = [{
   size: '17.75"W x 9.75"H',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS123/IS123-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS123/IS123-Black.webp",
   description: "5 oz cotton canvas duffle with detachable/adjustable shoulder strap and cotton web handles.",
   popular: false
 },
@@ -468,7 +468,7 @@ const products = [{
   size: '11"W x 10"H x 7"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS70/IS70-Khaki.jpg",
+  image: "assets/assets/images/products/non-woven/IS70/IS70-Khaki.webp",
   description: "100 GSM non-woven 6-bottle wine tote with dividers and poly board bottom insert.",
   popular: false
 },
@@ -482,7 +482,7 @@ const products = [{
   size: '5"W x 13"H x 4"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.jpg",
+  image: "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.webp",
   description: "90 gsm recycled non-woven single bottle wine tote with matching rope handles.",
   popular: false
 },
@@ -693,7 +693,7 @@ const products = [{
   size: '10"W x 12"H x 3"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS64/IS64-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS64/IS64-Black.webp",
   description: "80 gsm non-woven shopper bag with full side and bottom gussets.",
   popular: false
 },
@@ -707,7 +707,7 @@ const products = [{
   size: '6"W x 6"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS65/IS65-Yellow.jpg",
+  image: "assets/assets/images/products/non-woven/IS65/IS65-Yellow.webp",
   description: "80 gsm non-woven mini tote bag with 10.5-inch handles.",
   popular: false
 },
@@ -735,7 +735,7 @@ const products = [{
   size: '12"W x 14.5"H x 2.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS83B/IS83B-Burgundy.jpg",
+  image: "assets/assets/images/products/non-woven/IS83B/IS83B-Burgundy.webp",
   description: "80 GSM non-woven newspaper bag with solid bottom and grommeted rope handles.",
   popular: false
 },
@@ -749,7 +749,7 @@ const products = [{
   size: '20"W x 15"H x 5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS85/IS85-Red.jpg",
+  image: "assets/assets/images/products/non-woven/IS85/IS85-Red.webp",
   description: "100 GSM non-woven zippered tote bag with 19.5-inch self handles and top zipper closure.",
   popular: false
 },
@@ -763,7 +763,7 @@ const products = [{
   size: '20"W x 13"H x 8"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.jpg",
+  image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.webp",
   description: "80 GSM non-woven shopper tote with bottom gusset and interior sidewall pockets.",
   popular: false
 },
@@ -777,7 +777,7 @@ const products = [{
   size: '8"W x 6"H x 5.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS90/IS90-Lime Green.jpg",
+  image: "assets/assets/images/products/non-woven/IS90/IS90-Lime Green.webp",
   description: "80 GSM non-woven 6 can cooler with thermal foil lining, zippered closure, and front pocket.",
   popular: false
 },
@@ -791,7 +791,7 @@ const products = [{
   size: '7"W x 10"H x 4.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS91/IS91-Orange.jpg",
+  image: "assets/assets/images/products/non-woven/IS91/IS91-Orange.webp",
   description: "80 GSM non-woven lunch pack with thermal foil lining, Velcro closure, and front pocket.",
   popular: false
 },
@@ -805,7 +805,7 @@ const products = [{
     size: '13"W x 11"H x 5"D',
     price: 35.00,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.jpg",
+    image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.webp",
     description: "80 GSM non-woven tote cooler bag with foil-laminated PE foam insulation and zippered main compartment.",
     popular: false
 },
@@ -819,7 +819,7 @@ const products = [{
     size: '16"W x 18"H',
     price: 35.00,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.jpg",
+    image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.webp",
     description: "80 GSM water repellent non-woven drawstring backpack with cinch closure and rope cord.",
     popular: false
 },
@@ -833,7 +833,7 @@ const products = [{
     size: '14"W x 18"H',
     price: 35.00,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.jpg",
+    image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.webp",
     description: "210D polyester drawstring sports pack with faux-leather reinforced corners.",
     popular: false
 },
@@ -845,9 +845,9 @@ const products = [{
     category: "Non-Woven Bags",
     material: "Non-Woven Fabric",
     size: '20"W x 16"H x 6"D',
-    price: 1.29,
+    price: 35.00,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS61/IS61-Red.jpg",
+    image: "assets/assets/images/products/non-woven/IS61/IS61-Red.webp",
     description: "80 gsm jumbo non-woven shopper bag with full side and bottom gussets.",
     popular: false
 },
@@ -861,7 +861,7 @@ const products = [{
   size: '13"W x 16.3"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.webp",
   description: "80 GSM non-woven drawstring bag with reinforced corners and metal grommets.",
   popular: false
 },
@@ -875,7 +875,7 @@ const products = [{
   size: '13"W x 16.5"H',
   price: 35.00, // ← Blank price confirm kar
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS110/IS110-Grey.jpg",
+  image: "assets/assets/images/products/non-woven/IS110/IS110-Grey.webp",
   description: "600D RPET drawstring bag with PU coating and rope cord closure.",
   popular: false
 },
@@ -903,7 +903,7 @@ const products = [{
   size: '11"W x 14"H x 5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.webp",
   description: "12 oz cotton canvas book tote bag with full side and bottom gusset and shoulder strap.",
   popular: false
 },
@@ -917,7 +917,7 @@ const products = [{
   size: '16.5"W x 13.5"H x 4.75"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS12/IS12-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS12/IS12-Natural.webp",
   description: "14 oz cotton canvas tote with heavy cotton rope handles, top zipper, and inside pocket.",
   popular: false
 },
@@ -931,7 +931,7 @@ const products = [{
   size: '10"W x 14"H x 5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.webp",
   description: "7 oz cotton canvas grocery bag with colored cotton web handles and full gussets.",
   popular: false
 },
@@ -945,7 +945,7 @@ const products = [{
   size: '9"W x 5.5"H x 0.75"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS130/IS130-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS130/IS130-Natural.webp",
   description: "10 oz cotton canvas cosmetic pouch with matching top zipper closure.",
   popular: false
 },
@@ -959,7 +959,7 @@ const products = [{
   size: '15"W x 16"H',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS131/IS131-Lime Green.jpg",
+  image: "assets/assets/images/products/tote-bags/IS131/IS131-Lime Green.webp",
   description: "Lightweight 4 oz cotton canvas convention tote with 24-inch self handles.",
   popular: false
 },
@@ -973,7 +973,7 @@ const products = [{
   size: '16"W x 14.5"H x 4"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.jpg",
+  image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.webp",
   description: "12 oz cotton canvas striped boat bag with self colored handles and bottom gusset.",
   popular: false
 },
@@ -987,7 +987,7 @@ const products = [{
   size: '7.75"W x 5.5"H x 2"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS136/IS136-Pink.jpg",
+  image: "assets/assets/images/products/non-woven/IS136/IS136-Pink.webp",
   description: "230D polyester crossbody pouch with adjustable web belt and zippered pockets.",
   popular: false
 },
@@ -1001,7 +1001,7 @@ const products = [{
   size: '9.45"W x 15.75"H x 6.3"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.jpg",
+  image: "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.webp",
   description: "600D/210D polyester budget backpack with padded shoulder straps and front zipper pocket.",
   popular: false
 },
@@ -1015,7 +1015,7 @@ const products = [{
   size: '27"W x 16"H x 8"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS138/IS138-Navy Blue.jpg",
+  image: "assets/assets/images/products/tote-bags/IS138/IS138-Grey.webp",
   description: "Oversized 10 oz cotton canvas tote with bottom gusset and cotton web handles.",
   popular: false
 },
@@ -1029,7 +1029,7 @@ const products = [{
   size: '15"W x 12"H x 5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.webp",
   description: "24 oz cotton canvas yacht club tote with contrasting handles and front pocket.",
   popular: false
 },
@@ -1043,7 +1043,7 @@ const products = [{
   size: '20.5"W x 13"H x 6.7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.webp",
   description: "24 oz cotton canvas yacht club tote with contrasting handles and front pocket.",
   popular: false
 },
@@ -1057,7 +1057,7 @@ const products = [{
   size: '24"W x 14.17"H x 6.7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.jpg",
+  image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.webp",
   description: "24 oz cotton canvas yacht club tote with contrasting handles, front pocket, and top zipper.",
   popular: false
 },
@@ -1071,7 +1071,7 @@ const products = [{
   size: '24"W x 14.17"H x 6.7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.jpg",
+  image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.webp",
   description: "24 oz cotton canvas commander tote with contrasting bottom, striped handles, and top zipper.",
   popular: false
 },
@@ -1085,7 +1085,7 @@ const products = [{
   size: '20.5"W x 13"H x 6.7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS143/IS143-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS143/IS143-Natural.webp",
   description: "24 oz cotton canvas admiral tote with front pocket and bottom gusset.",
   popular: false
 },
@@ -1099,7 +1099,7 @@ const products = [{
   size: '24"W x 14"H x 6.7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.webp",
   description: "24 oz cotton canvas admiral tote with front pocket and top zippered closure.",
   popular: false
 },
@@ -1113,7 +1113,7 @@ const products = [{
   size: '24"W x 14"H x 6.7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.webp",
   description: "18 oz cotton canvas anchor tote with front pocket and top zippered closure.",
   popular: false
 },
@@ -1127,7 +1127,7 @@ const products = [{
   size: '18"W x 13"H x 6.6"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.webp",
   description: "16 oz cotton canvas sailing tote with rope handles and rust-free metal rings.",
   popular: false
 },
@@ -1141,7 +1141,7 @@ const products = [{
   size: '15.75"W x 12"H x 4.5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.jpg",
+  image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.webp",
   description: "18 oz cotton canvas classic tote with vegan leather handles and metal rivets.",
   popular: false
 },
@@ -1155,7 +1155,7 @@ const products = [{
   size: '20.5"W x 13"H x 6.7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.webp",
   description: "18 oz cotton canvas large tote with vegan leather handles and metal rivets.",
   popular: false
 },
@@ -1169,7 +1169,7 @@ const products = [{
   size: '28"W x 15"H x 9.5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.jpg",
+  image: "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.webp",
   description: "24 oz cotton canvas premium tote with top zipper and inside snap pocket.",
   popular: false
 },
@@ -1184,7 +1184,7 @@ const products = [{
   size: '14"W x 14"H',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.jpg",
+  image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.webp",
   description: "10 oz natural cotton canvas tote with contrasting colored poly web handles.",
   popular: false
 },
@@ -1198,7 +1198,7 @@ const products = [{
   size: '15"W x 16"H x 4"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.webp",
   description: "12 oz natural cotton canvas tote with contrasting colored poly web handles.",
   popular: false
 },
@@ -1212,7 +1212,7 @@ const products = [{
   size: '21"W x 13"H x 6"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.webp",
   description: "14 oz cotton canvas island tote with inside snap pocket and bottom gusset.",
   popular: false
 },
@@ -1226,7 +1226,7 @@ const products = [{
   size: '11"W x 7"H x 3"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Red.jpg",
+  image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Red.webp",
   description: "12 oz cotton canvas cosmetic pouch with top zip closure and accent color bottom.",
   popular: false
 },
@@ -1240,7 +1240,7 @@ const products = [{
   size: '15"W x 12"H x 4.75"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.jpg",
+  image: "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.webp",
   description: "24 oz cotton canvas admiral tote with front pocket and bottom gusset.",
   popular: false
 },
@@ -1254,7 +1254,7 @@ const products = [{
   size: '19"W x 12"H x 8"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.jpg",
+  image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.webp",
   description: "16 oz cotton canvas Greenwich tote with accent color straps, trim, and interior pocket.",
   popular: false
 },
@@ -1268,7 +1268,7 @@ const products = [{
   size: '14"W x 12"H x 7"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS154/IS154-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS154/IS154-Natural.webp",
   description: "16 oz cotton canvas fringe tote with stylish fringe detailing.",
   popular: false
 },
@@ -1282,7 +1282,7 @@ const products = [{
   size: '16"W x 15"H',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS160/IS160-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS160/IS160-Natural.webp",
   description: "5 oz cotton canvas foldable shopper bag with 20-inch self handles.",
   popular: false
 },
@@ -1297,7 +1297,7 @@ const products = [{
   size: '18"W x 15"H x 6"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.jpg",
+  image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.webp",
   description: "80 GSM non-woven boat tote with accent color bottom and straps, front pocket.",
   popular: false
 },
@@ -1311,7 +1311,7 @@ const products = [{
   size: '15"W x 13"H x 4"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.jpg",
+  image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.webp",
   description: "80 GSM non-woven tote bag with outside front pocket and side mesh pocket.",
   popular: false
 },
@@ -1325,7 +1325,7 @@ const products = [{
   size: '10"W x 12"H x 4.25"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.jpg",
+  image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.webp",
   description: "80 GSM non-woven tote bag with full side and bottom gussets and 18-inch self handles.",
   popular: false
 },
@@ -1339,7 +1339,7 @@ const products = [{
   size: '13"W x 15"H x 10"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.jpg",
+  image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.webp",
   description: "80 GSM non-woven shopping bag with reinforced handles and covered cardboard bottom insert.",
   popular: false
 },
@@ -1353,7 +1353,7 @@ const products = [{
   size: '9.75"W x 7"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.jpg",
+  image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.webp",
   description: "300D/80 GSM polyester non-woven pouch with 2 zippered compartments and pen loop.",
   popular: false
 },
@@ -1367,7 +1367,7 @@ const products = [{
   size: '3.75"W x 4"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.webp",
   description: "300D polyester coin pouch with colored zipper, finger loop, and metal split ring.",
   popular: false
 },
@@ -1395,7 +1395,7 @@ const products = [{
   size: '16"W x 11"H x 11.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS214/IS214-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS214/IS214-Black.webp",
   description: "600D ripstop polyester hard top cooler with PEVA lining. Holds 48 cans.",
   popular: false
 },
@@ -1409,7 +1409,7 @@ const products = [{
   size: '22"W x 16"H x 7.5"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.webp",
   description: "600D polyester jumbo cooler tote with PEVA heat-sealed lining. Holds 38 cans.",
   popular: false
 },
@@ -1424,7 +1424,7 @@ const products = [{
   size: '30"W x 24"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.jpg",
+  image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.webp",
   description: "80 GSM non-woven apron with neck strap, adjustable waist ties, and two front pockets.",
   popular: false
 },
@@ -1438,7 +1438,7 @@ const products = [{
   size: '11.8"W x 16.75"H x 4.13"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS115/IS115-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS115/IS115-Black.webp",
   description: "600D polyester economy backpack with padded shoulder straps and front zipper pocket.",
   popular: false
 },
@@ -1453,7 +1453,7 @@ const products = [{
   size: '7"W x 12"H x 2"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.jpg",
+  image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.webp",
   description: "900D skin film polyester sling bag with adjustable 20-37 inch strap.",
   popular: false
 },
@@ -1467,7 +1467,7 @@ const products = [{
   size: '11.25"W x 17"H x 4.25"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.jpg",
+  image: "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.webp",
   description: "600D polyester and 300D nylon laptop backpack with 15-inch sleeve and mesh side pockets.",
   popular: false
 },
@@ -1481,7 +1481,7 @@ const products = [{
   size: 'Rolled: 11"W x 20"H x 5"D / Unrolled: 17"W x 24"H x 5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS118/IS118-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS118/IS118-Black.webp",
   description: "PU vegan leather roll top backpack with adjustable rolled or unrolled capacity.",
   popular: false
 },
@@ -1495,7 +1495,7 @@ const products = [{
   size: '17"W x 11"H x 3"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.jpg",
+  image: "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.webp",
   description: "12 oz cotton canvas document bag with black cotton web handles.",
   popular: false
 },
@@ -1522,8 +1522,8 @@ const products = [{
   category: "Non-Woven Bags",
   material: "Non-Woven Fabric",
   size: '16"W x 18"H',
-  price: 1.13,
-  originalPrice: 1.13,
+  price: 35.00,
+  originalPrice: 50.00,
 
   image: "assets/assets/images/products/non-woven/IDS969/IDS969_kelly.webp",
   description: "Water repellent drawstring backpack made from 80 GSM non-woven polypropylene. Features a cinch closure with rope cord handles.",
@@ -1736,7 +1736,7 @@ const products = [{
   size: '8.5"W x 10.5"H x 4"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.webp",
   description: "600D polyester insulated lunch box with aluminum foil lining. Holds 12 cans.",
   popular: false
 },
@@ -1750,7 +1750,7 @@ const products = [{
   size: '10"W x 8"H x 6"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS201/IS201-Lime Green Heather-Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS201/IS201-Lime Green Heather-Black.webp",
   description: "300D polyestper insulated picnic cooler bag with PEVA lining. Holds 12 cans.",
   popular: false
 },
@@ -1764,7 +1764,7 @@ const products = [{
   size: '9.5"W x 7.5"H x 6.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Royal.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Royal.webp",
   description: "600D polyester insulated lunch bag with PEVA lining. Holds 8 cans.",
   popular: false
 },
@@ -1778,7 +1778,7 @@ const products = [{
   size: '10"W x 8"H x 7.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.webp",
   description: "600D polyester insulated cooler bag with PEVA lining. Holds 18 cans.",
   popular: false
 },
@@ -1792,7 +1792,7 @@ const products = [{
   size: '9"W x 11.5"H x 7"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS211/IS211-Red Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS211/IS211-Red Black.webp",
   description: "600D polyester insulated cooler bag with PEVA lining. Holds 20 cans.",
   popular: false
 },
@@ -1806,7 +1806,7 @@ const products = [{
   size: '12.75"W x 9.5"H x 8.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS212/IS212-Red Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS212/IS212-Red Black.webp",
   description: "600D polyester insulated cooler bag with PEVA lining. Holds 30 cans.",
   popular: false
 },
@@ -1820,7 +1820,7 @@ const products = [{
   size: '11"W x 13"H x 7.25"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.webp",
   description: "600D polyester insulated cooler bag with PEVA lining. Holds 30 cans.",
   popular: false
 },
@@ -1834,7 +1834,7 @@ const products = [{
   size: '18"W x 10"H x 10"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS22/IS22-Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS22/IS22-Black.webp",
   description: "600D polyester duffel bag with front pocket, main zipper, and detachable shoulder strap.",
   popular: false
 },
@@ -1848,7 +1848,7 @@ const products = [{
   size: '15"W x 9.5"H x 5.75"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.webp",
   description: "Polyester insulated cooler tote bag with PEVA lining. Holds 12 cans.",
   popular: false
 },
@@ -1862,7 +1862,7 @@ const products = [{
   size: '10.5"W x 14"H x 7.3"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.webp",
   description: "600D polyester backpack cooler with PEVA lining. Holds 24 cans.",
   popular: false
 },
@@ -1876,7 +1876,7 @@ const products = [{
   size: '10"W x 15"H x 7"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.webp",
   description: "600D poly canvas backpack cooler with PEVA lining. Holds 24 cans.",
   popular: false
 },
@@ -1890,7 +1890,7 @@ const products = [{
   size: '12"W x 17.75"H x 5.25"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.webp",
   description: "600D poly canvas 2-in-1 backpack with laptop compartment and insulated cooler base.",
   popular: false
 },
@@ -1904,7 +1904,7 @@ const products = [{
   size: '8.25"W x 12.5"H x 6.25"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.webp",
   description: "600D poly canvas backpack cooler with PEVA lining. Holds 16 cans.",
   popular: false
 },
@@ -1918,7 +1918,7 @@ const products = [{
   size: '9.75"W x 14.75"H x 4.75"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.webp",
   description: "600D polyester backpack cooler with PEVA lining. Holds 16 cans.",
   popular: false
 },
@@ -1932,7 +1932,7 @@ const products = [{
   size: '8"W x 6"H x 5.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS290/IS290-purple.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS290/IS290-purple.webp",
   description: "210D polyester 6-can cooler bag with thermal foil lining and front pocket.",
   popular: false
 },
@@ -1946,7 +1946,7 @@ const products = [{
   size: '7"W x 10"H x 4.5"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS291/IS291-Navy Blue.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS291/IS291-Navy Blue.webp",
   description: "210D polyester lunch pack bag with thermal foil lining and front pocket.",
   popular: false
 },
@@ -1960,7 +1960,7 @@ const products = [{
   size: '15"W x 18"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/polyester-bags/IS30/IS30-Burgundy.jpg",
+  image: "assets/assets/images/products/polyester-bags/IS30/IS30-Burgundy.webp",
   description: "Heavyweight 230D coated waterproof backpack with drawstring closure.",
   popular: false
 },
@@ -1974,7 +1974,7 @@ const products = [{
   size: '15"W x 11"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS398/IS398-Red.jpg",
+  image: "assets/assets/images/products/non-woven/IS398/IS398-Red.webp",
   description: "Reversible neoprene laptop sleeve that stretches to fit most laptop sizes.",
   popular: false
 },
@@ -1988,7 +1988,7 @@ const products = [{
   size: '19"W x 13"H x 3"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS60/IS60-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS60/IS60-Natural.webp",
   description: "9 oz cotton canvas foldable sling bag with snap button closure.",
   popular: false
 },
@@ -2002,7 +2002,7 @@ const products = [{
   size: '15"W x 16"H',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS52/IS52-White.jpg",
+  image: "assets/assets/images/products/tote-bags/IS52/IS52-White.webp",
   description: "7 oz cotton canvas colored convention tote with 26-inch self handles.",
   popular: false
 },
@@ -2016,7 +2016,7 @@ const products = [{
   size: '15"W x 16"H',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.webp",
   description: "Recycled cotton canvas convention tote with 26-inch self handles and 7 oz weight.",
   popular: false
 },
@@ -2030,7 +2030,7 @@ const products = [{
   size: '15"W x 16"H',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.jpg",
+  image: "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.webp",
   description: "Blue denim convention tote bag with long 26-inch handles and 12 oz weight.",
   popular: false
 },
@@ -2044,7 +2044,7 @@ const products = [{
   size: '15"W x 18"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS59/IS59-Natural.jpg",
+  image: "assets/assets/images/products/non-woven/IS59/IS59-Natural.webp",
   description: "8 oz natural cotton canvas drawstring backpack with cinch closure and rope cord.",
   popular: false
 },
@@ -2058,7 +2058,7 @@ const products = [{
   size: '8"W x 10"H x 4"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.jpg",
+  image: "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.webp",
   description: "80 GSM non-woven small shopper bag with full side and bottom gussets.",
   popular: false
 },
@@ -2072,7 +2072,7 @@ const products = [{
   size: '14"W x 19"H',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS53/IS53-Yellow.jpg",
+  image: "assets/assets/images/products/non-woven/IS53/IS53-Yellow.webp",
   description: "210D polyester backpack with zippered front pocket and drawstring closure.",
   popular: false
 },
@@ -2086,7 +2086,7 @@ const products = [{
   size: '15"W x 18"H x 6"D',
   price: 30.00,
   originalPrice: 45.00,
-  image: "assets/assets/images/products/tote-bags/IS55/IS55-Natural.jpg",
+  image: "assets/assets/images/products/tote-bags/IS55/IS55-Natural.webp",
   description: "12 oz cotton canvas large grocery bag with full side and bottom gussets.",
   popular: false
 },
@@ -2207,7 +2207,7 @@ const products = [{
     size: '16"W x 13"H x 5"D',
     price: 30.00,
     originalPrice: 45.00,
-    image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.webp",
     description: "12 oz natural cotton canvas tote with stylish brown faux leather handles.",
     popular: false
 },
@@ -3467,7 +3467,7 @@ function initLazyBackground() {
 
                     <!-- QUOTE -->
                     <a
-                        href="${link}?action=quote"
+                        
                         class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
 
                         <i class="fa-regular fa-pen-to-square"></i>
@@ -3478,7 +3478,7 @@ function initLazyBackground() {
                     <!-- MOCKUP -->
                     ${!hideMockup ? `
                         <a
-                            href="${link}?action=mockup"
+                            
                             class="flex-1 border border-brand-border text-brand-textSecondary text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-colors flex items-center justify-center gap-1">
 
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
@@ -3489,7 +3489,7 @@ function initLazyBackground() {
 
                     <!-- FREIGHT -->
                     <a
-                        href="${link}?action=freight"
+                        
                         class="flex-1 bg-brand-crimson text-white text-[10px] font-semibold py-1.5 px-1 rounded hover:bg-brand-crimsonHover transition-colors flex items-center justify-center gap-1 border border-brand-crimson">
 
                         <i class="fa-solid fa-truck-fast"></i>

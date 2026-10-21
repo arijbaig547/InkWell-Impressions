@@ -376,9 +376,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -2802,35 +2804,35 @@ const products = [{
     imprint: '6"W x 8"H',
     price: 0.80,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS64/IS64-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS64/IS64-Black.webp",
     description: "A compact, budget-friendly shopper built from 80 gsm non-woven polypropylene with full side and bottom gussets. The 10\" x 12\" x 3\" body holds small purchases, gifts, or promotional items with ease, while 16-inch self-fabric handles make it comfortable to carry. Available in nine colors with a 6\" x 8\" imprint area on both sides — ideal for boutique retail, cosmetic promotions, and event giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS64/IS64-Black.jpg" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS64/IS64-Burgundy.jpg" },
-        { name: "Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/IS64/IS64-Kelly Green.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS64/IS64-Navy Blue.jpg" },
-        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS64/IS64-Orange.jpg" },
-        { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/non-woven/IS64/IS64-Pink.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS64/IS64-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS64/IS64-Royal Blue.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS64/IS64-White.jpg" },
-        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS64/IS64-Yellow.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS64/IS64-Black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS64/IS64-Burgundy.webp" },
+        { name: "Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/IS64/IS64-Kelly Green.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS64/IS64-Navy Blue.webp" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS64/IS64-Orange.webp" },
+        { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/non-woven/IS64/IS64-Pink.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS64/IS64-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS64/IS64-Royal Blue.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS64/IS64-White.webp" },
+        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS64/IS64-Yellow.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS64/IS64-Black.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Kelly Green.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Navy Blue.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Orange.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Pink.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Red.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Royal Blue.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-White.jpg",
-        "assets/assets/images/products/non-woven/IS64/IS64-Yellow.jpg"
+        "assets/assets/images/products/non-woven/IS64/IS64-Black.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Kelly Green.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Orange.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Pink.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Red.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Royal Blue.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-White.webp",
+        "assets/assets/images/products/non-woven/IS64/IS64-Yellow.webp"
     ],
 
     specs: {
@@ -2922,29 +2924,29 @@ const products = [{
     imprint: '4"W x 4"H',
     price: 0.53,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS65/IS65-Yellow.jpg",
+    image: "assets/assets/images/products/non-woven/IS65/IS65-Yellow.webp",
     description: "A petite 80 gsm non-woven mini tote that's perfect for small gifts, cosmetics, jewelry, and party favors. Compact at 6\" x 6\" with 10.5-inch self-fabric handles, this little bag delivers big value for promotional giveaways, boutique packaging, and event favors. Available in seven colors with a 4\" x 4\" imprint area on both sides.",
 
     popular: false,
 
     colors: [
-        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS65/IS65-Yellow.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS65/IS65-Black.jpg" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS65/IS65-Burgundy.jpg" },
-        { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/non-woven/IS65/IS65-Ivory.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS65/IS65-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS65/IS65-Royal Blue.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS65/IS65-White.jpg" },
+        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS65/IS65-Yellow.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS65/IS65-Black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS65/IS65-Burgundy.webp" },
+        { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/non-woven/IS65/IS65-Ivory.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS65/IS65-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS65/IS65-Royal Blue.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS65/IS65-White.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS65/IS65-Yellow.jpg",
-        "assets/assets/images/products/non-woven/IS65/IS65-Black.jpg",
-        "assets/assets/images/products/non-woven/IS65/IS65-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS65/IS65-Ivory.jpg",
-        "assets/assets/images/products/non-woven/IS65/IS65-Red.jpg",
-        "assets/assets/images/products/non-woven/IS65/IS65-Royal Blue.jpg",
-        "assets/assets/images/products/non-woven/IS65/IS65-White.jpg",
+        "assets/assets/images/products/non-woven/IS65/IS65-Yellow.webp",
+        "assets/assets/images/products/non-woven/IS65/IS65-Black.webp",
+        "assets/assets/images/products/non-woven/IS65/IS65-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS65/IS65-Ivory.webp",
+        "assets/assets/images/products/non-woven/IS65/IS65-Red.webp",
+        "assets/assets/images/products/non-woven/IS65/IS65-Royal Blue.webp",
+        "assets/assets/images/products/non-woven/IS65/IS65-White.webp",
     ],
 
     specs: {
@@ -3035,17 +3037,17 @@ const products = [{
     imprint: '4"W x 4"H (Pocket) / 12"W x 14"H (Back)',
     price: 1.52,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS66/IS66-White.jpg",
+    image: "assets/assets/images/products/non-woven/IS66/IS66-White.webp",
     description: "A large 80 GSM non-woven laundry bag with a drawstring cinch closure and rope cord for easy open and close. The small front pocket adds a designated spot for a logo, while the back side offers a massive 12\" x 14\" imprint area for maximum brand visibility. Ideal for dorms, hotels, gyms, travel, and promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS66/IS66-White.jpg" }
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS66/IS66-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS66/IS66-White.jpg"
+        "assets/assets/images/products/non-woven/IS66/IS66-White.webp"
     ],
 
     specs: {
@@ -4019,23 +4021,23 @@ const products = [{
     imprint: '6"W x 5"H',
     price: 3.47,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS70/IS70-Khaki.jpg",
+    image: "assets/assets/images/products/non-woven/IS70/IS70-Khaki.webp",
     description: "A durable 100 GSM non-woven tote built to carry six bottles of wine safely and stylishly. Internal dividers separate each bottle to prevent clinking, while a poly board bottom insert adds structure and support. Side and bottom gussets provide extra capacity, and self handles make it comfortable to carry. Ideal for wineries, liquor stores, wine festivals, and corporate gifting.",
 
     popular: false,
 
     colors: [
-        { name: "Khaki", hex: "#C3B091", image: "assets/assets/images/products/non-woven/IS70/IS70-Khaki.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS70/IS70-Black.jpg" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS70/IS70-Burgundy.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS70/IS70-White.jpg" }
+        { name: "Khaki", hex: "#C3B091", image: "assets/assets/images/products/non-woven/IS70/IS70-Khaki.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS70/IS70-Black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS70/IS70-Burgundy.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS70/IS70-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS70/IS70-Khaki.jpg",
-        "assets/assets/images/products/non-woven/IS70/IS70-Black.jpg",
-        "assets/assets/images/products/non-woven/IS70/IS70-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS70/IS70-White.jpg"
+        "assets/assets/images/products/non-woven/IS70/IS70-Khaki.webp",
+        "assets/assets/images/products/non-woven/IS70/IS70-Black.webp",
+        "assets/assets/images/products/non-woven/IS70/IS70-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS70/IS70-White.webp"
     ],
 
     specs: {
@@ -4108,25 +4110,25 @@ const products = [{
     imprint: '3"W x 3"H',
     price: 0.99,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.jpg",
+    image: "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.webp",
     description: "A sleek single-bottle wine tote made from 90 gsm recycled non-woven fabric with matching rope cord handles. Full side and bottom gussets add structure and a premium feel, while the compact 5\" x 13\" x 4\" size makes it ideal for wineries, liquor stores, restaurants, and corporate gifting. Available in five classic colors with a 3\" x 3\" imprint area on both sides.",
 
     popular: false,
 
     colors: [
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS71/IS71-Black.jpg" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS71/IS71-Hunter Green.jpg" },
-        { name: "Khaki", hex: "#C3B091", image: "assets/assets/images/products/non-woven/IS71/IS71-Khaki.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS71/IS71-White.jpg" }
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS71/IS71-Black.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS71/IS71-Hunter Green.webp" },
+        { name: "Khaki", hex: "#C3B091", image: "assets/assets/images/products/non-woven/IS71/IS71-Khaki.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS71/IS71-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS71/IS71-Black.jpg",
-        "assets/assets/images/products/non-woven/IS71/IS71-Hunter Green.jpg",
-        "assets/assets/images/products/non-woven/IS71/IS71-Khaki.jpg",
-        "assets/assets/images/products/non-woven/IS71/IS71-White.jpg"
+        "assets/assets/images/products/non-woven/IS71/IS71-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS71/IS71-Black.webp",
+        "assets/assets/images/products/non-woven/IS71/IS71-Hunter Green.webp",
+        "assets/assets/images/products/non-woven/IS71/IS71-Khaki.webp",
+        "assets/assets/images/products/non-woven/IS71/IS71-White.webp"
     ],
 
     specs: {
@@ -4421,9 +4423,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -4431,104 +4435,7 @@ const products = [{
         artworkCharges: "$75.00 (V) / Hour"
     }
 },
-{
-    id: "is73",
-    name: "Laminated Tote",
-    code: "IS73",
-    slug: "laminated-tote-is73",
-    category: "Non-Woven Bags",
-    material: "Non-Woven, Laminated",
-    size: '15.75"W x 12.5"H x 6.25"D',
-    imprint: '10"W x 8"H',
-    price: 1.61,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS73/IS73-black.webp",
-    description: "A premium laminated tote with an attractive patent finish that adds shine and durability to the classic non-woven bag. Made from 110 GSM recycled non-woven polypropylene with full side and bottom gussets, 20-inch self-fabric handles, and a large 10\" x 8\" imprint area on both sides. Perfect for retail, trade shows, and upscale promotional programs.",
 
-    popular: false,
-
-    colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS73/IS73-black.webp" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS73/IS73-hunter green.webp" },
-        { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/non-woven/IS73/IS73-ivory.webp" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS73/IS73-red.webp" },
-        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS73/IS73-royal.webp" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS73/IS73-white.webp" }
-    ],
-
-    images: [
-        "assets/assets/images/products/non-woven/IS73/IS73-main.webp",
-        "assets/assets/images/products/non-woven/IS73/IS73-black.webp",
-        "assets/assets/images/products/non-woven/IS73/IS73-hunter green.webp",
-        "assets/assets/images/products/non-woven/IS73/IS73-ivory.webp",
-        "assets/assets/images/products/non-woven/IS73/IS73-red.webp",
-        "assets/assets/images/products/non-woven/IS73/IS73-royal.webp",
-        "assets/assets/images/products/non-woven/IS73/IS73-white.webp"
-    ],
-
-    specs: {
-        itemNo: "IS73",
-        gusset: "Bottom: Yes Side: Yes",
-        weight: "110 gsm",
-        material: "Non-Woven, Laminated",
-        handle: '20" Self Fabric Handles',
-        decoratedIn: "USA",
-        packagingOptions: [
-            {
-                type: "Blank",
-                qtyPerBox: "100 pcs",
-                boxWeight: "27 lbs",
-                boxDims: '20" x 16" x 14"'
-            },
-            {
-                type: "Printed Large Box",
-                qtyPerBox: "125 pcs",
-                boxWeight: "21 lbs",
-                boxDims: '16" x 16" x 20"'
-            },
-            {
-                type: "Printed Medium Box",
-                qtyPerBox: "50 pcs",
-                boxWeight: "9 lbs",
-                boxDims: '8" x 16" x 20"'
-            }
-        ]
-    },
-
-    pricing: {
-        spot: {
-            label: "SPOT PRINTING PRICING (USD)",
-            quantities: [100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "COLOR", prices: ["$3.00", "$2.88", "$2.73", "$2.66", "$2.50"] },
-                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] }
-            ],
-            priceIncludes: "1 Color, 1 Location",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "$37.50 (V)"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            rows: [
-                { label: "COLOR", prices: ["$1.61"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 1 to 2 Business Days",
-            moq: "No minimums. Can order as little as one piece."
-        }
-    },
-
-    additionalCharges: {
-        setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
-        pmsMatch: "$56.25 (V)",
-        lessThanMinimum: "Call for pricing",
-        colorChangeFee: "$18.75 (V)",
-        sampleProof: "Contact for pricing",
-        artworkCharges: "$75.00 (V) / Hour"
-    }
-},
 {
     id: "is83",
     name: "Newspaper Bag",
@@ -7993,7 +7900,7 @@ const products = [{
     pricing: {
         blank: {
             label: "BLANK PRICING (USD)",
-            basePrice: { label: "S - XL", price: "$$37.20" },
+            basePrice: { label: "S - XL", price: "$37.20" },
             upsizeCharges: [
                 { size: "2XL", charge: "$0.90" },
                 { size: "3XL", charge: "$1.90" },
@@ -12270,11 +12177,13 @@ const products = [{
     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
-        repeatSetup: "$37.50 (V)",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
-        sampleProof: "Contact for pricing"
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
     }
 },
 {
@@ -12288,21 +12197,21 @@ const products = [{
     imprint: '10"W x 8"H',
     price: 2.76,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg",
+    image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.webp",
     description: "Make your brand sparkle with this laminated 120 GSM glitter bag featuring full side and bottom gussets and 22-inch self handles. The shimmering finish catches the eye at trade shows, retail counters, and promotional events, while the roomy 17\" x 13\" x 5\" body carries groceries, gifts, and giveaways with ease.",
 
     popular: false,
 
     colors: [
-        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/non-woven/IS128/IS128-Gold.jpg" },
-        { name: "Pewter Grey", hex: "#8A8D8F", image: "assets/assets/images/products/non-woven/IS128/IS128-Pewter Grey.jpg" },
-        { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg" }
+        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/non-woven/IS128/IS128-Gold.webp" },
+        { name: "Pewter Grey", hex: "#8A8D8F", image: "assets/assets/images/products/non-woven/IS128/IS128-Pewter Grey.webp" },
+        { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/non-woven/IS128/IS128-Silver.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS128/IS128-Silver.jpg",
-        "assets/assets/images/products/non-woven/IS128/IS128-Gold.jpg",
-        "assets/assets/images/products/non-woven/IS128/IS128-Pewter Grey.jpg"
+        "assets/assets/images/products/non-woven/IS128/IS128-Silver.webp",
+        "assets/assets/images/products/non-woven/IS128/IS128-Gold.webp",
+        "assets/assets/images/products/non-woven/IS128/IS128-Pewter Grey.webp"
     ],
 
     specs: {
@@ -12353,8 +12262,10 @@ const products = [{
     },
 
     additionalCharges: {
-        setupCharge: "$56.25 (V)",
-        repeatSetup: "$37.50 (V)",
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -12373,17 +12284,17 @@ const products = [{
     imprint: '14"W x 6"H',
     price: 3.81,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.webp",
     description: "Built for sun, sand, and everything in between — this 7 oz cotton canvas beach tote features a breathable mesh top panel that lets sand fall through and keeps wet items ventilated. With a roomy 20\" x 15\" x 5\" body, a bottom gusset for extra capacity, and 22-inch self handles, it's the perfect carry-all for beach days, pool trips, farmers markets, and weekend getaways.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS132/IS132-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS132/IS132-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS132/IS132-Natural.webp"
     ],
 
     specs: {
@@ -12448,9 +12359,10 @@ const products = [{
     },
 
     additionalCharges: {
-        setupCharge: "$56.25 - Spot Printing (V)",
-        setupChargeTransfer: "$112.50 - Heat Transfer (V)",
-        repeatSetup: "$37.50 (V)",
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -12470,27 +12382,27 @@ const products = [{
     imprint: '6"W x 6"H',
     price: 1.83,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS134/IS134-Black.webp",
     description: "Polished and practical — this matte-finish 105 GSM laminated non-woven tote pairs a sophisticated look with everyday durability. Contrasting side and bottom gussets add a subtle design detail, while X-reinforced self handles deliver extra strength where it matters. Sized at 9\" x 12\" x 4.5\", it's ideal for gift packaging, boutique retail, cosmetic promotions, and event giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS134/IS134-Grey.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS134/IS134-Red.jpg" },
-        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS134/IS134-Royal.jpg" },
-        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS134/IS134-Teal.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS134/IS134-White.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS134/IS134-Black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS134/IS134-Grey.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS134/IS134-Red.webp" },
+        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS134/IS134-Royal.webp" },
+        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS134/IS134-Teal.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS134/IS134-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS134/IS134-Black.jpg",
-        "assets/assets/images/products/non-woven/IS134/IS134-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS134/IS134-Red.jpg",
-        "assets/assets/images/products/non-woven/IS134/IS134-Royal.jpg",
-        "assets/assets/images/products/non-woven/IS134/IS134-Teal.jpg",
-        "assets/assets/images/products/non-woven/IS134/IS134-White.jpg"
+        "assets/assets/images/products/non-woven/IS134/IS134-Black.webp",
+        "assets/assets/images/products/non-woven/IS134/IS134-Grey.webp",
+        "assets/assets/images/products/non-woven/IS134/IS134-Red.webp",
+        "assets/assets/images/products/non-woven/IS134/IS134-Royal.webp",
+        "assets/assets/images/products/non-woven/IS134/IS134-Teal.webp",
+        "assets/assets/images/products/non-woven/IS134/IS134-White.webp"
     ],
 
     specs: {
@@ -12534,9 +12446,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
-        setupCharge: "$56.25 (V)",
-        repeatSetup: "$37.50 (V)",
+     additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -12555,19 +12469,19 @@ const products = [{
     imprint: '10"W x 8"H',
     price: 2.23,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg",
+    image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.webp",
     description: "A larger take on our bestselling gift tote — this matte-finish 105 GSM laminated non-woven bag pairs a sophisticated look with real carrying capacity. The 16\" x 14\" x 6\" body with contrasting side and bottom gussets and X-reinforced 20-inch self handles makes it ideal for retail packaging, promotional gift sets, trade show giveaways, and event swag that needs to impress.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS135/IS135_Black-White.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS135/IS135_Black-White.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS135/IS135_White-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS135/IS135_Black-White.jpg",
-        "assets/assets/images/products/non-woven/IS135/IS135_White-White.jpg"
+        "assets/assets/images/products/non-woven/IS135/IS135_Black-White.webp",
+        "assets/assets/images/products/non-woven/IS135/IS135_White-White.webp"
     ],
 
     specs: {
@@ -12610,9 +12524,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
-        setupCharge: "$56.25 (V)- Spot Printing",
-        repeatSetup: "$37.50 (V)",
+     additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -12631,21 +12547,21 @@ const products = [{
     imprint: '4.5"W x 6"H',
     price: 11.41,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.webp",
     description: "Built for the long haul — this 18 oz cotton canvas boat bag delivers the rugged durability of a classic nautical tote with a natural canvas body and contrasting colored trim. The roomy 19.75\" x 13.25\" x 7\" main compartment, front slip pocket, reinforced 24-inch self handles, and bottom gusset make it perfect for boat days, weekend trips, farmers markets, and premium promotional programs that demand a heavyweight feel.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Red.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS121/IS121-Natural-Red.webp"
     ],
 
     specs: {
@@ -12709,9 +12625,10 @@ const products = [{
     },
 
     additionalCharges: {
-        setupCharge: "$56.25-Spot Printing (V)",
-        setupChargeTransfer: "$112.50-Heat Transfer (V)",
-        repeatSetup: "$37.50 (V)",
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -12730,23 +12647,23 @@ const products = [{
     imprint: '8"W x 5"H',
     price: 2.30,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.jpg",
+    image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.webp",
     description: "Sporty and functional — this 210D polyester two-tone drawstring backpack pairs a classic cinch silhouette with a front angled zipper pocket and a rubberized headphone port. The rope cord drawstrings double as shoulder straps, making it a lightweight, hands-free carry for gyms, schools, festivals, and promotional giveaways that need to stand out with bold color blocking.",
 
     popular: false,
 
     colors: [
-        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.jpg" },
-        { name: "Orange-Black", hex: "#F97316", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.jpg" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Red-Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Royal Blue-Black.jpg" }
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.webp" },
+        { name: "Orange-Black", hex: "#F97316", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Red-Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS101/IS101-Royal Blue-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.jpg",
-        "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.jpg",
-        "assets/assets/images/products/drawstring-bags/IS101/IS101-Red-Black.jpg",
-        "assets/assets/images/products/drawstring-bags/IS101/IS101-Royal Blue-Black.jpg"
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Lime Green-Black.webp",
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Orange-Black.webp",
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Red-Black.webp",
+        "assets/assets/images/products/drawstring-bags/IS101/IS101-Royal Blue-Black.webp"
     ],
 
     specs: {
@@ -12811,9 +12728,10 @@ const products = [{
     },
 
     additionalCharges: {
-        setupCharge: "$56.25-Spot Printing (V)",
-        setupChargeTransfer: "$112.50-Heat Transfer (V)",
-        repeatSetup: "$37.50 (V)",
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -12832,19 +12750,19 @@ const products = [{
     imprint: '8"W x 5"H',
     price: 2.57,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg",
+    image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.webp",
     description: "A two-tone drawstring cinch bag that blends 300D polyester durability with an 80 GSM non-woven body. The angled front zipper pocket and built-in headphone port make it a practical everyday carry for gyms, schools, festivals, and promotional programs looking for a modern, sporty look.",
 
     popular: false,
 
     colors: [
-        { name: "Red-Grey", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg" },
-        { name: "Royal Blue-Grey", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Royal Blue-Grey.jpg" }
+        { name: "Red-Grey", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.webp" },
+        { name: "Royal Blue-Grey", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS102/IS102-Royal Blue-Grey.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.jpg",
-        "assets/assets/images/products/drawstring-bags/IS102/IS102-Royal Blue-Grey.jpg"
+        "assets/assets/images/products/drawstring-bags/IS102/IS102-Red-Grey.webp",
+        "assets/assets/images/products/drawstring-bags/IS102/IS102-Royal Blue-Grey.webp"
     ],
 
     specs: {
@@ -12931,25 +12849,25 @@ const products = [{
     imprint: '7"W x 7"H',
     price: 2.41,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.jpg",
+    image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.webp",
     description: "A budget-friendly sports pack that doesn't compromise on features — this 210D polyester drawstring bag includes a front zipper pocket and a built-in headphone port, making it ideal for students, gym-goers, and promotional giveaways. The contrasting two-tone design adds visual pop while the rope cord drawstrings double as shoulder straps for hands-free carrying.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Black", hex: "#1C1C1C", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.jpg" },
-        { name: "Kelly Green-Black", hex: "#1B8A4C", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Kelly Green-Black.jpg" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Royal Blue-Black.jpg" },
-        { name: "Yellow-Black", hex: "#FACC15", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Yellow-Black.jpg" }
+        { name: "Black-Black", hex: "#1C1C1C", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.webp" },
+        { name: "Kelly Green-Black", hex: "#1B8A4C", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Kelly Green-Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Royal Blue-Black.webp" },
+        { name: "Yellow-Black", hex: "#FACC15", image: "assets/assets/images/products/drawstring-bags/IS104/IS104-Yellow-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.jpg",
-        "assets/assets/images/products/drawstring-bags/IS104/IS104-Kelly Green-Black.jpg",
-        "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.jpg",
-        "assets/assets/images/products/drawstring-bags/IS104/IS104-Royal Blue-Black.jpg",
-        "assets/assets/images/products/drawstring-bags/IS104/IS104-Yellow-Black.jpg"
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Black-Black.webp",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Kelly Green-Black.webp",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Red-Black.webp",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Royal Blue-Black.webp",
+        "assets/assets/images/products/drawstring-bags/IS104/IS104-Yellow-Black.webp"
     ],
 
     specs: {
@@ -13036,25 +12954,25 @@ const products = [{
     imprint: '7"W x 4.5"H',
     price: 5.58,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS105/IS105-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS105/IS105-Black.webp",
     description: "A practical everyday backpack built from durable 210D polyester with adjustable web shoulder straps and a convenient top carry handle. The front zippered pocket and side mesh pocket keep essentials organized, while the gusseted 12\" x 16.5\" x 5\" main body offers real carrying capacity for school, work, travel, and promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS105/IS105-Black.jpg" },
-        { name: "Kelly Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS105/IS105-Kelly Green.jpg" },
-        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS105/IS105-Orange.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS105/IS105-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS105/IS105-Black.webp" },
+        { name: "Kelly Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS105/IS105-Kelly Green.webp" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS105/IS105-Orange.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS105/IS105-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS105/IS105-Black.jpg",
-        "assets/assets/images/products/non-woven/IS105/IS105-Kelly Green.jpg",
-        "assets/assets/images/products/non-woven/IS105/IS105-Orange.jpg",
-        "assets/assets/images/products/non-woven/IS105/IS105-Red.jpg",
-        "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.jpg"
+        "assets/assets/images/products/non-woven/IS105/IS105-Black.webp",
+        "assets/assets/images/products/non-woven/IS105/IS105-Kelly Green.webp",
+        "assets/assets/images/products/non-woven/IS105/IS105-Orange.webp",
+        "assets/assets/images/products/non-woven/IS105/IS105-Red.webp",
+        "assets/assets/images/products/non-woven/IS105/IS105-Royal Blue.webp"
     ],
 
     specs: {
@@ -13141,21 +13059,21 @@ const products = [{
     imprint: '5.5"W x 5"H',
     price: 5.93,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS106/IS106-Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS106/IS106-Black.webp",
     description: "A dependable 210D polyester duffle built for everyday hauling — whether it's gym trips, weekend getaways, or team travel. An adjustable 18-inch shoulder strap and reinforced web handles offer multiple carry options, while the roomy 18\" x 10\" x 10\" body swallows gear with ease. A budget-friendly, high-value option for sports teams, corporate giveaways, and travel programs.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS106/IS106-Black.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS106/IS106-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS106/IS106-Royal Blue.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS106/IS106-Black.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS106/IS106-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS106/IS106-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS106/IS106-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS106/IS106-Red.jpg",
-        "assets/assets/images/products/polyester-bags/IS106/IS106-Royal Blue.jpg"
+        "assets/assets/images/products/polyester-bags/IS106/IS106-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS106/IS106-Red.webp",
+        "assets/assets/images/products/polyester-bags/IS106/IS106-Royal Blue.webp"
     ],
 
     specs: {
@@ -13242,21 +13160,21 @@ const products = [{
     imprint: '3.5"W x 4.5"H',
     price: 4.08,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS107/IS107-Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS107/IS107-Black.webp",
     description: "Keep drinks cold and hands free — this 210D polyester cooler bag features a PEVA insulated lining that holds up to 12 cans, plus a 38-inch adjustable nylon web strap for comfortable shoulder carrying. The gusseted 8\" x 10.75\" x 5\" body is ideal for picnics, tailgates, beach days, and promotional giveaways that need real utility.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS107/IS107-Black.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS107/IS107-Red.jpg" },
-        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS107/IS107-Royal.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS107/IS107-Black.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS107/IS107-Red.webp" },
+        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS107/IS107-Royal.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS107/IS107-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS107/IS107-Red.jpg",
-        "assets/assets/images/products/polyester-bags/IS107/IS107-Royal.jpg"
+        "assets/assets/images/products/polyester-bags/IS107/IS107-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS107/IS107-Red.webp",
+        "assets/assets/images/products/polyester-bags/IS107/IS107-Royal.webp"
     ],
 
     specs: {
@@ -13342,25 +13260,25 @@ const products = [{
     imprint: '4.5"W x 3"H',
     price: 3.11,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS108/IS108-Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS108/IS108-Black.webp",
     description: "Compact and cold — this round insulated cooler bag pairs a durable 210D polyester exterior with a foil inner lining that keeps up to 6 cans chilled. The 36-inch adjustable nylon web strap makes it easy to sling over your shoulder on the way to the beach, park, golf course, or tailgate. A simple, effective promotional cooler that travels well.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Black.jpg" },
-        { name: "Green", hex: "#1B8A4C", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Green.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Royal Blue.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Black.webp" },
+        { name: "Green", hex: "#1B8A4C", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Green.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS108/IS108-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS108/IS108-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS108/IS108-Green.jpg",
-        "assets/assets/images/products/polyester-bags/IS108/IS108-Navy Blue.jpg",
-        "assets/assets/images/products/polyester-bags/IS108/IS108-Red.jpg",
-        "assets/assets/images/products/polyester-bags/IS108/IS108-Royal Blue.jpg"
+        "assets/assets/images/products/polyester-bags/IS108/IS108-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS108/IS108-Green.webp",
+        "assets/assets/images/products/polyester-bags/IS108/IS108-Navy Blue.webp",
+        "assets/assets/images/products/polyester-bags/IS108/IS108-Red.webp",
+        "assets/assets/images/products/polyester-bags/IS108/IS108-Royal Blue.webp"
     ],
 
     specs: {
@@ -13446,23 +13364,23 @@ const products = [{
     imprint: '4.5"W x 5"H',
     price: 6.99,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS123/IS123-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS123/IS123-Black.webp",
     description: "A classic cotton canvas duffle built for short trips and long weekends. This 5 oz overnight bag includes sturdy cotton web handles plus a detachable, adjustable shoulder strap for versatile carrying. Roomy at 17.75\" x 9.75\", it fits a change of clothes, toiletries, and the essentials — ideal for gym bags, travel promotions, and hospitality giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS123/IS123-Black.jpg" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS123/IS123-Hunter Green.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS123/IS123-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS123/IS123-Red.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS123/IS123-Black.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS123/IS123-Hunter Green.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS123/IS123-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS123/IS123-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS123/IS123-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS123/IS123-Hunter Green.jpg",
-        "assets/assets/images/products/tote-bags/IS123/IS123-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS123/IS123-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS123/IS123-Black.webp",
+        "assets/assets/images/products/tote-bags/IS123/IS123-Hunter Green.webp",
+        "assets/assets/images/products/tote-bags/IS123/IS123-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS123/IS123-Red.webp"
     ],
 
     specs: {
@@ -13549,27 +13467,27 @@ const products = [{
     imprint: '5"W x 4.5"H',
     price: 3.67,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.webp",
     description: "Lightweight yet durable — this 10 oz cotton canvas daytrip bag features contrasting colored handles and a front slip pocket for quick access. The gusseted 12.25\" x 14.75\" x 5\" body gives it real capacity without the weight, making it an easy go-to for boat days, farmers markets, and casual promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.jpg" },
-        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Hunter Green.jpg" },
-        { name: "Natural-Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Natural.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Red.jpg" },
-        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Royal Blue.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.webp" },
+        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Hunter Green.webp" },
+        { name: "Natural-Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Natural.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Red.webp" },
+        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Hunter Green.jpg",
-        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Royal Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Hunter Green.webp",
+        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Red.webp",
+        "assets/assets/images/products/tote-bags/IS124/IS124-Natural-Royal Blue.webp"
     ],
 
     specs: {
@@ -13624,9 +13542,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -13645,23 +13565,23 @@ const products = [{
     imprint: '10"W x 3"H',
     price: 2.49,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS125/IS125-Gold.jpg",
+    image: "assets/assets/images/products/non-woven/IS125/IS125-Gold.webp",
     description: "Elevate your gift packaging with this laminated 105 GSM non-woven cinch bag featuring a sophisticated croc-embossed texture. A removable bottom insert keeps contents upright and protected, while 17.5-inch self handles make it easy to carry. Ideal for boutique retail, wine and spirit packaging, corporate gift sets, and high-end promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/non-woven/IS125/IS125-Gold.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS125/IS125-Black.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS125/IS125-Red.jpg" },
-        { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/non-woven/IS125/IS125-Silver.jpg" }
+        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/non-woven/IS125/IS125-Gold.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS125/IS125-Black.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS125/IS125-Red.webp" },
+        { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/non-woven/IS125/IS125-Silver.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS125/IS125-Gold.jpg",
-        "assets/assets/images/products/non-woven/IS125/IS125-Black.jpg",
-        "assets/assets/images/products/non-woven/IS125/IS125-Red.jpg",
-        "assets/assets/images/products/non-woven/IS125/IS125-Silver.jpg"
+        "assets/assets/images/products/non-woven/IS125/IS125-Gold.webp",
+        "assets/assets/images/products/non-woven/IS125/IS125-Black.webp",
+        "assets/assets/images/products/non-woven/IS125/IS125-Red.webp",
+        "assets/assets/images/products/non-woven/IS125/IS125-Silver.webp"
     ],
 
     specs: {
@@ -13710,9 +13630,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -13731,19 +13653,19 @@ const products = [{
     imprint: '8"W x 10"H',
     price: 2.58,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS126/IS126-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS126/IS126-Black.webp",
     description: "A metallic croc-textured shopper that looks far more expensive than it is. This 105 GSM laminated non-woven tote features 26-inch self handles, full side and bottom gussets, and a gleaming finish that catches the light. Perfect for boutique retail, cosmetics promotions, event swag bags, and upscale giveaways where presentation matters.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS126/IS126-Black.jpg" },
-        { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/non-woven/IS126/IS126-Rose Gold.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS126/IS126-Black.webp" },
+        { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/non-woven/IS126/IS126-Rose Gold.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS126/IS126-Black.jpg",
-        "assets/assets/images/products/non-woven/IS126/IS126-Rose Gold.jpg"
+        "assets/assets/images/products/non-woven/IS126/IS126-Black.webp",
+        "assets/assets/images/products/non-woven/IS126/IS126-Rose Gold.webp"
     ],
 
     specs: {
@@ -13793,9 +13715,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -13814,21 +13738,21 @@ const products = [{
     imprint: '10"W x 6"H',
     price: 2.35,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS127/IS127-Silver.jpg",
+    image: "assets/assets/images/products/non-woven/IS127/IS127-Silver.webp",
     description: "The petite sibling of our bestselling glitter tote — this 120 GSM laminated non-woven bag delivers the same showstopping shimmer in a smaller 13\" x 11\" x 5\" size. Full side and bottom gussets give it structure, while 20-inch self handles make it comfortable to carry. Perfect for cosmetics, jewelry, boutique retail, and party favor packaging.",
 
     popular: false,
 
     colors: [
-        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/non-woven/IS127/IS127-Gold.jpg" },
-        { name: "Pewter Grey", hex: "#8A8D8F", image: "assets/assets/images/products/non-woven/IS127/IS127-Pewter Grey.jpg" },
-        { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/non-woven/IS127/IS127-Silver.jpg" }
+        { name: "Gold", hex: "#D4AF37", image: "assets/assets/images/products/non-woven/IS127/IS127-Gold.webp" },
+        { name: "Pewter Grey", hex: "#8A8D8F", image: "assets/assets/images/products/non-woven/IS127/IS127-Pewter Grey.webp" },
+        { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/non-woven/IS127/IS127-Silver.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS127/IS127-Gold.jpg",
-        "assets/assets/images/products/non-woven/IS127/IS127-Pewter Grey.jpg",
-        "assets/assets/images/products/non-woven/IS127/IS127-Silver.jpg"
+        "assets/assets/images/products/non-woven/IS127/IS127-Gold.webp",
+        "assets/assets/images/products/non-woven/IS127/IS127-Pewter Grey.webp",
+        "assets/assets/images/products/non-woven/IS127/IS127-Silver.webp"
     ],
 
     specs: {
@@ -13877,9 +13801,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -13898,19 +13824,19 @@ const products = [{
     imprint: '8"W x 8"H',
     price: 2.31,
     originalPrice: 45.00,
-    image: "assets/assets/images/products/tote-bags/IS16/IS16-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS16/IS16-Natural.webp",
     description: "A lightweight workhorse for everyday errands — this 6 oz cotton canvas grocery tote is built with full side and bottom gussets that expand to hold everything from produce to pantry staples. 20-inch self handles make it comfortable to carry over the shoulder, and the natural canvas takes screen printing and heat transfers beautifully. Available in Natural and Black.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS16/IS16-Black.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS16/IS16-Natural.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS16/IS16-Black.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS16/IS16-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS16/IS16-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS16/IS16-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS16/IS16-Black.webp",
+        "assets/assets/images/products/tote-bags/IS16/IS16-Natural.webp"
     ],
 
     specs: {
@@ -13993,17 +13919,17 @@ const products = [{
     imprint: '3.5"W x 3.5"H / 11"W x 4"H',
     price: 2.05,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/aprons/IS17/IS17-Natural.jpg",
+    image: "assets/assets/images/products/aprons/IS17/IS17-Natural.webp",
     description: "A rugged 10 oz cotton canvas contractor waist apron built for real work. Two front pockets keep tools and small parts within reach, while the 17\" x 9\" panel offers plenty of surface for logos and branding. Ideal for hardware stores, contractor giveaways, baristas, woodworkers, and workshop promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/aprons/IS17/IS17-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/aprons/IS17/IS17-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/aprons/IS17/IS17-Natural.jpg"
+        "assets/assets/images/products/aprons/IS17/IS17-Natural.webp"
     ],
 
     specs: {
@@ -14095,25 +14021,25 @@ const products = [{
     imprint: '4"W x 4"H',
     price: 9.46,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.webp",
     description: "A premium 18 oz cotton canvas boat bag with natural body and colored trim detailing. Features a front pocket, top snap closure, and sturdy 22-inch self-fabric handles. The gusseted 17\" x 13\" x 5\" body gives it real capacity while the heavyweight canvas delivers long-term durability. Perfect for boat days, weekend travel, and upscale promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.jpg" },
-        { name: "Natural-Forest Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Green.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Red.jpg" },
-        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Royal Blue.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.webp" },
+        { name: "Natural-Forest Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Green.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Red.webp" },
+        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Green.jpg",
-        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Royal Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Green.webp",
+        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Red.webp",
+        "assets/assets/images/products/tote-bags/IS18/IS18-Natural-Royal Blue.webp"
     ],
 
     specs: {
@@ -14206,23 +14132,23 @@ const products = [{
     imprint: '4.5"W x 2"H',
     price: 9.64,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS201/IS201-Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS201/IS201-Black.webp",
     description: "Built for outdoor gatherings — this insulated picnic cooler bag pairs a durable 300D polyester exterior with 4mm EPE foam and a PEVA lining that holds up to 12 cans. A zippered main compartment, zippered front pocket, and mesh side pockets keep drinks and snacks organized, while the top handle and adjustable single strap make it easy to carry anywhere.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Black.jpg" },
-        { name: "Heather Grey", hex: "#A9A9A9", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Heather Grey-Black.jpg" },
-        { name: "Lime Green Heather", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Lime Green Heather-Black.jpg" },
-        { name: "Royal Blue Heather", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Royal Blue Heather-Black.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Black.webp" },
+        { name: "Heather Grey", hex: "#A9A9A9", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Heather Grey-Black.webp" },
+        { name: "Lime Green Heather", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Lime Green Heather-Black.webp" },
+        { name: "Royal Blue Heather", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS201/IS201-Royal Blue Heather-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS201/IS201-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS201/IS201-Heather Grey-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS201/IS201-Lime Green Heather-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS201/IS201-Royal Blue Heather-Black.jpg"
+        "assets/assets/images/products/polyester-bags/IS201/IS201-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS201/IS201-Heather Grey-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS201/IS201-Lime Green Heather-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS201/IS201-Royal Blue Heather-Black.webp"
     ],
 
     specs: {
@@ -14303,23 +14229,23 @@ const products = [{
     imprint: '4.5"W x 4"H',
     price: 12.47,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.webp",
     description: "A personal-sized insulated lunch box built for the daily commute, road trips, and outdoor adventures. The durable 600D polyester exterior wraps 5mm EPE foam and an aluminum foil lining that holds up to 12 cans. A zippered main compartment, zippered front pocket, mesh lid pocket, and mesh side pocket keep food and drinks organized — all carried by an adjustable handle with a plastic buckle.",
 
     popular: false,
 
     colors: [
-        { name: "Heather Grey", hex: "#A9A9A9", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Grey Heather.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Red.jpg" },
-        { name: "Royal Blue Heather", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Black.jpg" },
+        { name: "Heather Grey", hex: "#A9A9A9", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Grey Heather.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Red.webp" },
+        { name: "Royal Blue Heather", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS200/IS200-Black.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.jpg",
-        "assets/assets/images/products/polyester-bags/IS200/IS200-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS200/IS200-Grey Heather.jpg",
-        "assets/assets/images/products/polyester-bags/IS200/IS200-Red.jpg",
+        "assets/assets/images/products/polyester-bags/IS200/IS200-Royal.webp",
+        "assets/assets/images/products/polyester-bags/IS200/IS200-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS200/IS200-Grey Heather.webp",
+        "assets/assets/images/products/polyester-bags/IS200/IS200-Red.webp",
     ],
 
     specs: {
@@ -14399,23 +14325,23 @@ const products = [{
     imprint: '4.5"W x 2"H',
     price: 8.07,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Black.webp",
     description: "A personal insulated lunch bag engineered for the daily grind. The 600D polyester exterior wraps 4mm EPE foam and a PEVA lining that keeps up to 8 cans cold. A zippered main compartment, zippered front pocket, and mesh side pockets organize your food and drinks, while the top handle and adjustable single strap let you carry it by hand or over your shoulder.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Royal", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Royal.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Black.jpg" },
-        { name: "Black-Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Red.jpg" },
-        { name: "Black-Heather Gray", hex: "#A9A9A9", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Heather Gray.jpg" }
+        { name: "Black-Royal", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Royal.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Black.webp" },
+        { name: "Black-Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Red.webp" },
+        { name: "Black-Heather Gray", hex: "#A9A9A9", image: "assets/assets/images/products/polyester-bags/IS202/IS202-Black Heather Gray.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Royal.jpg",
-        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Red.jpg",
-        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Heather Gray.jpg"
+        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Royal.webp",
+        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Black.webp",
+        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Red.webp",
+        "assets/assets/images/products/polyester-bags/IS202/IS202-Black Heather Gray.webp"
     ],
 
     specs: {
@@ -14495,23 +14421,23 @@ const products = [{
     imprint: '6"W x 2"H',
     price: 10.70,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.webp",
     description: "A serious cooler for serious outings — the Roosevelt holds up to 18 cans inside a durable 600D polyester shell with foam and PEVA lining. A zippered main compartment and front pocket keep food and drinks organized, while the top carry handle and adjustable shoulder strap give you two easy ways to haul it. Perfect for picnics, beach days, tailgates, and camping trips.",
 
     popular: false,
 
     colors: [
-        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.jpg" },
-        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Lime Green Black.jpg" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Red Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Royal Blue Black.jpg" }
+        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.webp" },
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Lime Green Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Red Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS210/IS210-Royal Blue Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS210/IS210-Lime Green Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS210/IS210-Red Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS210/IS210-Royal Blue Black.jpg"
+        "assets/assets/images/products/polyester-bags/IS210/IS210-Grey Black.webp",
+        "assets/assets/images/products/polyester-bags/IS210/IS210-Lime Green Black.webp",
+        "assets/assets/images/products/polyester-bags/IS210/IS210-Red Black.webp",
+        "assets/assets/images/products/polyester-bags/IS210/IS210-Royal Blue Black.webp"
     ],
 
     specs: {
@@ -14591,23 +14517,23 @@ const products = [{
     imprint: '6"W x 4"H',
     price: 10.88,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS211/IS211-Grey Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS211/IS211-Grey Black.webp",
     description: "Rugged enough for the trail, roomy enough for a crowd — the Jefferson cooler bag holds up to 20 cans inside a 600D polyester shell with foam and PEVA insulation. A zippered main compartment and front pocket keep your snacks and drinks organized, while the top carry handle and adjustable shoulder strap offer flexible carrying. Built for camping, tailgates, beach trips, and long road days.",
 
     popular: false,
 
     colors: [
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Red Black.jpg" },
-        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Grey Black.jpg" },
-        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Lime Green-Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Royal Blue Black.jpg" }
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Red Black.webp" },
+        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Grey Black.webp" },
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Lime Green-Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS211/IS211-Royal Blue Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS211/IS211-Red Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS211/IS211-Grey Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS211/IS211-Lime Green-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS211/IS211-Royal Blue Black.jpg"
+        "assets/assets/images/products/polyester-bags/IS211/IS211-Red Black.webp",
+        "assets/assets/images/products/polyester-bags/IS211/IS211-Grey Black.webp",
+        "assets/assets/images/products/polyester-bags/IS211/IS211-Lime Green-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS211/IS211-Royal Blue Black.webp"
     ],
 
     specs: {
@@ -14687,23 +14613,23 @@ const products = [{
     imprint: '8"W x 3"H',
     price: 13.77,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS212/IS212-Grey Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS212/IS212-Grey Black.webp",
     description: "The biggest cooler in the Roosevelt family — the Washington holds up to 30 cans inside a heavy-duty 600D polyester shell with foam and PEVA insulation. A zippered main compartment and front pocket provide organized storage, while the top carry handle and adjustable shoulder strap let you move a full load with ease. Ideal for camping trips, big tailgates, beach days, and group outings.",
 
     popular: false,
 
     colors: [
-        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Grey Black.jpg" },
-        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Lime Green Black.jpg" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Red Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Royal Blue Black.jpg" }
+        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Grey Black.webp" },
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Lime Green Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Red Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS212/IS212-Royal Blue Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS212/IS212-Grey Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS212/IS212-Lime Green Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS212/IS212-Red Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS212/IS212-Royal Blue Black.jpg"
+        "assets/assets/images/products/polyester-bags/IS212/IS212-Grey Black.webp",
+        "assets/assets/images/products/polyester-bags/IS212/IS212-Lime Green Black.webp",
+        "assets/assets/images/products/polyester-bags/IS212/IS212-Red Black.webp",
+        "assets/assets/images/products/polyester-bags/IS212/IS212-Royal Blue Black.webp"
     ],
 
     specs: {
@@ -14783,23 +14709,23 @@ const products = [{
     imprint: '8"W x 4"H',
     price: 14.00,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.webp",
     description: "A tall, spacious cooler built for serious outings — the Lincoln holds up to 30 cans inside a rugged 600D polyester shell with foam and PEVA insulation. A zippered main compartment and front pocket keep everything organized, while the top carry handle and adjustable shoulder strap make transport effortless. Great for camping, tailgates, picnics, and group getaways.",
 
     popular: false,
 
     colors: [
-        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.jpg" },
-        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Lime Green Black.jpg" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Red Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Royal Blue Black.jpg" }
+        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.webp" },
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Lime Green Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Red Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS213/IS213-Royal Blue Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS213/IS213-Lime Green Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS213/IS213-Red Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS213/IS213-Royal Blue Black.jpg"
+        "assets/assets/images/products/polyester-bags/IS213/IS213-Grey Black.webp",
+        "assets/assets/images/products/polyester-bags/IS213/IS213-Lime Green Black.webp",
+        "assets/assets/images/products/polyester-bags/IS213/IS213-Red Black.webp",
+        "assets/assets/images/products/polyester-bags/IS213/IS213-Royal Blue Black.webp"
     ],
 
     specs: {
@@ -14879,17 +14805,17 @@ const products = [{
     imprint: '4"W x 4"H',
     price: 8.76,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS22/IS22-Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS22/IS22-Black.webp",
     description: "A versatile 600D polyester duffel with vinyl backing that travels as easily as it holds gear. Features a spacious main compartment with a smooth zipper, a front pocket for quick-access items, short poly web handles for grab-and-go carrying, and a 12–34 inch adjustable/detachable shoulder strap. Ideal for gym bags, overnight trips, sports teams, and promotional travel programs.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS22/IS22-Black.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS22/IS22-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS22/IS22-Black.jpg"
+        "assets/assets/images/products/polyester-bags/IS22/IS22-Black.webp"
     ],
 
     specs: {
@@ -14976,25 +14902,25 @@ const products = [{
     imprint: '4.5"W x 4"H',
     price: 8.28,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.webp",
     description: "A wide-mouth cooler tote built for lunch breaks, picnics, and road trips. The durable 300D/600D polyester exterior wraps 4mm EPE foam and a PEVA lining that holds up to 12 cans. A zippered front pocket keeps small items handy, while 19-inch polyester web handles make it easy to carry. Available in a range of bold two-tone colorways.",
 
     popular: false,
 
     colors: [
-        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.jpg" },
-        { name: "Grey-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Royal Blue.jpg" },
-        { name: "Grey-Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Red.jpg" },
-        { name: "Grey-Orange", hex: "#F97316", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Orange.jpg" },
-        { name: "Grey-Lime Green", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Lime Green.jpg" }
+        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.webp" },
+        { name: "Grey-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Royal Blue.webp" },
+        { name: "Grey-Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Red.webp" },
+        { name: "Grey-Orange", hex: "#F97316", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Orange.webp" },
+        { name: "Grey-Lime Green", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Lime Green.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Royal Blue.jpg",
-        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Red.jpg",
-        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Orange.jpg",
-        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Lime Green.jpg"
+        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.webp",
+        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Royal Blue.webp",
+        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Red.webp",
+        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Orange.webp",
+        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Lime Green.webp"
     ],
 
     specs: {
@@ -15073,23 +14999,23 @@ const products = [{
     imprint: '4"W x 4"H',
     price: 15.81,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.webp",
     description: "Hands-free cooling for the trail, tailgate, and beyond — the Everest backpack cooler holds up to 24 cans inside a rugged 600D polyester shell with 4mm EPE foam and a PEVA lining. A zippered main compartment, zippered front pocket, and mesh side pockets keep your gear organized, while the top carry handle and adjustable shoulder straps let you wear it comfortably wherever the day takes you.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Grey", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.jpg" },
-        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Lime Green Black.jpg" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Royal Blue Black Grey.jpg" }
+        { name: "Black-Grey", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.webp" },
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Lime Green Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Royal Blue Black Grey.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.jpg",
-        "assets/assets/images/products/polyester-bags/IS230/IS230-Lime Green Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS230/IS230-Royal Blue Black Grey.jpg"
+        "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.webp",
+        "assets/assets/images/products/polyester-bags/IS230/IS230-Lime Green Black.webp",
+        "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black.webp",
+        "assets/assets/images/products/polyester-bags/IS230/IS230-Royal Blue Black Grey.webp"
     ],
 
     specs: {
@@ -15169,17 +15095,17 @@ const products = [{
     imprint: '4.5"W x 4.5"H',
     price: 22.87,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.webp",
     description: "Premium hands-free cooling for serious outings — the Essex backpack cooler holds up to 24 cans inside a rugged 600D poly canvas shell with a PEVA lining. Padded adjustable shoulder straps and a single shoulder strap offer multiple carry options, while a zippered main compartment, zippered front pocket, and mesh side pocket keep everything organized. A top carry handle adds grab-and-go convenience.",
 
     popular: false,
 
     colors: [
-        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.jpg" }
+        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.jpg"
+        "assets/assets/images/products/polyester-bags/IS231/IS231-Charcoal.webp"
     ],
 
     specs: {
@@ -15259,17 +15185,17 @@ const products = [{
     imprint: '6"W x 4"H',
     price: 33.44,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.webp",
     description: "One bag, two jobs — the Executive Work/Play Backpack pairs a dedicated top compartment with a fold-over flap and buckle closure for a laptop and daily essentials, plus a fully insulated bottom cooler compartment with zipper closure for food and drinks. A front pocket and mesh side pocket keep smaller items handy, and padded adjustable shoulder straps with a carry handle make it comfortable to haul from office to tailgate and back.",
 
     popular: false,
 
     colors: [
-        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.jpg" }
+        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.jpg"
+        "assets/assets/images/products/polyester-bags/IS232/IS232-Charcoal.webp"
     ],
 
     specs: {
@@ -15349,17 +15275,17 @@ const products = [{
     imprint: '4"W x 4"H',
     price: 18.64,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.webp",
     description: "A compact companion for day trips and hikes — the Hampton backpack cooler holds up to 16 cans inside a 600D poly canvas shell with a PEVA lining. The zippered main compartment, zippered front pocket, and mesh side pocket keep essentials organized, while the top carry handle and adjustable single shoulder strap make it easy to sling over your shoulder and go. Available in a versatile Charcoal finish.",
 
     popular: false,
 
     colors: [
-        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.jpg" }
+        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.jpg"
+        "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.webp"
     ],
 
     specs: {
@@ -15428,97 +15354,7 @@ const products = [{
         artworkCharges: "$75.00 (V) / Hour"
     }
 },
-{
-    id: "is233",
-    name: "Hampton Backpack Cooler",
-    code: "IS233",
-    slug: "hampton-backpack-cooler",
-    category: "Non-Woven Bags",
-    material: "600D Poly Canvas",
-    size: '8.25"W x 12.5"H x 6.25"D',
-    imprint: '4"W x 4"H',
-    price: 18.64,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.jpg",
-    description: "A compact companion for day trips and hikes — the Hampton backpack cooler holds up to 16 cans inside a 600D poly canvas shell with a PEVA lining. The zippered main compartment, zippered front pocket, and mesh side pocket keep essentials organized, while the top carry handle and adjustable single shoulder strap make it easy to sling over your shoulder and go. Available in a versatile Charcoal finish.",
 
-    popular: false,
-
-    colors: [
-        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.jpg" }
-    ],
-
-    images: [
-        "assets/assets/images/products/polyester-bags/IS233/IS233-Charcoal.jpg"
-    ],
-
-    specs: {
-        itemNo: "IS233",
-        gusset: "Bottom: No Side: No",
-        weight: "600D",
-        material: "600D Poly Canvas",
-        handle: "Top Handle + Adjustable Shoulder Strap",
-        decoratedIn: "USA",
-        packagingOptions: [
-            {
-                type: "Printed Large Box",
-                qtyPerBox: "16 pcs",
-                boxWeight: "13 lbs",
-                boxDims: '19" x 13" x 15"'
-            }
-        ]
-    },
-
-    pricing: {
-        spot: {
-            label: "SPOT PRINTING PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000],
-            rows: [
-                { label: "COLOR", prices: ["$21.91", "$21.37", "$20.75", "$20.24", "$19.53"] },
-                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
-                { label: "ADD COLOR", prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
-            ],
-            priceIncludes: "1 Color, 1 Location",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "$37.50 (V)"
-        },
-        transfer: {
-            label: "HEAT TRANSFER PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000],
-            rows: [
-                { label: "COLOR", prices: ["$27.61", "$25.71", "$24.39", "$22.80", "$21.40"] },
-                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
-            ],
-            priceIncludes: "Heat Transfer, 1 Location",
-            leadTime: "7-9 Business Days after art approval",
-            rush: "Yes",
-            imprintArea: '3.5"W x 3.5"H',
-            setupCharge: "$112.50 (V)"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            rows: [
-                { label: "COLOR", prices: ["$18.64"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 1 to 2 Business Days",
-            moq: "No minimums. Can order as little as one piece."
-        }
-    },
-
-     additionalCharges: {
-        setupCharge: "$56.25 (V) - Spot printing",
-        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
-        repeatSetup: "$37.50 (V) - Spot printing",
-        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
-        pmsMatch: "$56.25 (V)",
-        lessThanMinimum: "Call for pricing",
-        colorChangeFee: "$18.75 (V)",
-        sampleProof: "Contact for pricing",
-        artworkCharges: "$75.00 (V) / Hour"
-    }
-},
 {
     id: "is234",
     name: "Adventure Backpack Cooler",
@@ -15530,17 +15366,17 @@ const products = [{
     imprint: '6"W x 3"H',
     price: 14.75,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.webp",
     description: "Lightweight, hands-free cooling for wherever the trail leads. The Adventure backpack cooler holds up to 16 cans inside a 600D polyester shell with foam and PEVA insulation. Adjustable shoulder straps distribute the load comfortably, while a zippered main compartment and mesh side pockets keep your gear close at hand. Perfect for hiking, festivals, day trips, and outdoor promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.jpg" }
+        { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.jpg"
+        "assets/assets/images/products/polyester-bags/IS234/IS234-Charcoal.webp"
     ],
 
     specs: {
@@ -15620,25 +15456,25 @@ const products = [{
     imprint: '4"W x 2"H',
     price: 2.31,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS290/IS290-purple.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS290/IS290-purple.webp",
     description: "Compact, colorful, and ready to chill — this 210D polyester cooler holds up to 6 cans inside a thermal food-safe foil lining that keeps drinks and snacks cold. A zippered main closure and front pocket keep your essentials secure, while 24-inch black web handles make it easy to grab and go. Great for lunches, picnics, beach days, and event giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Purple.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Black.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Navy Blue.jpg" },
-        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Orange.jpg" },
-        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Turquoise.jpg" }
+        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Purple.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Black.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Navy Blue.webp" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Orange.webp" },
+        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/polyester-bags/IS290/IS290-Turquoise.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS290/IS290-Purple.jpg",
-        "assets/assets/images/products/polyester-bags/IS290/IS290-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS290/IS290-Navy Blue.jpg",
-        "assets/assets/images/products/polyester-bags/IS290/IS290-Orange.jpg",
-        "assets/assets/images/products/polyester-bags/IS290/IS290-Turquoise.jpg"
+        "assets/assets/images/products/polyester-bags/IS290/IS290-Purple.webp",
+        "assets/assets/images/products/polyester-bags/IS290/IS290-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS290/IS290-Navy Blue.webp",
+        "assets/assets/images/products/polyester-bags/IS290/IS290-Orange.webp",
+        "assets/assets/images/products/polyester-bags/IS290/IS290-Turquoise.webp"
     ],
 
     specs: {
@@ -15724,25 +15560,25 @@ const products = [{
     imprint: '4"W x 3"H',
     price: 2.21,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS291/IS291-Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS291/IS291-Black.webp",
     description: "A simple, dependable lunch pack built from durable 210D polyester with a thermal food-safe foil lining that keeps meals at the right temperature. The Velcro closure makes access quick and easy, and a front pocket holds napkins, utensils, or small snacks. 12-inch black web handle and full gussets make this the perfect everyday carry for work, school, and picnics.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Black.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Navy Blue.jpg" },
-        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Purple.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Red.jpg" },
-        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Turquoise.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Black.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Navy Blue.webp" },
+        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Purple.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Red.webp" },
+        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/polyester-bags/IS291/IS291-Turquoise.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS291/IS291-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS291/IS291-Navy Blue.jpg",
-        "assets/assets/images/products/polyester-bags/IS291/IS291-Purple.jpg",
-        "assets/assets/images/products/polyester-bags/IS291/IS291-Red.jpg",
-        "assets/assets/images/products/polyester-bags/IS291/IS291-Turquoise.jpg"
+        "assets/assets/images/products/polyester-bags/IS291/IS291-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS291/IS291-Navy Blue.webp",
+        "assets/assets/images/products/polyester-bags/IS291/IS291-Purple.webp",
+        "assets/assets/images/products/polyester-bags/IS291/IS291-Red.webp",
+        "assets/assets/images/products/polyester-bags/IS291/IS291-Turquoise.webp"
     ],
 
     specs: {
@@ -15822,25 +15658,25 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 3.81,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/polyester-bags/IS30/IS30-Black.jpg",
+    image: "assets/assets/images/products/polyester-bags/IS30/IS30-Black.webp",
     description: "A no-nonsense waterproof backpack that keeps your gear dry in any weather. Made from heavy 230D coated polyester with a drawstring cinch closure and fully adjustable rope cord straps, this pack is ideal for gyms, schools, festivals, camping, and outdoor promotions. Available in five versatile colors with a large 10\" x 10\" imprint area on both sides for standout branding.",
 
     popular: false,
 
     colors: [
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Burgundy.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Black.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Royal Blue.jpg" }
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Burgundy.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Black.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS30/IS30-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/polyester-bags/IS30/IS30-Burgundy.jpg",
-        "assets/assets/images/products/polyester-bags/IS30/IS30-Black.jpg",
-        "assets/assets/images/products/polyester-bags/IS30/IS30-Navy Blue.jpg",
-        "assets/assets/images/products/polyester-bags/IS30/IS30-Red.jpg",
-        "assets/assets/images/products/polyester-bags/IS30/IS30-Royal Blue.jpg"
+        "assets/assets/images/products/polyester-bags/IS30/IS30-Burgundy.webp",
+        "assets/assets/images/products/polyester-bags/IS30/IS30-Black.webp",
+        "assets/assets/images/products/polyester-bags/IS30/IS30-Navy Blue.webp",
+        "assets/assets/images/products/polyester-bags/IS30/IS30-Red.webp",
+        "assets/assets/images/products/polyester-bags/IS30/IS30-Royal Blue.webp"
     ],
 
     specs: {
@@ -15927,21 +15763,21 @@ const products = [{
     imprint: '7"W x 7"H',
     price: 5.58,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS398/IS398-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS398/IS398-Black.webp",
     description: "A sleek, stretchy neoprene laptop sleeve that fits most standard laptop sizes and reverses for a fresh look. The soft, protective material cushions your device against bumps and scratches, while a large 7\" x 7\" imprint area on both sides makes it a standout canvas for branding. Ideal for corporate gifting, tech events, university bookstores, and employee welcome kits.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS398/IS398-Black.jpg" },
-        { name: "Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS398/IS398-Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS398/IS398-Red.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS398/IS398-Black.webp" },
+        { name: "Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS398/IS398-Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS398/IS398-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS398/IS398-Black.jpg",
-        "assets/assets/images/products/non-woven/IS398/IS398-Blue.jpg",
-        "assets/assets/images/products/non-woven/IS398/IS398-Red.jpg"
+        "assets/assets/images/products/non-woven/IS398/IS398-Black.webp",
+        "assets/assets/images/products/non-woven/IS398/IS398-Blue.webp",
+        "assets/assets/images/products/non-woven/IS398/IS398-Red.webp"
     ],
 
     specs: {
@@ -15992,9 +15828,11 @@ const products = [{
 
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -16013,17 +15851,17 @@ const products = [{
     imprint: '10"W x 8"H',
     price: 5.22,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS60/IS60-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS60/IS60-Natural.webp",
     description: "A practical 9 oz cotton canvas sling bag that folds down flat and secures with a snap button for easy storage and travel. The 19\" x 13\" x 3\" body offers roomy carrying space, while self-fabric 20-inch handles and a bottom gusset add structure and comfort. Ideal for farmers markets, trade shows, and eco-friendly promotional programs where natural canvas shines.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS60/IS60-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS60/IS60-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS60/IS60-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS60/IS60-Natural.webp"
     ],
 
     specs: {
@@ -16115,35 +15953,35 @@ const products = [{
     imprint: '8"W x 10"H',
     price: 2.88,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS53/IS53-Yellow.jpg",
+    image: "assets/assets/images/products/non-woven/IS53/IS53-Yellow.webp",
     description: "A lightweight, everyday backpack built from durable 210D polyester with a drawstring cinch closure and fully adjustable rope cord straps. A zippered front pocket keeps small essentials secure, while the generous 14\" x 19\" main compartment handles books, gym gear, and travel items with ease. Available in 12 bold colors with a large 8\" x 10\" imprint area on both sides for maximum brand visibility.",
 
     popular: false,
 
     colors: [
-        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS53/IS53-Yellow.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS53/IS53-Black.jpg" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS53/IS53-Burgundy.jpg" },
-        { name: "Green", hex: "#228B22", image: "assets/assets/images/products/non-woven/IS53/IS53-Green.jpg" },
-        { name: "Navy", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS53/IS53-Navy.jpg" },
-        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS53/IS53-Orange.jpg" },
-        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/non-woven/IS53/IS53-Purple.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS53/IS53-Red.jpg" },
-        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS53/IS53-Royal.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS53/IS53-White.jpg" },
+        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS53/IS53-Yellow.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS53/IS53-Black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS53/IS53-Burgundy.webp" },
+        { name: "Green", hex: "#228B22", image: "assets/assets/images/products/non-woven/IS53/IS53-Green.webp" },
+        { name: "Navy", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS53/IS53-Navy.webp" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS53/IS53-Orange.webp" },
+        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/non-woven/IS53/IS53-Purple.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS53/IS53-Red.webp" },
+        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS53/IS53-Royal.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS53/IS53-White.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS53/IS53-Yellow.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Black.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Green.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Navy.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Orange.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Purple.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Red.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-Royal.jpg",
-        "assets/assets/images/products/non-woven/IS53/IS53-White.jpg",
+        "assets/assets/images/products/non-woven/IS53/IS53-Yellow.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Black.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Green.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Navy.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Orange.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Purple.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Red.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-Royal.webp",
+        "assets/assets/images/products/non-woven/IS53/IS53-White.webp",
     ],
 
     specs: {
@@ -16235,17 +16073,17 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 4.52,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS55/IS55-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS55/IS55-Natural.webp",
     description: "Built to carry it all — this heavy 12 oz cotton canvas grocery bag handles everything from weekly shopping trips to farmer's market hauls. Full side and bottom gussets expand the 15\" x 18\" x 6\" body for maximum capacity, while 21-inch self-fabric handles and reinforced stress points ensure it lasts through years of use. A 10\" x 10\" imprint area on both sides makes it a premium canvas for branding.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS55/IS55-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS55/IS55-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS55/IS55-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS55/IS55-Natural.webp"
     ],
 
     specs: {
@@ -16577,19 +16415,19 @@ const products = [{
     imprint: '8"W x 6"H',
     price: 1.27,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.webp",
     description: "A lightweight 80 GSM non-woven drawstring bag built for everyday carry. Reinforced corners with metal grommets anchor the rope cord closure for lasting durability, while the 13\" x 16.3\" body offers plenty of room for gym gear, books, and promotional items. A practical, budget-friendly choice for schools, events, gyms, and giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Heather Grey-Black", hex: "#A9A9A9", image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.jpg" },
-        { name: "Heather Grey-Blue", hex: "#2b3f7a", image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Blue.jpg" }
+        { name: "Heather Grey-Black", hex: "#A9A9A9", image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.webp" },
+        { name: "Heather Grey-Blue", hex: "#2b3f7a", image: "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.jpg",
-        "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Blue.jpg"
+        "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Black.webp",
+        "assets/assets/images/products/non-woven/IS109/IS109-Heather Grey-Blue.webp"
     ],
 
     specs: {
@@ -16676,23 +16514,23 @@ const products = [{
     imprint: '7"W x 8"H',
     price: 4.97, // ← Blank price confirm kar
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS110/IS110-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS110/IS110-Black.webp",
     description: "An eco-conscious drawstring bag made from 600D RPET with a durable PU coating. The rope cord closure and roomy 13\" x 16.5\" body make it ideal for gyms, schools, travel, and outdoor promotions, while the recycled material story adds genuine sustainability value to your brand. Available in four versatile colors.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS110/IS110-Black.jpg" },
-        { name: "Green", hex: "#228B22", image: "assets/assets/images/products/non-woven/IS110/IS110-Green.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS110/IS110-Grey.jpg" },
-        { name: "Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS110/IS110-Blue.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS110/IS110-Black.webp" },
+        { name: "Green", hex: "#228B22", image: "assets/assets/images/products/non-woven/IS110/IS110-Green.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS110/IS110-Grey.webp" },
+        { name: "Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS110/IS110-Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS110/IS110-Black.jpg",
-        "assets/assets/images/products/non-woven/IS110/IS110-Green.jpg",
-        "assets/assets/images/products/non-woven/IS110/IS110-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS110/IS110-Blue.jpg"
+        "assets/assets/images/products/non-woven/IS110/IS110-Black.webp",
+        "assets/assets/images/products/non-woven/IS110/IS110-Green.webp",
+        "assets/assets/images/products/non-woven/IS110/IS110-Grey.webp",
+        "assets/assets/images/products/non-woven/IS110/IS110-Blue.webp"
     ],
 
     specs: {
@@ -16774,25 +16612,25 @@ const products = [{
     imprint: '8"W x 9"H',
     price: 3.98,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.webp",
     description: "A sturdy 12 oz cotton canvas book tote built to handle heavy loads with ease. Full side and bottom gussets expand the 11\" x 14\" x 5\" body for books, groceries, or daily essentials, while a 22-inch self-handle shoulder strap makes it comfortable to carry. Ideal for bookstores, universities, libraries, and everyday promotional use.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS11/IS11-Black.jpg" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/tote-bags/IS11/IS11-Burgundy.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS11/IS11-Navy Blue.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS11/IS11-White.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS11/IS11-Black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/tote-bags/IS11/IS11-Burgundy.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS11/IS11-Natural.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS11/IS11-Navy Blue.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS11/IS11-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS11/IS11-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS11/IS11-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS11/IS11-Burgundy.jpg",
-        "assets/assets/images/products/tote-bags/IS11/IS11-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS11/IS11-White.jpg"
+        "assets/assets/images/products/tote-bags/IS11/IS11-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS11/IS11-Black.webp",
+        "assets/assets/images/products/tote-bags/IS11/IS11-Burgundy.webp",
+        "assets/assets/images/products/tote-bags/IS11/IS11-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS11/IS11-White.webp"
     ],
 
     specs: {
@@ -16881,17 +16719,17 @@ const products = [{
     imprint: '8"W x 5"H',
     price: 13.02,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS12/IS12-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS12/IS12-Natural.webp",
     description: "A statement tote that blends style with everyday function. This 14 oz cotton canvas bag features heavy cotton rope handles, a top zipper closure, and an interior pocket with red piping detailing for a refined finish. The bottom gusset adds structure and capacity. Perfect for retail, boutique giveaways, farmer's markets, and premium promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS12/IS12-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS12/IS12-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS12/IS12-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS12/IS12-Natural.webp"
     ],
 
     specs: {
@@ -16977,27 +16815,27 @@ const products = [{
     imprint: '7"W x 8"H',
     price: 2.58,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.webp",
     description: "A lightweight 7 oz cotton canvas grocery bag with full side and bottom gussets for maximum capacity. Contrasting colored cotton web handles add a vibrant pop against the natural canvas body, making this an easy choice for grocery chains, farmers markets, and eco-friendly promotional campaigns. Sized at 10\" x 14\" x 5\" with 20-inch handles for comfortable carry.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.jpg" },
-        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Hunter Green.jpg" },
-        { name: "Natural-Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Kelly Green.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Red.jpg" },
-        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Royal Blue.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.webp" },
+        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Hunter Green.webp" },
+        { name: "Natural-Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Kelly Green.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Red.webp" },
+        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Hunter Green.jpg",
-        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Kelly Green.jpg",
-        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Royal Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Hunter Green.webp",
+        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Kelly Green.webp",
+        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Red.webp",
+        "assets/assets/images/products/tote-bags/IS122/IS122-Natural-Royal Blue.webp"
     ],
 
     specs: {
@@ -17083,19 +16921,19 @@ const products = [{
     imprint: '4.5"W x 4"H',
     price: 1.38,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS130/IS130-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS130/IS130-Natural.webp",
     description: "A compact 10 oz cotton canvas cosmetic pouch with a matching top zipper closure and a slim bottom gusset that keeps contents flat and organized. Sized at 9\" x 5.5\" x 0.75\", it's perfect for cosmetics, pencils, cables, and small accessories. An ideal add-on for beauty brands, event welcome kits, and everyday promotional giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS130/IS130-Black.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS130/IS130-Natural.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS130/IS130-Black.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS130/IS130-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS130/IS130-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS130/IS130-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS130/IS130-Black.webp",
+        "assets/assets/images/products/tote-bags/IS130/IS130-Natural.webp"
     ],
 
     specs: {
@@ -17184,27 +17022,27 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 1.78,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS131/IS131-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS131/IS131-Natural.webp",
     description: "Our bestselling convention tote, reimagined in a lighter 4 oz cotton canvas. The generous 15\" x 16\" body with 24-inch self handles offers plenty of room for books, swag, and trade show materials, while a large 10\" x 10\" imprint area on both sides maximizes brand visibility. Lightweight for easy transport, durable for repeat use — a classic choice for conferences, universities, and corporate events.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS131/IS131-Black.jpg" },
-        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/tote-bags/IS131/IS131-Lime Green.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS131/IS131-Natural.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS131/IS131-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS131/IS131-Red.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS131/IS131-White.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS131/IS131-Black.webp" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/tote-bags/IS131/IS131-Lime Green.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS131/IS131-Natural.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS131/IS131-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS131/IS131-Red.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS131/IS131-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS131/IS131-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS131/IS131-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS131/IS131-Lime Green.jpg",
-        "assets/assets/images/products/tote-bags/IS131/IS131-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS131/IS131-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS131/IS131-White.jpg"
+        "assets/assets/images/products/tote-bags/IS131/IS131-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS131/IS131-Black.webp",
+        "assets/assets/images/products/tote-bags/IS131/IS131-Lime Green.webp",
+        "assets/assets/images/products/tote-bags/IS131/IS131-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS131/IS131-Red.webp",
+        "assets/assets/images/products/tote-bags/IS131/IS131-White.webp"
     ],
 
     specs: {
@@ -17293,23 +17131,23 @@ const products = [{
     imprint: '10"W x 8"H',
     price: 6.18,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.jpg",
+    image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.webp",
     description: "A stylish 12 oz cotton canvas boat bag with a two-tone striped design and self-colored handles. The bottom gusset expands the 16\" x 14.5\" x 4\" body for real carrying capacity, while 26-inch handles make it comfortable to shoulder. Perfect for boutique retail, weekend travel, nautical-themed promotions, and premium giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Green", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Red.jpg" },
-        { name: "Natural-Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Black.jpg" }
+        { name: "Natural-Green", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Red.webp" },
+        { name: "Natural-Black", hex: "#000000", image: "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.jpg",
-        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Black.jpg"
+        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Green.webp",
+        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Red.webp",
+        "assets/assets/images/products/tote-bags/IS133/IS133-Natural-Black.webp"
     ],
 
     specs: {
@@ -17395,29 +17233,29 @@ const products = [{
     imprint: '4.5"W x 3"H',
     price: 5.48,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS136/IS136-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS136/IS136-Black.webp",
     description: "A compact, hands-free crossbody pouch made from durable 230D polyester with an adjustable 1.5-inch web belt that fits up to a 40-inch waist. A zippered main compartment plus a rear zippered pocket keep small essentials organized and secure. Ideal for festivals, travel, hikes, theme parks, and on-the-go promotional programs where hands-free convenience matters.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS136/IS136-Black.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS136/IS136-Grey.jpg" },
-        { name: "Light Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS136/IS136-Light Blue.jpg" },
-        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS136/IS136-Lime Green.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS136/IS136-Navy Blue.jpg" },
-        { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/non-woven/IS136/IS136-Pink.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS136/IS136-Royal Blue.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS136/IS136-Black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS136/IS136-Grey.webp" },
+        { name: "Light Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS136/IS136-Light Blue.webp" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS136/IS136-Lime Green.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS136/IS136-Navy Blue.webp" },
+        { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/non-woven/IS136/IS136-Pink.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS136/IS136-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS136/IS136-Black.jpg",
-        "assets/assets/images/products/non-woven/IS136/IS136-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS136/IS136-Light Blue.jpg",
-        "assets/assets/images/products/non-woven/IS136/IS136-Lime Green.jpg",
-        "assets/assets/images/products/non-woven/IS136/IS136-Navy Blue.jpg",
-        "assets/assets/images/products/non-woven/IS136/IS136-Pink.jpg",
-        "assets/assets/images/products/non-woven/IS136/IS136-Royal Blue.jpg"
+        "assets/assets/images/products/non-woven/IS136/IS136-Black.webp",
+        "assets/assets/images/products/non-woven/IS136/IS136-Grey.webp",
+        "assets/assets/images/products/non-woven/IS136/IS136-Light Blue.webp",
+        "assets/assets/images/products/non-woven/IS136/IS136-Lime Green.webp",
+        "assets/assets/images/products/non-woven/IS136/IS136-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS136/IS136-Pink.webp",
+        "assets/assets/images/products/non-woven/IS136/IS136-Royal Blue.webp"
     ],
 
     specs: {
@@ -17503,25 +17341,25 @@ const products = [{
     imprint: '4"W x 6"H',
     price: 6.38,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.jpg",
+    image: "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.webp",
     description: "A no-nonsense 600D/210D polyester backpack built for everyday hauling. Adjustable padded shoulder straps and a top web carry handle offer multiple carry options, while a zippered main compartment and front zippered pocket keep gear organized. An affordable, durable choice for schools, gyms, team giveaways, and travel promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS137/IS137-Black.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS137/IS137-Grey.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS137/IS137-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS137/IS137-Royal Blue.jpg" },
+        { name: "Turquoise", hex: "#40E0D0", image: "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS137/IS137-Black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS137/IS137-Grey.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS137/IS137-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS137/IS137-Royal Blue.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.jpg",
-        "assets/assets/images/products/non-woven/IS137/IS137-Black.jpg",
-        "assets/assets/images/products/non-woven/IS137/IS137-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS137/IS137-Red.jpg",
-        "assets/assets/images/products/non-woven/IS137/IS137-Royal Blue.jpg",
+        "assets/assets/images/products/non-woven/IS137/IS137-Turquoise.webp",
+        "assets/assets/images/products/non-woven/IS137/IS137-Black.webp",
+        "assets/assets/images/products/non-woven/IS137/IS137-Grey.webp",
+        "assets/assets/images/products/non-woven/IS137/IS137-Red.webp",
+        "assets/assets/images/products/non-woven/IS137/IS137-Royal Blue.webp",
     ],
 
     specs: {
@@ -17608,25 +17446,25 @@ const products = [{
     imprint: '14"W x 9"H',
     price: 6.98,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS138/IS138-Navy Blue.jpg",
+    image: "assets/assets/images/products/tote-bags/IS138/IS138-Grey.webp",
     description: "Oversized and built to carry it all — this 10 oz cotton canvas tote features a full 27\" x 16\" x 8\" body with a bottom gusset that expands to hold groceries, laundry, beach gear, and more. Reinforced cotton web handles with X-stitch detailing provide extra strength at stress points. A 14\" x 9\" imprint area on both sides offers maximum branding space. Perfect for retail, farmer's markets, and heavy-duty promotional use.",
 
     popular: false,
 
     colors: [
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS138/IS138-Navy Blue.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS138/IS138-Black.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS138/IS138-Grey.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS138/IS138-Natural.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS138/IS138-White.jpg" }
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS138/IS138-Navy Blue.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS138/IS138-Black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS138/IS138-Grey.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS138/IS138-Natural.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS138/IS138-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS138/IS138-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS138/IS138-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS138/IS138-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS138/IS138-Grey.jpg",
-        "assets/assets/images/products/tote-bags/IS138/IS138-White.jpg"
+        "assets/assets/images/products/tote-bags/IS138/IS138-Grey.webp",
+        "assets/assets/images/products/tote-bags/IS138/IS138-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS138/IS138-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS138/IS138-Black.webp",
+        "assets/assets/images/products/tote-bags/IS138/IS138-White.webp"
     ],
 
     specs: {
@@ -17715,23 +17553,23 @@ const products = [{
     imprint: '4"W x 3"H',
     price: 12.58,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.webp",
     description: "A premium yacht club tote crafted from heavy 24 oz cotton canvas for exceptional durability. Self-contrasting handles and a front pocket add a classic nautical touch, while the 15\" x 12\" x 5\" body with bottom gusset offers real everyday capacity. Ideal for yacht clubs, marina shops, boutique retail, and premium coastal-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.jpg" },
-        { name: "Natural-Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Green.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Red.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.webp" },
+        { name: "Natural-Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Green.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Green.jpg",
-        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Green.webp",
+        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS139/IS139-Natural-Red.webp"
     ],
 
     specs: {
@@ -17812,23 +17650,23 @@ const products = [{
     imprint: '6"W x 4"H',
     price: 14.58,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.webp",
     description: "The mid-size version of our premium yacht club tote, crafted from heavy 24 oz cotton canvas. Self-contrasting handles and a front pocket add a classic nautical touch, while the 20.5\" x 13\" x 6.7\" body with bottom gusset offers generous everyday capacity. 26.8-inch handles provide comfortable shoulder carrying. Ideal for yacht clubs, marina shops, boutique retail, and premium coastal-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.jpg" },
-        { name: "Natural-Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Green.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Red.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.webp" },
+        { name: "Natural-Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Green.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Green.jpg",
-        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Green.webp",
+        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS140/IS140-Natural-Red.webp"
     ],
 
     specs: {
@@ -17915,23 +17753,23 @@ const products = [{
     imprint: '6"W x 5"H',
     price: 19.11,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.jpg",
+    image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.webp",
     description: "The largest of our premium yacht club totes, crafted from heavy 24 oz cotton canvas. Self-contrasting handles, a front pocket, and a top zippered closure with metal pull combine practical function with classic nautical style. The generous 24\" x 14.17\" x 6.7\" body with bottom gusset handles everything from beach gear to groceries. Ideal for yacht clubs, marina shops, boutique retail, and premium coastal-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.jpg" },
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Black.jpg" },
-        { name: "Natural-Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Green.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Navy Blue.jpg" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.webp" },
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Black.webp" },
+        { name: "Natural-Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Green.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Navy Blue.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Green.jpg",
-        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Navy Blue.jpg",
+        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Red.webp",
+        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Green.webp",
+        "assets/assets/images/products/tote-bags/IS141/IS141-Natural-Navy Blue.webp",
     ],
 
     specs: {
@@ -18017,17 +17855,17 @@ const products = [{
     imprint: '10"W x 8"H',
     price: 7.32,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.webp",
     description: "A classic 12 oz natural cotton canvas tote elevated by stylish brown faux leather handles. The 16\" x 13\" x 5\" body with bottom gusset offers real capacity for books, groceries, and daily essentials, while 22-inch handles make it comfortable to shoulder. The wide 10\" x 8\" imprint area on both sides gives branding plenty of room to shine. Ideal for boutique retail, hotel gifts, corporate welcome kits, and elevated promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS13/IS13-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS13/IS13-Natural.webp"
     ],
 
     specs: {
@@ -18092,9 +17930,10 @@ const products = [{
     },
 
     additionalCharges: {
-        setupCharge: "$56.25-Spot Printing (V)",
-        setupChargeTransfer: "$112.50-Heat Transfer (V)",
-        repeatSetup: "$37.50 (V)",
+        setupCharge: "$56.25 (V) - Spot printing",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -18114,21 +17953,21 @@ const products = [{
     imprint: '6"W x 4"H',
     price: 18.38,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.jpg",
+    image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.webp",
     description: "A statement tote that means business — the Commander pairs heavy 24 oz cotton canvas with a contrasting bottom color and striped web handles for a bold, nautical look. A front pocket and top zippered closure with metal pull keep contents secure, while the generous 24\" x 14.17\" x 6.7\" body with bottom gusset handles it all. Ideal for yacht clubs, coastal retail, premium corporate gifts, and elevated promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Navy Blue-Red", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS142/IS142-Natural-Navy Blue-Red.jpg" },
-        { name: "Navy Blue-Red-White", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.jpg" },
-        { name: "Navy-Royal-White", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy-Royal-White.jpg" }
+        { name: "Natural-Navy Blue-Red", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS142/IS142-Natural-Navy Blue-Red.webp" },
+        { name: "Navy Blue-Red-White", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.webp" },
+        { name: "Navy-Royal-White", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS142/IS142-Navy-Royal-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS142/IS142-Natural-Navy Blue-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.jpg",
-        "assets/assets/images/products/tote-bags/IS142/IS142-Navy-Royal-White.jpg"
+        "assets/assets/images/products/tote-bags/IS142/IS142-Natural-Navy Blue-Red.webp",
+        "assets/assets/images/products/tote-bags/IS142/IS142-Navy Blue-Red-White.webp",
+        "assets/assets/images/products/tote-bags/IS142/IS142-Navy-Royal-White.webp"
     ],
 
     specs: {
@@ -18214,23 +18053,23 @@ const products = [{
     imprint: '8"W x 9"H',
     price: 2.67,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.jpg",
+    image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.webp",
     description: "A classic 10 oz natural cotton canvas tote with contrasting colored poly web handles that add a pop of personality. Sized at 14\" x 14\", it's the perfect carry-all for books, groceries, and promotional giveaways. The 12-inch handles and large 8\" x 9\" imprint area on both sides make this a versatile blank canvas for your brand.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.jpg" },
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Black.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Red.jpg" },
-        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Royal Blue.jpg" }
+        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.webp" },
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Black.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Red.webp" },
+        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.jpg",
-        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Royal Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Hunter Green.webp",
+        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Red.webp",
+        "assets/assets/images/products/tote-bags/IS14/IS14-Natural-Royal Blue.webp"
     ],
 
     specs: {
@@ -18317,23 +18156,23 @@ const products = [{
     imprint: '6"W x 4"H',
     price: 14.23,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS143/IS143-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS143/IS143-Natural.webp",
     description: "A mid-sized admiral tote built from heavy 24 oz cotton canvas for serious durability. The front pocket keeps essentials handy, while the 20.5\" x 13\" x 6.7\" body with bottom gusset offers generous everyday capacity. 27-inch self handles provide comfortable shoulder carrying. Ideal for yacht clubs, marina shops, boutique retail, and premium coastal-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS143/IS143-Black.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS143/IS143-Natural.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS143/IS143-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS143/IS143-Red.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS143/IS143-Black.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS143/IS143-Natural.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS143/IS143-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS143/IS143-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS143/IS143-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS143/IS143-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS143/IS143-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS143/IS143-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS143/IS143-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS143/IS143-Black.webp",
+        "assets/assets/images/products/tote-bags/IS143/IS143-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS143/IS143-Red.webp"
     ],
 
     specs: {
@@ -18423,21 +18262,21 @@ const products = [{
     imprint: '6"W x 5"H',
     price: 16.69,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.webp",
     description: "The largest of our premium Admiral totes, built from heavy 24 oz cotton canvas for lasting durability. A front pocket and top zippered closure with metal pull keep contents secure and organized. The generous 24\" x 14\" x 6.7\" body with bottom gusset handles everything from beach gear to groceries. 27.5-inch self handles provide comfortable shoulder carrying. Ideal for yacht clubs, marina shops, boutique retail, and premium coastal-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS144/IS144-Black.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS144/IS144-Navy Blue.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS144/IS144-Black.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS144/IS144-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS144/IS144-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS144/IS144-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS144/IS144-Navy Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS144/IS144-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS144/IS144-Black.webp",
+        "assets/assets/images/products/tote-bags/IS144/IS144-Navy Blue.webp"
     ],
 
     specs: {
@@ -18515,109 +18354,7 @@ const products = [{
         artworkCharges: "$75.00 (V) / Hour"
     }
 },
-{
-    id: "is144",
-    name: "Admiral Tote (Lg)",
-    code: "IS144",
-    slug: "admiral-tote-lg",
-    category: "Tote Bags",
-    material: "24 oz Cotton Canvas",
-    size: '24"W x 14"H x 6.7"D',
-    imprint: '6"W x 5"H',
-    price: 16.69,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.jpg",
-    description: "The largest of our premium Admiral totes, built from heavy 24 oz cotton canvas for lasting durability. A front pocket and top zippered closure with metal pull keep contents secure and organized. The generous 24\" x 14\" x 6.7\" body with bottom gusset handles everything from beach gear to groceries. 27.5-inch self handles provide comfortable shoulder carrying. Ideal for yacht clubs, marina shops, boutique retail, and premium coastal-themed promotions.",
 
-    popular: false,
-
-    colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS144/IS144-Black.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS144/IS144-Natural.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS144/IS144-Navy Blue.jpg" }
-    ],
-
-    images: [
-        "assets/assets/images/products/tote-bags/IS144/IS144-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS144/IS144-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS144/IS144-Navy Blue.jpg"
-    ],
-
-    specs: {
-        itemNo: "IS144",
-        gusset: "Bottom: Yes Side: No",
-        weight: "24 OZ",
-        material: "Cotton Canvas",
-        handle: '27.5" Self Handle',
-        packagingOptions: [
-            {
-                type: "Printed Large Box",
-                qtyPerBox: "25 pcs",
-                boxWeight: "47 lbs",
-                boxDims: '27" x 15" x 15"'
-            },
-            {
-                type: "Printed Medium Box",
-                qtyPerBox: "15 pcs",
-                boxWeight: "26 lbs",
-                boxDims: '27" x 15" x 9"'
-            }
-        ]
-    },
-
-    pricing: {
-        spot: {
-            label: "SPOT PRINTING PRICING (USD)",
-            quantities: [6, 12, 25, 50, 150],
-            rows: [
-                { label: "NATURAL", prices: ["$20.04", "$19.94", "$19.84", "$19.74", "$19.64"] },
-                { label: "COLOR", prices: ["$23.40", "$23.30", "$23.20", "$23.10", "$23.00"] },
-                { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
-                { label: "ADD COLOR", prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
-            ],
-            priceIncludes: "1 Color, 1 Location",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "$37.50 (V)"
-        },
-        transfer: {
-            label: "HEAT TRANSFER PRICING (USD)",
-            quantities: [6, 12, 25, 50, 150],
-            rows: [
-                { label: "NATURAL", prices: ["$21.50", "$21.40", "$21.30", "$21.20", "$21.10"] },
-                { label: "COLOR", prices: ["$24.86", "$24.76", "$24.66", "$24.56", "$24.46"] },
-                { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
-            ],
-            priceIncludes: "Heat Transfer, 1 Location",
-            leadTime: "7-9 Business Days after art approval",
-            rush: "Yes",
-            imprintArea: '5.5"W x 4.5"H',
-            setupCharge: "$112.50 (V)"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            rows: [
-                { label: "NATURAL", prices: ["$16.69"] },
-                { label: "COLOR", prices: ["$20.04"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 1 to 2 Business Days",
-            moq: "No minimums. Can order as little as one piece."
-        }
-    },
-
-     additionalCharges: {
-        setupCharge: "$56.25 (V) - Spot printing",
-        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
-        repeatSetup: "$37.50 (V) - Spot printing",
-        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
-        pmsMatch: "$56.25 (V)",
-        lessThanMinimum: "Call for pricing",
-        colorChangeFee: "$18.75 (V)",
-        sampleProof: "Contact for pricing",
-        artworkCharges: "$75.00 (V) / Hour"
-    }
-},
 {
     id: "is145",
     name: "Anchor Tote",
@@ -18630,23 +18367,23 @@ const products = [{
     imprint: '6"W x 5"H',
     price: 17.15,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.webp",
     description: "A sturdy 18 oz cotton canvas anchor tote with a front pocket and top zippered closure with metal pull for secure carrying. The generous 24\" x 14\" x 6.7\" body with bottom gusset handles a full load with ease, while 27-inch self handles provide comfortable shoulder carry. Ideal for yacht clubs, marina shops, coastal retail, and premium nautical-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Navy Blue.jpg" },
-        { name: "Natural-Pink", hex: "#EC4899", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Pink.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Red.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Navy Blue.webp" },
+        { name: "Natural-Pink", hex: "#EC4899", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Pink.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Pink.jpg",
-        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Pink.webp",
+        "assets/assets/images/products/tote-bags/IS145/IS145-Natural-Red.webp"
     ],
 
     specs: {
@@ -18733,19 +18470,19 @@ const products = [{
     imprint: '10"W x 3.5"H',
     price: 9.60,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.webp",
     description: "A classic sailing tote crafted from 16 oz cotton canvas with authentic rope handles and rust-free metal ring grommets. The 18\" x 13\" x 6.6\" body with bottom gusset handles a full load of groceries, beach gear, or weekend essentials, while the wide 10\" x 3.5\" imprint area showcases branding front and center. Ideal for yacht clubs, marinas, coastal retail, and nautical-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Navy Blue.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Navy Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS146/IS146-Natural-Navy Blue.webp"
     ],
 
     specs: {
@@ -18832,21 +18569,21 @@ const products = [{
     imprint: '8"W x 4"H',
     price: 12.44,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.jpg",
+    image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.webp",
     description: "A refined everyday tote crafted from heavy 18 oz cotton canvas with vegan leather handles and metal rivet detailing for a premium finish. The 15.75\" x 12\" x 4.5\" body with bottom gusset offers real capacity for books, groceries, and daily essentials. The 20.5-inch handles provide comfortable shoulder carry. Ideal for boutique retail, hotel gifts, corporate welcome kits, and elevated promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.jpg" },
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Black.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Navy Blue.jpg" }
+        { name: "Natural-Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.webp" },
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Black.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.jpg",
-        "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Navy Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Grey.webp",
+        "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS147/IS147-Natural-Navy Blue.webp"
     ],
 
     specs: {
@@ -18933,21 +18670,21 @@ const products = [{
     imprint: '11"W x 5"H',
     price: 14.54,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.webp",
     description: "A larger version of our bestselling classic leather handle tote, crafted from heavy 18 oz cotton canvas with vegan leather handles and metal rivet detailing for a premium finish. The 20.5\" x 13\" x 6.7\" body with bottom gusset offers generous capacity for travel, shopping, and daily essentials. The 27-inch handles provide comfortable shoulder carry. Ideal for boutique retail, hotel gifts, corporate welcome kits, and elevated promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.jpg" },
-        { name: "Natural-Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Grey.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Navy Blue.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.webp" },
+        { name: "Natural-Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Grey.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Grey.jpg",
-        "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Navy Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Grey.webp",
+        "assets/assets/images/products/tote-bags/IS148/IS148-Natural-Navy Blue.webp"
     ],
 
     specs: {
@@ -19034,17 +18771,17 @@ const products = [{
     imprint: '4.5"W x 7"H',
     price: 20.67,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.jpg",
+    image: "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.webp",
     description: "The ultimate oversized carry-all — this premium tote is crafted from heavy 24 oz cotton canvas with a top zippered closure and an interior pocket with snap closure for secure organization. The massive 28\" x 15\" x 9.5\" body with bottom gusset handles groceries, beach gear, travel essentials, and more. 25.5-inch self handles make shoulder carry comfortable. Ideal for premium retail, resorts, corporate gifts, and luxury promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.jpg" }
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS149/IS149-Natural-Navy Blue.webp"
     ],
 
     specs: {
@@ -19130,29 +18867,29 @@ const products = [{
     imprint: '10"W x 8"H',
     price: 3.87,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.webp",
     description: "A classic 12 oz natural cotton canvas tote with contrasting colored poly web handles that add a pop of personality. Full side and bottom gussets expand the 15\" x 16\" x 4\" body for serious capacity, while 24-inch handles make it comfortable to shoulder. Perfect for grocery runs, retail, universities, and everyday promotional use.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.jpg" },
-        { name: "Natural-Burgundy", hex: "#800020", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Burgundy.jpg" },
-        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Hunter Green.jpg" },
-        { name: "Natural-Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Natural.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Red.jpg" },
-        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Royal Blue.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.webp" },
+        { name: "Natural-Burgundy", hex: "#800020", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Burgundy.webp" },
+        { name: "Natural-Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Hunter Green.webp" },
+        { name: "Natural-Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Natural.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Red.webp" },
+        { name: "Natural-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Royal Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Burgundy.jpg",
-        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Hunter Green.jpg",
-        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Red.jpg",
-        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Royal Blue.jpg"
+        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Burgundy.webp",
+        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Hunter Green.webp",
+        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Red.webp",
+        "assets/assets/images/products/tote-bags/IS15/IS15-Natural-Royal Blue.webp"
     ],
 
     specs: {
@@ -19239,17 +18976,17 @@ const products = [{
     imprint: '14"W x 6"H',
     price: 13.36,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.webp",
     description: "A relaxed, roomy 14 oz cotton canvas island tote with an interior snap-close pocket for keeping small essentials secure. The 21\" x 13\" x 6\" body with bottom gusset holds a full day's worth of gear — beach towels, groceries, or travel must-haves — while 17.3-inch self handles provide comfortable shoulder carry. The wide 14\" x 6\" imprint area showcases logos beautifully. Ideal for resorts, coastal retail, vacation giveaways, and summer promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.jpg"
+        "assets/assets/images/products/tote-bags/IS150/IS150-Natural-Black.webp"
     ],
 
     specs: {
@@ -19335,35 +19072,35 @@ const products = [{
     imprint: '5"W x 6"H',
     price: 2.10,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.jpg",
+    image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.webp",
     description: "A roomy 80 GSM non-woven boat tote with a sporty color-block design. Contrasting accents on the bottom and straps add a nautical touch, while a front slip pocket keeps essentials handy. Reinforced 26-inch self-handles and a large 18\" x 15\" x 6\" body make it perfect for boat days, beach trips, farmer's markets, and retail promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS111/IS111-Black.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS111/IS111-Grey.jpg" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS111/IS111-Hunter Green.jpg" },
-        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS111/IS111-Lime Green.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS111/IS111-Navy Blue.jpg" },
-        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS111/IS111-Orange.jpg" },
-        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/non-woven/IS111/IS111-Purple.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS111/IS111-Red.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS111/IS111-White.jpg" }
+        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS111/IS111-Teal.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS111/IS111-Black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS111/IS111-Grey.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS111/IS111-Hunter Green.webp" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS111/IS111-Lime Green.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS111/IS111-Navy Blue.webp" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS111/IS111-Orange.webp" },
+        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/non-woven/IS111/IS111-Purple.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS111/IS111-Red.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS111/IS111-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS111/IS111-Teal.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Black.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Hunter Green.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Lime Green.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Navy Blue.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Orange.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Purple.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-Red.jpg",
-        "assets/assets/images/products/non-woven/IS111/IS111-White.jpg"
+        "assets/assets/images/products/non-woven/IS111/IS111-Teal.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Black.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Grey.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Hunter Green.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Lime Green.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Orange.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Purple.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-Red.webp",
+        "assets/assets/images/products/non-woven/IS111/IS111-White.webp"
     ],
 
     specs: {
@@ -19450,27 +19187,27 @@ const products = [{
     imprint: '7"W x 5"H',
     price: 2.13,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.jpg",
+    image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.webp",
     description: "A practical, lightweight apron made from 80 GSM non-woven polypropylene with a comfortable 19-inch neck strap and 24.5-inch adjustable waist ties. Two connected 6-inch-deep front pockets keep tools, pens, and small essentials within easy reach. Ideal for cooking classes, craft events, retail staff, vendor shows, and promotional giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS112/IS112-Black.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/non-woven/IS112/IS112-Natural.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS112/IS112-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS112/IS112-Red.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS112/IS112-White.jpg" }
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS112/IS112-Black.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/non-woven/IS112/IS112-Natural.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS112/IS112-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS112/IS112-Red.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS112/IS112-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.jpg",
-        "assets/assets/images/products/non-woven/IS112/IS112-Black.jpg",
-        "assets/assets/images/products/non-woven/IS112/IS112-Natural.jpg",
-        "assets/assets/images/products/non-woven/IS112/IS112-Navy Blue.jpg",
-        "assets/assets/images/products/non-woven/IS112/IS112-Red.jpg",
-        "assets/assets/images/products/non-woven/IS112/IS112-White.jpg"
+        "assets/assets/images/products/non-woven/IS112/IS112-Hunter Green.webp",
+        "assets/assets/images/products/non-woven/IS112/IS112-Black.webp",
+        "assets/assets/images/products/non-woven/IS112/IS112-Natural.webp",
+        "assets/assets/images/products/non-woven/IS112/IS112-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS112/IS112-Red.webp",
+        "assets/assets/images/products/non-woven/IS112/IS112-White.webp"
     ],
 
     specs: {
@@ -19557,17 +19294,17 @@ const products = [{
     imprint: '7"W x 4.5"H',
     price: 7.78,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS115/IS115-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS115/IS115-Black.webp",
     description: "A dependable 600D polyester backpack built for daily use. Adjustable padded shoulder straps and a top carry handle make it comfortable to haul, while a zippered main compartment and zippered front pocket keep everything organized. Full side and bottom gussets add capacity for books, gym gear, or travel essentials. Great for schools, corporate giveaways, and outdoor promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS115/IS115-Black.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS115/IS115-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS115/IS115-Black.jpg"
+        "assets/assets/images/products/non-woven/IS115/IS115-Black.webp"
     ],
 
     specs: {
@@ -19654,21 +19391,21 @@ const products = [{
     imprint: '2.5"W x 4.5"H',
     price: 12.57,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.jpg",
+    image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.webp",
     description: "A compact sling bag made from durable 900D skin film polyester with a sleek, modern profile. The adjustable 20–37 inch strap offers a custom fit for crossbody or over-shoulder wear, while the 7\" x 12\" x 2\" body handles daily essentials with ease. Perfect for travel, festivals, commutes, and promotional programs that want a premium feel.",
 
     popular: false,
 
     colors: [
-        { name: "Beige", hex: "#D9C7A8", image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS116/IS116-Black.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS116/IS116-Navy Blue.jpg" }
+        { name: "Beige", hex: "#D9C7A8", image: "assets/assets/images/products/non-woven/IS116/IS116-Beige.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS116/IS116-Black.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS116/IS116-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS116/IS116-Beige.jpg",
-        "assets/assets/images/products/non-woven/IS116/IS116-Black.jpg",
-        "assets/assets/images/products/non-woven/IS116/IS116-Navy Blue.jpg"
+        "assets/assets/images/products/non-woven/IS116/IS116-Beige.webp",
+        "assets/assets/images/products/non-woven/IS116/IS116-Black.webp",
+        "assets/assets/images/products/non-woven/IS116/IS116-Navy Blue.webp"
     ],
 
     specs: {
@@ -19749,21 +19486,21 @@ const products = [{
     imprint: '7"W x 7"H',
     price: 19.98,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.jpg",
+    image: "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.webp",
     description: "A serious everyday carry — this laptop backpack pairs a 600D polyester body with 300D nylon and a 210D lining for real-world durability. Inside, a padded sleeve fits laptops up to 15 inches, while a front zippered pocket and two side mesh pockets keep accessories organized. Adjustable back straps and a web carry handle round out the comfort and utility. Ideal for commuters, students, and corporate tech programs.",
 
     popular: false,
 
     colors: [
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS117/IS117-Black.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS117/IS117-Navy Blue.jpg" }
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS117/IS117-Black.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS117/IS117-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS117/IS117-Black.jpg",
-        "assets/assets/images/products/non-woven/IS117/IS117-Navy Blue.jpg"
+        "assets/assets/images/products/non-woven/IS117/IS117-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS117/IS117-Black.webp",
+        "assets/assets/images/products/non-woven/IS117/IS117-Navy Blue.webp"
     ],
 
     specs: {
@@ -19844,19 +19581,19 @@ const products = [{
     imprint: '7"W x 5"H',
     price: 25.98,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS118/IS118-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS118/IS118-Black.webp",
     description: "A modern roll top backpack crafted from premium PU vegan leather with an adjustable roll-top closure that expands from a compact 11\" x 20\" footprint to a generous 17\" x 24\" when fully unrolled. The clean, minimalist design transitions seamlessly from commute to weekend, making it an ideal choice for urban professionals, students, and premium promotional programs with a sustainability story.",
 
     popular: false,
 
     colors: [
-        { name: "Beige", hex: "#D9C7A8", image: "assets/assets/images/products/non-woven/IS118/IS118-Beige.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS118/IS118-Black.jpg" }
+        { name: "Beige", hex: "#D9C7A8", image: "assets/assets/images/products/non-woven/IS118/IS118-Beige.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS118/IS118-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS118/IS118-Beige.jpg",
-        "assets/assets/images/products/non-woven/IS118/IS118-Black.jpg"
+        "assets/assets/images/products/non-woven/IS118/IS118-Beige.webp",
+        "assets/assets/images/products/non-woven/IS118/IS118-Black.webp"
     ],
 
     specs: {
@@ -19937,17 +19674,17 @@ const products = [{
     imprint: '11"W x 6"H',
     price: 3.98,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.webp",
     description: "A natural 12 oz cotton canvas document bag built for everyday carry. Contrasting black cotton web handles add a clean two-tone look, while the 17\" x 11\" x 3\" body is sized perfectly for documents, laptops, books, and daily essentials. Ideal for conferences, corporate events, universities, and retail promotions that value natural materials.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.jpg"
+        "assets/assets/images/products/tote-bags/IS119/IS119-Natural-Black.webp"
     ],
 
     specs: {
@@ -20020,25 +19757,25 @@ const products = [{
     imprint: '5.5"W x 3"H',
     price: 7.56,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Black.webp",
     description: "A durable 12 oz cotton canvas cosmetic pouch with a top zip closure and rust-free metal zipper. Accent-color bottom and a side finger loop add both style and everyday utility. Sized at 11\" x 7\" x 3\" with a bottom gusset, it's perfect for cosmetics, toiletries, cables, and travel accessories. Ideal for beauty brands, hotel amenities, event welcome kits, and elevated giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Black.jpg" },
-        { name: "Natural-Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Grey.jpg" },
-        { name: "Natural-Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Natural.jpg" },
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Red.jpg" }
+        { name: "Natural-Black", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Black.webp" },
+        { name: "Natural-Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Grey.webp" },
+        { name: "Natural-Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Natural.webp" },
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Grey.jpg",
-        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Black.webp",
+        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Grey.webp",
+        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS151/IS151-Natural-Red.webp"
     ],
 
     specs: {
@@ -20125,21 +19862,21 @@ const products = [{
     imprint: '4"W x 3"H',
     price: 9.60,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.jpg",
+    image: "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.webp",
     description: "The compact member of our premium Admiral tote family, built from heavy 24 oz cotton canvas for lasting durability. A front pocket keeps essentials handy, while the 15\" x 12\" x 4.75\" body with bottom gusset offers practical everyday capacity. 22-inch self handles provide comfortable shoulder carry. Ideal for yacht clubs, marina shops, boutique retail, and premium coastal-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS152/IS152-Black.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS152/IS152-Natural.jpg" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS152/IS152-Black.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS152/IS152-Natural.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS152/IS152-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS152/IS152-Black.jpg",
+        "assets/assets/images/products/tote-bags/IS152/IS152-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS152/IS152-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS152/IS152-Black.webp",
     ],
 
     specs: {
@@ -20223,19 +19960,19 @@ const products = [{
     imprint: '4"W x 4"H',
     price: 33.52,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.jpg",
+    image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.webp",
     description: "A trendy 16 oz cotton canvas tote with real design personality. Accent-color straps, bottom, and trim frame the bag, while a matching striped interior adds a hidden pop of style. A snap closure, side snaps, and an interior zipper pocket keep contents secure. Sized at 19\" x 12\" x 8\", with 20-inch handles for shoulder carry. Ideal for boutique retail, resort shops, and elevated promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.jpg" },
-        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Red.jpg" }
+        { name: "Natural-Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.webp" },
+        { name: "Natural-Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Navy Blue.webp",
+        "assets/assets/images/products/tote-bags/IS153/IS153-Natural-Red.webp"
     ],
 
     specs: {
@@ -20316,17 +20053,17 @@ const products = [{
     imprint: '10"W x 7"H',
     price: 24.51,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS154/IS154-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS154/IS154-Natural.webp",
     description: "A statement 16 oz cotton canvas tote with on-trend fringe detailing that adds texture and movement to the design. The 14\" x 12\" x 7\" body handles daily essentials with ease, while 18-inch handles offer a comfortable hand or shoulder carry. The large 10\" x 7\" imprint area gives branding plenty of room to shine. Ideal for boutique retail, fashion-forward promotions, and premium giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS154/IS154-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS154/IS154-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS154/IS154-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS154/IS154-Natural.webp"
     ],
 
     specs: {
@@ -20407,17 +20144,17 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 2.87,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS160/IS160-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS160/IS160-Natural.webp",
     description: "A lightweight 5 oz cotton canvas shopper bag that folds down for easy storage and travel. The generous 16\" x 15\" body with 20-inch self handles handles groceries, books, and everyday essentials with ease. The large 10\" x 10\" imprint area on both sides offers maximum branding space. Ideal for grocery chains, farmers markets, universities, and eco-friendly promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS160/IS160-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS160/IS160-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS160/IS160-Natural.jpg"
+        "assets/assets/images/products/tote-bags/IS160/IS160-Natural.webp"
     ],
 
     specs: {
@@ -20490,21 +20227,21 @@ const products = [{
     imprint: '10"W x 5"H',
     price: 1.70,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.jpg",
+    image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.webp",
     description: "A practical 80 GSM non-woven tote with a full side and bottom gusset for expanded capacity. An outside front pocket and a 4\" x 6.5\" side mesh pocket keep essentials accessible, while 1-inch-wide, 18-inch-long self handles provide comfortable carry. Ideal for trade shows, conferences, grocery runs, and everyday promotional use.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Heather Blue", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.jpg" },
-        { name: "Black-Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Green.jpg" },
-        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Grey.jpg" }
+        { name: "Black-Heather Blue", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.webp" },
+        { name: "Black-Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Green.webp" },
+        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Grey.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Green.jpg",
-        "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Grey.jpg"
+        "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Blue.webp",
+        "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Green.webp",
+        "assets/assets/images/products/tote-bags/IS162/IS162-Black-Heather Grey.webp"
     ],
 
     specs: {
@@ -20512,7 +20249,21 @@ const products = [{
         gusset: "Bottom: Yes Side: Yes",
         weight: "80 GSM",
         material: "Non-Woven Fabric",
-        handle: '1"W x 18"L Self Handles'
+        handle: '1"W x 18"L Self Handles',
+        packagingOptions: [
+            {
+                type: "Large Box",
+                qtyPerBox: "200 pcs",
+                boxWeight: "24 lbs",
+                boxDims: '20" x 16" x 17"'
+            },
+            {
+                type: "Medium Box",
+                qtyPerBox: "100 pcs",
+                boxWeight: "12 lbs",
+                boxDims: '20" x 16" x 9"'
+            }
+        ]
     },
 
     pricing: {
@@ -20577,21 +20328,21 @@ const products = [{
     imprint: '6"W x 6"H',
     price: 1.12,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.jpg",
+    image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.webp",
     description: "A compact 80 GSM non-woven tote with full side and bottom gussets for expanded capacity. Sized at 10\" x 12\" x 4.25\", it's perfect for smaller promotions, gift shops, and event giveaways. The 6\" x 6\" imprint area offers a clean branding surface, and 1-inch-wide, 18-inch-long self handles provide comfortable carry. Note: printing black on heather grey is not recommended as it does not show up well.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Heather Blue", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.jpg" },
-        { name: "Black-Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Green.jpg" },
-        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Grey.jpg" }
+        { name: "Black-Heather Blue", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.webp" },
+        { name: "Black-Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Green.webp" },
+        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Grey.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Green.jpg",
-        "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Grey.jpg"
+        "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Blue.webp",
+        "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Green.webp",
+        "assets/assets/images/products/tote-bags/IS164/IS164-Black-Heather Grey.webp"
     ],
 
     specs: {
@@ -20678,23 +20429,23 @@ const products = [{
     imprint: '8"W x 5"H',
     price: 2.38,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.jpg",
+    image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.webp",
     description: "A heavy-duty 80 GSM non-woven shopping bag built for real loads. Full side and bottom gussets expand the 13\" x 15\" x 10\" body for maximum capacity, while black reinforced self-handles and a covered cardboard bottom insert add structure and durability. A 13\" x 9.75\" front open pocket keeps essentials within reach. Ideal for grocery retail, boutique shopping, and high-volume promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.jpg" },
-        { name: "Black-Heather Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Red.jpg" },
-        { name: "Black-Heather Blue", hex: "#2563EB", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Blue.jpg" },
-        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Grey.jpg" }
+        { name: "Black-Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.webp" },
+        { name: "Black-Heather Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Red.webp" },
+        { name: "Black-Heather Blue", hex: "#2563EB", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Blue.webp" },
+        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Grey.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.jpg",
-        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Red.jpg",
-        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Grey.jpg"
+        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Green.webp",
+        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Red.webp",
+        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Blue.webp",
+        "assets/assets/images/products/tote-bags/IS167/IS167-Black-Heather Grey.webp"
     ],
 
     specs: {
@@ -20781,21 +20532,21 @@ const products = [{
     imprint: '6"W x 3"H',
     price: 1.84,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.jpg",
+    image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.webp",
     description: "A compact, practical pouch built from 300D polyester and 80 GSM non-woven fabric. Two zippered compartments keep small essentials organized and secure, while a built-in pen loop adds everyday utility. Sized at 9.75\" x 7\", it's ideal for pens, cables, cosmetics, small tools, and travel accessories. A great pick for conference welcome kits, corporate gifts, school supplies, and everyday promotional use.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Heather Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.jpg" },
-        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Grey.jpg" },
-        { name: "Black-Heather Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Red.jpg" }
+        { name: "Black-Heather Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.webp" },
+        { name: "Black-Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Grey.webp" },
+        { name: "Black-Heather Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.jpg",
-        "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Grey.jpg",
-        "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Red.jpg"
+        "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Blue.webp",
+        "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Grey.webp",
+        "assets/assets/images/products/non-woven/IS181/IS181-Black-Heather Red.webp"
     ],
 
     specs: {
@@ -20882,21 +20633,21 @@ const products = [{
     imprint: '2"W x 2"H',
     price: 1.65,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.webp",
     description: "A compact 300D polyester coin pouch with a colored zipper, finger loop, and metal split ring that clips easily to keys, bags, or belt loops. A rear zipper pull adds extra functionality. Sized at 3.75\" x 4\", it's perfect for coins, earbuds, small cables, and everyday essentials. A great low-cost giveaway for trade shows, banks, schools, and promotional events.",
 
     popular: false,
 
     colors: [
-        { name: "Heather Grey-Black", hex: "#808080", image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.jpg" },
-        { name: "Heather Grey-Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Blue.jpg" },
-        { name: "Heather Grey-Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Red.jpg" }
+        { name: "Heather Grey-Black", hex: "#808080", image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.webp" },
+        { name: "Heather Grey-Blue", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Blue.webp" },
+        { name: "Heather Grey-Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.jpg",
-        "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Blue.jpg",
-        "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Red.jpg"
+        "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Black.webp",
+        "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Blue.webp",
+        "assets/assets/images/products/non-woven/IS182/IS182-Heather Grey-Red.webp"
     ],
 
     specs: {
@@ -21079,17 +20830,17 @@ const products = [{
     imprint: '10"W x 5"H',
     price: 43.06,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS214/IS214-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS214/IS214-Black.webp",
     description: "A serious cooler for serious outings — this collapsible hard top cooler holds up to 48 cans inside a 600D ripstop polyester shell with 6mm EPE foam and a PEVA lining. Keeps contents cold for up to 6 hours and warm for up to 4 hours. Features side carry handles plus an adjustable shoulder strap, a zippered main compartment, a zippered front pocket, an easy-access top flap, and a hard top drink holder. Ideal for tailgates, camping, beach trips, and large group events.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS214/IS214-Black.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS214/IS214-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS214/IS214-Black.jpg"
+        "assets/assets/images/products/non-woven/IS214/IS214-Black.webp"
     ],
 
     specs: {
@@ -21169,23 +20920,23 @@ const products = [{
     imprint: '8"W x 6"H',
     price: 12.43,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.jpg",
+    image: "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.webp",
     description: "Built for big gatherings — this jumbo 600D polyester cooler tote holds up to 38 cans inside a 4mm EPE foam and PEVA heat-sealed lining that keeps contents cold for hours. A front pocket adds extra storage, while 26-inch reinforced polyester web handles handle heavy loads with ease. The 22\" x 16\" x 7.5\" body with bottom gusset offers massive capacity. Ideal for picnics, beach days, tailgates, and group events.",
 
     popular: false,
 
     colors: [
-        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.jpg" },
-        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/tote-bags/IS221/IS221-Lime Green-Black.jpg" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS221/IS221-Red-Black.jpg" },
-        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS221/IS221-Royal Blue-Black.jpg" }
+        { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.webp" },
+        { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/tote-bags/IS221/IS221-Lime Green-Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS221/IS221-Red-Black.webp" },
+        { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/tote-bags/IS221/IS221-Royal Blue-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS221/IS221-Lime Green-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS221/IS221-Red-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS221/IS221-Royal Blue-Black.jpg"
+        "assets/assets/images/products/tote-bags/IS221/IS221-Grey-Black.webp",
+        "assets/assets/images/products/tote-bags/IS221/IS221-Lime Green-Black.webp",
+        "assets/assets/images/products/tote-bags/IS221/IS221-Red-Black.webp",
+        "assets/assets/images/products/tote-bags/IS221/IS221-Royal Blue-Black.webp"
     ],
 
     specs: {
@@ -21271,21 +21022,21 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 2.44,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS52/IS52-White.jpg",
+    image: "assets/assets/images/products/tote-bags/IS52/IS52-White.webp",
     description: "A classic 7 oz cotton canvas convention tote in a range of solid colors with 26-inch self handles for comfortable shoulder carry. The 15\" x 16\" body offers plenty of space for books, swag, and daily essentials, while the large 10\" x 10\" imprint area on both sides maximizes brand exposure. A go-to choice for conferences, universities, corporate events, and high-volume promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS52/IS52-White.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS52/IS52-Black.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS52/IS52-Navy Blue.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/tote-bags/IS52/IS52-White.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/tote-bags/IS52/IS52-Black.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/tote-bags/IS52/IS52-Navy Blue.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS52/IS52-White.jpg",
-        "assets/assets/images/products/tote-bags/IS52/IS52-Black.jpg",
-        "assets/assets/images/products/tote-bags/IS52/IS52-Navy Blue.jpg",
+        "assets/assets/images/products/tote-bags/IS52/IS52-White.webp",
+        "assets/assets/images/products/tote-bags/IS52/IS52-Black.webp",
+        "assets/assets/images/products/tote-bags/IS52/IS52-Navy Blue.webp",
     ],
 
     specs: {
@@ -21371,23 +21122,23 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 2.28,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.jpg",
+    image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.webp",
     description: "An eco-conscious convention tote crafted from 7 oz recycled cotton twill, made from pre-consumer waste generated during the factory cutting process. The material blend is approximately 70%–80% recycled cotton and 20%–30% RPET, giving new life to factory scraps while delivering the same 15\" x 16\" capacity and 26-inch self handles as our classic convention tote. The large 10\" x 10\" imprint area on both sides maximizes branding. Note: colors may bleed — this is unavoidable due to the nature of the recycled material.",
 
     popular: false,
 
     colors: [
-        { name: "Denim Blue", hex: "#2563EB", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Denim Blue.jpg" },
-        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Heather Grey.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Red.jpg" }
+        { name: "Denim Blue", hex: "#2563EB", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Denim Blue.webp" },
+        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Heather Grey.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.jpg",
-        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Denim Blue.jpg",
-        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Heather Grey.jpg",
-        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Red.jpg"
+        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Natural.webp",
+        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Denim Blue.webp",
+        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Heather Grey.webp",
+        "assets/assets/images/products/tote-bags/IS52-RC/IS52-RC-Red.webp"
     ],
 
     specs: {
@@ -21474,17 +21225,17 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 5.74,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.jpg",
+    image: "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.webp",
     description: "A classic blue denim convention tote with long 26-inch self handles for comfortable shoulder carry. The 15\" x 16\" body offers plenty of space for books, swag, and daily essentials, while the large 10\" x 10\" imprint area on both sides maximizes brand exposure. A stylish, textured alternative to standard canvas totes — ideal for retail, universities, fashion-forward events, and premium promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Denim", hex: "#2563EB", image: "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.jpg" }
+        { name: "Denim", hex: "#2563EB", image: "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.jpg"
+        "assets/assets/images/products/tote-bags/IS52D/IS52D-Denim.webp"
     ],
 
     specs: {
@@ -21570,17 +21321,17 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 2.99,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS59/IS59-Natural.jpg",
+    image: "assets/assets/images/products/non-woven/IS59/IS59-Natural.webp",
     description: "A durable 8 oz natural cotton canvas drawstring backpack with a classic cinch closure and rope cord straps. The generous 15\" x 18\" body handles books, gym gear, and daily essentials, while the wide 10\" x 10\" imprint area on both sides gives branding plenty of room to shine. A natural-fiber alternative to standard polyester drawstring bags — ideal for schools, gyms, camps, and eco-friendly promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/non-woven/IS59/IS59-Natural.jpg" }
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/non-woven/IS59/IS59-Natural.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS59/IS59-Natural.jpg"
+        "assets/assets/images/products/non-woven/IS59/IS59-Natural.webp"
     ],
 
     specs: {
@@ -21666,21 +21417,21 @@ const products = [{
     imprint: '5"W x 6"H',
     price: 1.09,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.jpg",
+    image: "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.webp",
     description: "A compact 80 GSM non-woven polypropylene shopper bag with full side and bottom gussets that expand for extra capacity. Sized at 8\" x 10\" x 4\", it's perfect for small purchases, gifts, cosmetics, and event giveaways. The 15-inch self handles make it comfortable to carry, and the 5\" x 6\" imprint area offers a clean branding surface. Ideal for boutique retail, pharmacies, and high-volume promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS78/IS78-White.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS78/IS78-Black.jpg" }
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS78/IS78-White.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS78/IS78-Black.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.jpg",
-        "assets/assets/images/products/non-woven/IS78/IS78-White.jpg",
-        "assets/assets/images/products/non-woven/IS78/IS78-Black.jpg"
+        "assets/assets/images/products/non-woven/IS78/IS78-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS78/IS78-White.webp",
+        "assets/assets/images/products/non-woven/IS78/IS78-Black.webp"
     ],
 
     specs: {
@@ -21767,33 +21518,33 @@ const products = [{
     imprint: '8"W x 9"H',
     price: 1.72,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS83B/IS83B-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS83B/IS83B-Black.webp",
     description: "A dependable 80 GSM non-woven polypropylene newspaper bag with a solid bottom and grommeted rope handles for durability. Sized at 12\" x 14.5\" x 2.5\", it protects papers, magazines, and small deliveries, while the 8\" x 9\" imprint area on both sides offers a clean branding surface. Ideal for newspaper routes, hotel deliveries, and eco-friendly promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Black.jpg" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Burgundy.jpg" },
-        { name: "Dark Grey", hex: "#4A4A4A", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Dark Grey.jpg" },
-        { name: "Light Grey", hex: "#D3D3D3", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Light Grey.jpg" },
-        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Natural.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Royal Blue.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS83B/IS83B-White.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Burgundy.webp" },
+        { name: "Dark Grey", hex: "#4A4A4A", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Dark Grey.webp" },
+        { name: "Light Grey", hex: "#D3D3D3", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Light Grey.webp" },
+        { name: "Natural", hex: "#F5F0E1", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Natural.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS83B/IS83B-Royal Blue.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS83B/IS83B-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Black.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Dark Grey.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Light Grey.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Natural.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Navy Blue.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Red.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-Royal Blue.jpg",
-        "assets/assets/images/products/non-woven/IS83B/IS83B-White.jpg"
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Black.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Dark Grey.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Light Grey.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Natural.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Red.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-Royal Blue.webp",
+        "assets/assets/images/products/non-woven/IS83B/IS83B-White.webp"
     ],
 
     specs: {
@@ -21879,23 +21630,23 @@ const products = [{
     imprint: '14"W x 8"H',
     price: 2.19,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS85/IS85-Red.jpg",
+    image: "assets/assets/images/products/non-woven/IS85/IS85-Red.webp",
     description: "A heavyweight 100 GSM non-woven polypropylene tote with a top zipper closure that keeps contents secure. Full bottom gusset expands the 20\" x 15\" x 5\" body for real carrying capacity, while 19.5-inch self handles make it comfortable to shoulder. The wide 14\" x 8\" imprint area on both sides offers maximum brand exposure. Ideal for trade shows, retail, gyms, and everyday promotional use.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS85/IS85-Black.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS85/IS85-Red.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS85/IS85-White.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS85/IS85-Royal Blue.jpg" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS85/IS85-Black.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS85/IS85-Red.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS85/IS85-White.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS85/IS85-Royal Blue.webp" },
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS85/IS85-Black.jpg",
-        "assets/assets/images/products/non-woven/IS85/IS85-Red.jpg",
-        "assets/assets/images/products/non-woven/IS85/IS85-White.jpg",
-        "assets/assets/images/products/non-woven/IS85/IS85-Royal Blue.jpg",
+        "assets/assets/images/products/non-woven/IS85/IS85-Black.webp",
+        "assets/assets/images/products/non-woven/IS85/IS85-Red.webp",
+        "assets/assets/images/products/non-woven/IS85/IS85-White.webp",
+        "assets/assets/images/products/non-woven/IS85/IS85-Royal Blue.webp",
     ],
 
     specs: {
@@ -21982,21 +21733,21 @@ const products = [{
     imprint: '10"W x 7"H',
     price: 1.59,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.jpg",
+    image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.webp",
     description: "A spacious 80 GSM non-woven shopper tote with full bottom gusset for extra capacity. Interior sidewall pockets keep smaller items organized and easy to find, while the wide 20\" x 13\" x 8\" body holds groceries, books, and daily essentials with ease. 1-inch-wide, 20-inch-long self handles make it comfortable to carry. Ideal for grocery retail, pharmacies, and everyday promotional use.",
 
     popular: false,
 
     colors: [
-        { name: "Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.jpg" },
-        { name: "Heather Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Blue.jpg" },
-        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Grey.jpg" }
+        { name: "Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.webp" },
+        { name: "Heather Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Blue.webp" },
+        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS88/IS88-Heather Grey.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.jpg",
-        "assets/assets/images/products/non-woven/IS88/IS88-Heather Blue.jpg",
-        "assets/assets/images/products/non-woven/IS88/IS88-Heather Grey.jpg"
+        "assets/assets/images/products/non-woven/IS88/IS88-Heather Green.webp",
+        "assets/assets/images/products/non-woven/IS88/IS88-Heather Blue.webp",
+        "assets/assets/images/products/non-woven/IS88/IS88-Heather Grey.webp"
     ],
 
     specs: {
@@ -22082,33 +21833,33 @@ const products = [{
     imprint: '4"W x 2"H',
     price: 2.58,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS90/IS90-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS90/IS90-Black.webp",
     description: "An eco-friendly 80 GSM non-woven 6 can cooler with a thermal food-safe foil lining that keeps drinks cold on the go. Full side and bottom gussets add structure, while a zippered main closure and front pocket keep contents secure and organized. 24-inch black self handles make it easy to carry. Ideal for lunches, picnics, beach days, and event giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS90/IS90-Black.jpg" },
-        { name: "Heather Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS90/IS90-Heather Blue.jpg" },
-        { name: "Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS90/IS90-Heather Green.jpg" },
-        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS90/IS90-Heather Grey.jpg" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS90/IS90-Hunter Green.jpg" },
-        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS90/IS90-Lime Green.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS90/IS90-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS90/IS90-Royal Blue.jpg" },
-        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS90/IS90-Yellow.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS90/IS90-Black.webp" },
+        { name: "Heather Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS90/IS90-Heather Blue.webp" },
+        { name: "Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS90/IS90-Heather Green.webp" },
+        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS90/IS90-Heather Grey.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS90/IS90-Hunter Green.webp" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS90/IS90-Lime Green.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS90/IS90-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS90/IS90-Royal Blue.webp" },
+        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS90/IS90-Yellow.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS90/IS90-Black.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Heather Blue.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Heather Green.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Heather Grey.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Hunter Green.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Lime Green.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Red.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Royal Blue.jpg",
-        "assets/assets/images/products/non-woven/IS90/IS90-Yellow.jpg"
+        "assets/assets/images/products/non-woven/IS90/IS90-Black.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Heather Blue.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Heather Green.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Heather Grey.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Hunter Green.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Lime Green.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Red.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Royal Blue.webp",
+        "assets/assets/images/products/non-woven/IS90/IS90-Yellow.webp"
     ],
 
     specs: {
@@ -22194,31 +21945,31 @@ const products = [{
     imprint: '4"W x 3"H',
     price: 2.46,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS91/IS91-Orange.jpg",
+    image: "assets/assets/images/products/non-woven/IS91/IS91-Orange.webp",
     description: "An eco-friendly 80 GSM non-woven lunch pack with a thermal food-safe foil lining to keep meals at the right temperature. Full side and bottom gussets add structure, while a Velcro closure and front pocket keep contents secure and organized. 12-inch self handles make it easy to carry. Ideal for work, school, and everyday on-the-go meals.",
 
     popular: false,
 
     colors: [
-        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS91/IS91-Orange.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS91/IS91-Black.jpg" },
-        { name: "Heather Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS91/IS91-Heather Blue.jpg" },
-        { name: "Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS91/IS91-Heather Green.jpg" },
-        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS91/IS91-Heather Grey.jpg" },
-        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS91/IS91-Lime Green.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS91/IS91-Royal Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS91/IS91-Red.jpg" }
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS91/IS91-Orange.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS91/IS91-Black.webp" },
+        { name: "Heather Blue", hex: "#5DA9E9", image: "assets/assets/images/products/non-woven/IS91/IS91-Heather Blue.webp" },
+        { name: "Heather Green", hex: "#1B8A4C", image: "assets/assets/images/products/non-woven/IS91/IS91-Heather Green.webp" },
+        { name: "Heather Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS91/IS91-Heather Grey.webp" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS91/IS91-Lime Green.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS91/IS91-Royal Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS91/IS91-Red.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS91/IS91-Orange.jpg",
-        "assets/assets/images/products/non-woven/IS91/IS91-Black.jpg",
-        "assets/assets/images/products/non-woven/IS91/IS91-Heather Blue.jpg",
-        "assets/assets/images/products/non-woven/IS91/IS91-Heather Green.jpg",
-        "assets/assets/images/products/non-woven/IS91/IS91-Heather Grey.jpg",
-        "assets/assets/images/products/non-woven/IS91/IS91-Lime Green.jpg",
-        "assets/assets/images/products/non-woven/IS91/IS91-Royal Blue.jpg",
-        "assets/assets/images/products/non-woven/IS91/IS91-Red.jpg"
+        "assets/assets/images/products/non-woven/IS91/IS91-Orange.webp",
+        "assets/assets/images/products/non-woven/IS91/IS91-Black.webp",
+        "assets/assets/images/products/non-woven/IS91/IS91-Heather Blue.webp",
+        "assets/assets/images/products/non-woven/IS91/IS91-Heather Green.webp",
+        "assets/assets/images/products/non-woven/IS91/IS91-Heather Grey.webp",
+        "assets/assets/images/products/non-woven/IS91/IS91-Lime Green.webp",
+        "assets/assets/images/products/non-woven/IS91/IS91-Royal Blue.webp",
+        "assets/assets/images/products/non-woven/IS91/IS91-Red.webp"
     ],
 
     specs: {
@@ -22305,21 +22056,21 @@ const products = [{
     imprint: '6"W x 4"H',
     price: 2.56,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.jpg",
+    image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.webp",
     description: "An insulated 80 GSM non-woven tote cooler bag with foil-laminated PE foam lining to keep contents cold on the go. A zippered main compartment secures your items, while a 9\" x 6.5\" outside front pocket keeps extras within reach. 1-inch-wide, 18-inch-long self handles make it comfortable to carry. Ideal for lunches, picnics, beach days, and grocery runs.",
 
     popular: false,
 
     colors: [
-        { name: "Black-Heather Grey-Grey", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.jpg" },
-        { name: "Blue-Heather Blue-Grey", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS99/IS99-Blue-Heather Blue-Grey.jpg" },
-        { name: "Red-Heather Red-Grey", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS99/IS99-Red-Heather Red-Grey.jpg" }
+        { name: "Black-Heather Grey-Grey", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.webp" },
+        { name: "Blue-Heather Blue-Grey", hex: "#2563EB", image: "assets/assets/images/products/non-woven/IS99/IS99-Blue-Heather Blue-Grey.webp" },
+        { name: "Red-Heather Red-Grey", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS99/IS99-Red-Heather Red-Grey.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS99/IS99-Blue-Heather Blue-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS99/IS99-Red-Heather Red-Grey.jpg"
+        "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.webp",
+        "assets/assets/images/products/non-woven/IS99/IS99-Blue-Heather Blue-Grey.webp",
+        "assets/assets/images/products/non-woven/IS99/IS99-Red-Heather Red-Grey.webp"
     ],
 
     specs: {
@@ -22405,33 +22156,33 @@ const products = [{
     imprint: '10"W x 10"H',
     price: 1.29,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.jpg",
+    image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.webp",
     description: "A practical 80 GSM non-woven polypropylene drawstring backpack with a water repellent finish to keep gear dry in light rain. The cinch closure with rope cord straps makes it easy to wear over the shoulders, while the 16\" x 18\" body holds books, gym clothes, and daily essentials. The wide 10\" x 10\" imprint area on both sides offers maximum brand exposure. Ideal for schools, gyms, camps, festivals, and outdoor promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS69/IS69-Black.jpg" },
-        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS69/IS69-Burgundy.jpg" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS69/IS69-Hunter Green.jpg" },
-        { name: "Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/IS69/IS69-Kelly Green.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS69/IS69-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS69/IS69-Royal Blue.jpg" },
-        { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/non-woven/IS69/IS69-Tan.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS69/IS69-White.jpg" },
-        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS69/IS69-Black.webp" },
+        { name: "Burgundy", hex: "#800020", image: "assets/assets/images/products/non-woven/IS69/IS69-Burgundy.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS69/IS69-Hunter Green.webp" },
+        { name: "Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/IS69/IS69-Kelly Green.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS69/IS69-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS69/IS69-Royal Blue.webp" },
+        { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/non-woven/IS69/IS69-Tan.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS69/IS69-White.webp" },
+        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS69/IS69-Black.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-Burgundy.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-Hunter Green.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-Kelly Green.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-Red.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-Royal Blue.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-Tan.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-White.jpg",
-        "assets/assets/images/products/non-woven/IS69/IS69-Yellow.jpg"
+        "assets/assets/images/products/non-woven/IS69/IS69-Black.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-Burgundy.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-Hunter Green.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-Kelly Green.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-Red.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-Royal Blue.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-Tan.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-White.webp",
+        "assets/assets/images/products/non-woven/IS69/IS69-Yellow.webp"
     ],
 
     specs: {
@@ -22517,43 +22268,43 @@ const products = [{
     imprint: '8"W x 9"H',
     price: 1.75,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.jpg",
+    image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.webp",
     description: "A lightweight 210D polyester drawstring sports pack with a cinch closure and rope cord straps for easy carrying. Faux-leather reinforced black trim at the corners adds durability at high-stress points. The 14\" x 18\" body holds gym clothes, shoes, and daily essentials, while the wide 8\" x 9\" imprint area on both sides offers maximum brand exposure. An economical go-to for schools, gyms, sports teams, and promotional giveaways.",
 
     popular: false,
 
     colors: [
-        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS103/IS103-Black.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS103/IS103-Grey.jpg" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS103/IS103-Hunter Green.jpg" },
-        { name: "Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/IS103/IS103-Kelly Green.jpg" },
-        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS103/IS103-Lime Green.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS103/IS103-Navy Blue.jpg" },
-        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS103/IS103-Orange.jpg" },
-        { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/non-woven/IS103/IS103-Pink.jpg" },
-        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/non-woven/IS103/IS103-Purple.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS103/IS103-Red.jpg" },
-        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS103/IS103-Royal Blue.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS103/IS103-White.jpg" },
-        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS103/IS103-Yellow.jpg" }
+        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS103/IS103-Black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS103/IS103-Grey.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS103/IS103-Hunter Green.webp" },
+        { name: "Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/non-woven/IS103/IS103-Kelly Green.webp" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/non-woven/IS103/IS103-Lime Green.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS103/IS103-Navy Blue.webp" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/non-woven/IS103/IS103-Orange.webp" },
+        { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/non-woven/IS103/IS103-Pink.webp" },
+        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/non-woven/IS103/IS103-Purple.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS103/IS103-Red.webp" },
+        { name: "Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS103/IS103-Royal Blue.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS103/IS103-White.webp" },
+        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/non-woven/IS103/IS103-Yellow.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS103/IS103-Teal.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Black.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Hunter Green.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Kelly Green.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Lime Green.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Navy Blue.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Orange.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Pink.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Purple.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Red.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Royal Blue.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-White.jpg",
-        "assets/assets/images/products/non-woven/IS103/IS103-Yellow.jpg"
+        "assets/assets/images/products/non-woven/IS103/IS103-Teal.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Black.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Grey.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Hunter Green.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Kelly Green.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Lime Green.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Orange.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Pink.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Purple.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Red.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Royal Blue.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-White.webp",
+        "assets/assets/images/products/non-woven/IS103/IS103-Yellow.webp"
     ],
 
     specs: {
@@ -22639,27 +22390,27 @@ const products = [{
     imprint: '14"W x 10"H',
     price: 1.29,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS61/IS61-Red.jpg",
+    image: "assets/assets/images/products/non-woven/IS61/IS61-Red.webp",
     description: "A spacious 80 gsm non-woven jumbo shopper with full side and bottom gussets that expand for maximum capacity. Sized at 20\" x 16\" x 6\", it handles groceries, retail purchases, and event giveaways with ease. 17-inch self-fabric handles make it comfortable to carry, while the large 14\" x 10\" imprint area on both sides offers standout branding. Ideal for grocery chains, retail, and high-volume promotional programs.",
 
     popular: false,
 
     colors: [
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS61/IS61-Red.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS61/IS61-Black.jpg" },
-        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS61/IS61-Hunter Green.jpg" },
-        { name: "Navy", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS61/IS61-Navy.jpg" },
-        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS61/IS61-Royal.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS61/IS61-White.jpg" }
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS61/IS61-Red.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS61/IS61-Black.webp" },
+        { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS61/IS61-Hunter Green.webp" },
+        { name: "Navy", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS61/IS61-Navy.webp" },
+        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS61/IS61-Royal.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS61/IS61-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS61/IS61-Red.jpg",
-        "assets/assets/images/products/non-woven/IS61/IS61-Black.jpg",
-        "assets/assets/images/products/non-woven/IS61/IS61-Hunter Green.jpg",
-        "assets/assets/images/products/non-woven/IS61/IS61-Navy.jpg",
-        "assets/assets/images/products/non-woven/IS61/IS61-Royal.jpg",
-        "assets/assets/images/products/non-woven/IS61/IS61-White.jpg"
+        "assets/assets/images/products/non-woven/IS61/IS61-Red.webp",
+        "assets/assets/images/products/non-woven/IS61/IS61-Black.webp",
+        "assets/assets/images/products/non-woven/IS61/IS61-Hunter Green.webp",
+        "assets/assets/images/products/non-woven/IS61/IS61-Navy.webp",
+        "assets/assets/images/products/non-woven/IS61/IS61-Royal.webp",
+        "assets/assets/images/products/non-woven/IS61/IS61-White.webp"
     ],
 
     specs: {
