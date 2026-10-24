@@ -404,7 +404,7 @@ const products = [{
     imprint: '6"W x 10"H',
     price: 1.75,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS67/IS67-main.webp",
+    image: "assets/assets/images/products/non-woven/IS67/IS67-hunter green.webp",
     description: "Built for heavy loads and everyday errands — this jumbo grocery bag uses 100 gsm non-woven polypropylene with full side and bottom gussets that expand to hold a full shop. 22-inch reinforced handles, a covered reinforced bottom, and 6\" x 10\" imprint area on both sides make it a durable, high-visibility promotional workhorse. Available in seven classic colors.",
 
     popular: false,
@@ -420,7 +420,6 @@ const products = [{
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS67/IS67-main.webp",
         "assets/assets/images/products/non-woven/IS67/IS67-hunter green.webp",
         "assets/assets/images/products/non-woven/IS67/IS67-navy.webp",
         "assets/assets/images/products/non-woven/IS67/IS67-orange.webp",
@@ -3015,10 +3014,11 @@ const products = [{
         }
     },
 
-    additionalCharges: {
+     additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
-        setupChargeTransfer: "$112.50 (V) - Transfer printing",
-        repeatSetup: "$37.50 (V)",
+        setupChargeTransfer: "$112.50 (V) - Heat Transfer",
+        repeatSetup: "$37.50 (V) - Spot printing",
+        repeatSetupTransfer: "Call for Pricing - Heat Transfer",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -4046,7 +4046,20 @@ const products = [{
         weight: "100 GSM",
         material: "Non-Woven Fabric",
         handle: "Self Handles",
-        packagingOptions: "Contact for details"
+        packagingOptions: [
+            {
+                type: "Large Box",
+                qtyPerBox: "200 pcs",
+                boxWeight: "25 lbs",
+                boxDims: '20" x 16" x 17"'
+            },
+            {
+                type: "Medium Box",
+                qtyPerBox: "70 pcs",
+                boxWeight: "18 lbs",
+                boxDims: '20" x 16" x 9"'
+            }
+        ]
     },
 
     pricing: {
@@ -5402,6 +5415,7 @@ const products = [{
     id: "is75",
     name: "Econo Tote Bag",
     code: "IS75",
+    templatesAvailable:false,
     slug: "econo-tote-bag-is75",
     category: "Non-Woven Bags",
     material: "Non-Woven Fabric",
@@ -14911,7 +14925,7 @@ const products = [{
         { name: "Grey-Black", hex: "#808080", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.webp" },
         { name: "Grey-Royal Blue", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Royal Blue.webp" },
         { name: "Grey-Red", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Red.webp" },
-        { name: "Grey-Orange", hex: "#F97316", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Orange.webp" },
+        { name: "Grey-Orange", hex: "#F97316", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Orange.webp" },
         { name: "Grey-Lime Green", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Lime Green.webp" }
     ],
 
@@ -14919,7 +14933,7 @@ const products = [{
         "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Black.webp",
         "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Royal Blue.webp",
         "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Red.webp",
-        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey-Orange.webp",
+        "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Orange.webp",
         "assets/assets/images/products/polyester-bags/IS220/IS220-Grey Lime Green.webp"
     ],
 
@@ -15007,14 +15021,14 @@ const products = [{
     colors: [
         { name: "Black-Grey", hex: "#1C1C1C", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.webp" },
         { name: "Lime Green-Black", hex: "#84CC16", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Lime Green Black.webp" },
-        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black.webp" },
+        { name: "Red-Black", hex: "#C62828", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black Grey.webp" },
         { name: "Royal Blue-Black", hex: "#2455A4", image: "assets/assets/images/products/polyester-bags/IS230/IS230-Royal Blue Black Grey.webp" }
     ],
 
     images: [
         "assets/assets/images/products/polyester-bags/IS230/IS230-Black Grey.webp",
         "assets/assets/images/products/polyester-bags/IS230/IS230-Lime Green Black.webp",
-        "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black.webp",
+        "assets/assets/images/products/polyester-bags/IS230/IS230-Red Black Grey.webp",
         "assets/assets/images/products/polyester-bags/IS230/IS230-Royal Blue Black Grey.webp"
     ],
 
@@ -22399,8 +22413,8 @@ const products = [{
         { name: "Red", hex: "#C62828", image: "assets/assets/images/products/non-woven/IS61/IS61-Red.webp" },
         { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS61/IS61-Black.webp" },
         { name: "Hunter Green", hex: "#355E3B", image: "assets/assets/images/products/non-woven/IS61/IS61-Hunter Green.webp" },
-        { name: "Navy", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS61/IS61-Navy.webp" },
-        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS61/IS61-Royal.webp" },
+        { name: "Navy", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS61/IS61-Navy Blue.webp" },
+        { name: "Royal", hex: "#2455A4", image: "assets/assets/images/products/non-woven/IS61/IS61-Royal Blue.webp" },
         { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/non-woven/IS61/IS61-White.webp" }
     ],
 
@@ -22408,8 +22422,8 @@ const products = [{
         "assets/assets/images/products/non-woven/IS61/IS61-Red.webp",
         "assets/assets/images/products/non-woven/IS61/IS61-Black.webp",
         "assets/assets/images/products/non-woven/IS61/IS61-Hunter Green.webp",
-        "assets/assets/images/products/non-woven/IS61/IS61-Navy.webp",
-        "assets/assets/images/products/non-woven/IS61/IS61-Royal.webp",
+        "assets/assets/images/products/non-woven/IS61/IS61-Navy Blue.webp",
+        "assets/assets/images/products/non-woven/IS61/IS61-Royal Blue.webp",
         "assets/assets/images/products/non-woven/IS61/IS61-White.webp"
     ],
 
@@ -22492,6 +22506,21 @@ const products = [{
     }
 }
 ];
+
+// Maan lo aapka products array 'products' variable mein hai
+products.forEach(product => {
+    // Check karo ke pricing ke andar 'transfer' object hai ya nahi
+    if (!product.pricing || !product.pricing.transfer) {
+        // Agar nahi hai, to additionalCharges se transfer fields delete karo
+        if (product.additionalCharges) {
+            delete product.additionalCharges.setupChargeTransfer;
+            delete product.additionalCharges.repeatSetupTransfer;
+        }
+    }
+});
+
+// Ab 'products' array ready hai, isko console.log karke check kar sakte ho
+console.log(products);
 
 // ✅ Common color hex lookup
 function findHexByName(name) {

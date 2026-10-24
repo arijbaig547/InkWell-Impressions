@@ -73,7 +73,7 @@ document.querySelectorAll('#mobileMenu a').forEach(link => {
       const grid = document.getElementById('product-grid');
       if (grid && grid.children.length === 0) return;
 
-      const offset = window.innerHeight * 0.20; // viewport ka 25%
+      const offset = window.innerHeight * 0.30; // viewport ka 25%
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
       if (maxScroll <= 0) return;
@@ -454,7 +454,7 @@ const products = [{
   size: '13"W x 15"H x 10"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS67/IS67-main.webp",
+  image: "assets/assets/images/products/non-woven/IS67/IS67-hunter green.webp",
   description: "100 gsm non-woven heavy duty grocery bag with 22-inch reinforced handles and full gussets.",
   popular: false
 },
