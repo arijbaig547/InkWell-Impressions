@@ -73,7 +73,7 @@ document.querySelectorAll('#mobileMenu a').forEach(link => {
       const grid = document.getElementById('product-grid');
       if (grid && grid.children.length === 0) return;
 
-      const offset = window.innerHeight * 0.30; // viewport ka 25%
+      const offset = window.innerHeight * 0.15; // viewport ka 25%
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
       if (maxScroll <= 0) return;
@@ -2971,7 +2971,21 @@ const products = [{
   image: "assets/assets/images/products/T-shirts/IA1001/IA1001-peach-01.webp",
   description: "Everyday luxury, refined — the Signature Premium Tee is spun from ring-spun combed cotton and finished with an enzyme wash for a smooth, lived-in softness that only gets better with every wash. A wardrobe staple built to last.",
   popular: false
-}
+},
+{
+    id: "ibcm1300",
+    name: "Ceramic Campfire Coffee Mugs - 13 oz",
+    code: "IBCM1300",
+    slug: "ceramic-campfire-coffee-mugs-13-oz",
+    category: "Ceramic Mugs",
+    material: "Stoneware",
+    size: '3.4375"H x 4"R x 3"Base',
+    price: 6.73,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
+    description: "Premium 13 oz stoneware campfire mug featuring UV DTF printing for vibrant, long-lasting designs.",
+    popular: false
+},
 
 ];
 

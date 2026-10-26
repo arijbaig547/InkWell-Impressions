@@ -164,7 +164,7 @@ const products = [{
             ]
         }
     },
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -275,7 +275,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -376,7 +376,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -494,7 +494,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -583,7 +583,7 @@ const products = [{
             ]
         }
     },
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -662,7 +662,7 @@ const products = [{
             ]
         }
     },
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -757,7 +757,7 @@ const products = [{
             ]
         }
     },
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -858,7 +858,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -1120,7 +1120,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -1310,7 +1310,7 @@ const products = [{
             ]
         }
     },
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -1413,7 +1413,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -1641,7 +1641,7 @@ const products = [{
             ]
         }
     },
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -1767,7 +1767,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -1936,7 +1936,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -2047,7 +2047,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -2221,7 +2221,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -2395,7 +2395,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -2562,7 +2562,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -2665,7 +2665,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -2780,7 +2780,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -2900,7 +2900,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -3014,7 +3014,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -3116,7 +3116,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -3248,7 +3248,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -3373,7 +3373,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -3753,7 +3753,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -3846,7 +3846,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -3998,7 +3998,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4100,7 +4100,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4210,7 +4210,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4337,7 +4337,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4436,7 +4436,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4536,7 +4536,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4639,7 +4639,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4778,7 +4778,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4887,7 +4887,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -4995,7 +4995,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -5129,7 +5129,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -5303,7 +5303,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -5415,7 +5415,7 @@ const products = [{
     id: "is75",
     name: "Econo Tote Bag",
     code: "IS75",
-    templatesAvailable:false,
+    templatesAvailable: false,
     slug: "econo-tote-bag-is75",
     category: "Non-Woven Bags",
     material: "Non-Woven Fabric",
@@ -5526,7 +5526,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -12460,7 +12460,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -12538,7 +12538,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -12840,7 +12840,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13050,7 +13050,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13150,7 +13150,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13251,7 +13251,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13355,7 +13355,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13458,7 +13458,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13534,12 +13534,12 @@ const products = [{
             setupCharge: "$56.25 (V)",
             repeatSetup: "$37.50 (V)"
         },
-             transfer: {
+        transfer: {
             label: "HEAT TRANSFER PRICING (USD)",
             quantities: [100, 250, 500, 1000, 2500],
             rows: [
-                { label: "NATURAL",      prices: ["$6.80", "$6.70", "$6.60", "$6.50", "$6.40"] },
-                { label: "COLORED",      prices: ["$7.30", "$7.20", "$7.10", "$7.00", "$6.90"] }
+                { label: "NATURAL", prices: ["$6.80", "$6.70", "$6.60", "$6.50", "$6.40"] },
+                { label: "COLORED", prices: ["$7.30", "$7.20", "$7.10", "$7.00", "$6.90"] }
             ],
             priceIncludes: "Full Color Heat Transfer, 1 Location",
             leadTime: "7-10 Business Days after art approval",
@@ -13556,7 +13556,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13644,7 +13644,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13729,7 +13729,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13815,7 +13815,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -13910,7 +13910,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14012,7 +14012,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14123,7 +14123,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14220,7 +14220,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14316,7 +14316,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14412,7 +14412,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14508,7 +14508,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14604,7 +14604,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14700,7 +14700,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14796,7 +14796,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14893,7 +14893,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -14991,7 +14991,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15086,7 +15086,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15176,7 +15176,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15266,7 +15266,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15356,7 +15356,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15447,7 +15447,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15551,7 +15551,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15649,7 +15649,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15754,7 +15754,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15842,7 +15842,7 @@ const products = [{
 
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -15944,7 +15944,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16064,7 +16064,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16166,7 +16166,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16286,7 +16286,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16405,7 +16405,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16504,7 +16504,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16602,7 +16602,7 @@ const products = [{
 
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16710,7 +16710,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16806,7 +16806,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -16912,7 +16912,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17013,7 +17013,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17122,7 +17122,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17224,7 +17224,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17332,7 +17332,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17436,7 +17436,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17544,7 +17544,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17640,7 +17640,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17743,7 +17743,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17846,7 +17846,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -17909,9 +17909,9 @@ const products = [{
             label: "SPOT PRINTING PRICING (USD)",
             quantities: [100, 250, 500, 1000, 2500],
             rows: [
-                { label: "NATURAL",      prices: ["$8.13", "$8.03", "$7.93", "$7.83", "$7.73"] },
+                { label: "NATURAL", prices: ["$8.13", "$8.03", "$7.93", "$7.83", "$7.73"] },
                 { label: "ADD LOCATION", prices: ["$0.62", "$0.62", "$0.62", "$0.62", "$0.62"] },
-                { label: "ADD COLOR",    prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
+                { label: "ADD COLOR", prices: ["$0.52", "$0.52", "$0.52", "$0.52", "$0.52"] }
             ],
             priceIncludes: "1 Color, 1 Location",
             leadTime: "5-7 Business Days after Art Approval",
@@ -17922,7 +17922,7 @@ const products = [{
             label: "HEAT TRANSFER PRICING (USD)",
             quantities: [100, 250, 500, 1000, 2500],
             rows: [
-                { label: "NATURAL",      prices: ["$9.40", "$9.30", "$9.20", "$9.10", "$9.00"] },
+                { label: "NATURAL", prices: ["$9.40", "$9.30", "$9.20", "$9.10", "$9.00"] },
                 { label: "ADD LOCATION", prices: ["$1.68", "$1.68", "$1.68", "$1.68", "$1.68"] }
             ],
             priceIncludes: "Heat Transfer, 1 Location",
@@ -18044,7 +18044,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18146,7 +18146,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18252,7 +18252,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18356,7 +18356,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18460,7 +18460,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18559,7 +18559,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18660,7 +18660,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18761,7 +18761,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18858,7 +18858,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -18966,7 +18966,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19063,7 +19063,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19177,7 +19177,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19284,7 +19284,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19381,7 +19381,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19476,7 +19476,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19571,7 +19571,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19664,7 +19664,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19747,7 +19747,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19852,7 +19852,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -19950,7 +19950,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20043,7 +20043,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20134,7 +20134,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20217,7 +20217,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20318,7 +20318,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20419,7 +20419,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20522,7 +20522,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20623,7 +20623,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20724,7 +20724,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20819,7 +20819,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -20911,7 +20911,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21013,7 +21013,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21113,7 +21113,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21215,7 +21215,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21312,7 +21312,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21408,7 +21408,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21508,7 +21508,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21621,7 +21621,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21723,7 +21723,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21824,7 +21824,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -21936,7 +21936,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -22046,7 +22046,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -22147,7 +22147,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -22259,7 +22259,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -22381,7 +22381,7 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
@@ -22493,11 +22493,107 @@ const products = [{
         }
     },
 
-     additionalCharges: {
+    additionalCharges: {
         setupCharge: "$56.25 (V) - Spot printing",
         setupChargeTransfer: "$112.50 (V) - Heat Transfer",
         repeatSetup: "$37.50 (V) - Spot printing",
         repeatSetupTransfer: "Call for Pricing - Heat Transfer",
+        pmsMatch: "$56.25 (V)",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "ibcm1300",
+    name: "Ceramic Campfire Coffee Mugs - 13 oz",
+    code: "IBCM1300",
+    slug: "ceramic-campfire-coffee-mugs-13-oz",
+    category: "Ceramic Mugs",
+    material: "Stoneware",
+    size: '3.4375"H x 4"R x 3"Base',
+    imprint: '2.75" W x 2.00" H',
+    price: 6.73,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
+    description: "A premium 13 oz stoneware campfire mug perfect for hot beverages. Features a 2.75\" x 2\" imprint area and utilizes UV DTF printing for 2-color and full-color designs, ensuring vibrant and durable artwork. Ideal for corporate gifting and outdoor-themed promotions.",
+
+    popular: false,
+
+    colors: [
+        { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Almond.jpg" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Black.jpg" },
+        { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Green.jpg" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Grey.jpg" },
+        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Maroon.jpg" },
+        { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Mint.jpg" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Navy Blue.jpg" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Red.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Almond.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Black.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Green.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Grey.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Maroon.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Mint.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Navy Blue.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Red.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg"
+    ],
+
+    specs: {
+        itemNo: "IBCM1300",
+        material: "Stoneware",
+        printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        packagingOptions: [
+            {
+                type: "Case",
+                qtyPerBox: "36 pcs",
+                boxWeight: "35.05 lbs",
+                boxDims: '18.50" x 12.99" x 12.20"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [36, 72, 144, 288, 576, 1008],
+            rows: [
+                { label: "White - 1 Color Imprint", prices: ["$7.08", "$4.49", "$4.36", "$4.24", "$4.19", "$4.03"] },
+                { label: "White - 2 Color Imprint", prices: ["$7.72", "$5.26", "$5.11", "$4.97", "$4.91", "$4.72"] },
+                { label: "White - Full Color", prices: ["$8.94", "$6.74", "$6.55", "$6.37", "$6.29", "$6.05"] },
+                { label: "Colors - 1 Color Imprint", prices: ["$7.25", "$4.74", "$4.61", "$4.49", "$4.43", "$4.26"] },
+                { label: "Colors - 2 Color Imprint", prices: ["$7.89", "$5.52", "$5.36", "$5.22", "$5.15", "$4.95"] },
+                { label: "Colors - Full Color", prices: ["$9.11", "$6.99", "$6.80", "$6.62", "$6.53", "$6.28"] },
+                { label: "ADD LOCATION (ADD COLOR)", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+            ],
+            priceIncludes: "1 Color 1 Location",
+            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "Free"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            quantities: [36, 72, 144, 288, 576, 1008],
+            rows: [
+                { label: "White", prices: ["$6.73", "$4.36", "$4.24", "$4.12", "$4.07", "$3.91"] },
+                { label: "Colors", prices: ["$6.88", "$4.50", "$4.38", "$4.26", "$4.20", "$4.04"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "12 Pcs - Pls contact us for pricing"
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V) - Spot printing",
+        repeatSetup: "Free",
         pmsMatch: "$56.25 (V)",
         lessThanMinimum: "Call for pricing",
         colorChangeFee: "$18.75 (V)",
@@ -24139,98 +24235,95 @@ function initFreightModal() {
     }
 
     function renderPricing(method) {
-        const data = product.pricing[method];
-        if (!data) return;
+    const data = product.pricing[method];
+    if (!data) return;
 
-        const labelEl = document.querySelector('#pricing-section .text-brand-textSecondary');
-        if (labelEl) labelEl.textContent = data.label;
+    const labelEl = document.querySelector('#pricing-section .text-brand-textSecondary');
+    if (labelEl) labelEl.textContent = data.label;
 
-        const isBlank = method === 'blank' || !data.quantities;
-        const thead = document.getElementById('pricing-thead');
+    const isBlank = method === 'blank' || !data.quantities;
+    const thead = document.getElementById('pricing-thead');
 
-        // ============================================================
-        // HEADER RENDER
-        // ============================================================
-        if (thead) {
-            thead.style.display = isBlank ? 'none' : '';
-            if (!isBlank) {
-                const quantities = data.quantities || [];
-                let html = `<tr style="color: #C81F45 !important; text-transform: uppercase; letter-spacing: 0.05em;">
-                <th style="color: #C81F45 !important; text-align: left;">Quantity</th>`;
+    // ============================================================
+    // HEADER RENDER
+    // ============================================================
+    if (thead) {
+        thead.style.display = isBlank ? 'none' : '';
+        if (!isBlank) {
+            const quantities = data.quantities || [];
+            let html = `<tr style="color: #C81F45 !important; text-transform: uppercase; letter-spacing: 0.05em;">
+            <th style="color: #C81F45 !important; text-align: left;">Quantity</th>`;
 
-                for (let i = 0; i < 6 && i < quantities.length; i++) {
-                    html += `<th id="p-qty-${i + 1}" style="color: #C81F45 !important;">${quantities[i]}</th>`;
-                }
-
-                html += `<th style="color: #C81F45 !important;"></th></tr>`;
-                thead.innerHTML = html;
+            for (let i = 0; i < 6 && i < quantities.length; i++) {
+                html += `<th id="p-qty-${i + 1}" style="color: #C81F45 !important;">${quantities[i]}</th>`;
             }
+
+            html += `<th style="color: #C81F45 !important;"></th></tr>`;
+            thead.innerHTML = html;
         }
+    }
 
-        // BODY RENDER
-        pricingBody.innerHTML = '';
+    // BODY RENDER
+    pricingBody.innerHTML = '';
 
-        // ============================================================
-        // ✅ BLANK TAB (Center aligned - jaise Blankets page par)
-        // ============================================================
-        if (isBlank) {
-            // 1. Blank Pricing Rows (bags, blankets)
-            if (data.rows) {
-                data.rows.forEach((row) => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                            <td class="font-medium text-brand-textSecondary">${row.label}</td>
-                            <td class="text-brand-text font-semibold">${row.prices[0]}</td>
-                            <td class="text-brand-textSecondary">R</td>
-                        `;
-                    pricingBody.appendChild(tr);
-                });
-            }
-
-            // 2. Base Price (T-shirts, hoodies)
-            if (data.basePrice) {
+    // ============================================================
+    // ✅ BLANK TAB (Center aligned - jaise Blankets page par)
+    // ============================================================
+    if (isBlank) {
+        // 1. Blank Pricing Rows (bags, blankets)
+        if (data.rows) {
+            data.rows.forEach((row) => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                        <td class="font-medium text-brand-textSecondary">${data.basePrice.label}</td>
-                        <td class="text-brand-text font-semibold">${data.basePrice.price}</td>
+                        <td class="font-medium text-brand-textSecondary">${row.label}</td>
+                        <td class="text-brand-text font-semibold">${row.prices[0]}</td>
                         <td class="text-brand-textSecondary">R</td>
                     `;
                 pricingBody.appendChild(tr);
-            }
-
-            // 3. Upsize Charges (T-shirts, hoodies)
-            if (data.upsizeCharges) {
-                const headingTr = document.createElement('tr');
-                headingTr.innerHTML = `
-                        <td colspan="3" class="pt-4 pb-2">
-                            <span class="text-[11px] font-bold text-brand-crimson uppercase tracking-wider">Upsize Charges</span>
-                        </td>
-                    `;
-                pricingBody.appendChild(headingTr);
-
-                data.upsizeCharges.forEach(u => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                            <td class="font-medium text-brand-textSecondary pl-4">${u.size}</td>
-                            <td class="text-brand-text">${u.charge}</td>
-                            <td class="text-brand-textSecondary">V</td>
-                        `;
-                    pricingBody.appendChild(tr);
-                });
-            }
-
-            // ✅ Setup aur Repeat containers ko hide karo
-            const setupContainer = document.getElementById('setup-charge-container');
-            const repeatContainer = document.getElementById('repeat-setup-container');
-            if (setupContainer) setupContainer.style.display = 'none';
-            if (repeatContainer) repeatContainer.style.display = 'none';
-
-            // ✅ Grid ko CENTER karo
-            adjustInfoGrid();
-
-            return; // ✅ Blank ke liye yahan ruk jao
+            });
         }
 
+        // 2. Base Price (T-shirts, hoodies)
+        if (data.basePrice) {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                    <td class="font-medium text-brand-textSecondary">${data.basePrice.label}</td>
+                    <td class="text-brand-text font-semibold">${data.basePrice.price}</td>
+                    <td class="text-brand-textSecondary">R</td>
+                `;
+            pricingBody.appendChild(tr);
+        }
+
+        // 3. Upsize Charges (T-shirts, hoodies)
+        if (data.upsizeCharges) {
+            const headingTr = document.createElement('tr');
+            headingTr.innerHTML = `
+                    <td colspan="3" class="pt-4 pb-2">
+                        <span class="text-[11px] font-bold text-brand-crimson uppercase tracking-wider">Upsize Charges</span>
+                    </td>
+                `;
+            pricingBody.appendChild(headingTr);
+
+            data.upsizeCharges.forEach(u => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                        <td class="font-medium text-brand-textSecondary pl-4">${u.size}</td>
+                        <td class="text-brand-text">${u.charge}</td>
+                        <td class="text-brand-textSecondary">V</td>
+                    `;
+                pricingBody.appendChild(tr);
+            });
+        }
+
+        // ✅ Setup aur Repeat containers ko hide karo
+        const setupContainer = document.getElementById('setup-charge-container');
+        const repeatContainer = document.getElementById('repeat-setup-container');
+        if (setupContainer) setupContainer.style.display = 'none';
+        if (repeatContainer) repeatContainer.style.display = 'none';
+
+        // ✅ Grid ko CENTER karo
+        adjustInfoGrid();
+    } else {
         // ============================================================
         // ✅ SPOT / TRANSFER TAB (Normal rendering)
         // ============================================================
@@ -24279,6 +24372,22 @@ function initFreightModal() {
             adjustInfoGrid();
         }
     }
+
+    // ============================================================
+    // ✅ PRINT METHODS NOTE (Sab tabs ke liye, function ke aakhir me)
+    // ============================================================
+    const printNote = document.getElementById('print-methods-note');
+    const printText = document.getElementById('print-methods-text');
+    if (printNote && printText) {
+        // Sirf 'spot' tab me dikhao, aur agar printMethods field majood ho
+        if (method === 'spot' && product.pricing?.spot?.printMethods) {
+            printText.textContent = product.pricing.spot.printMethods;
+            printNote.classList.remove('hidden');
+        } else {
+            printNote.classList.add('hidden');
+        }
+    }
+}
     function renderSpecsTable(selectedColor) {
         const s = product.specs || {
             itemNo: product.code,
