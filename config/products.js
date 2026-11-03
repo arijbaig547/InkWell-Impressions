@@ -55,44 +55,44 @@ document.querySelectorAll('#mobileMenu a').forEach(link => {
 });
 
 
-  (function () {
-    // Browser ki purani scroll position restore na kare
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
+(function () {
+  // Browser ki purani scroll position restore na kare
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
 
-    let hasScrolled = false;
+  let hasScrolled = false;
 
-    function scrollToProducts() {
-      if (hasScrolled) return;
+  function scrollToProducts() {
+    if (hasScrolled) return;
 
-      // Agar user khud scroll kar chuka hai to hijack na karein
-      if (window.scrollY > 10) { hasScrolled = true; return; }
+    // Agar user khud scroll kar chuka hai to hijack na karein
+    if (window.scrollY > 10) { hasScrolled = true; return; }
 
-      // Products JS se inject hote hain — jab tak grid khali hai wait karein
-      const grid = document.getElementById('product-grid');
-      if (grid && grid.children.length === 0) return;
+    // Products JS se inject hote hain — jab tak grid khali hai wait karein
+    const grid = document.getElementById('product-grid');
+    if (grid && grid.children.length === 0) return;
 
-      const offset = window.innerHeight * 0.15; // viewport ka 25%
-      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const offset = window.innerHeight * 0.15; // viewport ka 25%
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-      if (maxScroll <= 0) return;
+    if (maxScroll <= 0) return;
 
-      window.scrollTo(0, Math.min(offset, maxScroll));
-      hasScrolled = true;
-    }
+    window.scrollTo(0, Math.min(offset, maxScroll));
+    hasScrolled = true;
+  }
 
-    window.addEventListener('load', function () {
+  window.addEventListener('load', function () {
+    scrollToProducts();
+
+    // Agar products async render ho rahe hain to thori der poll karein
+    let tries = 0;
+    const iv = setInterval(function () {
       scrollToProducts();
-
-      // Agar products async render ho rahe hain to thori der poll karein
-      let tries = 0;
-      const iv = setInterval(function () {
-        scrollToProducts();
-        if (hasScrolled || ++tries > 20) clearInterval(iv);
-      }, 100);
-    });
-  })();
+      if (hasScrolled || ++tries > 20) clearInterval(iv);
+    }, 100);
+  });
+})();
 // ----------------------------------------------
 // 1. PRODUCTS DATA (embedded)
 // ----------------------------------------------
@@ -796,60 +796,60 @@ const products = [{
   popular: false
 },
 {
-    id: "is99",
-    name: "Tote Cooler Bag",
-    code: "IS99",
-    slug: "tote-cooler-bag",
-    category: "Non-Woven Bags",
-    material: "80 GSM Non-Woven Fabric",
-    size: '13"W x 11"H x 5"D',
-    price: 35.00,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.webp",
-    description: "80 GSM non-woven tote cooler bag with foil-laminated PE foam insulation and zippered main compartment.",
-    popular: false
+  id: "is99",
+  name: "Tote Cooler Bag",
+  code: "IS99",
+  slug: "tote-cooler-bag",
+  category: "Non-Woven Bags",
+  material: "80 GSM Non-Woven Fabric",
+  size: '13"W x 11"H x 5"D',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IS99/IS99-Black-Heather Grey-Grey.webp",
+  description: "80 GSM non-woven tote cooler bag with foil-laminated PE foam insulation and zippered main compartment.",
+  popular: false
 },
 {
-    id: "is69",
-    name: "Water Repellent Drawstring Backpack",
-    code: "IS69",
-    slug: "water-repellent-drawstring-backpack",
-    category: "Non-Woven Bags",
-    material: "80 GSM Non-Woven Fabric",
-    size: '16"W x 18"H',
-    price: 35.00,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.webp",
-    description: "80 GSM water repellent non-woven drawstring backpack with cinch closure and rope cord.",
-    popular: false
+  id: "is69",
+  name: "Water Repellent Drawstring Backpack",
+  code: "IS69",
+  slug: "water-repellent-drawstring-backpack",
+  category: "Non-Woven Bags",
+  material: "80 GSM Non-Woven Fabric",
+  size: '16"W x 18"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IS69/IS69-Yellow.webp",
+  description: "80 GSM water repellent non-woven drawstring backpack with cinch closure and rope cord.",
+  popular: false
 },
 {
-    id: "is103",
-    name: "Economical Polyester Sports Pack",
-    code: "IS103",
-    slug: "economical-polyester-sports-pack",
-    category: "Non-Woven Bags",
-    material: "210D Polyester",
-    size: '14"W x 18"H',
-    price: 35.00,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.webp",
-    description: "210D polyester drawstring sports pack with faux-leather reinforced corners.",
-    popular: false
+  id: "is103",
+  name: "Economical Polyester Sports Pack",
+  code: "IS103",
+  slug: "economical-polyester-sports-pack",
+  category: "Non-Woven Bags",
+  material: "210D Polyester",
+  size: '14"W x 18"H',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IS103/IS103-Teal.webp",
+  description: "210D polyester drawstring sports pack with faux-leather reinforced corners.",
+  popular: false
 },
 {
-    id: "is61",
-    name: "Jumbo Shopper Bag",
-    code: "IS61",
-    slug: "jumbo-shopper-bag",
-    category: "Non-Woven Bags",
-    material: "Non-Woven Fabric",
-    size: '20"W x 16"H x 6"D',
-    price: 35.00,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS61/IS61-Red.webp",
-    description: "80 gsm jumbo non-woven shopper bag with full side and bottom gussets.",
-    popular: false
+  id: "is61",
+  name: "Jumbo Shopper Bag",
+  code: "IS61",
+  slug: "jumbo-shopper-bag",
+  category: "Non-Woven Bags",
+  material: "Non-Woven Fabric",
+  size: '20"W x 16"H x 6"D',
+  price: 35.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/non-woven/IS61/IS61-Red.webp",
+  description: "80 gsm jumbo non-woven shopper bag with full side and bottom gussets.",
+  popular: false
 },
 {
   id: "is109",
@@ -2198,18 +2198,18 @@ const products = [{
   popular: false
 },
 {
-    id: "is13",
-    name: "Faux Leather Handle Tote Bag",
-    code: "IS13",
-    slug: "faux-leather-handle-tote-bag",
-    category: "Tote Bags",
-    material: "12 oz Cotton Canvas",
-    size: '16"W x 13"H x 5"D',
-    price: 30.00,
-    originalPrice: 45.00,
-    image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.webp",
-    description: "12 oz natural cotton canvas tote with stylish brown faux leather handles.",
-    popular: false
+  id: "is13",
+  name: "Faux Leather Handle Tote Bag",
+  code: "IS13",
+  slug: "faux-leather-handle-tote-bag",
+  category: "Tote Bags",
+  material: "12 oz Cotton Canvas",
+  size: '16"W x 13"H x 5"D',
+  price: 30.00,
+  originalPrice: 45.00,
+  image: "assets/assets/images/products/tote-bags/IS13/IS13-Natural.webp",
+  description: "12 oz natural cotton canvas tote with stylish brown faux leather handles.",
+  popular: false
 },
 
 {
@@ -2973,19 +2973,621 @@ const products = [{
   popular: false
 },
 {
-    id: "ibcm1300",
-    name: "Ceramic Campfire Coffee Mugs - 13 oz",
-    code: "IBCM1300",
-    slug: "ceramic-campfire-coffee-mugs-13-oz",
-    category: "Ceramic Mugs",
-    material: "Stoneware",
-    size: '3.4375"H x 4"R x 3"Base',
-    price: 6.73,
-    originalPrice: 50.00,
-    image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
-    description: "Premium 13 oz stoneware campfire mug featuring UV DTF printing for vibrant, long-lasting designs.",
-    popular: false
+  id: "ibcm1300",
+  isBelpromo: true,
+  name: "13 oz Ceramic Coffee Mug ",
+  code: "IBCM1300",
+  slug: "ceramic-campfire-coffee-mugs-13-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.4375"H x 4"R x 3"Base',
+  price: 7.63,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
+  description: "Premium 13 oz stoneware campfire mug featuring UV DTF printing for vibrant, long-lasting designs.",
+  popular: false
 },
+{
+  id: "ibcms7102",
+  isBelpromo: true,
+  name: "11 oz Full Color Glossy Photo Mug", code: "IBCMS7102",
+  slug: "11-oz-full-color-glossy-photo-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.5" W x 3.75" H x 3" R',
+  price: 5.18,
+  image: "assets/assets/images/products/ceramic mugs/IBCMS7102/IBCMS7102-White.jpg",
+  description: "Glossy white ceramic mug with a large imprint area and comfortable curved handle, perfect for vibrant full-color photo sublimation.",
+  popular: false
+},
+
+{
+  id: "ibcm7102",
+  isBelpromo: true,
+  name: "Traditional Ceramic Custom Mug - 11 oz",
+  code: "IBCM7102",
+  slug: "traditional-ceramic-custom-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.10"W x 3.75"H x 3.15"B',
+  price: 3.32,
+  image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg",
+  description: "Traditional 11 oz ceramic mug in seventeen vibrant colors, featuring a glossy exterior, matching interior, and a comfortable curved handle.",
+  popular: false
+},
+{
+  id: "ibcm5000",
+  isBelpromo: true,
+  name: "16 oz Bistro Glossy Personalized Coffee Mug",
+  code: "IBCM5000",
+  slug: "16-oz-bistro-glossy-personalized-coffee-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '2.1"W x 4.1"H x 3.9"Rim',
+  price: 3.79,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.jpg",
+  description: "Bistro-style 16 oz wide body ceramic mug with a glossy vibrant finish and high-curved grip, perfect for easy grab-n-go promotional branding.",
+  popular: false
+},
+{
+  id: "ibcm5003",
+  isBelpromo: true,
+  name: "Two-Tone Ceramic Custom Mug - 16 oz",
+  code: "IBCM5003",
+  slug: "two-tone-ceramic-custom-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.1"H x 3.9"Rim x 2.1"W',
+  price: 4.58,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.jpg",
+  description: "Bistro-style 16 oz wide body mug featuring a sleek two-tone design with a black exterior and bright colored interior, perfect for a vibrant promotional look.",
+  popular: false
+},
+{
+  id: "ibcm1039",
+  isBelpromo: true,
+  name: "Caldwell 15 oz Cork Base Ceramic Mug",
+  code: "IBCM1039",
+  slug: "caldwell-15-oz-cork-base-ceramic-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.25"W x 4.5"H x 3.25"B',
+  price: 5.82,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.jpg",
+  description: "15 oz ceramic mug featuring a unique cork base, matte exterior, glossy interior, and a modern square handle for a stylish grip.",
+  popular: false
+},
+{
+  id: "ibcm599",
+  isBelpromo: true,
+  name: "Curved Java Custom Coffee Mug - 12 oz",
+  code: "IBCM599",
+  slug: "curved-java-custom-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.125"H x 3.25"R x 4.75"W',
+  price: 3.76,
+  image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.jpg",
+  description: "Smooth molded 12 oz ceramic mug with a glossy vibrant exterior and high-curved grip, perfect for easy grab-n-go branding.",
+  popular: false
+},
+{
+  id: "ibcm1038",
+  isBelpromo: true,
+  name: "Rexburg 10 oz Stack-N-Sip Mug",
+  code: "IBCM1038",
+  slug: "rexburg-10-oz-stack-n-sip-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5" W x 3.25" H x 2.75" B',
+  price: 3.10,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.jpg",
+  description: "Compact and stylish 10 oz. mug designed for convenient stacking and everyday use, featuring a glossy colored exterior and white interior.",
+  popular: false
+},
+{
+  id: "ibcm1015",
+  isBelpromo: true,
+  name: "Personalized Ceramic Mug - 15 oz",
+  code: "IBCM1015",
+  slug: "personalized-ceramic-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.9"W x 4.5"H x 3.3"Rim',
+  price: 4.66,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.jpg",
+  description: "Large 15 oz ceramic mug with a glossy color exterior and matching interior, featuring a comfortable C-curved handle for easy gripping.",
+  popular: false
+},
+{
+  id: "ibcm1036",
+  isBelpromo: true,
+  name: "Matte 16 oz Stackable Ceramic Mug",
+  code: "IBCM1036",
+  slug: "matte-16-oz-stackable-ceramic-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.75"W x 3.5"H x 3.5"B',
+  price: 5.12,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.jpg",
+  description: "Stylish 16 oz matte ceramic mug with a glossy color interior, designed with a stackable shape for easy storage and modern appeal.",
+  popular: false
+},
+{
+  id: "ibcm1301",
+  isBelpromo: true,
+  name: "Ceramic Campfire Coffee Mug - 7.5 oz",
+  code: "IBCM1301",
+  slug: "ceramic-campfire-coffee-mug-7-5-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.5"W x 2.5"H x 2.75"B',
+  price: 4.56,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.jpg",
+  description: "Sturdy 7.5 oz tin cup style ceramic mug with a slightly flared top to prevent spills and a speckled finish for a rustic campfire look.",
+  popular: false
+},
+{
+  id: "ibcm1600",
+  isBelpromo: true,
+  name: "Ceramic Cappuccino Custom Mug - 18 oz",
+  code: "IBCM1600",
+  slug: "ceramic-cappuccino-custom-mug-18-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"H x 5.9"R x 2"B',
+  price: 5.29,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.jpg",
+  description: "Bowl-shaped 18 oz ceramic soup mug with a thick curved grip and glossy vibrant exterior, perfect for cozy promotional gifting.",
+  popular: false
+},
+{
+  id: "ibcm1035",
+  isBelpromo: true,
+  name: "Speckle Glazed Two Tone Ceramic Mug 17 oz",
+  code: "IBCM1035",
+  slug: "speckle-glazed-two-tone-ceramic-mug-17-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.15"W x 5.25"H x 2.75"B',
+  price: 5.36,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.jpg",
+  description: "Unique 17 oz ceramic mug featuring a speckled matte top finish with a neutral bottom and a glossy color interior.",
+  popular: false
+},
+{
+  id: "ibcm1009",
+  isBelpromo: true,
+  name: "Two Tone Glossy Pottery Custom Coffee Mug 12 oz",
+  code: "IBCM1009",
+  slug: "two-tone-glossy-pottery-custom-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.25"W x 3.5"H',
+  price: 5.53,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.jpg",
+  description: "Classic 12 oz ceramic diner mug featuring a glazed two-tone design with a contrasting black rim, perfect for custom branding.",
+  popular: false
+},
+{
+  id: "ibcm1021",
+  isBelpromo: true,
+  name: "Admiral Ceramic Mug 16 oz",
+  code: "IBCM1021",
+  slug: "admiral-ceramic-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W X 4.5"H X 2.25"B',
+  price: 6.07,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.jpg",
+  description: "Admiral 16 oz ceramic mug featuring a pottery-like glaze finish with an artisan bottom and comfortable grip, perfect for cozy drinks.",
+  popular: false
+},
+{
+  id: "ibcm7105",
+  isBelpromo: true,
+  name: "Glossy Ceramic Custom Mug - 16 oz",
+  code: "IBCM7105",
+  slug: "glossy-ceramic-custom-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.375"Brim x 4.75"H',
+  price: 4.92,
+  image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.jpg",
+  description: "Mocha 16 oz large coffee mug with a glossy vibrant exterior and high curved grip for easy grab-n-go handling.",
+  popular: false
+},
+{
+  id: "ibcm1255",
+  isBelpromo: true,
+  name: "Two-Tone Personalized Coffee Mug - 12 oz",
+  code: "IBCM1255",
+  slug: "two-tone-personalized-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.75"W x 4.25"H',
+  price: 4.56,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.jpg",
+  description: "Two-tone 12 oz ceramic mug featuring a classic white exterior and a vibrant colored interior, offering a wide imprint area for branding.",
+  popular: false
+},
+{
+  id: "ibexp12set",
+  isBelpromo: true,
+  name: "Espresso Cups with Saucers Set - 3 oz",
+  code: "IBEXP12SET",
+  slug: "espresso-cups-with-saucers-set-3-oz",
+  category: "Ceramic Mugs",
+  material: "Porcelain",
+  size: '2.4"H x 2.15"Rim x 2"Base',
+  price: 7.17,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.jpg",
+  description: "Elegant 3 oz white porcelain espresso cup and saucer set, perfect for adding a touch of class to your promotional coffee breaks.",
+  popular: false
+},
+{
+  id: "ibcm1025",
+  isBelpromo: true,
+  name: "Nebula Speckled Clay Coffee Mug - 16 oz",
+  code: "IBCM1025",
+  slug: "nebula-speckled-clay-coffee-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W x 5"H',
+  price: 5.89,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.jpg",
+  description: "Nebula 16 oz ceramic mug with a matte exterior, speckle accents, and a pottery-like glaze finish for a rustic, artisan feel.",
+  popular: false
+},
+{
+  id: "ibcm1031",
+  isBelpromo: true,
+  name: "Ocean Pines Speckled Clay Bistro Mug",
+  code: "IBCM1031",
+  slug: "ocean-pines-speckled-clay-bistro-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.75”W x 4.6”H',
+  price: 4.76,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg",
+  description: "17 oz speckled bistro-style ceramic mug with a clay bottom accent and an easy comfort grip for a cozy drinking experience.",
+  popular: false
+},
+{
+  id: "ibcm1029",
+  isBelpromo: true,
+  name: "Sesame Speckled Two Tone Coffee Mug - 10 oz",
+  code: "IBCM1029",
+  slug: "sesame-speckled-two-tone-coffee-mug-10-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W x 4.25"H',
+  price: 3.39,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.jpg",
+  description: "10 oz ceramic mug featuring a unique sesame speckle outer finish and an easy comfort grip, perfect for cozy hot drinks.",
+  popular: false
+},
+{
+  id: "ibcmb1255",
+  isBelpromo: true,
+  name: "Java Two Tone Coffee Mug - 12 oz",
+  code: "IBCMB1255",
+  slug: "java-two-tone-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.75"W x 4.25"H',
+  price: 5.41,
+  image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg",
+  description: "Java 12 oz ceramic mug featuring a sleek black exterior with a vibrant colored interior, perfect for custom branding.",
+  popular: false
+},
+{
+  id: "ibcm1200",
+  isBelpromo: true,
+  name: "Glossy Ceramic Latte Custom Coffee Mug 12 oz",
+  code: "IBCM1200",
+  slug: "glossy-ceramic-latte-custom-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4"H x 3.7"R x 2.56"B',
+  price: 4.07,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.jpg",
+  description: "Latte 12 oz ceramic mug with a unique shape, glossy vibrant exterior, and high curved grip for easy grab-n-go handling.",
+  popular: false
+},
+{
+  id: "ibcm15tt",
+  isBelpromo: true,
+  name: "Glossy Two-Tone Personalized Ceramic Mug 15 oz",
+  code: "IBCM15TT",
+  slug: "glossy-two-tone-personalized-ceramic-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.5"H x 3.3"Rim x 4.9"W',
+  price: 5.71,
+  image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.jpg",
+  description: "15 oz two-tone ceramic mug with a glossy white exterior and vibrant color interior, featuring an easy comfort grip C-curved handle.",
+  popular: false
+},
+{
+  id: "ibcm5018",
+  isBelpromo: true,
+  name: "Stackable Ceramic Mug - 12 oz",
+  code: "IBCM5018",
+  slug: "stackable-ceramic-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramics",
+  size: '3.25"W x 4"H x 3"B',
+  price: 4.76,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.jpg",
+  description: "12 oz stackable ceramic mug with a matte grey finish and a pop color interior, designed for convenient and stylish storage.",
+  popular: false
+},
+{
+  id: "ibcm5021",
+  isBelpromo: true,
+  name: "Marble Glaze Ceramic Mug - 10 oz",
+  code: "IBCM5021",
+  slug: "marble-glaze-ceramic-mug-10-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.25"W x 4.25"H x 2.25"B',
+  price: 1.75,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.jpg",
+  description: "10 oz ceramic mug featuring a unique marble glaze finish on the outside and a smooth glossy white interior.",
+  popular: false
+},
+{
+  id: "ibexp14set",
+  isBelpromo: true,
+  name: "Porcelain Espresso Cups with Saucer - 2.5 oz",
+  code: "IBEXP14SET",
+  slug: "porcelain-espresso-cups-with-saucer-2-5-oz",
+  category: "Ceramic Mugs",
+  material: "Porcelain",
+  size: '2.25"H x 2.25"Rim x 1.25"Base',
+  price: 7.17,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.jpg",
+  description: "Elegant 2.5 oz white porcelain espresso cup and saucer set, perfect for a refined coffee experience.",
+  popular: false
+},
+{
+  id: "ibexp10set",
+  isBelpromo: true,
+  name: "Espresso Cups with Saucer Set - 2.75 oz",
+  code: "IBEXP10SET",
+  slug: "espresso-cups-with-saucer-set-2-75-oz",
+  category: "Ceramic Mugs",
+  material: "Porcelain",
+  size: '2.25"H x 2.5"Rim x 1.6"Base',
+  price: 7.17,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.jpg",
+  description: "Classic 2.75 oz white porcelain espresso cup and saucer set, perfect for serving rich, concentrated coffee.",
+  popular: false
+},
+{
+  id: "ibcm1032",
+  isBelpromo: true,
+  name: "Stackable Ceramic Mug - 14 oz",
+  code: "IBCM1032",
+  slug: "stackable-ceramic-mug-14-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4"W x 3.5"H',
+  price: 3.06,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.jpg",
+  description: "Modern 14 oz stackable ceramic mug designed for easy storage and everyday convenience, perfect for hot beverages.",
+  popular: false
+},
+{
+  id: "ibcm7101",
+  isBelpromo: true,
+  name: "Matte Two-Tone Coffee Mug - 11 oz",
+  code: "IBCM7101",
+  slug: "matte-two-tone-coffee-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.5 "W x 3.75"H',
+  price: 5.04,
+  image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.jpg",
+  description: "Stylish 11 oz black matte coffee mug with a vibrant color interior and an easy comfort grip C-curved handle.",
+  popular: false
+},
+{
+  id: "ibcm6000",
+  isBelpromo: true,
+  name: "Two Tone Latte Personalized Mug - 13 oz",
+  code: "IBCM6000",
+  slug: "two-tone-latte-personalized-mug-13-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.75"W x 4.25"H',
+  price: 5.53,
+  image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.jpg",
+  description: "13 oz two-tone latte mug with a smooth white exterior and a vibrant color interior, perfect for custom branding.",
+  popular: false
+},
+{
+  id: "ibcm1203",
+  isBelpromo: true,
+  name: "Two-Tone Latte Custom Mug - 12 oz",
+  code: "IBCM1203",
+  slug: "two-tone-latte-custom-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '2.4"W x 4"H x 3.7"Rim',
+  price: 3.88,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.jpg",
+  description: "12 oz two-tone latte mug with a unique shape, black matte exterior, glossy colored interior, and high curved grip.",
+  popular: false
+},
+{
+  id: "ibcms15tt",
+  isBelpromo: true,
+  name: "Glossy Two-Tone Custom Photo Mug - 15 oz",
+  code: "IBCMS15TT",
+  slug: "glossy-two-tone-custom-photo-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.5"H x 3.25"R x 4.9"B',
+  price: 7.41,
+  image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.jpg",
+  description: "15 oz two-tone photo sublimation ceramic mug with a glossy white exterior and vibrant colored interior, perfect for full-color branding.",
+  popular: false
+},
+{
+  id: "ibcmcp01",
+  isBelpromo: true,
+  name: "Bistro Vitrified Porcelain Mug - 11 oz",
+  code: "IBCMCP01",
+  slug: "bistro-vitrified-porcelain-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4"H x 3.35"Rim x 2"Base',
+  price: 7.48,
+  image: "assets/assets/images/products/ceramic mugs/IBCMCP01/IBCMCP01-White.jpg",
+  description: "Classic 11 oz bistro-style vitrified porcelain mug, featuring fully customizable imprint areas for your branding.",
+  popular: false
+},
+{
+  id: "ibcm99268",
+  isBelpromo: true,
+  name: "El Grande Two Tone Glossy Coffee Mug - 15 oz",
+  code: "IBCM99268",
+  slug: "el-grande-two-tone-glossy-coffee-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.9"W x 4.5"H x 3.3"Rim',
+  price: 2.73,
+  image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.jpg",
+  description: "Grande 15 oz wide body ceramic mug with a two-toned glossy vibrant exterior and bright white interior, perfect for promotional branding.",
+  popular: false
+},
+{
+  id: "ibcm1016",
+  isBelpromo: true,
+  name: "El Grande Matte Ceramic Personalized Mug - 20 oz",
+  code: "IBCM1016",
+  slug: "el-grande-matte-ceramic-personalized-mug-20-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W X 5"H X 2.75"B',
+  price: 6.07,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.jpg",
+  description: "20 oz Grande wide body ceramic mug with a smooth matte exterior, matching interior, and easy comfort grip.",
+  popular: false
+},
+{
+  id: "ibcm1019",
+  isBelpromo: true,
+  name: "Drip Ceramic Personalized Mug - 17 oz",
+  code: "IBCM1019",
+  slug: "drip-ceramic-personalized-mug-17-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.80"W X 4.5"H X 2.25"B',
+  price: 5.09,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.jpg",
+  description: "Unique 17 oz ceramic mug featuring a drip glaze rim and interior finish, adding a creative touch to your morning coffee.",
+  popular: false
+},
+{
+  id: "ibcm1003",
+  isBelpromo: true,
+  name: "Ceramic Custom Mug - 23 oz",
+  code: "IBCM1003",
+  slug: "ceramic-custom-mug-23-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.1"B x 5.1"H',
+  price: 6.92,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.jpg",
+  description: "Large 23 oz ceramic mug with a matching interior and exterior, perfect for large coffees, teas, or hot chocolate.",
+  popular: false
+},
+{
+  id: "ibcmcp02",
+  isBelpromo: true,
+  name: "Porcelain Latte Mug - 10 oz",
+  code: "IBCMCP02",
+  slug: "porcelain-latte-mug-10-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.1"H x 3.25"R x 2.25"B',
+  price: 3.14,
+  image: "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.jpg",
+  description: "10 oz vitrified porcelain latte mug with fully customizable imprint areas, perfect for a sleek and professional look.",
+  popular: false
+},
+{
+  id: "ibexp06",
+  isBelpromo: true,
+  name: "White Coffee Mug - 6 oz",
+  code: "IBEXP06",
+  slug: "white-coffee-mug-6-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3"H x 3 1/4"R x 1 7/8"B',
+  price: 3.71,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.jpg",
+  description: "Classic 6 oz white ceramic coffee mug, perfect for espresso or small promotional giveaways.",
+  popular: false
+},
+{
+  id: "ibcms1015",
+  isBelpromo: true,
+  name: "Full Color Wrap Around Ceramic Custom Mug - 15 oz",
+  code: "IBCMS1015",
+  slug: "full-color-wrap-around-ceramic-custom-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.9"W x 4.5"H x 3.3"Rim',
+  price: 7.10,
+  image: "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.jpg",
+  description: "15 oz photo sublimation white ceramic mug with a glossy exterior, perfect for vibrant full-color wrap-around designs.",
+  popular: false
+},
+{
+  id: "ibcm55169",
+  isBelpromo: true,
+  name: "Diner Mug - 11 oz",
+  code: "IBCM55169",
+  slug: "diner-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '5"W x 3.8"H',
+  price: 6.26,
+  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg",
+  description: "Classic 11 oz diner-style ceramic mug in milky white, featuring a glossy finish and thick curved grip for easy handling.",
+  popular: false
+},
+{
+  id: "ibcm8000",
+  isBelpromo: true,
+  name: "Thick Grip Glossy Ceramic Diner Mug - 12 oz",
+  code: "IBCM8000",
+  slug: "thick-grip-glossy-ceramic-diner-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.8"H x 3.4"Rim',
+  price: 6.12,
+  image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.jpg",
+  description: "Classic 12 oz diner mug with a glossy exterior and thick curved grip, perfect for comfortable everyday use.",
+  popular: false
+},
+{
+  id: "ibcm1026",
+  isBelpromo: true,
+  name: "Speckled Clay Coffee Mug - 11 oz",
+  code: "IBCM1026",
+  slug: "speckled-clay-coffee-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.25"W x 3.5"H',
+  price: 3.15,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg",
+  description: "11 oz ceramic mug featuring a matte exterior with speckle accents and an artisan bottom, adding a rustic touch to your coffee.",
+  popular: false
+}
 
 ];
 
@@ -3107,7 +3709,10 @@ function initLazyBackground() {
 
   function getCategories() {
     const cats = products.map(p => p.category);
-    return ['All Products', ...new Set(cats)];
+    const uniqueCats = [...new Set(cats)];
+    // Alphabetical sort (case-insensitive)
+    uniqueCats.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+    return ['All Products', ...uniqueCats];
   }
 
   function getSizes() {
@@ -3385,6 +3990,9 @@ function initLazyBackground() {
       isCap ||
       isBeanie;
 
+
+
+
     // ============================================================
     // HIDE MOCKUP
     // Apparel + Blankets = NO MOCKUP
@@ -3398,9 +4006,8 @@ function initLazyBackground() {
     // PRICE LABEL LOGIC
     // ============================================================
 
-    const showSetupWas = !isBlanket;
-
-    // ============================================================
+    const isBelpromo = product.isBelpromo === true;   // ✅ ADD this line
+    const showSetupWas = !isBlanket;   // ============================================================
     // SIZE BADGE
     // ============================================================
 
@@ -3449,30 +4056,30 @@ function initLazyBackground() {
             </p>
 
             <div class="mt-auto">
-
-                ${showSetupWas ? `
-                    <div class="text-[12px] text-brand-textSecondary font-medium mb-1">
-                        ${isApparel
-          ? '<span class="blink-text">As Low As</span>'
-          : 'Setup Was'
-        }
-                    </div>
-                ` : ''}
+${(isApparel || isBelpromo) ? `
+    <div class="text-[12px] text-brand-textSecondary font-medium mb-1">
+        <span class="blink-text">As Low As</span>
+    </div>
+` : (showSetupWas ? `
+    <div class="text-[12px] text-brand-textSecondary font-medium mb-1">
+        Setup Was
+    </div>
+` : '')}
 
                 <div class="flex items-center gap-2 flex-wrap mb-3">
 
-                    ${product.originalPrice && showSetupWas ? `
-                        <span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">
-                            $${product.originalPrice.toFixed(2)}
-                        </span>
-                    ` : ''}
+                ${product.originalPrice && showSetupWas && !isBelpromo ? `
+    <span class="text-[15px] text-brand-textSecondary line-through opacity-50 font-medium">
+        $${product.originalPrice.toFixed(2)}
+    </span>
+` : ''}
 
                     <span class="text-brand-crimson font-bold text-base">
                         $${product.price.toFixed(2)}
                     </span>
 
                     <span class="text-[12px] font-bold text-brand-crimson bg-red-50 px-2 py-0.5 rounded border border-brand-crimson/30">
-                        ${isBlanket || isApparel ? 'R' : 'Net Price'}
+                        ${isBlanket || isApparel || isBelpromo ? 'R' : 'Net Price'}
                     </span>
 
                 </div>

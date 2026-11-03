@@ -22507,14 +22507,18 @@ const products = [{
 },
 {
     id: "ibcm1300",
-    name: "Ceramic Campfire Coffee Mugs - 13 oz",
+    isBelpromo: true,
+    templatesAvailable: false,
+    name: "13 oz Ceramic Coffee Mug",
     code: "IBCM1300",
-    slug: "ceramic-campfire-coffee-mugs-13-oz",
+    featureImage: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Featured.jpg",
+    slug: "ceramic-coffee-mugs-13-oz",
     category: "Ceramic Mugs",
     material: "Stoneware",
     size: '3.4375"H x 4"R x 3"Base',
     imprint: '2.75" W x 2.00" H',
-    price: 6.73,
+    hideGusset: true,
+    price: 7.63,
     originalPrice: 50.00,
     image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
     description: "A premium 13 oz stoneware campfire mug perfect for hot beverages. Features a 2.75\" x 2\" imprint area and utilizes UV DTF printing for 2-color and full-color designs, ensuring vibrant and durable artwork. Ideal for corporate gifting and outdoor-themed promotions.",
@@ -22538,14 +22542,19 @@ const products = [{
         "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Black.jpg",
         "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Green.jpg",
         "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Grey.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Promo1.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Promo2.jpg",
         "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Maroon.jpg",
         "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Mint.jpg",
         "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Navy Blue.jpg",
         "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Red.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg"
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
     ],
 
     specs: {
+        weight: "13oz",
+        imprintPlacement: "Front Side, Back Side or Both Side",
+        specSample: "Free Spec Sample with Free Ground Shipping",
         itemNo: "IBCM1300",
         material: "Stoneware",
         printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -22554,25 +22563,26 @@ const products = [{
                 type: "Case",
                 qtyPerBox: "36 pcs",
                 boxWeight: "35.05 lbs",
-                boxDims: '18.50" x 12.99" x 12.20"'
+                boxDims: '18.50" x 12.99" x 12.20"',
+
             }
         ]
     },
 
     pricing: {
         spot: {
-            label: "SPOT PRINTING PRICING (USD)",
+            label: "PRICING (USD)",
             quantities: [36, 72, 144, 288, 576, 1008],
             rows: [
-                { label: "White - 1 Color Imprint", prices: ["$7.08", "$4.49", "$4.36", "$4.24", "$4.19", "$4.03"] },
-                { label: "White - 2 Color Imprint", prices: ["$7.72", "$5.26", "$5.11", "$4.97", "$4.91", "$4.72"] },
-                { label: "White - Full Color", prices: ["$8.94", "$6.74", "$6.55", "$6.37", "$6.29", "$6.05"] },
-                { label: "Colors - 1 Color Imprint", prices: ["$7.25", "$4.74", "$4.61", "$4.49", "$4.43", "$4.26"] },
-                { label: "Colors - 2 Color Imprint", prices: ["$7.89", "$5.52", "$5.36", "$5.22", "$5.15", "$4.95"] },
-                { label: "Colors - Full Color", prices: ["$9.11", "$6.99", "$6.80", "$6.62", "$6.53", "$6.28"] },
-                { label: "ADD LOCATION (ADD COLOR)", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+                { label: "White - 1 Color Imprint - 1 Location", prices: ["$8.03", "$5.66", "$4.39", "$4.27", "$4.11", "$3.96"] },
+                { label: "White - 2 Color Imprint - 1 Location", prices: ["$8.69", "$6.50", "$5.20", "$5.07", "$4.89", "$4.72"] },
+                { label: "White - Full Color 1 Location", prices: ["$9.96", "$8.11", "$6.75", "$6.60", "$6.38", "$6.20"] },
+                { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.21", "$5.85", "$5.22", "$5.11", "$4.95", "$4.85"] },
+                { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.87", "$6.69", "$6.03", "$5.91", "$5.73", "$5.62"] },
+                { label: "Colors - Full Color - 1 Location", prices: ["$10.13", "$8.30", "$7.59", "$7.43", "$7.23", "$7.09"] },
+                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
             ],
-            priceIncludes: "1 Color 1 Location",
+            priceIncludes: "1 Location",
             printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
             leadTime: "5-7 Business Days after Art Approval",
             setupCharge: "$56.25 (V)",
@@ -22582,12 +22592,121 @@ const products = [{
             label: "BLANK PRICING (USD)",
             quantities: [36, 72, 144, 288, 576, 1008],
             rows: [
-                { label: "White", prices: ["$6.73", "$4.36", "$4.24", "$4.12", "$4.07", "$3.91"] },
-                { label: "Colors", prices: ["$6.88", "$4.50", "$4.38", "$4.26", "$4.20", "$4.04"] }
+                { label: "White", prices: ["$7.63", "$5.38", "$4.17", "$4.06", "$3.90", "$3.76"] },
+                { label: "Colors", prices: ["$7.80", "$5.56", "$4.97", "$4.85", "$4.71", "$4.61"] }
             ],
             priceIncludes: "Blank",
             leadTime: "Within 2 to 3 Business Days",
             moq: "12 Pcs - Pls contact us for pricing"
+        }
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free",
+        pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour"
+    }
+},
+{
+    id: "IBCM7102",
+    name: "11 oz Traditional Ceramic Mug",
+    code: "IBCM7102",
+    slug: "11-oz-traditional-ceramic-mug",
+    category: "Ceramic Mugs",
+    material: "Stoneware",
+    size: '4.5"W x 3.75"H x 3"R',
+    imprint: '2.75"W x 3"H (Wrap: 7.75"W x 3"H)',
+    price: 4.62,
+
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+    description: "A premium 11 oz white ceramic mug designed for vibrant photo sublimation. Features a glossy exterior, easy-grip curved handle, and a generous 2.75\" x 3\" front/back imprint area (7.75\" x 3\" wrap-around). Ideal for custom gifts and corporate giveaways.",
+
+    popular: false,
+    hideGusset: true,
+    bwTemplateOnly: true,
+
+    colors: [
+        { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg" },
+        { name: "Brown", hex: "#5A3825", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg" },
+        { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg" },
+        { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg" },
+        { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg" },
+        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.jpg" },
+        { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg" },
+        { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg" },
+        { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg" },
+        { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg" },
+        { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg"
+    ],
+
+    specs: {
+        itemNo: "IBCM7102",
+        material: "Stoneware",
+        printMethod: "Our Drinkware is printed with UV DTF for Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        packagingOptions: [
+            {
+                type: "Case",
+                qtyPerBox: "36 pcs",
+                boxWeight: "38 lbs",
+                boxDims: '20" x 18" x 16"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "SPOT PRINTING PRICING (USD)",
+            quantities: [36, 72, 144, 288, 576, 1008],
+            rows: [
+                { label: "White - 1 Color Imprint", prices: ["$4.86", "$5.14", "$4.24", "$3.63", "$3.51", "$3.01"] },
+                { label: "White - 2 Color Imprint", prices: ["$5.52", "$5.98", "$5.05", "$4.43", "$4.29", "$3.78"] },
+                { label: "White - Unlimited", prices: ["$6.79", "$7.59", "$6.60", "$5.96", "$5.79", "$5.25"] },
+                { label: "Colors - 1 Color Imprint", prices: ["$5.57", "$5.98", "$5.10", "$4.43", "$3.86", "$3.48"] },
+                { label: "Colors - 2 Color Imprint", prices: ["$6.23", "$6.82", "$5.91", "$5.23", "$4.64", "$4.25"] },
+                { label: "Colors - Unlimited", prices: ["$7.49", "$8.43", "$7.47", "$6.76", "$6.14", "$5.72"] },
+                { label: "ADD LOCATION", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+            ],
+            priceIncludes: "1 Location",
+            printMethods: "Our Drinkware is printed with UV DTF for Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "Free"
+        },
+        blank: {
+            label: "BLANK PRICING (USD)",
+            quantities: [36, 72, 144, 288, 576, 1008],
+            rows: [
+                { label: "White", prices: ["$4.62", "$4.89", "$4.02", "$3.44", "$3.34", "$2.85"] },
+                { label: "Colors", prices: ["$5.29", "$5.68", "$4.85", "$4.20", "$3.67", "$3.30"] }
+            ],
+            priceIncludes: "Blank",
+            leadTime: "Within 2 to 3 Business Days",
+            moq: "Call for pricing"
         }
     },
 
@@ -22600,7 +22719,3749 @@ const products = [{
         sampleProof: "Contact for pricing",
         artworkCharges: "$75.00 (V) / Hour"
     }
+},
+{
+    id: "ibcms7102",
+    isBelpromo: true,
+    templatesAvailable: false,
+    name: "Photo Sublimation White Ceramic Mug",
+    code: "IBCMS7102",
+    featureImage: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Featured.jpg",
+    slug: "photo-sublimation-white-ceramic-mug",
+    category: "Ceramic Mugs",
+    material: "Stoneware",
+    size: '4.5" W x 3.75" H x 3" R',
+    imprint: 'Front/Back: 2.75" W x 3.00" H | Wrap: 7.75" W x 3.00" H',
+    hideGusset: true,
+    price: 5.18,
+    originalPrice: 50.00,
+    image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+    description: "Glossy white ceramic mug with a large imprint area and comfortable curved handle, perfect for vibrant full-color photo sublimation.",
+    popular: false,
+
+    colors: [
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg" }
+    ],
+
+    images: [
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+    ],
+
+    specs: {
+        weight: "13oz",
+        imprintPlacement: "Front/Back or Wrap",
+        specSample: "Free Spec Sample with Free Ground Shipping",
+        itemNo: "IBCM7102",
+        material: "Stoneware",
+        printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        packagingOptions: [
+            {
+                type: "Case",
+                qtyPerBox: "36 pcs",
+                boxWeight: "38 lbs",
+                boxDims: '20" x 18" x 16"'
+            }
+        ]
+    },
+
+    pricing: {
+        spot: {
+            label: "PRICING (USD)",
+            quantities: [36, 72, 144, 288, 576, 1008],
+            rows: [
+                { label: "Full Color - 1 Location", prices: ["$7.61", "$7.77", "$6.84", "$6.69", "$6.41", "$5.18"] },
+                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+            ],
+            priceIncludes: "1 Location",
+            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+            leadTime: "5-7 Business Days after Art Approval",
+            setupCharge: "$56.25 (V)",
+            repeatSetup: "Free"
+        },
+        blank: null
+    },
+
+    additionalCharges: {
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free",
+        pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+        lessThanMinimum: "Call for pricing",
+        colorChangeFee: "$18.75 (V)",
+        sampleProof: "Contact for pricing",
+        artworkCharges: "$75.00 (V) / Hour",
+        secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+    }
+},
+{
+  id: "ibcm7102",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Traditional Ceramic Custom Mug - 11 oz",
+  code: "IBCM7102",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Featured.jpg",
+  slug: "traditional-ceramic-custom-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.10"W x 3.75"H x 3.15"B',
+  imprint: '2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 3.32,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg",
+  description: "Traditional 11 oz ceramic mug in seventeen vibrant colors, featuring a glossy exterior, matching interior, and a comfortable curved handle.",
+  popular: false,
+
+  colors: [
+    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg" },
+    { name: "Brown", hex: "#5C4033", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg" },
+    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo1.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo2.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg"
+  ],
+
+  specs: {
+    weight: "11oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM7102",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "27.55 lbs",
+        boxDims: '14.96"L x 10.43"W x 12.79"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$6.20", "$7.45", "$5.97", "$4.88", "$4.08", "$3.49"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$6.86", "$8.29", "$6.78", "$5.68", "$4.86", "$4.26"] },
+        { label: "White - Full Color 1 Location", prices: ["$8.13", "$9.90", "$8.33", "$7.21", "$6.36", "$5.73"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.64", "$8.61", "$6.83", "$5.68", "$4.91", "$4.26"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$9.30", "$9.45", "$7.64", "$6.48", "$5.69", "$5.03"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.56", "$11.06", "$9.19", "$8.01", "$7.19", "$6.50"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$5.90", "$7.07", "$5.67", "$4.64", "$3.87", "$3.32"] },
+        { label: "Colors", prices: ["$8.21", "$8.18", "$6.49", "$5.40", "$4.67", "$4.04"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm5000",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "16 oz Bistro Glossy Personalized Coffee Mug",
+  code: "IBCM5000",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Featured.jpg",
+  slug: "16-oz-bistro-glossy-personalized-coffee-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '2.1"W x 4.1"H x 3.9"Rim',
+  imprint: '2.25"W x 1.75"H',
+  hideGusset: true,
+  price: 3.79,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.jpg",
+  description: "Bistro-style 16 oz wide body ceramic mug with a glossy vibrant finish and high-curved grip, perfect for easy grab-n-go promotional branding.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Green.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Grey.jpg" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Lime Green.jpg" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Orange.jpg" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Purple.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Red.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-White.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Yellow.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo2.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo1.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Lime Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Orange.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Purple.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Red.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Teal.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Yellow.jpg",
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM5000",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "33.06 lbs",
+        boxDims: '18.11"L x 12.59"W x 14.37"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$7.32", "$5.29", "$4.68", "$4.32", "$4.10", "$3.99"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$7.98", "$6.13", "$5.49", "$5.12", "$4.88", "$4.76"] },
+        { label: "White - Full Color 1 Location", prices: ["$9.24", "$7.74", "$7.05", "$6.65", "$6.37", "$6.23"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.69", "$5.91", "$5.35", "$5.16", "$4.59", "$4.48"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.35", "$6.75", "$6.16", "$5.96", "$5.37", "$5.25"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.61", "$8.36", "$7.71", "$7.49", "$6.86", "$6.72"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$6.95", "$5.03", "$4.46", "$4.11", "$3.89", "$3.79"] },
+        { label: "Colors", prices: ["$7.30", "$5.61", "$5.08", "$4.91", "$4.36", "$4.26"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm5003",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Two-Tone Ceramic Custom Mug - 16 oz",
+  code: "IBCM5003",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Featured.jpg",
+  slug: "two-tone-ceramic-custom-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.1"H x 3.9"Rim x 2.1"W',
+  imprint: '2.25"W x 1.75"H',
+  hideGusset: true,
+  price: 4.58,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.jpg",
+  description: "Bistro-style 16 oz wide body mug featuring a sleek two-tone design with a black exterior and bright colored interior, perfect for a vibrant promotional look.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Blue.jpg" },
+    { name: "Cobalt Blue", hex: "#1E4D8C", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Green.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Orange.jpg" },
+    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Pink.jpg" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Purple.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Yellow.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Orange.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Pink.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Purple.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Red.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Yellow.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Promo1.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM5003",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "33.06 lbs",
+        boxDims: '18.11"L x 12.59"W x 14.37"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$9.32", "$10.54", "$8.57", "$7.58", "$5.63", "$4.83"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$9.98", "$11.38", "$9.38", "$8.38", "$6.41", "$5.59"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.24", "$12.99", "$10.94", "$9.91", "$7.90", "$7.07"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$8.86", "$10.01", "$8.14", "$7.21", "$5.34", "$4.58"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1039",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Caldwell 15 oz Cork Base Ceramic Mug",
+  code: "IBCM1039",
+  slug: "caldwell-15-oz-cork-base-ceramic-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.25"W x 4.5"H x 3.25"B',
+  imprint: '2.5"W x 2.5"H',
+  hideGusset: true,
+  price: 5.82,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.jpg",
+  description: "15 oz ceramic mug featuring a unique cork base, matte exterior, glossy interior, and a modern square handle for a stylish grip.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Blue.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Grey.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "15 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1039",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "36.4 lbs",
+        boxDims: '16.7" x 11.6" x 14.7"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.02", "$9.31", "$7.90", "$7.51", "$6.96", "$6.13"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.57", "$10.01", "$8.57", "$8.18", "$7.61", "$6.77"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.67", "$11.41", "$9.92", "$9.51", "$8.91", "$8.05"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.62", "$8.85", "$7.51", "$7.14", "$6.60", "$5.82"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm599",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Curved Java Custom Coffee Mug - 12 oz",
+  code: "IBCM599",
+  slug: "curved-java-custom-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.125"H x 3.25"R x 4.75"W',
+  imprint: '2.50"W x 1.75"H',
+  hideGusset: true,
+  price: 3.76,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.jpg",
+  description: "Smooth molded 12 oz ceramic mug with a glossy vibrant exterior and high-curved grip, perfect for easy grab-n-go branding.",
+  popular: false,
+
+  colors: [
+    { name: "Light Blue", hex: "#89CFF0", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Light Blue.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Orange.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Red.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Light Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Orange.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Red.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Promo1.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM599",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "27.11 lbs",
+        boxDims: '16.33"L x 10.82"W x 14.37"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$4.87", "$5.15", "$4.75", "$4.30", "$4.07", "$3.96"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$5.53", "$5.99", "$5.56", "$5.09", "$4.85", "$4.72"] },
+        { label: "White - Full Color 1 Location", prices: ["$6.80", "$7.60", "$7.11", "$6.62", "$6.34", "$6.20"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.27", "$5.66", "$5.16", "$4.75", "$4.59", "$4.47"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$5.93", "$6.50", "$5.97", "$5.55", "$5.37", "$5.24"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.19", "$8.11", "$7.52", "$7.08", "$6.86", "$6.71"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$4.63", "$4.90", "$4.51", "$4.08", "$3.86", "$3.76"] },
+        { label: "Colors", prices: ["$5.01", "$5.38", "$4.90", "$4.51", "$4.36", "$4.25"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1038",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Rexburg 10 oz Stack-N-Sip Mug",
+  code: "IBCM1038",
+  slug: "rexburg-10-oz-stack-n-sip-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5" W x 3.25" H x 2.75" B',
+  imprint: '1 Color: 2.5" W x 1.25" H | 2 Colors: 2.125"W x 1.5"H | Full Color: 2.5"W x 1.5"H',
+  hideGusset: true,
+  price: 3.10,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.jpg",
+  description: "Compact and stylish 10 oz. mug designed for convenient stacking and everyday use, featuring a glossy colored exterior and white interior.",
+  popular: false,
+
+  colors: [
+      { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Black.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Grey.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Red.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "10 Oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping - Ready in 5 working days after approval",
+    itemNo: "IBCM1038",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "28.4 lbs",
+        boxDims: '17.8" x 12.4" x 10.8"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.69", "$4.27", "$3.98", "$3.66", "$3.45", "$3.26"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.24", "$4.97", "$4.66", "$4.32", "$4.10", "$3.90"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$5.34", "$6.37", "$6.01", "$5.65", "$5.40", "$5.18"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$3.50", "$4.06", "$3.78", "$3.47", "$3.28", "$3.10"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1015",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Personalized Ceramic Mug - 15 oz",
+  code: "IBCM1015",
+  slug: "personalized-ceramic-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.9"W x 4.5"H x 3.3"Rim',
+  imprint: '2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 4.66,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.jpg",
+  description: "Large 15 oz ceramic mug with a glossy color exterior and matching interior, featuring a comfortable C-curved handle for easy gripping.",
+  popular: false,
+
+  colors: [
+    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Almond.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Black.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Almond.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Black.jpg",
+  ],
+
+  specs: {
+    weight: "15 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1015",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "30.86 lbs",
+        boxDims: '18.11"L x 11.02"W x 15.15"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$6.47", "$6.78", "$5.90", "$5.63", "$5.42", "$4.90"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$7.13", "$7.62", "$6.71", "$6.42", "$6.20", "$5.67"] },
+        { label: "White - Full Color 1 Location", prices: ["$8.39", "$9.23", "$8.26", "$7.95", "$7.70", "$7.14"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.24", "$7.53", "$7.11", "$6.69", "$6.46", "$5.93"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.90", "$8.37", "$7.92", "$7.49", "$7.24", "$6.69"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.16", "$9.98", "$9.48", "$9.02", "$8.74", "$8.17"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$6.15", "$6.44", "$5.60", "$5.35", "$5.15", "$4.66"] },
+        { label: "Colors", prices: ["$6.88", "$7.15", "$6.76", "$6.36", "$6.14", "$5.63"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1036",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Matte 16 oz Stackable Ceramic Mug",
+  code: "IBCM1036",
+  slug: "matte-16-oz-stackable-ceramic-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.75"W x 3.5"H x 3.5"B',
+  imprint: '2.25"W x 1.75"H',
+  hideGusset: true,
+  price: 5.12,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.jpg",
+  description: "Stylish 16 oz matte ceramic mug with a glossy color interior, designed with a stackable shape for easy storage and modern appeal.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Blue.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Orange.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Promo1.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Orange.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Red.jpg",
+  ],
+
+  specs: {
+    weight: "16 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1036",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "35.8 lbs.",
+        boxDims: '19.2"x 13.6"x 11.6"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.22", "$7.21", "$6.68", "$6.18", "$5.79", "$5.44"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.88", "$8.05", "$7.49", "$6.98", "$6.57", "$6.21"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.14", "$9.66", "$9.05", "$8.51", "$8.06", "$7.68"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$5.84", "$6.78", "$6.28", "$5.81", "$5.43", "$5.12"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1301",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Ceramic Campfire Coffee Mug - 7.5 oz",
+  code: "IBCM1301",
+  slug: "ceramic-campfire-coffee-mug-7-5-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.5"W x 2.5"H x 2.75"B',
+  imprint: '1.75"W x 1.25"H',
+  hideGusset: true,
+  price: 4.56,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.jpg",
+  description: "Sturdy 7.5 oz tin cup style ceramic mug with a slightly flared top to prevent spills and a speckled finish for a rustic campfire look.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Green.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Grey.jpg" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Mint.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Mint.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Red.jpg"
+  ],
+
+  specs: {
+    weight: "7.5 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1301",
+    material: "Ceramic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "72 pcs",
+        boxWeight: "35.27 lbs",
+        boxDims: '15.74" x 11.41" x 17.71"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.55", "$6.79", "$5.87", "$5.25", "$5.06", "$4.80"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.21", "$7.63", "$6.68", "$6.05", "$5.84", "$5.57"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.47", "$9.24", "$8.24", "$7.58", "$7.33", "$7.04"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$6.22", "$6.45", "$5.58", "$4.99", "$4.81", "$4.56"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},{
+  id: "ibcm1600",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Ceramic Cappuccino Custom Mug - 18 oz",
+  code: "IBCM1600",
+  slug: "ceramic-cappuccino-custom-mug-18-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"H x 5.9"R x 2"B',
+  imprint: '3"W x 1.25"H',
+  hideGusset: true,
+  price: 5.29,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.jpg",
+  description: "Bowl-shaped 18 oz ceramic soup mug with a thick curved grip and glossy vibrant exterior, perfect for cozy promotional gifting.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Black.jpg" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Cobalt Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Green.jpg" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Green.jpg",
+  ],
+
+  specs: {
+    weight: "18 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1600",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "24 pcs",
+        boxWeight: "24.47 lbs",
+        boxDims: '23" x 23" x 20"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$7.25", "$7.55", "$6.28", "$5.97", "$5.79", "$5.57"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$7.91", "$8.39", "$7.09", "$6.77", "$6.57", "$6.34"] },
+        { label: "White - Full Color 1 Location", prices: ["$9.17", "$10.00", "$8.64", "$8.30", "$8.06", "$7.81"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.47", "$7.83", "$7.01", "$6.24", "$6.05", "$5.82"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.13", "$8.67", "$7.82", "$7.04", "$6.83", "$6.59"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.39", "$10.28", "$9.37", "$8.57", "$8.32", "$8.06"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$7.10", "$7.27", "$6.06", "$5.71", "$5.55", "$5.29"] },
+        { label: "Colors", prices: ["$7.10", "$7.43", "$6.66", "$5.93", "$5.75", "$5.53"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1035",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Speckle Glazed Two Tone Ceramic Mug 17 oz",
+  code: "IBCM1035",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.jpg",
+  slug: "speckle-glazed-two-tone-ceramic-mug-17-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.15"W x 5.25"H x 2.75"B',
+  imprint: '2.5"W x 2.5"H',
+  hideGusset: true,
+  price: 5.36,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.jpg",
+  description: "Unique 17 oz ceramic mug featuring a speckled matte top finish with a neutral bottom and a glossy color interior.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.jpg"
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1035",
+    material: "Ceramic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "39.68 Lbs",
+        boxDims: '16.7" x 11.4" x 17.3"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.78", "$6.71", "$6.06", "$5.95", "$5.77", "$5.64"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.44", "$7.55", "$6.87", "$6.74", "$6.55", "$6.41"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.70", "$9.16", "$8.42", "$8.27", "$8.05", "$7.88"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$5.49", "$6.37", "$5.76", "$5.65", "$5.49", "$5.36"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1009",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Two Tone Glossy Pottery Custom Coffee Mug 12 oz",
+  code: "IBCM1009",
+  slug: "two-tone-glossy-pottery-custom-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.25"W x 3.5"H',
+  imprint: '2.00"W x 1.35"H',
+  hideGusset: true,
+  price: 5.53,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.jpg",
+  description: "Classic 12 oz ceramic diner mug featuring a glazed two-tone design with a contrasting black rim, perfect for custom branding.",
+  popular: false,
+
+  colors: [
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.jpg" },
+    { name: "Forest Green", hex: "#228B22", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Forest Green.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Forest Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Red.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1009",
+    material: "Ceramic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "26.84 Lbs",
+        boxDims: '20" x 18" x 16"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.54", "$7.97", "$7.01", "$6.64", "$6.23", "$5.82"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.20", "$8.81", "$7.82", "$7.43", "$7.01", "$6.59"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.46", "$10.42", "$9.37", "$8.96", "$8.50", "$8.06"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.16", "$7.57", "$6.66", "$6.30", "$5.92", "$5.53"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1021",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Admiral Ceramic Mug 16 oz",
+  code: "IBCM1021",
+  slug: "admiral-ceramic-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W X 4.5"H X 2.25"B',
+  imprint: '2"W X 1.50"H',
+  hideGusset: true,
+  price: 6.07,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.jpg",
+  description: "Admiral 16 oz ceramic mug featuring a pottery-like glaze finish with an artisan bottom and comfortable grip, perfect for cozy drinks.",
+  popular: false,
+
+  colors: [
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Cobalt Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Green.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Green.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1021",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "35.71 Lbs",
+        boxDims: '19.29" x 13.58" x 14.56"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.28", "$6.85", "$6.57", "$6.39"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.79", "$9.65", "$8.09", "$7.65", "$7.35", "$7.16"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.05", "$11.26", "$9.64", "$9.18", "$8.84", "$8.63"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.72", "$8.37", "$6.91", "$6.50", "$6.24", "$6.07"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm7105",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Glossy Ceramic Custom Mug - 16 oz",
+  code: "IBCM7105",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Featured.jpg",
+  slug: "glossy-ceramic-custom-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.375"Brim x 4.75"H',
+  imprint: '2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 4.92,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.jpg",
+  description: "Mocha 16 oz large coffee mug with a glossy vibrant exterior and high curved grip for easy grab-n-go handling.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo2.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo1.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-White.jpg",
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM7105",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "37.03 lbs",
+        boxDims: '17.51" x 11.81" x 15.94"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$6.61", "$7.03", "$6.16", "$5.88", "$5.59", "$5.17"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$7.27", "$7.87", "$6.97", "$6.68", "$6.37", "$5.94"] },
+        { label: "White - Full Color 1 Location", prices: ["$8.54", "$9.48", "$8.52", "$8.21", "$7.87", "$7.41"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.54", "$8.06", "$7.30", "$6.81", "$6.37", "$5.91"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.20", "$8.90", "$8.11", "$7.61", "$7.15", "$6.68"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.46", "$10.51", "$9.67", "$9.14", "$8.65", "$8.15"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$6.28", "$6.68", "$5.85", "$5.59", "$5.32", "$4.92"] },
+        { label: "Colors", prices: ["$7.16", "$7.66", "$6.94", "$6.46", "$6.06", "$5.62"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1255",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Two-Tone Personalized Coffee Mug - 12 oz",
+  code: "IBCM1255",
+  slug: "two-tone-personalized-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.75"W x 4.25"H',
+  imprint: '1 color: 2.50"W x 1.75"H | 2+ colors: 2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 4.56,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.jpg",
+  description: "Two-tone 12 oz ceramic mug featuring a classic white exterior and a vibrant colored interior, offering a wide imprint area for branding.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.jpg" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Cobalt Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Green.jpg" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Maroon.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Orange.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Maroon.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Orange.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1255",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "28.66 lbs",
+        boxDims: '16.53"W x 11.02"H x 14.37"L'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.55", "$6.79", "$5.87", "$5.25", "$5.06", "$4.80"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.21", "$7.63", "$6.68", "$6.05", "$5.84", "$5.57"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.47", "$9.24", "$8.24", "$7.58", "$7.33", "$7.04"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$6.22", "$6.45", "$5.58", "$4.99", "$4.81", "$4.56"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibexp12set",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Espresso Cups with Saucers Set - 3 oz",
+  code: "IBEXP12SET",
+  slug: "espresso-cups-with-saucers-set-3-oz",
+  category: "Ceramic Mugs",
+  material: "Porcelain",
+  size: '2.4"H x 2.15"Rim x 2"Base',
+  imprint: '2.00"W x 1.50"H',
+  hideGusset: true,
+  price: 7.17,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.jpg",
+  description: "Elegant 3 oz white porcelain espresso cup and saucer set, perfect for adding a touch of class to your promotional coffee breaks.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.jpg"
+  ],
+
+  specs: {
+    weight: "3 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBEXP12SET",
+    material: "Porcelain",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "11 Lbs",
+        boxDims: '10.6"L x 13"W x 8.1"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$9.74", "$10.85", "$9.03", "$8.37", "$7.79", "$7.54"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$10.40", "$11.69", "$9.84", "$9.16", "$8.57", "$8.31"] },
+        { label: "White - Full Color 1 Location", prices: ["$11.66", "$13.30", "$11.39", "$10.69", "$10.06", "$9.78"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$9.25", "$10.30", "$8.59", "$7.95", "$7.40", "$7.17"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1025",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Nebula Speckled Clay Coffee Mug - 16 oz",
+  code: "IBCM1025",
+  slug: "nebula-speckled-clay-coffee-mug-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W x 5"H',
+  imprint: '2.5"W x 2.5"H',
+  hideGusset: true,
+  price: 5.89,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.jpg",
+  description: "Nebula 16 oz ceramic mug with a matte exterior, speckle accents, and a pottery-like glaze finish for a rustic, artisan feel.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Black.jpg" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Cream.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Grey.jpg" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Navy Blue.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.jpg",
+      "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Cream.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Navy Blue.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1025",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "36.59 lbs",
+        boxDims: '17.12" W x 11.41"H x 16.14"L'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.44", "$7.99", "$6.80", "$6.56", "$6.36", "$6.20"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.10", "$8.83", "$7.61", "$7.35", "$7.14", "$6.96"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.36", "$10.44", "$9.17", "$8.88", "$8.63", "$8.44"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$6.12", "$7.59", "$6.47", "$6.22", "$6.05", "$5.89"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1031",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Ocean Pines Speckled Clay Bistro Mug",
+  code: "IBCM1031",
+  slug: "ocean-pines-speckled-clay-bistro-mug",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.75”W x 4.6”H',
+  imprint: '2.5”W x 2"H',
+  hideGusset: true,
+  price: 4.76,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg",
+  description: "17 oz speckled bistro-style ceramic mug with a clay bottom accent and an easy comfort grip for a cozy drinking experience.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.jpg" },
+    { name: "Burnt Orange", hex: "#CC5500", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg",
+      "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.jpg",
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1031",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "N/A", // Text me box weight missing tha
+        boxDims: '21" x 21" x 16"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.78", "$6.71", "$6.06", "$5.71", "$5.32", "$5.02"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.44", "$7.55", "$6.87", "$6.50", "$6.10", "$5.79"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.70", "$9.16", "$8.42", "$8.03", "$7.59", "$7.26"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$5.49", "$6.37", "$5.76", "$5.43", "$5.06", "$4.76"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1029",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Sesame Speckled Two Tone Coffee Mug - 10 oz",
+  code: "IBCM1029",
+  slug: "sesame-speckled-two-tone-coffee-mug-10-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W x 4.25"H',
+  imprint: '2.50"W x 1.625"H',
+  hideGusset: true,
+  price: 3.39,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.jpg",
+  description: "10 oz ceramic mug featuring a unique sesame speckle outer finish and an easy comfort grip, perfect for cozy hot drinks.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Blue.jpg" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Orange.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Orange.jpg"
+  ],
+
+  specs: {
+    weight: "10 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1029",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "Contact for details",
+        boxDims: '21"L x 21"W x 16"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$4.13", "$4.69", "$4.39", "$4.06", "$3.84", "$3.57"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.79", "$5.53", "$5.20", "$4.85", "$4.62", "$4.34"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.05", "$7.14", "$6.75", "$6.38", "$6.11", "$5.81"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$3.92", "$4.45", "$4.17", "$3.86", "$3.64", "$3.39"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcmb1255",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Java Two Tone Coffee Mug - 12 oz",
+  code: "IBCMB1255",
+  slug: "java-two-tone-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.75"W x 4.25"H',
+  imprint: '2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 5.41,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg",
+  description: "Java 12 oz ceramic mug featuring a sleek black exterior with a vibrant colored interior, perfect for custom branding.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg" },
+    { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Lime.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Lime.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCMB1255",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "34.30 Lbs",
+        boxDims: '23" x 23" x 20"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.47", "$7.97", "$6.55", "$6.18", "$5.84", "$5.70"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.36", "$6.98", "$6.62", "$6.46"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.39", "$10.42", "$8.91", "$8.51", "$8.11", "$7.94"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.10", "$7.57", "$6.22", "$5.88", "$5.55", "$5.41"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1200",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Glossy Ceramic Latte Custom Coffee Mug 12 oz",
+  code: "IBCM1200",
+  slug: "glossy-ceramic-latte-custom-coffee-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4"H x 3.7"R x 2.56"B',
+  imprint: '2.75"W x 2.00"H',
+  hideGusset: true,
+  price: 4.07,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.jpg",
+  description: "Latte 12 oz ceramic mug with a unique shape, glossy vibrant exterior, and high curved grip for easy grab-n-go handling.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Blue.jpg" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Maroon.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Maroon.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1200",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "27.99 Lbs",
+        boxDims: '20" x 18" x 16"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$6.26", "$6.37", "$5.06", "$4.85", "$4.62", "$4.29"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$6.92", "$7.21", "$5.87", "$5.65", "$5.40", "$5.06"] },
+        { label: "White - Full Color 1 Location", prices: ["$8.18", "$8.82", "$7.43", "$7.18", "$6.89", "$6.53"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.36", "$7.77", "$6.33", "$6.05", "$5.79", "$5.57"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.02", "$8.61", "$7.14", "$6.85", "$6.57", "$6.34"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.28", "$10.22", "$8.69", "$8.38", "$8.06", "$7.81"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$5.95", "$6.05", "$4.81", "$4.62", "$4.38", "$4.07"] },
+        { label: "Colors", prices: ["$7.00", "$7.38", "$6.02", "$5.75", "$5.50", "$5.29"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm15tt",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Glossy Two-Tone Personalized Ceramic Mug 15 oz",
+  code: "IBCM15TT",
+  slug: "glossy-two-tone-personalized-ceramic-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.5"H x 3.3"Rim x 4.9"W',
+  imprint: '2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 5.71,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.jpg",
+  description: "15 oz two-tone ceramic mug with a glossy white exterior and vibrant color interior, featuring an easy comfort grip C-curved handle.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Orange.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Orange.jpg"
+  ],
+
+  specs: {
+    weight: "15 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM15TT",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "36.37 Lbs",
+        boxDims: '17.12" x 11.22" x 15.15"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.98", "$8.47", "$7.01", "$6.72", "$6.31", "$6.00"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.64", "$9.31", "$7.82", "$7.51", "$7.09", "$6.77"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.90", "$10.92", "$9.37", "$9.04", "$8.58", "$8.24"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.58", "$8.05", "$6.66", "$6.38", "$5.99", "$5.71"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm5018",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stackable Ceramic Mug - 12 oz",
+  code: "IBCM5018",
+  slug: "stackable-ceramic-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramics",
+  size: '3.25"W x 4"H x 3"B',
+  imprint: '2"W x 2"H',
+  hideGusset: true,
+  price: 4.76,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.jpg",
+  description: "12 oz stackable ceramic mug with a matte grey finish and a pop color interior, designed for convenient and stylish storage.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Blue.jpg" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Lime Green.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Lime Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Red.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM5018",
+    material: "Ceramics",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "Contact for details",
+        boxDims: 'Contact for details'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.78", "$6.93", "$6.33", "$5.57", "$5.32", "$5.02"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.44", "$7.77", "$7.14", "$6.37", "$6.10", "$5.79"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.70", "$9.38", "$8.69", "$7.90", "$7.59", "$7.26"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$5.49", "$6.58", "$6.02", "$5.29", "$5.06", "$4.76"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm5021",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Marble Glaze Ceramic Mug - 10 oz",
+  code: "IBCM5021",
+  slug: "marble-glaze-ceramic-mug-10-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.25"W x 4.25"H x 2.25"B',
+  imprint: '2.5"W x 2"H',
+  hideGusset: true,
+  price: 1.75,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.jpg",
+  description: "10 oz ceramic mug featuring a unique marble glaze finish on the outside and a smooth glossy white interior.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Green.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Green.jpg"
+  ],
+
+  specs: {
+    weight: "10 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM5021",
+    material: "Ceramic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "30.38 Lbs",
+        boxDims: '16.92"L x 11.02"W x 14.37"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$4.24", "$4.97", "$4.52", "$4.19", "$3.97", "$3.70"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.90", "$5.81", "$5.33", "$4.99", "$4.75", "$4.47"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.16", "$7.42", "$6.89", "$6.52", "$6.24", "$5.94"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$2.51", "$2.37", "$2.15", "$2.00", "$1.89", "$1.75"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibexp14set",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Porcelain Espresso Cups with Saucer - 2.5 oz",
+  code: "IBEXP14SET",
+  slug: "porcelain-espresso-cups-with-saucer-2-5-oz",
+  category: "Ceramic Mugs",
+  material: "Porcelain",
+  size: '2.25"H x 2.25"Rim x 1.25"Base',
+  imprint: '1 Color Imprint Area: 1.50" W x 0.75" H | 2+ Colors Imprint Area: 1.50" W x 0.75" H',
+  hideGusset: true,
+  price: 7.17,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.jpg",
+  description: "Elegant 2.5 oz white porcelain espresso cup and saucer set, perfect for a refined coffee experience.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.jpg"
+  ],
+
+  specs: {
+    weight: "2.5 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBEXP14SET",
+    material: "Porcelain",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "10 Lbs",
+        boxDims: '10.2"L x 12.6"W x 8.1"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$9.74", "$10.85", "$9.03", "$8.37", "$7.79", "$7.54"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$10.40", "$11.69", "$9.84", "$9.16", "$8.57", "$8.31"] },
+        { label: "White - Full Color 1 Location", prices: ["$11.66", "$13.30", "$11.39", "$10.69", "$10.06", "$9.78"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$9.25", "$10.30", "$8.59", "$7.95", "$7.40", "$7.17"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibexp10set",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Espresso Cups with Saucer Set - 2.75 oz",
+  code: "IBEXP10SET",
+  slug: "espresso-cups-with-saucer-set-2-75-oz",
+  category: "Ceramic Mugs",
+  material: "Porcelain",
+  size: '2.25"H x 2.5"Rim x 1.6"Base',
+  imprint: '1.75"W x 1"H',
+  hideGusset: true,
+  price: 7.17,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.jpg",
+  description: "Classic 2.75 oz white porcelain espresso cup and saucer set, perfect for serving rich, concentrated coffee.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.jpg"
+  ],
+
+  specs: {
+    weight: "18 oz", // Text me Quality Weight 18 oz likha hai, isliye 18 oz rakha hai.
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBEXP10SET",
+    material: "Porcelain",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "10 Lbs",
+        boxDims: '10.8"L x 13.4"W x 8.1"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$9.74", "$10.85", "$9.03", "$8.37", "$7.79", "$7.54"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$10.40", "$11.69", "$9.84", "$9.16", "$8.57", "$8.31"] },
+        { label: "White - Full Color 1 Location", prices: ["$11.66", "$13.30", "$11.39", "$10.69", "$10.06", "$9.78"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$9.25", "$10.30", "$8.59", "$7.95", "$7.40", "$7.17"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1032",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stackable Ceramic Mug - 14 oz",
+  code: "IBCM1032",
+  slug: "stackable-ceramic-mug-14-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4"W x 3.5"H',
+  imprint: '2.5"W x 2.5"H',
+  hideGusset: true,
+  price: 3.06,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.jpg",
+  description: "Modern 14 oz stackable ceramic mug designed for easy storage and everyday convenience, perfect for hot beverages.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Black.jpg" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Cobalt-Blue.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Grey.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Cobalt-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Red.jpg"
+  ],
+
+  specs: {
+    weight: "14 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1032",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "31.74 lbs.",
+        boxDims: '19.09" x 13.38" x 11.61"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.40", "$4.03", "$3.74", "$3.52", "$3.32", "$3.23"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.06", "$4.87", "$4.55", "$4.32", "$4.10", "$3.99"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$5.32", "$6.48", "$6.10", "$5.85", "$5.59", "$5.47"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$3.23", "$3.84", "$3.55", "$3.35", "$3.15", "$3.06"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm7101",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Matte Two-Tone Coffee Mug - 11 oz",
+  code: "IBCM7101",
+  slug: "matte-two-tone-coffee-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.5 "W x 3.75"H',
+  imprint: '2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 5.04,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.jpg",
+  description: "Stylish 11 oz black matte coffee mug with a vibrant color interior and an easy comfort grip C-curved handle.",
+  popular: false,
+
+  colors: [
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Lime Green.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-White.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Yellow.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Lime Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Yellow.jpg"
+  ],
+
+  specs: {
+    weight: "11 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM7101",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "26.45 Lbs",
+        boxDims: '15.74" x 11.02" x 12.59"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.10", "$7.27", "$6.01", "$5.79", "$5.53", "$5.31"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.76", "$8.11", "$6.82", "$6.58", "$6.31", "$6.08"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.02", "$9.72", "$8.37", "$8.11", "$7.80", "$7.55"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$6.74", "$6.90", "$5.71", "$5.49", "$5.25", "$5.04"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm6000",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Two Tone Latte Personalized Mug - 13 oz",
+  code: "IBCM6000",
+  slug: "two-tone-latte-personalized-mug-13-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.75"W x 4.25"H',
+  imprint: '2.50"W x 2"H',
+  hideGusset: true,
+  price: 5.53,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.jpg",
+  description: "13 oz two-tone latte mug with a smooth white exterior and a vibrant color interior, perfect for custom branding.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Black.jpg" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.jpg" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Lime Green.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Orange.jpg" },
+    { name: "Process Blue", hex: "#0085CA", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Process Blue.jpg" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Lime Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Orange.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Process Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Red.jpg"
+  ],
+
+  specs: {
+    weight: "13 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM6000",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "Contact for details",
+        boxDims: 'Contact for details'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$6.82", "$6.45", "$6.10", "$5.82"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.79", "$9.65", "$7.63", "$7.25", "$6.88", "$6.59"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.05", "$11.26", "$9.18", "$8.78", "$8.37", "$8.06"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.72", "$8.37", "$6.48", "$6.13", "$5.80", "$5.53"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1203",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Two-Tone Latte Custom Mug - 12 oz",
+  code: "IBCM1203",
+  slug: "two-tone-latte-custom-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '2.4"W x 4"H x 3.7"Rim',
+  imprint: '2.50"W x 2"H',
+  hideGusset: true,
+  price: 3.88,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.jpg",
+  description: "12 oz two-tone latte mug with a unique shape, black matte exterior, glossy colored interior, and high curved grip.",
+  popular: false,
+
+  colors: [
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Lime Green.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Lime Green.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1203",
+    material: "Ceramic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "23.14 lbs",
+        boxDims: '15.74" x 11.02" x 13.18"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.37", "$5.67", "$5.27", "$4.99", "$4.56", "$4.08"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.03", "$6.51", "$6.08", "$5.79", "$5.34", "$4.85"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.29", "$8.12", "$7.63", "$7.32", "$6.84", "$6.32"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$5.10", "$5.39", "$5.01", "$4.73", "$4.33", "$3.88"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcms15tt",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Glossy Two-Tone Custom Photo Mug - 15 oz",
+  code: "IBCMS15TT",
+  slug: "glossy-two-tone-custom-photo-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.5"H x 3.25"R x 4.9"B',
+  imprint: '3"W x 1.25"H',
+  hideGusset: true,
+  price: 7.41,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.jpg",
+  description: "15 oz two-tone photo sublimation ceramic mug with a glossy white exterior and vibrant colored interior, perfect for full-color branding.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Black.jpg" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Cobalt Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.jpg" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Lime Green.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Cobalt Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Lime Green.jpg"
+  ],
+
+  specs: {
+    weight: "15 oz.",
+    imprintPlacement: "Front Side, Both Side, Warp around",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCMS15TT",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "38 Lbs",
+        boxDims: '20" x 18" x 16"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Full Color Printing", prices: ["$9.78", "$10.99", "$9.92", "$9.16", "$8.13", "$7.41"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "Unlimited Colors / Full Color, 1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcmcp01",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Bistro Vitrified Porcelain Mug - 11 oz",
+  code: "IBCMCP01",
+  slug: "bistro-vitrified-porcelain-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4"H x 3.35"Rim x 2"Base',
+  imprint: '2.25"W x 1.50"H',
+  hideGusset: true,
+  price: 7.48,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCMCP01/IBCMCP01-White.jpg",
+  description: "Classic 11 oz bistro-style vitrified porcelain mug, featuring fully customizable imprint areas for your branding.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMCP01/IBCMCP01-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCMCP01/IBCMCP01-White.jpg"
+  ],
+
+  specs: {
+    weight: "11 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCMCP01",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "26.1 Lbs",
+        boxDims: '17.32"L x 13.39"W x 14.57"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$7.98", "$9.31", "$8.49", "$8.26", "$8.03", "$7.87"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$8.64", "$10.15", "$9.30", "$9.06", "$8.81", "$8.64"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$7.58", "$8.85", "$8.07", "$7.85", "$7.63", "$7.48"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm99268",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "El Grande Two Tone Glossy Coffee Mug - 15 oz",
+  code: "IBCM99268",
+  slug: "el-grande-two-tone-glossy-coffee-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.9"W x 4.5"H x 3.3"Rim',
+  imprint: '1 Color Imprint Size: 2.50"W x 2.50"H | 2 Color Imprint Size: 2.25"W x 2.25"H',
+  hideGusset: true,
+  price: 2.73,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.jpg",
+  description: "Grande 15 oz wide body ceramic mug with a two-toned glossy vibrant exterior and bright white interior, perfect for promotional branding.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.jpg" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Cobalt Blue.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Cobalt Blue.jpg"
+  ],
+
+  specs: {
+    weight: "15 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM99268",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "N/A", 
+        boxDims: "N/A"
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.76", "$8.25", "$6.82", "$6.45", "$6.05", "$5.75"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.42", "$9.09", "$7.63", "$7.25", "$6.83", "$6.52"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.68", "$10.70", "$9.18", "$8.78", "$8.32", "$7.99"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$3.69", "$3.92", "$3.24", "$3.06", "$2.87", "$2.73"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1016",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "El Grande Matte Ceramic Personalized Mug - 20 oz",
+  code: "IBCM1016",
+  slug: "el-grande-matte-ceramic-personalized-mug-20-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.5"W X 5"H X 2.75"B',
+  imprint: '2.5"W X 2.5"H',
+  hideGusset: true,
+  price: 6.07,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.jpg",
+  description: "20 oz Grande wide body ceramic mug with a smooth matte exterior, matching interior, and easy comfort grip.",
+  popular: false,
+
+  colors: [
+    { name: "Beige", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Charcoal.jpg" },
+    { name: "Dark Brown", hex: "#654321", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Dark Brown.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Charcoal.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Dark Brown.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1016",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "27.11 lbs",
+        boxDims: '18.70" x 12.20" x 11.41"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.28", "$6.85", "$6.57", "$6.39"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.72", "$8.37", "$6.91", "$6.50", "$6.24", "$6.07"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1019",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Drip Ceramic Personalized Mug - 17 oz",
+  code: "IBCM1019",
+  slug: "drip-ceramic-personalized-mug-17-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.80"W X 4.5"H X 2.25"B',
+  imprint: '2.5"W X 1.25"H',
+  hideGusset: true,
+  price: 5.09,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.jpg",
+  description: "Unique 17 oz ceramic mug featuring a drip glaze rim and interior finish, adding a creative touch to your morning coffee.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Green.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Green.jpg"
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1019",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "27.8 lbs",
+        boxDims: '17.72" L x 13.39" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.40", "$6.72", "$6.16", "$5.75", "$5.49", "$5.36"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.06", "$7.56", "$6.97", "$6.54", "$6.27", "$6.13"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.33", "$9.17", "$8.52", "$8.07", "$7.76", "$7.60"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$5.13", "$6.38", "$5.85", "$5.45", "$5.21", "$5.09"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1003",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Ceramic Custom Mug - 23 oz",
+  code: "IBCM1003",
+  slug: "ceramic-custom-mug-23-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.1"B x 5.1"H',
+  imprint: '1-2 Color Imprint Area: 2.50”W x 2.50”H | 3+ Colors Imprint Area: 3”W x 3”H',
+  hideGusset: true,
+  price: 6.92,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.jpg",
+  description: "Large 23 oz ceramic mug with a matching interior and exterior, perfect for large coffees, teas, or hot chocolate.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.jpg"
+  ],
+
+  specs: {
+    weight: "23 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1003",
+    material: "Ceramic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "24 pcs",
+        boxWeight: "38.8 lbs",
+        boxDims: '24.21"L x 14.37"W x 11.81"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$8.09", "$8.75", "$8.17", "$7.78", "$7.53", "$7.28"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$8.75", "$9.59", "$8.98", "$8.58", "$8.31", "$8.05"] },
+        { label: "White - Full Color 1 Location", prices: ["$10.01", "$11.20", "$10.53", "$10.11", "$9.80", "$9.52"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$7.68", "$8.32", "$7.76", "$7.39", "$7.15", "$6.92"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcmcp02",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Porcelain Latte Mug - 10 oz",
+  code: "IBCMCP02",
+  slug: "porcelain-latte-mug-10-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '4.1"H x 3.25"R x 2.25"B',
+  imprint: '2"W x 2"H',
+  hideGusset: true,
+  price: 3.14,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.jpg",
+  description: "10 oz vitrified porcelain latte mug with fully customizable imprint areas, perfect for a sleek and professional look.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.jpg"
+  ],
+
+  specs: {
+    weight: "10 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCMCP02",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "28.7 lbs",
+        boxDims: '17.32"L x 13.39"W x 14.37"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.98", "$8.47", "$7.95", "$7.17", "$6.75", "$6.59"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.64", "$9.31", "$8.76", "$7.97", "$7.53", "$7.36"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.90", "$10.92", "$10.31", "$9.50", "$9.02", "$8.83"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$3.78", "$4.02", "$3.78", "$3.40", "$3.21", "$3.14"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibexp06",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "White Coffee Mug - 6 oz",
+  code: "IBEXP06",
+  slug: "white-coffee-mug-6-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3"H x 3 1/4"R x 1 7/8"B',
+  imprint: '1-2 Color Imprint Area: 2.00" W x 1.00" H | 3+ Colors Imprint Area: 2.25" W x 1.00" H',
+  hideGusset: true,
+  price: 3.71,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.jpg",
+  description: "Classic 6 oz white ceramic coffee mug, perfect for espresso or small promotional giveaways.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.jpg"
+  ],
+
+  specs: {
+    weight: "6 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBEXP06",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "72 pcs",
+        boxWeight: "33.20 Lbs",
+        boxDims: 'Contact for details'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$5.16", "$5.03", "$4.52", "$4.38", "$4.10", "$3.90"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$5.82", "$5.87", "$5.33", "$5.17", "$4.88", "$4.67"] },
+        { label: "White - Full Color 1 Location", prices: ["$7.08", "$7.48", "$6.89", "$6.70", "$6.37", "$6.14"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "White", prices: ["$4.91", "$4.77", "$4.29", "$4.16", "$3.89", "$3.71"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcms1015",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Full Color Wrap Around Ceramic Custom Mug - 15 oz",
+  code: "IBCMS1015",
+  slug: "full-color-wrap-around-ceramic-custom-mug-15-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '4.25"H x 3.25"R x 4.9"B',
+  imprint: '2.75”W x 3.25”H | 8.05" Wrap',
+  hideGusset: true,
+  price: 7.10,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.jpg",
+  description: "15 oz photo sublimation white ceramic mug with a smooth molded composite and glossy exterior, perfect for vibrant full-color wrap-around designs.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.jpg"
+  ],
+
+  specs: {
+    weight: "15 oz",
+    imprintPlacement: "Front Side, Wrap Around",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCMS1015",
+    material: "Ceramic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "Contact for details",
+        boxDims: "Contact for details"
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Full Color Imprint", prices: ["$9.56", "$10.71", "$9.65", "$8.76", "$7.87", "$7.10"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "Unlimited Colors / Full Color, 1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm55169",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Diner Mug - 11 oz",
+  code: "IBCM55169",
+  slug: "diner-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '5"W x 3.8"H',
+  imprint: '1 Color Imprint Area: 2.25”W x 1.50”H | 2+ Colors Imprint area: 3.00”W x 2.25”H',
+  hideGusset: true,
+  price: 6.26,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg",
+  description: "Classic 11 oz diner-style ceramic mug in milky white, featuring a glossy finish and thick curved grip for easy handling.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg"
+  ],
+
+  specs: {
+    weight: "11 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM55169",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "28.66 Lbs",
+        boxDims: '16.92" x 11.81" x 13.18"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.28", "$7.12", "$6.75", "$6.59"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.79", "$9.65", "$8.09", "$7.91", "$7.53", "$7.36"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.05", "$11.26", "$9.64", "$9.44", "$9.02", "$8.83"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.72", "$8.37", "$6.91", "$6.76", "$6.41", "$6.26"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm8000",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Thick Grip Glossy Ceramic Diner Mug - 12 oz",
+  code: "IBCM8000",
+  slug: "thick-grip-glossy-ceramic-diner-mug-12-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.8"H x 3.4"Rim',
+  imprint: '2.00”W x 1.25”H',
+  hideGusset: true,
+  price: 6.12,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.jpg",
+  description: "Classic 12 oz diner mug with a glossy exterior and thick curved grip, perfect for comfortable everyday use.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Blue.jpg" },
+    { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Blue.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz.",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM8000",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "30.2 Lbs",
+        boxDims: '16.73" x 11.41" x 13.38"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.98", "$8.47", "$7.01", "$6.85", "$6.57", "$6.44"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.64", "$9.31", "$7.82", "$7.65", "$7.35", "$7.21"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.90", "$10.92", "$9.37", "$9.18", "$8.84", "$8.68"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$7.58", "$8.05", "$6.66", "$6.50", "$6.24", "$6.12"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1026",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Speckled Clay Coffee Mug - 11 oz",
+  code: "IBCM1026",
+  slug: "speckled-clay-coffee-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.25"W x 3.5"H',
+  imprint: '2.5" w x 2.125"',
+  hideGusset: true,
+  price: 3.15,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg",
+  description: "11 oz ceramic mug featuring a matte exterior with speckle accents and an artisan bottom, adding a rustic touch to your coffee.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Black.jpg" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Cream.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Grey.jpg" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Mint.jpg" },
+    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Navy.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Cream.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Grey.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Mint.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Navy.jpg"
+  ],
+
+  specs: {
+    weight: "11 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1026",
+    material: "Stoneware",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "48 pcs",
+        boxWeight: "25.35 lbs",
+        boxDims: '16.33"L x 11.41"W x 11.41"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.87", "$4.49", "$4.25", "$3.98", "$3.85", "$3.32"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.53", "$5.33", "$5.06", "$4.77", "$4.63", "$4.08"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$5.80", "$6.94", "$6.62", "$6.30", "$6.12", "$5.56"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$3.67", "$4.27", "$4.04", "$3.78", "$3.65", "$3.15"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour"
+  }
 }
+
+
 ];
 
 // Maan lo aapka products array 'products' variable mein hai
@@ -22828,6 +26689,11 @@ async function downloadSingleTemplate(colorName, product) {
  * Download all templates as a ZIP file
  */
 async function downloadAllTemplates(product) {
+
+    if (product.templatesAvailable === false) {
+        showNotification('❌ Color templates not available. Please request them individually.');
+        return;
+    }
     const templateData = productTemplates[product.id] || {
         colors: product.colors.map(c => ({ name: c.name })),
         imprintArea: product.imprint || 'N/A'
@@ -22913,21 +26779,20 @@ function openTemplatesModal(product) {
 
     document.getElementById('templatesImprintArea').textContent = templateData.imprintArea;
 
-    // ✅ Check karo templates available hain ya nahi
+    // ✅ SINGLE SOURCE OF TRUTH
     const templatesNotAvailable = product.templatesAvailable === false;
 
+    // ✅ BW PDF path (hamesha try karo — file ho to link kaam karegi, warna 404)
+    const bwPath = `assets/assets/templates/${product.code}/${product.code}_BW.pdf`;
+
     // ============================================================
-    // ✅ INFO BANNER - Agar templates available nahi hain
+    // ✅ INFO BANNER
     // ============================================================
     let infoBanner = document.getElementById('templatesInfoBanner');
-
-    // Agar banner exist nahi karta toh create karo
     if (!infoBanner) {
         infoBanner = document.createElement('div');
         infoBanner.id = 'templatesInfoBanner';
         infoBanner.className = 'mb-4 sm:mb-6';
-
-        // Product info box ke BAAD insert karo
         const productInfoBox = document.querySelector('#templatesModal .modal-body > div:first-child');
         if (productInfoBox && productInfoBox.parentNode) {
             productInfoBox.parentNode.insertBefore(infoBanner, productInfoBox.nextSibling);
@@ -22939,8 +26804,8 @@ function openTemplatesModal(product) {
             <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 sm:p-4 flex items-start gap-3">
                 <i class="fa-solid fa-circle-info text-blue-600 mt-0.5 text-lg"></i>
                 <div class="text-xs sm:text-sm text-blue-800">
-                    <p class="font-semibold mb-1">Templates not yet available</p>
-                    <p>Click "Request Template" for any color and we'll email it to you within 24 hours.</p>
+                    <p class="font-semibold mb-1">Color templates available on request</p>
+                    <p>Download the BW template above, or click "Request Template" on any color — we'll email it within 24 hours.</p>
                 </div>
             </div>
         `;
@@ -22950,22 +26815,30 @@ function openTemplatesModal(product) {
     }
 
     // ============================================================
-    // ✅ BW Template Status
+    // ✅ BW TEMPLATE STATUS
     // ============================================================
     const bwStatus = document.getElementById('bwTemplateStatus');
+
     if (templatesNotAvailable) {
-        bwStatus.innerHTML = `<span class="italic text-brand-textSecondary">Not Available</span>`;
-    } else if (templateData.bwTemplate) {
-        bwStatus.innerHTML = `<a href="${templateData.bwTemplate}" target="_blank" 
-                                class="text-brand-crimson hover:underline">
-                                Download PDF
-                            </a>`;
+        // ✅ BW PDF link dikhao (agar file na ho to browser 404 dega — user ko pata chal jayega)
+        bwStatus.innerHTML = `
+            <a href="${bwPath}" target="_blank" 
+               class="text-brand-crimson hover:underline flex items-center justify-center gap-1">
+                <i class="fa-regular fa-file-pdf"></i> Download BW PDF
+            </a>
+        `;
     } else {
-        bwStatus.textContent = 'Not Available';
+        // Normal mode — BW bhi optional
+        bwStatus.innerHTML = `
+            <a href="${bwPath}" target="_blank" 
+               class="text-brand-crimson hover:underline flex items-center justify-center gap-1">
+                <i class="fa-regular fa-file-pdf"></i> Download BW PDF
+            </a>
+        `;
     }
 
     // ============================================================
-    // ✅ Populate table - Har color ke liye action
+    // ✅ COLOR TABLE — dono modes mein SAME structure
     // ============================================================
     const tbody = document.getElementById('templatesTableBody');
     tbody.innerHTML = '';
@@ -22974,28 +26847,21 @@ function openTemplatesModal(product) {
         const tr = document.createElement('tr');
         tr.className = 'border-b border-brand-border hover:bg-brand-bg/20 transition-colors';
 
-        let actionHTML = '';
+        // ✅ Action HTML — sirf templatesNotAvailable pe depend karta hai
+        const actionHTML = templatesNotAvailable
+            ? `<a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 request-template-btn" 
+                  data-color="${color.name}"
+                  data-product-code="${product.code}"
+                  data-product-name="${product.name}"
+                  data-product-size="${product.size || ''}">
+                  <i class="fa-regular fa-envelope"></i> Request Template
+               </a>`
+            : `<a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 download-template-btn" 
+                  data-color="${color.name}">
+                  <i class="fa-regular fa-file-pdf"></i> Download PDF
+               </a>`;
 
-        if (templatesNotAvailable) {
-            // ✅ REQUEST TEMPLATE (new behavior)
-            actionHTML = `
-                <a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 request-template-btn" 
-                   data-color="${color.name}"
-                   data-product-code="${product.code}"
-                   data-product-name="${product.name}"
-                   data-product-size="${product.size || ''}">
-                    <i class="fa-regular fa-envelope"></i> Request Template
-                </a>
-            `;
-        } else {
-            // ✅ DOWNLOAD PDF (existing behavior)
-            actionHTML = `
-                <a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 download-template-btn" 
-                   data-color="${color.name}">
-                    <i class="fa-regular fa-file-pdf"></i> Download PDF
-                </a>
-            `;
-        }
+        // Double-tone color support
         let bgStyle = `background:${color.hex};`;
         if (color.name.includes('-')) {
             const parts = color.name.split('-').map(p => p.trim());
@@ -23003,12 +26869,13 @@ function openTemplatesModal(product) {
             const hex2 = findHexByName(parts[1]) || color.hex;
             bgStyle = `background: linear-gradient(to right, ${hex1} 0%, ${hex1} 50%, ${hex2} 50%, ${hex2} 100%);`;
         }
+
         tr.innerHTML = `
             <td class="p-2 sm:p-3">
                 <div class="flex items-center gap-2 sm:gap-3">
-                  <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-brand-border" 
-    style="${bgStyle} ${color.hex === '#FFFFFF' ? 'border:1px solid #ddd;' : ''}">
-</div>
+                    <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-brand-border" 
+                         style="${bgStyle} ${color.hex === '#FFFFFF' ? 'border:1px solid #ddd;' : ''}">
+                    </div>
                     <span class="text-brand-text font-medium">${color.name}</span>
                 </div>
             </td>
@@ -23020,42 +26887,45 @@ function openTemplatesModal(product) {
     });
 
     // ============================================================
-    // ✅ Event Handlers
+    // ✅ EVENT BINDING
     // ============================================================
     if (templatesNotAvailable) {
-        // Request Template buttons
         document.querySelectorAll('.request-template-btn').forEach(btn => {
             btn.addEventListener('click', function (e) {
                 e.preventDefault();
-                const colorName = this.dataset.color;
-                const productCode = this.dataset.productCode;
-                const productName = this.dataset.productName;
-                const productSize = this.dataset.productSize;
-                openTemplateRequestModal(productCode, productName, colorName, productSize);
+                openTemplateRequestModal(
+                    this.dataset.productCode,
+                    this.dataset.productName,
+                    this.dataset.color,
+                    this.dataset.productSize
+                );
             });
         });
     } else {
-        // Download PDF buttons (existing)
         document.querySelectorAll('.download-template-btn').forEach(btn => {
             btn.addEventListener('click', function (e) {
                 e.preventDefault();
-                const colorName = this.dataset.color;
-                downloadSingleTemplate(colorName, product);
+                downloadSingleTemplate(this.dataset.color, product);
             });
         });
     }
 
     // ============================================================
-    // ✅ Download All Handler
+    // ✅ DOWNLOAD ALL BUTTON
     // ============================================================
-    document.getElementById('downloadAllTemplates').onclick = function (e) {
-        e.preventDefault();
+    const downloadAllBtn = document.getElementById('downloadAllTemplates');
+    if (downloadAllBtn) {
         if (templatesNotAvailable) {
-            showNotification('❌ Templates are not available for this product. Please request them individually.');
+            // ✅ Sirf BW hai, Download All ka matlab nahi
+            downloadAllBtn.style.display = 'none';
         } else {
-            downloadAllTemplates(product);
+            downloadAllBtn.style.display = '';
+            downloadAllBtn.onclick = function (e) {
+                e.preventDefault();
+                downloadAllTemplates(product);
+            };
         }
-    };
+    }
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -23364,26 +27234,26 @@ function openImagesModal(product) {
         tr.className = 'border-b border-brand-border hover:bg-brand-bg/20 transition-colors';
 
         tr.innerHTML = `
-                <td class="p-2 sm:p-3">
-                    <div class="flex items-center gap-3">
-                        <img src="${img}" alt="${inkwellFileName}" 
-                            class="w-16 h-16 object-cover rounded border border-brand-border cursor-pointer hover:opacity-80 transition-opacity"
-                            onclick="window.open('${img}', '_blank')" />
-                        <div class="flex flex-col">
-                            <span class="text-brand-text font-medium">${product.code} - ${colorName}</span>
-                            <span class="text-xs text-gray-500">Image ${index + 1} of ${images.length}</span>
+                    <td class="p-2 sm:p-3">
+                        <div class="flex items-center gap-3">
+                            <img src="${img}" alt="${inkwellFileName}" 
+                                class="w-16 h-16 object-cover rounded border border-brand-border cursor-pointer hover:opacity-80 transition-opacity"
+                                onclick="window.open('${img}', '_blank')" />
+                            <div class="flex flex-col">
+                                <span class="text-brand-text font-medium">${product.code} - ${colorName}</span>
+                                <span class="text-xs text-gray-500">Image ${index + 1} of ${images.length}</span>
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td class="p-2 sm:p-3 text-center">
-                    <a href="${img}" download="${inkwellFileName}"
-                    class="text-brand-crimson hover:underline text-sm flex items-center justify-center gap-1 download-image-btn"
-                    data-image="${img}"
-                    data-filename="${inkwellFileName}">
-                        <i class="fa-regular fa-circle-down"></i> Download
-                    </a>
-                </td>
-            `;
+                    </td>
+                    <td class="p-2 sm:p-3 text-center">
+                        <a href="${img}" download="${inkwellFileName}"
+                        class="text-brand-crimson hover:underline text-sm flex items-center justify-center gap-1 download-image-btn"
+                        data-image="${img}"
+                        data-filename="${inkwellFileName}">
+                            <i class="fa-regular fa-circle-down"></i> Download
+                        </a>
+                    </td>
+                `;
         tbody.appendChild(tr);
     });
 
@@ -23517,6 +27387,22 @@ function renderRelatedProducts(currentProduct, allProducts) {
 
     function getMinimumPrice(product) {
         // ✅ Case 1: basePrice + upsizeCharges (T-shirts, Tank Tops, Hoodies)
+        if (product.isBelpromo && product.pricing?.blank?.rows) {
+            let minBlank = Infinity;
+            product.pricing.blank.rows.forEach(row => {
+                (row.prices || []).forEach(price => {
+                    const num = parseFloat(String(price).replace(/[$,]/g, ''));
+                    if (!isNaN(num) && num > 0 && num < minBlank) {
+                        minBlank = num;
+                    }
+                });
+            });
+            if (minBlank !== Infinity) {
+                return minBlank;
+            }
+        }
+
+        // ✅ Case 1: basePrice + upsizeCharges (T-shirts, Tank Tops, Hoodies)
         if (product.pricing && product.pricing.blank && product.pricing.blank.basePrice) {
             const priceStr = product.pricing.blank.basePrice.price;
             const priceNum = parseFloat(String(priceStr).replace(/[$,]/g, ''));
@@ -23564,41 +27450,41 @@ function renderRelatedProducts(currentProduct, allProducts) {
     const section = document.createElement('div');
     section.className = 'mt-12 border-t border-brand-border pt-8';
     section.innerHTML = `
-            <h2 class="text-2xl font-serif text-brand-text mb-6">Related Products</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                ${relatedWithMinPrice.map(product => `
-                    <a href="?id=${product.id}" class="group">
-                        <div class="bg-white rounded-lg border border-brand-border overflow-hidden related-product-card hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-                            <div class="overflow-hidden relative bg-gray-50" style="height: 220px;">
-                                <img src="${product.image}" alt="${product.name}" 
-                                    class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                                    onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23f3f4f6%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22Arial%22 font-size=%2214%22 fill=%22%239ca3af%22 text-anchor=%22middle%22 dy=%22.3em%22%3ENo%20Image%3C/text%3E%3C/svg%3E'">
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
-                                    <p class="text-white text-lg font-bold tracking-wide">
-                                        <span class="text-xs font-normal opacity-80">As low as</span> 
-                                        $${(product.minPrice || 0).toFixed(2)}                                
-                                    </p>
+                <h2 class="text-2xl font-serif text-brand-text mb-6">Related Products</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    ${relatedWithMinPrice.map(product => `
+                        <a href="?id=${product.id}" class="group">
+                            <div class="bg-white rounded-lg border border-brand-border overflow-hidden related-product-card hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div class="overflow-hidden relative bg-gray-50" style="height: 220px;">
+                                    <img src="${product.image}" alt="${product.name}" 
+                                        class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23f3f4f6%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22Arial%22 font-size=%2214%22 fill=%22%239ca3af%22 text-anchor=%22middle%22 dy=%22.3em%22%3ENo%20Image%3C/text%3E%3C/svg%3E'">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+                                        <p class="text-white text-lg font-bold tracking-wide">
+                                            <span class="text-xs font-normal opacity-80">As low as</span> 
+                                            $${(product.minPrice || 0).toFixed(2)}                                
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="p-4 flex-1 flex flex-col">
-                                <p class="text-xs text-brand-textSecondary">${product.code}</p>
-                                <h3 class="text-sm font-medium text-brand-text mt-1 line-clamp-2 min-h-[40px]">${product.name}</h3>
-                                <div class="flex items-center justify-between mt-3 pt-2 border-t border-brand-border/50">
-                                    <span class="text-xs text-brand-crimson font-semibold group-hover:underline">View Details →</span>
-                                    <div class="flex gap-1">
-                                        ${product.colors.slice(0, 3).map(c => `
-                                            <div class="w-4 h-4 rounded-full border border-brand-border" 
-                                                style="background:${c.hex}; ${c.hex === '#FFFFFF' ? 'border:1px solid #ddd;' : ''}"></div>
-                                        `).join('')}
-                                        ${product.colors.length > 3 ? `<span class="text-[10px] text-brand-textSecondary">+${product.colors.length - 3}</span>` : ''}
+                                <div class="p-4 flex-1 flex flex-col">
+                                    <p class="text-xs text-brand-textSecondary">${product.code}</p>
+                                    <h3 class="text-sm font-medium text-brand-text mt-1 line-clamp-2 min-h-[40px]">${product.name}</h3>
+                                    <div class="flex items-center justify-between mt-3 pt-2 border-t border-brand-border/50">
+                                        <span class="text-xs text-brand-crimson font-semibold group-hover:underline">View Details →</span>
+                                        <div class="flex gap-1">
+                                            ${product.colors.slice(0, 3).map(c => `
+                                                <div class="w-4 h-4 rounded-full border border-brand-border" 
+                                                    style="background:${c.hex}; ${c.hex === '#FFFFFF' ? 'border:1px solid #ddd;' : ''}"></div>
+                                            `).join('')}
+                                            ${product.colors.length > 3 ? `<span class="text-[10px] text-brand-textSecondary">+${product.colors.length - 3}</span>` : ''}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                `).join('')}
-            </div>
-        `;
+                        </a>
+                    `).join('')}
+                </div>
+            `;
     container.appendChild(section);
 }
 
@@ -23713,9 +27599,9 @@ function initQuotationModal() {
         const submitBtn = document.getElementById("submitQuotation");
         submitBtn.disabled = true;
         submitBtn.innerHTML = `
-                    <i class="fa-solid fa-spinner fa-spin mr-2"></i>
-                    Sending...
-                `;
+                        <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+                        Sending...
+                    `;
 
         try {
             const formData = new FormData();
@@ -23773,9 +27659,9 @@ function initQuotationModal() {
         } finally {
             submitBtn.disabled = false;
             submitBtn.innerHTML = `
-                        <i class="fa-regular fa-paper-plane mr-2"></i>
-                        Submit Quotation
-                    `;
+                            <i class="fa-regular fa-paper-plane mr-2"></i>
+                            Submit Quotation
+                        `;
         }
     }
 }
@@ -23881,9 +27767,9 @@ function initMockupModal() {
             const btn = this;
             btn.disabled = true;
             btn.innerHTML = `
-                        <i class="fa-solid fa-spinner fa-spin mr-2"></i>
-                        Sending...
-                    `;
+                            <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+                            Sending...
+                        `;
 
             try {
                 const formData = new FormData();
@@ -23939,9 +27825,9 @@ function initMockupModal() {
             } finally {
                 btn.disabled = false;
                 btn.innerHTML = `
-                            <i class="fa-regular fa-image mr-2"></i>
-                            Submit Mockup Request
-                        `;
+                                <i class="fa-regular fa-image mr-2"></i>
+                                Submit Mockup Request
+                            `;
             }
         });
     }
@@ -24043,9 +27929,9 @@ function initFreightModal() {
 
             btn.disabled = true;
             btn.innerHTML = `
-                    <i class="fa-solid fa-spinner fa-spin mr-2"></i>
-                    Sending...
-                `;
+                        <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+                        Sending...
+                    `;
 
             try {
                 const formData = new FormData();
@@ -24186,9 +28072,9 @@ function initFreightModal() {
             }
 
             div.innerHTML = `
-    <div class="w-6 h-6 ${bgClass} rounded-sm ${borderClass} transition-colors" style="${bgStyle}"></div>
-    <span class="text-[9px] ...">${color.name}</span>
-`;
+        <div class="w-6 h-6 ${bgClass} rounded-sm ${borderClass} transition-colors" style="${bgStyle}"></div>
+        <span class="text-[9px] ...">${color.name}</span>
+    `;
             div.addEventListener('click', function (e) {
                 e.stopPropagation();
                 colorGrid.querySelectorAll('div').forEach(el => {
@@ -24248,11 +28134,18 @@ function initFreightModal() {
     // HEADER RENDER
     // ============================================================
     if (thead) {
-        thead.style.display = isBlank ? 'none' : '';
-        if (!isBlank) {
+        // ✅ Cups ke blank tab me bhi quantities show karo
+        const isCupBlank = isBlank && product.isBelpromo && data.quantities;
+
+        thead.style.display = (isBlank && !isCupBlank) ? 'none' : '';
+        if (!isBlank || isCupBlank) {
             const quantities = data.quantities || [];
+
+            // ✅ Belpromo ke liye "Pieces" label, warna "Quantity"
+            const qtyLabel = product.isBelpromo ? 'Quantity (Pcs)' : 'Quantity';
+
             let html = `<tr style="color: #C81F45 !important; text-transform: uppercase; letter-spacing: 0.05em;">
-            <th style="color: #C81F45 !important; text-align: left;">Quantity</th>`;
+<th style="color: #C81F45 !important; text-align: left;">${qtyLabel}</th>`;
 
             for (let i = 0; i < 6 && i < quantities.length; i++) {
                 html += `<th id="p-qty-${i + 1}" style="color: #C81F45 !important;">${quantities[i]}</th>`;
@@ -24271,14 +28164,29 @@ function initFreightModal() {
     // ============================================================
     if (isBlank) {
         // 1. Blank Pricing Rows (bags, blankets)
-        if (data.rows) {
+        if (product.isBelpromo && data.quantities) {
+            if (data.rows) {
+                data.rows.forEach((row) => {
+                    const tr = document.createElement('tr');
+                    let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
+                    for (let i = 0; i < 6 && i < row.prices.length; i++) {
+                        html += `<td class="text-brand-text">${row.prices[i]}</td>`;
+                    }
+                    html += `<td class="text-brand-textSecondary">R</td>`;
+                    tr.innerHTML = html;
+                    pricingBody.appendChild(tr);
+                });
+            }
+        }
+        // ✅ Baaki products ke liye purana behavior (single price)
+        else if (data.rows) {
             data.rows.forEach((row) => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                        <td class="font-medium text-brand-textSecondary">${row.label}</td>
-                        <td class="text-brand-text font-semibold">${row.prices[0]}</td>
-                        <td class="text-brand-textSecondary">R</td>
-                    `;
+                <td class="font-medium text-brand-textSecondary">${row.label}</td>
+                <td class="text-brand-text font-semibold">${row.prices[0]}</td>
+                <td class="text-brand-textSecondary">R</td>
+            `;
                 pricingBody.appendChild(tr);
             });
         }
@@ -24338,11 +28246,16 @@ function initFreightModal() {
                     html += `<td class="text-brand-text">${row.prices[i]}</td>`;
                 }
 
-                if (row.label.includes('ADD LOCATION') || row.label.includes('ADD COLOR')) {
+                // ✅ REGEX FIX — trailing space aur (V) suffix bhi handle hoga
+                // "ADD LOCATION", "ADD LOCATION (V)", "ADD COLOR", "ADD COLOR (V)" sab match honge
+                const isExtraCharge = /ADD\s*(LOCATION|COLOR)/i.test(row.label || '');
+
+                if (isExtraCharge) {
                     html += `<td class="text-brand-textSecondary">V</td>`;
                 } else {
                     html += `<td class="text-brand-textSecondary">R</td>`;
                 }
+
                 tr.innerHTML = html;
 
                 // ✅ Extra rows ke liye class (View More ke liye)
@@ -24395,7 +28308,6 @@ function initFreightModal() {
             weight: "N/A",
             material: "N/A",
             handle: "N/A"
-            // ❌ origin hata diya - ab fallback nahi hoga
         };
 
         // ✅ Origin value - agar nahi hai to null rahega (row hide ho jayegi)
@@ -24404,76 +28316,94 @@ function initFreightModal() {
         // ✅ Handle row condition
         const showHandle = s.handle && s.handle !== "-" && s.handle !== "N/A";
         const handleRow = showHandle ? `
-            <div class="flex border-r border-brand-border">
-                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">HANDLE SIZE</div>
-                <div class="w-1/2 p-3 font-medium text-brand-text">${s.handle}</div>
-            </div>
-        ` : '';
+                <div class="flex border-r border-brand-border">
+                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">HANDLE SIZE</div>
+                    <div class="w-1/2 p-3 font-medium text-brand-text">${s.handle}</div>
+                </div>
+            ` : '';
 
         // ✅ Gusset row condition
         const showGusset = !product.hideGusset;
         const gussetRow = showGusset ? `
-            <div class="flex border-b border-brand-border">
-                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div>
-                <div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div>
-            </div>
-        ` : '';
+                <div class="flex border-b border-brand-border">
+                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GUSSET</div>
+                    <div class="w-1/2 p-3 font-medium text-brand-text">${s.gusset}</div>
+                </div>
+            ` : '';
 
-        // ✅ Origin row condition - sirf tab show hoga jab origin ya decoratedIn ho
+        // ✅ Origin row condition
         const originRow = originValue ? `
-            <div class="flex">
-                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div>
-                <div class="w-1/2 p-3 font-medium text-brand-text">${originValue}</div>
-            </div>
-        ` : '';
+                <div class="flex">
+                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COUNTRY OF ORIGIN</div>
+                    <div class="w-1/2 p-3 font-medium text-brand-text">${originValue}</div>
+                </div>
+            ` : '';
 
-        // ============================================================
-        // ✅ SKU / GTIN / PMS ROWS — Sirf Blankets (ABW) ke liye
-        // ============================================================
+        // ✅ Blankets Rows (Color, GTIN, PMS)
         let colorInfoRows = '';
         if (product.category === "Blankets" && selectedColor) {
-
             const gtinVal = selectedColor.gtin || 'N/A';
             const pmsVal = selectedColor.pms || 'N/A';
-
             colorInfoRows = `
-                <div class="flex border-b border-r border-brand-border">
-                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COLOR</div>
-                    <div class="w-1/2 p-3 font-medium text-brand-text">${selectedColor.name}</div>
-                </div>
-            
-                <div class="flex border-b border-r border-brand-border">
-                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GTIN</div>
-                    <div class="w-1/2 p-3 font-medium text-brand-text">${gtinVal}</div>
-                </div>
-                <div class="flex border-b border-r border-brand-border">
-                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">PMS COLOR</div>
-                    <div class="w-1/2 p-3 font-medium text-brand-text">${pmsVal}</div>
-                </div>
-            `;
+                    <div class="flex border-b border-r border-brand-border">
+                        <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">COLOR</div>
+                        <div class="w-1/2 p-3 font-medium text-brand-text">${selectedColor.name}</div>
+                    </div>
+                    <div class="flex border-b border-r border-brand-border">
+                        <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">GTIN</div>
+                        <div class="w-1/2 p-3 font-medium text-brand-text">${gtinVal}</div>
+                    </div>
+                    <div class="flex border-b border-r border-brand-border">
+                        <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">PMS COLOR</div>
+                        <div class="w-1/2 p-3 font-medium text-brand-text">${pmsVal}</div>
+                    </div>
+                `;
         }
 
+        // ✅ Belpromo Rows (Dynamic Mapping)
+        // Agar object me 'imprintPlacement' ya 'specSample' hai, tabhi render hoga.
+        let isBelpromoRows = '';
+        if (product.isBelpromo) {
+            if (s.imprintPlacement) {
+                isBelpromoRows += `
+                    <div class="flex border-b border-r border-brand-border">
+                        <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">IMPRINT PLACEMENT</div>
+                        <div class="w-1/2 p-3 font-medium text-brand-text">${s.imprintPlacement}</div>
+                    </div>
+                `;
+            }
+            if (s.specSample) {
+                isBelpromoRows += `
+                    <div class="flex border-b border-r border-brand-border">
+                        <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">SPEC SAMPLE</div>
+                        <div class="w-1/2 p-3 font-medium text-brand-text">${s.specSample}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // ✅ FINAL RENDER
         specsTable.innerHTML = `
-            <div class="flex border-b border-r border-brand-border">
-                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">ITEM NO</div>
-                <div class="w-1/2 p-3 font-medium text-brand-text">${s.itemNo}</div>
-            </div>
+                <div class="flex border-b border-r border-brand-border">
+                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">ITEM NO</div>
+                    <div class="w-1/2 p-3 font-medium text-brand-text">${s.itemNo}</div>
+                </div>
 
-            ${colorInfoRows}
+                ${colorInfoRows}
+                ${isBelpromoRows}
+                ${gussetRow}
 
-            ${gussetRow}
-
-            <div class="flex border-b border-r border-brand-border">
-                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY WEIGHT</div>
-                <div class="w-1/2 p-3 font-medium text-brand-text">${s.weight ?? '-'}</div>
-            </div>
-            <div class="flex border-b border-brand-border">
-                <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY MATERIAL</div>
-                <div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div>
-            </div>
-            ${handleRow}
-            ${originRow}
-        `;
+                <div class="flex border-b border-r border-brand-border">
+                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY WEIGHT</div>
+                    <div class="w-1/2 p-3 font-medium text-brand-text">${s.weight ?? '-'}</div>
+                </div>
+                <div class="flex border-b border-brand-border">
+                    <div class="w-1/2 p-3 text-brand-textSecondary uppercase tracking-wider bg-brand-bg/30">QUALITY MATERIAL</div>
+                    <div class="w-1/2 p-3 font-medium text-brand-text">${s.material}</div>
+                </div>
+                ${handleRow}
+                ${originRow}
+            `;
     }
 
     // ============================================================
@@ -24494,16 +28424,16 @@ function initFreightModal() {
         const featureImg = product.featureImage || product.image;
 
         container.innerHTML = `
-            <div class="w-full flex justify-center">
-                <img 
-                    src="${featureImg}" 
-                    alt="${product.name} Spec" 
-                    class="w-full max-w-4xl h-auto object-contain rounded-lg shadow-lg border border-brand-border bg-white p-2 cursor-zoom-in hover:shadow-xl transition-shadow"
-                    id="spec-picture-image"
-                    title="Click to view full size"
-                />
-            </div>
-        `;
+                <div class="w-full flex justify-center">
+                    <img 
+                        src="${featureImg}" 
+                        alt="${product.name} Spec" 
+                        class="w-full max-w-4xl h-auto object-contain rounded-lg shadow-lg border border-brand-border bg-white p-2 cursor-zoom-in hover:shadow-xl transition-shadow"
+                        id="spec-picture-image"
+                        title="Click to view full size"
+                    />
+                </div>
+            `;
 
         // ✅ Click event lagao image pe
         const specImg = document.getElementById('spec-picture-image');
@@ -24523,7 +28453,32 @@ function initFreightModal() {
         productSize.textContent = product.size;
         productImprint.textContent = product.imprint || '10"W x 8"H';
         productNameBreadcrumb.textContent = product.name;
-        tabDescription.textContent = product.description;
+        // ✅ Belpromo products ke liye featureImage logic
+        if (product.isBelpromo && product.featureImage) {
+            tabDescription.innerHTML = `
+        <div class="w-full flex justify-center">
+            <img 
+                src="${product.featureImage}" 
+                alt="${product.name} Feature Image" 
+                class="max-h-[300px] w-auto max-w-full object-contain rounded-lg shadow-lg border border-brand-border bg-white p-2 cursor-zoom-in hover:shadow-xl transition-shadow"
+                id="desc-feature-image"
+                title="Click to view full size"
+            />
+        </div>
+    `;
+
+            // ✅ Click pe lightbox open
+            const img = document.getElementById('desc-feature-image');
+            if (img) {
+                img.addEventListener('click', function () {
+                    openSpecImageModal(this.src, this.alt);
+                });
+            }
+
+        } else {
+            // Normal description text
+            tabDescription.textContent = product.description;
+        }
 
         // ✅ OPTION A: STANDOUT THEME (SIRF BADGE + IMAGE BORDER)
         if (product.standout) {
@@ -24534,9 +28489,9 @@ function initFreightModal() {
                 badge.id = 'standoutBadge';
                 badge.className = 'standout-badge';
                 badge.innerHTML = `
-                    <i class="fa-solid fa-crown"></i>
-                    ${product.standoutBadge || 'PREMIUM APPAREL'}
-                `;
+                        <i class="fa-solid fa-crown"></i>
+                        ${product.standoutBadge || 'PREMIUM APPAREL'}
+                    `;
                 titleContainer.insertBefore(badge, productTitle);
             }
 
@@ -24562,15 +28517,15 @@ function initFreightModal() {
 
         if (hasCharges) {
             chargesTab.innerHTML = `
-                <div class="space-y-2 text-sm text-brand-textSecondary">
-                    ${charges.pmsMatch ? `<p><strong>PMS Match:</strong> ${charges.pmsMatch}</p>` : ''}
+                    <div class="space-y-2 text-sm text-brand-textSecondary">
                     ${charges.setupCharge ? `<p><strong>Setup Charge:</strong> ${charges.setupCharge}</p>` : ''}
                     ${charges.setupChargeTransfer ? `<p><strong>Setup Charge:</strong> ${charges.setupChargeTransfer}</p>` : ''}
                     ${charges.repeatSetup ? `<p><strong>Repeat Setup:</strong> ${charges.repeatSetup}</p>` : ''}
                     ${charges.repeatSetupTransfer ? `<p><strong>Repeat Setup:</strong> ${charges.repeatSetupTransfer}</p>` : ''}
                     ${charges.lessThanMinimum ? `<p><strong>Less than Minimum:</strong> ${charges.lessThanMinimum}</p>` : ''}
-                </div>
-            `;
+                    ${charges.pmsMatch ? `<p><strong>PMS Match:</strong> ${charges.pmsMatch}</p>` : ''}
+                    </div>
+                `;
         } else {
             chargesTab.innerHTML = `<p class="text-sm text-brand-textSecondary">No additional charges information available.</p>`;
         }
@@ -24589,16 +28544,16 @@ function initFreightModal() {
             let html = `<div class="space-y-4 text-sm text-brand-textSecondary">`;
             s.packagingOptions.forEach(option => {
                 html += `
-                    <div class="border border-brand-border rounded-lg p-3">
-                        ${option.type ? `<p class="font-semibold text-brand-text">${option.type}</p>` : ''}
-                        ${option.qtyPerBox && option.qtyPerBox !== 'N/A' ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
-                        ${option.boxWeight && option.boxWeight !== 'N/A' ? `<p><strong>Box Weight:</strong> ${option.boxWeight}</p>` : ''}
-                        ${option.boxDims && option.boxDims !== 'N/A' ? `<p><strong>Box Dims:</strong> ${option.boxDims}</p>` : ''}
-                        ${option.cartonVolume && option.cartonVolume !== 'N/A' ? `<p><strong>Carton Volume:</strong> ${option.cartonVolume}</p>` : ''}
-                        ${option.pieceWeight && option.pieceWeight !== 'N/A' ? `<p><strong>Piece Weight:</strong> ${option.pieceWeight}</p>` : ''}
-                        ${option.note ? `<p class="text-xs italic mt-2">${option.note}</p>` : ''}
-                    </div>
-                `;
+                        <div class="border border-brand-border rounded-lg p-3">
+                            ${option.type ? `<p class="font-semibold text-brand-text">${option.type}</p>` : ''}
+                            ${option.qtyPerBox && option.qtyPerBox !== 'N/A' ? `<p><strong>Qty Per Box:</strong> ${option.qtyPerBox}</p>` : ''}
+                            ${option.boxWeight && option.boxWeight !== 'N/A' ? `<p><strong>Box Weight:</strong> ${option.boxWeight}</p>` : ''}
+                            ${option.boxDims && option.boxDims !== 'N/A' ? `<p><strong>Box Dims:</strong> ${option.boxDims}</p>` : ''}
+                            ${option.cartonVolume && option.cartonVolume !== 'N/A' ? `<p><strong>Carton Volume:</strong> ${option.cartonVolume}</p>` : ''}
+                            ${option.pieceWeight && option.pieceWeight !== 'N/A' ? `<p><strong>Piece Weight:</strong> ${option.pieceWeight}</p>` : ''}
+                            ${option.note ? `<p class="text-xs italic mt-2">${option.note}</p>` : ''}
+                        </div>
+                    `;
             });
             html += `</div>`;
             packagingTab.innerHTML = html;
@@ -24610,10 +28565,10 @@ function initFreightModal() {
         // ============================================================
         if (typeof s.packagingOptions === 'string' && s.packagingOptions.trim() !== '') {
             packagingTab.innerHTML = `
-                <div class="border border-brand-border rounded-lg p-4 text-sm text-brand-textSecondary text-center">
-                    <p class="font-medium text-brand-text">${s.packagingOptions}</p>
-                </div>
-            `;
+                    <div class="border border-brand-border rounded-lg p-4 text-sm text-brand-textSecondary text-center">
+                        <p class="font-medium text-brand-text">${s.packagingOptions}</p>
+                    </div>
+                `;
             return;
         }
 
@@ -24623,13 +28578,13 @@ function initFreightModal() {
         // ============================================================
         if (s.boxQuantity || s.boxWeight || s.boxDims) {
             packagingTab.innerHTML = `
-                <div class="border border-brand-border rounded-lg p-3 text-sm text-brand-textSecondary">
-                    <p class="font-semibold text-brand-text mb-2">Standard Packaging</p>
-                    ${s.boxQuantity ? `<p><strong>Qty Per Box:</strong> ${s.boxQuantity}</p>` : ''}
-                    ${s.boxWeight ? `<p><strong>Box Weight:</strong> ${s.boxWeight}</p>` : ''}
-                    ${s.boxDims ? `<p><strong>Box Dims:</strong> ${s.boxDims}</p>` : ''}
-                </div>
-            `;
+                    <div class="border border-brand-border rounded-lg p-3 text-sm text-brand-textSecondary">
+                        <p class="font-semibold text-brand-text mb-2">Standard Packaging</p>
+                        ${s.boxQuantity ? `<p><strong>Qty Per Box:</strong> ${s.boxQuantity}</p>` : ''}
+                        ${s.boxWeight ? `<p><strong>Box Weight:</strong> ${s.boxWeight}</p>` : ''}
+                        ${s.boxDims ? `<p><strong>Box Dims:</strong> ${s.boxDims}</p>` : ''}
+                    </div>
+                `;
             return;
         }
 
@@ -24743,22 +28698,14 @@ function initFreightModal() {
         const spot = product.pricing?.spot;
         const transfer = product.pricing?.transfer;
 
-        // Spot me check karo
-        if (spot && Array.isArray(spot.rows)) {
-            const hasAddColor = spot.rows.some(r =>
-                /ADD\s*COLOR/i.test(r.label || '')
-            );
-            // Agar ADD COLOR hai to extra rows hain (VIEW MORE dikhao)
-            if (hasAddColor) return true;
-        }
+        // ✅ ADD COLOR ya ADD LOCATION — dono me se koi bhi ho to extra rows hain
+        const hasExtraRow = (rows) => {
+            if (!Array.isArray(rows)) return false;
+            return rows.some(r => /ADD\s*(COLOR|LOCATION)/i.test(r.label || ''));
+        };
 
-        // Transfer me check karo
-        if (transfer && Array.isArray(transfer.rows)) {
-            const hasAddColor = transfer.rows.some(r =>
-                /ADD\s*COLOR/i.test(r.label || '')
-            );
-            if (hasAddColor) return true;
-        }
+        if (spot && hasExtraRow(spot.rows)) return true;
+        if (transfer && hasExtraRow(transfer.rows)) return true;
 
         return false;
     }
@@ -24786,26 +28733,30 @@ function initFreightModal() {
         let tabsHTML = '';
 
         // 1. Spot Printing (agar available hai)
+        // 1. Spot Printing (agar available hai)
         if (hasSpot) {
+            // ✅ Belpromo ke liye "IMPRINT PRICING MATRIX", warna "SPOT PRINTING"
+            const spotLabel = product.isBelpromo ? 'IMPRINT PRICING MATRIX' : 'SPOT PRINTING';
+
             tabsHTML += `
-            <button class="flex-1 border border-brand-crimson bg-brand-crimson/10 text-brand-crimson 
-                    py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
-                    data-method="spot">
-                SPOT PRINTING
-            </button>
-        `;
+        <button class="flex-1 border border-brand-crimson bg-brand-crimson/10 text-brand-crimson 
+                py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
+                data-method="spot">
+            ${spotLabel}
+        </button>
+    `;
         }
 
         // 2. Heat Transfer (agar available hai, warna empty space)
         if (hasTransfer) {
             tabsHTML += `
-            <button class="flex-1 border border-brand-border hover:border-brand-text/20 
-                    text-brand-textSecondary hover:text-brand-text transition-colors 
-                    py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
-                    data-method="transfer">
-                HEAT TRANSFER
-            </button>
-        `;
+                <button class="flex-1 border border-brand-border hover:border-brand-text/20 
+                        text-brand-textSecondary hover:text-brand-text transition-colors 
+                        py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
+                        data-method="transfer">
+                    HEAT TRANSFER
+                </button>
+            `;
         } else {
             // ✅ Heat Transfer nahi hai to empty placeholder (space banane ke liye)
             tabsHTML += `<div class="flex-1"></div>`;
@@ -24814,13 +28765,13 @@ function initFreightModal() {
         // 3. Blank (agar available hai)
         if (hasBlank) {
             tabsHTML += `
-            <button class="flex-1 border border-brand-border hover:border-brand-text/20 
-                    text-brand-textSecondary hover:text-brand-text transition-colors 
-                    py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
-                    data-method="blank">
-                BLANK
-            </button>
-        `;
+                <button class="flex-1 border border-brand-border hover:border-brand-text/20 
+                        text-brand-textSecondary hover:text-brand-text transition-colors 
+                        py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
+                        data-method="blank">
+                    BLANK
+                </button>
+            `;
         }
 
         container.innerHTML = tabsHTML;
@@ -24836,7 +28787,7 @@ function initFreightModal() {
                 showSetupCharge: true,
                 priceIncludes: pricing.spot?.priceIncludes || '1 Color, 1 Location',
                 showViewMore: pricing.spot?.rows
-                    ? pricing.spot.rows.some(r => /ADD\s*COLOR/i.test(r.label || ''))
+                    ? pricing.spot.rows.some(r => /ADD\s*(COLOR|LOCATION)/i.test(r.label || ''))
                     : false
             },
             transfer: {

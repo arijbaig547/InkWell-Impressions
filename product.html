@@ -281,7 +281,7 @@
             <!-- BLOCK B: IMAGES + COLORS (Mobile 2nd, Desktop Left Span) -->
             <!-- ======================================================= -->
             <div
-                class="lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:row-span-2 order-2 lg:order-2 flex flex-col gap-4 sm:gap-6">
+                class="lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:row-span-2 order-2 lg:order-2 flex flex-col gap-6 sm:gap-8 lg:sticky lg:top-24 h-fit">
 
                 <!-- Image Gallery -->
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 h-auto sm:h-[500px] mt-4 sm:mt-[25px]">
@@ -318,7 +318,7 @@
                 </div>
 
                 <!-- Available Colors -->
-                <div class="mt-6 sm:mt-[50px]">
+                <div class="mt-6">
                     <h3 class="text-[10px] sm:text-xs font-bold tracking-wider mb-3 sm:mb-4 text-brand-text">AVAILABLE
                         COLORS</h3>
                     <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-y-3 sm:gap-y-4 gap-x-1 sm:gap-x-2 text-center"
@@ -487,45 +487,45 @@
         <!-- ============================================================ -->
         <!-- BOTTOM SECTION: TABS & DETAILED SPECS -->
         <!-- ============================================================ -->
-        <div
-            class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mt-8 sm:mt-12 border-t border-brand-border pt-6 sm:pt-8">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mt-8 sm:mt-12 border-t border-brand-border pt-6 sm:pt-8">
 
-            <div class="lg:col-span-5">
-                <div class="flex gap-3 sm:gap-6 border-b border-brand-border mb-4 sm:mb-6 overflow-x-auto custom-scrollbar pb-1"
-                    id="info-tabs">
-                    <button
-                        class="tab-btn active text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-brand-crimson whitespace-nowrap"
-                        data-tab="description">PRODUCT DESCRIPTION</button>
-                    <button
-                        class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
-                        data-tab="charges">ADDITIONAL CHARGES</button>
-                    <button
-                        class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
-                        data-tab="packaging">PACKAGING INFO</button>
-                    <button
-                        class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
-                        data-tab="additional-info">SIZE CHART</button>
-                </div>
+                <div class="lg:col-span-5">
+                    <div class="flex gap-3 sm:gap-6 border-b border-brand-border mb-4 sm:mb-6 overflow-x-auto custom-scrollbar pb-1"
+                        id="info-tabs">
+                        <button
+                            class="tab-btn active text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-brand-crimson whitespace-nowrap"
+                            data-tab="description">PRODUCT DESCRIPTION</button>
+                        <button
+                            class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
+                            data-tab="charges">ADDITIONAL CHARGES</button>
+                        <button
+                            class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
+                            data-tab="packaging">PACKAGING INFO</button>
+                        <button
+                            class="tab-btn text-[9px] sm:text-xs font-semibold tracking-wider pb-2 sm:pb-3 border-b-2 border-transparent whitespace-nowrap"
+                            data-tab="additional-info">SIZE CHART</button>
+                    </div>
 
-                <div id="tab-content">
-                    <p class="text-xs sm:text-sm text-brand-textSecondary leading-relaxed" id="tab-description"></p>
-                    <div id="tab-charges" class="hidden text-xs sm:text-sm text-brand-textSecondary"></div>
-                    <div id="tab-packaging" class="hidden text-xs sm:text-sm text-brand-textSecondary"></div>
-                    <div id="tab-additional-info" class="hidden text-xs sm:text-sm text-brand-textSecondary">
-                        <div id="spec-picture-container" class="flex flex-col items-center gap-4">
-                            <!-- Spec picture JS se inject hoga -->
+                    <div id="tab-content">
+                        <p class="text-xs sm:text-sm text-brand-textSecondary leading-relaxed" id="tab-description"></p>
+                        <div id="tab-charges" class="hidden text-xs sm:text-sm text-brand-textSecondary"></div>
+                        <div id="tab-packaging" class="hidden text-xs sm:text-sm text-brand-textSecondary"></div>
+                        <div id="tab-additional-info" class="hidden text-xs sm:text-sm text-brand-textSecondary">
+                            <div id="spec-picture-container" class="flex flex-col items-center gap-4">
+                                <!-- Spec picture JS se inject hoga -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="lg:col-span-7">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-0 text-[10px] sm:text-xs border border-brand-border rounded-lg bg-brand-surface overflow-hidden"
-                    id="specs-table">
+                <div class="lg:col-span-7">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-0 text-[10px] sm:text-xs border border-brand-border rounded-lg bg-brand-surface overflow-hidden"
+                        id="specs-table">
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
 
         <!-- ============================================================ -->
         <!-- MODALS -->
