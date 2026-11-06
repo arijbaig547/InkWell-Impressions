@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Inkwell Impressions product collection.">
+
+  <title>Inkwell Impressions — Product Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./css/collection.css">
+</head>
+
+<body>
+
+ 
+
+  <main class="showroom">
+
+    <aside
+      class="category-sidebar"
+      aria-label="Product categories"
+    >
+ 
+
+      <div
+        class="category-switcher"
+        id="categorySwitcher"
+      ></div>
+
+      <div class="sidebar-footer">
+      
+      </div>
+    </aside>
+
+    <section class="showroom-content">
+
+      <section class="hero-info" aria-live="polite">
+
+        <div class="hero-eyebrow">
+          <span id="heroCategory">PRODUCT COLLECTION</span>
+          <span class="eyebrow-dot">·</span>
+          <span id="heroMaterial">EXPLORE INKWELL</span>
+        </div>
+
+        <h1 id="heroTitle">Discover the collection</h1>
+
+      </section>
+ 
+      <section
+        class="carousel-viewport"
+        id="carouselViewport"
+        aria-label="Product carousel"
+      >
+
+        <button
+          class="carousel-arrow prev-arrow"
+          id="prevBtn"
+          type="button"
+          aria-label="Previous product"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M15 19L8 12L15 5"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div class="carousel-track" id="carouselTrack"></div>
+
+        <button
+          class="carousel-arrow next-arrow"
+          id="nextBtn"
+          type="button"
+          aria-label="Next product"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M9 5L16 12L9 19"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+      </section>
+
+      <section class="carousel-controls">
+
+        <button
+          class="inspect-button"
+          id="inspectActiveBtn"
+          type="button"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <circle
+              cx="12"
+              cy="12"
+              r="3"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+          </svg>
+
+          <span id="inspectBtnLabel">Inspect Product</span>
+          <span class="button-arrow">↗</span>
+        </button>
+
+        <div class="pagination">
+          <span id="currentIndexDisplay">01</span>
+
+          <div class="pagination-track">
+            <div id="progressBar"></div>
+          </div>
+
+          <span id="totalDisplay">05</span>
+        </div>
+
+        <div class="navigation-hint">
+          <span>Use <kbd>←</kbd> <kbd>→</kbd> to navigate</span>
+          <span>·</span>
+          <span>Click product to inspect</span>
+        </div>
+
+      </section>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <h2>No products found</h2>
+        <p>There are currently no products available in this category.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- PRODUCT INFORMATION MODAL -->
+
+  <div
+    class="product-modal"
+    id="productModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+  >
+
+    <div class="modal-card" id="modalDialogCard">
+
+      <div class="modal-actions">
+        <button id="modalPrevBtn" type="button" aria-label="Previous product">‹</button>
+        <button id="modalNextBtn" type="button" aria-label="Next product">›</button>
+        <button id="closeModalBtn" type="button" aria-label="Close modal">×</button>
+      </div>
+
+      <section class="modal-showcase" id="modalShowcase">
+
+        <div class="modal-brand-line">
+          <span>INKWELL</span>
+          <span id="modalNumberDisplay">01 / 05</span>
+        </div>
+
+        <div class="modal-light"></div>
+
+        <div class="modal-product-wrap" id="modalProductWrap">
+          <img id="modalImg" src="" alt="Selected product">
+          <div class="modal-product-shadow"></div>
+        </div>
+
+        <div class="modal-showcase-caption">
+          <span>PRODUCT DETAIL</span>
+          <span>INKWELL COLLECTION</span>
+        </div>
+
+      </section>
+
+      <section class="modal-details">
+
+        <div class="modal-category-row">
+          <span id="modalCategory">PRODUCT CATEGORY</span>
+          <span class="product-code" id="modalCode">CODE</span>
+        </div>
+
+        <h2 id="modalTitle">Product name</h2>
+
+        <p class="modal-description" id="modalDesc"></p>
+
+        <div class="modal-colors">
+
+          <div class="detail-label-row">
+            <span>AVAILABLE COLORS</span>
+            <span id="modalColorName">Original</span>
+          </div>
+
+          <div class="modal-swatches" id="modalSwatches"></div>
+
+        </div>
+
+        <div class="modal-specifications">
+
+          <div class="spec-heading">
+            <span>PRODUCT INFORMATION</span>
+          </div>
+
+          <div class="spec-grid" id="modalSpecs"></div>
+
+        </div>
+
+        <div class="modal-additional" id="modalAdditional"></div>
+
+        <div class="modal-bottom-note">
+          <span>INKWELL IMPRESSIONS</span>
+          <span>MADE FOR YOUR BRAND.</span>
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="./config/product.js" defer></script>
+  <script src="./config/collection.js" defer></script>
+
+</body>
+</html>
