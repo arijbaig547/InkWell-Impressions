@@ -24494,6 +24494,7 @@ const products = [{
 
   colors: [
     { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.jpg" },
+    { name: "Blue", hex: "#00008B", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Blue.jpg" },
     { name: "Burnt Orange", hex: "#CC5500", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg" },
     { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.jpg" },
     { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.jpg" },
@@ -24505,6 +24506,7 @@ const products = [{
       "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.jpg",
     "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.jpg",
     "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Blue.jpg",
     "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.jpg",
   ],
 
@@ -24561,6 +24563,93 @@ const products = [{
     colorChangeFee: "$18.75 (V)",
     sampleProof: "Contact for pricing",
     artworkCharges: "$75.00 (V) / Hour"
+  }
+},
+{
+  id: "ibcm1022",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Barista Ceramic Custom Mug with Cork Bottom - 13 oz",
+  code: "IBCM1022",
+  slug: "barista-ceramic-custom-mug-cork-bottom-13-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware with Faux Cork Bottom",
+  size: '3.25"W X 4.75"H X 2.75"B',
+  imprint: '2.25"W X 2"H',
+  hideGusset: true,
+  price: 8.41,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.jpg",
+  description: "Stylish 13 oz stoneware mug with a faux cork bottom, matching matte exterior and glossy interior, plus a removable push-on lid.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Blue.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Grey.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Black.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Blue.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Grey.jpg"
+  ],
+
+  specs: {
+    weight: "13 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBCM1022",
+    material: "Stoneware with Faux Cork Bottom",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "24 pcs",
+        boxWeight: "37.47 lbs",
+        boxDims: '20.07" x 11.81" x 15.35"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.78", "$10.68", "$10.14", "$9.79", "$9.48", "$8.86"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$9.44", "$11.52", "$10.95", "$10.59", "$10.26", "$9.63"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$8.34", "$10.15", "$9.63", "$9.30", "$9.01", "$8.41"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
   }
 },
 {
@@ -26703,16 +26792,16 @@ const products = [{
   hideGusset: true,
   price: 6.26,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.jpg",
   description: "Classic 11 oz diner-style ceramic mug in milky white, featuring a glossy finish and thick curved grip for easy handling.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg" }
+    { name: "Milky White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.jpg" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.jpg"
   ],
 
   specs: {

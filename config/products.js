@@ -3571,7 +3571,7 @@ const products = [{
   material: "Stoneware",
   size: '5"W x 3.8"H',
   price: 6.26,
-  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.jpg",
   description: "Classic 11 oz diner-style ceramic mug in milky white, featuring a glossy finish and thick curved grip for easy handling.",
   popular: false
 },
@@ -3601,6 +3601,20 @@ const products = [{
   price: 3.15,
   image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg",
   description: "11 oz ceramic mug featuring a matte exterior with speckle accents and an artisan bottom, adding a rustic touch to your coffee.",
+  popular: false
+},
+{
+  id: "ibcm1022",
+  isBelpromo: true,
+  name: "Barista Ceramic Custom Mug with Cork Bottom - 13 oz",
+  code: "IBCM1022",
+  slug: "barista-ceramic-custom-mug-cork-bottom-13-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware with Faux Cork Bottom",
+  size: '3.25"W X 4.75"H X 2.75"B',
+  price: 8.41,
+  image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.jpg",
+  description: "Stylish 13 oz stoneware mug with a faux cork bottom, matching matte exterior and glossy interior, plus a removable push-on lid.",
   popular: false
 },
 {
