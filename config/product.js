@@ -22511,7 +22511,7 @@ const products = [{
     templatesAvailable: false,
     name: "13 oz Ceramic Coffee Mug",
     code: "IBCM1300",
-    featureImage: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Featured.jpg",
+    featureImage: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Featured.webp",
     slug: "ceramic-coffee-mugs-13-oz",
     category: "Ceramic Mugs",
     material: "Stoneware",
@@ -22520,35 +22520,35 @@ const products = [{
     hideGusset: true,
     price: 7.63,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
+    image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.webp",
     description: "A premium 13 oz stoneware campfire mug perfect for hot beverages. Features a 2.75\" x 2\" imprint area and utilizes UV DTF printing for 2-color and full-color designs, ensuring vibrant and durable artwork. Ideal for corporate gifting and outdoor-themed promotions.",
 
     popular: false,
 
     colors: [
-        { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Almond.jpg" },
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Black.jpg" },
-        { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Green.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Grey.jpg" },
-        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Maroon.jpg" },
-        { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Mint.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Navy Blue.jpg" },
-        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Red.jpg" },
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg" }
+        { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Almond.webp" },
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Black.webp" },
+        { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Green.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Grey.webp" },
+        { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Maroon.webp" },
+        { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Mint.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Navy Blue.webp" },
+        { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Red.webp" },
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Almond.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Black.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Green.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Grey.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Promo1.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Promo2.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Maroon.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Mint.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Navy Blue.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Red.jpg",
-        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Almond.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Black.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Green.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Grey.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Promo1.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Promo2.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Maroon.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Mint.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Navy Blue.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-Red.webp",
+        "assets/assets/images/products/ceramic mugs/IBCM1300/IBCM1300-White.webp",
     ],
 
     specs: {
@@ -22623,7 +22623,7 @@ const products = [{
     price: 4.62,
 
     originalPrice: 50.00,
-    image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+    image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
     description: "A premium 11 oz white ceramic mug designed for vibrant photo sublimation. Features a glossy exterior, easy-grip curved handle, and a generous 2.75\" x 3\" front/back imprint area (7.75\" x 3\" wrap-around). Ideal for custom gifts and corporate giveaways.",
 
     popular: false,
@@ -22631,39 +22631,39 @@ const products = [{
     bwTemplateOnly: true,
 
      colors: [
-    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg" },
-    { name: "Brown", hex: "#5A3825", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg" },
-    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg" },
-    { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg" },
-    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.jpg" },
-    { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg" },
-    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg" }
+    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.webp" },
+    { name: "Brown", hex: "#5A3825", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.webp" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.webp" },
+    { name: "Pink", hex: "#EC4899", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.webp" },
+    { name: "Teal", hex: "#008C95", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp" },
+    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.webp"
   ],
 
     specs: {
@@ -22726,7 +22726,7 @@ const products = [{
     templatesAvailable: false,
     name: "Photo Sublimation White Ceramic Mug",
     code: "IBCMS7102",
-    featureImage: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Featured.jpg",
+    featureImage: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Featured.webp",
     slug: "photo-sublimation-white-ceramic-mug",
     category: "Ceramic Mugs",
     material: "Stoneware",
@@ -22735,16 +22735,16 @@ const products = [{
     hideGusset: true,
     price: 5.18,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+    image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
     description: "Glossy white ceramic mug with a large imprint area and comfortable curved handle, perfect for vibrant full-color photo sublimation.",
     popular: false,
 
     colors: [
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg" }
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
+        "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
     ],
 
     specs: {
@@ -22798,7 +22798,7 @@ const products = [{
   templatesAvailable: false,
   name: "Traditional Ceramic Custom Mug - 11 oz",
   code: "IBCM7102",
-  featureImage: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Featured.jpg",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Featured.webp",
   slug: "traditional-ceramic-custom-mug-11-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
@@ -22807,46 +22807,46 @@ const products = [{
   hideGusset: true,
   price: 3.32,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp",
   description: "Traditional 11 oz ceramic mug in seventeen vibrant colors, featuring a glossy exterior, matching interior, and a comfortable curved handle.",
   popular: false,
 
   colors: [
-    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg" },
-    { name: "Brown", hex: "#5C4033", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg" },
-    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg" },
-    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg" },
-    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg" },
-    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg" },
-    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg" }
+    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.webp" },
+    { name: "Brown", hex: "#5C4033", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.webp" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.webp" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.webp" },
+    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo1.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo2.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.jpg"
+      "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Brown.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo2.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Maroon.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Purple.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Teal.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Yellow.webp"
   ],
 
   specs: {
@@ -22914,7 +22914,7 @@ const products = [{
   templatesAvailable: false,
   name: "16 oz Bistro Glossy Personalized Coffee Mug",
   code: "IBCM5000",
-  featureImage: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Featured.jpg",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Featured.webp",
   slug: "16-oz-bistro-glossy-personalized-coffee-mug",
   category: "Ceramic Mugs",
   material: "Stoneware",
@@ -22923,40 +22923,40 @@ const products = [{
   hideGusset: true,
   price: 3.79,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.webp",
   description: "Bistro-style 16 oz wide body ceramic mug with a glossy vibrant finish and high-curved grip, perfect for easy grab-n-go promotional branding.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Green.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Grey.jpg" },
-    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Lime Green.jpg" },
-    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Orange.jpg" },
-    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Purple.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Red.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-White.jpg" },
-    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Yellow.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Green.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Grey.webp" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Lime Green.webp" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Orange.webp" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Purple.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Red.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-White.webp" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Yellow.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo2.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo1.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Purple.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Teal.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Yellow.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo2.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Maroon.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Purple.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Teal.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Yellow.webp",
   ],
 
   specs: {
@@ -23024,7 +23024,7 @@ const products = [{
   templatesAvailable: false,
   name: "Two-Tone Ceramic Custom Mug - 16 oz",
   code: "IBCM5003",
-  featureImage: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Featured.jpg",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Featured.webp",
   slug: "two-tone-ceramic-custom-mug-16-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
@@ -23033,36 +23033,36 @@ const products = [{
   hideGusset: true,
   price: 4.58,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.webp",
   description: "Bistro-style 16 oz wide body mug featuring a sleek two-tone design with a black exterior and bright colored interior, perfect for a vibrant promotional look.",
   popular: false,
 
   colors: [
-      { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Blue.jpg" },
-    { name: "Cobalt Blue", hex: "#1E4D8C", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Green.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Orange.jpg" },
-    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Pink.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Grey.jpg" },
-    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Purple.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Red.jpg" },
-    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Yellow.jpg" }
+      { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Blue.webp" },
+    { name: "Cobalt Blue", hex: "#1E4D8C", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Green.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Orange.webp" },
+    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Pink.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Grey.webp" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Purple.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Red.webp" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Yellow.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Pink.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Purple.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Yellow.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Promo1.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Promo2.jpg"
+      "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Pink.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Purple.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Yellow.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Promo2.webp"
   ],
 
   specs: {
@@ -23134,25 +23134,25 @@ const products = [{
   hideGusset: true,
   price: 5.82,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.webp",
   description: "15 oz ceramic mug featuring a unique cork base, matte exterior, glossy interior, and a modern square handle for a stylish grip.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Blue.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Grey.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.jpg" },
-      { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Blue.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Grey.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.webp" },
+      { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Promo1.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Promo1.webp"
   ],
 
   specs: {
@@ -23224,30 +23224,30 @@ const products = [{
   hideGusset: true,
   price: 3.76,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.webp",
   description: "Smooth molded 12 oz ceramic mug with a glossy vibrant exterior and high-curved grip, perfect for easy grab-n-go branding.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Cobalt Blue.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Grey.jpg" },
-    { name: "Light Blue", hex: "#89CFF0", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Light Blue.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Orange.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Red.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Cobalt Blue.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Grey.webp" },
+    { name: "Light Blue", hex: "#89CFF0", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Light Blue.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Orange.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Red.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Light Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Light Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Teal.webp"
   ],
 
   specs: {
@@ -23323,25 +23323,25 @@ const products = [{
   hideGusset: true,
   price: 3.10,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.webp",
   description: "Compact and stylish 10 oz. mug designed for convenient stacking and everyday use, featuring a glossy colored exterior and white interior.",
   popular: false,
 
   colors: [
-      { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Black.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Grey.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-White.jpg" }
+      { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Black.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Grey.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Promo1.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Promo1.webp"
   ],
 
   specs: {
@@ -23413,24 +23413,24 @@ const products = [{
   hideGusset: true,
   price: 4.66,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.webp",
   description: "Large 15 oz ceramic mug with a glossy color exterior and matching interior, featuring a comfortable C-curved handle for easy gripping.",
   popular: false,
 
   colors: [
-    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Almond.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Cobalt Blue.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Black.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-White.jpg" }
+    { name: "Almond", hex: "#E6D5C3", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Almond.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Cobalt Blue.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Black.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.jpg",
-      "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Almond.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Black.jpg",
+      "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Almond.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Black.webp",
   ],
 
   specs: {
@@ -23506,28 +23506,28 @@ const products = [{
   hideGusset: true,
   price: 5.12,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.webp",
   description: "Stylish 16 oz matte ceramic mug with a glossy color interior, designed with a stackable shape for easy storage and modern appeal.",
   popular: false,
 
     colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Blue.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Lime Green.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Orange.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.jpg" },
-    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Yellow.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Blue.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Lime Green.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Orange.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.webp" },
+    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Yellow.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Yellow.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Yellow.webp"
   ],
 
   specs: {
@@ -23599,28 +23599,28 @@ const products = [{
   hideGusset: true,
   price: 4.56,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.webp",
   description: "Sturdy 7.5 oz tin cup style ceramic mug with a slightly flared top to prevent spills and a speckled finish for a rustic campfire look.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Green.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Grey.jpg" },
-    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Mint.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Green.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Grey.webp" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Mint.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Mint.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Red.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Mint.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Red.webp"
   ],
 
   specs: {
@@ -23691,24 +23691,24 @@ const products = [{
   hideGusset: true,
   price: 5.29,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.webp",
   description: "Bowl-shaped 18 oz ceramic soup mug with a thick curved grip and glossy vibrant exterior, perfect for cozy promotional gifting.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Cobalt Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Green.jpg" },
-    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Cobalt Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Green.webp" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Green.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Green.webp",
   ],
 
   specs: {
@@ -23784,22 +23784,22 @@ const products = [{
   hideGusset: true,
   price: 5.36,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.webp",
   description: "Unique 17 oz ceramic mug featuring a speckled matte top finish with a neutral bottom and a glossy color interior.",
   popular: false,
 
     colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Grey.jpg" },
-    { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Navy Blue.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Grey.webp" },
+    { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Navy Blue.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Navy Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Navy Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.webp"
   ],
 
   specs: {
@@ -23871,24 +23871,24 @@ const products = [{
   hideGusset: true,
   price: 5.53,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.webp",
   description: "Classic 12 oz ceramic diner mug featuring a glazed two-tone design with a contrasting black rim, perfect for custom branding.",
   popular: false,
 
    colors: [
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cream.jpg" },
-    { name: "Forest Green", hex: "#228B22", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Forest Green.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-White.jpg" }
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cream.webp" },
+    { name: "Forest Green", hex: "#228B22", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Forest Green.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cream.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Forest Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Forest Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-White.webp"
   ],
 
   specs: {
@@ -23960,24 +23960,24 @@ const products = [{
   hideGusset: true,
   price: 6.07,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.webp",
   description: "Admiral 16 oz ceramic mug featuring a pottery-like glaze finish with an artisan bottom and comfortable grip, perfect for cozy drinks.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Black.jpg" },
-    { name: "Brown", hex: "#5A3825", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Brown.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Cobalt Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Green.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Black.webp" },
+    { name: "Brown", hex: "#5A3825", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Brown.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Cobalt Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Green.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Brown.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Brown.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.webp"
   ],
   specs: {
     weight: "16 oz.",
@@ -24040,7 +24040,7 @@ const products = [{
   templatesAvailable: false,
   name: "Glossy Ceramic Custom Mug - 16 oz",
   code: "IBCM7105",
-  featureImage: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Featured.jpg",
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Featured.webp",
   slug: "glossy-ceramic-custom-mug-16-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
@@ -24049,22 +24049,22 @@ const products = [{
   hideGusset: true,
   price: 4.92,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.webp",
   description: "Mocha 16 oz large coffee mug with a glossy vibrant exterior and high curved grip for easy grab-n-go handling.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo2.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo1.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-White.jpg",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo2.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-White.webp",
   ],
 
   specs: {
@@ -24140,22 +24140,22 @@ const products = [{
   hideGusset: true,
   price: 5.41,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.webp",
   description: "Java 12 oz ceramic mug featuring a sleek black exterior with a vibrant colored interior, perfect for custom branding.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Promo1.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Promo2.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Promo2.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.webp"
   ],
 
   specs: {
@@ -24227,24 +24227,24 @@ const products = [{
   hideGusset: true,
   price: 4.56,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.webp",
   description: "Two-tone 12 oz ceramic mug featuring a classic white exterior and a vibrant colored interior, offering a wide imprint area for branding.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Cobalt Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Green.jpg" },
-    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Maroon.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Orange.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Cobalt Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Green.webp" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Maroon.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Orange.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Maroon.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Orange.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Maroon.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Orange.webp"
   ],
 
   specs: {
@@ -24316,16 +24316,16 @@ const products = [{
   hideGusset: true,
   price: 7.17,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.webp",
   description: "Elegant 3 oz white porcelain espresso cup and saucer set, perfect for adding a touch of class to your promotional coffee breaks.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP12SET/IBEXP12SET-White.webp"
   ],
 
   specs: {
@@ -24397,26 +24397,26 @@ const products = [{
   hideGusset: true,
   price: 5.89,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.webp",
   description: "Nebula 16 oz ceramic mug with a matte exterior, speckle accents, and a pottery-like glaze finish for a rustic, artisan feel.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Black.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Cream.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Grey.jpg" },
-    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Navy Blue.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Black.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Cream.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Grey.webp" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Navy Blue.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.jpg",
-      "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Cream.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Navy Blue.jpg"
+      "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Navy Blue.webp"
   ],
 
   specs: {
@@ -24488,26 +24488,26 @@ const products = [{
   hideGusset: true,
   price: 4.76,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.webp",
   description: "17 oz speckled bistro-style ceramic mug with a clay bottom accent and an easy comfort grip for a cozy drinking experience.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.jpg" },
-    { name: "Blue", hex: "#00008B", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Blue.jpg" },
-    { name: "Burnt Orange", hex: "#CC5500", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.webp" },
+    { name: "Blue", hex: "#00008B", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Blue.webp" },
+    { name: "Burnt Orange", hex: "#CC5500", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.jpg",
-      "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.jpg",
+      "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Grey.webp",
   ],
 
   specs: {
@@ -24579,22 +24579,22 @@ const products = [{
   hideGusset: true,
   price: 8.41,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.webp",
   description: "Stylish 13 oz stoneware mug with a faux cork bottom, matching matte exterior and glossy interior, plus a removable push-on lid.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Blue.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Grey.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Blue.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Grey.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Grey.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Grey.webp"
   ],
 
   specs: {
@@ -24666,26 +24666,26 @@ const products = [{
   hideGusset: true,
   price: 3.39,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.webp",
   description: "10 oz ceramic mug featuring a unique sesame speckle outer finish and an easy comfort grip, perfect for cozy hot drinks.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Blue.jpg" },
-    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Red.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Orange.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Blue.webp" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Red.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Orange.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Red.jpg",
-      "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Orange.jpg"
+      "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Red.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Orange.webp"
   ],
 
   specs: {
@@ -24757,22 +24757,22 @@ const products = [{
   hideGusset: true,
   price: 5.41,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.webp",
   description: "Java 12 oz ceramic mug featuring a sleek black exterior with a vibrant colored interior, perfect for custom branding.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg" },
-    { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Lime.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.webp" },
+    { name: "Lime", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Lime.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Lime.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Lime.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMB1255/IBCMB1255-Teal.webp"
   ],
 
   specs: {
@@ -24844,26 +24844,26 @@ const products = [{
   hideGusset: true,
   price: 4.07,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.webp",
   description: "Latte 12 oz ceramic mug with a unique shape, glossy vibrant exterior, and high curved grip for easy grab-n-go handling.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Green.jpg" },
-    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Maroon.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Green.webp" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Maroon.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Maroon.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Maroon.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-White.webp"
   ],
 
   specs: {
@@ -24929,7 +24929,7 @@ const products = [{
   id: "ibcm15tt",
   isBelpromo: true,
   templatesAvailable: false,
-  featureImage:"assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Featured.jpg",
+  featureImage:"assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Featured.webp",
   name: "Glossy Two-Tone Personalized Ceramic Mug 15 oz",
   code: "IBCM15TT",
   slug: "glossy-two-tone-personalized-ceramic-mug-15-oz",
@@ -24940,24 +24940,24 @@ const products = [{
   hideGusset: true,
   price: 5.71,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.webp",
   description: "15 oz two-tone ceramic mug with a glossy white exterior and vibrant color interior, featuring an easy comfort grip C-curved handle.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Orange.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Orange.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Promo1.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Promo2.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Orange.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Promo2.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM15TT/IBCM15TT-Orange.webp"
   ],
 
   specs: {
@@ -25029,24 +25029,24 @@ const products = [{
   hideGusset: true,
   price: 4.76,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.webp",
   description: "12 oz stackable ceramic mug with a matte grey finish and a pop color interior, designed for convenient and stylish storage.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Blue.jpg" },
-    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Lime Green.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Blue.webp" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Lime Green.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Red.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Red.webp"
   ],
 
   specs: {
@@ -25118,18 +25118,18 @@ const products = [{
   hideGusset: true,
   price: 1.75,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.webp",
   description: "10 oz ceramic mug featuring a unique marble glaze finish on the outside and a smooth glossy white interior.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Green.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Green.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Green.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Green.webp"
   ],
 
   specs: {
@@ -25201,16 +25201,16 @@ const products = [{
   hideGusset: true,
   price: 7.17,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.webp",
   description: "Elegant 2.5 oz white porcelain espresso cup and saucer set, perfect for a refined coffee experience.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP14SET/IBEXP14SET-White.webp"
   ],
 
   specs: {
@@ -25282,16 +25282,16 @@ const products = [{
   hideGusset: true,
   price: 7.17,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.webp",
   description: "Classic 2.75 oz white porcelain espresso cup and saucer set, perfect for serving rich, concentrated coffee.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP10SET/IBEXP10SET-White.webp"
   ],
 
   specs: {
@@ -25363,24 +25363,24 @@ const products = [{
   hideGusset: true,
   price: 3.06,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.webp",
   description: "Modern 14 oz stackable ceramic mug designed for easy storage and everyday convenience, perfect for hot beverages.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Cobalt-Blue.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Grey.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Cobalt-Blue.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Grey.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Cobalt-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Red.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Cobalt-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Red.webp"
   ],
 
   specs: {
@@ -25452,26 +25452,26 @@ const products = [{
   hideGusset: true,
   price: 5.04,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.webp",
   description: "Stylish 11 oz black matte coffee mug with a vibrant color interior and an easy comfort grip C-curved handle.",
   popular: false,
 
    colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Blue.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Lime Green.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-White.jpg" },
-    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Yellow.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Blue.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Lime Green.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-White.webp" },
+    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Yellow.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Yellow.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Yellow.webp"
   ],
 
   specs: {
@@ -25543,26 +25543,26 @@ const products = [{
   hideGusset: true,
   price: 5.53,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.webp",
   description: "13 oz two-tone latte mug with a smooth white exterior and a vibrant color interior, perfect for custom branding.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.jpg" },
-    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Lime Green.jpg" },
-    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Orange.jpg" },
-    { name: "Process Blue", hex: "#0085CA", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Process Blue.jpg" },
-    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Red.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.webp" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Lime Green.webp" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Orange.webp" },
+    { name: "Process Blue", hex: "#0085CA", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Process Blue.webp" },
+    { name: "Red", hex: "#C62828", image: "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Red.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Process Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Red.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Process Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Red.webp"
   ],
 
   specs: {
@@ -25634,26 +25634,26 @@ const products = [{
   hideGusset: true,
   price: 3.88,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.webp",
   description: "12 oz two-tone latte mug with a unique shape, black matte exterior, glossy colored interior, and high curved grip.",
   popular: false,
 
     colors: [
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Lime Green.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Orange.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Red.jpg" },
-    { name: "Royal Blue", hex: "#4169E1", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Royal Blue.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-White.jpg" },
-    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.jpg" }
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Lime Green.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Orange.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Red.webp" },
+    { name: "Royal Blue", hex: "#4169E1", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Royal Blue.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-White.webp" },
+    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Lime Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Royal Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Lime Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Royal Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Yellow.webp"
   ],
 
   specs: {
@@ -25725,20 +25725,20 @@ const products = [{
   hideGusset: true,
   price: 7.60,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Natural.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Natural.webp",
   description: "Personalized 17 oz tankard beer mug made of natural coated stoneware, perfect for corporate events or gifting.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Cobalt Blue.jpg" },
-    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Natural.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Cobalt Blue.webp" },
+    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Natural.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Natural.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Cobalt Blue.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Natural.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Cobalt Blue.webp"
   ],
 
   specs: {
@@ -25811,30 +25811,30 @@ const products = [{
   hideGusset: true,
   price: 4.97,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Black.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Black.webp",
   description: "Miami 16 oz two-tone bistro mug with a vibrant color interior, clean white exterior, and color-matching grip.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Blue.jpg" },
-    { name: "Cobalt Blue", hex: "#1E4D8C", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Cobalt-Blue.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Lime.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Orange.jpg" },
-    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Purple.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Red.jpg" },
-    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Yellow.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Blue.webp" },
+    { name: "Cobalt Blue", hex: "#1E4D8C", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Cobalt-Blue.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Lime.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Orange.webp" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Purple.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Red.webp" },
+    { name: "Yellow", hex: "#FACC15", image: "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Yellow.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Cobalt-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Lime.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Purple.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Red.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Yellow.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Cobalt-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Lime.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Purple.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Yellow.webp"
   ],
 
   specs: {
@@ -25907,22 +25907,22 @@ const products = [{
   hideGusset: true,
   price: 7.41,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.webp",
   description: "15 oz two-tone photo sublimation ceramic mug with a glossy white exterior and vibrant colored interior, perfect for full-color branding.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Cobalt Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.jpg" },
-    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Lime Green.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Cobalt Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.webp" },
+    { name: "Lime Green", hex: "#32CD32", image: "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Lime Green.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Lime Green.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Lime Green.webp"
   ],
 
   specs: {
@@ -25982,16 +25982,16 @@ const products = [{
   hideGusset: true,
   price: 7.48,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCMP01/IBCMP01-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCMP01/IBCMP01-White.webp",
   description: "Classic 11 oz bistro-style vitrified porcelain mug, featuring fully customizable imprint areas for your branding.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMP01/IBCMP01-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMP01/IBCMP01-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMP01/IBCMP01-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCMP01/IBCMP01-White.webp"
   ],
 
   specs: {
@@ -26062,18 +26062,18 @@ const products = [{
   hideGusset: true,
   price: 2.73,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.webp",
   description: "Grande 15 oz wide body ceramic mug with a two-toned glossy vibrant exterior and bright white interior, perfect for promotional branding.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.jpg" },
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Cobalt Blue.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.webp" },
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Cobalt Blue.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Cobalt Blue.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Cobalt Blue.webp"
   ],
 
   specs: {
@@ -26145,20 +26145,20 @@ const products = [{
   hideGusset: true,
   price: 6.07,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.webp",
   description: "20 oz Grande wide body ceramic mug with a smooth matte exterior, matching interior, and easy comfort grip.",
   popular: false,
 
   colors: [
-    { name: "Beige", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.jpg" },
-    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Charcoal.jpg" },
-    { name: "Dark Brown", hex: "#654321", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Dark Brown.jpg" }
+    { name: "Beige", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.webp" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Charcoal.webp" },
+    { name: "Dark Brown", hex: "#654321", image: "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Dark Brown.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Charcoal.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Dark Brown.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Charcoal.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Dark Brown.webp"
   ],
 
   specs: {
@@ -26228,24 +26228,24 @@ const products = [{
   hideGusset: true,
   price: 5.09,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.webp",
   description: "Unique 17 oz ceramic mug featuring a drip glaze rim and interior finish, adding a creative touch to your morning coffee.",
   popular: false,
 
    colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Green.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Orange.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Red.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Green.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Orange.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Red.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Orange.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Red.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Red.webp"
   ],
 
   specs: {
@@ -26317,16 +26317,16 @@ const products = [{
   hideGusset: true,
   price: 7.36,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM32/IBCM32-Natural.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM32/IBCM32-Natural.webp",
   description: "Personalized 10 oz bullet-style ceramic beer mug, a great promotional item for corporate events and giveaways.",
   popular: false,
 
   colors: [
-    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM32/IBCM32-Natural.jpg" }
+    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM32/IBCM32-Natural.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM32/IBCM32-Natural.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM32/IBCM32-Natural.webp"
   ],
 
   specs: {
@@ -26399,16 +26399,16 @@ const products = [{
   hideGusset: true,
   price: 6.92,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.webp",
   description: "Large 23 oz ceramic mug with a matching interior and exterior, perfect for large coffees, teas, or hot chocolate.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1003/IBCM1003-White.webp"
   ],
 
   specs: {
@@ -26480,16 +26480,16 @@ const products = [{
   hideGusset: true,
   price: 3.14,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.webp",
   description: "10 oz vitrified porcelain latte mug with fully customizable imprint areas, perfect for a sleek and professional look.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCMCP02/IBCMCP02-White.webp"
   ],
 
   specs: {
@@ -26561,16 +26561,16 @@ const products = [{
   hideGusset: true,
   price: 3.71,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.webp",
   description: "Classic 6 oz white ceramic coffee mug, perfect for espresso or small promotional giveaways.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP06/IBEXP06-White.webp"
   ],
 
   specs: {
@@ -26642,16 +26642,16 @@ const products = [{
   hideGusset: true,
   price: 7.10,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.webp",
   description: "15 oz photo sublimation white ceramic mug with a smooth molded composite and glossy exterior, perfect for vibrant full-color wrap-around designs.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.webp"
   ],
 
   specs: {
@@ -26711,16 +26711,16 @@ const products = [{
   hideGusset: true,
   price: 21.76,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM20/IBCM20-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM20/IBCM20-Blue.webp",
   description: "Personalized 17 oz tankard beer mug made of natural coated stoneware with blue decorations on top, bottom, and handle.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM20/IBCM20-Blue.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM20/IBCM20-Blue.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM20/IBCM20-Blue.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM20/IBCM20-Blue.webp"
   ],
 
   specs: {
@@ -26792,16 +26792,16 @@ const products = [{
   hideGusset: true,
   price: 6.26,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.webp",
   description: "Classic 11 oz diner-style ceramic mug in milky white, featuring a glossy finish and thick curved grip for easy handling.",
   popular: false,
 
   colors: [
-    { name: "Milky White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.jpg" }
+    { name: "Milky White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM55169/IBCM55169-Milky White.webp"
   ],
 
   specs: {
@@ -26873,20 +26873,20 @@ const products = [{
   hideGusset: true,
   price: 6.12,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.webp",
   description: "Classic 12 oz diner mug with a glossy exterior and thick curved grip, perfect for comfortable everyday use.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Blue.jpg" },
-    { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Blue.webp" },
+    { name: "Ivory", hex: "#FFFFF0", image: "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Blue.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Blue.webp"
   ],
 
   specs: {
@@ -26958,26 +26958,26 @@ const products = [{
   hideGusset: true,
   price: 3.15,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.webp",
   description: "11 oz ceramic mug featuring a matte exterior with speckle accents and an artisan bottom, adding a rustic touch to your coffee.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Black.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Cream.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Grey.jpg" },
-    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Mint.jpg" },
-    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Navy.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Black.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Cream.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Grey.webp" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Mint.webp" },
+    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Navy.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Cream.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Mint.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Navy.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Mint.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Navy.webp"
   ],
 
   specs: {
@@ -27049,22 +27049,22 @@ const products = [{
   hideGusset: true,
   price: 4.93,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-White.webp",
   description: "Stylish 15 oz matte ceramic mug with a natural cork bottom to protect surfaces and provide a modern, comfortable hold.",
   popular: false,
 
   colors: [
-    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Cobalt Blue.jpg" },
-    { name: "Black", hex: "#00000", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Black.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Grey.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-White.jpg" }
+    { name: "Cobalt Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Cobalt Blue.webp" },
+    { name: "Black", hex: "#00000", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Black.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Grey.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-White.jpg",
-      "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Cobalt Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Grey.jpg"
+      "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-White.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Grey.webp"
   ],
 
   specs: {
@@ -27136,24 +27136,24 @@ const products = [{
   hideGusset: true,
   price: 3.30,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Grey.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Grey.webp",
   description: "Stylish 13 oz latte mug with a matte finish, clay bottom accent, and comfortable grip for cozy hot drinks.",
   popular: false,
 
     colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Black.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Cream.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Grey.jpg" },
-    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Pink.jpg" },
-    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Slate Blue.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Black.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Cream.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Grey.webp" },
+    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Pink.webp" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Slate Blue.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Cream.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Pink.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Slate Blue.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Pink.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Slate Blue.webp"
   ],
 
   specs: {
@@ -27225,22 +27225,22 @@ const products = [{
   hideGusset: true,
   price: 3.64,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-White.webp",
   description: "13.5 oz ceramic mug with a matte speckled exterior, artisan bottom, and comfortable grip for a rustic feel.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Black.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Grey.jpg" },
-    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Navy.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Black.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Grey.webp" },
+    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Navy.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-White.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Navy.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Navy.webp"
   ],
 
   specs: {
@@ -27312,16 +27312,16 @@ const products = [{
   hideGusset: true,
   price: 2.98,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP09/IBEXP09-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP09/IBEXP09-White.webp",
   description: "Small and durable 4 oz mini ceramic mug with a C-shaped handle, perfect for espresso shots or promotional samplers.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP09/IBEXP09-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP09/IBEXP09-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP09/IBEXP09-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP09/IBEXP09-White.webp"
   ],
 
   specs: {
@@ -27393,16 +27393,16 @@ const products = [{
   hideGusset: true,
   price: 3.76,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP01/IBEXP01-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP01/IBEXP01-White.webp",
   description: "Traditional style 2 oz ceramic espresso mug with a glossy white exterior and easy comfort grip C-curved handle.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP01/IBEXP01-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP01/IBEXP01-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP01/IBEXP01-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP01/IBEXP01-White.webp"
   ],
 
   specs: {
@@ -27474,16 +27474,16 @@ const products = [{
   hideGusset: true,
   price: 7.49,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.webp",
   description: "Magic 11 oz photo sublimation ceramic mug that reveals your custom design when filled with hot drinks.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#000000", image: "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.jpg" } // Folder me naam white hai par color black likha hai
+    { name: "Black", hex: "#000000", image: "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.webp" } // Folder me naam white hai par color black likha hai
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.webp"
   ],
 
   specs: {
@@ -27544,26 +27544,26 @@ const products = [{
   hideGusset: true,
   price: 4.08,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Blue.webp",
   description: "14 oz latte ceramic mug with a matte exterior, glossy interior, white rim, and modern square handle design.",
   popular: false,
 
     colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Blue.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Cream.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Green.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Grey.jpg" },
-    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Maroon.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Blue.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Cream.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Green.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Grey.webp" },
+    { name: "Maroon", hex: "#800000", image: "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Maroon.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Black.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Cream.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Green.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Grey.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Maroon.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Maroon.webp"
   ],
 
   specs: {
@@ -27636,16 +27636,16 @@ const products = [{
   hideGusset: true,
   price: 7.17,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP11SET/IBEXP11SET-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP11SET/IBEXP11SET-White.webp",
   description: "Elegant 2.5 oz white porcelain espresso cup and saucer set, perfect for serving rich espresso.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP11SET/IBEXP11SET-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP11SET/IBEXP11SET-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP11SET/IBEXP11SET-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP11SET/IBEXP11SET-White.webp"
   ],
 
   specs: {
@@ -27678,7 +27678,7 @@ const products = [{
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)", // Updated as per new info
+      setupCharge: "$56.25 (V)", // Updated as per new info
       repeatSetup: "Free"
     },
     blank: {
@@ -27694,7 +27694,7 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -27718,16 +27718,16 @@ const products = [{
   hideGusset: true,
   price: 4.62,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM95/IBCM95-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM95/IBCM95-White.webp",
   description: "Unique 18 oz inverted ceramic mug with a smooth shiny finish, perfect for coffee or beer.",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM95/IBCM95-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM95/IBCM95-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM95/IBCM95-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM95/IBCM95-White.webp"
   ],
 
   specs: {
@@ -27800,16 +27800,16 @@ const products = [{
   hideGusset: true,
   price: 8.14,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM31/IBCM31-Natural.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM31/IBCM31-Natural.webp",
   description: "Heavy-duty 24 oz ceramic beer stein with a square handle for a secure grip, perfect for beer or large coffees.",
   popular: false,
 
   colors: [
-    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM31/IBCM31-Natural.jpg" }
+    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM31/IBCM31-Natural.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM31/IBCM31-Natural.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM31/IBCM31-Natural.webp"
   ],
 
   specs: {
@@ -27882,16 +27882,16 @@ const products = [{
   hideGusset: true,
   price: 21.76,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM09/IBCM09-Blue.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM09/IBCM09-Blue.webp",
   description: "Custom printed 18.5 oz beige stoneware beer stein with cobalt blue accents, perfect for Oktoberfest or events.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM09/IBCM09-Blue.jpg" }
+    { name: "Blue", hex: "#000080", image: "assets/assets/images/products/ceramic mugs/IBCM09/IBCM09-Blue.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM09/IBCM09-Blue.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM09/IBCM09-Blue.webp"
   ],
 
   specs: {
@@ -27963,16 +27963,16 @@ const products = [{
   hideGusset: true,
   price: 3.56,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBEXP07/IBEXP07-White.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBEXP07/IBEXP07-White.webp",
   description: "Durable 2 oz stoneware espresso cup with a glossy finish, perfect for serving rich espresso shots. (Saucers sold separately)",
   popular: false,
 
   colors: [
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP07/IBEXP07-White.jpg" }
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBEXP07/IBEXP07-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBEXP07/IBEXP07-White.jpg"
+    "assets/assets/images/products/ceramic mugs/IBEXP07/IBEXP07-White.webp"
   ],
 
   specs: {
@@ -28045,16 +28045,16 @@ const products = [{
   hideGusset: true,
   price: 21.76,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM10/IBCM10-Brown.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM10/IBCM10-Brown.webp",
   description: "Custom printed 18.5 oz beige stoneware beer stein with brown accents, perfect for Oktoberfest or events.",
   popular: false,
 
   colors: [
-    { name: "Brown", hex: "#5C4033", image: "assets/assets/images/products/ceramic mugs/IBCM10/IBCM10-Brown.jpg" }
+    { name: "Brown", hex: "#5C4033", image: "assets/assets/images/products/ceramic mugs/IBCM10/IBCM10-Brown.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM10/IBCM10-Brown.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM10/IBCM10-Brown.webp"
   ],
 
   specs: {
@@ -28126,16 +28126,16 @@ const products = [{
   hideGusset: true,
   price: 9.23,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM94/IBCM94-Beige.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM94/IBCM94-Beige.webp",
   description: "Personalized 24 oz beige ceramic beer mug with a straight body and footed base, ideal for restaurants or Oktoberfest.",
   popular: false,
 
   colors: [
-    { name: "Beige", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM94/IBCM94-Beige.jpg" }
+    { name: "Beige", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM94/IBCM94-Beige.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM94/IBCM94-Beige.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM94/IBCM94-Beige.webp"
   ],
 
   specs: {
@@ -28208,20 +28208,20 @@ const products = [{
   hideGusset: true,
   price: 5.04,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Natural.jpg",
+  image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Natural.webp",
   description: "Miniature 2 oz ceramic beer mug with handle, perfect for shots or beer samplers.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Blue.jpg" },
-    { name: "Brown", hex: "#5C4033", image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Brown.jpg" },
-    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Natural.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Blue.webp" },
+    { name: "Brown", hex: "#5C4033", image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Brown.webp" },
+    { name: "Natural", hex: "#F5F5DC", image: "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Natural.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Natural.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Blue.jpg",
-    "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Brown.jpg"
+    "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Natural.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Brown.webp"
   ],
 
   specs: {
@@ -28278,16 +28278,3521 @@ const products = [{
     artworkCharges: "$75.00 (V) / Hour",
     secondSideImprint: "$1.00 (G) for Any Amount of Colors"
   }
+},
+{
+  id: "ibtm255",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Lincoln Plastic Tumbler with Handle - 40 oz",
+  code: "IBTM255",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg",
+  slug: "lincoln-plastic-tumbler-with-handle-40-oz",
+  category: "Travel Mugs",
+  material: "AS & PP",
+  size: '4" W x 9.5" H x 3" B',
+  imprint: '2.5" W x 3" H',
+  hideGusset: true,
+  price: 9.30,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg",
+  description: "40 oz single-wall plastic tumbler with handle, screw-on lid, and straw. Keeps your drinks cold on the go.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg" },
+    { name: "Olive Green", hex: "#808000", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Olive Green.jpg" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Slate Blue.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Olive Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Slate Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-White.jpg"
+  ],
+
+  specs: {
+    weight: "40 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM255",
+    material: "AS & PP",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "12 pcs",
+        boxWeight: "12.13 lbs",
+        boxDims: '17.7" x 17.1" x 11.6"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.78", "$11.97", "$11.27", "$11.00", "$10.60", "$10.36"] },
+        { label: "2 Color Imprint", prices: ["$10.44", "$12.81", "$12.08", "$11.80", "$11.38", "$11.12"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$9.30", "$11.37", "$10.71", "$10.45", "$10.06", ""] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm387",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Alps Stainless Steel Travel Mug with Handle - 40 oz",
+  code: "IBTM387",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Featured.jpg",
+  slug: "alps-stainless-steel-travel-mug-with-handle-40-oz",
+  category: "Travel Mugs",
+  material: "Inner: 304 Stainless Steel; Outer: 201 Stainless Steel",
+  size: '4" W x 9.5" H x 3" B',
+  imprint: '2.5" W x 3.5" H',
+  hideGusset: true,
+  price: 17.05,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.jpg",
+  description: "40 oz double-wall vacuum-insulated stainless steel travel mug with handle, slider lid, and straw. Keeps drinks hot for 6 hours and cold for 10.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Black.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Charcoal.jpg" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Light Pink.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Navy Blue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Silver.jpg" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Slate Blue.jpg" },
+    { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Tan.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Charcoal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Light Pink.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Navy Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Slate Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Tan.jpg",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-White.jpg"
+  ],
+
+  specs: {
+    weight: "40 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM387",
+    material: "Inner: 304 Stainless Steel; Outer: 201 Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "12 pcs",
+        boxWeight: "16.4 lbs",
+        boxDims: '20" x 13" x 11.6"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$20.71", "$25.80", "$24.18", "$19.58", "$18.53", "$17.95"] },
+        { label: "2 Color Imprint", prices: ["$21.37", "$26.64", "$24.99", "$20.38", "$19.31", "$18.71"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$19.68", "$24.51", "$22.96", "$18.59", "$17.60", "$17.05"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm58",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Insulated Stainless Steel Travel Mug - 16 oz",
+  code: "IBTM58",
+  slug: "insulated-stainless-steel-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "Plastic/ Steel",
+  size: '3.25" W x 7 " H',
+  imprint: '2.50" W x 1.75" H',
+  hideGusset: true,
+  price: 5.00,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.jpg",
+  description: "16 oz insulated travel mug with a stainless steel outer wall, color accent, and spill-prevention slide lock lid. BPA-free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Green.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Lime Green.jpg" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Orange.jpg" },
+    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Pink.jpg" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Red.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.jpg",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Lime Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Orange.jpg",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Pink.jpg",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Red.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM58",
+    material: "Plastic/ Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "11.2 lbs",
+        boxDims: '18.5" L x 18.5" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$6.18", "$7.71", "$7.28", "$6.62", "$6.06", "$5.27"] },
+        { label: "2 Color Imprint", prices: ["$6.84", "$8.55", "$8.09", "$7.42", "$6.84", "$6.04"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$5.87", "$7.32", "$6.91", "$6.29", "$5.76", "$5.00"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm299",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Steel Tumbler Travel Mug - 16 oz",
+  code: "IBTM299",
+  slug: "stainless-steel-tumbler-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "Stainless Interior / Exterior",
+  size: '3.25" W x 7" H',
+  imprint: '1 Color Imprint Area: 3"W x 2"H | 2+ Full Colors Imprint Area 2.50" W x 2.50" H | Laser : 1.4"W x 2"H',
+  hideGusset: true,
+  price: 11.29,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.jpg",
+  description: "16 oz double-wall stainless steel travel tumbler with spill-prevention slide lock lid and a ribbed outer ring base design.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Promo1.jpg",
+    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM299",
+    material: "Stainless Interior / Exterior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "13.2 lbs",
+        boxDims: '17.72" L x 17.72" W x 7.68" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$17.55", "$17.85", "$16.00", "$14.75", "$14.37", "$11.88"] },
+        { label: "2 Color Imprint", prices: ["$18.21", "$18.69", "$16.81", "$15.55", "$15.15", "$12.65"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$16.67", "$16.95", "$15.20", "$14.02", "$13.65", "$11.29"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsw47",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Shelby Stemless Wine Glass with Lid - 12 oz",
+  code: "IBSW47",
+  slug: "shelby-stemless-wine-glass-with-lid-12-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel, Plastic",
+  size: '3"W X 4.75"H X 2.25"B',
+  imprint: '2"W x 2"H',
+  hideGusset: true,
+  price: 6.02,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.jpg",
+  description: "12 oz stemless wine glass with a stainless steel exterior and clear plastic lid, perfect for on-the-go sipping. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Blue.jpg" },
+    { name: "Fuchsia", hex: "#FF00FF", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Fuchsia.jpg" },
+    { name: "Gold", hex: "#FFD700", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Gold.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.jpg" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Orange.jpg" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Purple.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Red.jpg" },
+    { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Rose Gold.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Silver.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Teal.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Fuchsia.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Gold.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Orange.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Purple.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Rose Gold.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSW47",
+    material: "Stainless Steel, Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "48 pcs",
+        boxWeight: "19.1 lbs",
+        boxDims: '18.5" L x 18.5" W x 5.12" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$12.17", "$14.34", "$12.02", "$10.29", "$8.76", "$6.34"] },
+        { label: "2 Color Imprint", prices: ["$12.83", "$15.18", "$12.83", "$11.09", "$9.54", "$7.10"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$11.56", "$13.62", "$11.42", "$9.78", "$8.32", "$6.02"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm256",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Tilden Plastic Tumbler with Handle - 24 oz",
+  code: "IBTM256",
+  slug: "tilden-plastic-tumbler-with-handle-24-oz",
+  category: "Travel Mugs",
+  material: "AS Plastic",
+  size: '3.75" W x 8" H x 2.5" B',
+  imprint: '2.5" W x 3" H',
+  hideGusset: true,
+  price: 10.09,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.jpg",
+  description: "24 oz double-wall plastic tumbler with handle, screw-on lid, and color silicone spout. Straw included.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Blue.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Grey.jpg" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Light Pink.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Grey.jpg",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Light Pink.jpg",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Red.jpg"
+  ],
+
+  specs: {
+    weight: "24 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM256",
+    material: "AS Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "12 pcs",
+        boxWeight: "9.04 lbs",
+        boxDims: '20.3" x 12.1" x 8.9"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$11.28", "$13.29", "$11.81", "$11.29", "$10.86", "$10.61"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$10.71", "$12.63", "$11.22", "$10.73", "$10.31", "$10.09"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm396",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Madison Tumbler with Handle and Straw Lid - 40 oz",
+  code: "IBTM396",
+  slug: "madison-tumbler-with-handle-and-straw-lid-40-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.95" W x 9.75" H x 2.9" B',
+  imprint: '1-2+ Colors: 2.5"W x 3.5"H',
+  hideGusset: true,
+  price: 19.21,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.jpg",
+  description: "40 oz double-wall stainless steel travel mug with handle and straw lid. Keeps drinks hot for 4 hours and cold for 8 hours.",
+  popular: false,
+
+  colors: [
+    { name: "Ash", hex: "#B2BEB5", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Ash.jpg" },
+    { name: "Jade Green", hex: "#00A86B", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Jade Green.jpg" },
+    { name: "Lavender", hex: "#E6E6FA", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Lavender.jpg" },
+    { name: "Powder Blue", hex: "#B0E0E6", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.jpg" },
+    { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Tan.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Ash.jpg",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Jade Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Lavender.jpg",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Tan.jpg"
+  ],
+
+  specs: {
+    weight: "40 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM396",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "12 pcs",
+        boxWeight: "16.3 lbs",
+        boxDims: '20.47" x 13.19" x 12.01"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$29.48", "$26.11", "$24.50", "$23.25", "$20.61", "$20.22"] },
+        { label: "2 Color Imprint", prices: ["$30.14", "$26.95", "$25.31", "$24.05", "$21.39", "$20.99"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$28.01", "$24.81", "$23.27", "$22.09", "$19.58", "$19.21"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm402",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Bayview Stainless Steel Travel Mug - 30 oz",
+  code: "IBTM402",
+  slug: "bayview-stainless-steel-travel-mug-30-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel / Plastic",
+  size: '3.5" W x 9.65" H x 2.95" B',
+  imprint: '2.5" W x 3" H',
+  hideGusset: true,
+  price: 11.74,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.jpg",
+  description: "30 oz stainless steel travel mug with plastic liner, carrying handle, and wide mouth for easy cleaning. BPA-free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Black.jpg" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Grey.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Navy Blue.jpg" },
+    { name: "Sage Green", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Sage.jpg" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Slate.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.jpg",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Grey.jpg",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Navy Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Sage.jpg",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Slate.jpg"
+  ],
+
+  specs: {
+    weight: "30 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM402",
+    material: "Stainless Steel / Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "19.18 lbs",
+        boxDims: '16.54" W x 11.02" H x 21.16" L'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$11.98", "$14.63", "$13.70", "$13.23", "$12.68", "$12.35"] },
+        { label: "2 Color Imprint", prices: ["$12.53", "$15.33", "$14.38", "$13.90", "$13.33", "$12.99"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$11.39", "$13.90", "$13.01", "$12.57", "$12.04", "$11.74"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm388",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Hugo Stainless Steel Travel Mug - 40 oz",
+  code: "IBTM388",
+  slug: "hugo-stainless-steel-travel-mug-40-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel, Plastic Interior",
+  size: '4" W x 8.74" H x 3" B',
+  imprint: '2.50"w x 3.50"h',
+  hideGusset: true,
+  price: 9.88,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.jpg",
+  description: "40 oz travel mug with stainless steel exterior and plastic interior, slider transparent lid, straw included, and EVA bottom pad.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Blue.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Charcoal.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Silver.jpg" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Slate Blue.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Charcoal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Slate Blue.jpg",
+  ],
+
+  specs: {
+    weight: "40 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM388",
+    material: "Stainless Steel, Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "12 pcs",
+        boxWeight: "15 lbs",
+        boxDims: '20" x 13" x 11.6"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$12.30", "$14.95", "$14.39", "$13.57", "$11.14", "$10.41"] },
+        { label: "2 Color Imprint", prices: ["$12.96", "$15.79", "$15.20", "$14.36", "$11.92", "$11.17"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$11.68", "$14.21", "$13.68", "$12.89", "$10.58", "$9.88"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsw46",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Largo Stemless Wine Glass with Lid - 11 oz",
+  code: "IBSW46",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Featured.jpg",
+  slug: "largo-stemless-wine-glass-with-lid-11-oz",
+  category: "Travel Mugs",
+  material: "304 Stainless Steel",
+  size: '3"W X 4.75"H X 2.25"B',
+  imprint: '2.00"W x 2.00"H',
+  hideGusset: true,
+  price: 10.50,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.jpg",
+  description: "11 oz double-wall vacuum-insulated stemless wine glass with popular stainless steel finish. BPA free, keeps drinks hot for 3 hours and cold for 5.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.jpg" },
+    { name: "Fuchsia", hex: "#FF00FF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.jpg" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.jpg" },
+    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.jpg" },
+    { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.jpg"
+  ],
+
+  specs: {
+    weight: "11 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSW46",
+    material: "304 Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "48 pcs",
+        boxWeight: "21.2 lbs",
+        boxDims: '22.83" L x 15.35" W x 10.04" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$14.83", "$18.77", "$15.75", "$13.50", "$11.48", "$11.05"] },
+        { label: "2 Color Imprint", prices: ["$15.49", "$19.61", "$16.56", "$14.30", "$12.26", "$11.81"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$14.09", "$17.84", "$14.97", "$12.82", "$10.91", "$10.50"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm389",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Bronx Stainless Travel Mug - 30 oz",
+  code: "IBTM389",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.jpg",
+  slug: "bronx-stainless-travel-mug-30-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.5" W x 9.65" H x 2.95" B',
+  imprint: '2.5" W x 3" H',
+  hideGusset: true,
+  price: 15.82,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.jpg",
+  description: "30 oz stainless steel travel mug with carrying handle, double-wall vacuum insulation, and wide mouth for easy cleaning.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Black.jpg" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.jpg" },
+    { name: "Light Grey", hex: "#D3D3D3", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Light Grey.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Navy Blue.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.jpg",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Light Grey.jpg",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Navy Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Teal.jpg"
+  ],
+
+  specs: {
+    weight: "30 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM389",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "20.17 lbs",
+        boxDims: '22.05" L x 16.93" W x 11.02" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$16.37", "$20.54", "$19.31", "$17.88", "$17.29", "$16.65"] },
+        { label: "2 Color Imprint", prices: ["$17.03", "$21.38", "$20.12", "$18.67", "$18.07", "$17.42"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$15.55", "$19.52", "$18.35", "$16.98", "$16.43", "$15.82"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm398",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Lotus Travel Mug - 23 oz",
+  code: "IBTM398",
+  slug: "lotus-travel-mug-23-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel / Plastic",
+  size: '7.5” H x 3.5” W',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 6.94,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.jpg",
+  description: "23 oz travel mug with plastic outer wall and stainless steel interior, matte finish, closure lid with straw opening, and included straw.",
+  popular: false,
+
+  colors: [
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Black.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Charcoal.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Navy Blue.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Charcoal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Navy Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "23 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM398",
+    material: "Stainless Steel / Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "16 lbs",
+        boxDims: '22.4" x 15.15" x 9.84"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$15.30", "$17.70", "$15.53", "$13.90", "$12.35", "$7.30"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$14.53", "$16.81", "$14.76", "$13.21", "$11.74", "$6.94"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm350",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Pipette Stainless Steel Coffee Tumbler - 20 oz",
+  code: "IBTM350",
+  slug: "pipette-stainless-steel-coffee-tumbler-20-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3”W x 7.75”H',
+  imprint: '2.50”W X 2.50”H',
+  hideGusset: true,
+  price: 15.16,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.jpg",
+  description: "20 oz double-wall vacuum insulated stainless steel tumbler with clear plastic sip lid. Keeps drinks hot for 4 hours and cold for 6.",
+  popular: false,
+
+  colors: [
+      { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Blue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM350",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "16.82 lbs",
+        boxDims: '17.32" L x 17.32" W x 8.66" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$15.27", "$17.67", "$16.98", "$16.66", "$16.24", "$15.95"] },
+        { label: "2 Color Imprint", prices: ["$15.93", "$18.51", "$17.79", "$17.46", "$17.02", "$16.72"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$14.51", "$16.79", "$16.13", "$15.83", "$15.43", "$15.16"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm390",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Kenai Plastic Tumbler with Straw - 24 oz",
+  code: "IBTM390",
+  slug: "kenai-plastic-tumbler-with-straw-24-oz",
+  category: "Travel Mugs",
+  material: "AS Plastic",
+  size: '9" H x 3.75" W x 2.5" D',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 8.73,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.jpg",
+  description: "24 oz double-wall plastic tumbler with a screw-on lid and straw included. Wide mouth for easy cleaning and pouring.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Black.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Charcoal.jpg" },
+    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Light Blue.jpg" },
+    { name: "Lilac", hex: "#C8A2C8", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.jpg" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Mint.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.jpg",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Charcoal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Light Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Mint.jpg"
+  ],
+
+  specs: {
+    weight: "24 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM390",
+    material: "AS Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "6.7 lbs",
+        boxDims: '20.08" x 16.34" x 10.24"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$17.58", "$14.60", "$13.19", "$11.52", "$9.78", "$9.19"] },
+        { label: "2 Color Imprint", prices: ["$18.24", "$15.44", "$14.00", "$12.32", "$10.56", "$9.96"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$16.70", "$13.87", "$12.53", "$10.95", "$9.28", "$8.73"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm400",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Hayden Dome Plastic Tumbler - 25 oz",
+  code: "IBTM400",
+  slug: "hayden-dome-plastic-tumbler-25-oz",
+  category: "Travel Mugs",
+  material: "AS Plastic",
+  size: '3.75" W x 8" H x 2.75" B',
+  imprint: '2.25" W x 2.25" H',
+  hideGusset: true,
+  price: 9.79,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.jpg",
+  description: "25 oz double-wall plastic tumbler with a rubberized finish, dome screw-on lid, and included straw.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Grey.jpg" },
+    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Blue.jpg" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Pink.jpg" },
+    { name: "Powder White", hex: "#F8F8FF", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Powder White.jpg" },
+    { name: "Saige Green", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Saige Green.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Grey.jpg",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Pink.jpg",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Powder White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Saige Green.jpg"
+  ],
+
+  specs: {
+    weight: "25 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM400",
+    material: "AS Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "13.01 lbs",
+        boxDims: '19.69" x 15.75" x 11.42"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$11.32", "$12.59", "$11.27", "$10.84", "$10.49", "$10.30"] },
+        { label: "2 Color Imprint", prices: ["$11.98", "$13.43", "$12.08", "$11.64", "$11.27", "$11.07"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$10.76", "$11.96", "$10.71", "$10.29", "$9.97", "$9.79"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm386",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Day Off Travel Mug with Straw - 20 oz",
+  code: "IBTM386",
+  slug: "day-off-travel-mug-with-straw-20-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel / Plastic",
+  size: '3" W x 7" H',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 7.37,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.jpg",
+  description: "20 oz travel mug with a stainless steel outer wall, plastic interior, and transparent black slider lid. Includes a matching color silicone straw.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Black.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Navy Blue.jpg" },
+    { name: "Sage", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Sage.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Navy Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Sage.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM386",
+    material: "Stainless Steel / Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "24 pcs",
+        boxWeight: "13.67 lbs",
+        boxDims: '16.96" X 16.96" X 7.68"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.97", "$10.93", "$10.38", "$9.24", "$8.02", "$7.76"] },
+        { label: "2 Color Imprint", prices: ["$9.63", "$11.77", "$11.19", "$10.04", "$8.80", "$8.52"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.51", "$10.39", "$9.87", "$8.78", "$7.62", "$7.37"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm405",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Denali Plastic Double Wall Tumbler - 22 oz",
+  code: "IBTM405",
+  slug: "denali-plastic-double-wall-tumbler-22-oz",
+  category: "Travel Mugs",
+  material: "Polypropylene",
+  size: '3.25" W x 6.75" H x 2.75" B',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 5.43,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.jpg",
+  description: "22 oz double-wall plastic tumbler good for hot and cold liquids. BPA & BSA free, made in the USA.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-Black.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM405/IBTM405-Black.jpg"
+  ],
+
+  specs: {
+    weight: "22 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM405",
+    material: "Polypropylene",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "60 pcs",
+        boxWeight: "26 lbs",
+        boxDims: '17" x 14" x 20"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$10.51", "$11.69", "$10.46", "$10.09", "$9.82", "$5.71"] },
+        { label: "2 Color Imprint", prices: ["$11.17", "$12.53", "$11.27", "$10.89", "$10.60", "$6.48"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$9.98", "$11.10", "$9.94", "$9.59", "$9.32", "$5.43"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm399",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Sydney Can Shaped Tumbler with Silicone Lid and Straw - 22 oz",
+  code: "IBTM399",
+  slug: "sydney-can-shaped-tumbler-with-silicone-lid-and-straw-22-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '7" H x 2.75" W',
+  imprint: '1-2+ Colors: 3" W x 3" H',
+  hideGusset: true,
+  price: 8.81,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.jpg",
+  description: "22 oz single-wall stainless steel tumbler with a matte coating, silicone lid, and stainless steel straw with silicone tip.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Black.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Navy Blue.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Navy Blue.jpg",
+  ],
+
+  specs: {
+    weight: "22 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM399",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "24 pcs",
+        boxWeight: "8.9 lbs",
+        boxDims: '16.14" x 16.14" x 9.06"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.96", "$11.75", "$10.46", "$9.91", "$9.56", "$9.27"] },
+        { label: "2 Color Imprint", prices: ["$10.62", "$12.59", "$11.27", "$10.71", "$10.34", "$10.04"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$9.46", "$11.16", "$9.94", "$9.42", "$9.07", "$8.81"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm395",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Sanibel Travel Mug - 16 oz",
+  code: "IBTM395",
+  slug: "sanibel-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "PP Plastic & Stainless Steel",
+  size: '7" H x 3.6" W x 2.75" D',
+  imprint: '2.5" W x 2.25" H',
+  hideGusset: true,
+  price: 6.39,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.jpg",
+  description: "16 oz travel mug with a clear plastic slider lid, plastic interior wall, stainless steel outer wall, and EVA bottom pad.",
+  popular: false,
+
+  colors: [
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Army Green.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Black.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Navy Blue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Army Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Navy Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM395",
+    material: "PP Plastic & Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "13.3 lbs",
+        boxDims: '18.50" W x 7.87" H x 18.50" L'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$15.81", "$12.66", "$11.57", "$10.76", "$9.30", "$6.72"] },
+        { label: "2 Color Imprint", prices: ["$16.47", "$13.50", "$12.38", "$11.56", "$10.08", "$7.49"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$15.02", "$12.03", "$10.99", "$10.23", "$8.83", "$6.39"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm332",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Carabiner Handle Stainless Steel Mug - 10 oz",
+  code: "IBTM332",
+  slug: "carabiner-handle-stainless-steel-mug-10-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.5" H x 3" W',
+  imprint: '2.00" W x 2.00" H',
+  hideGusset: true,
+  price: 6.94,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.jpg",
+  description: "10 oz double-wall stainless steel mug with a brushed finish and a convenient carabiner handle for on-the-go use.",
+  popular: false,
+
+  colors: [
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Army Green.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Blue.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Army Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Promo1.jpg",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "10 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM332",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "48 pcs",
+        boxWeight: "15.5 lbs",
+        boxDims: '20.47" L x 16.93" W x 8.46" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.02", "$8.22", "$7.87", "$7.70", "$7.48", "$7.31"] },
+        { label: "2 Color Imprint", prices: ["$8.68", "$9.06", "$8.68", "$8.50", "$8.26", "$8.08"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$7.62", "$7.81", "$7.48", "$7.32", "$7.10", "$6.94"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm24",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "2GoCup Plastic Tumbler - 16 oz",
+  code: "IBTM24",
+  slug: "2gocup-plastic-tumbler-16-oz",
+  category: "Travel Mugs",
+  material: "Plastic",
+  size: '7" H x 3.5" W (Top)',
+  imprint: '3"W x 3"h',
+  hideGusset: true,
+  price: 2.97,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.jpg",
+  description: "16 oz BPA-free double-walled plastic tumbler with a screw-on lid. Handwash recommended for imprinted items.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Red.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM24",
+    material: "Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "9.7 lbs",
+        boxDims: '19.29" L x 19.29" W x 8.07" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.41", "$9.67", "$9.03", "$8.33", "$7.90", "$6.26"] },
+        { label: "2 Color Imprint", prices: ["$10.07", "$10.51", "$9.84", "$9.12", "$8.68", "$7.03"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.47", "$4.59", "$4.29", "$3.95", "$3.76", "$2.97"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm41",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Steel Stemless Wine Glass - 11 oz",
+  code: "IBTM41",
+  slug: "stainless-steel-stemless-wine-glass-11-oz",
+  category: "Travel Mugs",
+  material: "304 Stainless Steel",
+  size: '4.5" H x 3.11" Rim x 2.75" Base',
+  imprint: '2.50" W x 2.00" H || Laser: 1.40" W x 2.00" H',
+  hideGusset: true,
+  price: 13.20,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.jpg",
+  description: "11 oz double-wall stainless steel stemless wine glass. BPA free, recommended hand wash only (lid not included).",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Black.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Promo1.jpg",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "11 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM41",
+    material: "304 Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "10.4 lbs",
+        boxDims: '18.5" L x 18.5" W x 5.12" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$15.17", "$17.29", "$15.78", "$14.96", "$14.37", "$13.89"] },
+        { label: "2 Color Imprint", prices: ["$15.83", "$18.13", "$16.59", "$15.76", "$15.15", "$14.66"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [36, 72, 144, 288, 576, 1008],
+      rows: [
+        { label: "Blank", prices: ["$14.41", "$16.42", "$15.00", "$14.22", "$13.65", "$13.20"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm357",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Kenai Powder Coated Travel Mug - 13.5 oz",
+  code: "IBTM357",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Featured.jpg",
+  slug: "kenai-powder-coated-travel-mug-13-5-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior & Interior",
+  size: '4” H x 3.25” W',
+  imprint: '2" W X 1.75" H',
+  hideGusset: true,
+  price: 16.19,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.jpg",
+  description: "13.5 oz double-wall vacuum insulated stainless steel travel mug with handle and a transparent charcoal push lid.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Blue.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Red.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.jpg",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Promo1.jpg",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "13.5 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM357",
+    material: "Stainless Exterior & Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "48 pcs",
+        boxWeight: "27.2 lbs",
+        boxDims: '23.62" L x 16.14" W x 9.25" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$22.28", "$26.95", "$25.58", "$24.67", "$21.70", "$17.05"] },
+        { label: "2 Color Imprint", prices: ["$22.94", "$27.79", "$26.39", "$25.47", "$22.48", "$17.82"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$21.16", "$25.61", "$24.30", "$23.43", "$20.62", "$16.19"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm161",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Double Wall Acrylic Tumbler With Straw - 16 oz",
+  code: "IBTM161",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Featured.jpg",
+  slug: "double-wall-acrylic-tumbler-with-straw-16-oz",
+  category: "Travel Mugs",
+  material: "Acrylic",
+  size: '6.25" H x 4" rim x 2.5" Base',
+  imprint: '2.50 x 2.50',
+  hideGusset: true,
+  price: 4.34,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.jpg",
+  description: "16 oz double-wall acrylic tumbler with matching straw and lid. Durable, BPA-free, and insulated.",
+  popular: false,
+
+  colors: [
+    { name: "Aqua", hex: "#00FFFF", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Aqua.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Blue.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Charcoal.jpg" },
+    { name: "Clear", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Clear.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.jpg" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Orange.jpg" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Purple.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Red.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Clear.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Aqua.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Promo1.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Charcoal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Promo2.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Orange.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Purple.jpg",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Red.jpg",
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM161",
+    material: "Acrylic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "12.6 lbs",
+        boxDims: '21.06" L x 20.87" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$7.10", "$6.24", "$5.63", "$5.17", "$4.68", "$4.57"] },
+        { label: "2 Color Imprint", prices: ["$7.76", "$7.08", "$6.44", "$5.97", "$5.46", "$5.34"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$6.74", "$5.94", "$5.35", "$4.92", "$4.45", "$4.34"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm7000",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Steel Travel Mug - 12 oz",
+  code: "IBTM7000",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Featured.jpg",
+  slug: "stainless-steel-travel-mug-12-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior / Plastic Tumbler",
+  size: '4.1"H x 4.75" W',
+  imprint: '2.5" W x 2.5 " H',
+  hideGusset: true,
+  price: 6.45,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.jpg",
+  description: "12 oz travel mug with a stainless steel outer shell, double-wall plastic inner lining, and wide grip handle.",
+  popular: false,
+
+  colors: [
+    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.jpg",
+    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Promo1.jpg",
+    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "12 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM7000",
+    material: "Stainless Exterior / Plastic Tumbler",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "50 pcs",
+        boxWeight: "18.7 lbs",
+        boxDims: '22.83" L x 18.9" W x 9.84" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.23", "$9.93", "$8.71", "$7.83", "$6.96", "$6.78"] },
+        { label: "2 Color Imprint", prices: ["$9.89", "$10.77", "$9.52", "$8.63", "$7.74", "$7.55"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.77", "$9.44", "$8.28", "$7.45", "$6.60", "$6.45"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm324",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Steel Grip Travel Mug - 27 oz",
+  code: "IBTM324",
+  slug: "stainless-steel-grip-travel-mug-27-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '8"H x 4" W',
+  imprint: '2.5”W x 2.5”H',
+  hideGusset: true,
+  price: 6.48,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.jpg",
+  description: "27 oz double-wall vacuum insulated stainless steel travel mug with an easy sip lid. BPA free, keeps drinks hot for 4 hours and cold for 8.",
+  popular: false,
+
+  colors: [
+    { name: "Pearl White", hex: "#F8F8FF", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Pearl White.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Teal.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Pearl White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Teal.jpg",
+    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "27 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM324",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "20.1 lbs",
+        boxDims: '19.69" L x 16.14" W x 9.06" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$19.70", "$21.80", "$18.28", "$15.65", "$14.17", "$13.64"] },
+        { label: "2 Color Imprint", prices: ["$20.36", "$22.64", "$19.09", "$16.45", "$14.95", "$14.41"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$9.36", "$10.36", "$8.68", "$7.43", "$6.73", "$6.48"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm22",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Steel Bistro Mug - 16 oz",
+  code: "IBTM22",
+  slug: "steel-bistro-mug-16-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior / Plastic Interior",
+  size: '5.75" W x 4.5" H',
+  imprint: '2.25"W x 2.25"H',
+  hideGusset: true,
+  price: 8.81,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.jpg",
+  description: "16 oz stainless steel bistro mug with double-wall thermal plastic insulation and an easy grab-n-go wide grip handle.",
+  popular: false,
+
+  colors: [
+    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM22",
+    material: "Stainless Exterior / Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "13.2 lbs",
+        boxDims: '25.98" L x 21.46" W x 5.91" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$13.59", "$13.65", "$11.95", "$11.56", "$11.25", "$9.27"] },
+        { label: "2 Color Imprint", prices: ["$14.25", "$14.49", "$12.76", "$12.36", "$12.03", "$10.04"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$12.90", "$12.96", "$11.35", "$10.99", "$10.69", "$8.81"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm391",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Creston Travel Mug - 16 oz",
+  code: "IBTM391",
+  slug: "creston-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "PP Plastic and Stainless Steel",
+  size: '7" H x 3.25" W x 2.75" D',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 6.68,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.jpg",
+  description: "16 oz travel mug with a plastic interior, stainless outer wall, and clear slider lid. Features an EVA bottom pad.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Blue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-White.jpg" }
+  ],
+
+  images: [
+      "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.jpg",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Blue.jpg",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM391",
+    material: "PP Plastic and Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "15.4 lbs",
+        boxDims: '18.5" L x 18.5" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.23", "$9.51", "$8.22", "$7.83", "$7.22", "$7.03"] },
+        { label: "2 Color Imprint", prices: ["$9.89", "$10.35", "$9.03", "$8.63", "$8.00", "$7.80"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.78", "$9.03", "$7.80", "$7.45", "$6.86", "$6.68"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm270",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Steel Beer Cup - 16 oz",
+  code: "IBTM270",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Featured.jpg",
+  slug: "stainless-steel-beer-cup-16-oz",
+  category: "Travel Mugs",
+  material: "201 Stainless Steel",
+  size: '4.75" H x 3.75" Rim x 2.75" Base',
+  imprint: '2.50"W x 1.75"H',
+  hideGusset: true,
+  price: 5.66,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.jpg",
+  description: "16 oz stainless steel beer cup with a wide rim and powder-coated body, perfect for beverages on the go.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.jpg",
+    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Promo1.jpg",
+    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM270",
+    material: "201 Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "120 pcs",
+        boxWeight: "27.1 lbs",
+        boxDims: '23.62" L x 19.69" W x 9.25" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.42", "$8.58", "$7.88", "$7.65", "$7.28", "$6.02"] },
+        { label: "2 Color Imprint", prices: ["$9.08", "$9.42", "$8.69", "$8.45", "$8.06", "$6.78"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$7.91", "$8.06", "$7.41", "$7.20", "$6.84", "$5.66"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm338",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Snap Seal Tumbler Travel Mug - 16 oz",
+  code: "IBTM338",
+  slug: "snap-seal-tumbler-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "BPA Free Plastic",
+  size: '7.25" H x 3" W',
+  imprint: '2.25"W x 2.25"H',
+  hideGusset: true,
+  price: 4.03,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.jpg",
+  description: "16 oz double-wall insulated plastic travel mug with a flip lid and frosted color finishing. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Teal.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Teal.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM338",
+    material: "BPA Free Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "12.6 lbs",
+        boxDims: '16.14" L x 15.75" W x 9.84" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$12.27", "$13.65", "$11.73", "$10.76", "$10.00", "$8.49"] },
+        { label: "2 Color Imprint", prices: ["$12.93", "$14.49", "$12.54", "$11.56", "$10.78", "$9.25"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$5.83", "$6.48", "$5.58", "$5.11", "$4.75", "$4.03"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm14",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Insulated Plastic Travel Mug - 14 oz",
+  code: "IBTM14",
+  slug: "insulated-plastic-travel-mug-14-oz",
+  category: "Travel Mugs",
+  material: "Plastic Exterior / Plastic Interior",
+  size: '5.5" W x 6.5" H',
+  imprint: '1 Color Imprint Area: 1.85”W x 1.90”H | 2 Color Imprint Area: 2.25”W x 2.25”H',
+  hideGusset: true,
+  price: 2.32,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.jpg",
+  description: "14 oz acrylic insulated travel mug with a spill-prevention slide lock lid and an easy grab-n-go hook shaped handle.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Blue.png" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Blue.png"
+  ],
+
+  specs: {
+    weight: "14 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM14",
+    material: "Plastic Exterior / Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "11.7 lbs",
+        boxDims: '20.87" L x 20.87" W x 7.68" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.61", "$9.21", "$7.67", "$7.45", "$6.40", "$4.88"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.09", "$4.38", "$3.65", "$3.54", "$3.04", "$2.32"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm394",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Galveston Stainless Steel Vacuum Tumbler - 26 oz",
+  code: "IBTM394",
+  slug: "galveston-stainless-steel-vacuum-tumbler-26-oz",
+  category: "Travel Mugs",
+  material: "Silicone, PP Plastic & Stainless Steel",
+  size: '8.5" H x 3.4" W x 2.75" D',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 12.12,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.jpg",
+  description: "26 oz double-wall stainless steel vacuum tumbler with a screw-on plastic lid and stainless straw included.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Black.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.jpg",
+    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "26 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM394",
+    material: "Silicone, PP Plastic & Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "15.9 lbs",
+        boxDims: '18.9" L x 14.96" W x 9.06" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$14.07", "$16.23", "$14.97", "$14.07", "$12.99", "$12.76"] },
+        { label: "2 Color Imprint", prices: ["$14.73", "$17.07", "$15.78", "$14.87", "$13.77", "$13.53"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$13.37", "$15.41", "$14.23", "$13.37", "$12.34", "$12.12"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm377",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Mia Insulated Stainless Steel Travel Mug - 15 oz",
+  code: "IBTM377",
+  slug: "mia-insulated-stainless-steel-travel-mug-15-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior, Plastic Interior",
+  size: '3.10"W X 8.40"H X 2.50"B',
+  imprint: '2.50"W X 2.50"H',
+  hideGusset: true,
+  price: 6.94,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.jpg",
+  description: "15 oz insulated stainless steel travel mug with a plastic color screw-on lid and flip closure. Features a silicone wrap and black EVA bottom pad. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Blue.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.jpg",
+    "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Blue.jpg"
+  ],
+
+  specs: {
+    weight: "15 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM377",
+    material: "Stainless Exterior, Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "11.02 lbs",
+        boxDims: '18.31" L x 18.31" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.53", "$9.65", "$8.57", "$8.10", "$7.61", "$7.31"] },
+        { label: "2 Color Imprint", prices: ["$9.19", "$10.49", "$9.38", "$8.90", "$8.39", "$8.08"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.10", "$9.17", "$8.14", "$7.70", "$7.23", "$6.94"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm346",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Barton Plastic Double Wall Travel Mug - 32 oz",
+  code: "IBTM346",
+  slug: "barton-plastic-double-wall-travel-mug-32-oz",
+  category: "Travel Mugs",
+  material: "Plastic",
+  size: '3.75" W x 8.5" H',
+  imprint: '1+ to Full Color Imprint: 2.50" W x 2.5" H',
+  hideGusset: true,
+  price: 4.03,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.jpg",
+  description: "32 oz double-wall plastic travel mug with a solid color outer wall, clear lid, and color coordinated sliding lid.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.jpg"
+  ],
+
+  specs: {
+    weight: "32 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM346",
+    material: "Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "15.4 lbs",
+        boxDims: '20.67" L x 16.93" W x 9.65" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.41", "$11.52", "$10.57", "$10.19", "$9.61", "$8.49"] },
+        { label: "2 Color Imprint", prices: ["$10.07", "$12.36", "$11.38", "$10.99", "$10.39", "$9.25"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$59.00 (G)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.47", "$5.47", "$5.02", "$4.84", "$4.56", "$4.03"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$59.00 (G)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm245",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Steel Travel Mug - 16 oz",
+  code: "IBTM245",
+  slug: "stainless-steel-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "Stainless Outside | Plastic Inside",
+  size: '3.25" W x 6" H',
+  imprint: '1 Color Imprint Area: 2.50" W x 2.00" H | 2 Color Imprint Area: 2.25" W x 2.25" H | 3+ Colors Imprint Area: 2.50" W x 2.25" H',
+  hideGusset: true,
+  price: 6.59,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.jpg",
+  description: "16 oz travel mug with a stainless steel exterior, plastic interior, and spill-proof slide lock lid.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM245",
+    material: "Stainless Outside | Plastic Inside",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "14.7 lbs",
+        boxDims: '25.98" L x 18.7" W x 7.68" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$10.88", "$13.09", "$12.22", "$11.90", "$11.04", "$6.94"] },
+        { label: "2 Color Imprint", prices: ["$11.54", "$13.93", "$13.03", "$12.70", "$11.82", "$7.71"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$59.00 (G)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$10.34", "$12.43", "$11.61", "$11.31", "$10.49", "$6.59"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$59.00 (G)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm38",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Travel Mug Stainless Steel - 14 oz",
+  code: "IBTM38",
+  slug: "travel-mug-stainless-steel-14-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior / Plastic Interior",
+  size: '3.5" W x 5.75" H',
+  imprint: '2.5" W x 2.25" H',
+  hideGusset: true,
+  price: 6.31,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.jpg",
+  description: "14 oz customized travel mug with a stainless steel outer shell, double-wall thermal plastic insulation, and wide grip handle.",
+  popular: false,
+
+  colors: [
+    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.jpg"
+  ],
+
+  specs: {
+    weight: "14 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM38",
+    material: "Stainless Exterior / Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "11.2 lbs",
+        boxDims: '23.23" L x 18.11" W x 7.09" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.23", "$10.85", "$8.71", "$7.83", "$6.83", "$6.64"] },
+        { label: "2 Color Imprint", prices: ["$9.89", "$11.69", "$9.52", "$8.63", "$7.61", "$7.41"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$59.00 (G)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.78", "$10.30", "$8.28", "$7.45", "$6.49", "$6.31"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$59.00 (G)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm19",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Sporty Stainless Steel Travel Mug - 16 oz",
+  code: "IBTM19",
+  slug: "sporty-stainless-steel-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior / Plastic Interior",
+  size: '3.25" W x 6.75" H',
+  imprint: '1 Color: 2" W x 1.25" H | 2 to 3+ Colors: 2.5"w x 1.75"h',
+  hideGusset: true,
+  price: 7.44,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.jpg",
+  description: "16 oz stainless steel travel mug with double-wall thermal plastic insulation, a spill-prevention slide lock lid, and a hook-shaped handle.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM19",
+    material: "Stainless Exterior / Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "13.4 lbs",
+        boxDims: '25.98" L x 18.5" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$11.17", "$11.61", "$10.60", "$10.17", "$9.56", "$7.83"] },
+        { label: "2 Color Imprint", prices: ["$11.83", "$12.45", "$11.41", "$10.97", "$10.34", "$8.60"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$59.00 (G)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$10.60", "$11.03", "$10.07", "$9.67", "$9.07", "$7.44"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$59.00 (G)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm18",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Double Wall Stainless Steel Travel Mug - 14 oz",
+  code: "IBTM18",
+  slug: "double-wall-stainless-steel-travel-mug-14-oz",
+  category: "Travel Mugs",
+  material: "Steel Exterior / Plastic Interior",
+  size: '3.15" W x 6.75" H',
+  imprint: '1-3+ Colors Imprint Area: 2.00" W x 1.75" H',
+  hideGusset: true,
+  price: 6.45,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.jpg",
+  description: "14 oz double-wall stainless steel travel mug with thermal plastic insulation, a spill-prevention slide lock lid, and a hook-shaped handle.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "14 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM18",
+    material: "Steel Exterior / Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "11.5 lbs",
+        boxDims: '22.44" L x 18.11" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.96", "$10.85", "$8.71", "$7.83", "$6.96", "$6.78"] },
+        { label: "2 Color Imprint", prices: ["$10.62", "$11.69", "$9.52", "$8.63", "$7.74", "$7.55"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$59.00 (G)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$9.46", "$10.30", "$8.28", "$7.45", "$6.60", "$6.45"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$59.00 (G)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm16",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Malva Stainless Steel Mug - 15 oz",
+  code: "IBTM16",
+  slug: "malva-stainless-steel-mug-15-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '4.5” W x 3.75” H x 3.5” Diameter',
+  imprint: '2.25”W X 2”H',
+  hideGusset: true,
+  price: 12.66,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.jpg",
+  description: "15 oz stainless steel mug with handle, double-wall construction, exterior brush polishing, and interior mirror polishing.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "15 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM16",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "N/A",
+        boxDims: '18.5" L x 18.5" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$14.95", "$18.47", "$17.21", "$16.16", "$15.28", "$13.32"] },
+        { label: "2 Color Imprint", prices: ["$15.61", "$19.31", "$18.02", "$16.96", "$16.06", "$14.09"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$59.00 (G)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$14.20", "$17.54", "$16.35", "$15.35", "$14.51", "$12.66"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$59.00 (G)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm320",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Large Barrel Moscow Mule Mug - 17 oz",
+  code: "IBTM320",
+  slug: "large-barrel-moscow-mule-mug-17-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.25" W x 5" H',
+  imprint: '1+ Full Color Imprint: 2.25”W x 1.00”H',
+  hideGusset: true,
+  price: 13.26,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.jpg",
+  description: "17 oz large barrel stainless steel mug with handle, double-wall construction, and a brushed finish.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM320",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "24 pcs",
+        boxWeight: "17.5 lbs",
+        boxDims: '16.93" L x 16.93" W x 12.4" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$16.34", "$20.01", "$18.70", "$17.81", "$16.58", "$14.11"] },
+        { label: "2 Color Imprint", prices: ["$17.00", "$20.85", "$19.51", "$18.61", "$17.36", "$14.87"] },
+        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$59.00 (G)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$15.36", "$18.80", "$17.58", "$16.74", "$15.59", "$13.26"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$59.00 (G)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
 }
+
 
 
 ];
 
-// Maan lo aapka products array 'products' variable mein hai
 products.forEach(product => {
-    // Check karo ke pricing ke andar 'transfer' object hai ya nahi
     if (!product.pricing || !product.pricing.transfer) {
-        // Agar nahi hai, to additionalCharges se transfer fields delete karo
         if (product.additionalCharges) {
             delete product.additionalCharges.setupChargeTransfer;
             delete product.additionalCharges.repeatSetupTransfer;
@@ -28500,7 +32005,7 @@ async function downloadSingleTemplate(colorName, product) {
         showNotification(`✅ ${colorName} color template PDF downloaded!`);
     } catch (error) {
         console.error('Download error:', error);
-        showNotification(`❌ PDF not found for ${colorName}. Please check folder.`);
+        showNotification(`❌ PDF not available for ${colorName}. Please request at cs@inkwell-impressions.com`);
     }
 }
 
@@ -30108,17 +33613,7 @@ function initFreightModal() {
     // ============================================================
     // ✅ PRINT METHODS NOTE (Sab tabs ke liye, function ke aakhir me)
     // ============================================================
-    const printNote = document.getElementById('print-methods-note');
-    const printText = document.getElementById('print-methods-text');
-    if (printNote && printText) {
-        // Sirf 'spot' tab me dikhao, aur agar printMethods field majood ho
-        if (method === 'spot' && product.pricing?.spot?.printMethods) {
-            printText.textContent = product.pricing.spot.printMethods;
-            printNote.classList.remove('hidden');
-        } else {
-            printNote.classList.add('hidden');
-        }
-    }
+  
 }
     function renderSpecsTable(selectedColor) {
         const s = product.specs || {
