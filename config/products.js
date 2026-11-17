@@ -1381,7 +1381,7 @@ const products = [{
   size: '9"W x 5"H x 2"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS183/IS183-Black.webp",
+  image: "assets/assets/images/products/non-woven/IS183/IS183-Black.jpg",
   description: "600D RPET zippered tech travel pouch for charging cords and accessories.",
   popular: false
 },
@@ -3880,7 +3880,7 @@ const products = [{
   material: "AS & PP",
   size: '4" W x 9.5" H x 3" B',
   price: 9.30,
-  image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.webp",
   description: "40 oz single-wall plastic tumbler with handle, screw-on lid, and straw. Keeps your drinks cold on the go.",
   popular: false
 },
@@ -3894,7 +3894,7 @@ const products = [{
   material: "Inner: 304 Stainless Steel; Outer: 201 Stainless Steel",
   size: '4" W x 9.5" H x 3" B',
   price: 17.05,
-  image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.webp",
   description: "40 oz double-wall vacuum-insulated stainless steel travel mug with handle, slider lid, and straw. Keeps drinks hot for 6 hours and cold for 10.",
   popular: false
 },
@@ -3908,7 +3908,7 @@ const products = [{
   material: "Plastic/ Steel",
   size: '3.25" W x 7 " H',
   price: 5.00,
-  image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.webp",
   description: "16 oz insulated travel mug with a stainless steel outer wall, color accent, and spill-prevention slide lock lid. BPA-free.",
   popular: false
 },
@@ -3922,22 +3922,36 @@ const products = [{
   material: "Stainless Interior / Exterior",
   size: '3.25" W x 7" H',
   price: 11.29,
-  image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.webp",
   description: "16 oz double-wall stainless steel travel tumbler with spill-prevention slide lock lid and a ribbed outer ring base design.",
   popular: false
 },
 {
-  id: "ibsw47",
+  id: "ibtm47",
   isBelpromo: true,
   name: "Shelby Stemless Wine Glass with Lid - 12 oz",
-  code: "IBSW47",
+  code: "IBTM47",
   slug: "shelby-stemless-wine-glass-with-lid-12-oz",
   category: "Travel Mugs",
   material: "Stainless Steel, Plastic",
   size: '3"W X 4.75"H X 2.25"B',
   price: 6.02,
-  image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.webp",
   description: "12 oz stemless wine glass with a stainless steel exterior and clear plastic lid, perfect for on-the-go sipping. BPA free.",
+  popular: false
+},
+{
+  id: "ibtm378",
+  isBelpromo: true,
+  name: "Itsy Vacuum Insulated Travel Mug - 12 oz",
+  code: "IBTM378",
+  slug: "itsy-vacuum-insulated-travel-mug-12-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.25"W X 4.25"H X 2.50"B',
+  price: 10.64,
+  image: "assets/assets/images/products/travel mugs/IBTM378/IBTM378-White.webp",
+  description: "12 oz vacuum insulated double-wall stainless steel travel mug with a press-in black transparent lid and black EVA pad.",
   popular: false
 },
 {
@@ -3950,7 +3964,7 @@ const products = [{
   material: "AS Plastic",
   size: '3.75" W x 8" H x 2.5" B',
   price: 10.09,
-  image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.webp",
   description: "24 oz double-wall plastic tumbler with handle, screw-on lid, and color silicone spout. Straw included.",
   popular: false
 },
@@ -3964,7 +3978,7 @@ const products = [{
   material: "Stainless Steel / Plastic",
   size: '3.5" W x 9.65" H x 2.95" B',
   price: 11.74,
-  image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.webp",
   description: "30 oz stainless steel travel mug with plastic liner, carrying handle, and wide mouth for easy cleaning. BPA-free.",
   popular: false
 },
@@ -3978,24 +3992,11 @@ const products = [{
   material: "Stainless Steel, Plastic Interior",
   size: '4" W x 8.74" H x 3" B',
   price: 9.88,
-  image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.webp",
   description: "40 oz travel mug with stainless steel exterior and plastic interior, slider transparent lid, straw included, and EVA bottom pad.",
   popular: false
 },
-{
-  id: "ibsw46",
-  isBelpromo: true,
-  name: "Largo Stemless Wine Glass with Lid - 11 oz",
-  code: "IBSW46",
-  slug: "largo-stemless-wine-glass-with-lid-11-oz",
-  category: "Travel Mugs",
-  material: "304 Stainless Steel",
-  size: '3"W X 4.75"H X 2.25"B',
-  price: 10.50,
-  image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.jpg",
-  description: "11 oz double-wall vacuum-insulated stemless wine glass with popular stainless steel finish. BPA free, keeps drinks hot for 3 hours and cold for 5.",
-  popular: false
-},
+
 {
   id: "ibtm389",
   isBelpromo: true,
@@ -4006,7 +4007,7 @@ const products = [{
   material: "Stainless Steel",
   size: '3.5" W x 9.65" H x 2.95" B',
   price: 15.82,
-  image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.webp",
   description: "30 oz stainless steel travel mug with carrying handle, double-wall vacuum insulation, and wide mouth for easy cleaning.",
   popular: false
 },
@@ -4020,7 +4021,7 @@ const products = [{
   material: "Stainless Steel / Plastic",
   size: '7.5” H x 3.5” W',
   price: 6.94,
-  image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.webp",
   description: "23 oz travel mug with plastic outer wall and stainless steel interior, matte finish, closure lid with straw opening, and included straw.",
   popular: false
 },
@@ -4034,7 +4035,7 @@ const products = [{
   material: "Stainless Steel",
   size: '3”W x 7.75”H',
   price: 15.16,
-  image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.webp",
   description: "20 oz double-wall vacuum insulated stainless steel tumbler with clear plastic sip lid. Keeps drinks hot for 4 hours and cold for 6.",
   popular: false
 },
@@ -4048,7 +4049,7 @@ const products = [{
   material: "AS Plastic",
   size: '9" H x 3.75" W x 2.5" D',
   price: 8.73,
-  image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.webp",
   description: "24 oz double-wall plastic tumbler with a screw-on lid and straw included. Wide mouth for easy cleaning and pouring.",
   popular: false
 },
@@ -4064,7 +4065,7 @@ const products = [{
   material: "Stainless Steel",
   size: '3.95" W x 9.75" H x 2.9" B',
   price: 19.21,
-  image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.webp",
   description: "40 oz double-wall stainless steel travel mug with handle and straw lid. Keeps drinks hot for 4 hours and cold for 8 hours.",
   popular: false
 },
@@ -4078,7 +4079,7 @@ const products = [{
   material: "AS Plastic",
   size: '3.75" W x 8" H x 2.75" B',
   price: 9.79,
-  image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.webp",
   description: "25 oz double-wall plastic tumbler with a rubberized finish, dome screw-on lid, and included straw.",
   popular: false
 },
@@ -4092,7 +4093,7 @@ const products = [{
   material: "Stainless Steel / Plastic",
   size: '3" W x 7" H',
   price: 7.37,
-  image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.webp",
   description: "20 oz travel mug with a stainless steel outer wall, plastic interior, and transparent black slider lid. Includes a matching color silicone straw.",
   popular: false
 },
@@ -4106,7 +4107,7 @@ const products = [{
   material: "Polypropylene",
   size: '3.25" W x 6.75" H x 2.75" B',
   price: 5.43,
-  image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.webp",
   description: "22 oz double-wall plastic tumbler good for hot and cold liquids. BPA & BSA free, made in the USA.",
   popular: false
 },
@@ -4120,7 +4121,7 @@ const products = [{
   material: "Stainless Steel",
   size: '7" H x 2.75" W',
   price: 8.81,
-  image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.webp",
   description: "22 oz single-wall stainless steel tumbler with a matte coating, silicone lid, and stainless steel straw with silicone tip.",
   popular: false
 },
@@ -4134,7 +4135,7 @@ const products = [{
   material: "PP Plastic & Stainless Steel",
   size: '7" H x 3.6" W x 2.75" D',
   price: 6.39,
-  image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.webp",
   description: "16 oz travel mug with a clear plastic slider lid, plastic interior wall, stainless steel outer wall, and EVA bottom pad.",
   popular: false
 },
@@ -4148,21 +4149,21 @@ const products = [{
   material: "Stainless Steel",
   size: '3.5" H x 3" W',
   price: 6.94,
-  image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.webp",
   description: "10 oz double-wall stainless steel mug with a brushed finish and a convenient carabiner handle for on-the-go use.",
   popular: false
 },
 {
-  id: "ibtm24",
+  id: "ibtm224",
   isBelpromo: true,
   name: "2GoCup Plastic Tumbler - 16 oz",
-  code: "IBTMC24",
+  code: "IBTM224",
   slug: "2gocup-plastic-tumbler-16-oz",
   category: "Travel Mugs",
   material: "Plastic",
   size: '7" H x 3.5" W (Top)',
   price: 2.97,
-  image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.webp",
   description: "16 oz BPA-free double-walled plastic tumbler with a screw-on lid. Handwash recommended for imprinted items.",
   popular: false
 },
@@ -4176,7 +4177,7 @@ const products = [{
   material: "Plastic & Steel Exterior / Plastic Interior",
   size: '3.25" W x 7" H',
   price: 5.21,
-  image: "assets/assets/images/products/travel mugs/IBTM63/IBTM63-Stainless Steel.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM63/IBTM63-Stainless Steel.webp",
   description: "16 oz black acrylic travel mug with a stainless-steel upper band, double-wall thermal plastic insulation, and chrome twist-on lid.",
   popular: false
 },
@@ -4190,7 +4191,7 @@ const products = [{
   material: "304 Stainless Steel",
   size: '4.5" H x 3.11" Rim x 2.75" Base',
   price: 13.20,
-  image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.webp",
   description: "11 oz double-wall stainless steel stemless wine glass. BPA free, recommended hand wash only (lid not included).",
   popular: false
 },
@@ -4204,7 +4205,7 @@ const products = [{
   material: "Stainless Exterior & Interior",
   size: '4” H x 3.25” W',
   price: 16.19,
-  image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.webp",
   description: "13.5 oz double-wall vacuum insulated stainless steel travel mug with handle and a transparent charcoal push lid.",
   popular: false
 },
@@ -4218,7 +4219,7 @@ const products = [{
   material: "Acrylic",
   size: '6.25" H x 4" rim x 2.5" Base',
   price: 4.34,
-  image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.webp",
   description: "16 oz double-wall acrylic tumbler with matching straw and lid. Durable, BPA-free, and insulated.",
   popular: false
 },
@@ -4232,7 +4233,7 @@ const products = [{
   material: "Stainless Exterior Plastic interior",
   size: '3.8" W x 8.5" H',
   price: 8.27,
-  image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Rustic.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Rustic.webp",
   description: "20 oz tumbler with a stainless exterior and plastic interior, featuring a clear, shatter-resistant lid. BPA free.",
   popular: false
 },
@@ -4246,7 +4247,7 @@ const products = [{
   material: "Stainless Exterior / Plastic Tumbler",
   size: '4.1"H x 4.75" W',
   price: 6.45,
-  image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.webp",
   description: "12 oz travel mug with a stainless steel outer shell, double-wall plastic inner lining, and wide grip handle.",
   popular: false
 },
@@ -4260,7 +4261,7 @@ const products = [{
   material: "Stainless Steel",
   size: '8"H x 4" W',
   price: 6.48,
-  image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.webp",
   description: "27 oz double-wall vacuum insulated stainless steel travel mug with an easy sip lid. BPA free, keeps drinks hot for 4 hours and cold for 8.",
   popular: false
 },
@@ -4274,7 +4275,7 @@ const products = [{
   material: "Stainless Exterior / Plastic Interior",
   size: '5.75" W x 4.5" H',
   price: 8.81,
-  image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.webp",
   description: "16 oz stainless steel bistro mug with double-wall thermal plastic insulation and an easy grab-n-go wide grip handle.",
   popular: false
 },
@@ -4288,7 +4289,7 @@ const products = [{
   material: "PP Plastic and Stainless Steel",
   size: '7" H x 3.25" W x 2.75" D',
   price: 6.68,
-  image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.webp",
   description: "16 oz travel mug with a plastic interior, stainless outer wall, and clear slider lid. Features an EVA bottom pad.",
   popular: false
 },
@@ -4302,7 +4303,7 @@ const products = [{
   material: "201 Stainless Steel",
   size: '4.75" H x 3.75" Rim x 2.75" Base',
   price: 5.66,
-  image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.webp",
   description: "16 oz stainless steel beer cup with a wide rim and powder-coated body, perfect for beverages on the go.",
   popular: false
 },
@@ -4316,7 +4317,7 @@ const products = [{
   material: "Plastic Exterior / Plastic Interior",
   size: '5.5" W x 6.5" H',
   price: 2.32,
-  image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.webp",
   description: "14 oz acrylic insulated travel mug with a spill-prevention slide lock lid and an easy grab-n-go hook shaped handle.",
   popular: false
 },
@@ -4330,7 +4331,7 @@ const products = [{
   material: "BPA Free Plastic",
   size: '7.25" H x 3" W',
   price: 4.03,
-  image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.webp",
   description: "16 oz double-wall insulated plastic travel mug with a flip lid and frosted color finishing. BPA free.",
   popular: false
 },
@@ -4344,7 +4345,7 @@ const products = [{
   material: "Silicone, PP Plastic & Stainless Steel",
   size: '8.5" H x 3.4" W x 2.75" D',
   price: 12.12,
-  image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.webp",
   description: "26 oz double-wall stainless steel vacuum tumbler with a screw-on plastic lid and stainless straw included.",
   popular: false
 },
@@ -4358,7 +4359,7 @@ const products = [{
   material: "Stainless Exterior, Plastic Interior",
   size: '3.10"W X 8.40"H X 2.50"B',
   price: 6.94,
-  image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.webp",
   description: "15 oz insulated stainless steel travel mug with a plastic color screw-on lid and flip closure. Features a silicone wrap and black EVA bottom pad. BPA free.",
   popular: false
 },
@@ -4372,7 +4373,7 @@ const products = [{
   material: "PP Plastic & Stainless Steel",
   size: '7.25" H x 3.5" W x 2.5" D',
   price: 5.58,
-  image: "assets/assets/images/products/travel mugs/IBTM392/IBTM392-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM392/IBTM392-White.webp",
   description: "16 oz two-tone tumbler with a plastic interior, stainless steel exterior, and a clear slider lid. Includes an EVA bottom pad.",
   popular: false
 },
@@ -4386,7 +4387,7 @@ const products = [{
   material: "Plastic",
   size: '3.75" W x 8.5" H',
   price: 4.03,
-  image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.webp",
   description: "32 oz double-wall plastic travel mug with a solid color outer wall, clear lid, and color coordinated sliding lid.",
   popular: false
 },
@@ -4400,7 +4401,7 @@ const products = [{
   material: "Stainless Outside | Plastic Inside",
   size: '3.25" W x 6" H',
   price: 6.59,
-  image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.webp",
   description: "16 oz travel mug with a stainless steel exterior, plastic interior, and spill-proof slide lock lid.",
   popular: false
 },
@@ -4414,7 +4415,7 @@ const products = [{
   material: "Stainless Exterior / Plastic Interior",
   size: '3.5" W x 5.75" H',
   price: 6.31,
-  image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.webp",
   description: "14 oz customized travel mug with a stainless steel outer shell, double-wall thermal plastic insulation, and wide grip handle.",
   popular: false
 },
@@ -4428,7 +4429,7 @@ const products = [{
   material: "Stainless Exterior / Plastic Interior",
   size: '3.25" W x 6.75" H',
   price: 7.44,
-  image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.webp",
   description: "16 oz stainless steel travel mug with double-wall thermal plastic insulation, a spill-prevention slide lock lid, and a hook-shaped handle.",
   popular: false
 },
@@ -4442,7 +4443,7 @@ const products = [{
   material: "Steel Exterior / Plastic Interior",
   size: '3.15" W x 6.75" H',
   price: 6.45,
-  image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.webp",
   description: "14 oz double-wall stainless steel travel mug with thermal plastic insulation, a spill-prevention slide lock lid, and a hook-shaped handle.",
   popular: false
 },
@@ -4456,7 +4457,7 @@ const products = [{
   material: "Stainless Steel",
   size: '4.5” W x 3.75” H x 3.5” Diameter',
   price: 12.66,
-  image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.webp",
   description: "15 oz stainless steel mug with handle, double-wall construction, exterior brush polishing, and interior mirror polishing.",
   popular: false
 },
@@ -4470,10 +4471,67 @@ const products = [{
   material: "Stainless Steel",
   size: '3.25" W x 5" H',
   price: 13.26,
-  image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.webp",
   description: "17 oz large barrel stainless steel mug with handle, double-wall construction, and a brushed finish.",
   popular: false
+},
+{
+  id: "ibtm361",
+  isBelpromo: true,
+  name: "Cork Bottom Travel Tumbler - 16 oz",
+  code: "IBTM361",
+  slug: "cork-bottom-travel-tumbler-16-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '7" H x 3" W',
+  price: 16.01,
+  image: "assets/assets/images/products/travel mugs/IBTM361/IBTM361-White.webp",
+  description: "16 oz double-wall vacuum insulated stainless steel travel tumbler with a cork bottom and powder-finished coating.",
+  popular: false
+},
+{
+  id: "ibtm380",
+  isBelpromo: true,
+  name: "Wells Stainless Steel Camper Mug - 13.5 oz",
+  code: "IBTM380",
+  slug: "wells-stainless-steel-camper-mug-13-5-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel, Plastic Interior",
+  size: '5" H x 3" W',
+  price: 11.29,
+  image: "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Silver.webp",
+  description: "13.5 oz stainless camper mug with a press-in transparent lid, stainless exterior, plastic interior, and EVA bottom pad.",
+  popular: false
+},
+{
+  id: "ibtm46",
+  isBelpromo: true,
+  name: "Largo Stemless Wine Glass with Lid - 11 oz",
+  code: "IBTM46",
+  slug: "largo-stemless-wine-glass-with-lid-11-oz",
+  category: "Travel Mugs",
+  material: "304 Stainless Steel",
+  size: '3"W X 4.75"H X 2.25"B',
+  price: 10.50,
+  image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.webp",
+  description: "11 oz double-wall vacuum-insulated stemless wine glass with popular stainless steel finish. BPA free, keeps drinks hot for 3 hours and cold for 5.",
+  popular: false
+},
+{
+  id: "ibtm40",
+  isBelpromo: true,
+  name: "Stainless Steel Mug with Side Lock Lid - 14 oz",
+  code: "IBTM40",
+  slug: "stainless-steel-mug-with-side-lock-lid-14-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior / Stainless Interior",
+  size: '3.5" W x 5.5" H',
+  price: 11.79,
+  image: "assets/assets/images/products/travel mugs/IBTM40/IBTM40-Silver.webp",
+  description: "14 oz double-wall stainless steel mug with a plastic lid featuring a spill-prevention side lock.",
+  popular: false
 }
+
 
 ];
 

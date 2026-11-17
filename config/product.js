@@ -20748,21 +20748,21 @@ const products = [{
     imprint: '5"W x 1.5"H',
     price: 7.98,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/non-woven/IS183/IS183-Black.jpg",
+    image: "assets/assets/images/products/non-woven/IS183/IS183-Black.webp",
     description: "An eco-conscious 600D RPET zippered pouch built to organize your charging cords, adapters, and small tech accessories. Sized at 9\" x 5\" x 2\", it slips easily into a backpack or carry-on while keeping cables tangle-free and easy to find. A clean, sustainable pick for corporate tech gifts, travel kits, and promotional programs that value organization and environmental responsibility.",
 
     popular: false,
 
     colors: [
-        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS183/IS183-Black.jpg" },
-        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS183/IS183-Grey.jpg" },
-        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS183/IS183-Navy Blue.jpg" }
+        { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/non-woven/IS183/IS183-Black.webp" },
+        { name: "Grey", hex: "#808080", image: "assets/assets/images/products/non-woven/IS183/IS183-Grey.webp" },
+        { name: "Navy Blue", hex: "#1E2E4A", image: "assets/assets/images/products/non-woven/IS183/IS183-Navy Blue.webp" }
     ],
 
     images: [
-        "assets/assets/images/products/non-woven/IS183/IS183-Black.jpg",
-        "assets/assets/images/products/non-woven/IS183/IS183-Grey.jpg",
-        "assets/assets/images/products/non-woven/IS183/IS183-Navy Blue.jpg"
+        "assets/assets/images/products/non-woven/IS183/IS183-Black.webp",
+        "assets/assets/images/products/non-woven/IS183/IS183-Grey.webp",
+        "assets/assets/images/products/non-woven/IS183/IS183-Navy Blue.webp"
     ],
 
     specs: {
@@ -22726,7 +22726,7 @@ const products = [{
     templatesAvailable: false,
     name: "Photo Sublimation White Ceramic Mug",
     code: "IBCMS7102",
-    featureImage: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Featured.webp",
+    featureImage: "assets/assets/images/products/ceramic mugs/IBCMS7102/IBCMS7102-Featured.webp",
     slug: "photo-sublimation-white-ceramic-mug",
     category: "Ceramic Mugs",
     material: "Stoneware",
@@ -22735,16 +22735,17 @@ const products = [{
     hideGusset: true,
     price: 5.18,
     originalPrice: 50.00,
-    image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
+    image: "assets/assets/images/products/ceramic mugs/IBCMS7102/IBCMS7102-White.webp",
     description: "Glossy white ceramic mug with a large imprint area and comfortable curved handle, perfect for vibrant full-color photo sublimation.",
     popular: false,
 
     colors: [
-        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp" }
+        { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/ceramic mugs/IBCMS7102/IBCM7102-White.webp" }
     ],
 
     images: [
         "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
+        "assets/assets/images/products/ceramic mugs/IBCMS7102/IBCMS7102-Promo1.webp",
     ],
 
     specs: {
@@ -22831,6 +22832,7 @@ const products = [{
 
   images: [
       "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo3.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.webp",
@@ -22877,7 +22879,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.64", "$8.61", "$6.83", "$5.68", "$4.91", "$4.26"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$9.30", "$9.45", "$7.64", "$6.48", "$5.69", "$5.03"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$10.56", "$11.06", "$9.19", "$8.01", "$7.19", "$6.50"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -22946,6 +22948,7 @@ const products = [{
     "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo3.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5000/IBCM5000-Promo1.webp",
@@ -22987,7 +22990,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.69", "$5.91", "$5.35", "$5.16", "$4.59", "$4.48"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.35", "$6.75", "$6.16", "$5.96", "$5.37", "$5.25"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.61", "$8.36", "$7.71", "$7.49", "$6.86", "$6.72"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23056,6 +23059,7 @@ const products = [{
     "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Promo3.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Pink.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5003/IBCM5003-Purple.webp",
@@ -23090,7 +23094,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$9.32", "$10.54", "$8.57", "$7.58", "$5.63", "$4.83"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$9.98", "$11.38", "$9.38", "$8.38", "$6.41", "$5.59"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$11.24", "$12.99", "$10.94", "$9.91", "$7.90", "$7.07"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23148,6 +23152,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-Red.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1039/IBCM1039-White.webp",
@@ -23180,7 +23185,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.02", "$9.31", "$7.90", "$7.51", "$6.96", "$6.13"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.57", "$10.01", "$8.57", "$8.18", "$7.61", "$6.77"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.67", "$11.41", "$9.92", "$9.51", "$8.91", "$8.05"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23243,6 +23248,8 @@ const products = [{
     "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Cobalt Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Light Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM599/IBCM599-Orange.webp",
@@ -23278,7 +23285,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.27", "$5.66", "$5.16", "$4.75", "$4.59", "$4.47"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$5.93", "$6.50", "$5.97", "$5.55", "$5.37", "$5.24"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$7.19", "$8.11", "$7.52", "$7.08", "$6.86", "$6.71"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23338,10 +23345,11 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Red.webp",
-    "assets/assets/images/products/ceramic mugs/IBCM1038/IBCM1038-Promo1.webp"
   ],
 
   specs: {
@@ -23369,7 +23377,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.69", "$4.27", "$3.98", "$3.66", "$3.45", "$3.26"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.24", "$4.97", "$4.66", "$4.32", "$4.10", "$3.90"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$5.34", "$6.37", "$6.01", "$5.65", "$5.40", "$5.18"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23428,6 +23436,7 @@ const products = [{
   images: [
       "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Green.webp",
       "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Cobalt Blue.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Almond.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1015/IBCM1015-Black.webp",
@@ -23461,7 +23470,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.24", "$7.53", "$7.11", "$6.69", "$6.46", "$5.93"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.90", "$8.37", "$7.92", "$7.49", "$7.24", "$6.69"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.16", "$9.98", "$9.48", "$9.02", "$8.74", "$8.17"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23523,6 +23532,8 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Lime Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1036/IBCM1036-Orange.webp",
@@ -23555,7 +23566,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.22", "$7.21", "$6.68", "$6.18", "$5.79", "$5.44"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.88", "$8.05", "$7.49", "$6.98", "$6.57", "$6.21"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$8.14", "$9.66", "$9.05", "$8.51", "$8.06", "$7.68"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23616,6 +23627,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1301/IBCM1301-Grey.webp",
@@ -23648,7 +23660,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.55", "$6.79", "$5.87", "$5.25", "$5.06", "$4.80"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.21", "$7.63", "$6.68", "$6.05", "$5.84", "$5.57"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$8.47", "$9.24", "$8.24", "$7.58", "$7.33", "$7.04"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23705,6 +23717,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Maroon.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1600/IBCM1600-Cobalt Blue.webp",
@@ -23739,7 +23752,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.47", "$7.83", "$7.01", "$6.24", "$6.05", "$5.82"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.13", "$8.67", "$7.82", "$7.04", "$6.83", "$6.59"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.39", "$10.28", "$9.37", "$8.57", "$8.32", "$8.06"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23798,6 +23811,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Grey.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-Navy Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1035/IBCM1035-White.webp"
   ],
@@ -23827,7 +23841,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.78", "$6.71", "$6.06", "$5.95", "$5.77", "$5.64"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.44", "$7.55", "$6.87", "$6.74", "$6.55", "$6.41"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$7.70", "$9.16", "$8.42", "$8.27", "$8.05", "$7.88"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23886,6 +23900,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cobalt Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Forest Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-Red.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1009/IBCM1009-White.webp"
@@ -23916,7 +23931,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.54", "$7.97", "$7.01", "$6.64", "$6.23", "$5.82"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.20", "$8.81", "$7.82", "$7.43", "$7.01", "$6.59"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.46", "$10.42", "$9.37", "$8.96", "$8.50", "$8.06"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -23949,6 +23964,7 @@ const products = [{
 {
   id: "ibcm1021",
   isBelpromo: true,
+  featureImage: "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Featured.webp",
   templatesAvailable: false,
   name: "Admiral Ceramic Mug 16 oz",
   code: "IBCM1021",
@@ -23975,6 +23991,8 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Brown.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Cobalt Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1021/IBCM1021-White.webp"
@@ -24004,7 +24022,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.28", "$6.85", "$6.57", "$6.39"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.79", "$9.65", "$8.09", "$7.65", "$7.35", "$7.16"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$10.05", "$11.26", "$9.64", "$9.18", "$8.84", "$8.63"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24061,6 +24079,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo3.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7105/IBCM7105-Black.webp",
@@ -24095,7 +24114,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.54", "$8.06", "$7.30", "$6.81", "$6.37", "$5.91"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.20", "$8.90", "$8.11", "$7.61", "$7.15", "$6.68"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.46", "$10.51", "$9.67", "$9.14", "$8.65", "$8.15"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24176,13 +24195,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.47", "$7.97", "$6.55", "$6.18", "$5.84", "$5.70"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.36", "$6.98", "$6.62", "$6.46"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.39", "$10.42", "$8.91", "$8.51", "$8.11", "$7.94"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24243,6 +24263,7 @@ const products = [{
     "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Cobalt Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Green.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Maroon.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1255/IBCM1255-Orange.webp"
   ],
@@ -24272,7 +24293,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.55", "$6.79", "$5.87", "$5.25", "$5.06", "$4.80"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.21", "$7.63", "$6.68", "$6.05", "$5.84", "$5.57"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$8.47", "$9.24", "$8.24", "$7.58", "$7.33", "$7.04"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24353,7 +24374,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$9.74", "$10.85", "$9.03", "$8.37", "$7.79", "$7.54"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$10.40", "$11.69", "$9.84", "$9.16", "$8.57", "$8.31"] },
         { label: "White - Full Color 1 Location", prices: ["$11.66", "$13.30", "$11.39", "$10.69", "$10.06", "$9.78"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24413,6 +24434,7 @@ const products = [{
   images: [
       "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Mint.webp",
       "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Cream.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1025/IBCM1025-Grey.webp",
@@ -24444,7 +24466,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.44", "$7.99", "$6.80", "$6.56", "$6.36", "$6.20"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.10", "$8.83", "$7.61", "$7.35", "$7.14", "$6.96"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$8.36", "$10.44", "$9.17", "$8.88", "$8.63", "$8.44"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24504,6 +24526,7 @@ const products = [{
   images: [
       "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Burnt Orange.webp",
       "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Teal.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Cream.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1031/IBCM1031-Blue.webp",
@@ -24521,7 +24544,7 @@ const products = [{
       {
         type: "Case",
         qtyPerBox: "36 pcs",
-        boxWeight: "N/A", // Text me box weight missing tha
+        boxWeight: "35.42 lbs", // Text me box weight missing tha
         boxDims: '21" x 21" x 16"'
       }
     ]
@@ -24535,7 +24558,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.78", "$6.71", "$6.06", "$5.71", "$5.32", "$5.02"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.44", "$7.55", "$6.87", "$6.50", "$6.10", "$5.79"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$7.70", "$9.16", "$8.42", "$8.03", "$7.59", "$7.26"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24593,6 +24616,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1022/IBCM1022-Grey.webp"
   ],
@@ -24615,13 +24639,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.78", "$10.68", "$10.14", "$9.79", "$9.48", "$8.86"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$9.44", "$11.52", "$10.95", "$10.59", "$10.26", "$9.63"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.70", "$13.13", "$12.50", "$12.12", "$11.75", "$11.10"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24682,6 +24707,7 @@ const products = [{
   images: [
       "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Lime Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Red.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Promo1.webp",
       "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1029/IBCM1029-Blue.webp",
@@ -24699,7 +24725,7 @@ const products = [{
       {
         type: "Case",
         qtyPerBox: "36 pcs",
-        boxWeight: "Contact for details",
+        boxWeight: "23.4 lbs",
         boxDims: '21"L x 21"W x 16"H'
       }
     ]
@@ -24713,7 +24739,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$4.13", "$4.69", "$4.39", "$4.06", "$3.84", "$3.57"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.79", "$5.53", "$5.20", "$4.85", "$4.62", "$4.34"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$6.05", "$7.14", "$6.75", "$6.38", "$6.11", "$5.81"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24800,7 +24826,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.47", "$7.97", "$6.55", "$6.18", "$5.84", "$5.70"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.36", "$6.98", "$6.62", "$6.46"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.39", "$10.42", "$8.91", "$8.51", "$8.11", "$7.94"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24860,6 +24886,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Maroon.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1200/IBCM1200-Red.webp",
@@ -24894,7 +24921,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.36", "$7.77", "$6.33", "$6.05", "$5.79", "$5.57"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.02", "$8.61", "$7.14", "$6.85", "$6.57", "$6.34"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.28", "$10.22", "$8.69", "$8.38", "$8.06", "$7.81"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -24985,7 +25012,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.98", "$8.47", "$7.01", "$6.72", "$6.31", "$6.00"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.64", "$9.31", "$7.82", "$7.51", "$7.09", "$6.77"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.90", "$10.92", "$9.37", "$9.04", "$8.58", "$8.24"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25043,6 +25070,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5018/IBCM5018-Lime Green.webp",
@@ -25060,8 +25088,8 @@ const products = [{
       {
         type: "Case",
         qtyPerBox: "36 pcs",
-        boxWeight: "Contact for details",
-        boxDims: 'Contact for details'
+        boxWeight: "34.39 Lbs",
+        boxDims: '6.54”L x 4.88”W x 13.19”H'
       }
     ]
   },
@@ -25074,7 +25102,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.78", "$6.93", "$6.33", "$5.57", "$5.32", "$5.02"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.44", "$7.77", "$7.14", "$6.37", "$6.10", "$5.79"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$7.70", "$9.38", "$8.69", "$7.90", "$7.59", "$7.26"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25129,6 +25157,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM5021/IBCM5021-Green.webp"
   ],
 
@@ -25150,14 +25179,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
-        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$4.24", "$4.97", "$4.52", "$4.19", "$3.97", "$3.70"] },
-        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.90", "$5.81", "$5.33", "$4.99", "$4.75", "$4.47"] },
-        { label: "Colors - Full Color - 1 Location", prices: ["$6.16", "$7.42", "$6.89", "$6.52", "$6.24", "$5.94"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$2.12", "$2.49", "$2.27", "$2.10", "$1.99", "$1.86"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$2.78", "$3.33", "$3.08", "$2.90", "$2.77", "$2.62"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$4.05", "$4.94", "$4.63", "$4.43", "$4.26", "$4.10"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25238,7 +25267,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$9.74", "$10.85", "$9.03", "$8.37", "$7.79", "$7.54"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$10.40", "$11.69", "$9.84", "$9.16", "$8.57", "$8.31"] },
         { label: "White - Full Color 1 Location", prices: ["$11.66", "$13.30", "$11.39", "$10.69", "$10.06", "$9.78"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25319,7 +25348,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$9.74", "$10.85", "$9.03", "$8.37", "$7.79", "$7.54"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$10.40", "$11.69", "$9.84", "$9.16", "$8.57", "$8.31"] },
         { label: "White - Full Color 1 Location", prices: ["$11.66", "$13.30", "$11.39", "$10.69", "$10.06", "$9.78"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25378,6 +25407,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Cobalt-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1032/IBCM1032-Red.webp"
@@ -25408,7 +25438,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.40", "$4.03", "$3.74", "$3.52", "$3.32", "$3.23"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.06", "$4.87", "$4.55", "$4.32", "$4.10", "$3.99"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$5.32", "$6.48", "$6.10", "$5.85", "$5.59", "$5.47"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25467,6 +25497,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Blue.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Lime Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Orange.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7101/IBCM7101-Red.webp",
@@ -25499,7 +25530,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.10", "$7.27", "$6.01", "$5.79", "$5.53", "$5.31"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.76", "$8.11", "$6.82", "$6.58", "$6.31", "$6.08"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.02", "$9.72", "$8.37", "$8.11", "$7.80", "$7.55"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25559,6 +25590,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Cobalt Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Lime Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Orange.webp",
     "assets/assets/images/products/ceramic mugs/IBCM6000/IBCM6000-Process Blue.webp",
@@ -25576,8 +25608,8 @@ const products = [{
       {
         type: "Case",
         qtyPerBox: "36 pcs",
-        boxWeight: "Contact for details",
-        boxDims: 'Contact for details'
+        boxWeight: "31.9 Lbs",
+        boxDims: '11.2"W x 14.4"H x 16.8"L'
       }
     ]
   },
@@ -25590,7 +25622,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$6.82", "$6.45", "$6.10", "$5.82"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.79", "$9.65", "$7.63", "$7.25", "$6.88", "$6.59"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$10.05", "$11.26", "$9.18", "$8.78", "$8.37", "$8.06"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25650,6 +25682,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Lime Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Orange.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Red.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-Royal Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1203/IBCM1203-White.webp",
@@ -25681,7 +25714,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.37", "$5.67", "$5.27", "$4.99", "$4.56", "$4.08"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.03", "$6.51", "$6.08", "$5.79", "$5.34", "$4.85"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$7.29", "$8.12", "$7.63", "$7.32", "$6.84", "$6.32"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25737,6 +25770,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Natural.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM96/IBCM96-Cobalt Blue.webp"
   ],
@@ -25766,7 +25800,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.31", "$10.07", "$9.52", "$9.16", "$8.39", "$8.00"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.97", "$10.91", "$10.33", "$9.96", "$9.17", "$8.77"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$10.23", "$12.52", "$11.88", "$11.49", "$10.66", "$10.24"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25831,6 +25865,8 @@ const products = [{
     "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Cobalt-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Lime.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Promo1.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Promo2.webp",
     "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Orange.webp",
     "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Purple.webp",
     "assets/assets/images/products/ceramic mugs/IBCMST2900/IBCMST2900-Red.webp",
@@ -25862,7 +25898,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$6.81", "$7.42", "$6.16", "$5.95", "$5.80", "$5.22"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.47", "$8.26", "$6.97", "$6.74", "$6.58", "$5.99"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$8.73", "$9.87", "$8.52", "$8.27", "$8.07", "$7.46"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -25921,6 +25957,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Cobalt Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCMS15TT/IBCMS15TT-Lime Green.webp"
   ],
@@ -25948,7 +25985,7 @@ const products = [{
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "Full Color Printing", prices: ["$9.78", "$10.99", "$9.92", "$9.16", "$8.13", "$7.41"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26012,13 +26049,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+         spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
-        { label: "White - 1 Color Imprint - 1 Location", prices: ["$7.98", "$9.31", "$8.49", "$8.26", "$8.03", "$7.87"] },
-        { label: "White - 2 Color Imprint - 1 Location", prices: ["$8.64", "$10.15", "$9.30", "$9.06", "$8.81", "$8.64"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.99", "$4.24", "$3.98", "$3.59", "$3.38", "$3.30"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.65", "$5.08", "$4.79", "$4.39", "$4.16", "$4.07"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$5.92", "$6.69", "$6.35", "$5.92", "$5.66", "$5.54"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26073,6 +26111,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM99268/IBCM99268-Cobalt Blue.webp"
   ],
 
@@ -26083,25 +26122,25 @@ const products = [{
     itemNo: "IBCM99268",
     material: "Stoneware",
     printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-    packagingOptions: [
+       packagingOptions: [
       {
         type: "Case",
         qtyPerBox: "36 pcs",
-        boxWeight: "N/A", 
-        boxDims: "N/A"
+        boxWeight: "36.7 lbs",
+        boxDims: '16.3" x 10.9" x 14.9"'
       }
     ]
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
-        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.76", "$8.25", "$6.82", "$6.45", "$6.05", "$5.75"] },
-        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.42", "$9.09", "$7.63", "$7.25", "$6.83", "$6.52"] },
-        { label: "Colors - Full Color - 1 Location", prices: ["$9.68", "$10.70", "$9.18", "$8.78", "$8.32", "$7.99"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.88", "$4.13", "$3.42", "$3.23", "$3.03", "$2.88"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.54", "$4.97", "$4.23", "$4.03", "$3.81", "$3.65"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$5.81", "$6.58", "$5.78", "$5.56", "$5.30", "$5.12"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26158,6 +26197,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Beige.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Charcoal.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1016/IBCM1016-Dark Brown.webp"
   ],
 
@@ -26184,7 +26224,7 @@ const products = [{
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.28", "$6.85", "$6.57", "$6.39"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26242,6 +26282,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Green.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1019/IBCM1019-Orange.webp",
@@ -26273,7 +26314,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.40", "$6.72", "$6.16", "$5.75", "$5.49", "$5.36"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.06", "$7.56", "$6.97", "$6.54", "$6.27", "$6.13"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$7.33", "$9.17", "$8.52", "$8.07", "$7.76", "$7.60"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26354,7 +26395,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$11.54", "$12.03", "$9.03", "$8.76", "$8.18", "$7.74"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$12.20", "$12.87", "$9.84", "$9.56", "$8.96", "$8.51"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$13.46", "$14.48", "$11.39", "$11.09", "$10.45", "$9.98"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26436,7 +26477,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$8.09", "$8.75", "$8.17", "$7.78", "$7.53", "$7.28"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$8.75", "$9.59", "$8.98", "$8.58", "$8.31", "$8.05"] },
         { label: "White - Full Color 1 Location", prices: ["$10.01", "$11.20", "$10.53", "$10.11", "$9.80", "$9.52"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26517,7 +26558,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.98", "$8.47", "$7.95", "$7.17", "$6.75", "$6.59"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.64", "$9.31", "$8.76", "$7.97", "$7.53", "$7.36"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.90", "$10.92", "$10.31", "$9.50", "$9.02", "$8.83"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26598,7 +26639,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$5.16", "$5.03", "$4.52", "$4.38", "$4.10", "$3.90"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$5.82", "$5.87", "$5.33", "$5.17", "$4.88", "$4.67"] },
         { label: "White - Full Color 1 Location", prices: ["$7.08", "$7.48", "$6.89", "$6.70", "$6.37", "$6.14"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26651,7 +26692,8 @@ const products = [{
   ],
 
   images: [
-    "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.webp"
+    "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCMS1015/IBCMS1015-Promo1.webp"
   ],
 
   specs: {
@@ -26677,7 +26719,7 @@ const products = [{
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "Full Color Imprint", prices: ["$9.56", "$10.71", "$9.65", "$8.76", "$7.87", "$7.10"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26741,13 +26783,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+     spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "1 Color Imprint", prices: ["$27.67", "$29.25", "$27.07", "$25.87", "$24.69", "$22.90"] },
         { label: "2 Color Imprint", prices: ["$28.33", "$30.09", "$27.88", "$26.67", "$25.47", "$23.67"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$29.59", "$31.70", "$29.43", "$28.20", "$26.96", "$25.14"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26829,7 +26872,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.13", "$8.81", "$7.28", "$7.12", "$6.75", "$6.59"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.79", "$9.65", "$8.09", "$7.91", "$7.53", "$7.36"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$10.05", "$11.26", "$9.64", "$9.44", "$9.02", "$8.83"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26886,6 +26929,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Ivory.webp",
     "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM8000/IBCM8000-Blue.webp"
   ],
 
@@ -26914,7 +26958,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.98", "$8.47", "$7.01", "$6.85", "$6.57", "$6.44"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.64", "$9.31", "$7.82", "$7.65", "$7.35", "$7.21"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$9.90", "$10.92", "$9.37", "$9.18", "$8.84", "$8.68"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -26974,6 +27018,7 @@ const products = [{
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Cream.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1026/IBCM1026-Mint.webp",
@@ -27005,7 +27050,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.87", "$4.49", "$4.25", "$3.98", "$3.85", "$3.32"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.53", "$5.33", "$5.06", "$4.77", "$4.63", "$4.08"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$5.80", "$6.94", "$6.62", "$6.30", "$6.12", "$5.56"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27062,6 +27107,7 @@ const products = [{
 
   images: [
       "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-White.webp",
+      "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Promo1.webp",
       "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Cobalt Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1034/IBCM1034-Grey.webp"
@@ -27092,7 +27138,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.82", "$6.89", "$5.89", "$5.71", "$5.30", "$5.18"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.48", "$7.73", "$6.70", "$6.50", "$6.08", "$5.95"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$7.74", "$9.34", "$8.25", "$8.03", "$7.58", "$7.42"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27150,6 +27196,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Cream.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1033/IBCM1033-Pink.webp",
@@ -27181,7 +27228,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$3.87", "$4.68", "$4.25", "$3.98", "$3.81", "$3.48"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.53", "$5.52", "$5.06", "$4.77", "$4.59", "$4.25"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$5.80", "$7.13", "$6.62", "$6.30", "$6.08", "$5.72"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27238,6 +27285,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-White.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Black.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Grey.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1024/IBCM1024-Navy.webp"
@@ -27268,7 +27316,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$4.27", "$5.01", "$4.68", "$4.48", "$4.17", "$3.83"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.93", "$5.85", "$5.49", "$5.28", "$4.95", "$4.60"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$6.19", "$7.46", "$7.05", "$6.81", "$6.45", "$6.07"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27336,7 +27384,7 @@ const products = [{
         type: "Case",
         qtyPerBox: "72 pcs",
         boxWeight: "27.55 Lbs",
-        boxDims: 'Contact for Details'
+        boxDims: '15.4"x1 2.1"x 9.1"'
       }
     ]
   },
@@ -27349,7 +27397,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$4.94", "$4.69", "$3.98", "$3.66", "$3.45", "$3.14"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$5.60", "$5.53", "$4.79", "$4.46", "$4.23", "$3.90"] },
         { label: "White - Full Color 1 Location", prices: ["$6.86", "$7.14", "$6.35", "$5.99", "$5.72", "$5.38"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27417,7 +27465,7 @@ const products = [{
         type: "Case",
         qtyPerBox: "96 pcs",
         boxWeight: "34 Lbs",
-        boxDims: 'Contact for details'
+        boxDims: '15.4"x12.1"x9.1"'
       }
     ]
   },
@@ -27430,7 +27478,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$5.12", "$4.97", "$4.44", "$4.32", "$4.10", "$3.96"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$5.78", "$5.81", "$5.25", "$5.12", "$4.88", "$4.72"] },
         { label: "White - Full Color 1 Location", prices: ["$7.04", "$7.42", "$6.80", "$6.65", "$6.37", "$6.20"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27509,7 +27557,7 @@ const products = [{
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "Full Color Printing", prices: ["$9.78", "$10.99", "$9.92", "$9.16", "$8.13", "$7.49"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27559,6 +27607,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Black.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Cream.webp",
     "assets/assets/images/products/ceramic mugs/IBCM1037/IBCM1037-Green.webp",
@@ -27591,7 +27640,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.03", "$7.21", "$5.87", "$5.39", "$4.88", "$4.34"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$7.58", "$7.91", "$6.55", "$6.05", "$5.53", "$4.98"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$8.68", "$9.31", "$7.90", "$7.38", "$6.83", "$6.26"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27673,7 +27722,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$9.74", "$10.85", "$9.03", "$8.37", "$7.79", "$7.54"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$10.40", "$11.69", "$9.84", "$9.16", "$8.57", "$8.31"] },
         { label: "White - Full Color 1 Location", prices: ["$11.66", "$13.30", "$11.39", "$10.69", "$10.06", "$9.78"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27748,14 +27797,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
-        { label: "White - 1 Color Imprint - 1 Location", prices: ["$14.62", "$14.69", "$11.60", "$11.24", "$10.34", "$9.72"] },
-        { label: "White - 2 Color Imprint - 1 Location", prices: ["$15.28", "$15.53", "$12.41", "$12.04", "$11.12", "$10.48"] },
-        { label: "White - Full Color 1 Location", prices: ["$16.54", "$17.14", "$13.96", "$13.57", "$12.61", "$11.96"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$7.32", "$7.35", "$5.81", "$5.63", "$5.17", "$4.86"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$7.98", "$8.19", "$6.62", "$6.42", "$5.95", "$5.63"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.24", "$9.80", "$8.17", "$7.95", "$7.45", "$7.10"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27837,7 +27886,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$12.49", "$13.29", "$10.25", "$9.83", "$9.17", "$8.56"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$13.15", "$14.13", "$11.06", "$10.63", "$9.95", "$9.33"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$14.41", "$15.74", "$12.61", "$12.16", "$11.44", "$10.80"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -27912,13 +27961,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "1 Color Imprint", prices: ["$27.67", "$29.25", "$27.07", "$25.87", "$24.69", "$22.90"] },
         { label: "2 Color Imprint", prices: ["$28.33", "$30.09", "$27.88", "$26.67", "$25.47", "$23.67"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$29.59", "$31.70", "$29.43", "$28.20", "$26.96", "$25.14"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28000,7 +28050,7 @@ const products = [{
         { label: "White - 1 Color Imprint - 1 Location", prices: ["$5.16", "$5.03", "$4.25", "$4.06", "$3.84", "$3.75"] },
         { label: "White - 2 Color Imprint - 1 Location", prices: ["$5.82", "$5.87", "$5.06", "$4.85", "$4.62", "$4.52"] },
         { label: "White - Full Color 1 Location", prices: ["$7.08", "$7.48", "$6.62", "$6.38", "$6.11", "$5.99"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28075,13 +28125,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "1 Color Imprint", prices: ["$27.67", "$29.25", "$27.07", "$25.87", "$24.69", "$22.90"] },
         { label: "2 Color Imprint", prices: ["$28.33", "$30.09", "$27.88", "$26.67", "$25.47", "$23.67"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$29.59", "$31.70", "$29.43", "$28.20", "$26.96", "$25.14"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28163,7 +28214,7 @@ const products = [{
         { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$14.62", "$14.69", "$11.60", "$11.24", "$10.34", "$9.72"] },
         { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$15.28", "$15.53", "$12.41", "$12.04", "$11.12", "$10.48"] },
         { label: "Colors - Full Color - 1 Location", prices: ["$16.54", "$17.14", "$13.96", "$13.57", "$12.61", "$11.96"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28220,6 +28271,7 @@ const products = [{
 
   images: [
     "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Natural.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Promo1.webp",
     "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Blue.webp",
     "assets/assets/images/products/ceramic mugs/IBCM977/IBCM977-Brown.webp"
   ],
@@ -28242,13 +28294,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "1 Color Imprint", prices: ["$6.48", "$6.99", "$6.28", "$5.92", "$5.53", "$5.31"] },
         { label: "2 Color Imprint", prices: ["$7.14", "$7.83", "$7.09", "$6.72", "$6.31", "$6.08"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.40", "$9.44", "$8.64", "$8.25", "$7.80", "$7.55"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28285,7 +28338,7 @@ const products = [{
   templatesAvailable: false,
   name: "Lincoln Plastic Tumbler with Handle - 40 oz",
   code: "IBTM255",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.webp",
   slug: "lincoln-plastic-tumbler-with-handle-40-oz",
   category: "Travel Mugs",
   material: "AS & PP",
@@ -28294,22 +28347,23 @@ const products = [{
   hideGusset: true,
   price: 9.30,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.webp",
   description: "40 oz single-wall plastic tumbler with handle, screw-on lid, and straw. Keeps your drinks cold on the go.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg" },
-    { name: "Olive Green", hex: "#808000", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Olive Green.jpg" },
-    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Slate Blue.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.webp" },
+    { name: "Olive Green", hex: "#808000", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Olive Green.webp" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Slate Blue.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM255/IBTM255-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Olive Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Slate Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-White.jpg"
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Olive Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-Slate Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM255/IBTM255-White.webp"
   ],
 
   specs: {
@@ -28330,13 +28384,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$9.78", "$11.97", "$11.27", "$11.00", "$10.60", "$10.36"] },
         { label: "2 Color Imprint", prices: ["$10.44", "$12.81", "$12.08", "$11.80", "$11.38", "$11.12"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.70", "$14.42", "$13.64", "$13.33", "$12.87", "$12.60"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28373,7 +28428,7 @@ const products = [{
   templatesAvailable: false,
   name: "Alps Stainless Steel Travel Mug with Handle - 40 oz",
   code: "IBTM387",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Featured.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Featured.webp",
   slug: "alps-stainless-steel-travel-mug-with-handle-40-oz",
   category: "Travel Mugs",
   material: "Inner: 304 Stainless Steel; Outer: 201 Stainless Steel",
@@ -28382,32 +28437,33 @@ const products = [{
   hideGusset: true,
   price: 17.05,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.webp",
   description: "40 oz double-wall vacuum-insulated stainless steel travel mug with handle, slider lid, and straw. Keeps drinks hot for 6 hours and cold for 10.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Black.jpg" },
-    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Charcoal.jpg" },
-    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Light Pink.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Navy Blue.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Silver.jpg" },
-    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Slate Blue.jpg" },
-    { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Tan.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Black.webp" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Charcoal.webp" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Light Pink.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Navy Blue.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Silver.webp" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Slate Blue.webp" },
+    { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Tan.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Charcoal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Light Pink.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Navy Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Slate Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Tan.jpg",
-    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-White.jpg"
+      "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.webp",
+      "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Charcoal.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Light Pink.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Slate Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Tan.webp",
+    "assets/assets/images/products/travel mugs/IBTM387/IBTM387-White.webp"
   ],
 
   specs: {
@@ -28434,7 +28490,8 @@ const products = [{
       rows: [
         { label: "1 Color Imprint", prices: ["$20.71", "$25.80", "$24.18", "$19.58", "$18.53", "$17.95"] },
         { label: "2 Color Imprint", prices: ["$21.37", "$26.64", "$24.99", "$20.38", "$19.31", "$18.71"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$22.64", "$28.25", "$26.54", "$21.91", "$20.80", "$20.19"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28479,30 +28536,31 @@ const products = [{
   hideGusset: true,
   price: 5.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.webp",
   description: "16 oz insulated travel mug with a stainless steel outer wall, color accent, and spill-prevention slide lock lid. BPA-free.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Blue.jpg" },
-    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Green.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Lime Green.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Orange.jpg" },
-    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Pink.jpg" },
-    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Red.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Blue.webp" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Green.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Lime Green.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Orange.webp" },
+    { name: "Pink", hex: "#FFC0CB", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Pink.webp" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Red.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.jpg",
-    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Lime Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Orange.jpg",
-    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Pink.jpg",
-    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Red.jpg"
+      "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Purple.webp",
+      "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Lime Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Orange.webp",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Pink.webp",
+    "assets/assets/images/products/travel mugs/IBTM58/IBTM58-Red.webp"
   ],
 
   specs: {
@@ -28523,13 +28581,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$6.18", "$7.71", "$7.28", "$6.62", "$6.06", "$5.27"] },
         { label: "2 Color Imprint", prices: ["$6.84", "$8.55", "$8.09", "$7.42", "$6.84", "$6.04"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.11", "$10.16", "$9.64", "$8.95", "$8.33", "$7.51"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28574,18 +28633,18 @@ const products = [{
   hideGusset: true,
   price: 11.29,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.webp",
   description: "16 oz double-wall stainless steel travel tumbler with spill-prevention slide lock lid and a ribbed outer ring base design.",
   popular: false,
 
   colors: [
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.jpg" }
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Promo1.jpg",
-    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Promo2.jpg"
+    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM299/IBTM299-Promo2.webp"
   ],
 
   specs: {
@@ -28606,13 +28665,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$17.55", "$17.85", "$16.00", "$14.75", "$14.37", "$11.88"] },
         { label: "2 Color Imprint", prices: ["$18.21", "$18.69", "$16.81", "$15.55", "$15.15", "$12.65"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$19.47", "$20.30", "$18.36", "$17.08", "$16.64", "$14.12"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28644,11 +28704,11 @@ const products = [{
   }
 },
 {
-  id: "ibsw47",
+  id: "ibtm47",
   isBelpromo: true,
   templatesAvailable: false,
   name: "Shelby Stemless Wine Glass with Lid - 12 oz",
-  code: "IBSW47",
+  code: "IBTM47",
   slug: "shelby-stemless-wine-glass-with-lid-12-oz",
   category: "Travel Mugs",
   material: "Stainless Steel, Plastic",
@@ -28657,42 +28717,43 @@ const products = [{
   hideGusset: true,
   price: 6.02,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.webp",
   description: "12 oz stemless wine glass with a stainless steel exterior and clear plastic lid, perfect for on-the-go sipping. BPA free.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Blue.jpg" },
-    { name: "Fuchsia", hex: "#FF00FF", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Fuchsia.jpg" },
-    { name: "Gold", hex: "#FFD700", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Gold.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Orange.jpg" },
-    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Purple.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Red.jpg" },
-    { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Rose Gold.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Silver.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Teal.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Blue.webp" },
+    { name: "Fuchsia", hex: "#FF00FF", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Fuchsia.webp" },
+    { name: "Gold", hex: "#FFD700", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Gold.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Orange.webp" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Purple.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Red.webp" },
+    { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Rose Gold.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Silver.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Teal.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Fuchsia.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Gold.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Orange.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Purple.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Rose Gold.jpg"
+      "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Lime Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Fuchsia.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Gold.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Orange.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Purple.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Red.webp",
+    "assets/assets/images/products/travel mugs/IBTM47/IBTM47-Rose Gold.webp"
   ],
 
   specs: {
     weight: "12 oz",
     imprintPlacement: "Front Side, Back Side or Both Side",
     specSample: "Free Spec Sample with Free Ground Shipping",
-    itemNo: "IBSW47",
+    itemNo: "IBTM47",
     material: "Stainless Steel, Plastic",
     printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
     packagingOptions: [
@@ -28706,13 +28767,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$12.17", "$14.34", "$12.02", "$10.29", "$8.76", "$6.34"] },
         { label: "2 Color Imprint", prices: ["$12.83", "$15.18", "$12.83", "$11.09", "$9.54", "$7.10"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$14.09", "$16.79", "$14.38", "$12.62", "$11.04", "$8.58"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28757,26 +28819,27 @@ const products = [{
   hideGusset: true,
   price: 10.09,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.webp",
   description: "24 oz double-wall plastic tumbler with handle, screw-on lid, and color silicone spout. Straw included.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Blue.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Grey.jpg" },
-    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Light Pink.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Blue.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Grey.webp" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Light Pink.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Grey.jpg",
-    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Light Pink.jpg",
-    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Red.jpg"
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Grey.webp",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Light Pink.webp",
+    "assets/assets/images/products/travel mugs/IBTM256/IBTM256-Red.webp"
   ],
 
   specs: {
@@ -28797,12 +28860,13 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$11.28", "$13.29", "$11.81", "$11.29", "$10.86", "$10.61"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$13.20", "$15.74", "$14.18", "$13.62", "$13.13", ""] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28847,24 +28911,25 @@ const products = [{
   hideGusset: true,
   price: 19.21,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.webp",
   description: "40 oz double-wall stainless steel travel mug with handle and straw lid. Keeps drinks hot for 4 hours and cold for 8 hours.",
   popular: false,
 
   colors: [
-    { name: "Ash", hex: "#B2BEB5", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Ash.jpg" },
-    { name: "Jade Green", hex: "#00A86B", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Jade Green.jpg" },
-    { name: "Lavender", hex: "#E6E6FA", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Lavender.jpg" },
-    { name: "Powder Blue", hex: "#B0E0E6", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.jpg" },
-    { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Tan.jpg" }
+    { name: "Ash", hex: "#B2BEB5", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Ash.webp" },
+    { name: "Jade Green", hex: "#00A86B", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Jade Green.webp" },
+    { name: "Lavender", hex: "#E6E6FA", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Lavender.webp" },
+    { name: "Powder Blue", hex: "#B0E0E6", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.webp" },
+    { name: "Tan", hex: "#D2B48C", image: "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Tan.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Ash.jpg",
-    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Jade Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Lavender.jpg",
-    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Tan.jpg"
+      "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Powder Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Ash.webp",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Jade Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Lavender.webp",
+    "assets/assets/images/products/travel mugs/IBTM396/IBTM396-Tan.webp"
   ],
 
   specs: {
@@ -28885,13 +28950,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+           spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$29.48", "$26.11", "$24.50", "$23.25", "$20.61", "$20.22"] },
         { label: "2 Color Imprint", prices: ["$30.14", "$26.95", "$25.31", "$24.05", "$21.39", "$20.99"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$31.41", "$28.56", "$26.87", "$25.58", "$22.88", "$22.46"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -28936,28 +29002,29 @@ const products = [{
   hideGusset: true,
   price: 11.74,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.webp",
   description: "30 oz stainless steel travel mug with plastic liner, carrying handle, and wide mouth for easy cleaning. BPA-free.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Black.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Grey.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Navy Blue.jpg" },
-    { name: "Sage Green", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Sage.jpg" },
-    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Slate.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Black.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Grey.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Navy Blue.webp" },
+    { name: "Sage Green", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Sage.webp" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Slate.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM402/IBTM402-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.jpg",
-    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Grey.jpg",
-    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Navy Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Sage.jpg",
-    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Slate.jpg"
+      "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Cream.webp",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Grey.webp",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Sage.webp",
+    "assets/assets/images/products/travel mugs/IBTM402/IBTM402-Slate.webp"
   ],
 
   specs: {
@@ -28978,13 +29045,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$11.98", "$14.63", "$13.70", "$13.23", "$12.68", "$12.35"] },
         { label: "2 Color Imprint", prices: ["$12.53", "$15.33", "$14.38", "$13.90", "$13.33", "$12.99"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$13.63", "$16.73", "$15.73", "$15.23", "$14.63", "$14.27"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29029,28 +29097,29 @@ const products = [{
   hideGusset: true,
   price: 9.88,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.webp",
   description: "40 oz travel mug with stainless steel exterior and plastic interior, slider transparent lid, straw included, and EVA bottom pad.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Blue.jpg" },
-    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Charcoal.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Silver.jpg" },
-    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Slate Blue.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Blue.webp" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Charcoal.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Silver.webp" },
+    { name: "Slate Blue", hex: "#6A5ACD", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Slate Blue.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM388/IBTM388-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Charcoal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Slate Blue.jpg",
+      "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Teal.webp",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Charcoal.webp",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM388/IBTM388-Slate Blue.webp",
   ],
 
   specs: {
@@ -29071,13 +29140,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$12.30", "$14.95", "$14.39", "$13.57", "$11.14", "$10.41"] },
         { label: "2 Color Imprint", prices: ["$12.96", "$15.79", "$15.20", "$14.36", "$11.92", "$11.17"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$14.22", "$17.40", "$16.75", "$15.89", "$13.42", "$12.65"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29114,7 +29184,7 @@ const products = [{
   templatesAvailable: false,
   name: "Largo Stemless Wine Glass with Lid - 11 oz",
   code: "IBSW46",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Featured.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Featured.webp",
   slug: "largo-stemless-wine-glass-with-lid-11-oz",
   category: "Travel Mugs",
   material: "304 Stainless Steel",
@@ -29123,36 +29193,36 @@ const products = [{
   hideGusset: true,
   price: 10.50,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.webp",
   description: "11 oz double-wall vacuum-insulated stemless wine glass with popular stainless steel finish. BPA free, keeps drinks hot for 3 hours and cold for 5.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.jpg" },
-    { name: "Fuchsia", hex: "#FF00FF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.jpg" },
-    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.jpg" },
-    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.jpg" },
-    { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.webp" },
+    { name: "Fuchsia", hex: "#FF00FF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.webp" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.webp" },
+    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.webp" },
+    { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.jpg"
+      "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.webp"
   ],
 
   specs: {
@@ -29179,7 +29249,7 @@ const products = [{
       rows: [
         { label: "1 Color Imprint", prices: ["$14.83", "$18.77", "$15.75", "$13.50", "$11.48", "$11.05"] },
         { label: "2 Color Imprint", prices: ["$15.49", "$19.61", "$16.56", "$14.30", "$12.26", "$11.81"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29216,7 +29286,7 @@ const products = [{
   templatesAvailable: false,
   name: "Bronx Stainless Travel Mug - 30 oz",
   code: "IBTM389",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.webp",
   slug: "bronx-stainless-travel-mug-30-oz",
   category: "Travel Mugs",
   material: "Stainless Steel",
@@ -29225,26 +29295,27 @@ const products = [{
   hideGusset: true,
   price: 15.82,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.webp",
   description: "30 oz stainless steel travel mug with carrying handle, double-wall vacuum insulation, and wide mouth for easy cleaning.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Black.jpg" },
-    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.jpg" },
-    { name: "Light Grey", hex: "#D3D3D3", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Light Grey.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Navy Blue.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Black.webp" },
+    { name: "Cream", hex: "#FFFDD0", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.webp" },
+    { name: "Light Grey", hex: "#D3D3D3", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Light Grey.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Navy Blue.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.jpg",
-    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Light Grey.jpg",
-    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Navy Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Teal.jpg"
+      "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Cream.webp",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Light Grey.webp",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM389/IBTM389-Teal.webp"
   ],
 
   specs: {
@@ -29265,13 +29336,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$16.37", "$20.54", "$19.31", "$17.88", "$17.29", "$16.65"] },
         { label: "2 Color Imprint", prices: ["$17.03", "$21.38", "$20.12", "$18.67", "$18.07", "$17.42"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$18.29", "$22.99", "$21.67", "$20.20", "$19.57", "$18.89"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29316,26 +29388,27 @@ const products = [{
   hideGusset: true,
   price: 6.94,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.webp",
   description: "23 oz travel mug with plastic outer wall and stainless steel interior, matte finish, closure lid with straw opening, and included straw.",
   popular: false,
 
   colors: [
-    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Black.jpg" },
-    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Charcoal.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Navy Blue.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Silver.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-White.jpg" }
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Black.webp" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Charcoal.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Navy Blue.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Silver.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM398/IBTM398-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Charcoal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Navy Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Silver.jpg"
+      "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Army Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Charcoal.webp",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM398/IBTM398-Silver.webp"
   ],
 
   specs: {
@@ -29361,7 +29434,7 @@ const products = [{
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$15.30", "$17.70", "$15.53", "$13.90", "$12.35", "$7.30"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29406,26 +29479,27 @@ const products = [{
   hideGusset: true,
   price: 15.16,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.webp",
   description: "20 oz double-wall vacuum insulated stainless steel tumbler with clear plastic sip lid. Keeps drinks hot for 4 hours and cold for 6.",
   popular: false,
 
   colors: [
-      { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Blue.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Red.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Silver.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-White.jpg" }
+      { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Blue.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Red.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Silver.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM350/IBTM350-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Silver.jpg"
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Charcoal.webp",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Red.webp",
+    "assets/assets/images/products/travel mugs/IBTM350/IBTM350-Silver.webp"
   ],
 
   specs: {
@@ -29452,7 +29526,8 @@ const products = [{
       rows: [
         { label: "1 Color Imprint", prices: ["$15.27", "$17.67", "$16.98", "$16.66", "$16.24", "$15.95"] },
         { label: "2 Color Imprint", prices: ["$15.93", "$18.51", "$17.79", "$17.46", "$17.02", "$16.72"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$17.19", "$20.12", "$19.35", "$18.99", "$18.51", "$18.19"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29497,26 +29572,27 @@ const products = [{
   hideGusset: true,
   price: 8.73,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.webp",
   description: "24 oz double-wall plastic tumbler with a screw-on lid and straw included. Wide mouth for easy cleaning and pouring.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Black.jpg" },
-    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Charcoal.jpg" },
-    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Light Blue.jpg" },
-    { name: "Lilac", hex: "#C8A2C8", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.jpg" },
-    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Mint.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Black.webp" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Charcoal.webp" },
+    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Light Blue.webp" },
+    { name: "Lilac", hex: "#C8A2C8", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.webp" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Mint.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM390/IBTM390-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.jpg",
-    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Charcoal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Light Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Mint.jpg"
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Lilac.webp",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Charcoal.webp",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Light Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM390/IBTM390-Mint.webp"
   ],
 
   specs: {
@@ -29537,13 +29613,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$17.58", "$14.60", "$13.19", "$11.52", "$9.78", "$9.19"] },
         { label: "2 Color Imprint", prices: ["$18.24", "$15.44", "$14.00", "$12.32", "$10.56", "$9.96"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$19.50", "$17.05", "$15.55", "$13.85", "$12.05", "$11.43"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29588,26 +29665,27 @@ const products = [{
   hideGusset: true,
   price: 9.79,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.webp",
   description: "25 oz double-wall plastic tumbler with a rubberized finish, dome screw-on lid, and included straw.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Grey.jpg" },
-    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Blue.jpg" },
-    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Pink.jpg" },
-    { name: "Powder White", hex: "#F8F8FF", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Powder White.jpg" },
-    { name: "Saige Green", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Saige Green.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Grey.webp" },
+    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Blue.webp" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Pink.webp" },
+    { name: "Powder White", hex: "#F8F8FF", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Powder White.webp" },
+    { name: "Saige Green", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Saige Green.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Grey.jpg",
-    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Pink.jpg",
-    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Powder White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Saige Green.jpg"
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Grey.webp",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Light Pink.webp",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Powder White.webp",
+    "assets/assets/images/products/travel mugs/IBTM400/IBTM400-Saige Green.webp"
   ],
 
   specs: {
@@ -29634,7 +29712,8 @@ const products = [{
       rows: [
         { label: "1 Color Imprint", prices: ["$11.32", "$12.59", "$11.27", "$10.84", "$10.49", "$10.30"] },
         { label: "2 Color Imprint", prices: ["$11.98", "$13.43", "$12.08", "$11.64", "$11.27", "$11.07"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$13.24", "$15.04", "$13.64", "$13.17", "$12.77", "$12.54"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29679,22 +29758,23 @@ const products = [{
   hideGusset: true,
   price: 7.37,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.webp",
   description: "20 oz travel mug with a stainless steel outer wall, plastic interior, and transparent black slider lid. Includes a matching color silicone straw.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Black.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Navy Blue.jpg" },
-    { name: "Sage", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Sage.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Black.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Navy Blue.webp" },
+    { name: "Sage", hex: "#8A9A5B", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Sage.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Navy Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Sage.jpg"
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM386/IBTM386-Sage.webp"
   ],
 
   specs: {
@@ -29715,13 +29795,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$8.97", "$10.93", "$10.38", "$9.24", "$8.02", "$7.76"] },
         { label: "2 Color Imprint", prices: ["$9.63", "$11.77", "$11.19", "$10.04", "$8.80", "$8.52"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.89", "$13.38", "$12.74", "$11.57", "$10.30", "$10.00"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29766,18 +29847,19 @@ const products = [{
   hideGusset: true,
   price: 5.43,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.webp",
   description: "22 oz double-wall plastic tumbler good for hot and cold liquids. BPA & BSA free, made in the USA.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-Black.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-Black.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM405/IBTM405-Black.jpg"
+    "assets/assets/images/products/travel mugs/IBTM405/IBTM405-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM405/IBTM405-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM405/IBTM405-Black.webp"
   ],
 
   specs: {
@@ -29798,13 +29880,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$10.51", "$11.69", "$10.46", "$10.09", "$9.82", "$5.71"] },
         { label: "2 Color Imprint", prices: ["$11.17", "$12.53", "$11.27", "$10.89", "$10.60", "$6.48"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$12.43", "$14.14", "$12.83", "$12.42", "$12.09", "$7.95"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29849,22 +29932,23 @@ const products = [{
   hideGusset: true,
   price: 8.81,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.webp",
   description: "22 oz single-wall stainless steel tumbler with a matte coating, silicone lid, and stainless steel straw with silicone tip.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Black.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Navy Blue.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Black.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Navy Blue.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM399/IBTM399-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Navy Blue.jpg",
+      "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Teal.webp",
+      "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM399/IBTM399-Navy Blue.webp",
   ],
 
   specs: {
@@ -29885,13 +29969,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$9.96", "$11.75", "$10.46", "$9.91", "$9.56", "$9.27"] },
         { label: "2 Color Imprint", prices: ["$10.62", "$12.59", "$11.27", "$10.71", "$10.34", "$10.04"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.88", "$14.20", "$12.83", "$12.24", "$11.83", "$11.51"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -29936,26 +30021,27 @@ const products = [{
   hideGusset: true,
   price: 6.39,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.webp",
   description: "16 oz travel mug with a clear plastic slider lid, plastic interior wall, stainless steel outer wall, and EVA bottom pad.",
   popular: false,
 
   colors: [
-    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Army Green.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Black.jpg" },
-    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Navy Blue.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Silver.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-White.jpg" }
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Army Green.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Black.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Navy Blue.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Silver.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM395/IBTM395-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Army Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Navy Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Silver.jpg"
+      "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Red.webp",
+      "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Army Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM395/IBTM395-Silver.webp"
   ],
 
   specs: {
@@ -29976,13 +30062,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$15.81", "$12.66", "$11.57", "$10.76", "$9.30", "$6.72"] },
         { label: "2 Color Imprint", prices: ["$16.47", "$13.50", "$12.38", "$11.56", "$10.08", "$7.49"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$17.73", "$15.11", "$13.93", "$13.09", "$11.57", "$8.96"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30027,24 +30114,25 @@ const products = [{
   hideGusset: true,
   price: 6.94,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.webp",
   description: "10 oz double-wall stainless steel mug with a brushed finish and a convenient carabiner handle for on-the-go use.",
   popular: false,
 
   colors: [
-    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Army Green.jpg" },
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Blue.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Silver.jpg" }
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Army Green.webp" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Blue.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Army Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Promo1.jpg",
-    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Promo2.jpg"
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Army Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM332/IBTM332-Promo2.webp"
   ],
 
   specs: {
@@ -30065,13 +30153,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$8.02", "$8.22", "$7.87", "$7.70", "$7.48", "$7.31"] },
         { label: "2 Color Imprint", prices: ["$8.68", "$9.06", "$8.68", "$8.50", "$8.26", "$8.08"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.94", "$10.67", "$10.23", "$10.03", "$9.75", "$9.55"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30103,11 +30192,11 @@ const products = [{
   }
 },
 {
-  id: "ibtm24",
+  id: "ibtm224",
   isBelpromo: true,
   templatesAvailable: false,
   name: "2GoCup Plastic Tumbler - 16 oz",
-  code: "IBTM24",
+  code: "IBTM224",
   slug: "2gocup-plastic-tumbler-16-oz",
   category: "Travel Mugs",
   material: "Plastic",
@@ -30116,18 +30205,19 @@ const products = [{
   hideGusset: true,
   price: 2.97,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.webp",
   description: "16 oz BPA-free double-walled plastic tumbler with a screw-on lid. Handwash recommended for imprinted items.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Red.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Red.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Red.jpg"
+    "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Red.webp"
   ],
 
   specs: {
@@ -30148,13 +30238,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+           spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
-        { label: "1 Color Imprint", prices: ["$9.41", "$9.67", "$9.03", "$8.33", "$7.90", "$6.26"] },
-        { label: "2 Color Imprint", prices: ["$10.07", "$10.51", "$9.84", "$9.12", "$8.68", "$7.03"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "1 Color Imprint", prices: ["$4.71", "$4.84", "$4.52", "$4.16", "$3.95", "$3.14"] },
+        { label: "2 Color Imprint", prices: ["$5.37", "$5.68", "$5.33", "$4.96", "$4.73", "$3.90"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.63", "$7.29", "$6.89", "$6.49", "$6.23", "$5.38"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30199,22 +30290,23 @@ const products = [{
   hideGusset: true,
   price: 13.20,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.webp",
   description: "11 oz double-wall stainless steel stemless wine glass. BPA free, recommended hand wash only (lid not included).",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Black.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Silver.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Black.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Silver.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Promo1.jpg",
-    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Promo2.jpg"
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM41/IBTM41-Promo2.webp"
   ],
 
   specs: {
@@ -30235,13 +30327,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
         { label: "1 Color Imprint", prices: ["$15.17", "$17.29", "$15.78", "$14.96", "$14.37", "$13.89"] },
         { label: "2 Color Imprint", prices: ["$15.83", "$18.13", "$16.59", "$15.76", "$15.15", "$14.66"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$17.09", "$19.74", "$18.14", "$17.29", "$16.64", "$16.13"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30278,7 +30371,7 @@ const products = [{
   templatesAvailable: false,
   name: "Kenai Powder Coated Travel Mug - 13.5 oz",
   code: "IBTM357",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Featured.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Featured.webp",
   slug: "kenai-powder-coated-travel-mug-13-5-oz",
   category: "Travel Mugs",
   material: "Stainless Exterior & Interior",
@@ -30287,26 +30380,27 @@ const products = [{
   hideGusset: true,
   price: 16.19,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.webp",
   description: "13.5 oz double-wall vacuum insulated stainless steel travel mug with handle and a transparent charcoal push lid.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Blue.jpg" },
-    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Red.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Blue.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Red.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.jpg",
-    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Promo1.jpg",
-    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Promo2.jpg"
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Grey.webp",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Red.webp",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM357/IBTM357-Promo2.webp"
   ],
 
   specs: {
@@ -30327,13 +30421,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$22.28", "$26.95", "$25.58", "$24.67", "$21.70", "$17.05"] },
         { label: "2 Color Imprint", prices: ["$22.94", "$27.79", "$26.39", "$25.47", "$22.48", "$17.82"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$24.20", "$29.40", "$27.95", "$27.00", "$23.97", "$19.29"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30370,7 +30465,7 @@ const products = [{
   templatesAvailable: false,
   name: "Double Wall Acrylic Tumbler With Straw - 16 oz",
   code: "IBTM161",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Featured.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Featured.webp",
   slug: "double-wall-acrylic-tumbler-with-straw-16-oz",
   category: "Travel Mugs",
   material: "Acrylic",
@@ -30379,32 +30474,34 @@ const products = [{
   hideGusset: true,
   price: 4.34,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.webp",
   description: "16 oz double-wall acrylic tumbler with matching straw and lid. Durable, BPA-free, and insulated.",
   popular: false,
 
   colors: [
-    { name: "Aqua", hex: "#00FFFF", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Aqua.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Blue.jpg" },
-    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Charcoal.jpg" },
-    { name: "Clear", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Clear.jpg" },
-    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.jpg" },
-    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Orange.jpg" },
-    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Purple.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Red.jpg" }
+    { name: "Aqua", hex: "#00FFFF", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Aqua.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Blue.webp" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Charcoal.webp" },
+    { name: "Clear", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Clear.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.webp" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Orange.webp" },
+    { name: "Purple", hex: "#7E57C2", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Purple.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Red.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Clear.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Aqua.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Promo1.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Charcoal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Promo2.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Orange.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Purple.jpg",
-    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Red.jpg",
+      "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Lime Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Clear.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Promo3.webp",
+
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Aqua.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Charcoal.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Promo2.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Orange.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Purple.webp",
+    "assets/assets/images/products/travel mugs/IBTM161/IBTM161-Red.webp",
   ],
 
   specs: {
@@ -30425,13 +30522,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$7.10", "$6.24", "$5.63", "$5.17", "$4.68", "$4.57"] },
         { label: "2 Color Imprint", prices: ["$7.76", "$7.08", "$6.44", "$5.97", "$5.46", "$5.34"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.02", "$8.69", "$7.99", "$7.50", "$6.96", "$6.81"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30468,7 +30566,7 @@ const products = [{
   templatesAvailable: false,
   name: "Stainless Steel Travel Mug - 12 oz",
   code: "IBTM7000",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Featured.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Featured.webp",
   slug: "stainless-steel-travel-mug-12-oz",
   category: "Travel Mugs",
   material: "Stainless Exterior / Plastic Tumbler",
@@ -30477,18 +30575,18 @@ const products = [{
   hideGusset: true,
   price: 6.45,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.webp",
   description: "12 oz travel mug with a stainless steel outer shell, double-wall plastic inner lining, and wide grip handle.",
   popular: false,
 
   colors: [
-    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.jpg" }
+    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.jpg",
-    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Promo1.jpg",
-    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Promo2.jpg"
+    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Stainless Steel.webp",
+    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM7000/IBTM7000-Promo2.webp"
   ],
 
   specs: {
@@ -30509,13 +30607,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$9.23", "$9.93", "$8.71", "$7.83", "$6.96", "$6.78"] },
         { label: "2 Color Imprint", prices: ["$9.89", "$10.77", "$9.52", "$8.63", "$7.74", "$7.55"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.15", "$12.38", "$11.07", "$10.16", "$9.23", "$9.02"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30560,21 +30659,22 @@ const products = [{
   hideGusset: true,
   price: 6.48,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.webp",
   description: "27 oz double-wall vacuum insulated stainless steel travel mug with an easy sip lid. BPA free, keeps drinks hot for 4 hours and cold for 8.",
   popular: false,
 
   colors: [
-    { name: "Pearl White", hex: "#F8F8FF", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Pearl White.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Teal.jpg" }
+    { name: "Pearl White", hex: "#F8F8FF", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Pearl White.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Teal.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Pearl White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Teal.jpg",
-    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Promo1.jpg"
+      "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Red.webp",
+      "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Promo2.webp",
+    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Pearl White.webp",
+    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Teal.webp",
+    "assets/assets/images/products/travel mugs/IBTM324/IBTM324-Promo1.webp"
   ],
 
   specs: {
@@ -30595,13 +30695,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
-        { label: "1 Color Imprint", prices: ["$19.70", "$21.80", "$18.28", "$15.65", "$14.17", "$13.64"] },
-        { label: "2 Color Imprint", prices: ["$20.36", "$22.64", "$19.09", "$16.45", "$14.95", "$14.41"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "1 Color Imprint", prices: ["$9.86", "$10.91", "$9.14", "$7.83", "$7.09", "$6.82"] },
+        { label: "2 Color Imprint", prices: ["$10.52", "$11.75", "$9.95", "$8.63", "$7.87", "$7.59"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.78", "$13.36", "$11.50", "$10.16", "$9.36", "$9.06"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30646,16 +30747,16 @@ const products = [{
   hideGusset: true,
   price: 8.81,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.webp",
   description: "16 oz stainless steel bistro mug with double-wall thermal plastic insulation and an easy grab-n-go wide grip handle.",
   popular: false,
 
   colors: [
-    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.jpg" }
+    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.jpg"
+    "assets/assets/images/products/travel mugs/IBTM22/IBTM22-Stainless Steel.webp"
   ],
 
   specs: {
@@ -30676,20 +30777,21 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$13.59", "$13.65", "$11.95", "$11.56", "$11.25", "$9.27"] },
         { label: "2 Color Imprint", prices: ["$14.25", "$14.49", "$12.76", "$12.36", "$12.03", "$10.04"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$15.51", "$16.10", "$14.31", "$13.89", "$13.52", "$11.51"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
       setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
-    },
+    },  
     blank: {
       label: "BLANK PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
@@ -30727,24 +30829,25 @@ const products = [{
   hideGusset: true,
   price: 6.68,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.webp",
   description: "16 oz travel mug with a plastic interior, stainless outer wall, and clear slider lid. Features an EVA bottom pad.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Blue.jpg" },
-    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Silver.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Blue.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Silver.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM391/IBTM391-White.webp" }
   ],
 
   images: [
-      "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.jpg",
-    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Blue.jpg",
-    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Silver.jpg"
+      "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Red.webp",
+      "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM391/IBTM391-Silver.webp"
   ],
 
   specs: {
@@ -30765,13 +30868,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$9.23", "$9.51", "$8.22", "$7.83", "$7.22", "$7.03"] },
         { label: "2 Color Imprint", prices: ["$9.89", "$10.35", "$9.03", "$8.63", "$8.00", "$7.80"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.15", "$11.96", "$10.58", "$10.16", "$9.49", "$9.27"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30808,7 +30912,7 @@ const products = [{
   templatesAvailable: false,
   name: "Stainless Steel Beer Cup - 16 oz",
   code: "IBTM270",
-  featureImage: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Featured.jpg",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Featured.webp",
   slug: "stainless-steel-beer-cup-16-oz",
   category: "Travel Mugs",
   material: "201 Stainless Steel",
@@ -30817,18 +30921,18 @@ const products = [{
   hideGusset: true,
   price: 5.66,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.webp",
   description: "16 oz stainless steel beer cup with a wide rim and powder-coated body, perfect for beverages on the go.",
   popular: false,
 
   colors: [
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.jpg" }
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.jpg",
-    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Promo1.jpg",
-    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Promo2.jpg"
+    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM270/IBTM270-Promo2.webp"
   ],
 
   specs: {
@@ -30849,13 +30953,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$8.42", "$8.58", "$7.88", "$7.65", "$7.28", "$6.02"] },
         { label: "2 Color Imprint", prices: ["$9.08", "$9.42", "$8.69", "$8.45", "$8.06", "$6.78"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.34", "$11.03", "$10.25", "$9.98", "$9.56", "$8.26"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30900,18 +31005,19 @@ const products = [{
   hideGusset: true,
   price: 4.03,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.webp",
   description: "16 oz double-wall insulated plastic travel mug with a flip lid and frosted color finishing. BPA free.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.jpg" },
-    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Teal.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Teal.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Teal.jpg"
+    "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM338/IBTM338-Teal.webp"
   ],
 
   specs: {
@@ -30932,13 +31038,13 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
-        { label: "1 Color Imprint", prices: ["$12.27", "$13.65", "$11.73", "$10.76", "$10.00", "$8.49"] },
-        { label: "2 Color Imprint", prices: ["$12.93", "$14.49", "$12.54", "$11.56", "$10.78", "$9.25"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "1 Color Imprint", prices: ["$6.14", "$6.83", "$5.87", "$5.39", "$5.01", "$4.25"] },
+        { label: "2 Color Imprint", prices: ["$6.80", "$7.67", "$6.68", "$6.18", "$5.79", "$5.02"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -30983,18 +31089,18 @@ const products = [{
   hideGusset: true,
   price: 2.32,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.webp",
   description: "14 oz acrylic insulated travel mug with a spill-prevention slide lock lid and an easy grab-n-go hook shaped handle.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Blue.png" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Blue.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Blue.png"
+    "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM14/IBTM14-Blue.webp"
   ],
 
   specs: {
@@ -31015,12 +31121,12 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
-        { label: "1 Color Imprint", prices: ["$8.61", "$9.21", "$7.67", "$7.45", "$6.40", "$4.88"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "1 Color Imprint", prices: ["$4.31", "$4.61", "$3.83", "$3.72", "$3.20", "$2.44"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -31065,20 +31171,21 @@ const products = [{
   hideGusset: true,
   price: 12.12,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.webp",
   description: "26 oz double-wall stainless steel vacuum tumbler with a screw-on plastic lid and stainless straw included.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Black.jpg" },
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Silver.jpg" },
-    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Black.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Silver.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.jpg",
-    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Silver.jpg"
+    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM394/IBTM394-Silver.webp"
   ],
 
   specs: {
@@ -31099,13 +31206,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$14.07", "$16.23", "$14.97", "$14.07", "$12.99", "$12.76"] },
         { label: "2 Color Imprint", prices: ["$14.73", "$17.07", "$15.78", "$14.87", "$13.77", "$13.53"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$15.99", "$18.68", "$17.33", "$16.40", "$15.26", "$15.00"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -31150,18 +31258,19 @@ const products = [{
   hideGusset: true,
   price: 6.94,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.webp",
   description: "15 oz insulated stainless steel travel mug with a plastic color screw-on lid and flip closure. Features a silicone wrap and black EVA bottom pad. BPA free.",
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.jpg" },
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Blue.jpg" }
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Blue.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.jpg",
-    "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Blue.jpg"
+    "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM377/IBTM377-Blue.webp"
   ],
 
   specs: {
@@ -31182,13 +31291,14 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$8.53", "$9.65", "$8.57", "$8.10", "$7.61", "$7.31"] },
         { label: "2 Color Imprint", prices: ["$9.19", "$10.49", "$9.38", "$8.90", "$8.39", "$8.08"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.45", "$12.10", "$10.94", "$10.43", "$9.88", "$9.55"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
@@ -31233,16 +31343,16 @@ const products = [{
   hideGusset: true,
   price: 4.03,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.webp",
   description: "32 oz double-wall plastic travel mug with a solid color outer wall, clear lid, and color coordinated sliding lid.",
   popular: false,
 
   colors: [
-    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.jpg" }
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.jpg"
+    "assets/assets/images/products/travel mugs/IBTM346/IBTM346-Blue.webp"
   ],
 
   specs: {
@@ -31263,18 +31373,19 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
-        { label: "1 Color Imprint", prices: ["$9.41", "$11.52", "$10.57", "$10.19", "$9.61", "$8.49"] },
-        { label: "2 Color Imprint", prices: ["$10.07", "$12.36", "$11.38", "$10.99", "$10.39", "$9.25"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "1 Color Imprint", prices: ["$4.71", "$5.77", "$5.29", "$5.09", "$4.81", "$4.25"] },
+        { label: "2 Color Imprint", prices: ["$5.37", "$6.61", "$6.10", "$5.89", "$5.59", "$5.02"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.63", "$8.22", "$7.65", "$7.42", "$7.09", "$6.49"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)",
+      setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
     },
     blank: {
@@ -31290,7 +31401,7 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -31314,16 +31425,16 @@ const products = [{
   hideGusset: true,
   price: 6.59,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.webp",
   description: "16 oz travel mug with a stainless steel exterior, plastic interior, and spill-proof slide lock lid.",
   popular: false,
 
   colors: [
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.jpg" }
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.jpg"
+    "assets/assets/images/products/travel mugs/IBTM245/IBTM245-Silver.webp"
   ],
 
   specs: {
@@ -31344,18 +31455,19 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+      spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$10.88", "$13.09", "$12.22", "$11.90", "$11.04", "$6.94"] },
         { label: "2 Color Imprint", prices: ["$11.54", "$13.93", "$13.03", "$12.70", "$11.82", "$7.71"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$12.80", "$15.54", "$14.58", "$14.23", "$13.31", "$9.18"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)",
+      setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
     },
     blank: {
@@ -31371,7 +31483,7 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -31395,16 +31507,16 @@ const products = [{
   hideGusset: true,
   price: 6.31,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.webp",
   description: "14 oz customized travel mug with a stainless steel outer shell, double-wall thermal plastic insulation, and wide grip handle.",
   popular: false,
 
   colors: [
-    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.jpg" }
+    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.jpg"
+    "assets/assets/images/products/travel mugs/IBTM38/IBTM38-Stainless Steel.webp"
   ],
 
   specs: {
@@ -31425,18 +31537,19 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$9.23", "$10.85", "$8.71", "$7.83", "$6.83", "$6.64"] },
         { label: "2 Color Imprint", prices: ["$9.89", "$11.69", "$9.52", "$8.63", "$7.61", "$7.41"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.15", "$13.30", "$11.07", "$10.16", "$9.10", "$8.88"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)",
+      setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
     },
     blank: {
@@ -31452,7 +31565,7 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -31476,16 +31589,16 @@ const products = [{
   hideGusset: true,
   price: 7.44,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.webp",
   description: "16 oz stainless steel travel mug with double-wall thermal plastic insulation, a spill-prevention slide lock lid, and a hook-shaped handle.",
   popular: false,
 
   colors: [
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.jpg" }
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.jpg"
+    "assets/assets/images/products/travel mugs/IBTM19/IBTM19-Silver.webp"
   ],
 
   specs: {
@@ -31506,18 +31619,19 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+     spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$11.17", "$11.61", "$10.60", "$10.17", "$9.56", "$7.83"] },
         { label: "2 Color Imprint", prices: ["$11.83", "$12.45", "$11.41", "$10.97", "$10.34", "$8.60"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$13.09", "$14.06", "$12.96", "$12.50", "$11.83", "$10.07"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)",
+      setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
     },
     blank: {
@@ -31533,7 +31647,7 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -31557,16 +31671,16 @@ const products = [{
   hideGusset: true,
   price: 6.45,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.webp",
   description: "14 oz double-wall stainless steel travel mug with thermal plastic insulation, a spill-prevention slide lock lid, and a hook-shaped handle.",
   popular: false,
 
   colors: [
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.jpg" }
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.jpg"
+    "assets/assets/images/products/travel mugs/IBTM18/IBTM18-Silver.webp"
   ],
 
   specs: {
@@ -31587,18 +31701,19 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$9.96", "$10.85", "$8.71", "$7.83", "$6.96", "$6.78"] },
         { label: "2 Color Imprint", prices: ["$10.62", "$11.69", "$9.52", "$8.63", "$7.74", "$7.55"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.88", "$13.30", "$11.07", "$10.16", "$9.23", "$9.02"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)",
+      setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
     },
     blank: {
@@ -31614,7 +31729,7 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -31638,16 +31753,16 @@ const products = [{
   hideGusset: true,
   price: 12.66,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.webp",
   description: "15 oz stainless steel mug with handle, double-wall construction, exterior brush polishing, and interior mirror polishing.",
   popular: false,
 
   colors: [
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.jpg" }
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.jpg"
+    "assets/assets/images/products/travel mugs/IBTM16/IBTM16-Silver.webp"
   ],
 
   specs: {
@@ -31668,18 +31783,19 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+        spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$14.95", "$18.47", "$17.21", "$16.16", "$15.28", "$13.32"] },
         { label: "2 Color Imprint", prices: ["$15.61", "$19.31", "$18.02", "$16.96", "$16.06", "$14.09"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$16.87", "$20.92", "$19.58", "$18.49", "$17.55", "$15.56"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)",
+      setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
     },
     blank: {
@@ -31695,7 +31811,7 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -31719,16 +31835,16 @@ const products = [{
   hideGusset: true,
   price: 13.26,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.jpg",
+  image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.webp",
   description: "17 oz large barrel stainless steel mug with handle, double-wall construction, and a brushed finish.",
   popular: false,
 
   colors: [
-    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.jpg" }
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.webp" }
   ],
 
   images: [
-    "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.jpg"
+    "assets/assets/images/products/travel mugs/IBTM320/IBTM320-Silver.webp"
   ],
 
   specs: {
@@ -31749,18 +31865,19 @@ const products = [{
   },
 
   pricing: {
-    spot: {
+       spot: {
       label: "PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$16.34", "$20.01", "$18.70", "$17.81", "$16.58", "$14.11"] },
         { label: "2 Color Imprint", prices: ["$17.00", "$20.85", "$19.51", "$18.61", "$17.36", "$14.87"] },
-        { label: "Add Location", prices: ["$1.25", "$1.25", "$1.25", "$1.25", "$1.25", "$1.25"] }
+        { label: "Colors - Full Color - 1 Location", prices: ["$18.26", "$22.46", "$21.06", "$20.14", "$18.85", "$16.35"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
       printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
       leadTime: "5-7 Business Days after Art Approval",
-      setupCharge: "$59.00 (G)",
+      setupCharge: "$56.25 (V)",
       repeatSetup: "Free"
     },
     blank: {
@@ -31776,7 +31893,749 @@ const products = [{
   },
 
   additionalCharges: {
-    setupCharge: "$59.00 (G)",
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm361",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Cork Bottom Travel Tumbler - 16 oz",
+  code: "IBTM361",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Featured.webp",
+  slug: "cork-bottom-travel-tumbler-16-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '7" H x 3" W',
+  imprint: '2"w x 2"h',
+  hideGusset: true,
+  price: 16.01,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM361/IBTM361-White.webp",
+  description: "16 oz double-wall vacuum insulated stainless steel travel tumbler with a cork bottom and powder-finished coating.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Black.webp" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Grey.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM361/IBTM361-White.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM361/IBTM361-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Grey.webp",
+    "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM361/IBTM361-Promo2.webp"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM361",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "17.4 lbs",
+        boxDims: '17.32" L x 17.32" W x 8.27" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$27.93", "$34.09", "$31.98", "$30.71", "$29.50", "$16.86"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    laserEngraving: { // Naya block
+      label: "LASER ENGRAVING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Laser Engraving", prices: ["$29.85", "$36.54", "$34.34", "$33.04", "$31.77", "$19.10"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$26.53", "$32.38", "$30.39", "$29.18", "$28.03", "$16.01"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm380",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Wells Stainless Steel Camper Mug - 13.5 oz",
+  code: "IBTM380",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Featured.webp",
+  slug: "wells-stainless-steel-camper-mug-13-5-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel, Plastic Interior",
+  size: '5" H x 3" W',
+  imprint: '1 Color: 2.5”W x 2.5”H || Laser: 1.50"”W x 2.25”H',
+  hideGusset: true,
+  price: 11.29,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Silver.webp",
+  description: "13.5 oz stainless camper mug with a press-in transparent lid, stainless exterior, plastic interior, and EVA bottom pad.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Black.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Navy Blue.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Silver.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM380/IBTM380-Promo2.webp"
+  ],
+
+  specs: {
+    weight: "13.5 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM380",
+    material: "Stainless Steel, Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "11.20 lbs",
+        boxDims: '19.69" x 15.16" x 6.10"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$10.95", "$13.71", "$13.03", "$12.44", "$12.12", "$11.88"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    laserEngraving: {
+      label: "LASER ENGRAVING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Laser Engraving", prices: ["$12.87", "$16.16", "$15.39", "$14.76", "$14.39", "$14.12"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$10.40", "$13.02", "$12.38", "$11.81", "$11.51", "$11.29"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm46",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Largo Stemless Wine Glass with Lid - 11 oz",
+  code: "IBTM46",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Featured.webp",
+  slug: "largo-stemless-wine-glass-with-lid-11-oz",
+  category: "Travel Mugs",
+  material: "304 Stainless Steel",
+  size: '3"W X 4.75"H X 2.25"B',
+  imprint: '2.00"W x 2.00"H',
+  hideGusset: true,
+  price: 10.50,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.webp",
+  description: "11 oz double-wall vacuum-insulated stemless wine glass with popular stainless steel finish. BPA free, keeps drinks hot for 3 hours and cold for 5.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.webp" },
+    { name: "Fuchsia", hex: "#FF00FF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.webp" },
+    { name: "Gold", hex: "#FFD700", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Gold.webp" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.webp" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.webp" },
+    { name: "Navy", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.webp" },
+    { name: "Rose Gold", hex: "#B76E79", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.webp" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Fuchsia.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Gold.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Lime Green.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Mint.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Navy.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Red.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Rose Gold.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM46/IBTM46-Teal.webp"
+  ],
+
+  specs: {
+    weight: "11 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM46",
+    material: "304 Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "48 pcs",
+        boxWeight: "21.2 lbs",
+        boxDims: '22.83" L x 15.35" W x 10.04" H'
+      }
+    ]
+  },
+
+  pricing: {
+        spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$14.83", "$18.77", "$15.75", "$13.50", "$11.48", "$11.05"] },
+        { label: "2 Color Imprint", prices: ["$15.49", "$19.61", "$16.56", "$14.30", "$12.26", "$11.81"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$16.75", "$21.22", "$18.12", "$15.83", "$13.75", "$13.29"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$14.09", "$17.84", "$14.97", "$12.82", "$10.91", "$10.50"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm378",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Itsy Vacuum Insulated Travel Mug - 12 oz",
+  code: "IBTM378",
+  featureImage: "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Featured.webp",
+  slug: "itsy-vacuum-insulated-travel-mug-12-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.25"W X 4.25"H X 2.50"B',
+  imprint: '2"W X 2"H',
+  hideGusset: true,
+  price: 10.64,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM378/IBTM378-White.webp",
+  description: "12 oz vacuum insulated double-wall stainless steel travel mug with a press-in black transparent lid and black EVA pad.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Blue.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM378/IBTM378-White.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM378/IBTM378-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Promo3.webp",
+    "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM378/IBTM378-Promo2.webp"
+  ],
+
+  specs: {
+    weight: "12 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM378",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "36 pcs",
+        boxWeight: "14.55 lbs",
+        boxDims: '16.54" L x 16.54" W x 10.04" H'
+      }
+    ]
+  },
+
+  pricing: {
+       spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$14.29", "$16.24", "$15.62", "$15.10", "$13.87", "$11.20"] },
+        { label: "2 Color Imprint", prices: ["$14.95", "$17.08", "$16.43", "$15.89", "$14.65", "$11.97"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$16.21", "$18.69", "$17.98", "$17.42", "$16.15", "$13.44"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$13.57", "$15.43", "$14.84", "$14.34", "$13.18", "$10.64"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm40",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Steel Mug with Side Lock Lid - 14 oz",
+  code: "IBTM40",
+  slug: "stainless-steel-mug-with-side-lock-lid-14-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior / Stainless Interior",
+  size: '3.5" W x 5.5" H',
+  imprint: '1 Color Imprint Area: 2.75" W x 2.25" H | 2 Color Imprint Area: 2.25" W x 2.25" H | 3+ Colors Imprint Area: 2.75" W x 2.25" H',
+  hideGusset: true,
+  price: 11.79,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM40/IBTM40-Silver.webp",
+  description: "14 oz double-wall stainless steel mug with a plastic lid featuring a spill-prevention side lock.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM40/IBTM40-Silver.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM40/IBTM40-Silver.webp"
+  ],
+
+  specs: {
+    weight: "14 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM40",
+    material: "Stainless Exterior / Stainless Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "14.6 lbs",
+        boxDims: '19.09" L x 19.09" W x 6.89" H'
+      }
+    ]
+  },
+
+  pricing: {
+      spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$14.69", "$16.65", "$15.19", "$14.70", "$14.11", "$12.40"] },
+        { label: "2 Color Imprint", prices: ["$15.35", "$17.49", "$16.00", "$15.49", "$14.89", "$13.17"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$16.61", "$19.10", "$17.55", "$17.02", "$16.38", "$14.64"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$13.95", "$15.82", "$14.43", "$13.97", "$13.40", "$11.79"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm63",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Insulated Plastic Travel Mug - 16 oz",
+  code: "IBTM63",
+  slug: "insulated-plastic-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "Plastic & Steel Exterior / Plastic Interior",
+  size: '3.25" W x 7" H',
+  imprint: '1 Color: 2.5”w x 1.25”h | 2 Color – Full Color: 3.0”w x 1.5”h',
+  hideGusset: true,
+  price: 5.21,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM63/IBTM63-Stainless Steel.webp",
+  description: "16 oz black acrylic travel mug with a stainless-steel upper band, double-wall thermal plastic insulation, and chrome twist-on lid.",
+  popular: false,
+
+  colors: [
+    { name: "Stainless Steel", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM63/IBTM63-Stainless Steel.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM63/IBTM63-Stainless Steel.webp"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM63",
+    material: "Plastic & Steel Exterior / Plastic Interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "11.2 lbs",
+        boxDims: '18.5" L x 18.5" W x 8.27" H'
+      }
+    ]
+  },
+
+  pricing: {
+        spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$7.03", "$8.19", "$7.82", "$7.17", "$6.75", "$5.48"] },
+        { label: "2 Color Imprint", prices: ["$7.69", "$9.03", "$8.63", "$7.97", "$7.53", "$6.25"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.95", "$10.64", "$10.18", "$9.50", "$9.02", "$7.72"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$6.68", "$7.78", "$7.43", "$6.81", "$6.41", "$5.21"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm335",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Glacier Plastic Tumbler - 20 oz",
+  code: "IBTM335",
+  slug: "glacier-plastic-tumbler-20-oz",
+  category: "Travel Mugs",
+  material: "Stainless Exterior Plastic interior",
+  size: '3.8" W x 8.5" H',
+  imprint: '2.50"w x 2.50"h',
+  hideGusset: true,
+  price: 8.27,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-White.webp",
+  description: "20 oz tumbler with a stainless exterior and plastic interior, featuring a clear, shatter-resistant lid. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Black.webp" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Navy Blue.webp" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Red.webp" },
+    { name: "Rustic Grey", hex: "#808080", image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Rustic.webp" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Silver.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-White.webp" },
+    { name: "Wood", hex: "#A0522D", image: "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Wood.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Navy Blue.webp",
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Red.webp",
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Rustic.webp",
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Silver.webp",
+    "assets/assets/images/products/travel mugs/IBTM335/IBTM335-Wood.webp"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM335",
+    material: "Stainless Exterior Plastic interior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "15.9 lbs",
+        boxDims: '18.7" L x 18.7" W x 7.87" H'
+      }
+    ]
+  },
+
+  pricing: {
+       spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$11.72", "$13.09", "$11.68", "$11.29", "$11.01", "$8.70"] },
+        { label: "2 Color Imprint", prices: ["$12.38", "$13.93", "$12.49", "$12.09", "$11.79", "$9.47"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$13.64", "$15.54", "$14.04", "$13.62", "$13.29", "$10.94"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$11.13", "$12.43", "$11.10", "$10.73", "$10.47", "$8.27"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibtm392",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Sofie Two Tone Tumbler - 16 oz",
+  code: "IBTM392",
+  slug: "sofie-two-tone-tumbler-16-oz",
+  category: "Travel Mugs",
+  material: "PP Plastic & Stainless Steel",
+  size: '7.25" H x 3.5" W x 2.5" D',
+  imprint: '2.5" W x 1.5" H',
+  hideGusset: true,
+  price: 5.58,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/travel mugs/IBTM392/IBTM392-White.webp",
+  description: "16 oz two-tone tumbler with a plastic interior, stainless steel exterior, and a clear slider lid. Includes an EVA bottom pad.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/travel mugs/IBTM392/IBTM392-Black.webp" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/travel mugs/IBTM392/IBTM392-Navy Blue.webp" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/travel mugs/IBTM392/IBTM392-White.webp" }
+  ],
+
+  images: [
+    "assets/assets/images/products/travel mugs/IBTM392/IBTM392-White.webp",
+    "assets/assets/images/products/travel mugs/IBTM392/IBTM392-Promo1.webp",
+    "assets/assets/images/products/travel mugs/IBTM392/IBTM392-Black.webp",
+    "assets/assets/images/products/travel mugs/IBTM392/IBTM392-Navy Blue.webp"
+  ],
+
+  specs: {
+    weight: "16 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBTM392",
+    material: "PP Plastic & Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "13.4 lbs",
+        boxDims: '18.31" W x 8.27" H x 18.31" L'
+      }
+    ]
+  },
+
+  pricing: {
+      spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$7.80", "$7.91", "$6.95", "$6.50", "$6.05", "$5.88"] },
+        { label: "2 Color Imprint", prices: ["$8.46", "$8.75", "$7.76", "$7.30", "$6.83", "$6.64"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.72", "$10.36", "$9.32", "$8.83", "$8.32", "$8.12"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$7.41", "$7.52", "$6.60", "$6.18", "$5.75", "$5.58"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
     repeatSetup: "Free",
     pmsMatch: "We only offer close Match or contact us for standard PMS colors",
     lessThanMinimum: "Call for pricing",
@@ -31978,23 +32837,34 @@ function generateTemplatewebp(colorName, product, imprintArea) {
  * Download a single template PDF for a specific color
  */
 async function downloadSingleTemplate(colorName, product) {
-    try {
-        // ✅ EXACT name rakho (capital letter ke saath)
-        const colorSlug = colorName; // "Red", "Natural", "Black", etc.
+    // ✅ Pehle check karo ke is product ke templates available hain ya nahi
+    if (product.templatesAvailable === false) {
+        alert(
+            `❌ Template not available for ${colorName}.\n\n` +
+            `Please request it at: cs@inkwell-impressions.com`
+        );
+        return;
+    }
 
-        // Path with double assets
+    try {
+        const colorSlug = colorName;
         const pdfPath = `assets/assets/templates/${product.code}/${colorSlug}.pdf`;
 
         console.log('📄 Checking PDF:', pdfPath);
 
-        // Check karo ke PDF exist karti hai ya nahi
+        // ✅ HEAD request se check karo file exist karti hai ya nahi
         const response = await fetch(pdfPath, { method: 'HEAD' });
 
+        // ✅ Agar 404 ya koi error status → alert dikhao, redirect mat karo
         if (!response.ok) {
-            throw new Error(`PDF not found: ${pdfPath}`);
+            alert(
+                `❌ Template not found for ${colorName}.\n\n` +
+                `Please request it at: cs@inkwell-impressions.com`
+            );
+            return;
         }
 
-        // PDF download karo
+        // ✅ File exist karti hai → download karo
         const link = document.createElement('a');
         link.download = `${product.code}_${colorSlug}.pdf`;
         link.href = pdfPath;
@@ -32003,9 +32873,14 @@ async function downloadSingleTemplate(colorName, product) {
         document.body.removeChild(link);
 
         showNotification(`✅ ${colorName} color template PDF downloaded!`);
+
     } catch (error) {
         console.error('Download error:', error);
-        showNotification(`❌ PDF not available for ${colorName}. Please request at cs@inkwell-impressions.com`);
+        // ✅ Network error ya koi bhi exception → alert
+        alert(
+            `❌ Template not found for ${colorName}.\n\n` +
+            `Please request it at: cs@inkwell-impressions.com`
+        );
     }
 }
 
@@ -32084,6 +32959,7 @@ let currentTemplatesProduct = null;
 function openTemplatesModal(product) {
     currentTemplatesProduct = product;
     const modal = document.getElementById('templatesModal');
+    if (!modal) return;
 
     // Set product info
     document.getElementById('templatesProductImage').src = product.image;
@@ -32103,14 +32979,10 @@ function openTemplatesModal(product) {
 
     document.getElementById('templatesImprintArea').textContent = templateData.imprintArea;
 
-    // ✅ SINGLE SOURCE OF TRUTH
-    const templatesNotAvailable = product.templatesAvailable === false;
-
-    // ✅ BW PDF path (hamesha try karo — file ho to link kaam karegi, warna 404)
     const bwPath = `assets/assets/templates/${product.code}/${product.code}_BW.pdf`;
 
     // ============================================================
-    // ✅ INFO BANNER
+    // ✅ INFO BANNER — hata do (ab har color khud check hoga)
     // ============================================================
     let infoBanner = document.getElementById('templatesInfoBanner');
     if (!infoBanner) {
@@ -32122,47 +32994,68 @@ function openTemplatesModal(product) {
             productInfoBox.parentNode.insertBefore(infoBanner, productInfoBox.nextSibling);
         }
     }
-
-    if (templatesNotAvailable) {
-        infoBanner.innerHTML = `
-            <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 sm:p-4 flex items-start gap-3">
-                <i class="fa-solid fa-circle-info text-blue-600 mt-0.5 text-lg"></i>
-                <div class="text-xs sm:text-sm text-blue-800">
-                    <p class="font-semibold mb-1">Color templates available on request</p>
-                    <p>Download the BW template above, or click "Request Template" on any color — we'll email it within 24 hours.</p>
-                </div>
-            </div>
-        `;
-        infoBanner.style.display = 'block';
-    } else {
-        infoBanner.style.display = 'none';
-    }
+    infoBanner.style.display = 'none';
+    infoBanner.innerHTML = '';
 
     // ============================================================
-    // ✅ BW TEMPLATE STATUS
+    // ✅ BW TEMPLATE — fetch se check
     // ============================================================
     const bwStatus = document.getElementById('bwTemplateStatus');
 
-    if (templatesNotAvailable) {
-        // ✅ BW PDF link dikhao (agar file na ho to browser 404 dega — user ko pata chal jayega)
+    const renderBWRequest = () => {
+        bwStatus.style.display = 'block';
         bwStatus.innerHTML = `
-            <a href="${bwPath}" target="_blank" 
-               class="text-brand-crimson hover:underline flex items-center justify-center gap-1">
-                <i class="fa-regular fa-file-pdf"></i> Download BW PDF
+            <a href="#" 
+               class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 bw-request-btn"
+               data-color="BW"
+               data-product-code="${product.code}"
+               data-product-name="${product.name}"
+               data-product-size="${product.size || ''}">
+                <i class="fa-regular fa-envelope"></i> Request BW Template
             </a>
         `;
-    } else {
-        // Normal mode — BW bhi optional
+        const btn = bwStatus.querySelector('.bw-request-btn');
+        if (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                openTemplateRequestModal(
+                    this.dataset.productCode,
+                    this.dataset.productName,
+                    this.dataset.color,
+                    this.dataset.productSize
+                );
+            });
+        }
+    };
+
+    if (bwStatus) {
         bwStatus.innerHTML = `
-            <a href="${bwPath}" target="_blank" 
-               class="text-brand-crimson hover:underline flex items-center justify-center gap-1">
-                <i class="fa-regular fa-file-pdf"></i> Download BW PDF
-            </a>
+            <span class="text-brand-textSecondary text-xs sm:text-sm flex items-center justify-center gap-1">
+                <i class="fa-solid fa-spinner fa-spin"></i> Checking BW PDF...
+            </span>
         `;
+        bwStatus.style.display = 'block';
+
+        fetch(bwPath, { method: 'GET', cache: 'no-store' })
+            .then(res => {
+                if (res.status === 404) {
+                    renderBWRequest();
+                } else {
+                    bwStatus.innerHTML = `
+                        <a href="${bwPath}" target="_blank" 
+                           class="text-brand-crimson hover:underline flex items-center justify-center gap-1">
+                            <i class="fa-regular fa-file-pdf"></i> Download BW PDF
+                        </a>
+                    `;
+                }
+            })
+            .catch(() => {
+                renderBWRequest();
+            });
     }
 
     // ============================================================
-    // ✅ COLOR TABLE — dono modes mein SAME structure
+    // ✅ COLOR TABLE — har color fetch se check hoga
     // ============================================================
     const tbody = document.getElementById('templatesTableBody');
     tbody.innerHTML = '';
@@ -32171,19 +33064,7 @@ function openTemplatesModal(product) {
         const tr = document.createElement('tr');
         tr.className = 'border-b border-brand-border hover:bg-brand-bg/20 transition-colors';
 
-        // ✅ Action HTML — sirf templatesNotAvailable pe depend karta hai
-        const actionHTML = templatesNotAvailable
-            ? `<a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 request-template-btn" 
-                  data-color="${color.name}"
-                  data-product-code="${product.code}"
-                  data-product-name="${product.name}"
-                  data-product-size="${product.size || ''}">
-                  <i class="fa-regular fa-envelope"></i> Request Template
-               </a>`
-            : `<a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 download-template-btn" 
-                  data-color="${color.name}">
-                  <i class="fa-regular fa-file-pdf"></i> Download PDF
-               </a>`;
+        const pdfPath = `assets/assets/templates/${product.code}/${color.name}.pdf`;
 
         // Double-tone color support
         let bgStyle = `background:${color.hex};`;
@@ -32204,51 +33085,94 @@ function openTemplatesModal(product) {
                 </div>
             </td>
             <td class="p-2 sm:p-3 text-center">
-                ${actionHTML}
+                <span class="text-brand-textSecondary text-xs flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Checking...
+                </span>
             </td>
         `;
         tbody.appendChild(tr);
+
+        const actionCell = tr.querySelector('td:last-child');
+
+        // ✅ Har color fetch se check karo
+        fetch(pdfPath, { method: 'GET', cache: 'no-store' })
+            .then(res => {
+                if (res.status === 404) {
+                    // ❌ File nahi → Request Template
+                    actionCell.innerHTML = `
+                        <a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 request-template-btn" 
+                           data-color="${color.name}"
+                           data-product-code="${product.code}"
+                           data-product-name="${product.name}"
+                           data-product-size="${product.size || ''}">
+                           <i class="fa-regular fa-envelope"></i> Request Template
+                        </a>
+                    `;
+                    const btn = actionCell.querySelector('.request-template-btn');
+                    if (btn) {
+                        btn.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            openTemplateRequestModal(
+                                this.dataset.productCode,
+                                this.dataset.productName,
+                                this.dataset.color,
+                                this.dataset.productSize
+                            );
+                        });
+                    }
+                } else {
+                    // ✅ File hai → Download
+                    actionCell.innerHTML = `
+                        <a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 download-template-btn" 
+                           data-color="${color.name}">
+                           <i class="fa-regular fa-file-pdf"></i> Download PDF
+                        </a>
+                    `;
+                    const btn = actionCell.querySelector('.download-template-btn');
+                    if (btn) {
+                        btn.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            downloadSingleTemplate(this.dataset.color, product);
+                        });
+                    }
+                }
+            })
+            .catch(() => {
+                // Network error → Request
+                actionCell.innerHTML = `
+                    <a href="#" class="text-brand-crimson hover:underline text-xs sm:text-sm flex items-center justify-center gap-1 request-template-btn" 
+                       data-color="${color.name}"
+                       data-product-code="${product.code}"
+                       data-product-name="${product.name}"
+                       data-product-size="${product.size || ''}">
+                       <i class="fa-regular fa-envelope"></i> Request Template
+                    </a>
+                `;
+                const btn = actionCell.querySelector('.request-template-btn');
+                if (btn) {
+                    btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        openTemplateRequestModal(
+                            this.dataset.productCode,
+                            this.dataset.productName,
+                            this.dataset.color,
+                            this.dataset.productSize
+                        );
+                    });
+                }
+            });
     });
 
     // ============================================================
-    // ✅ EVENT BINDING
-    // ============================================================
-    if (templatesNotAvailable) {
-        document.querySelectorAll('.request-template-btn').forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                openTemplateRequestModal(
-                    this.dataset.productCode,
-                    this.dataset.productName,
-                    this.dataset.color,
-                    this.dataset.productSize
-                );
-            });
-        });
-    } else {
-        document.querySelectorAll('.download-template-btn').forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                downloadSingleTemplate(this.dataset.color, product);
-            });
-        });
-    }
-
-    // ============================================================
-    // ✅ DOWNLOAD ALL BUTTON
+    // ✅ DOWNLOAD ALL — sirf tab dikhao jab at least 1 PDF mile
     // ============================================================
     const downloadAllBtn = document.getElementById('downloadAllTemplates');
     if (downloadAllBtn) {
-        if (templatesNotAvailable) {
-            // ✅ Sirf BW hai, Download All ka matlab nahi
-            downloadAllBtn.style.display = 'none';
-        } else {
-            downloadAllBtn.style.display = '';
-            downloadAllBtn.onclick = function (e) {
-                e.preventDefault();
-                downloadAllTemplates(product);
-            };
-        }
+        downloadAllBtn.style.display = '';
+        downloadAllBtn.onclick = function (e) {
+            e.preventDefault();
+            downloadAllTemplates(product);
+        };
     }
 
     modal.classList.add('active');
@@ -33444,8 +34368,14 @@ function initFreightModal() {
         });
     }
 
-    function renderPricing(method) {
-    const data = product.pricing[method];
+function renderPricing(method) {
+    // ✅ 'laser' method ke liye laserEngraving ya laser key dono check karo
+    let data;
+    if (method === 'laser') {
+        data = product.pricing.laserEngraving || product.pricing.laser;
+    } else {
+        data = product.pricing[method];
+    }
     if (!data) return;
 
     const labelEl = document.querySelector('#pricing-section .text-brand-textSecondary');
@@ -33557,7 +34487,7 @@ function initFreightModal() {
         adjustInfoGrid();
     } else {
         // ============================================================
-        // ✅ SPOT / TRANSFER TAB (Normal rendering)
+        // ✅ SPOT / TRANSFER / LASER TAB (Normal rendering)
         // ============================================================
         if (data.rows) {
             data.rows.forEach((row, index) => {
@@ -33592,7 +34522,7 @@ function initFreightModal() {
         }
 
         // ============================================================
-        // ✅ SPOT / TRANSFER GRID - Center aligned, no empty space
+        // ✅ SPOT / TRANSFER / LASER GRID - Center aligned
         // ============================================================
         const infoGrid = document.getElementById('dynamic-info-grid');
         if (infoGrid) {
@@ -33613,7 +34543,28 @@ function initFreightModal() {
     // ============================================================
     // ✅ PRINT METHODS NOTE (Sab tabs ke liye, function ke aakhir me)
     // ============================================================
-  
+    const printNote = document.getElementById('print-methods-note');
+    const printText = document.getElementById('print-methods-text');
+    if (printNote && printText) {
+        let noteText = null;
+
+        if (method === 'spot' && product.pricing?.spot?.printMethods) {
+            noteText = product.pricing.spot.printMethods;
+        } else if (method === 'laser') {
+            // ✅ Laser tab ke liye bhi printMethods support karo
+            const laserData = product.pricing.laserEngraving || product.pricing.laser;
+            if (laserData && laserData.printMethods) {
+                noteText = laserData.printMethods;
+            }
+        }
+
+        if (noteText) {
+            printText.textContent = noteText;
+            printNote.classList.remove('hidden');
+        } else {
+            printNote.classList.add('hidden');
+        }
+    }
 }
     function renderSpecsTable(selectedColor) {
         const s = product.specs || {
@@ -33988,199 +34939,231 @@ function initFreightModal() {
 
 
     let pricingExpanded = false;
-    function initViewMoreButton() {
-        const viewMoreBtn = document.getElementById('viewMorePricingBtn');
-        if (!viewMoreBtn) return;
+function initViewMoreButton() {
+    const viewMoreBtn = document.getElementById('viewMorePricingBtn');
+    if (!viewMoreBtn) return;
 
-        viewMoreBtn.addEventListener('click', function () {
-            pricingExpanded = !pricingExpanded;
+    viewMoreBtn.addEventListener('click', function () {
+        pricingExpanded = !pricingExpanded;
 
-            document.querySelectorAll('.pricing-extra-row').forEach(row => {
-                row.classList.toggle('show');
-            });
-
-            if (pricingExpanded) {
-                this.innerHTML = 'SHOW LESS <i class="fa-solid fa-chevron-up ml-1"></i>';
-            } else {
-                this.innerHTML = 'VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>';
-            }
+        document.querySelectorAll('.pricing-extra-row').forEach(row => {
+            row.classList.toggle('show');
         });
-    }
+
+        if (pricingExpanded) {
+            this.innerHTML = 'SHOW LESS <i class="fa-solid fa-chevron-up ml-1"></i>';
+        } else {
+            this.innerHTML = 'VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>';
+        }
+    });
+}
 
     // ✅ NEW HELPER: Check karo kya extra rows (ADD COLOR etc.) available hain
-    function hasExtraPricingRows(product) {
-        const spot = product.pricing?.spot;
-        const transfer = product.pricing?.transfer;
+function hasExtraPricingRows(product) {
+    const spot = product.pricing?.spot;
+    const transfer = product.pricing?.transfer;
+    const laser = product.pricing?.laserEngraving || product.pricing?.laser;
 
-        // ✅ ADD COLOR ya ADD LOCATION — dono me se koi bhi ho to extra rows hain
-        const hasExtraRow = (rows) => {
-            if (!Array.isArray(rows)) return false;
-            return rows.some(r => /ADD\s*(COLOR|LOCATION)/i.test(r.label || ''));
-        };
+    // ✅ ADD COLOR ya ADD LOCATION — dono me se koi bhi ho to extra rows hain
+    const hasExtraRow = (rows) => {
+        if (!Array.isArray(rows)) return false;
+        return rows.some(r => /ADD\s*(COLOR|LOCATION)/i.test(r.label || ''));
+    };
 
-        if (spot && hasExtraRow(spot.rows)) return true;
-        if (transfer && hasExtraRow(transfer.rows)) return true;
+    if (spot && hasExtraRow(spot.rows)) return true;
+    if (transfer && hasExtraRow(transfer.rows)) return true;
+    if (laser && hasExtraRow(laser.rows)) return true;
 
-        return false;
-    }
+    return false;
+}
     // initPrintTabs function mein modify karein
-    function initPrintTabs() {
-        const container = document.getElementById('printing-tabs');
-        if (!container) return;
+   function initPrintTabs() {
+    const container = document.getElementById('printing-tabs');
+    if (!container) return;
 
-        const viewMoreBtn = document.getElementById('viewMorePricingBtn');
-        const pricing = product.pricing || {};
+    const viewMoreBtn = document.getElementById('viewMorePricingBtn');
+    const pricing = product.pricing || {};
 
-        // ✅ Check karo konsi tabs available hain
-        const hasSpot = !!pricing.spot;
-        const hasTransfer = !!pricing.transfer;
-        const hasBlank = !!pricing.blank;
+    // ✅ Check karo konsi tabs available hain
+    const hasSpot = !!pricing.spot;
+    const hasTransfer = !!pricing.transfer;
+    const hasBlank = !!pricing.blank;
 
-        if (!hasSpot && !hasTransfer && !hasBlank) {
-            container.innerHTML = '<p class="text-center text-brand-textSecondary py-4">No pricing available</p>';
-            return;
+    // ✅ NEW: Laser Engraving (sirf Belpromo products ke liye)
+    // pricing.laserEngraving ya pricing.laser dono support
+    const hasLaser = product.isBelpromo && !!(pricing.laserEngraving || pricing.laser);
+
+    if (!hasSpot && !hasTransfer && !hasBlank && !hasLaser) {
+        container.innerHTML = '<p class="text-center text-brand-textSecondary py-4">No pricing available</p>';
+        return;
+    }
+
+    // ✅ Flexbox layout - har tab apni jagah
+    container.className = 'flex gap-1 sm:gap-2 mb-3 sm:mb-4';
+
+    let tabsHTML = '';
+
+    // 1. Spot Printing / Imprint Pricing Matrix (agar available hai)
+    if (hasSpot) {
+        // ✅ Belpromo ke liye "IMPRINT PRICING MATRIX", warna "SPOT PRINTING"
+        const spotLabel = product.isBelpromo ? 'IMPRINT PRICING MATRIX' : 'SPOT PRINTING';
+
+        tabsHTML += `
+            <button class="flex-1 border border-brand-crimson bg-brand-crimson/10 text-brand-crimson 
+                    py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
+                    data-method="spot">
+                ${spotLabel}
+            </button>
+        `;
+    }
+
+    // 2. Heat Transfer (agar available hai)
+    if (hasTransfer) {
+        tabsHTML += `
+            <button class="flex-1 border border-brand-border hover:border-brand-text/20 
+                    text-brand-textSecondary hover:text-brand-text transition-colors 
+                    py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
+                    data-method="transfer">
+                HEAT TRANSFER
+            </button>
+        `;
+    }
+
+    // ✅ 3. NEW: LASER ENGRAVING tab (sirf agar data available ho)
+    if (hasLaser) {
+        tabsHTML += `
+            <button class="flex-1 border border-brand-border hover:border-brand-text/20 
+                    text-brand-textSecondary hover:text-brand-text transition-colors 
+                    py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
+                    data-method="laser">
+                LASER ENGRAVING
+            </button>
+        `;
+    }
+
+    // ✅ Agar na Transfer hai na Laser, to empty placeholder (layout ke liye)
+    if (!hasTransfer && !hasLaser) {
+        tabsHTML += `<div class="flex-1"></div>`;
+    }
+
+    // 4. Blank (agar available hai)
+    if (hasBlank) {
+        tabsHTML += `
+            <button class="flex-1 border border-brand-border hover:border-brand-text/20 
+                    text-brand-textSecondary hover:text-brand-text transition-colors 
+                    py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
+                    data-method="blank">
+                BLANK
+            </button>
+        `;
+    }
+
+    container.innerHTML = tabsHTML;
+
+    // ✅ DYNAMIC methodInfo - product ke pricing data se
+    const methodInfo = {
+        spot: {
+            leadTime: pricing.spot?.leadTime || '5-7 Business Days',
+            leadLabel: 'Production Time',
+            setupCharge: pricing.spot?.setupCharge || '$56.25 (V)',
+            repeatSetup: pricing.spot?.repeatSetup || '$37.50 (V)',
+            showRepeatSetup: true,
+            showSetupCharge: true,
+            priceIncludes: pricing.spot?.priceIncludes || '1 Color, 1 Location',
+            showViewMore: pricing.spot?.rows
+                ? pricing.spot.rows.some(r => /ADD\s*(COLOR|LOCATION)/i.test(r.label || ''))
+                : false
+        },
+        transfer: {
+            leadTime: pricing.transfer?.leadTime || '7-9 Business Days',
+            leadLabel: 'Production Time',
+            setupCharge: pricing.transfer?.setupCharge || '112.50 (V)',
+            repeatSetup: pricing.transfer?.repeatSetup || '112.50 (V)',
+            showRepeatSetup: false,
+            showSetupCharge: true,
+            priceIncludes: pricing.transfer?.priceIncludes || 'Heat Transfer, 1 Location',
+            showViewMore: false
+        },
+        // ✅ NEW: LASER ENGRAVING ka methodInfo
+        laser: {
+            leadTime: (pricing.laserEngraving || pricing.laser)?.leadTime || '5-7 Business Days',
+            leadLabel: 'Production Time',
+            setupCharge: (pricing.laserEngraving || pricing.laser)?.setupCharge || '$56.25 (V)',
+            repeatSetup: (pricing.laserEngraving || pricing.laser)?.repeatSetup || 'Free',
+            showRepeatSetup: true,
+            showSetupCharge: true,
+            priceIncludes: (pricing.laserEngraving || pricing.laser)?.priceIncludes || 'Laser Engraved, 1 Location',
+            showViewMore: (pricing.laserEngraving || pricing.laser)?.rows
+                ? (pricing.laserEngraving || pricing.laser).rows.some(r => /ADD\s*(COLOR|LOCATION)/i.test(r.label || ''))
+                : false
+        },
+        blank: {
+            leadTime: pricing.blank?.leadTime || 'Within 1-2 Business Days',
+            leadLabel: 'Lead Time',
+            setupCharge: pricing.blank?.setupCharge || 'No Setup Fee',
+            repeatSetup: pricing.blank?.repeatSetup || 'No Setup Fee',
+            showRepeatSetup: false,
+            showSetupCharge: false,
+            priceIncludes: pricing.blank?.priceIncludes || 'Blank Product Only',
+            showViewMore: false
         }
+    };
 
-        // ✅ Flexbox layout - har tab apni jagah
-        container.className = 'flex gap-1 sm:gap-2 mb-3 sm:mb-4';
+    // ✅ Event listeners sirf buttons pe lagao (empty div pe nahi)
+    container.querySelectorAll('button').forEach(tab => {
+        tab.addEventListener('click', function () {
+            const method = this.dataset.method;
+            currentMethod = method;
 
-        let tabsHTML = '';
+            // Saare buttons ka style reset karo
+            container.querySelectorAll('button').forEach(t => {
+                t.className = 'flex-1 border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider';
+            });
+            // Active button ka style lagao
+            this.className = 'flex-1 border border-brand-crimson bg-brand-crimson/10 text-brand-crimson py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider';
 
-        // 1. Spot Printing (agar available hai)
-        // 1. Spot Printing (agar available hai)
-        if (hasSpot) {
-            // ✅ Belpromo ke liye "IMPRINT PRICING MATRIX", warna "SPOT PRINTING"
-            const spotLabel = product.isBelpromo ? 'IMPRINT PRICING MATRIX' : 'SPOT PRINTING';
+            renderPricing(method);
 
-            tabsHTML += `
-        <button class="flex-1 border border-brand-crimson bg-brand-crimson/10 text-brand-crimson 
-                py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
-                data-method="spot">
-            ${spotLabel}
-        </button>
-    `;
-        }
+            const info = methodInfo[method];
+            if (info) {
+                document.getElementById('dynamic-lead-label').textContent = info.leadLabel;
+                document.getElementById('dynamic-lead-time').textContent = info.leadTime;
+                document.getElementById('dynamic-setup-charge').textContent = info.setupCharge;
+                document.getElementById('dynamic-repeat-setup').textContent = info.repeatSetup;
+                document.getElementById('dynamic-price-includes').textContent = info.priceIncludes;
 
-        // 2. Heat Transfer (agar available hai, warna empty space)
-        if (hasTransfer) {
-            tabsHTML += `
-                <button class="flex-1 border border-brand-border hover:border-brand-text/20 
-                        text-brand-textSecondary hover:text-brand-text transition-colors 
-                        py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
-                        data-method="transfer">
-                    HEAT TRANSFER
-                </button>
-            `;
-        } else {
-            // ✅ Heat Transfer nahi hai to empty placeholder (space banane ke liye)
-            tabsHTML += `<div class="flex-1"></div>`;
-        }
+                const setupContainer = document.getElementById('setup-charge-container');
+                if (setupContainer) {
+                    setupContainer.style.display = info.showSetupCharge ? 'flex' : 'none';
+                }
 
-        // 3. Blank (agar available hai)
-        if (hasBlank) {
-            tabsHTML += `
-                <button class="flex-1 border border-brand-border hover:border-brand-text/20 
-                        text-brand-textSecondary hover:text-brand-text transition-colors 
-                        py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider" 
-                        data-method="blank">
-                    BLANK
-                </button>
-            `;
-        }
+                const repeatContainer = document.getElementById('repeat-setup-container');
+                if (repeatContainer) {
+                    repeatContainer.style.display = info.showRepeatSetup ? 'flex' : 'none';
+                }
 
-        container.innerHTML = tabsHTML;
-
-        // ✅ DYNAMIC methodInfo - product ke pricing data se
-        const methodInfo = {
-            spot: {
-                leadTime: pricing.spot?.leadTime || '5-7 Business Days',
-                leadLabel: 'Production Time',
-                setupCharge: pricing.spot?.setupCharge || '$56.25 (V)',
-                repeatSetup: pricing.spot?.repeatSetup || '$37.50 (V)',
-                showRepeatSetup: true,
-                showSetupCharge: true,
-                priceIncludes: pricing.spot?.priceIncludes || '1 Color, 1 Location',
-                showViewMore: pricing.spot?.rows
-                    ? pricing.spot.rows.some(r => /ADD\s*(COLOR|LOCATION)/i.test(r.label || ''))
-                    : false
-            },
-            transfer: {
-                leadTime: pricing.transfer?.leadTime || '7-9 Business Days',
-                leadLabel: 'Production Time',
-                setupCharge: pricing.transfer?.setupCharge || '112.50 (V)',
-                repeatSetup: pricing.transfer?.repeatSetup || '112.50 (V)',
-                showRepeatSetup: false,
-                showSetupCharge: true,
-                priceIncludes: pricing.transfer?.priceIncludes || 'Heat Transfer, 1 Location',
-                showViewMore: false
-            },
-            blank: {
-                leadTime: pricing.blank?.leadTime || 'Within 1-2 Business Days',
-                leadLabel: 'Lead Time',
-                setupCharge: pricing.blank?.setupCharge || 'No Setup Fee',
-                repeatSetup: pricing.blank?.repeatSetup || 'No Setup Fee',
-                showRepeatSetup: false,
-                showSetupCharge: false,
-                priceIncludes: pricing.blank?.priceIncludes || 'Blank Product Only',
-                showViewMore: false
-            }
-        };
-
-        // ✅ Event listeners sirf buttons pe lagao (empty div pe nahi)
-        container.querySelectorAll('button').forEach(tab => {
-            tab.addEventListener('click', function () {
-                const method = this.dataset.method;
-                currentMethod = method;
-
-                // Saare buttons ka style reset karo
-                container.querySelectorAll('button').forEach(t => {
-                    t.className = 'flex-1 border border-brand-border hover:border-brand-text/20 text-brand-textSecondary hover:text-brand-text transition-colors py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider';
-                });
-                // Active button ka style lagao
-                this.className = 'flex-1 border border-brand-crimson bg-brand-crimson/10 text-brand-crimson py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold rounded tracking-wider';
-
-                renderPricing(method);
-
-                const info = methodInfo[method];
-                if (info) {
-                    document.getElementById('dynamic-lead-label').textContent = info.leadLabel;
-                    document.getElementById('dynamic-lead-time').textContent = info.leadTime;
-                    document.getElementById('dynamic-setup-charge').textContent = info.setupCharge;
-                    document.getElementById('dynamic-repeat-setup').textContent = info.repeatSetup;
-                    document.getElementById('dynamic-price-includes').textContent = info.priceIncludes;
-
-                    const setupContainer = document.getElementById('setup-charge-container');
-                    if (setupContainer) {
-                        setupContainer.style.display = info.showSetupCharge ? 'flex' : 'none';
-                    }
-
-                    const repeatContainer = document.getElementById('repeat-setup-container');
-                    if (repeatContainer) {
-                        repeatContainer.style.display = info.showRepeatSetup ? 'flex' : 'none';
-                    }
-
-                    if (viewMoreBtn) {
-                        if (info.showViewMore && method === 'spot') {
-                            viewMoreBtn.style.display = 'block';
-                        } else {
-                            viewMoreBtn.style.display = 'none';
-                            pricingExpanded = false;
-                            document.querySelectorAll('.pricing-extra-row').forEach(row => {
-                                row.classList.remove('show');
-                            });
-                            viewMoreBtn.innerHTML = 'VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>';
-                        }
+                if (viewMoreBtn) {
+                    if (info.showViewMore && (method === 'spot' || method === 'laser')) {
+                        viewMoreBtn.style.display = 'block';
+                    } else {
+                        viewMoreBtn.style.display = 'none';
+                        pricingExpanded = false;
+                        document.querySelectorAll('.pricing-extra-row').forEach(row => {
+                            row.classList.remove('show');
+                        });
+                        viewMoreBtn.innerHTML = 'VIEW MORE PRICING <i class="fa-solid fa-chevron-down ml-1"></i>';
                     }
                 }
-            });
+            }
         });
+    });
 
-        // ✅ Pehla available tab (Spot) automatically click karo
-        const firstTab = container.querySelector('button');
-        if (firstTab) {
-            firstTab.click();
-        }
+    // ✅ Pehla available tab (Spot/Imprint) automatically click karo
+    const firstTab = container.querySelector('button');
+    if (firstTab) {
+        firstTab.click();
     }
+}
 
     // ============================================================
     // ✅ DYNAMIC GRID ADJUSTMENT
