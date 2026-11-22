@@ -22831,8 +22831,8 @@ const products = [{
   ],
 
   images: [
-      "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp",
-      "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo3.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Pink.webp",
+    "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Promo3.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-White.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Red.webp",
     "assets/assets/images/products/ceramic mugs/IBCM7102/IBCM7102-Almond.webp",
@@ -22873,12 +22873,12 @@ const products = [{
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
-        { label: "White - 1 Color Imprint - 1 Location", prices: ["$6.20", "$7.45", "$5.97", "$4.88", "$4.08", "$3.49"] },
-        { label: "White - 2 Color Imprint - 1 Location", prices: ["$6.86", "$8.29", "$6.78", "$5.68", "$4.86", "$4.26"] },
-        { label: "White - Full Color 1 Location", prices: ["$8.13", "$9.90", "$8.33", "$7.21", "$6.36", "$5.73"] },
-        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.64", "$8.61", "$6.83", "$5.68", "$4.91", "$4.26"] },
-        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$9.30", "$9.45", "$7.64", "$6.48", "$5.69", "$5.03"] },
-        { label: "Colors - Full Color - 1 Location", prices: ["$10.56", "$11.06", "$9.19", "$8.01", "$7.19", "$6.50"] },
+        { label: "White - 1 Color Imprint - 1 Location", prices: ["$6.41", "$5.14", "$4.24", "$3.63", "$3.51", "$3.01"] },
+        { label: "White - 2 Color Imprint - 1 Location", prices: ["$7.28", "$5.98", "$5.05", "$4.43", "$4.29", "$3.78"] },
+        { label: "White - Full Color 1 Location", prices: ["$8.95", "$7.59", "$6.60", "$5.96", "$5.79", "$5.25"] },
+        { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$7.34", "$5.98", "$5.10", "$4.43", "$3.86", "$3.48"] },
+        { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.21", "$6.82", "$5.91", "$5.23", "$4.64", "$4.25"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.87", "$8.43", "$7.47", "$6.76", "$6.14", "$5.72"] },
         { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
@@ -22891,8 +22891,7 @@ const products = [{
       label: "BLANK PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
-        { label: "White", prices: ["$5.90", "$7.07", "$5.67", "$4.64", "$3.87", "$3.32"] },
-        { label: "Colors", prices: ["$8.21", "$8.18", "$6.49", "$5.40", "$4.67", "$4.04"] }
+        { label: "White", prices: ["$6.09", "$4.89", "$4.02", "$3.44", "$3.34", "$2.85"] }
       ],
       priceIncludes: "Blank",
       leadTime: "Within 2 to 3 Business Days",
@@ -27527,7 +27526,7 @@ const products = [{
   popular: false,
 
   colors: [
-    { name: "Black", hex: "#000000", image: "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.webp" } // Folder me naam white hai par color black likha hai
+    { name: "Black", hex: "#000000", image: "assets/assets/images/products/ceramic mugs/IBCM7102BK/IBCM7102BK-Black.webp" }
   ],
 
   images: [
@@ -27556,7 +27555,7 @@ const products = [{
       label: "PRICING (USD)",
       quantities: [36, 72, 144, 288, 576, 1008],
       rows: [
-        { label: "Full Color Printing", prices: ["$9.78", "$10.99", "$9.92", "$9.16", "$8.13", "$7.49"] },
+        { label: "Full Color Printing", prices: ["$12.89", "$10.99", "$9.92", "$9.16", "$8.13", "$7.49"] },
         { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
@@ -28403,7 +28402,7 @@ const products = [{
       label: "BLANK PRICING (USD)",
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
-        { label: "Blank", prices: ["$9.30", "$11.37", "$10.71", "$10.45", "$10.06", ""] }
+        { label: "Blank", prices: ["$9.30", "$11.37", "$10.71", "$10.45", "$10.06", "9.84"] }
       ],
       priceIncludes: "Blank",
       leadTime: "Within 2 to 3 Business Days",
@@ -28865,7 +28864,7 @@ const products = [{
       quantities: [50, 100, 250, 500, 1000, 2500],
       rows: [
         { label: "1 Color Imprint", prices: ["$11.28", "$13.29", "$11.81", "$11.29", "$10.86", "$10.61"] },
-        { label: "Colors - Full Color - 1 Location", prices: ["$13.20", "$15.74", "$14.18", "$13.62", "$13.13", ""] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$13.20", "$15.74", "$14.18", "$13.62", "$13.13", "$13.05"] },
         { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
       ],
       priceIncludes: "1 Location",
@@ -32644,7 +32643,3242 @@ const products = [{
     artworkCharges: "$75.00 (V) / Hour",
     secondSideImprint: "$1.00 (G) for Any Amount of Colors"
   }
+},
+{
+  id: "ibbpk95",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Monterey Sling Backpack",
+  code: "IBBPK95",
+  slug: "monterey-sling-backpack",
+  category: "Backpacks",
+  material: "210D PU Polyester",
+  size: '9.84" W x 14.17" H x 3.15" D',
+  imprint: '3" W x 3" H',
+  hideGusset: true,
+  price: 9.31,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Red.jpg",
+  description: "Solid color sling backpack made of 210D PU polyester with a zipper closure, carrying strap, and foam interior.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Blue.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Lime Green.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Navy Blue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Red.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Teal.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Red.jpg",
+    "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Black.jpg",
+    "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Blue.jpg",
+    "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Lime Green.jpg",
+    "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Navy Blue.jpg",
+    "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Teal.jpg",
+    "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "N/A",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBBPK95",
+    material: "210D PU Polyester",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "50 pcs",
+        boxWeight: "9.1 lbs",
+        boxDims: '18.11" L x 15.35" W x 16.54" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.30", "$11.41", "$10.73", "$10.28", "$10.00", "$9.79"] },
+        { label: "2 Color Imprint", prices: ["$9.96", "$12.25", "$11.54", "$11.08", "$10.78", "$10.56"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.22", "$13.86", "$13.10", "$12.61", "$12.27", "$12.03"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.83", "$10.84", "$10.19", "$9.76", "$9.50", "$9.31"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb20",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Water Bottle with Push Cap - 20 oz",
+  code: "IBSB20",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB20/IBTM20-Featured.jpg",
+  slug: "water-bottle-with-push-cap-20-oz",
+  category: "Sports Bottles",
+  material: "Plastic",
+  size: '7.75" H x 3" W x 2" Brim',
+  imprint: '3.00"W x 3.25"H',
+  hideGusset: true,
+  price: 1.34,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Black.jpg",
+  description: "20 oz flexi-grip easy squeeze water bottle with a ridged push cap and easy-flow drinking spout. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Black.jpg" },
+    { name: "Frosted", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSB20/IBTM20-Frosted.jpg" },
+    { name: "Granite", hex: "#808080", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Granite.jpg" },
+    { name: "Kelly Green", hex: "#4CBB17", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Kelly Green.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Navy Blue.jpg" },
+    { name: "Neon Green", hex: "#39FF14", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Neon Green.jpg" },
+    { name: "Neon Pink", hex: "#FF6EC7", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-NEON PINK.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Orange.jpg" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Purple.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Red.jpg" },
+    { name: "Reflex Blue", hex: "#4169E1", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Reflex Blue.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Silver.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-White.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Yellow.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBTM20-Frosted.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Granite.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Kelly Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Navy Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Neon Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-NEON PINK.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Orange.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Purple.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Reflex Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Teal.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Yellow.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBTM20-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20/IBTM20-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB20",
+    material: "Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "100 pcs",
+        boxWeight: "12 lbs",
+        boxDims: '29.53" L x 15.75" W x 8.27" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$2.71", "$2.42", "$1.82", "$1.64", "$1.50", "$1.42"] },
+        { label: "2 Color Imprint", prices: ["$3.37", "$3.26", "$2.63", "$2.43", "$2.28", "$2.19"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$4.63", "$4.87", "$4.19", "$3.96", "$3.77", "$3.66"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$2.57", "$2.30", "$1.73", "$1.56", "$1.42", "$1.34"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb20usa",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "White Water Bottle with Push Cap - 20 oz",
+  code: "IBSB20USA",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-Featured.jpg",
+  slug: "white-water-bottle-with-push-cap-20-oz",
+  category: "Sports Bottles",
+  material: "Plastic",
+  size: '7.75" H x 3" W x 2" Brim',
+  imprint: '3.00"W x 3.50"H',
+  hideGusset: true,
+  price: 1.42,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteRed.jpg",
+  description: "20 oz high-density polyethylene water bottle with a flexi-grip easy squeeze action and a ridged push spout cap.",
+  popular: false,
+
+  colors: [
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-White.jpg" },
+    { name: "WhiteBlack", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteBlack.jpg" },
+    { name: "WhiteBlue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteBlue.jpg" },
+    { name: "WhiteGreen", hex: "#4CAF50", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteGreen.jpg" },
+    { name: "WhiteOrange", hex: "#FFA500", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteOrange.jpg" },
+    { name: "WhitePink", hex: "#FFC0CB", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhitePink.jpg" },
+    { name: "WhiteRed", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteRed.jpg" },
+    { name: "WhiteTeal", hex: "#008080", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteTeal.jpg" },
+    { name: "WhiteViolet", hex: "#7E57C2", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteViolet.jpg" },
+    { name: "WhiteYellow", hex: "#FFD700", image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteYellow.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteBlack.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteBlue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteGreen.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteOrange.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhitePink.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteRed.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteTeal.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteViolet.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteYellow.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB20USA",
+    material: "Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "50 pcs",
+        boxWeight: "12 lbs",
+        boxDims: '24" x 18" x 18"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$2.71", "$2.51", "$2.12", "$1.80", "$1.55", "$1.50"] },
+        { label: "2 Color Imprint", prices: ["$3.37", "$3.35", "$2.93", "$2.59", "$2.33", "$2.27"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$4.63", "$4.96", "$4.48", "$4.12", "$3.82", "$3.74"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$2.57", "$2.38", "$2.01", "$1.70", "$1.47", "$1.42"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb105",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stainless Sports Water Bottle - 26 oz",
+  code: "IBSB105",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Featured.jpg",
+  slug: "stainless-sports-water-bottle-26-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '10.75" H x 2.75" W',
+  imprint: '2.5" W x 4" H',
+  hideGusset: true,
+  price: 10.16,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Red.jpg",
+  description: "26 oz stainless steel sports water bottle with a unique twist cap design. BPA free and single insulated.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Black.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Green.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Grey.jpg" },
+    { name: "MetBlue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-MetBlue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Grey.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-MetBlue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "26 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB105",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "10.8 lbs",
+        boxDims: '15.35" L x 15.35" W x 12.2" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$14.40", "$15.47", "$14.38", "$13.77", "$13.20", "$10.70"] },
+        { label: "2 Color Imprint", prices: ["$15.06", "$16.31", "$15.19", "$14.56", "$13.98", "$11.47"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$16.32", "$17.92", "$16.74", "$16.09", "$15.47", "$12.94"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$13.68", "$14.70", "$13.66", "$13.07", "$12.53", "$10.16"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors",
+    optionalCarabiner: "$1.76 (G)"
+  }
+},
+{
+  id: "ibsb101",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Aluminum Water Bottle - 20 oz",
+  code: "IBSB101",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Featured.jpg",
+  slug: "aluminum-water-bottle-20-oz",
+  category: "Sports Bottles",
+  material: "Aluminum",
+  size: '8" H x 3" W',
+  imprint: '3.00" W x 3.00" H',
+  hideGusset: true,
+  price: 5.73,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Lime Green.jpg",
+  description: "20 oz aluminum water bottle with a twist cap and carabiner for easy attachment. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Green.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Lime Green.jpg" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Orange.jpg" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Purple.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Lime Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Orange.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Purple.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB101",
+    material: "Aluminum",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "7.4 lbs",
+        boxDims: '15.55" L x 15.55" W x 9.45" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$7.22", "$6.75", "$6.47", "$6.34", "$6.18", "$6.04"] },
+        { label: "2 Color Imprint", prices: ["$7.88", "$7.59", "$7.28", "$7.14", "$6.96", "$6.81"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.14", "$9.20", "$8.83", "$8.67", "$8.45", "$8.28"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$6.85", "$6.41", "$6.14", "$6.02", "$5.86", "$5.73"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb117",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Bullet Sports Water Bottle - 26 oz",
+  code: "IBSB117",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Featured.jpg",
+  slug: "bullet-sports-water-bottle-26-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '2.75" W x 10.25" H',
+  imprint: '2" W x 3.5" H',
+  hideGusset: true,
+  price: 11.29,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Silver.jpg",
+  description: "26 oz single-wall stainless steel water bottle with silicone ring and carabiner. Features a twist cap for a water-tight seal. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "26 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB117",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "12.8 lbs",
+        boxDims: '15.35" L x 15.35" W x 11.02" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$16.27", "$16.59", "$15.05", "$14.30", "$13.85", "$11.88"] },
+        { label: "2 Color Imprint", prices: ["$16.93", "$17.43", "$15.86", "$15.10", "$14.63", "$12.65"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$18.19", "$19.04", "$17.42", "$16.63", "$16.12", "$14.12"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$15.46", "$15.76", "$14.30", "$13.58", "$13.16", "$11.29"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsbrsb35",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "HDPE Plastic Water Bottle with Quick Shot Lid - 32 oz",
+  code: "IBSBRSB35",
+  slug: "hdpe-plastic-water-bottle-with-quick-shot-lid-32-oz",
+  category: "Sports Bottles",
+  material: "HDPE Plastic",
+  size: '2.25"RIM X 3.25"W X 8.75"H',
+  imprint: '3”W x 3.50”H',
+  hideGusset: true,
+  price: 3.21,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Neon Pink.jpg",
+  description: "32 oz BPA-free HDPE plastic water bottle with a wide mouth, leak-resistant sure flow lid, and a straight wall design.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Blue.jpg" },
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Clear.jpg" },
+    { name: "Neon Orange", hex: "#FFA500", image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Neon Orange.jpg" },
+    { name: "Neon Pink", hex: "#FF6EC7", image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Neon Pink.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Neon Pink.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Neon Orange.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "32 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSBRSB35",
+    material: "HDPE Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "13.9 lbs",
+        boxDims: '18.9" L x 15.75" W x 9.45" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$4.69", "$4.59", "$4.21", "$3.98", "$3.81", "$3.38"] },
+        { label: "2 Color Imprint", prices: ["$5.35", "$5.43", "$5.02", "$4.78", "$4.59", "$4.15"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.61", "$7.04", "$6.57", "$6.30", "$6.08", "$5.62"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.46", "$4.37", "$4.00", "$3.78", "$3.61", "$3.21"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb351",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Yutan Wide Mouth Plastic Water Bottle - 40 oz",
+  code: "IBSB351",
+  slug: "yutan-wide-mouth-plastic-water-bottle-40-oz",
+  category: "Sports Bottles",
+  material: "PCTG Plastic",
+  size: '3" W x 9.25" H x 3.5" B',
+  imprint: '3" W x 3" H',
+  hideGusset: true,
+  price: 10.09,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB351/IBSB351-Black.jpg",
+  description: "40 oz plastic water bottle with a wide mouth opening, leak-proof screw-on cap, and a carrying handle.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB351/IBSB351-Black.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB351/IBSB351-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB351/IBSB351-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB351/IBSB351-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB351/IBSB351-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "40 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB351",
+    material: "PCTG Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "12.3 lbs",
+        boxDims: '18.78" x 14.96" x 12.6"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$13.81", "$14.13", "$12.49", "$11.64", "$11.04", "$10.61"] },
+        { label: "2 Color Imprint", prices: ["$14.47", "$14.97", "$13.30", "$12.44", "$11.82", "$11.38"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$15.73", "$16.58", "$14.85", "$13.97", "$13.31", "$12.85"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$13.11", "$13.43", "$11.87", "$11.05", "$10.49", "$10.09"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb1663",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Frosted Plastic Water Bottle - 20 oz",
+  code: "IBSB1663",
+  slug: "frosted-plastic-water-bottle-20-oz",
+  category: "Sports Bottles",
+  material: "HDPE Plastic",
+  size: '2.5" W x 7" H',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 1.25,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Orange.jpg",
+  description: "20 oz frosted HDPE plastic water bottle, lead and BPA free. Made in the USA.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Green.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Orange.jpg" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Purple.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Red.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-White.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Yellow.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Orange.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Purple.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Teal.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Yellow.jpg",
+    "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB1663",
+    material: "HDPE Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "100 pcs",
+        boxWeight: "13 lbs",
+        boxDims: '24" x 18" x 18"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$2.74", "$2.45", "$2.15", "$1.72", "$1.50", "$1.32"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$2.61", "$2.32", "$2.04", "$1.64", "$1.42", "$1.25"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb271",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Posh Stainless Steel Water Bottle - 20 oz",
+  code: "IBSB271",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Featured.jpg",
+  slug: "posh-stainless-steel-water-bottle-20-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '2.75”W x 10”H',
+  imprint: '2.75"w x 3.00"h',
+  hideGusset: true,
+  price: 17.24,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Light Pink.jpg",
+  description: "20 oz double-wall vacuum insulated stainless steel water bottle with a spill-proof screw-on cap and matte color finish.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Black.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Charcoal.jpg" },
+    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Light Blue.jpg" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Light Pink.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Navy Blue.jpg" },
+    { name: "Saige", hex: "#8A9A5B", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Saige.jpg" },
+    { name: "Slate", hex: "#6A5ACD", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Slate.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Light Pink.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Charcoal.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Light Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Navy Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Saige.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Slate.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB271",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "16.53 lbs",
+        boxDims: '15.35" L x 15.35" W x 11.42" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$16.48", "$20.54", "$19.26", "$18.94", "$18.47", "$18.15"] },
+        { label: "2 Color Imprint", prices: ["$17.14", "$21.38", "$20.07", "$19.74", "$19.25", "$18.92"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$18.40", "$22.99", "$21.63", "$21.27", "$20.75", "$20.39"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$15.65", "$19.52", "$18.31", "$18.00", "$17.55", "$17.24"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb28",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Push Cap Plastic Water Bottle - 28 oz",
+  code: "IBSB28",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Featured.jpg",
+  slug: "push-cap-plastic-water-bottle-28-oz",
+  category: "Sports Bottles",
+  material: "Plastic",
+  size: '9.8" H x 2.8" W x 2.25"Brim',
+  imprint: '3.00”W x 3.00”H',
+  hideGusset: true,
+  price: 1.93,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Neon Green.jpg",
+  description: "28 oz high-density polyethylene water bottle with a ridged cap and easy-flow colored drinking push cap.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Black.jpg" },
+    { name: "Frosted", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Frosted.jpg" },
+    { name: "Granite", hex: "#808080", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Granite.jpg" },
+    { name: "Light Blue", hex: "#ADD8E6", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Light Blue.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Navy Blue.jpg" },
+    { name: "Neon Green", hex: "#39FF14", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Neon Green.jpg" },
+    { name: "Neon Pink", hex: "#FF6EC7", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Neon Pink.jpg" },
+    { name: "Orange", hex: "#FFA500", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Orange.jpg" },
+    { name: "Purple", hex: "#800080", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Purple.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Red.jpg" },
+    { name: "Reflex Blue", hex: "#4169E1", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Reflex Blue.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-White.jpg" },
+    { name: "Yellow", hex: "#FFD700", image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Yellow.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Neon Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Frosted.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Granite.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Light Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Navy Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Neon Pink.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Orange.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Purple.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Reflex Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Yellow.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "28 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB28",
+    material: "Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "100 pcs",
+        boxWeight: "14 lbs",
+        boxDims: '24" x 18" x 20"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$4.63", "$4.26", "$2.77", "$2.62", "$2.44", "$2.04"] },
+        { label: "2 Color Imprint", prices: ["$5.29", "$5.10", "$3.58", "$3.42", "$3.22", "$2.80"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.56", "$6.71", "$5.13", "$4.95", "$4.72", "$4.28"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.40", "$4.05", "$2.63", "$2.49", "$2.33", "$1.93"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsg257",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Sheridan Recycled Plastic Bottle - 26 oz",
+  code: "IBSG257",
+  slug: "sheridan-recycled-plastic-bottle-26-oz",
+  category: "Sports Bottles",
+  material: "Recycled PET",
+  size: '2.25" W x 8.15" H x 3" B',
+  imprint: '3" W x 3" H',
+  hideGusset: true,
+  price: 4.80,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Red.jpg",
+  description: "26 oz sports water bottle made from 100% recycled PET material. Features a wide mouth, flap opener lid, and carrying handle.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Blue.jpg" },
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Clear.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Red.jpg" },
+    { name: "Smoke", hex: "#708090", image: "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Smoke.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Smoke.jpg",
+    "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "26 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSG257",
+    material: "Recycled PET",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "100 pcs",
+        boxWeight: "15.2 lbs",
+        boxDims: '25.3" x 19.3" x 20.6"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$6.55", "$7.83", "$7.36", "$6.85", "$6.31", "$5.06"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$8.47", "$10.28", "$9.72", "$9.18", "$8.58", "$7.30"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$6.22", "$7.43", "$6.99", "$6.50", "$5.99", "$4.80"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb329",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Vulcan Stainless Steel Water Bottle with Strap - 34 oz",
+  code: "IBSB329",
+  slug: "vulcan-stainless-steel-water-bottle-with-strap-34-oz",
+  category: "Sports Bottles",
+  material: "Inner Wall: 304 Stainless Steel, Outer Wall: 201 Stainless Steel, Lid: PP, Flip: PP + TPR, Strap: Polyester",
+  size: '3.5”W x 10.5”H',
+  imprint: '3" W X 3.5" H',
+  hideGusset: true,
+  price: 28.75,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Army Green.jpg",
+  description: "34 oz double-wall vacuum insulated stainless steel water bottle with a plastic flip lid, handle, and carrying strap.",
+  popular: false,
+
+  colors: [
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Army Green.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Black.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Army Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "34 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB329",
+    material: "Inner Wall: 304 Stainless Steel, Outer Wall: 201 Stainless Steel, Lid: PP, Flip: PP + TPR, Strap: Polyester",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "12 pcs",
+        boxWeight: "11.02 lbs",
+        boxDims: "Call for details"
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$34.33", "$41.89", "$34.82", "$33.16", "$31.85", "$30.26"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    laserEngraving: {
+      label: "LASER ENGRAVING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Laser Engraving", prices: ["$36.26", "$44.34", "$37.18", "$35.48", "$34.13", "$32.50"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$32.62", "$39.79", "$33.08", "$31.49", "$30.26", "$28.75"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsg119",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Plastic Water Bottle - 24 oz",
+  code: "IBSG119",
+  slug: "plastic-water-bottle-24-oz",
+  category: "Sports Bottles",
+  material: "Plastic PETG",
+  size: '9" H x 2.5" Diameter',
+  imprint: '2.50" W x 4.00" H',
+  hideGusset: true,
+  price: 3.98,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Green.jpg",
+  description: "24 oz slim translucent plastic water bottle with a screw-on lid, flip-top mechanism, and inside straw. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Blue.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Charcoal.jpg" },
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Clear.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Green.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Charcoal.jpg",
+    "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "24 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSG119",
+    material: "Plastic PETG",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "8.7 lbs",
+        boxDims: '14.96" L x 14.96" W x 10.63" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.47", "$8.96", "$8.22", "$7.53", "$6.41", "$4.43"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.40", "$11.41", "$10.58", "$9.86", "$8.68", "$6.67"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$7.62", "$8.06", "$7.40", "$6.77", "$5.77", "$3.98"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsrpm016",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Summit Black Bottle - 32 oz",
+  code: "IBSRPM016",
+  slug: "summit-black-bottle-32-oz",
+  category: "Sports Bottles",
+  material: "304 Stainless Steel",
+  size: '7.48"w x 3.54"h',
+  imprint: '10.3"w x 2.8"h',
+  hideGusset: true,
+  price: 21.36,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSRPM016/IBSRPM016-Black.jpg",
+  description: "32 oz double-walled stainless steel bottle with a powder-coated finish, white sublimation patch, and secure handle lid. Keeps drinks hot for 12 hours or cold for 24.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSRPM016/IBSRPM016-Black.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSRPM016/IBSRPM016-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSRPM016/IBSRPM016-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "32 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSRPM016",
+    material: "304 Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "Call for details",
+        boxDims: "Call for details"
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Colors - Full Color - 1 Location", prices: ["$26.24", "$30.93", "$27.61", "$25.20", "$22.82", "$21.36"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb135",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Slim Stainless Steel Water Bottle - 25 oz",
+  code: "IBSB135",
+  featureImage: "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Featured.jpg",
+  slug: "slim-stainless-steel-water-bottle-25-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '10" H x 2.75" W',
+  imprint: '2.50"W x 2.50"H',
+  hideGusset: true,
+  price: 8.49,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Blue.jpg",
+  description: "25 oz slim stainless steel water bottle with a metallic matte finish and flip-top lid with inside straw.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Blue.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "25 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB135",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "12.9 lbs",
+        boxDims: '15.94" L x 15.94" W x 11.42" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$13.59", "$15.47", "$14.65", "$14.16", "$13.20", "$8.93"] },
+        { label: "2 Color Imprint", prices: ["$14.25", "$16.31", "$15.46", "$14.96", "$13.98", "$9.70"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    laserEngraving: {
+      label: "LASER ENGRAVING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Laser Engraving", prices: ["$15.51", "$17.92", "$17.01", "$16.49", "$15.47", "$11.17"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$12.90", "$14.70", "$13.92", "$13.46", "$12.53", "$8.49"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb350",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Houston Stainless Steel Water Bottle with Carrying Handle - 23 oz",
+  code: "IBSB350",
+  slug: "houston-stainless-steel-water-bottle-with-carrying-handle-23-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '2.5"W x 7.5"h',
+  imprint: '2.5" W x 2.5" H',
+  hideGusset: true,
+  price: 7.44,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Navy Blue.jpg",
+  description: "23 oz single-wall stainless steel water bottle with an easy carry loop handle and a wide mouth for easy filling.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Black.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Grey.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Navy Blue.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB350/IBSB350-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Navy Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Grey.jpg",
+    "assets/assets/images/products/sports bottles/IBSB350/IBSB350-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "23 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB350",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "10.14 lbs",
+        boxDims: '15.16" x 15.16" x 8.86"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$15.79", "$17.78", "$14.92", "$12.77", "$10.86", "$7.83"] },
+        { label: "2 Color Imprint", prices: ["$16.45", "$18.62", "$15.73", "$13.57", "$11.64", "$8.60"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$17.71", "$20.23", "$17.28", "$15.10", "$13.13", "$10.07"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$14.99", "$16.90", "$14.18", "$12.13", "$10.31", "$7.44"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsg232",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Wide Mouth Water Bottle - 38 oz",
+  code: "IBSG232",
+  featureImage: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Featured.jpg",
+  slug: "wide-mouth-water-bottle-38-oz",
+  category: "Sports Bottles",
+  material: "Plastic PETG",
+  size: '3.54" W x 8.3" H',
+  imprint: '3.0”w x 4.0”h',
+  hideGusset: true,
+  price: 7.18,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Lime Green.jpg",
+  description: "38 oz wide mouth plastic water bottle with a screw-on cap, color matching trim, and transparent outer wall.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Blue.jpg" },
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Clear.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Lime Green.jpg" },
+    { name: "Smoke", hex: "#708090", image: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Smoke.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Lime Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Smoke.jpg",
+    "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "38 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSG232",
+    material: "Plastic PETG",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "10.3 lbs",
+        boxDims: '19.49" L x 19.49" W x 9.45" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$12.52", "$10.91", "$10.40", "$9.76", "$8.37", "$7.56"] },
+        { label: "2 Color Imprint", prices: ["$13.18", "$11.75", "$11.21", "$10.56", "$9.15", "$8.33"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$14.44", "$13.36", "$12.76", "$12.09", "$10.65", "$9.80"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$11.89", "$10.36", "$9.88", "$9.27", "$7.96", "$7.18"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsbrsb34",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "HDPE Plastic Sports Water Bottle - 32 oz",
+  code: "IBSBRSB34",
+  slug: "hdpe-plastic-sports-water-bottle-32-oz",
+  category: "Sports Bottles",
+  material: "HDPE Plastic",
+  size: '7.75" H x 3" W x 2" Brim',
+  imprint: '1 Color Imprint Area: 2.50" W x 4.00" H | 2+ Colors Imprint Area: 2.50" W x 4.00" H',
+  hideGusset: true,
+  price: 2.84,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Pink.jpg",
+  description: "32 oz BPA-free HDPE plastic water bottle with a wide mouth, push-pull lid, and straight wall design. Made in the USA.",
+  popular: false,
+
+  colors: [
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Clear.jpg" },
+    { name: "Neon Lime Green", hex: "#39FF14", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Lime Green.jpg" },
+    { name: "Neon Orange", hex: "#FFA500", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Orange.jpg" },
+    { name: "Neon Pink", hex: "#FF6EC7", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Pink.jpg" },
+    { name: "Trans Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Blue.jpg" },
+    { name: "Trans Green", hex: "#4CAF50", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Green.jpg" },
+    { name: "Trans Purple", hex: "#800080", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Purple.jpg" },
+    { name: "Trans Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Red.jpg" },
+    { name: "Trans Smoke", hex: "#708090", image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Smoke.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Pink.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Lime Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Orange.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Purple.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Trans Smoke.jpg",
+    "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "32 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSBRSB34",
+    material: "HDPE Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "50 pcs",
+        boxWeight: "14 lbs",
+        boxDims: '29" x 19" x 19"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$4.81", "$4.13", "$3.77", "$3.60", "$3.43", "$3.00"] },
+        { label: "2 Color Imprint", prices: ["$5.47", "$4.97", "$4.58", "$4.40", "$4.21", "$3.76"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.73", "$6.58", "$6.13", "$5.93", "$5.71", "$5.24"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.57", "$3.92", "$3.58", "$3.42", "$3.26", "$2.84"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb56",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Stella Plastic Water Bottle with Measurements - 40 oz",
+  code: "IBSB56",
+  slug: "stella-plastic-water-bottle-with-measurements-40-oz",
+  category: "Sports Bottles",
+  material: "Silicone, PCTG Plastic",
+  size: '2.75" W x 9" H x 3.5" D',
+  imprint: '2.5" W x 4"H',
+  hideGusset: true,
+  price: 5.95,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Blue.jpg",
+  description: "40 oz single-wall PCTG plastic water bottle with a screw-on lid, straw, retractable suction nozzle, carrying handle, and capacity measurements.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Blue.jpg" },
+    { name: "Sage Green", hex: "#8A9A5B", image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Sage Green.jpg" },
+    { name: "Smoke", hex: "#708090", image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Smoke.jpg" },
+    { name: "Teal", hex: "#008080", image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Teal.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Sage Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Smoke.jpg",
+    "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Teal.jpg",
+    "assets/assets/images/products/sports bottles/IBSB56/IBSB56-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "40 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB56",
+    material: "Silicone, PCTG Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "10.1 lbs",
+        boxDims: '16.73" W x 12.20" H x 18.11" L'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.46", "$7.38", "$6.74", "$6.58", "$6.40", "$6.26"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.04", "$7.01", "$6.40", "$6.25", "$6.07", "$5.95"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb28usa",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "28 oz. Plastic Water Bottles with Push Cap",
+  code: "IBSB28USA",
+  slug: "plastic-water-bottles-with-push-cap-28-oz",
+  category: "Sports Bottles",
+  material: "HDPE Plastic",
+  size: '9.8" H x 2.8" W x 2.25" Brim',
+  imprint: '3.00”W x 3.50”H',
+  hideGusset: true,
+  price: 3.04,
+  originalPrice: 6.85,
+  image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-Promo1.jpg",
+  description: "High density white polyethylene water bottle featuring ridged lids with easy-flow push caps. Designed for good grip action, making it perfect for sports and outdoor hydration.",
+  popular: false,
+
+  colors: [
+    { name: "White/Black", hex: "#000000", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteBlack.jpg" },
+    { name: "White/Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteBlue.jpg" },
+    { name: "White/Clear", hex: "#E0E0E0", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteClear.jpg" },
+    { name: "White/Green", hex: "#008000", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteGreen.jpg" },
+    { name: "White/Neon Green", hex: "#39FF14", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteNeonGreen.jpg" },
+    { name: "White/Orange", hex: "#FFA500", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteOrange.jpg" },
+    { name: "White/Purple", hex: "#800080", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhitePurple.jpg" },
+    { name: "White/Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteRed.jpg" },
+    { name: "White/Teal", hex: "#008080", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteTeal.jpg" },
+    { name: "White/White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteWhite.jpg" },
+    { name: "White/Yellow", hex: "#FFFF00", image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteYellow.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteBlack.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteBlue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteClear.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteGreen.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteNeonGreen.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteOrange.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhitePurple.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteRed.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteTeal.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteWhite.jpg",
+    "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-WhiteYellow.jpg"
+  ],
+
+  specs: {
+    weight: "28 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB28USA",
+    material: "HDPE Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "50 per box",
+        boxWeight: "14 lbs",
+        boxDims: "N/A"
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$4.63", "$4.26", "$2.77", "$2.62", "$2.44", "$2.20"] },
+        { label: "2 Color Imprint", prices: ["$5.29", "$5.10", "$3.58", "$3.42", "$3.22", "$2.97"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$6.56", "$6.71", "$5.13", "$4.95", "$4.72", "$4.44"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.40", "$4.05", "$2.64", "$2.49", "$2.33", "$2.09"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsg147",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Plastic Sports Water Bottle with Flip Lid - 22 oz",
+  code: "IBSG147",
+  featureImage: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Featured.jpg",
+  slug: "plastic-sports-water-bottle-with-flip-lid-22-oz",
+  category: "Sports Bottles",
+  material: "Plastic",
+  size: '9.5" H x 2.6" W',
+  imprint: '2.25"w x 4"h',
+  hideGusset: true,
+  price: 6.20,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Lime Green.jpg",
+  description: "22 oz BPA-free plastic sports water bottle with a flip-top lid, screw-on cap, and easy carry handle.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Blue.jpg" },
+    { name: "Charcoal", hex: "#36454F", image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Charcoal.jpg" },
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Clear.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Lime Green.jpg" },
+    { name: "Orange", hex: "#F97316", image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Orange.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Lime Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Charcoal.jpg",
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Orange.jpg",
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Promo1.jpg",
+    "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Promo2.jpg"
+  ],
+
+  specs: {
+    weight: "22 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSG147",
+    material: "Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "7.9 lbs",
+        boxDims: '16.93" L x 14.17" W x 10.43" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$9.78", "$11.19", "$9.65", "$8.98", "$8.13", "$6.52"] },
+        { label: "2 Color Imprint", prices: ["$10.44", "$12.03", "$10.46", "$9.78", "$8.91", "$7.28"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$11.70", "$13.64", "$12.02", "$11.31", "$10.40", "$8.76"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$9.30", "$10.63", "$9.17", "$8.53", "$7.72", "$6.20"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb334",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Ransom Water Bottle with Strap - 17 oz",
+  code: "IBSB334",
+  slug: "ransom-water-bottle-with-strap-17-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '2.75”W x 7.80”H',
+  imprint: '2.5” W x 4” H',
+  hideGusset: true,
+  price: 16.74,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Blue.jpg",
+  description: "17 oz double-wall vacuum insulated stainless steel water bottle with a plastic lid, stainless steel wrap, and carrying strap.",
+  popular: false,
+
+  colors: [
+    { name: "Army Green", hex: "#4B5320", image: "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Army Green.jpg" },
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Blue.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Army Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB334",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "17.64 lbs",
+        boxDims: '16.54" L x 16.54" W x 9.06" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$17.92", "$22.19", "$21.13", "$20.28", "$19.62", "$17.63"] },
+        { label: "2 Color Imprint", prices: ["$18.58", "$23.03", "$21.94", "$21.08", "$20.40", "$18.39"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$19.84", "$24.64", "$23.49", "$22.61", "$21.89", "$19.87"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$17.03", "$21.08", "$20.07", "$19.27", "$18.64", "$16.74"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb346",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Strike Plastic Water Bottle with Carrier Handle - 27 oz",
+  code: "IBSB346",
+  slug: "strike-plastic-water-bottle-with-carrier-handle-27-oz",
+  category: "Sports Bottles",
+  material: "Plastic PETG",
+  size: '2" W x 8.5" H',
+  imprint: '2.5" W x 3" H',
+  hideGusset: true,
+  price: 3.78,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Navy Blue.jpg",
+  description: "27 oz single-wall plastic water bottle with an easy carry loop handle, twist-off cap, and shatter-proof design. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Black.jpg" },
+    { name: "Navy Blue", hex: "#000080", image: "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Navy Blue.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB346/IBSB346-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Navy Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB346/IBSB346-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "27 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB346",
+    material: "Plastic PETG",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "20 pcs",
+        boxWeight: "9.9 lbs",
+        boxDims: '16.14"L x 15.35"W x 10.63"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$4.05", "$4.97", "$4.70", "$4.43", "$4.16", "$3.98"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$3.84", "$4.72", "$4.46", "$4.20", "$3.95", "$3.78"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb291",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Beau Water Bottle with Handle - 20 oz",
+  code: "IBSB291",
+  slug: "beau-water-bottle-with-handle-20-oz",
+  category: "Sports Bottles",
+  material: "Plastic",
+  size: '8" H x 3" W',
+  imprint: '3" W x 3" H',
+  hideGusset: true,
+  price: 4.74,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Light Pink.jpg",
+  description: "20 oz high-density polyethylene water bottle with a flexi-grip easy squeeze action and ridged cap.",
+  popular: false,
+
+  colors: [
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Clear.jpg" },
+    { name: "Light Pink", hex: "#FFB6C1", image: "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Light Pink.jpg" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Mint.jpg" },
+    { name: "Smoke", hex: "#708090", image: "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Smoke.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Light Pink.jpg",
+    "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Mint.jpg",
+    "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Smoke.jpg",
+    "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "20 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB291",
+    material: "Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "4.41 lbs",
+        boxDims: '16.54" L x 16.54" W x 8.66" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$5.93", "$6.79", "$5.87", "$5.57", "$5.14", "$4.98"] },
+        { label: "2 Color Imprint", prices: ["$6.59", "$7.63", "$6.68", "$6.37", "$5.92", "$5.75"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.85", "$9.24", "$8.24", "$7.90", "$7.41", "$7.22"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$5.63", "$6.45", "$5.58", "$5.29", "$4.88", "$4.74"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsm301",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Levian Cola Shaped Bottle - 17 oz",
+  code: "IBSM301",
+  slug: "levian-cola-shaped-bottle-17-oz",
+  category: "Sports Bottles",
+  material: "Stainless Interior / Exterior",
+  size: '3.42" W x 10" H',
+  imprint: '2.5"W X 3"H',
+  hideGusset: true,
+  price: 15.63,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Red.jpg",
+  description: "17 oz Levian cola-shaped vacuum bottle with double-wall insulation, a screw-on spill-resistant lid, and a wide mouth opening. BPA free.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Blue.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Silver.jpg"
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSM301",
+    material: "Stainless Interior / Exterior",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "18.3 lbs",
+        boxDims: '15.94" L x 16.14" W x 11.42" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$16.78", "$20.65", "$19.10", "$18.55", "$17.88", "$16.45"] },
+        { label: "2 Color Imprint", prices: ["$17.44", "$21.49", "$19.91", "$19.35", "$18.66", "$17.22"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$18.70", "$23.10", "$21.47", "$20.88", "$20.15", "$18.69"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$15.94", "$19.61", "$18.14", "$17.62", "$16.98", "$15.63"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb57",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Winslow Stainless Steel Water Jug - 64 oz",
+  code: "IBSB57",
+  slug: "winslow-stainless-steel-water-jug-64-oz",
+  category: "Sports Bottles",
+  material: "Tritan Plastic / Stainless Steel",
+  size: '4.5" W x 8.25" H x 4.75" D',
+  imprint: '3" W x 3" H',
+  hideGusset: true,
+  price: 39.03,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB57/IBSB57-Black.jpg",
+  description: "64 oz double-wall stainless steel water jug with a Tritan screw-on lid, press-in button, flip lid lock, and carrying handle.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB57/IBSB57-Black.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSB57/IBSB57-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB57/IBSB57-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB57/IBSB57-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSB57/IBSB57-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "64 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB57",
+    material: "Tritan Plastic / Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "4 pcs",
+        boxWeight: "8.97 lbs",
+        boxDims: '12.60" x 11.02" x 11.81"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$41.09", "$50.53", "$46.97", "$44.67", "$41.93", "$41.08"] },
+        { label: "2 Color Imprint", prices: ["$41.75", "$51.37", "$47.78", "$45.47", "$42.71", "$41.84"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$43.01", "$52.98", "$49.33", "$47.00", "$44.20", "$43.32"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$39.03", "$48.01", "$44.62", "$42.44", "$39.83", "$39.03"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb2463",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Poly-Clear Bike Water Bottle - 24 oz",
+  code: "IBSB2463",
+  slug: "poly-clear-bike-water-bottle-24-oz",
+  category: "Sports Bottles",
+  material: "PET Plastic",
+  size: '7" H',
+  imprint: '1 Color Imprint Area: 2.50"W x 2.50"H | 2+ Colors Imprint Area: 2.75"W x 2.75"H',
+  hideGusset: true,
+  price: 2.73,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB2463/IBSB2463-Clear.jpg",
+  description: "24 oz clear PET plastic bike water bottle with a contoured shape, leak-resistant super sipper lid, and high gloss clarity. Made in the USA.",
+  popular: false,
+
+  colors: [
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSB2463/IBSB2463-Clear.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB2463/IBSB2463-Clear.jpg"
+  ],
+
+  specs: {
+    weight: "24 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB2463",
+    material: "PET Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "100 pcs",
+        boxWeight: "16 lbs",
+        boxDims: '24" x 18" x 20"'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$5.70", "$6.12", "$4.63", "$4.51", "$3.95", "$2.87"] },
+        { label: "2 Color Imprint", prices: ["$6.36", "$6.96", "$5.44", "$5.31", "$4.73", "$3.64"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.62", "$8.57", "$6.99", "$6.84", "$6.23", "$5.11"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$5.41", "$5.81", "$4.40", "$4.28", "$3.76", "$2.73"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb323",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Genie Plastic Water Bottle with Strap - 17 oz",
+  code: "IBSB323",
+  slug: "genie-plastic-water-bottle-with-strap-17-oz",
+  category: "Sports Bottles",
+  material: "AS Plastic",
+  size: '8.7" H x 2.5" W',
+  imprint: '3.00" W x 3.00" H',
+  hideGusset: true,
+  price: 4.74,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Red.jpg",
+  description: "17 oz BPA-free AS plastic water bottle with a sleek modern design and carrying strap. Hand wash only.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Blue.jpg" },
+    { name: "Lime Green", hex: "#84CC16", image: "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Lime Green.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Red.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Lime Green.jpg"
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB323",
+    material: "AS Plastic",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "48 pcs",
+        boxWeight: "11.8 lbs",
+        boxDims: '23.62" L x 18.9" W x 9.45" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$7.59", "$8.39", "$7.05", "$6.02", "$5.12", "$4.98"] },
+        { label: "2 Color Imprint", prices: ["$8.25", "$9.23", "$7.86", "$6.82", "$5.90", "$5.75"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.52", "$10.84", "$9.41", "$8.35", "$7.40", "$7.22"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$7.22", "$7.97", "$6.70", "$5.72", "$4.86", "$4.74"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb151",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Aluminum Water Bottle - 25 oz",
+  code: "IBSB151",
+  slug: "aluminum-water-bottle-25-oz",
+  category: "Sports Bottles",
+  material: "Aluminum",
+  size: '10" H x 2.75" W',
+  imprint: '1 Color Imprint Area: 2.50" W x 4.00" H | Laser Area: 1.40" W x 3.00" H',
+  hideGusset: true,
+  price: 8.81,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Red.jpg",
+  description: "25 oz aluminum water bottle with a smooth metallic finish, black flip-top lid, push-release cap, and carabiner.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Blue.jpg" },
+    { name: "Green", hex: "#4CAF50", image: "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Green.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Silver.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Green.jpg",
+    "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "25 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB151",
+    material: "Aluminum",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "11 lbs",
+        boxDims: '15.75" L x 15.75" W x 11.42" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$11.72", "$13.85", "$12.89", "$12.44", "$11.90", "$9.27"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    laserEngraving: {
+      label: "LASER ENGRAVING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Laser Engraving", prices: ["$13.64", "$16.30", "$15.26", "$14.76", "$14.17", "$11.51"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$11.13", "$13.16", "$12.24", "$11.81", "$11.30", "$8.81"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsm237",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Vacuum Stainless Steel Water Bottle - 17 oz",
+  code: "IBSM237",
+  slug: "vacuum-stainless-steel-water-bottle-17-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '1.60"R X 2.80" W X 8.80"H',
+  imprint: '2.25" W x 2.25" H',
+  hideGusset: true,
+  price: 7.56,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Red.jpg",
+  description: "17 oz double-wall vacuum insulated stainless steel water bottle with a spill-proof screw-on cap. BPA free, keeps drinks hot for 6 hours and cold for 12.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Black.jpg" },
+    { name: "Mint", hex: "#98FF98", image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Mint.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Red.jpg" },
+    { name: "Silver", hex: "#C0C0C0", image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Silver.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Mint.jpg",
+    "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Silver.jpg",
+    "assets/assets/images/products/sports bottles/IBSM237/IBSM237-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "17 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSM237",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "17 lbs",
+        boxDims: '17.32" L x 17.32" W x 9.45" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$8.61", "$10.71", "$10.00", "$9.52", "$9.10", "$7.97"] },
+        { label: "2 Color Imprint", prices: ["$9.27", "$11.55", "$10.81", "$10.32", "$9.88", "$8.74"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$10.54", "$13.16", "$12.37", "$11.85", "$11.38", "$10.21"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$8.17", "$10.18", "$9.50", "$9.04", "$8.65", "$7.56"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb324",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Levian Plastic Cola Shaped Water Bottle - 25 oz",
+  code: "IBSB324",
+  slug: "levian-plastic-cola-shaped-water-bottle-25-oz",
+  category: "Sports Bottles",
+  material: "Plastic PETG",
+  size: '11" H x 2" W',
+  imprint: '2.25" W x 3.50" H',
+  hideGusset: true,
+  price: 5.95,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Red.jpg",
+  description: "25 oz BPA-free PETG plastic water bottle with a cola-shaped design. Hand wash only.",
+  popular: false,
+
+  colors: [
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Blue.jpg" },
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Clear.jpg" },
+    { name: "Red", hex: "#FF0000", image: "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Red.jpg" },
+    { name: "Smoke", hex: "#708090", image: "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Smoke.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Red.jpg",
+    "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Smoke.jpg",
+    "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "25 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB324",
+    material: "Plastic PETG",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "10.5 lbs",
+        boxDims: '15.55" L x 15.55" W x 12.2" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$7.87", "$9.45", "$8.84", "$8.31", "$7.61", "$6.26"] },
+        { label: "2 Color Imprint", prices: ["$8.53", "$10.29", "$9.65", "$9.11", "$8.39", "$7.03"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.79", "$11.90", "$11.21", "$10.64", "$9.88", "$8.50"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$7.47", "$8.97", "$8.40", "$7.90", "$7.23", "$5.95"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsf26",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Double Wall Stainless Steel Bottle - 18 oz",
+  code: "IBSF26",
+  slug: "double-wall-stainless-steel-bottle-18-oz",
+  category: "Sports Bottles",
+  material: "Stainless Steel",
+  size: '10" H x 3" W',
+  imprint: '1 Color Imprint Area: 3.00" W x 3.50" H | 2+ Colors Imprint Area: 3.00" W x 3.50" H',
+  hideGusset: true,
+  price: 19.85,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSF26/IBSF26-Black.jpg",
+  description: "18 oz double-wall vacuum insulated stainless steel bottle with a spill-proof straw lid and comfortable carrying handle. Keeps drinks hot for 6 hours and cold for 12.",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSF26/IBSF26-Black.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSF26/IBSF26-Black.jpg"
+  ],
+
+  specs: {
+    weight: "18 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSF26",
+    material: "Stainless Steel",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "25 pcs",
+        boxWeight: "22.5 lbs",
+        boxDims: '16.93" L x 16.93" W x 11.81" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$24.63", "$29.19", "$27.53", "$26.45", "$25.47", "$20.90"] },
+        { label: "2 Color Imprint", prices: ["$25.29", "$30.03", "$28.34", "$27.25", "$26.25", "$21.67"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$26.55", "$31.64", "$29.89", "$28.78", "$27.74", "$23.14"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$23.40", "$27.73", "$26.15", "$25.14", "$24.19", "$19.85"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsb293",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "Athlete Plastic Water Bottle - 60 oz",
+  code: "IBSB293",
+  slug: "athlete-plastic-water-bottle-60-oz",
+  category: "Sports Bottles",
+  material: "Polypropylene",
+  size: '4.25” W x 11.25” H',
+  imprint: '1 Color: 2.50"W x 4.00"H | 2+Full Color : 3.00"W x 4.00"H',
+  hideGusset: true,
+  price: 4.47,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Grey.jpg",
+  description: "60 oz translucent plastic water bottle with a contrasting solid colored cap, built-in carry handle, and flip-top lid.",
+  popular: false,
+
+  colors: [
+    { name: "Clear", hex: "#F0F8FF", image: "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Clear.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Grey.jpg" },
+    { name: "Smoke", hex: "#708090", image: "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Smoke.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Grey.jpg",
+    "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Clear.jpg",
+    "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Smoke.jpg",
+    "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "60 oz",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSB293",
+    material: "Polypropylene",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "12 pcs",
+        boxWeight: "5.22 lbs",
+        boxDims: '29.53" L x 15.75" W x 8.27" H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$5.09", "$6.29", "$5.76", "$5.45", "$5.25", "$4.70"] },
+        { label: "2 Color Imprint", prices: ["$5.75", "$7.13", "$6.57", "$6.25", "$6.03", "$5.47"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$7.02", "$8.74", "$8.13", "$7.78", "$7.53", "$6.94"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$4.84", "$5.98", "$5.48", "$5.19", "$4.98", "$4.47"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
+},
+{
+  id: "ibsd600",
+  isBelpromo: true,
+  templatesAvailable: false,
+  name: "2-in-1 Cool Down Sports Kit",
+  code: "IBSD600",
+  slug: "2-in-1-cool-down-sports-kit",
+  category: "Sports Bottles",
+  material: "Bottle: AS Plastic; Towel: Polyester",
+  size: '2.5” W x 6.75” H',
+  imprint: '2” W x 2” H',
+  hideGusset: true,
+  price: 6.20,
+  originalPrice: 50.00,
+  image: "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Blue.jpg",
+  description: "Sports kit with a cooling towel and clear bottle holder, featuring a phone holder at the bottom. Bottle holds 350 ml (11.83 oz).",
+  popular: false,
+
+  colors: [
+    { name: "Black", hex: "#1C1C1C", image: "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Black.jpg" },
+    { name: "Blue", hex: "#0047AB", image: "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Blue.jpg" },
+    { name: "Grey", hex: "#808080", image: "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Grey.jpg" },
+    { name: "White", hex: "#FFFFFF", image: "assets/assets/images/products/sports bottles/IBSD600/IBSD600-White.jpg" }
+  ],
+
+  images: [
+    "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Blue.jpg",
+    "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Black.jpg",
+    "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Grey.jpg",
+    "assets/assets/images/products/sports bottles/IBSD600/IBSD600-White.jpg",
+    "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Promo1.jpg"
+  ],
+
+  specs: {
+    weight: "350 ml (11.83 oz)",
+    imprintPlacement: "Front Side, Back Side or Both Side",
+    specSample: "Free Spec Sample with Free Ground Shipping",
+    itemNo: "IBSD600",
+    material: "Bottle: AS Plastic; Towel: Polyester",
+    printMethod: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+    packagingOptions: [
+      {
+        type: "Case",
+        qtyPerBox: "50 pcs",
+        boxWeight: "18.1 lbs",
+        boxDims: '15.16"L x 15.35"W x 15.16"H'
+      }
+    ]
+  },
+
+  pricing: {
+    spot: {
+      label: "PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "1 Color Imprint", prices: ["$7.54", "$9.51", "$8.57", "$8.10", "$7.35", "$6.52"] },
+        { label: "2 Color Imprint", prices: ["$8.20", "$10.35", "$9.38", "$8.90", "$8.13", "$7.28"] },
+        { label: "Colors - Full Color - 1 Location", prices: ["$9.46", "$11.96", "$10.94", "$10.43", "$9.62", "$8.76"] },
+        { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
+      ],
+      priceIncludes: "1 Location",
+      printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+      leadTime: "5-7 Business Days after Art Approval",
+      setupCharge: "$56.25 (V)",
+      repeatSetup: "Free"
+    },
+    blank: {
+      label: "BLANK PRICING (USD)",
+      quantities: [50, 100, 250, 500, 1000, 2500],
+      rows: [
+        { label: "Blank", prices: ["$7.16", "$9.03", "$8.14", "$7.70", "$6.98", "$6.20"] }
+      ],
+      priceIncludes: "Blank",
+      leadTime: "Within 2 to 3 Business Days",
+      moq: "12 Pcs - Pls contact us for pricing"
+    }
+  },
+
+  additionalCharges: {
+    setupCharge: "$56.25 (V)",
+    repeatSetup: "Free",
+    pmsMatch: "We only offer close Match or contact us for standard PMS colors",
+    lessThanMinimum: "Call for pricing",
+    colorChangeFee: "$18.75 (V)",
+    sampleProof: "Contact for pricing",
+    artworkCharges: "$75.00 (V) / Hour",
+    secondSideImprint: "$1.00 (G) for Any Amount of Colors"
+  }
 }
+
+
 
 
 
