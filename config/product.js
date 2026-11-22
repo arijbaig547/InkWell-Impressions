@@ -23964,32 +23964,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [36, 72, 144, 288, 576, 1008],
-            rows: [
-                { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$5.78", "$6.71", "$6.06", "$5.95", "$5.77", "$5.64"] },
-                { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$6.44", "$7.55", "$6.87", "$6.74", "$6.55", "$6.41"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$7.70", "$9.16", "$8.42", "$8.27", "$8.05", "$7.88"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [36, 72, 144, 288, 576, 1008],
-            rows: [
-                { label: "Blank", prices: ["$5.49", "$6.37", "$5.76", "$5.65", "$5.49", "$5.36"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 24, 36, 72, 144, 288, 576, 1008, 2016],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$8.54", "$6.39", "$5.37", "$5.27", "$5.13", "$5.00", "$4.94", "$4.82", "$4.65"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$9.15", "$7.01", "$5.98", "$5.99", "$5.83", "$5.68", "$5.61", "$5.48", "$5.28"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$10.33", "$8.18", "$7.16", "$7.37", "$7.18", "$6.99", "$6.91", "$6.74", "$6.50"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 24, 36, 72, 144, 288, 576, 1008, 2016],
+        rows: [
+            {
+                label: "Colors",
+                prices: ["$8.11", "$6.08", "$5.10", "$5.00", "$4.87", "$4.75", "$4.69", "$4.58", "$4.42"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -26051,11 +26066,11 @@ const products = [{
     }
 },
 {
-    id: "ibcm96",
+    id: "ibcmbm96",
     isBelpromo: true,
     templatesAvailable: false,
     name: "Tankard Beer Mug - 17 oz",
-    code: "IBCM96",
+    code: "IBCMBM96",
     slug: "tankard-beer-mug-17-oz",
     category: "Ceramic Mugs",
     material: "Stoneware",
@@ -26099,32 +26114,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [36, 72, 144, 288, 576, 1008],
-            rows: [
-                { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$8.31", "$10.07", "$9.52", "$9.16", "$8.39", "$8.00"] },
-                { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$8.97", "$10.91", "$10.33", "$9.96", "$9.17", "$8.77"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$10.23", "$12.52", "$11.88", "$11.49", "$10.66", "$10.24"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [36, 72, 144, 288, 576, 1008],
-            rows: [
-                { label: "Blank", prices: ["$7.89", "$9.56", "$9.05", "$8.71", "$7.97", "$7.60"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 24, 36, 72, 144, 288, 576, 1008, 2016],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$12.47", "$9.30", "$7.72", "$6.73", "$6.56", "$6.39", "$6.31", "$6.16", "$5.94"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.08", "$9.91", "$8.34", "$7.45", "$7.26", "$7.07", "$6.99", "$6.82", "$6.58"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$14.26", "$11.09", "$9.51", "$8.83", "$8.60", "$8.38", "$8.28", "$8.08", "$7.79"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 24, 36, 72, 144, 288, 576, 1008, 2016],
+        rows: [
+            {
+                label: "Colors",
+                prices: ["$11.84", "$8.84", "$7.33", "$6.40", "$6.23", "$6.07", "$6.00", "$5.85", "$5.64"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -27711,33 +27741,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [36, 72, 144, 288, 576, 1008],
-            rows: [
-                { label: "Colors - 1 Color Imprint - 1 Location", prices: ["$4.27", "$5.01", "$4.68", "$4.48", "$4.17", "$3.83"] },
-                { label: "Colors - 2 Color Imprint - 1 Location", prices: ["$4.93", "$5.85", "$5.49", "$5.28", "$4.95", "$4.60"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$6.19", "$7.46", "$7.05", "$6.81", "$6.45", "$6.07"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [36, 72, 144, 288, 576, 1008],
-            rows: [
-                { label: "Blank", prices: ["$4.06", "$4.76", "$4.46", "$4.26", "$3.97", "$3.64"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 24, 36, 72, 144, 288, 576, 1008, 2016],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$6.94", "$5.00", "$3.97", "$3.48", "$3.39", "$3.30", "$3.26", "$3.18", "$3.07"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$7.56", "$5.61", "$4.58", "$4.20", "$4.09", "$3.99", "$3.94", "$3.84", "$3.71"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$8.73", "$6.79", "$5.76", "$5.58", "$5.44", "$5.30", "$5.23", "$5.10", "$4.92"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 24, 36, 72, 144, 288, 576, 1008, 2016],
+        rows: [
+            {
+                label: "Colors",
+                prices: ["$6.60", "$4.76", "$3.77", "$3.30", "$3.21", "$3.13", "$3.09", "$3.02", "$2.91"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",

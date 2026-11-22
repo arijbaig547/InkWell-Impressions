@@ -3057,10 +3057,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm96",
+  id: "ibcmbm96",
   isBelpromo: true,
   name: "Tankard Beer Mug - 17 oz",
-  code: "IBCM96",
+  code: "IBCMBM96",
   slug: "tankard-beer-mug-17-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
