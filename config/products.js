@@ -3450,10 +3450,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcmp01",
+  id: "ibcmcp01",
   isBelpromo: true,
   name: "Bistro Vitrified Porcelain Mug - 11 oz",
-  code: "IBCMP01",
+  code: "IBCMCP01",
   slug: "bistro-vitrified-porcelain-mug-11-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
@@ -3730,10 +3730,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm95",
+  id: "ibcmbm95",
   isBelpromo: true,
   name: "Inverted Ceramic Personalized Mug - 18 oz",
-  code: "IBCM95",
+  code: "IBCMBM95",
   slug: "inverted-ceramic-personalized-mug-18-oz",
   category: "Ceramic Mugs",
   material: "Ceramic",
@@ -3772,10 +3772,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm09",
+  id: "ibcmbm09",
   isBelpromo: true,
   name: "Ceramic Beer Mug - 18.5 oz",
-  code: "IBCM09",
+  code: "IBCMBM09",
   slug: "ceramic-beer-mug-18-5-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
@@ -3801,10 +3801,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm10",
+  id: "ibcmbm10",
   isBelpromo: true,
   name: "Ceramic Beer Stein - 18.5 oz",
-  code: "IBCM10",
+  code: "IBCMBM10",
   slug: "ceramic-beer-stein-18-5-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
@@ -3815,10 +3815,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm20",
+  id: "ibcmbm20",
   isBelpromo: true,
   name: "Ceramic Tankard - 17 oz",
-  code: "IBCM20",
+  code: "IBCMBM20",
   slug: "ceramic-tankard-17-oz",
   category: "Ceramic Mugs",
   material: "Ceramic",
@@ -3843,10 +3843,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm94",
+  id: "ibcmbm94",
   isBelpromo: true,
   name: "Beige Ceramic Beer Mug - 24 oz",
-  code: "IBCM94",
+  code: "IBCMBM94",
   slug: "beige-ceramic-beer-mug-24-oz",
   category: "Ceramic Mugs",
   material: "Ceramic",
@@ -3857,10 +3857,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm977",
+  id: "ibcmbm977",
   isBelpromo: true,
   name: "Bremen Mini Ceramic Beer Mug Shooter - 2 oz",
-  code: "IBCM977",
+  code: "IBCMBM977",
   slug: "bremen-mini-ceramic-beer-mug-shooter-2-oz",
   category: "Ceramic Mugs",
   material: "Stoneware",
