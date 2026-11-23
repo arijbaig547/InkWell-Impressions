@@ -29356,32 +29356,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$20.71", "$25.80", "$24.18", "$19.58", "$18.53", "$17.95"] },
-                { label: "2 Color Imprint", prices: ["$21.37", "$26.64", "$24.99", "$20.38", "$19.31", "$18.71"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$22.64", "$28.25", "$26.54", "$21.91", "$20.80", "$20.19"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$19.68", "$24.51", "$22.96", "$18.59", "$17.60", "$17.05"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$20.56", "$20.14", "$18.83", "$16.82", "$16.39", "$15.97", "$14.34", "$15.39"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$21.17", "$20.75", "$19.43", "$17.54", "$17.09", "$16.66", "$14.95", "$16.05"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$22.35", "$21.93", "$20.58", "$18.92", "$18.43", "$17.97", "$16.13", "$17.31"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$19.53", "$19.14", "$17.89", "$15.98", "$15.57", "$15.17", "$13.62", "$14.62"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -29453,32 +29468,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$6.18", "$7.71", "$7.28", "$6.62", "$6.06", "$5.27"] },
-                { label: "2 Color Imprint", prices: ["$6.84", "$8.55", "$8.09", "$7.42", "$6.84", "$6.04"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$8.11", "$10.16", "$9.64", "$8.95", "$8.33", "$7.51"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$5.87", "$7.32", "$6.91", "$6.29", "$5.76", "$5.00"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$12.53", "$10.05", "$5.62", "$4.94", "$4.82", "$4.69", "$4.21", "$4.52"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.14", "$10.67", "$6.22", "$5.66", "$5.52", "$5.38", "$4.83", "$5.18"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$14.32", "$11.84", "$7.37", "$7.04", "$6.86", "$6.69", "$6.00", "$6.44"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$11.90", "$9.55", "$5.34", "$4.69", "$4.57", "$4.45", "$4.00", "$4.29"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -29537,32 +29567,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$17.55", "$17.85", "$16.00", "$14.75", "$14.37", "$11.88"] },
-                { label: "2 Color Imprint", prices: ["$18.21", "$18.69", "$16.81", "$15.55", "$15.15", "$12.65"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$19.47", "$20.30", "$18.36", "$17.08", "$16.64", "$14.12"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$16.67", "$16.95", "$15.20", "$14.02", "$13.65", "$11.29"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$24.49", "$18.81", "$15.95", "$11.14", "$10.85", "$10.57", "$9.49", "$10.19"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$25.11", "$19.42", "$16.55", "$11.86", "$11.55", "$11.26", "$10.10", "$10.84"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$26.28", "$20.60", "$17.70", "$13.24", "$12.89", "$12.57", "$11.28", "$12.11"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$23.27", "$17.87", "$15.15", "$10.58", "$10.31", "$10.05", "$9.02", "$9.68"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -29638,33 +29683,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$12.17", "$14.34", "$12.02", "$10.29", "$8.76", "$6.34"] },
-                { label: "2 Color Imprint", prices: ["$12.83", "$15.18", "$12.83", "$11.09", "$9.54", "$7.10"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$14.09", "$16.79", "$14.38", "$12.62", "$11.04", "$8.58"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$11.56", "$13.62", "$11.42", "$9.78", "$8.32", "$6.02"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$15.33", "$11.90", "$11.06", "$5.94", "$5.79", "$5.64", "$5.06", "$5.43"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$15.94", "$12.52", "$11.66", "$6.66", "$6.49", "$6.32", "$5.68", "$6.09"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$17.12", "$13.69", "$12.81", "$8.04", "$7.83", "$7.63", "$6.85", "$7.35"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$14.56", "$11.31", "$10.51", "$5.64", "$5.49", "$5.35", "$4.81", "$5.16"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -29821,33 +29881,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$29.48", "$26.11", "$24.50", "$23.25", "$20.61", "$20.22"] },
-                { label: "2 Color Imprint", prices: ["$30.14", "$26.95", "$25.31", "$24.05", "$21.39", "$20.99"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$31.41", "$28.56", "$26.87", "$25.58", "$22.88", "$22.46"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$28.01", "$24.81", "$23.27", "$22.09", "$19.58", "$19.21"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$29.51", "$28.98", "$26.80", "$18.96", "$18.47", "$18.00", "$16.16", "$17.34"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$30.12", "$29.60", "$27.40", "$19.68", "$19.17", "$18.68", "$16.77", "$18.00"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$31.30", "$30.77", "$28.55", "$21.06", "$20.51", "$19.99", "$17.95", "$19.26"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$28.03", "$27.53", "$25.46", "$18.01", "$17.54", "$17.10", "$15.35", "$16.47"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -30011,33 +30086,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$12.30", "$14.95", "$14.39", "$13.57", "$11.14", "$10.41"] },
-                { label: "2 Color Imprint", prices: ["$12.96", "$15.79", "$15.20", "$14.36", "$11.92", "$11.17"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$14.22", "$17.40", "$16.75", "$15.89", "$13.42", "$12.65"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$11.68", "$14.21", "$13.68", "$12.89", "$10.58", "$9.88"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$12.67", "$11.85", "$11.18", "$9.76", "$9.50", "$9.26", "$8.31", "$8.92"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.29", "$12.47", "$11.78", "$10.48", "$10.20", "$9.95", "$8.93", "$9.58"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$14.46", "$13.64", "$12.93", "$11.86", "$11.55", "$11.26", "$10.10", "$10.84"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$12.04", "$11.26", "$10.62", "$9.26", "$9.02", "$8.79", "$7.90", "$8.47"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -30207,33 +30297,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$16.37", "$20.54", "$19.31", "$17.88", "$17.29", "$16.65"] },
-                { label: "2 Color Imprint", prices: ["$17.03", "$21.38", "$20.12", "$18.67", "$18.07", "$17.42"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$18.29", "$22.99", "$21.67", "$20.20", "$19.57", "$18.89"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$15.55", "$19.52", "$18.35", "$16.98", "$16.43", "$15.82"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$19.20", "$18.00", "$14.88", "$15.61", "$15.21", "$14.82", "$13.31", "$14.28"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$19.81", "$18.61", "$15.48", "$16.33", "$15.91", "$15.51", "$13.92", "$14.94"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$20.99", "$19.79", "$16.63", "$17.71", "$17.25", "$16.82", "$15.10", "$16.20"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$18.24", "$17.10", "$14.14", "$14.83", "$14.45", "$14.08", "$12.64", "$13.57"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -30392,32 +30497,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$15.27", "$17.67", "$16.98", "$16.66", "$16.24", "$15.95"] },
-                { label: "2 Color Imprint", prices: ["$15.93", "$18.51", "$17.79", "$17.46", "$17.02", "$16.72"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$17.19", "$20.12", "$19.35", "$18.99", "$18.51", "$18.19"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$14.51", "$16.79", "$16.13", "$15.83", "$15.43", "$15.16"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$14.78", "$14.68", "$13.88", "$14.95", "$14.56", "$14.19", "$12.74", "$13.68"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$15.39", "$15.29", "$14.48", "$15.67", "$15.26", "$14.88", "$13.36", "$14.33"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$16.57", "$16.47", "$15.63", "$17.05", "$16.61", "$16.19", "$14.53", "$15.60"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$14.04", "$13.94", "$13.19", "$14.21", "$13.84", "$13.49", "$12.11", "$13.00"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -30484,33 +30604,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$17.58", "$14.60", "$13.19", "$11.52", "$9.78", "$9.19"] },
-                { label: "2 Color Imprint", prices: ["$18.24", "$15.44", "$14.00", "$12.32", "$10.56", "$9.96"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$19.50", "$17.05", "$15.55", "$13.85", "$12.05", "$11.43"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$16.70", "$13.87", "$12.53", "$10.95", "$9.28", "$8.73"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+  pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$19.68", "$18.82", "$15.98", "$8.62", "$8.39", "$8.18", "$7.34", "$7.88"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$20.29", "$19.43", "$16.58", "$9.34", "$9.09", "$8.86", "$7.96", "$8.54"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$21.47", "$20.61", "$17.73", "$10.72", "$10.44", "$10.17", "$9.13", "$9.80"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$18.70", "$17.88", "$15.18", "$8.18", "$7.97", "$7.77", "$6.98", "$7.49"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -30667,32 +30802,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$8.97", "$10.93", "$10.38", "$9.24", "$8.02", "$7.76"] },
-                { label: "2 Color Imprint", prices: ["$9.63", "$11.77", "$11.19", "$10.04", "$8.80", "$8.52"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$10.89", "$13.38", "$12.74", "$11.57", "$10.30", "$10.00"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$8.51", "$10.39", "$9.87", "$8.78", "$7.62", "$7.37"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$11.99", "$9.85", "$8.15", "$7.27", "$7.08", "$6.90", "$6.20", "$6.65"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$12.60", "$10.46", "$8.75", "$7.99", "$7.78", "$7.59", "$6.81", "$7.31"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$13.78", "$11.64", "$9.90", "$9.37", "$9.13", "$8.90", "$7.99", "$8.57"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$11.38", "$9.36", "$7.74", "$6.91", "$6.73", "$6.56", "$5.89", "$6.32"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31023,34 +31173,48 @@ const products = [{
             }
         ]
     },
-
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$8.02", "$8.22", "$7.87", "$7.70", "$7.48", "$7.31"] },
-                { label: "2 Color Imprint", prices: ["$8.68", "$9.06", "$8.68", "$8.50", "$8.26", "$8.08"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$9.94", "$10.67", "$10.23", "$10.03", "$9.75", "$9.55"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$7.62", "$7.81", "$7.48", "$7.32", "$7.10", "$6.94"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$11.81", "$9.19", "$7.29", "$6.85", "$6.67", "$6.51", "$5.84", "$6.27"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$12.43", "$9.81", "$7.89", "$7.57", "$7.38", "$7.19", "$6.45", "$6.93"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$13.60", "$10.98", "$9.04", "$8.95", "$8.72", "$8.50", "$7.63", "$8.19"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$11.22", "$8.73", "$6.93", "$6.50", "$6.34", "$6.17", "$5.54", "$5.95"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31292,33 +31456,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$22.28", "$26.95", "$25.58", "$24.67", "$21.70", "$17.05"] },
-                { label: "2 Color Imprint", prices: ["$22.94", "$27.79", "$26.39", "$25.47", "$22.48", "$17.82"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$24.20", "$29.40", "$27.95", "$27.00", "$23.97", "$19.29"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$21.16", "$25.61", "$24.30", "$23.43", "$20.62", "$16.19"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$23.78", "$21.73", "$20.25", "$15.98", "$15.57", "$15.17", "$13.62", "$14.62"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$24.39", "$22.35", "$20.85", "$16.70", "$16.27", "$15.86", "$14.24", "$15.26"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$25.57", "$23.52", "$22.00", "$18.08", "$17.61", "$17.17", "$15.41", "$16.54"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$22.59", "$20.65", "$19.24", "$15.18", "$14.79", "$14.41", "$12.94", "$13.88"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31478,33 +31657,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$9.23", "$9.93", "$8.71", "$7.83", "$6.96", "$6.78"] },
-                { label: "2 Color Imprint", prices: ["$9.89", "$10.77", "$9.52", "$8.63", "$7.74", "$7.55"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$11.15", "$12.38", "$11.07", "$10.16", "$9.23", "$9.02"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$8.77", "$9.44", "$8.28", "$7.45", "$6.60", "$6.45"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$13.04", "$10.42", "$8.39", "$6.36", "$6.19", "$6.04", "$5.42", "$5.82"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.65", "$11.04", "$8.99", "$7.08", "$6.90", "$6.72", "$6.03", "$6.48"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$14.83", "$12.21", "$10.14", "$8.46", "$8.24", "$8.03", "$7.21", "$7.74"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$12.39", "$9.90", "$7.97", "$6.05", "$5.89", "$5.74", "$5.15", "$5.53"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31566,33 +31760,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$9.86", "$10.91", "$9.14", "$7.83", "$7.09", "$6.82"] },
-                { label: "2 Color Imprint", prices: ["$10.52", "$11.75", "$9.95", "$8.63", "$7.87", "$7.59"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$11.78", "$13.36", "$11.50", "$10.16", "$9.36", "$9.06"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$9.36", "$10.36", "$8.68", "$7.43", "$6.73", "$6.48"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+  pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$21.26", "$21.07", "$17.91", "$12.79", "$12.46", "$12.14", "$10.90", "$11.70"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$21.88", "$21.68", "$18.51", "$13.51", "$13.16", "$12.83", "$11.52", "$12.36"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$23.05", "$22.86", "$19.66", "$14.89", "$14.51", "$14.14", "$12.69", "$13.62"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$10.10", "$10.01", "$8.51", "$6.07", "$5.91", "$5.76", "$5.18", "$5.55"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31648,33 +31857,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$13.59", "$13.65", "$11.95", "$11.56", "$11.25", "$9.27"] },
-                { label: "2 Color Imprint", prices: ["$14.25", "$14.49", "$12.76", "$12.36", "$12.03", "$10.04"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$15.51", "$16.10", "$14.31", "$13.89", "$13.52", "$11.51"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$12.90", "$12.96", "$11.35", "$10.99", "$10.69", "$8.81"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$18.81", "$14.47", "$12.35", "$8.69", "$8.46", "$8.25", "$7.40", "$7.95"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$19.42", "$15.09", "$12.95", "$9.41", "$9.16", "$8.93", "$8.02", "$8.60"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$20.60", "$16.26", "$14.10", "$10.79", "$10.51", "$10.24", "$9.19", "$9.87"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$17.87", "$13.75", "$11.73", "$8.26", "$8.04", "$7.84", "$7.04", "$7.55"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31740,32 +31964,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$9.23", "$9.51", "$8.22", "$7.83", "$7.22", "$7.03"] },
-                { label: "2 Color Imprint", prices: ["$9.89", "$10.35", "$9.03", "$8.63", "$8.00", "$7.80"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$11.15", "$11.96", "$10.58", "$10.16", "$9.49", "$9.27"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$8.78", "$9.03", "$7.80", "$7.45", "$6.86", "$6.68"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$13.39", "$10.73", "$8.39", "$6.59", "$6.42", "$6.25", "$5.61", "$6.03"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$14.00", "$11.34", "$8.99", "$7.31", "$7.12", "$6.94", "$6.23", "$6.68"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$15.18", "$12.52", "$10.14", "$8.69", "$8.46", "$8.25", "$7.40", "$7.95"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$12.71", "$10.19", "$7.98", "$6.26", "$6.10", "$5.95", "$5.34", "$5.73"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31910,31 +32149,43 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$6.14", "$6.83", "$5.87", "$5.39", "$5.01", "$4.25"] },
-                { label: "2 Color Imprint", prices: ["$6.80", "$7.67", "$6.68", "$6.18", "$5.79", "$5.02"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$5.83", "$6.48", "$5.58", "$5.11", "$4.75", "$4.03"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$16.11", "$12.43", "$11.15", "$7.96", "$7.75", "$7.55", "$6.78", "$7.28"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$16.72", "$13.04", "$11.75", "$8.68", "$8.45", "$8.24", "$7.39", "$7.94"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$7.65", "$5.90", "$5.30", "$3.78", "$3.68", "$3.59", "$3.22", "$3.46"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -31993,30 +32244,39 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$4.31", "$4.61", "$3.83", "$3.72", "$3.20", "$2.44"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$4.09", "$4.38", "$3.65", "$3.54", "$3.04", "$2.32"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$11.94", "$9.18", "$7.83", "$4.57", "$4.45", "$4.34", "$3.90", "$4.18"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$5.67", "$4.37", "$3.72", "$2.17", "$2.12", "$2.06", "$1.85", "$1.99"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32078,32 +32338,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$14.07", "$16.23", "$14.97", "$14.07", "$12.99", "$12.76"] },
-                { label: "2 Color Imprint", prices: ["$14.73", "$17.07", "$15.78", "$14.87", "$13.77", "$13.53"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$15.99", "$18.68", "$17.33", "$16.40", "$15.26", "$15.00"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$13.37", "$15.41", "$14.23", "$13.37", "$12.34", "$12.12"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$22.04", "$15.74", "$12.79", "$11.96", "$11.65", "$11.36", "$10.20", "$10.94"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$22.65", "$16.35", "$13.39", "$12.68", "$12.35", "$12.04", "$10.81", "$11.60"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$23.83", "$17.53", "$14.54", "$14.06", "$13.70", "$13.35", "$11.99", "$12.86"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$20.94", "$14.95", "$12.15", "$11.36", "$11.07", "$10.79", "$9.69", "$10.39"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32162,33 +32437,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$8.53", "$9.65", "$8.57", "$8.10", "$7.61", "$7.31"] },
-                { label: "2 Color Imprint", prices: ["$9.19", "$10.49", "$9.38", "$8.90", "$8.39", "$8.08"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$10.45", "$12.10", "$10.94", "$10.43", "$9.88", "$9.55"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$8.10", "$9.17", "$8.14", "$7.70", "$7.23", "$6.94"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$13.24", "$9.66", "$7.75", "$6.85", "$6.67", "$6.51", "$5.84", "$6.27"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.86", "$10.28", "$8.35", "$7.57", "$7.38", "$7.19", "$6.45", "$6.93"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$15.03", "$11.45", "$9.50", "$8.95", "$8.72", "$8.50", "$7.63", "$8.19"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$12.58", "$9.18", "$7.36", "$6.50", "$6.34", "$6.17", "$5.54", "$5.95"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32245,32 +32535,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$4.71", "$5.77", "$5.29", "$5.09", "$4.81", "$4.25"] },
-                { label: "2 Color Imprint", prices: ["$5.37", "$6.61", "$6.10", "$5.89", "$5.59", "$5.02"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$6.63", "$8.22", "$7.65", "$7.42", "$7.09", "$6.49"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$4.47", "$5.47", "$5.02", "$4.84", "$4.56", "$4.03"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$13.13", "$10.08", "$8.55", "$7.96", "$7.75", "$7.55", "$6.78", "$7.28"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.75", "$10.70", "$9.15", "$8.68", "$8.45", "$8.24", "$7.39", "$7.94"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$14.92", "$11.87", "$10.30", "$10.06", "$9.79", "$9.55", "$8.57", "$9.20"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$6.24", "$4.79", "$4.06", "$3.78", "$3.68", "$3.59", "$3.22", "$3.46"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32327,32 +32632,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$10.88", "$13.09", "$12.22", "$11.90", "$11.04", "$6.94"] },
-                { label: "2 Color Imprint", prices: ["$11.54", "$13.93", "$13.03", "$12.70", "$11.82", "$7.71"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$12.80", "$15.54", "$14.58", "$14.23", "$13.31", "$9.18"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$10.34", "$12.43", "$11.61", "$11.31", "$10.49", "$6.59"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$15.02", "$11.55", "$9.89", "$6.50", "$6.34", "$6.17", "$5.54", "$5.95"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$15.64", "$12.16", "$10.49", "$7.22", "$7.04", "$6.86", "$6.16", "$6.61"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$16.81", "$13.34", "$11.64", "$8.60", "$8.38", "$8.17", "$7.33", "$7.87"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$14.28", "$10.97", "$9.40", "$6.18", "$6.02", "$5.87", "$5.27", "$5.65"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32409,32 +32729,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$9.23", "$10.85", "$8.71", "$7.83", "$6.83", "$6.64"] },
-                { label: "2 Color Imprint", prices: ["$9.89", "$11.69", "$9.52", "$8.63", "$7.61", "$7.41"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$11.15", "$13.30", "$11.07", "$10.16", "$9.10", "$8.88"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$8.78", "$10.30", "$8.28", "$7.45", "$6.49", "$6.31"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$13.18", "$10.59", "$8.39", "$6.23", "$6.07", "$5.91", "$5.31", "$5.70"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.80", "$11.20", "$8.99", "$6.95", "$6.77", "$6.60", "$5.92", "$6.35"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$14.97", "$12.38", "$10.14", "$8.33", "$8.11", "$7.91", "$7.10", "$7.62"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$12.52", "$10.05", "$7.98", "$5.92", "$5.76", "$5.62", "$5.04", "$5.41"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32490,33 +32825,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$11.17", "$11.61", "$10.60", "$10.17", "$9.56", "$7.83"] },
-                { label: "2 Color Imprint", prices: ["$11.83", "$12.45", "$11.41", "$10.97", "$10.34", "$8.60"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$13.09", "$14.06", "$12.96", "$12.50", "$11.83", "$10.07"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$10.60", "$11.03", "$10.07", "$9.67", "$9.07", "$7.44"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$15.39", "$11.85", "$10.15", "$7.34", "$7.15", "$6.97", "$6.26", "$6.72"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$16.01", "$12.47", "$10.75", "$8.06", "$7.85", "$7.66", "$6.87", "$7.38"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$17.18", "$13.64", "$11.90", "$9.44", "$9.20", "$8.97", "$8.05", "$8.64"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$14.63", "$11.26", "$9.64", "$6.97", "$6.79", "$6.62", "$5.94", "$6.38"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32573,32 +32923,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$9.96", "$10.85", "$8.71", "$7.83", "$6.96", "$6.78"] },
-                { label: "2 Color Imprint", prices: ["$10.62", "$11.69", "$9.52", "$8.63", "$7.74", "$7.55"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$11.88", "$13.30", "$11.07", "$10.16", "$9.23", "$9.02"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$9.46", "$10.30", "$8.28", "$7.45", "$6.60", "$6.45"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$13.18", "$10.59", "$9.05", "$6.36", "$6.19", "$6.04", "$5.42", "$5.82"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$13.80", "$11.20", "$9.65", "$7.08", "$6.90", "$6.72", "$6.03", "$6.48"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$14.97", "$12.38", "$10.80", "$8.46", "$8.24", "$8.03", "$7.21", "$7.74"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$12.53", "$10.05", "$8.60", "$6.05", "$5.89", "$5.74", "$5.15", "$5.53"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32736,33 +33101,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$16.34", "$20.01", "$18.70", "$17.81", "$16.58", "$14.11"] },
-                { label: "2 Color Imprint", prices: ["$17.00", "$20.85", "$19.51", "$18.61", "$17.36", "$14.87"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$18.26", "$22.46", "$21.06", "$20.14", "$18.85", "$16.35"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$15.36", "$18.80", "$17.58", "$16.74", "$15.59", "$13.26"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$21.06", "$16.21", "$14.85", "$13.22", "$12.88", "$12.55", "$11.27", "$12.10"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$21.67", "$16.82", "$15.45", "$13.94", "$13.58", "$13.24", "$11.88", "$12.75"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$22.85", "$18.00", "$16.60", "$15.32", "$14.93", "$14.55", "$13.06", "$14.02"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$19.79", "$15.24", "$13.96", "$12.43", "$12.11", "$11.80", "$10.60", "$11.37"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32827,42 +33207,53 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$27.93", "$34.09", "$31.98", "$30.71", "$29.50", "$16.86"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        laserEngraving: { // Naya block
-            label: "LASER ENGRAVING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Laser Engraving", prices: ["$29.85", "$36.54", "$34.34", "$33.04", "$31.77", "$19.10"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$26.53", "$32.38", "$30.39", "$29.18", "$28.03", "$16.01"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$35.03", "$26.95", "$25.39", "$15.80", "$15.39", "$15.00", "$13.47", "$14.45"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    laserEngraving: {
+        label: "LASER ENGRAVING PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Laser Engraving",
+                prices: ["$36.82", "$28.74", "$27.14", "$17.90", "$17.44", "$17.00", "$15.26", "$16.38"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
+    },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$33.28", "$25.60", "$24.12", "$15.01", "$14.62", "$14.25", "$12.79", "$13.73"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -32927,42 +33318,53 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$10.95", "$13.71", "$13.03", "$12.44", "$12.12", "$11.88"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        laserEngraving: {
-            label: "LASER ENGRAVING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Laser Engraving", prices: ["$12.87", "$16.16", "$15.39", "$14.76", "$14.39", "$14.12"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$10.40", "$13.02", "$12.38", "$11.81", "$11.51", "$11.29"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$11.91", "$11.04", "$9.95", "$11.14", "$10.85", "$10.57", "$9.49", "$10.19"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    laserEngraving: {
+        label: "LASER ENGRAVING PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Laser Engraving",
+                prices: ["$13.70", "$12.83", "$11.70", "$13.24", "$12.89", "$12.57", "$11.28", "$12.11"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
+    },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$11.32", "$10.48", "$9.45", "$10.58", "$10.31", "$10.05", "$9.02", "$9.68"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -33042,33 +33444,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$14.83", "$18.77", "$15.75", "$13.50", "$11.48", "$11.05"] },
-                { label: "2 Color Imprint", prices: ["$15.49", "$19.61", "$16.56", "$14.30", "$12.26", "$11.81"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$16.75", "$21.22", "$18.12", "$15.83", "$13.75", "$13.29"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$14.09", "$17.84", "$14.97", "$12.82", "$10.91", "$10.50"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$14.39", "$13.96", "$13.48", "$10.36", "$10.09", "$9.83", "$8.83", "$9.47"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$15.00", "$14.57", "$14.08", "$11.08", "$10.79", "$10.52", "$9.44", "$10.13"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$16.18", "$15.75", "$15.23", "$12.46", "$12.13", "$11.83", "$10.62", "$11.39"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$13.67", "$13.26", "$12.81", "$9.84", "$9.58", "$9.34", "$8.39", "$9.00"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -33133,32 +33550,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$14.29", "$16.24", "$15.62", "$15.10", "$13.87", "$11.20"] },
-                { label: "2 Color Imprint", prices: ["$14.95", "$17.08", "$16.43", "$15.89", "$14.65", "$11.97"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$16.21", "$18.69", "$17.98", "$17.42", "$16.15", "$13.44"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$13.57", "$15.43", "$14.84", "$14.34", "$13.18", "$10.64"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$18.05", "$16.85", "$12.99", "$10.50", "$10.23", "$9.97", "$8.95", "$9.60"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$18.66", "$17.47", "$13.59", "$11.22", "$10.93", "$10.65", "$9.56", "$10.26"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$19.84", "$18.64", "$14.74", "$12.60", "$12.27", "$11.96", "$10.74", "$11.52"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$17.15", "$16.02", "$12.34", "$9.97", "$9.71", "$9.47", "$8.50", "$9.12"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -33214,33 +33646,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$14.69", "$16.65", "$15.19", "$14.70", "$14.11", "$12.40"] },
-                { label: "2 Color Imprint", prices: ["$15.35", "$17.49", "$16.00", "$15.49", "$14.89", "$13.17"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$16.61", "$19.10", "$17.55", "$17.02", "$16.38", "$14.64"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$13.95", "$15.82", "$14.43", "$13.97", "$13.40", "$11.79"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$19.79", "$15.19", "$13.35", "$11.63", "$11.33", "$11.04", "$9.91", "$10.64"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$20.40", "$15.80", "$13.95", "$12.35", "$12.03", "$11.72", "$10.52", "$11.29"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$21.58", "$16.98", "$15.10", "$13.73", "$13.37", "$13.03", "$11.70", "$12.56"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$18.80", "$14.43", "$12.68", "$11.05", "$10.76", "$10.49", "$9.42", "$10.11"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -33296,33 +33743,48 @@ const products = [{
         ]
     },
 
-    pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$7.03", "$8.19", "$7.82", "$7.17", "$6.75", "$5.48"] },
-                { label: "2 Color Imprint", prices: ["$7.69", "$9.03", "$8.63", "$7.97", "$7.53", "$6.25"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$8.95", "$10.64", "$10.18", "$9.50", "$9.02", "$7.72"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$6.68", "$7.78", "$7.43", "$6.81", "$6.41", "$5.21"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+   pricing: {
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$13.55", "$10.42", "$6.39", "$5.14", "$5.00", "$4.88", "$4.38", "$4.70"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$14.16", "$11.04", "$6.99", "$5.86", "$5.70", "$5.56", "$4.99", "$5.36"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$15.34", "$12.21", "$8.14", "$7.24", "$7.05", "$6.87", "$6.17", "$6.62"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$12.88", "$9.90", "$6.07", "$4.88", "$4.76", "$4.64", "$4.16", "$4.47"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -33392,32 +33854,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$11.72", "$13.09", "$11.68", "$11.29", "$11.01", "$8.70"] },
-                { label: "2 Color Imprint", prices: ["$12.38", "$13.93", "$12.49", "$12.09", "$11.79", "$9.47"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$13.64", "$15.54", "$14.04", "$13.62", "$13.29", "$10.94"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$11.13", "$12.43", "$11.10", "$10.73", "$10.47", "$8.27"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$16.41", "$12.63", "$10.65", "$8.16", "$7.95", "$7.75", "$6.95", "$7.46"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$17.03", "$13.24", "$11.25", "$8.88", "$8.65", "$8.43", "$7.57", "$8.12"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$18.20", "$14.42", "$12.40", "$10.26", "$9.99", "$9.74", "$8.74", "$9.38"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$15.60", "$12.00", "$10.12", "$7.75", "$7.55", "$7.36", "$6.61", "$7.09"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -33479,32 +33956,47 @@ const products = [{
     },
 
     pricing: {
-        spot: {
-            label: "PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "1 Color Imprint", prices: ["$7.80", "$7.91", "$6.95", "$6.50", "$6.05", "$5.88"] },
-                { label: "2 Color Imprint", prices: ["$8.46", "$8.75", "$7.76", "$7.30", "$6.83", "$6.64"] },
-                { label: "Colors - Full Color - 1 Location", prices: ["$9.72", "$10.36", "$9.32", "$8.83", "$8.32", "$8.12"] },
-                { label: "Add Location", prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"] }
-            ],
-            priceIncludes: "1 Location",
-            printMethods: "Our Drinkware is printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
-            leadTime: "5-7 Business Days after Art Approval",
-            setupCharge: "$56.25 (V)",
-            repeatSetup: "Free"
-        },
-        blank: {
-            label: "BLANK PRICING (USD)",
-            quantities: [50, 100, 250, 500, 1000, 2500],
-            rows: [
-                { label: "Blank", prices: ["$7.41", "$7.52", "$6.60", "$6.18", "$5.75", "$5.58"] }
-            ],
-            priceIncludes: "Blank",
-            leadTime: "Within 2 to 3 Business Days",
-            moq: "12 Pcs - Pls contact us for pricing"
-        }
+    spot: {
+        label: "PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Colors - 1 Color Imprint - 1 Location",
+                prices: ["$11.30", "$9.05", "$7.09", "$5.51", "$5.36", "$5.23", "$4.69", "$5.04"]
+            },
+            {
+                label: "Colors - 2 Color Imprint - 1 Location",
+                prices: ["$11.91", "$9.66", "$7.69", "$6.23", "$6.07", "$5.91", "$5.31", "$5.70"]
+            },
+            {
+                label: "Colors - Full Color - 1 Location",
+                prices: ["$13.09", "$10.84", "$8.84", "$7.61", "$7.41", "$7.22", "$6.48", "$6.96"]
+            },
+            {
+                label: "Add Location",
+                prices: ["$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13", "$1.13"]
+            }
+        ],
+        priceIncludes: "1 Location",
+        printMethods: "Our Travel Mugs are printed with UV DTF for 2 Color & Full Color Designs. PLEASE NOTE THESE ARE NOT SCREEN PRINTED OR SPOT PRINTED.",
+        leadTime: "5-7 Business Days after Art Approval",
+        setupCharge: "$56.25 (V)",
+        repeatSetup: "Free"
     },
+    blank: {
+        label: "BLANK PRICING (USD)",
+        quantities: [12, 25, 50, 100, 250, 500, 1000, 2500],
+        rows: [
+            {
+                label: "Blank",
+                prices: ["$10.74", "$8.60", "$6.74", "$5.23", "$5.10", "$4.97", "$4.46", "$4.79"]
+            }
+        ],
+        priceIncludes: "Blank",
+        leadTime: "Within 2 to 3 Business Days",
+        moq: "12 Pcs - Pls contact us for pricing"
+    }
+},
 
     additionalCharges: {
         setupCharge: "$56.25 (V)",
@@ -38476,252 +38968,263 @@ function initFreightModal() {
     }
 
     function renderPricing(method) {
-        // ✅ 'laser' method ke liye laserEngraving ya laser key dono check karo
-        let data;
-        if (method === 'laser') {
-            data = product.pricing.laserEngraving || product.pricing.laser;
-        } else {
-            data = product.pricing[method];
-        }
-        if (!data) return;
+    // ✅ 'laser' method ke liye laserEngraving ya laser key dono check karo
+    let data;
+    if (method === 'laser') {
+        data = product.pricing.laserEngraving || product.pricing.laser;
+    } else {
+        data = product.pricing[method];
+    }
+    if (!data) return;
 
-        const labelEl = document.querySelector('#pricing-section .text-brand-textSecondary');
-        if (labelEl) labelEl.textContent = data.label;
+    const labelEl = document.querySelector('#pricing-section .text-brand-textSecondary');
+    if (labelEl) labelEl.textContent = data.label;
 
-        const isBlank = method === 'blank' || !data.quantities;
-        const thead = document.getElementById('pricing-thead');
+    const isBlank = method === 'blank' || !data.quantities;
+    const thead = document.getElementById('pricing-thead');
 
-        // ============================================================
-        // ✅ BELPROMO HELPERS — 12, 24 (start) aur 2016 (1008 ke baad) logic
-        // ============================================================
-        const originalQty = data.quantities || [];
+    // ============================================================
+    // ✅ BELPROMO HELPERS — sirf tab padding karo jab 9 se kam hon
+    // (Ceramic mugs jaise 9-qty items bilkul untouched rahenge)
+    // ============================================================
+    const originalQty = data.quantities || [];
+    const targetQty = 9;
 
-        const has12 = originalQty.includes(12) || originalQty.includes('12');
-        const has24 = originalQty.includes(24) || originalQty.includes('24');
-        const has2016 = originalQty.includes(2016) || originalQty.includes('2016');
+    // Kitni quantities missing hain (9 tak pahunchne ke liye)
+    const STANDARD_QTY = [12, 24, 36, 72, 144, 288, 576, 1008, 2016];
+const isStandardTier = originalQty.every(q => STANDARD_QTY.includes(Number(q)));
+const missingCount = (product.isBelpromo && isStandardTier)
+    ? Math.max(0, targetQty - originalQty.length)
+    : 0;
 
-        // Start mein prepend hone wali quantities (12, 24)
-        const prependQty = product.isBelpromo
-            ? [...(!has12 ? [12] : []), ...(!has24 ? [24] : [])]
-            : [];
-        const prependCount = prependQty.length;
+    // Priority order: pehle 12, phir 24, phir 2016 — jitni zaroorat ho utni
+    const padCandidates = [12, 24, 2016].filter(
+        q => !originalQty.includes(q) && !originalQty.includes(String(q))
+    );
 
-        // 1008 ke baad 2016 insert karne ke liye position
-        let insert2016AfterIndex = -1;
-        if (product.isBelpromo && !has2016) {
-            const idx1008 = originalQty.findIndex(q => String(q) === '1008');
-            if (idx1008 !== -1) insert2016AfterIndex = idx1008;
-        }
+    // Sirf missingCount jitni padding lo
+    const padQty = padCandidates.slice(0, missingCount);
 
-        // ============================================================
-        // HEADER RENDER
-        // ============================================================
-        if (thead) {
-            // ✅ Cups ke blank tab me bhi quantities show karo
-            const isCupBlank = isBlank && product.isBelpromo && data.quantities;
+    // 12/24 start mein prepend, 2016 1008 ke baad
+    const prependQty = padQty.filter(q => q === 12 || q === 24);
+    const prependCount = prependQty.length;
 
-            thead.style.display = (isBlank && !isCupBlank) ? 'none' : '';
-            if (!isBlank || isCupBlank) {
-                // Final quantities array banao: [12, 24, ...original with 2016 inserted]
-                let quantities = [...prependQty, ...originalQty];
-                if (insert2016AfterIndex !== -1) {
-                    const insertAt = prependCount + insert2016AfterIndex + 1;
-                    quantities.splice(insertAt, 0, 2016);
-                }
+    let insert2016AfterIndex = -1;
+    if (padQty.includes(2016)) {
+        const idx1008 = originalQty.findIndex(q => String(q) === '1008');
+        if (idx1008 !== -1) insert2016AfterIndex = idx1008;
+    }
 
-                // ✅ Belpromo ke liye "Pieces" label, warna "Quantity"
-                const qtyLabel = product.isBelpromo ? 'Quantity (Pcs)' : 'Quantity';
+    // ============================================================
+    // HEADER RENDER
+    // ============================================================
+    if (thead) {
+        // ✅ Cups ke blank tab me bhi quantities show karo
+        const isCupBlank = isBlank && product.isBelpromo && data.quantities;
 
-                let html = `<tr style="color: #C81F45 !important; text-transform: uppercase; letter-spacing: 0.05em;">
+        thead.style.display = (isBlank && !isCupBlank) ? 'none' : '';
+        if (!isBlank || isCupBlank) {
+            // Final quantities array banao: [12, 24, ...original with 2016 inserted]
+            let quantities = [...prependQty, ...originalQty];
+            if (insert2016AfterIndex !== -1) {
+                const insertAt = prependCount + insert2016AfterIndex + 1;
+                quantities.splice(insertAt, 0, 2016);
+            }
+
+            // ✅ Belpromo ke liye "Pieces" label, warna "Quantity"
+            const qtyLabel = product.isBelpromo ? 'Quantity (Pcs)' : 'Quantity';
+
+            let html = `<tr style="color: #C81F45 !important; text-transform: uppercase; letter-spacing: 0.05em;">
 <th style="color: #C81F45 !important; text-align: left;">${qtyLabel}</th>`;
 
-                for (let i = 0; i < 10 && i < quantities.length; i++) {
-                    html += `<th id="p-qty-${i + 1}" style="color: #C81F45 !important;">${quantities[i]}</th>`;
-                }
-
-                html += `<th style="color: #C81F45 !important;"></th></tr>`;
-                thead.innerHTML = html;
+            // ✅ Hard-coded 10 nahi — actual quantities length (ceramic mugs = 9, ASW47 = 8)
+            for (let i = 0; i < quantities.length; i++) {
+                html += `<th id="p-qty-${i + 1}" style="color: #C81F45 !important;">${quantities[i]}</th>`;
             }
+
+            html += `<th style="color: #C81F45 !important;"></th></tr>`;
+            thead.innerHTML = html;
+        }
+    }
+
+    // BODY RENDER
+    pricingBody.innerHTML = '';
+
+    // ============================================================
+    // ✅ Helper: ek row ke liye price cells render karo
+    // (12/24 prepend + 2016 insertion ke saath — sirf jab padding ho)
+    // ============================================================
+    function renderPriceCells(row) {
+        let cells = '';
+
+        // 1. Start mein — (12, 24 ke liye) — sirf jab prependCount > 0
+        for (let p = 0; p < prependCount; p++) {
+            cells += `<td class="text-brand-text text-center">—</td>`;
         }
 
-        // BODY RENDER
-        pricingBody.innerHTML = '';
-
-        // ============================================================
-        // ✅ Helper: ek row ke liye price cells render karo
-        // (12/24 prepend + 2016 insertion ke saath)
-        // ============================================================
-        function renderPriceCells(row) {
-            let cells = '';
-
-            // 1. Start mein — (12, 24 ke liye)
-            for (let p = 0; p < prependCount; p++) {
+        // 2. Original prices, 2016 ke baad — insert karo
+        for (let i = 0; i < row.prices.length; i++) {
+            // Agar 1008 ke baad 2016 insert karna hai
+            if (insert2016AfterIndex !== -1 && i === insert2016AfterIndex + 1) {
                 cells += `<td class="text-brand-text text-center">—</td>`;
             }
-
-            // 2. Original prices, 2016 ke baad — insert karo
-            for (let i = 0; i < row.prices.length; i++) {
-                // Agar 1008 ke baad 2016 insert karna hai
-                if (insert2016AfterIndex !== -1 && i === insert2016AfterIndex + 1) {
-                    cells += `<td class="text-brand-text text-center">—</td>`;
-                }
-                cells += `<td class="text-brand-text">${row.prices[i]}</td>`;
-            }
-
-            // 3. Agar 1008 last tha aur 2016 uske baad insert karna hai
-            if (insert2016AfterIndex !== -1 && insert2016AfterIndex === row.prices.length - 1) {
-                cells += `<td class="text-brand-text text-center">—</td>`;
-            }
-
-            return cells;
+            cells += `<td class="text-brand-text">${row.prices[i]}</td>`;
         }
 
-        // ============================================================
-        // ✅ BLANK TAB (Center aligned - jaise Blankets page par)
-        // ============================================================
-        if (isBlank) {
-            // 1. Blank Pricing Rows (bags, blankets)
-            if (product.isBelpromo && data.quantities) {
-                if (data.rows) {
-                    data.rows.forEach((row) => {
-                        const tr = document.createElement('tr');
-                        let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
-                        html += renderPriceCells(row);
-                        html += `<td class="text-brand-textSecondary">R</td>`;
-                        tr.innerHTML = html;
-                        pricingBody.appendChild(tr);
-                    });
-                }
-            }
-            // ✅ Baaki products ke liye purana behavior (single price)
-            else if (data.rows) {
+        // 3. Agar 1008 last tha aur 2016 uske baad insert karna hai
+        if (insert2016AfterIndex !== -1 && insert2016AfterIndex === row.prices.length - 1) {
+            cells += `<td class="text-brand-text text-center">—</td>`;
+        }
+
+        return cells;
+    }
+
+    // ============================================================
+    // ✅ BLANK TAB (Center aligned - jaise Blankets page par)
+    // ============================================================
+    if (isBlank) {
+        // 1. Blank Pricing Rows (bags, blankets, cups)
+        if (product.isBelpromo && data.quantities) {
+            if (data.rows) {
                 data.rows.forEach((row) => {
                     const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                <td class="font-medium text-brand-textSecondary">${row.label}</td>
-                <td class="text-brand-text font-semibold">${row.prices[0]}</td>
-                <td class="text-brand-textSecondary">R</td>
-            `;
+                    let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
+                    html += renderPriceCells(row);
+                    html += `<td class="text-brand-textSecondary">R</td>`;
+                    tr.innerHTML = html;
                     pricingBody.appendChild(tr);
                 });
             }
-
-            // 2. Base Price (T-shirts, hoodies)
-            if (data.basePrice) {
+        }
+        // ✅ Baaki products ke liye purana behavior (single price)
+        else if (data.rows) {
+            data.rows.forEach((row) => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td class="font-medium text-brand-textSecondary">${data.basePrice.label}</td>
-                    <td class="text-brand-text font-semibold">${data.basePrice.price}</td>
-                    <td class="text-brand-textSecondary">R</td>
+            <td class="font-medium text-brand-textSecondary">${row.label}</td>
+            <td class="text-brand-text font-semibold">${row.prices[0]}</td>
+            <td class="text-brand-textSecondary">R</td>
+        `;
+                pricingBody.appendChild(tr);
+            });
+        }
+
+        // 2. Base Price (T-shirts, hoodies)
+        if (data.basePrice) {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td class="font-medium text-brand-textSecondary">${data.basePrice.label}</td>
+                <td class="text-brand-text font-semibold">${data.basePrice.price}</td>
+                <td class="text-brand-textSecondary">R</td>
+            `;
+            pricingBody.appendChild(tr);
+        }
+
+        // 3. Upsize Charges (T-shirts, hoodies)
+        if (data.upsizeCharges) {
+            const headingTr = document.createElement('tr');
+            headingTr.innerHTML = `
+                <td colspan="3" class="pt-4 pb-2">
+                    <span class="text-[11px] font-bold text-brand-crimson uppercase tracking-wider">Upsize Charges</span>
+                </td>
+            `;
+            pricingBody.appendChild(headingTr);
+
+            data.upsizeCharges.forEach(u => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="font-medium text-brand-textSecondary pl-4">${u.size}</td>
+                    <td class="text-brand-text">${u.charge}</td>
+                    <td class="text-brand-textSecondary">V</td>
                 `;
                 pricingBody.appendChild(tr);
-            }
+            });
+        }
 
-            // 3. Upsize Charges (T-shirts, hoodies)
-            if (data.upsizeCharges) {
-                const headingTr = document.createElement('tr');
-                headingTr.innerHTML = `
-                    <td colspan="3" class="pt-4 pb-2">
-                        <span class="text-[11px] font-bold text-brand-crimson uppercase tracking-wider">Upsize Charges</span>
-                    </td>
-                `;
-                pricingBody.appendChild(headingTr);
+        // ✅ Setup aur Repeat containers ko hide karo
+        const setupContainer = document.getElementById('setup-charge-container');
+        const repeatContainer = document.getElementById('repeat-setup-container');
+        if (setupContainer) setupContainer.style.display = 'none';
+        if (repeatContainer) repeatContainer.style.display = 'none';
 
-                data.upsizeCharges.forEach(u => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                        <td class="font-medium text-brand-textSecondary pl-4">${u.size}</td>
-                        <td class="text-brand-text">${u.charge}</td>
-                        <td class="text-brand-textSecondary">V</td>
-                    `;
-                    pricingBody.appendChild(tr);
-                });
-            }
+        // ✅ Grid ko CENTER karo
+        adjustInfoGrid();
+    } else {
+        // ============================================================
+        // ✅ SPOT / TRANSFER / LASER TAB (Normal rendering)
+        // ============================================================
+        if (data.rows) {
+            data.rows.forEach((row, index) => {
+                const tr = document.createElement('tr');
+                const isExtraRow = index >= 2; // ADD LOCATION, ADD COLOR
 
-            // ✅ Setup aur Repeat containers ko hide karo
+                let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
+                html += renderPriceCells(row);
+
+                // ✅ REGEX FIX — trailing space aur (V) suffix bhi handle hoga
+                const isExtraCharge = /ADD\s*(LOCATION|COLOR)/i.test(row.label || '');
+
+                if (isExtraCharge) {
+                    html += `<td class="text-brand-textSecondary">V</td>`;
+                } else {
+                    html += `<td class="text-brand-textSecondary">R</td>`;
+                }
+
+                tr.innerHTML = html;
+
+                // ✅ Extra rows ke liye class (View More ke liye)
+                if (isExtraRow) {
+                    tr.className = 'pricing-extra-row';
+                }
+
+                pricingBody.appendChild(tr);
+            });
+        }
+
+        // ============================================================
+        // ✅ SPOT / TRANSFER / LASER GRID - Center aligned
+        // ============================================================
+        const infoGrid = document.getElementById('dynamic-info-grid');
+        if (infoGrid) {
             const setupContainer = document.getElementById('setup-charge-container');
             const repeatContainer = document.getElementById('repeat-setup-container');
-            if (setupContainer) setupContainer.style.display = 'none';
-            if (repeatContainer) repeatContainer.style.display = 'none';
+
+            // Setup aur Repeat ko show karo (agar product mein hide nahi hai)
+            if (setupContainer) setupContainer.style.display = 'flex';
+            if (repeatContainer) {
+                repeatContainer.style.display = product.hideImprint ? 'none' : 'flex';
+            }
 
             // ✅ Grid ko CENTER karo
             adjustInfoGrid();
-        } else {
-            // ============================================================
-            // ✅ SPOT / TRANSFER / LASER TAB (Normal rendering)
-            // ============================================================
-            if (data.rows) {
-                data.rows.forEach((row, index) => {
-                    const tr = document.createElement('tr');
-                    const isExtraRow = index >= 2; // ADD LOCATION, ADD COLOR
-
-                    let html = `<td class="font-medium text-brand-textSecondary">${row.label}</td>`;
-                    html += renderPriceCells(row);
-
-                    // ✅ REGEX FIX — trailing space aur (V) suffix bhi handle hoga
-                    const isExtraCharge = /ADD\s*(LOCATION|COLOR)/i.test(row.label || '');
-
-                    if (isExtraCharge) {
-                        html += `<td class="text-brand-textSecondary">V</td>`;
-                    } else {
-                        html += `<td class="text-brand-textSecondary">R</td>`;
-                    }
-
-                    tr.innerHTML = html;
-
-                    // ✅ Extra rows ke liye class (View More ke liye)
-                    if (isExtraRow) {
-                        tr.className = 'pricing-extra-row';
-                    }
-
-                    pricingBody.appendChild(tr);
-                });
-            }
-
-            // ============================================================
-            // ✅ SPOT / TRANSFER / LASER GRID - Center aligned
-            // ============================================================
-            const infoGrid = document.getElementById('dynamic-info-grid');
-            if (infoGrid) {
-                const setupContainer = document.getElementById('setup-charge-container');
-                const repeatContainer = document.getElementById('repeat-setup-container');
-
-                // Setup aur Repeat ko show karo (agar product mein hide nahi hai)
-                if (setupContainer) setupContainer.style.display = 'flex';
-                if (repeatContainer) {
-                    repeatContainer.style.display = product.hideImprint ? 'none' : 'flex';
-                }
-
-                // ✅ Grid ko CENTER karo
-                adjustInfoGrid();
-            }
-        }
-
-        // ============================================================
-        // ✅ PRINT METHODS NOTE (Sab tabs ke liye, function ke aakhir me)
-        // ============================================================
-        const printNote = document.getElementById('print-methods-note');
-        const printText = document.getElementById('print-methods-text');
-        if (printNote && printText) {
-            let noteText = null;
-
-            if (method === 'spot' && product.pricing?.spot?.printMethods) {
-                noteText = product.pricing.spot.printMethods;
-            } else if (method === 'laser') {
-                const laserData = product.pricing.laserEngraving || product.pricing.laser;
-                if (laserData && laserData.printMethods) {
-                    noteText = laserData.printMethods;
-                }
-            }
-
-            if (noteText) {
-                printText.textContent = noteText;
-                printNote.classList.remove('hidden');
-            } else {
-                printNote.classList.add('hidden');
-            }
         }
     }
+
+    // ============================================================
+    // ✅ PRINT METHODS NOTE (Sab tabs ke liye, function ke aakhir me)
+    // ============================================================
+    const printNote = document.getElementById('print-methods-note');
+    const printText = document.getElementById('print-methods-text');
+    if (printNote && printText) {
+        let noteText = null;
+
+        if (method === 'spot' && product.pricing?.spot?.printMethods) {
+            noteText = product.pricing.spot.printMethods;
+        } else if (method === 'laser') {
+            const laserData = product.pricing.laserEngraving || product.pricing.laser;
+            if (laserData && laserData.printMethods) {
+                noteText = laserData.printMethods;
+            }
+        }
+
+        if (noteText) {
+            printText.textContent = noteText;
+            printNote.classList.remove('hidden');
+        } else {
+            printNote.classList.add('hidden');
+        }
+    }
+}
     function renderSpecsTable(selectedColor) {
         const s = product.specs || {
             itemNo: product.code,
