@@ -474,6 +474,11 @@ body.blanket-page .flex.justify-center.mb-4.sm\:mb-6 > div {
     justify-content: center !important;
     align-items: center !important;
 }
+#product-imprint {
+    white-space: normal !important;  /* Ye line break allow karega */
+    word-break: break-word;          /* Lamba text wrap hoga */
+    display: block;                  /* Ensure kare ki block element hai */
+}
 
 body.blanket-page .bg-brand-surface.border.border-brand-border.rounded-lg.p-3.sm\:p-6 .grid {
     display: flex !important;

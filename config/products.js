@@ -1381,7 +1381,7 @@ const products = [{
   size: '9"W x 5"H x 2"D',
   price: 35.00,
   originalPrice: 50.00,
-  image: "assets/assets/images/products/non-woven/IS183/IS183-Black.jpg",
+  image: "assets/assets/images/products/non-woven/IS183/IS183-Black.webp",
   description: "600D RPET zippered tech travel pouch for charging cords and accessories.",
   popular: false
 },
@@ -3015,6 +3015,21 @@ const products = [{
   popular: false
 },
 {
+  id: "ibcm7102m",
+  isBelpromo: true,
+  name: "Metallic Ceramic Custom Mug - 11 oz",
+  code: "IBCM7102M",
+  slug: "metallic-ceramic-custom-mug-11-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.10"W X 3.75"H X 3.15"B',
+  price: 1.85,
+  image: "assets/assets/images/products/ceramic mugs/IBCM7102M/IBCM7102M-Green.webp",
+  description: "11 oz metallic ceramic custom mug with a glossy finish and a large imprint area, perfect for vibrant branding.",
+  popular: false
+},
+
+{
   id: "ibcm5000",
   isBelpromo: true,
   name: "16 oz Bistro Glossy Personalized Coffee Mug",
@@ -3688,10 +3703,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibcm7102bk",
+  id: "ibcms7102bk",
   isBelpromo: true,
   name: "Magic Personalized Photo Mug - 11 oz",
-  code: "IBCM7102BK",
+  code: "IBCMS7102BK",
   slug: "magic-personalized-photo-mug-11-oz",
   category: "Ceramic Mugs",
   material: "Ceramic",
@@ -3801,6 +3816,90 @@ const products = [{
   popular: false
 },
 {
+  id: "ibcmh1018",
+  isBelpromo: true,
+  name: "Bombay Ceramic Mug - 7.5 oz",
+  code: "IBCMH1018",
+  slug: "bombay-ceramic-mug-7-5-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '3.25" W x 3.15" H x 1.85" B',
+  price: 1.91,
+  image: "assets/assets/images/products/ceramic mugs/IBCMH1018/IBCMH1018-White.webp",
+  description: "7.5 oz Bombay ceramic mug made of stoneware, perfect for coffee or tea.",
+  popular: false
+},
+{
+  id: "ibcm5019",
+  isBelpromo: true,
+  name: "Norman Ceramic Container - 17 oz",
+  code: "IBCM5019",
+  slug: "norman-ceramic-container-17-oz",
+  category: "Ceramic Mugs",
+  material: "Ceramic",
+  size: '3.5" W x 4" H x 4.15" B',
+  price: 4.76,
+  image: "assets/assets/images/products/ceramic mugs/IBCM5019/IBCM5019-White.webp",
+  description: "17 oz Norman ceramic container, perfect for coffee, tea, or storing small items.",
+  popular: false
+},
+{
+  id: "ibcm2050",
+  isBelpromo: true,
+  name: "Ceramic Shot Glass - 2 oz",
+  code: "IBCM2050",
+  slug: "ceramic-shot-glass-2-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '2.3" H x 2" Rim x 1.4" W',
+  price: 1.94,
+  image: "assets/assets/images/products/ceramic mugs/IBCM2050/IBCM2050-Black.webp",
+  description: "2 oz stoneware ceramic shot glass, perfect for serving your favorite spirits.",
+  popular: false
+},
+{
+  id: "ibcma1506d",
+  isBelpromo: true,
+  name: "Savannah Ceramic Personalized Mason Jar - 16 oz",
+  code: "IBCMA1506D",
+  slug: "savannah-ceramic-personalized-mason-jar-16-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '5" H x 3" W x 2.50" D',
+  price: 4.47,
+  image: "assets/assets/images/products/ceramic mugs/IBCMA1506D/IBCMA1506D-Red.webp",
+  description: "16 oz stoneware ceramic mason jar, perfect for a rustic, personalized touch.",
+  popular: false
+},
+{
+  id: "ibcmtmc20",
+  isBelpromo: true,
+  name: "Double Wall Ceramic Custom Tumbler - 11 oz",
+  code: "IBCMTMC20",
+  slug: "double-wall-ceramic-custom-tumbler-11-oz",
+  category: "Ceramic Mugs",
+  material: "Porcelain Mug | Silicone Lid",
+  size: '5.8" H x 3.8" W',
+  price: 7.18,
+  image: "assets/assets/images/products/ceramic mugs/IBCMTMC20/IBCMTMC20-Red.webp",
+  description: "11 oz double wall porcelain tumbler with a silicone lid, perfect for keeping your coffee hot.",
+  popular: false
+},
+{
+  id: "ibcmbm97",
+  isBelpromo: true,
+  name: "Bremen Ceramic Pilsner Glass - 15 oz",
+  code: "IBCMBM97",
+  slug: "bremen-ceramic-pilsner-glass-15-oz",
+  category: "Ceramic Mugs",
+  material: "Stoneware",
+  size: '8.25" H x 2.75" W',
+  price: 9.75,
+  image: "assets/assets/images/products/ceramic mugs/IBCMBM97/IBCMBM97-Blue.webp",
+  description: "15 oz stoneware ceramic pilsner glass, perfect for a unique beer-drinking experience.",
+  popular: false
+},
+{
   id: "ibcmbm10",
   isBelpromo: true,
   name: "Ceramic Beer Stein - 18.5 oz",
@@ -3856,6 +3955,7 @@ const products = [{
   description: "Personalized 24 oz beige ceramic beer mug with a straight body and footed base, ideal for restaurants or Oktoberfest.",
   popular: false
 },
+
 {
   id: "ibcmbm977",
   isBelpromo: true,
@@ -3885,6 +3985,20 @@ const products = [{
   popular: false
 },
 {
+  id: "ibtm248",
+  isBelpromo: true,
+  name: "Color Grip Double Wall Tumbler - 16 oz",
+  code: "IBTM248",
+  slug: "color-grip-double-wall-tumbler-16-oz",
+  category: "Travel Mugs",
+  material: "201 Stainless Steel | Plastic",
+  size: '3.25" W x 7.9" H',
+  price: 2.33,
+  image: "assets/assets/images/products/travel mugs/IBTM248/IBTM248-Green.webp",
+  description: "16 oz double-wall tumbler with a color grip design, perfect for keeping drinks hot or cold.",
+  popular: false
+},
+{
   id: "ibtm387",
   isBelpromo: true,
   name: "Alps Stainless Steel Travel Mug with Handle - 40 oz",
@@ -3896,6 +4010,104 @@ const products = [{
   price: 17.05,
   image: "assets/assets/images/products/travel mugs/IBTM387/IBTM387-Red.webp",
   description: "40 oz double-wall vacuum-insulated stainless steel travel mug with handle, slider lid, and straw. Keeps drinks hot for 6 hours and cold for 10.",
+  popular: false
+},
+{
+  id: "ibtm393",
+  isBelpromo: true,
+  name: "Seneca Stainless Steel Tumbler - 28 oz",
+  code: "IBTM393",
+  slug: "seneca-stainless-steel-tumbler-28-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '8.5" H x 3.5" W x 2.8" D',
+  price: 13.98,
+  image: "assets/assets/images/products/travel mugs/IBTM393/IBTM393-White.webp",
+  description: "28 oz stainless steel tumbler, perfect for keeping your drinks hot or cold on the go.",
+  popular: false
+},
+{
+  id: "ibtm48",
+  isBelpromo: true,
+  name: "Stemless Flute Wine Glass with Lid - 9 oz",
+  code: "IBTM48",
+  slug: "stemless-flute-wine-glass-with-lid-9-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '2.35"W X 5.25"H X 2"B',
+  price: 4.15,
+  image: "assets/assets/images/products/travel mugs/IBTM48/IBTM48-Blue.webp",
+  description: "9 oz double-wall stemless flute wine glass with a matte finish throughout, clear plastic press-on lid, and bottom black EVA pad. Hand wash only.",
+  popular: false
+},
+{
+  id: "ibtm47i",
+  isBelpromo: true,
+  name: "Iridescent Stemless Wine Glass with Lid - 12 oz",
+  code: "IBTM47I",
+  slug: "iridescent-stemless-wine-glass-with-lid-12-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel, Plastic",
+  size: '3"W X 4.75"H X 2.25"B',
+  price: 2.97,
+  image: "assets/assets/images/products/travel mugs/IBTM47I/IBTM47I-Pink.webp",
+  description: "12 oz iridescent stemless wine glass with a clear plastic lid. Features a stainless steel exterior and plastic interior.",
+  popular: false
+},
+{
+  id: "ibtm360",
+  isBelpromo: true,
+  name: "Hops Stainless Steel Travel Tumbler - 12 oz",
+  code: "IBTM360",
+  slug: "hops-stainless-steel-travel-tumbler-12-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3”W x 5.25”H',
+  price: 6.30,
+  image: "assets/assets/images/products/travel mugs/IBTM360/IBTM360-Black.webp",
+  description: "12 oz stainless steel travel tumbler with a full color imprint option, perfect for custom branding on the go.",
+  popular: false
+},
+{
+  id: "ibtm250",
+  isBelpromo: true,
+  name: "Verano Plastic Coffee Tumbler - 16 oz",
+  code: "IBTM250",
+  slug: "verano-plastic-coffee-tumbler-16-oz",
+  category: "Travel Mugs",
+  material: "Tritan Material",
+  size: '3.35"W X 6.75"H X 2.5"B',
+  price: 5.12,
+  image: "assets/assets/images/products/travel mugs/IBTM250/IBTM250-White.webp",
+  description: "16 oz Tritan plastic coffee tumbler, perfect for your daily commute or office use.",
+  popular: false
+},
+{
+  id: "ibtm375",
+  isBelpromo: true,
+  name: "Stainless Steel Coffee Mug with Lid - 11 oz",
+  code: "IBTM375",
+  slug: "stainless-steel-coffee-mug-with-lid-11-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel, Plastic Lid",
+  size: '3.25"W X 4"H X 3.25"B',
+  price: 14.96,
+  image: "assets/assets/images/products/travel mugs/IBTM375/IBTM375-White.webp",
+  description: "11 oz stainless steel coffee mug with a plastic lid, designed to keep your drinks hot or cold while on the go.",
+  popular: false
+},
+{
+  id: "ibtm291",
+  isBelpromo: true,
+  name: "Stainless Steel Double Wall Mug with Handle - 14 oz",
+  code: "IBTM291",
+  slug: "stainless-steel-double-wall-mug-with-handle-14-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.1" W x 4.52" H',
+  price: 8.72,
+  image: "assets/assets/images/products/travel mugs/IBTM291/IBTM291-Silver.webp",
+  description: "14 oz double wall stainless steel mug with a comfortable handle, perfect for keeping your drinks hot or cold.",
   popular: false
 },
 {
@@ -4154,10 +4366,10 @@ const products = [{
   popular: false
 },
 {
-  id: "ibtm224",
+  id: "ibtm24",
   isBelpromo: true,
   name: "2GoCup Plastic Tumbler - 16 oz",
-  code: "IBTM224",
+  code: "IBTM24",
   slug: "2gocup-plastic-tumbler-16-oz",
   category: "Travel Mugs",
   material: "Plastic",
@@ -4165,6 +4377,132 @@ const products = [{
   price: 2.97,
   image: "assets/assets/images/products/travel mugs/IBTM24/IBTM24-Blue.webp",
   description: "16 oz BPA-free double-walled plastic tumbler with a screw-on lid. Handwash recommended for imprinted items.",
+  popular: false
+},
+{
+  id: "ibtm225",
+  isBelpromo: true,
+  name: "Vacuum Stainless Steel Water Bottle - 27 oz",
+  code: "IBTM225",
+  slug: "vacuum-stainless-steel-water-bottle-27-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.5"W x 8.5"H',
+  price: 15.76,
+  image: "assets/assets/images/products/travel mugs/IBTM225/IBTM225-Silver.webp",
+  description: "27 oz vacuum insulated stainless steel water bottle, perfect for keeping drinks hot or cold on the go.",
+  popular: false
+},
+{
+  id: "ibtm227",
+  isBelpromo: true,
+  name: "Vacuum Stainless Steel Water Bottle - 32 oz",
+  code: "IBTM227",
+  slug: "vacuum-stainless-steel-water-bottle-32-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '10" H x 3.5" W',
+  price: 16.55,
+  image: "assets/assets/images/products/travel mugs/IBTM227/IBTM227-Silver.webp",
+  description: "32 oz vacuum insulated stainless steel water bottle, designed to keep your drinks hot or cold during long adventures.",
+  popular: false
+},
+{
+  id: "ibtm31",
+  isBelpromo: true,
+  name: "Keychain Hip Flask - 1 oz",
+  code: "IBTM31",
+  slug: "keychain-hip-flask-1-oz",
+  category: "Travel Mugs",
+  material: "Stainless Interior / Exterior",
+  size: '1.8"W x 1.56"H',
+  price: 5.71,
+  image: "assets/assets/images/products/travel mugs/IBTM31/IBTM31-Silver.webp",
+  description: "1 oz stainless steel keychain hip flask, perfect for on-the-go sipping.",
+  popular: false
+},
+{
+  id: "ibtm39",
+  isBelpromo: true,
+  name: "Middleton Portable Canteen - 8 oz",
+  code: "IBTM39",
+  slug: "middleton-portable-canteen-8-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '3.25" W x 5" H',
+  price: 7.27,
+  image: "assets/assets/images/products/travel mugs/IBTM39/IBTM39-Black.webp",
+  description: "8 oz portable stainless steel canteen, perfect for carrying your favorite beverages on the go.",
+  popular: false
+},
+{
+  id: "ibtm27",
+  isBelpromo: true,
+  name: "Murano Stainless Steel Hip Flask - 6 oz",
+  code: "IBTM27",
+  slug: "murano-stainless-steel-hip-flask-6-oz",
+  category: "Travel Mugs",
+  material: "Stainless Interior / Exterior",
+  size: '3.75" W x 4" H',
+  price: 5.83,
+  image: "assets/assets/images/products/travel mugs/IBTM27/IBTM27-Blue.webp",
+  description: "6 oz stainless steel hip flask, perfect for carrying your favorite spirits on the go.",
+  popular: false
+},
+{
+  id: "ibtm28",
+  isBelpromo: true,
+  name: "Verano Stainless Steel Hip Flask - 8 oz",
+  code: "IBTM28",
+  slug: "verano-stainless-steel-hip-flask-8-oz",
+  category: "Travel Mugs",
+  material: "Stainless Interior / Exterior",
+  size: '4" W x 4.75" H',
+  price: 7.66,
+  image: "assets/assets/images/products/travel mugs/IBTM28/IBTM28-Gold.webp",
+  description: "8 oz stainless steel hip flask, perfect for carrying your favorite spirits on the go.",
+  popular: false
+},
+{
+  id: "ibtm29",
+  isBelpromo: true,
+  name: "Bilbo Double Wall Plastic Tumbler with Straw - 27 oz",
+  code: "IBTM29",
+  slug: "bilbo-double-wall-plastic-tumbler-with-straw-27-oz",
+  category: "Travel Mugs",
+  material: "AS Plastic",
+  size: '4.5" W x 6" H',
+  price: 5.45,
+  image: "assets/assets/images/products/travel mugs/IBTM29/IBTM29-Lime Green.webp",
+  description: "27 oz double-wall plastic tumbler with a straw, perfect for keeping your drinks cold and refreshing.",
+  popular: false
+},
+{
+  id: "ibtm65",
+  isBelpromo: true,
+  name: "Stainless Steel Insulated Travel Mug - 16 oz",
+  code: "IBTM65",
+  slug: "stainless-steel-insulated-travel-mug-16-oz",
+  category: "Travel Mugs",
+  material: "Stainless Steel and Black Plastic Insulated Liner",
+  size: '3.25" W x 7" H',
+  price: 4.46,
+  image: "assets/assets/images/products/travel mugs/IBTM65/IBTM65-Stainless Steel.webp",
+  description: "16 oz stainless steel insulated travel mug with a black plastic liner, perfect for keeping your drinks hot or cold.",
+  popular: false
+},
+{
+  id: "ibtm30",
+  isBelpromo: true,
+  name: "Stainless Steel Beer Mug",
+  code: "IBTM30",
+  slug: "stainless-steel-beer-mug",
+  category: "Travel Mugs",
+  material: "Stainless Steel",
+  size: '5" H x 3" W x 3.75" D',
+  price: 9.81,
+  image: "assets/assets/images/products/travel mugs/IBTM30/IBTM30-Silver.webp",
+  description: "Stainless steel beer mug, perfect for keeping your favorite brew cold and refreshing.",
   popular: false
 },
 {
@@ -4541,7 +4879,7 @@ const products = [{
   material: "210D PU Polyester",
   size: '9.84" W x 14.17" H x 3.15" D',
   price: 9.31,
-  image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Red.jpg",
+  image: "assets/assets/images/products/backpacks/IBBPK95/IBBPK95-Red.webp",
   description: "Solid color sling backpack made of 210D PU polyester with a zipper closure, carrying strap, and foam interior.",
   popular: false
 },
@@ -4558,7 +4896,7 @@ const products = [{
   material: "Plastic",
   size: '7.75" H x 3" W x 2" Brim',
   price: 1.34,
-  image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Black.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB20/IBSB20-Black.webp",
   description: "20 oz flexi-grip easy squeeze water bottle with a ridged push cap and easy-flow drinking spout. BPA free.",
   popular: false
 },
@@ -4572,7 +4910,7 @@ const products = [{
   material: "Plastic",
   size: '7.75" H x 3" W x 2" Brim',
   price: 1.42,
-  image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteRed.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB20USA/IBSB20USA-WhiteRed.webp",
   description: "20 oz high-density polyethylene water bottle with a flexi-grip easy squeeze action and a ridged push spout cap.",
   popular: false
 },
@@ -4586,7 +4924,7 @@ const products = [{
   material: "Stainless Steel",
   size: '10.75" H x 2.75" W',
   price: 10.16,
-  image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Red.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB105/IBSB105-Red.webp",
   description: "26 oz stainless steel sports water bottle with a unique twist cap design. BPA free and single insulated.",
   popular: false
 },
@@ -4600,7 +4938,7 @@ const products = [{
   material: "Aluminum",
   size: '8" H x 3" W',
   price: 5.73,
-  image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Lime Green.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB101/IBSB101-Lime Green.webp",
   description: "20 oz aluminum water bottle with a twist cap and carabiner for easy attachment. BPA free.",
   popular: false
 },
@@ -4614,7 +4952,7 @@ const products = [{
   material: "HDPE Plastic",
   size: '2.25"RIM X 3.25"W X 8.75"H',
   price: 3.21,
-  image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Neon Pink.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSBRSB35/IBSBRSB35-Neon Pink.webp",
   description: "32 oz BPA-free HDPE plastic water bottle with a wide mouth, leak-resistant sure flow lid, and a straight wall design.",
   popular: false
 },
@@ -4628,7 +4966,7 @@ const products = [{
   material: "PCTG Plastic",
   size: '3" W x 9.25" H x 3.5" B',
   price: 10.09,
-  image: "assets/assets/images/products/sports bottles/IBSB351/IBSB351-Black.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB351/IBSB351-Black.webp",
   description: "40 oz plastic water bottle with a wide mouth opening, leak-proof screw-on cap, and a carrying handle.",
   popular: false
 },
@@ -4642,7 +4980,7 @@ const products = [{
   material: "HDPE Plastic",
   size: '2.5" W x 7" H',
   price: 1.25,
-  image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Orange.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB1663/IBSB1663-Orange.webp",
   description: "20 oz frosted HDPE plastic water bottle, lead and BPA free. Made in the USA.",
   popular: false
 },
@@ -4656,7 +4994,7 @@ const products = [{
   material: "Stainless Steel",
   size: '2.75" W x 10.25" H',
   price: 11.29,
-  image: "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Silver.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB117/IBSB117-Silver.webp",
   description: "26 oz single-wall stainless steel water bottle with silicone ring and carabiner. Features a twist cap for a water-tight seal. BPA free.",
   popular: false
 },
@@ -4670,7 +5008,7 @@ const products = [{
   material: "Stainless Steel",
   size: '2.75”W x 10”H',
   price: 17.24,
-  image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Light Pink.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB271/IBSB271-Light Pink.webp",
   description: "20 oz double-wall vacuum insulated stainless steel water bottle with a spill-proof screw-on cap and matte color finish.",
   popular: false
 },
@@ -4684,7 +5022,7 @@ const products = [{
   material: "Plastic",
   size: '9.8" H x 2.8" W x 2.25"Brim',
   price: 1.93,
-  image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Neon Green.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB28/IBSB28-Neon Green.webp",
   description: "28 oz high-density polyethylene water bottle with a ridged cap and easy-flow colored drinking push cap.",
   popular: false
 },
@@ -4698,7 +5036,7 @@ const products = [{
   material: "Recycled PET",
   size: '2.25" W x 8.15" H x 3" B',
   price: 4.80,
-  image: "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Red.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSG257/IBSG257-Red.webp",
   description: "26 oz sports water bottle made from 100% recycled PET material. Features a wide mouth, flap opener lid, and carrying handle.",
   popular: false
 },
@@ -4712,7 +5050,7 @@ const products = [{
   material: "Stainless Steel",
   size: '3.5”W x 10.5”H',
   price: 28.75,
-  image: "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Army Green.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB329/IBSB329-Army Green.webp",
   description: "34 oz double-wall vacuum insulated stainless steel water bottle with a plastic flip lid, handle, and carrying strap.",
   popular: false
 },
@@ -4726,7 +5064,7 @@ const products = [{
   material: "Plastic PETG",
   size: '9" H x 2.5" Diameter',
   price: 3.98,
-  image: "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Green.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSG119/IBSG119-Green.webp",
   description: "24 oz slim translucent plastic water bottle with a screw-on lid, flip-top mechanism, and inside straw. BPA free.",
   popular: false
 },
@@ -4740,7 +5078,7 @@ const products = [{
   material: "304 Stainless Steel",
   size: '7.48"w x 3.54"h',
   price: 21.36,
-  image: "assets/assets/images/products/sports bottles/IBSRPM016/IBSRPM016-Black.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSRPM016/IBSRPM016-Black.webp",
   description: "32 oz double-walled stainless steel bottle with a powder-coated finish, white sublimation patch, and secure handle lid. Keeps drinks hot for 12 hours or cold for 24.",
   popular: false
 },
@@ -4754,7 +5092,7 @@ const products = [{
   material: "Stainless Steel",
   size: '10" H x 2.75" W',
   price: 8.49,
-  image: "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Blue.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB135/IBSB135-Blue.webp",
   description: "25 oz slim stainless steel water bottle with a metallic matte finish and flip-top lid with inside straw.",
   popular: false
 },
@@ -4768,7 +5106,7 @@ const products = [{
   material: "Stainless Steel",
   size: '2.5"W x 7.5"h',
   price: 7.44,
-  image: "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Navy Blue.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB350/IBSB350-Navy Blue.webp",
   description: "23 oz single-wall stainless steel water bottle with an easy carry loop handle and a wide mouth for easy filling.",
   popular: false
 },
@@ -4782,7 +5120,7 @@ const products = [{
   material: "Plastic PETG",
   size: '3.54" W x 8.3" H',
   price: 7.18,
-  image: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Lime Green.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSG232/IBSG232-Lime Green.webp",
   description: "38 oz wide mouth plastic water bottle with a screw-on cap, color matching trim, and transparent outer wall.",
   popular: false
 },
@@ -4796,7 +5134,7 @@ const products = [{
   material: "HDPE Plastic",
   size: '7.75" H x 3" W x 2" Brim',
   price: 2.84,
-  image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Pink.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSBRSB34/IBSBRSB34-Neon Pink.webp",
   description: "32 oz BPA-free HDPE plastic water bottle with a wide mouth, push-pull lid, and straight wall design. Made in the USA.",
   popular: false
 },
@@ -4810,7 +5148,7 @@ const products = [{
   material: "Silicone, PCTG Plastic",
   size: '2.75" W x 9" H x 3.5" D',
   price: 5.95,
-  image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Blue.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB56/IBSB56-Blue.webp",
   description: "40 oz single-wall PCTG plastic water bottle with a screw-on lid, straw, retractable suction nozzle, carrying handle, and capacity measurements.",
   popular: false
 },
@@ -4824,7 +5162,7 @@ const products = [{
   material: "HDPE Plastic",
   size: "28 oz.",
   price: 3.04, // 100 qty ka 1 Color Imprint price
-  image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-Promo1.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB28USA/IBSB28USA-Promo1.webp",
   description: "High density white polyethylene water bottle featuring ridged lids with easy-flow push caps. Designed for good grip action, making it perfect for sports and outdoor hydration.",
   popular: false
 },
@@ -4838,7 +5176,7 @@ const products = [{
   material: "Plastic",
   size: '9.5" H x 2.6" W',
   price: 6.20,
-  image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Lime Green.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSG147/IBSG147-Lime Green.webp",
   description: "22 oz BPA-free plastic sports water bottle with a flip-top lid, screw-on cap, and easy carry handle.",
   popular: false
 },
@@ -4852,7 +5190,7 @@ const products = [{
   material: "Stainless Steel",
   size: '2.75”W x 7.80”H',
   price: 16.74,
-  image: "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Blue.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB334/IBSB334-Blue.webp",
   description: "17 oz double-wall vacuum insulated stainless steel water bottle with a plastic lid, stainless steel wrap, and carrying strap.",
   popular: false
 },
@@ -4866,7 +5204,7 @@ const products = [{
   material: "Plastic PETG",
   size: '2" W x 8.5" H',
   price: 3.78,
-  image: "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Navy Blue.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB346/IBSB346-Navy Blue.webp",
   description: "27 oz single-wall plastic water bottle with an easy carry loop handle, twist-off cap, and shatter-proof design. BPA free.",
   popular: false
 },
@@ -4880,7 +5218,7 @@ const products = [{
   material: "Plastic",
   size: '8" H x 3" W',
   price: 4.74,
-  image: "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Light Pink.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB291/IBSB291-Light Pink.webp",
   description: "20 oz high-density polyethylene water bottle with a flexi-grip easy squeeze action and ridged cap.",
   popular: false
 },
@@ -4894,7 +5232,7 @@ const products = [{
   material: "Stainless Interior / Exterior",
   size: '3.42" W x 10" H',
   price: 15.63,
-  image: "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Red.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSM301/IBSM301-Red.webp",
   description: "17 oz Levian cola-shaped vacuum bottle with double-wall insulation, a screw-on spill-resistant lid, and a wide mouth opening. BPA free.",
   popular: false
 },
@@ -4908,7 +5246,7 @@ const products = [{
   material: "Tritan Plastic / Stainless Steel",
   size: '4.5" W x 8.25" H x 4.75" D',
   price: 39.03,
-  image: "assets/assets/images/products/sports bottles/IBSB57/IBSB57-Black.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB57/IBSB57-Black.webp",
   description: "64 oz double-wall stainless steel water jug with a Tritan screw-on lid, press-in button, flip lid lock, and carrying handle.",
   popular: false
 },
@@ -4922,7 +5260,7 @@ const products = [{
   material: "PET Plastic",
   size: '7" H',
   price: 2.73,
-  image: "assets/assets/images/products/sports bottles/IBSB2463/IBSB2463-Clear.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB2463/IBSB2463-Clear.webp",
   description: "24 oz clear PET plastic bike water bottle with a contoured shape, leak-resistant super sipper lid, and high gloss clarity. Made in the USA.",
   popular: false
 },
@@ -4936,7 +5274,7 @@ const products = [{
   material: "AS Plastic",
   size: '8.7" H x 2.5" W',
   price: 4.74,
-  image: "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Red.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB323/IBSB323-Red.webp",
   description: "17 oz BPA-free AS plastic water bottle with a sleek modern design and carrying strap. Hand wash only.",
   popular: false
 },
@@ -4950,7 +5288,7 @@ const products = [{
   material: "Aluminum",
   size: '10" H x 2.75" W',
   price: 8.81,
-  image: "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Red.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB151/IBSB151-Red.webp",
   description: "25 oz aluminum water bottle with a smooth metallic finish, black flip-top lid, push-release cap, and carabiner.",
   popular: false
 },
@@ -4964,7 +5302,7 @@ const products = [{
   material: "Stainless Steel",
   size: '1.60"R X 2.80" W X 8.80"H',
   price: 7.56,
-  image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Red.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSM237/IBSM237-Red.webp",
   description: "17 oz double-wall vacuum insulated stainless steel water bottle with a spill-proof screw-on cap. BPA free, keeps drinks hot for 6 hours and cold for 12.",
   popular: false
 },
@@ -4978,7 +5316,7 @@ const products = [{
   material: "Plastic PETG",
   size: '11" H x 2" W',
   price: 5.95,
-  image: "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Red.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB324/IBSB324-Red.webp",
   description: "25 oz BPA-free PETG plastic water bottle with a cola-shaped design. Hand wash only.",
   popular: false
 },
@@ -4992,7 +5330,7 @@ const products = [{
   material: "Stainless Steel",
   size: '10" H x 3" W',
   price: 19.85,
-  image: "assets/assets/images/products/sports bottles/IBSF26/IBSF26-Black.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSF26/IBSF26-Black.webp",
   description: "18 oz double-wall vacuum insulated stainless steel bottle with a spill-proof straw lid and comfortable carrying handle. Keeps drinks hot for 6 hours and cold for 12.",
   popular: false
 },
@@ -5006,7 +5344,7 @@ const products = [{
   material: "Polypropylene",
   size: '4.25” W x 11.25” H',
   price: 4.47,
-  image: "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Grey.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSB293/IBSB293-Grey.webp",
   description: "60 oz translucent plastic water bottle with a contrasting solid colored cap, built-in carry handle, and flip-top lid.",
   popular: false
 },
@@ -5020,7 +5358,7 @@ const products = [{
   material: "Bottle: AS Plastic; Towel: Polyester",
   size: '2.5” W x 6.75” H',
   price: 6.20,
-  image: "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Blue.jpg",
+  image: "assets/assets/images/products/sports bottles/IBSD600/IBSD600-Blue.webp",
   description: "Sports kit with a cooling towel and clear bottle holder, featuring a phone holder at the bottom. Bottle holds 350 ml (11.83 oz).",
   popular: false
 }
@@ -5846,94 +6184,112 @@ ${(isApparel || isBelpromo) ? `
     }, 150);
   });
 
-  function init() {
 
-    const urlParams = new URLSearchParams(window.location.search);
+function init() {
 
-    // Category from URL
-    const categoryQuery = urlParams.get('category');
+  const urlParams = new URLSearchParams(window.location.search);
 
-    if (categoryQuery) {
-      const matchedCategory = getCategories().find(
-        cat => cat.toLowerCase() === categoryQuery.toLowerCase()
-      );
+  // Category from URL
+  const categoryQuery = urlParams.get('category');
 
-      if (matchedCategory) {
-        currentCategory = matchedCategory;
-      }
+  if (categoryQuery) {
+    const matchedCategory = getCategories().find(
+      cat => cat.toLowerCase() === categoryQuery.toLowerCase()
+    );
+
+    if (matchedCategory) {
+      currentCategory = matchedCategory;
+    }
+  }
+
+  // Search from URL + Exact Match Redirect
+  const searchQuery = urlParams.get('search');
+
+  if (searchQuery && searchInput) {
+    const query = searchQuery.trim().toLowerCase();
+
+    // Check exact product ID or code
+    const exactMatchProduct = products.find(
+      p =>
+        String(p.id || '').toLowerCase() === query ||
+        String(p.code || '').toLowerCase() === query
+    );
+
+    // Redirect to product page if exact match found
+    if (exactMatchProduct) {
+      window.location.href = `product.html?id=${encodeURIComponent(exactMatchProduct.id)}`;
+      return;
     }
 
-    // Search from URL
-    const searchQuery = urlParams.get('search');
+    // Normal search if no exact match
+    searchInput.value = searchQuery;
+    searchTerm = searchQuery;
+  }
 
-    if (searchQuery && searchInput) {
-      searchInput.value = searchQuery;
-      searchTerm = searchQuery;
-    }
+  renderSidebar();
+  renderProducts();
+  initEvents();
 
-    renderSidebar();
-    renderProducts();
-    initEvents();
+  const tl = gsap.timeline();
 
-    const tl = gsap.timeline();
-
-    tl.to(".header-content", {
+  tl.to(".header-content", {
+    y: 0,
+    opacity: 1,
+    duration: 0.6,
+    ease: "power2.out"
+  })
+    .to(".header-features", {
+      opacity: 1,
+      duration: 0.5
+    }, "-=0.3")
+    .to(".sidebar-anim", {
+      x: 0,
+      opacity: 1,
+      duration: 0.5,
+      ease: "power2.out"
+    }, "-=0.2")
+    .to(".toolbar-anim", {
+      y: 0,
+      opacity: 1,
+      duration: 0.4
+    }, "-=0.3")
+    .to(".product-card", {
+      y: 0,
+      opacity: 1,
+      duration: 0.5,
+      stagger: 0.1,
+      ease: "back.out(1.2)"
+    }, "-=0.2")
+    .to(".popular-section", {
       y: 0,
       opacity: 1,
       duration: 0.6,
       ease: "power2.out"
-    })
-      .to(".header-features", {
-        opacity: 1,
-        duration: 0.5
-      }, "-=0.3")
-      .to(".sidebar-anim", {
-        x: 0,
-        opacity: 1,
-        duration: 0.5,
-        ease: "power2.out"
-      }, "-=0.2")
-      .to(".toolbar-anim", {
-        y: 0,
-        opacity: 1,
-        duration: 0.4
-      }, "-=0.3")
-      .to(".product-card", {
-        y: 0,
-        opacity: 1,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: "back.out(1.2)"
-      }, "-=0.2")
-      .to(".popular-section", {
-        y: 0,
-        opacity: 1,
-        duration: 0.6,
-        ease: "power2.out"
-      }, "-=0.2")
-      .to(".footer-features", {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        stagger: 0.1
-      }, "-=0.3");
+    }, "-=0.2")
+    .to(".footer-features", {
+      opacity: 1,
+      y: 0,
+      duration: 0.5,
+      stagger: 0.1
+    }, "-=0.3");
 
-    gsap.set(".header-content, .toolbar-anim, .popular-section", {
-      y: 20
-    });
+  gsap.set(".header-content, .toolbar-anim, .popular-section", {
+    y: 20
+  });
 
-    gsap.set(".sidebar-anim", {
-      x: -20
-    });
+  gsap.set(".sidebar-anim", {
+    x: -20
+  });
 
-    gsap.set(".product-card", {
-      y: 30
-    });
+  gsap.set(".product-card", {
+    y: 30
+  });
 
-    gsap.set(".footer-features", {
-      y: 15
-    });
-  }
+  gsap.set(".footer-features", {
+    y: 15
+  });
 
-  init();
+}
+
+init();
 })();
